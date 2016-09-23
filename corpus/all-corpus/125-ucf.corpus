@@ -1,0 +1,6 @@
+ username text username 50
+ confirmusername confirmusername text 50
+ firstname firstname text 50
+ lastname lastname text 50
+ password password password 128
+ confirmpassword confirmpassword password 128

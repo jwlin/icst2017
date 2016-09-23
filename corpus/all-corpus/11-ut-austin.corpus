@@ -1,0 +1,12 @@
+first given name firstname text firstname 50
+middle name middlename text middlename 50
+ last family name lastname text lastname 50
+ for example your nickname other first names for example your nickname otherfirstname text otherfirstname 50
+ for example your maiden name other last names for example your maiden name otherlastname text otherlastname 50
+city or town of birth text cityortownofbirth cityortownofbirth
+ why do we ask for your ssn u s social security number why do we ask for your ssn studentssna text studentssna 3
+ why do we ask for your ssn u s social security number why do we ask for your ssn studentssnb text studentssnb 2
+ why do we ask for your ssn u s social security number why do we ask for your ssn studentssnc text studentssnc 4
+ the 16 digit number on the front of your ut austin id card if you have one ut austin id card number text idcardnumber idcardnumber
+ use an e mail account you will have access to several months from now why e mail address text emailaddress emailaddress
+verify your e mail address text emailaddressverify emailaddressverify

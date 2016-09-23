@@ -1,0 +1,16 @@
+given name ctl00 content eappart personal txtgvnname inputcontrol text ctl00 content eappart personal txtgvnname inputcontrol 40
+other given name s ctl00 content eappart personal txtothname inputcontrol text ctl00 content eappart personal txtothname inputcontrol 40
+preferred given name ctl00 content eappart personal txtprefname inputcontrol text ctl00 content eappart personal txtprefname inputcontrol 40
+family name must be entered ctl00 content eappart personal txtfamname inputcontrol text ctl00 content eappart personal txtfamname inputcontrol 80
+previous family name ctl00 content eappart personal txtprevfamname inputcontrol text ctl00 content eappart personal txtprevfamname inputcontrol 40
+email address must be entered the entered email address does not appear to be a validly formed email address ctl00 content eappart contact txtemail inputcontrol text ctl00 content eappart contact txtemail inputcontrol 255
+confirm email address must be entered the confirm email doesn t match your email ctl00 content eappart contact txtemailconfirm inputcontrol text ctl00 content eappart contact txtemailconfirm inputcontrol 255
+home phone text ctl00 content eappart contact repphone ctl00 txtphone inputcontrol ctl00 content eappart contact repphone ctl00 txtphone inputcontrol 20
+work phone text ctl00 content eappart contact repphone ctl01 txtphone inputcontrol ctl00 content eappart contact repphone ctl01 txtphone inputcontrol 20
+mobile phone text ctl00 content eappart contact repphone ctl02 txtphone inputcontrol ctl00 content eappart contact repphone ctl02 txtphone inputcontrol 20
+address line 1 must be entered ctl00 content eappart address txtaddrline1 inputcontrol text ctl00 content eappart address txtaddrline1 inputcontrol 50
+address line 2 ctl00 content eappart address txtaddrline2 inputcontrol text ctl00 content eappart address txtaddrline2 inputcontrol 50
+address line 3 ctl00 content eappart address txtaddrline3 inputcontrol text ctl00 content eappart address txtaddrline3 inputcontrol 50
+suburb town must be entered ctl00 content eappart address txtaddrsuburb inputcontrol text ctl00 content eappart address txtaddrsuburb inputcontrol 50
+state ctl00 content eappart address txtaddrstate inputcontrol text ctl00 content eappart address txtaddrstate inputcontrol 40
+postcode ctl00 content eappart address txtaddrpostcode inputcontrol text ctl00 content eappart address txtaddrpostcode inputcontrol 15

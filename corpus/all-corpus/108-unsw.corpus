@@ -1,0 +1,9 @@
+firstname text 30
+middlename text 30
+lastname text 30
+visanumber text 15
+emailaddress text 70
+emailaddress2 text 70
+text login 14
+password password 14
+password password2 14

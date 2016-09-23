@@ -1,0 +1,5 @@
+required invalid email address login email address ctl00 contentmain nu tbemail text ctl00 contentmain nu tbemail 100
+required first name text ctl00 contentmain nu tbfirstname ctl00 contentmain nu tbfirstname 75
+required last name ctl00 contentmain nu tblastname text ctl00 contentmain nu tblastname 75
+required password does not meet the requirements password ctl00 contentmain nu password1 tbpassword password ctl00 contentmain nu password1 tbpassword 30
+passwords do not match confirm password ctl00 contentmain nu password1 tbpasswordconfirm password ctl00 contentmain nu password1 tbpasswordconfirm 30

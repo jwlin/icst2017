@@ -1,0 +1,89 @@
+[
+  {
+    "dom": "<input class=\"form-control\" id=\"applicant_last_name\" name=\"applicant[last_name]\" required=\"required\" type=\"text\" value=\"\"/>", 
+    "feature": "last name family name surname applicant last name applicant last name text", 
+    "rule": {
+      "id": [
+        "last"
+      ], 
+      "name": [
+        "last"
+      ]
+    }, 
+    "type": "lname"
+  }, 
+  {
+    "dom": "<input class=\"form-control\" id=\"applicant_first_name\" name=\"applicant[first_name]\" type=\"text\" value=\"\"/>", 
+    "feature": "first name given name applicant first name text applicant first name", 
+    "rule": {
+      "id": [
+        "first"
+      ], 
+      "name": [
+        "first"
+      ]
+    }, 
+    "type": "fname"
+  }, 
+  {
+    "dom": "<input class=\"form-control\" id=\"applicant_middle_name\" name=\"applicant[middle_name]\" type=\"text\" value=\"\"/>", 
+    "feature": "middle name applicant middle name text applicant middle name", 
+    "rule": {
+      "id": [
+        "middle"
+      ], 
+      "name": [
+        "middle"
+      ]
+    }, 
+    "type": "mname"
+  }, 
+  {
+    "dom": "<input class=\"form-control\" id=\"applicant_email\" name=\"applicant[email]\" required=\"required\" type=\"email\"/>", 
+    "feature": "email email applicant email applicant email", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ], 
+      "type": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input class=\"form-control\" id=\"applicant_password\" name=\"applicant[password]\" required=\"required\" type=\"password\"/>", 
+    "feature": "password password applicant password applicant password", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }, 
+  {
+    "dom": "<input class=\"form-control\" id=\"applicant_password_confirmation\" name=\"applicant[password_confirmation]\" required=\"required\" type=\"password\"/>", 
+    "feature": "password confirmation password applicant password confirmation applicant password confirmation", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }
+]

@@ -1,0 +1,24 @@
+ legal first name required applicantinformation txtfirstname text applicantinformation txtfirstname 60
+ legal last name required applicantinformation txtlastname text applicantinformation txtlastname 60
+middle initial applicantinformation txtinitial text applicantinformation txtinitial 1
+other name records may be under applicantinformation txtalias text applicantinformation txtalias 60
+required applicantinformation txtxpaddress1 text applicantinformation txtxpaddress1 75
+address line 2 applicantinformation txtxpaddress2 text applicantinformation txtxpaddress2 75
+required applicantinformation txtxpcity text applicantinformation txtxpcity 75
+required format required applicantinformation txtxpzip text applicantinformation txtxpzip
+required applicantinformation txtxpintstate text applicantinformation txtxpintstate 35
+zip postal code applicantinformation txtxpintzip text applicantinformation txtxpintzip 14
+required applicantinformation txtxladdress1 text applicantinformation txtxladdress1 75
+address line 2 applicantinformation txtxladdress2 text applicantinformation txtxladdress2 75
+required applicantinformation txtxlcity text applicantinformation txtxlcity 75
+required format required applicantinformation txtxlzip text applicantinformation txtxlzip
+required applicantinformation txtxlintstate text applicantinformation txtxlintstate 35
+zip postal code applicantinformation txtxlintzip text applicantinformation txtxlintzip 14
+home mobile other applicantinformation txtphone text applicantinformation txtphone 16
+ format required international phone numbers cannot contain letters home mobile other applicantinformation txtxlphone text applicantinformation txtxlphone 16
+international phone numbers cannot contain letters home mobile other applicantinformation txtintphone text applicantinformation txtintphone 26
+required invalid email applicantinformation txtemail text applicantinformation txtemail 128
+please confirm your email address must match above email applicantinformation txtconfirmemail text applicantinformation txtconfirmemail 128
+ required for financial aid processing required invalid ssn citizenshipsection txtssn text citizenshipsection txtssn 20
+required a format if your number is 8 digits begin with a followed by a zero citizenshipsection txtaliennumber text citizenshipsection txtaliennumber 20
+ required for financial aid processing required invalid ssn citizenshipsection txtalienssn text citizenshipsection txtalienssn 20

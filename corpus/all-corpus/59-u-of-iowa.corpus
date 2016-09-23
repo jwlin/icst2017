@@ -1,0 +1,8 @@
+ mm dd yyyy 00000 for international applicants firstname text 100
+ mm dd yyyy 00000 for international applicants lastname text 100
+ mm dd yyyy 00000 for international applicants email text 255
+ mm dd yyyy 00000 for international applicants email2 text 255
+ mm dd yyyy birthdate text 10
+ 00000 for international applicants zip5 text 5
+ mm dd yyyy 00000 for international applicants password password
+ mm dd yyyy 00000 for international applicants password password2

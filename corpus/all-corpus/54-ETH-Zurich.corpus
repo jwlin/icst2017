@@ -1,0 +1,25 @@
+according to official document familyname familyname text 30
+according to official document e g marc peter ralph givenname givenname text 30
+first name for correspondence e g marc preferredgivenname preferredgivenname text 30
+if any previousname previousname text 30
+date format yyyy mm dd dateofbirth birthdate text 10
+swiss social security number socialsecuritynum1 756 text socialsecuritynum1 3
+swiss social security number socialsecuritynum2 socialsecuritynum2 text 4
+swiss social security number socialsecuritynum3 socialsecuritynum3 text 4
+swiss social security number socialsecuritynum4 socialsecuritynum4 text 2
+important note if you change your e mail address your login name will also change emailaddress emailaddress text 400
+additional e g c o miller permanentco text permanentco 34
+additional e g c o miller studiesco text studiesco 34
+ street and number permanentstr text permanentstr 34
+ street and number studiesstr text studiesstr 34
+additional permanentadd text permanentadd 34
+additional studiesadd text studiesadd 34
+ zipcode permanentpostalcode text permanentpostalcode 10
+ zipcode studiespostalcode text studiespostalcode 10
+ town permanentcity text permanentcity 27
+ town studiescity text studiescity 27
+phone permanenttel text permanenttel 20
+phone studiestel text studiestel 20
+mobile phone privatemobile text privatemobile 20
+password must consist of at least 6 characters plus 2 digits password password password 32
+ repeat password password2 password password2 32

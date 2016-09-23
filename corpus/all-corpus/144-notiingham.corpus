@@ -1,0 +1,5 @@
+first given names first given names txtfirstname text txtfirstname 50
+surname family name surname family name txtsurname text txtsurname 50
+email address email address txtemail text txtemail 100
+confirm email address confirm email address txtconfirm text txtconfirm 100
+applicant id text txtapplicantid txtapplicantid 5

@@ -1,0 +1,9 @@
+required text firstname firstname
+middle name text middlename middlename
+required text lastname lastname
+e mail is invalid required text email email
+verify e mail text verifyemail verifyemail
+required text login login
+required text password password
+required password newpassword newpassword
+verify password password verifypassword verifypassword

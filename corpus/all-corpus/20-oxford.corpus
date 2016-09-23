@@ -1,0 +1,7 @@
+ given name forename ipu fnm1 ipu srs 1 text ipu fnm1 30
+ family name surname ipu surn ipu srs 1 text ipu surn 40
+ date of birth dd mm yyyy ipu dob ipu srs 1 text ipu dob 11
+ username email address text usercode ipu srs 1 usercode
+ confirm username email address ipu haem ipu srs 1 text ipu haem 255
+ password password password1 ipu srs 1 password1
+ confirm password password password2 ipu srs 1 password2

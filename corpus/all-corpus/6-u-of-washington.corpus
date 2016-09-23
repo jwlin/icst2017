@@ -1,0 +1,12 @@
+last name is required birth month is required birth day is required birth year is required citizenship status is required the native english speaker question is required email is required a valid email address is required confirm email is required the email and confirm email must match do not use or password is required confirm password is required the password and confirmation password must match security question is required security answer is required confirm security answer is required the security answer and confirm security answer must match male female united states citizen united states green card holder united states immigrant visa none of the above yes no not applicable i am a us citizen yes no text txtboxfirstname txtboxfirstname 22
+last name is required text txtboxlastname txtboxlastname 22
+text txtboxformerlastname1 txtboxformerlastname1 22
+text txtboxformerfirstname1 txtboxformerfirstname1 22
+text txtboxformerlastname2 txtboxformerlastname2 22
+text txtboxformerfirstname2 txtboxformerfirstname2 22
+a valid email address is required text txtboxemail txtboxemail 50
+the email and confirm email must match text txtboxconfirmemail txtboxconfirmemail 50
+do not use or password is required password txtboxpassword txtboxpassword 128
+the password and confirmation password must match password txtboxconfirmpassword txtboxconfirmpassword 128
+security answer is required password txtboxanswer txtboxanswer 128
+the security answer and confirm security answer must match password txtboxconfirmanswer txtboxconfirmanswer 128

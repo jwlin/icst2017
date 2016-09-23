@@ -1,0 +1,10 @@
+pin password text ay login userid
+first or given name text aycreatefn aycreatefn 30
+last or family name text aycreateln aycreateln 30
+email address aycreateemail aycreateemail text 120
+confirm email address aycreateconfirmemail aycreateconfirmemail text
+mm dd yyyy birth date text aycreatedob aycreatedob
+zip postal code text aycreatepc aycreatepc 10
+password pin password ay password password
+password password aycreatepassword aycreatepassword
+confirm password password aycreateconfirmpassword aycreateconfirmpassword

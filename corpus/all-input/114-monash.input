@@ -1,0 +1,92 @@
+[
+  {
+    "dom": "<input maxlength=\"40\" name=\"p_surname\" onchange=\"this.value=this.value.touppercase(); if (isempty(this.value)) { alert('you must enter details in the family name: field.'); this.focus(); return false; } \" size=\"40\" type=\"text\" value=\"\"/>", 
+    "feature": "p surname text 40", 
+    "rule": {
+      "id": [
+        "surname"
+      ], 
+      "name": [
+        "surname"
+      ]
+    }, 
+    "type": "lname"
+  }, 
+  {
+    "dom": "<input maxlength=\"40\" name=\"p_first_given_name\" onchange=\"this.value=this.value.touppercase(); if (isempty(this.value)) { alert('you must enter details in the given name(s): field.'); this.focus(); return false; } \" size=\"40\" type=\"text\" value=\"\"/>", 
+    "feature": "p first given name text 40", 
+    "rule": {
+      "id": [
+        "first"
+      ], 
+      "name": [
+        "first"
+      ]
+    }, 
+    "type": "fname"
+  }, 
+  {
+    "dom": "<input maxlength=\"50\" name=\"p_apa_email_address\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "text p apa email address 50", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ], 
+      "type": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input maxlength=\"50\" name=\"p_confirm_email_address\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "text p confirm email address 50", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ], 
+      "type": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input maxlength=\"30\" name=\"p_password\" onchange=\"if (isempty(this.value)) { alert('you must enter details in the password: field.'); this.focus(); return false; } \" size=\"30\" type=\"password\" value=\"\"/>", 
+    "feature": "p password password 30", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }, 
+  {
+    "dom": "<input maxlength=\"30\" name=\"p_confirm_password\" onchange=\"if (isempty(this.value)) { alert('you must enter details in the confirm password: field.'); this.focus(); return false; } \" size=\"30\" type=\"password\" value=\"\"/>", 
+    "feature": "p confirm password password 30", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }
+]

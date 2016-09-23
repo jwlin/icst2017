@@ -1,0 +1,9 @@
+enter your email enter your password email password ctl00 content txtemailaddrlogin text ctl00 content txtemailaddrlogin 255
+enter your first name first name ctl00 content txtfirstname text ctl00 content txtfirstname 35
+enter your last name last name ctl00 content txtlastname text ctl00 content txtlastname 60
+ mm dd yyyy enter your birth date enter a valid birth date in mm dd yyyy format birth date ctl00 content txtbirthdate text ctl00 content txtbirthdate 10
+enter a valid email address enter a valid email address email ctl00 content txtemailaddr text ctl00 content txtemailaddr 90
+the email field did not match the email confirm field try again confirm your email address confirm email text ctl00 content txtconfirmemail ctl00 content txtconfirmemail
+enter your email enter your password password email ctl00 content txtpasswordlogin password ctl00 content txtpasswordlogin 15
+enter a password at least 8 characters long but less than 15 consisting of numbers or letters your password must be at least 8 characters long but less than 15 characters long enter your password password password ctl00 content txtpassword ctl00 content txtpassword
+the password field did not match the confirm field try again confirm your password confirm password password ctl00 content txtconfirm ctl00 content txtconfirm

@@ -1,0 +1,3942 @@
+{
+  "0": {
+    "feature": "first given name firstname firstname text", 
+    "type": "fname"
+  }, 
+  "1": {
+    "feature": "middle name s middlenames middlenames text", 
+    "type": "mname"
+  }, 
+  "10": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "100": {
+    "feature": "keyword uconn people q text q", 
+    "type": "search_term"
+  }, 
+  "101": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "102": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "103": {
+    "feature": "e mail is invalid text email email", 
+    "type": "email"
+  }, 
+  "104": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "105": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "106": {
+    "feature": "zip text zip zip", 
+    "type": "zipcode"
+  }, 
+  "107": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "108": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "109": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "11": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "110": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "111": {
+    "feature": "text t3005 100", 
+    "type": "email"
+  }, 
+  "112": {
+    "feature": "text t5111 100", 
+    "type": "email"
+  }, 
+  "113": {
+    "feature": "text t5010 40", 
+    "type": "fname"
+  }, 
+  "114": {
+    "feature": "text t5030 50", 
+    "type": "lname"
+  }, 
+  "115": {
+    "feature": "text t4050 100", 
+    "type": "street-line-1"
+  }, 
+  "116": {
+    "feature": "text t4055 100", 
+    "type": "street-line-2"
+  }, 
+  "117": {
+    "feature": "text t4060 60", 
+    "type": "city"
+  }, 
+  "118": {
+    "feature": "text t4080 20", 
+    "type": "zipcode"
+  }, 
+  "119": {
+    "feature": "password t3010 50", 
+    "type": "pwd"
+  }, 
+  "12": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "120": {
+    "feature": "password t3015 50", 
+    "type": "pwd"
+  }, 
+  "121": {
+    "feature": "first name firstname text firstname 50", 
+    "type": "fname"
+  }, 
+  "122": {
+    "feature": "last name lastname text lastname 50", 
+    "type": "lname"
+  }, 
+  "123": {
+    "feature": "email email email text 70", 
+    "type": "email"
+  }, 
+  "124": {
+    "feature": "confirm email confirmemail text confirmemail 70", 
+    "type": "email"
+  }, 
+  "125": {
+    "feature": "create password password1 password1 password 50", 
+    "type": "pwd"
+  }, 
+  "126": {
+    "feature": "confirm password password2 password2 password 50", 
+    "type": "pwd"
+  }, 
+  "127": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "128": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "129": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "13": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "130": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "131": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "132": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "133": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "134": {
+    "feature": "zip text zip zip", 
+    "type": "zipcode"
+  }, 
+  "135": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "136": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "137": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "138": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "139": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "14": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "140": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "141": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "142": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "143": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "144": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "145": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "146": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "147": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "148": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "149": {
+    "feature": "rit home q search rit text metaritsearchbox 250", 
+    "type": "search_term"
+  }, 
+  "15": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "150": {
+    "feature": "first name text 30", 
+    "type": "fname"
+  }, 
+  "151": {
+    "feature": "middle name text 30", 
+    "type": "mname"
+  }, 
+  "152": {
+    "feature": "last name text 30", 
+    "type": "lname"
+  }, 
+  "153": {
+    "feature": "suffix text 15", 
+    "type": "suffix"
+  }, 
+  "154": {
+    "feature": "email text 70", 
+    "type": "email"
+  }, 
+  "155": {
+    "feature": "text birth date 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "156": {
+    "feature": "address text 55", 
+    "type": "street-line-1"
+  }, 
+  "157": {
+    "feature": "address1 text 55", 
+    "type": "street-line-2"
+  }, 
+  "158": {
+    "feature": "address2 text 55", 
+    "type": "street-line-3"
+  }, 
+  "159": {
+    "feature": "city text 30", 
+    "type": "city"
+  }, 
+  "16": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "160": {
+    "feature": "zip code text 12", 
+    "type": "zipcode"
+  }, 
+  "161": {
+    "feature": "home phone text 24", 
+    "type": "phone"
+  }, 
+  "162": {
+    "feature": "username text username 50", 
+    "type": "uname"
+  }, 
+  "163": {
+    "feature": "confirmusername confirmusername text 50", 
+    "type": "uname"
+  }, 
+  "164": {
+    "feature": "firstname firstname text 50", 
+    "type": "fname"
+  }, 
+  "165": {
+    "feature": "lastname lastname text 50", 
+    "type": "lname"
+  }, 
+  "166": {
+    "feature": "password password password 128", 
+    "type": "pwd"
+  }, 
+  "167": {
+    "feature": "confirmpassword confirmpassword password 128", 
+    "type": "pwd"
+  }, 
+  "168": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "169": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "17": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "170": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "171": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "172": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "173": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "174": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "175": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "176": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "177": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "178": {
+    "feature": "your security code case sensitive um gap derived emailid um gap derived emailid text 70", 
+    "type": "email"
+  }, 
+  "179": {
+    "feature": "required your security code case sensitive what is a security code required forgotten your password required for security purposes please type the six characters shown above into the security code field sign on and register help email address required security code required password required um gap derived um sec cd um gap derived um sec cd text 6", 
+    "type": "captcha"
+  }, 
+  "18": {
+    "feature": "required invalid email address login email address ctl00 contentmain nu tbemail text ctl00 contentmain nu tbemail 100", 
+    "type": "email"
+  }, 
+  "180": {
+    "feature": "default local node dbname portal node workcenter id url text ptus defaultlocalnode psft hr ptus defaultlocalnode", 
+    "type": "default_local_node"
+  }, 
+  "181": {
+    "feature": "dbname default local node portal node workcenter id url text ptus dbname cs89prod ptus dbname", 
+    "type": "db_name"
+  }, 
+  "182": {
+    "feature": "portal dbname default local node node workcenter id url text ptus portal employee ptus portal", 
+    "type": "portal"
+  }, 
+  "183": {
+    "feature": "node portal dbname default local node workcenter id url text ptus node hrms ptus node", 
+    "type": "local_node"
+  }, 
+  "184": {
+    "feature": "workcenter id node portal dbname default local node url text ptus workcenterid ptus workcenterid", 
+    "type": "special_id"
+  }, 
+  "185": {
+    "feature": "url workcenter id node portal dbname default local node text ptus componenturl https pgapplication manchester ac uk psp umgap employee hrms c um gap mnu um gap identify gbl ptus componenturl", 
+    "type": "url"
+  }, 
+  "186": {
+    "feature": "required what is a security code required your security code case sensitive forgotten your password required for security purposes please type the six characters shown above into the security code field sign on and register help security code required email address required password required um gap derived operpswd um gap derived operpswd password 32", 
+    "type": "pwd"
+  }, 
+  "187": {
+    "feature": "user name username user name username text", 
+    "type": "uname"
+  }, 
+  "188": {
+    "feature": "email email email email text", 
+    "type": "email"
+  }, 
+  "189": {
+    "feature": "first given name firstname first name firstname text", 
+    "type": "fname"
+  }, 
+  "19": {
+    "feature": "required first name text ctl00 contentmain nu tbfirstname ctl00 contentmain nu tbfirstname 75", 
+    "type": "fname"
+  }, 
+  "190": {
+    "feature": "middle name middlename middle name middlename text", 
+    "type": "mname"
+  }, 
+  "191": {
+    "feature": "last family name lastname last name lastname text", 
+    "type": "lname"
+  }, 
+  "192": {
+    "feature": "password password password password password", 
+    "type": "pwd"
+  }, 
+  "193": {
+    "feature": "password confirmpassword confirm password password confirmpassword", 
+    "type": "pwd"
+  }, 
+  "194": {
+    "feature": "search q text q 255", 
+    "type": "search_term"
+  }, 
+  "195": {
+    "feature": "applicant s applicant s first given name new first name text new first name 30", 
+    "type": "fname"
+  }, 
+  "196": {
+    "feature": "applicant s applicant s middle name new middle name text new middle name 30", 
+    "type": "mname"
+  }, 
+  "197": {
+    "feature": "applicant s applicant s last family name new last name text new last name 30", 
+    "type": "lname"
+  }, 
+  "198": {
+    "feature": "mm dd yyyy new dob text new dob 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "199": {
+    "feature": "if you do not currently have an e mail account you may create an account for free by using any of the popular e mail websites e g gmail outlook yahoo mail new email address text new email address 50", 
+    "type": "email"
+  }, 
+  "2": {
+    "feature": "last family name lastname lastname text", 
+    "type": "lname"
+  }, 
+  "20": {
+    "feature": "required last name ctl00 contentmain nu tblastname text ctl00 contentmain nu tblastname 75", 
+    "type": "lname"
+  }, 
+  "200": {
+    "feature": "applicant s applicant s e mail address repeat new cemail address new cemail address text 50", 
+    "type": "email"
+  }, 
+  "201": {
+    "feature": "use only characters a z 0 9 e mail address is allowed new username text new username 50", 
+    "type": "uname"
+  }, 
+  "202": {
+    "feature": "password hint password hint answer new answer text new answer 32", 
+    "type": "secure_ans"
+  }, 
+  "203": {
+    "feature": "password new password password new password 12", 
+    "type": "pwd"
+  }, 
+  "204": {
+    "feature": "password again new cpassword password new cpassword2 12", 
+    "type": "pwd"
+  }, 
+  "205": {
+    "feature": "search uofc text q uc global search field", 
+    "type": "search_term"
+  }, 
+  "206": {
+    "feature": "text ctl00 contentplaceholder1 username ctl00 contentplaceholder1 username", 
+    "type": "uname"
+  }, 
+  "207": {
+    "feature": "text ctl00 contentplaceholder1 ucid ctl00 contentplaceholder1 ucid", 
+    "type": "special_id"
+  }, 
+  "208": {
+    "feature": "text ctl00 contentplaceholder1 surname ctl00 contentplaceholder1 surname", 
+    "type": "lname"
+  }, 
+  "209": {
+    "feature": "text ctl00 contentplaceholder1 birthdate ctl00 contentplaceholder1 birthdate", 
+    "type": "date-yyyymmdd"
+  }, 
+  "21": {
+    "feature": "required password does not meet the requirements password ctl00 contentmain nu password1 tbpassword password ctl00 contentmain nu password1 tbpassword 30", 
+    "type": "pwd"
+  }, 
+  "210": {
+    "feature": "text ctl00 contentplaceholder1 email ctl00 contentplaceholder1 email", 
+    "type": "email"
+  }, 
+  "211": {
+    "feature": "text ctl00 contentplaceholder1 display ctl00 contentplaceholder1 display", 
+    "type": "uname"
+  }, 
+  "212": {
+    "feature": "text ctl00 contentplaceholder1 answer1 ctl00 contentplaceholder1 answer1", 
+    "type": "secure_ans"
+  }, 
+  "213": {
+    "feature": "text ctl00 contentplaceholder1 answer2 ctl00 contentplaceholder1 answer2", 
+    "type": "secure_ans"
+  }, 
+  "214": {
+    "feature": "password ctl00 contentplaceholder1 password ctl00 contentplaceholder1 password", 
+    "type": "pwd"
+  }, 
+  "215": {
+    "feature": "password ctl00 contentplaceholder1 passwordconfirm ctl00 contentplaceholder1 passwordconfirm", 
+    "type": "pwd"
+  }, 
+  "216": {
+    "feature": "email required username email required text field loginemail", 
+    "type": "email"
+  }, 
+  "217": {
+    "feature": "first given name firstname first given name text field firstname", 
+    "type": "fname"
+  }, 
+  "218": {
+    "feature": "other given name s middlename other given name s text field middlename", 
+    "type": "mname"
+  }, 
+  "219": {
+    "feature": "family name s required lastname family name s required text field lastname", 
+    "type": "lname"
+  }, 
+  "22": {
+    "feature": "passwords do not match confirm password ctl00 contentmain nu password1 tbpasswordconfirm password ctl00 contentmain nu password1 tbpasswordconfirm 30", 
+    "type": "pwd"
+  }, 
+  "220": {
+    "feature": "email address required email email address required email field email", 
+    "type": "email"
+  }, 
+  "221": {
+    "feature": "confirm email address required confirmemail confirm email address required email field confirmemail", 
+    "type": "email"
+  }, 
+  "222": {
+    "feature": "password required password required password field loginpassword password", 
+    "type": "pwd"
+  }, 
+  "223": {
+    "feature": "password required password required password field password password", 
+    "type": "pwd"
+  }, 
+  "224": {
+    "feature": "confirm password required confirm password required password field confirmpassword confirmpassword", 
+    "type": "pwd"
+  }, 
+  "225": {
+    "feature": "legal first name required applicantinformation txtfirstname text applicantinformation txtfirstname 60", 
+    "type": "fname"
+  }, 
+  "226": {
+    "feature": "legal last name required applicantinformation txtlastname text applicantinformation txtlastname 60", 
+    "type": "lname"
+  }, 
+  "227": {
+    "feature": "middle initial applicantinformation txtinitial text applicantinformation txtinitial 1", 
+    "type": "mname-1-char"
+  }, 
+  "228": {
+    "feature": "other name records may be under applicantinformation txtalias text applicantinformation txtalias 60", 
+    "type": "full_name"
+  }, 
+  "229": {
+    "feature": "required applicantinformation txtxpaddress1 text applicantinformation txtxpaddress1 75", 
+    "type": "street-line-1"
+  }, 
+  "23": {
+    "feature": "text q", 
+    "type": "search_term"
+  }, 
+  "230": {
+    "feature": "address line 2 applicantinformation txtxpaddress2 text applicantinformation txtxpaddress2 75", 
+    "type": "street-line-2"
+  }, 
+  "231": {
+    "feature": "required applicantinformation txtxpcity text applicantinformation txtxpcity 75", 
+    "type": "city"
+  }, 
+  "232": {
+    "feature": "required format required applicantinformation txtxpzip text applicantinformation txtxpzip", 
+    "type": "zipcode"
+  }, 
+  "233": {
+    "feature": "required applicantinformation txtxpintstate text applicantinformation txtxpintstate 35", 
+    "type": "state"
+  }, 
+  "234": {
+    "feature": "zip postal code applicantinformation txtxpintzip text applicantinformation txtxpintzip 14", 
+    "type": "zipcode"
+  }, 
+  "235": {
+    "feature": "required applicantinformation txtxladdress1 text applicantinformation txtxladdress1 75", 
+    "type": "street-line-1"
+  }, 
+  "236": {
+    "feature": "address line 2 applicantinformation txtxladdress2 text applicantinformation txtxladdress2 75", 
+    "type": "street-line-2"
+  }, 
+  "237": {
+    "feature": "required applicantinformation txtxlcity text applicantinformation txtxlcity 75", 
+    "type": "city"
+  }, 
+  "238": {
+    "feature": "required format required applicantinformation txtxlzip text applicantinformation txtxlzip", 
+    "type": "zipcode"
+  }, 
+  "239": {
+    "feature": "required applicantinformation txtxlintstate text applicantinformation txtxlintstate 35", 
+    "type": "state"
+  }, 
+  "24": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "240": {
+    "feature": "zip postal code applicantinformation txtxlintzip text applicantinformation txtxlintzip 14", 
+    "type": "zipcode"
+  }, 
+  "241": {
+    "feature": "home mobile other applicantinformation txtphone text applicantinformation txtphone 16", 
+    "type": "phone"
+  }, 
+  "242": {
+    "feature": "format required international phone numbers cannot contain letters home mobile other applicantinformation txtxlphone text applicantinformation txtxlphone 16", 
+    "type": "phone"
+  }, 
+  "243": {
+    "feature": "international phone numbers cannot contain letters home mobile other applicantinformation txtintphone text applicantinformation txtintphone 26", 
+    "type": "phone"
+  }, 
+  "244": {
+    "feature": "required invalid email applicantinformation txtemail text applicantinformation txtemail 128", 
+    "type": "email"
+  }, 
+  "245": {
+    "feature": "please confirm your email address must match above email applicantinformation txtconfirmemail text applicantinformation txtconfirmemail 128", 
+    "type": "email"
+  }, 
+  "246": {
+    "feature": "required for financial aid processing required invalid ssn citizenshipsection txtssn text citizenshipsection txtssn 20", 
+    "type": "ssn"
+  }, 
+  "247": {
+    "feature": "required a format if your number is 8 digits begin with a followed by a zero citizenshipsection txtaliennumber text citizenshipsection txtaliennumber 20", 
+    "type": "alien_number"
+  }, 
+  "248": {
+    "feature": "required for financial aid processing required invalid ssn citizenshipsection txtalienssn text citizenshipsection txtalienssn 20", 
+    "type": "ssn"
+  }, 
+  "249": {
+    "feature": "create a login id create a login id text login id newid 9", 
+    "type": "uname"
+  }, 
+  "25": {
+    "feature": "middle name text middlename middlename", 
+    "type": "mname"
+  }, 
+  "250": {
+    "feature": "create a pin create a pin password pin id newpin 6", 
+    "type": "short_pwd"
+  }, 
+  "251": {
+    "feature": "verify pin verify pin password verify pin id verifypin 6", 
+    "type": "short_pwd"
+  }, 
+  "252": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "253": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "254": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "255": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "256": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "257": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "258": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "259": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "26": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "260": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "261": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "262": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "263": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "264": {
+    "feature": "dd mm yyyy security question date of birth please enter a current email address and choose a password note the password must be at least 8 characters in length please note your account will expire after 12 months of inactivity you may re register at any time confirm password password email address swiftalertshow swiftvalidationok validation1 register cancel swiftvalidationaction txtuserstatus swiftalertshow swiftvalidationok companyid txtusername text txtusername 100", 
+    "type": "uname"
+  }, 
+  "265": {
+    "feature": "dd mm yyyy security question date of birth please enter a current email address and choose a password note the password must be at least 8 characters in length please note your account will expire after 12 months of inactivity you may re register at any time confirm password password email address swiftalertshow swiftvalidationok validation1 register cancel swiftvalidationaction txtuserstatus swiftalertshow swiftvalidationok companyid swiftvalidationaction validation1 text swiftvalidationaction 250", 
+    "type": "validation_action"
+  }, 
+  "266": {
+    "feature": "dd mm yyyy security question date of birth please enter a current email address and choose a password note the password must be at least 8 characters in length please note your account will expire after 12 months of inactivity you may re register at any time confirm password password email address swiftalertshow swiftvalidationok validation1 register cancel txtuserstatus swiftvalidationaction swiftalertshow swiftvalidationok companyid txtuserstatus text txtuserstatus 1", 
+    "type": "user_status"
+  }, 
+  "267": {
+    "feature": "text swift dms address", 
+    "type": "unknown_hidden"
+  }, 
+  "268": {
+    "feature": "dd mm yyyy security question date of birth please enter a current email address and choose a password note the password must be at least 8 characters in length please note your account will expire after 12 months of inactivity you may re register at any time confirm password password email address swiftalertshow swiftvalidationok validation1 register cancel swiftvalidationaction txtuserstatus swiftalertshow swiftvalidationok companyid txtpassword password txtpassword 100", 
+    "type": "pwd"
+  }, 
+  "269": {
+    "feature": "dd mm yyyy security question date of birth please enter a current email address and choose a password note the password must be at least 8 characters in length please note your account will expire after 12 months of inactivity you may re register at any time confirm password password email address swiftalertshow swiftvalidationok validation1 register cancel swiftvalidationaction txtuserstatus swiftalertshow swiftvalidationok companyid txtconfirmpassword password txtconfirmpassword 100", 
+    "type": "pwd"
+  }, 
+  "27": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "270": {
+    "feature": "first given names first given names txtfirstname text txtfirstname 50", 
+    "type": "fname"
+  }, 
+  "271": {
+    "feature": "surname family name surname family name txtsurname text txtsurname 50", 
+    "type": "lname"
+  }, 
+  "272": {
+    "feature": "email address email address txtemail text txtemail 100", 
+    "type": "email"
+  }, 
+  "273": {
+    "feature": "confirm email address confirm email address txtconfirm text txtconfirm 100", 
+    "type": "email"
+  }, 
+  "274": {
+    "feature": "applicant id text txtapplicantid txtapplicantid 5", 
+    "type": "special_id"
+  }, 
+  "275": {
+    "feature": "q search websites and people search field text", 
+    "type": "search_term"
+  }, 
+  "276": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "277": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "278": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "279": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "28": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "280": {
+    "feature": "required text zip zip", 
+    "type": "zipcode"
+  }, 
+  "281": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "282": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "283": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "284": {
+    "feature": "hobsons data collecting text text741 text741", 
+    "type": "data_collection"
+  }, 
+  "285": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "286": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "287": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "288": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "289": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "29": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "290": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "291": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "292": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "293": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "294": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "295": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "296": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "297": {
+    "feature": "continue user id password confirm password email address first name last name scc nur wrk oprid scc nur wrk oprid text 30", 
+    "type": "uname"
+  }, 
+  "298": {
+    "feature": "continue email address confirm password password user id first name last name scc nur wrk email addr scc nur wrk email addr text 70", 
+    "type": "email"
+  }, 
+  "299": {
+    "feature": "continue first name email address confirm password password user id last name scc nur wrk first name scc nur wrk first name text 30", 
+    "type": "fname"
+  }, 
+  "3": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "30": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "300": {
+    "feature": "continue last name first name email address confirm password password user id scc nur wrk last name scc nur wrk last name text 30", 
+    "type": "lname"
+  }, 
+  "301": {
+    "feature": "if you have already created an account with this system enter your application user id and password below sign in forgot your user id forgot your password user id password nyu aws derived oprid nyu aws derived oprid text 30", 
+    "type": "uname"
+  }, 
+  "302": {
+    "feature": "default local node dbname portal node workcenter id url text ptus defaultlocalnode wsq campus ptus defaultlocalnode", 
+    "type": "default_local_node"
+  }, 
+  "303": {
+    "feature": "dbname default local node portal node workcenter id url text ptus dbname csprod ptus dbname", 
+    "type": "db_name"
+  }, 
+  "304": {
+    "feature": "portal dbname default local node node workcenter id url text ptus portal employee ptus portal", 
+    "type": "portal"
+  }, 
+  "305": {
+    "feature": "node portal dbname default local node workcenter id url text ptus node hrms ptus node", 
+    "type": "local_node"
+  }, 
+  "306": {
+    "feature": "workcenter id node portal dbname default local node url text ptus workcenterid ptus workcenterid", 
+    "type": "special_id"
+  }, 
+  "307": {
+    "feature": "url workcenter id node portal dbname default local node text ptus componenturl https sis nyu edu psp csprod employee hrms c nyu aws ss nyu aaws login gbl ptus componenturl", 
+    "type": "url"
+  }, 
+  "308": {
+    "feature": "continue password user id confirm password email address first name last name scc nur wrk password scc nur wrk password password 254", 
+    "type": "pwd"
+  }, 
+  "309": {
+    "feature": "continue confirm password password user id email address first name last name scc nur wrk password confirm scc nur wrk password confirm password 254", 
+    "type": "pwd"
+  }, 
+  "31": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "310": {
+    "feature": "if you have already created an account with this system enter your application user id and password below sign in forgot your user id forgot your password password user id nyu aws derived password nyu aws derived password password 254", 
+    "type": "pwd"
+  }, 
+  "311": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "312": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "313": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "314": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "315": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "316": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "317": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "318": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "319": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "32": {
+    "feature": "required text date563 date563", 
+    "type": "date"
+  }, 
+  "320": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "321": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "322": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "323": {
+    "feature": "email email email text 255", 
+    "type": "email"
+  }, 
+  "324": {
+    "feature": "verification code authkey authkey text 4", 
+    "type": "captcha"
+  }, 
+  "325": {
+    "feature": "password password password password 12", 
+    "type": "pwd"
+  }, 
+  "326": {
+    "feature": "confirm password password cfm password cfm password 12", 
+    "type": "pwd"
+  }, 
+  "327": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "328": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "329": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "33": {
+    "feature": "email alternate text text581 text581", 
+    "type": "email"
+  }, 
+  "330": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "331": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "332": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "333": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "334": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "335": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "336": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "337": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "338": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "339": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "34": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "340": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "341": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "342": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "343": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "344": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "345": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "346": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "347": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "348": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "349": {
+    "feature": "given name forename ipu fnm1 ipu srs 1 text ipu fnm1 30", 
+    "type": "fname"
+  }, 
+  "35": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "350": {
+    "feature": "family name surname ipu surn ipu srs 1 text ipu surn 40", 
+    "type": "lname"
+  }, 
+  "351": {
+    "feature": "date of birth dd mm yyyy ipu dob ipu srs 1 text ipu dob 11", 
+    "type": "date-dd/mm/yyyy"
+  }, 
+  "352": {
+    "feature": "username email address text usercode ipu srs 1 usercode", 
+    "type": "email"
+  }, 
+  "353": {
+    "feature": "confirm username email address ipu haem ipu srs 1 text ipu haem 255", 
+    "type": "email"
+  }, 
+  "354": {
+    "feature": "password password password1 ipu srs 1 password1", 
+    "type": "pwd"
+  }, 
+  "355": {
+    "feature": "confirm password password password2 ipu srs 1 password2", 
+    "type": "pwd"
+  }, 
+  "356": {
+    "feature": "email email email text 255", 
+    "type": "email"
+  }, 
+  "357": {
+    "feature": "email confirm email cfm email cfm text 255", 
+    "type": "email"
+  }, 
+  "358": {
+    "feature": "please input 4 digit verification code authkey text authkey", 
+    "type": "captcha"
+  }, 
+  "359": {
+    "feature": "password password password password", 
+    "type": "pwd"
+  }, 
+  "36": {
+    "feature": "given name ctl00 content eappart personal txtgvnname inputcontrol text ctl00 content eappart personal txtgvnname inputcontrol 40", 
+    "type": "fname"
+  }, 
+  "360": {
+    "feature": "your password can be 6 12 characters a z or 0 9 and cannot contain any spaces enter the same password in password confirm box to make sure you typed it correctly password password cfm password cfm", 
+    "type": "pwd"
+  }, 
+  "361": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "362": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "363": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "364": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "365": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "366": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "367": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "368": {
+    "feature": "zip text zip zip", 
+    "type": "zipcode"
+  }, 
+  "369": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "37": {
+    "feature": "other given name s ctl00 content eappart personal txtothname inputcontrol text ctl00 content eappart personal txtothname inputcontrol 40", 
+    "type": "fname"
+  }, 
+  "370": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "371": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "372": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "373": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "374": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "375": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "376": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "377": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "378": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "379": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "38": {
+    "feature": "preferred given name ctl00 content eappart personal txtprefname inputcontrol text ctl00 content eappart personal txtprefname inputcontrol 40", 
+    "type": "fname"
+  }, 
+  "380": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "381": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "382": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "383": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "384": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "385": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "386": {
+    "feature": "required text zip zip", 
+    "type": "zipcode"
+  }, 
+  "387": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "388": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "389": {
+    "feature": "inquiry date text date483 date483", 
+    "type": "date"
+  }, 
+  "39": {
+    "feature": "family name must be entered ctl00 content eappart personal txtfamname inputcontrol text ctl00 content eappart personal txtfamname inputcontrol 80", 
+    "type": "lname"
+  }, 
+  "390": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "391": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "392": {
+    "feature": "last name family name surname applicant last name applicant last name text", 
+    "type": "lname"
+  }, 
+  "393": {
+    "feature": "first name given name applicant first name text applicant first name", 
+    "type": "fname"
+  }, 
+  "394": {
+    "feature": "middle name applicant middle name text applicant middle name", 
+    "type": "mname"
+  }, 
+  "395": {
+    "feature": "email email applicant email applicant email", 
+    "type": "email"
+  }, 
+  "396": {
+    "feature": "password password applicant password applicant password", 
+    "type": "pwd"
+  }, 
+  "397": {
+    "feature": "password confirmation password applicant password confirmation applicant password confirmation", 
+    "type": "pwd"
+  }, 
+  "398": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "399": {
+    "feature": "middle name text middlename middlename", 
+    "type": "mname"
+  }, 
+  "4": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "40": {
+    "feature": "previous family name ctl00 content eappart personal txtprevfamname inputcontrol text ctl00 content eappart personal txtprevfamname inputcontrol 40", 
+    "type": "lname"
+  }, 
+  "400": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "401": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "402": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "403": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "404": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "405": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "406": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "407": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "408": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "409": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "41": {
+    "feature": "email address must be entered the entered email address does not appear to be a validly formed email address ctl00 content eappart contact txtemail inputcontrol text ctl00 content eappart contact txtemail inputcontrol 255", 
+    "type": "email"
+  }, 
+  "410": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "411": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "412": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "413": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "414": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "415": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "416": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "417": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "418": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "419": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "42": {
+    "feature": "confirm email address must be entered the confirm email doesn t match your email ctl00 content eappart contact txtemailconfirm inputcontrol text ctl00 content eappart contact txtemailconfirm inputcontrol 255", 
+    "type": "email"
+  }, 
+  "420": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "421": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "422": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "423": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "424": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "425": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "426": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "427": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "428": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "429": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "43": {
+    "feature": "home phone text ctl00 content eappart contact repphone ctl00 txtphone inputcontrol ctl00 content eappart contact repphone ctl00 txtphone inputcontrol 20", 
+    "type": "phone"
+  }, 
+  "430": {
+    "feature": "personal identification number pin personal identification number pin applicantpin password applicantpin 6", 
+    "type": "short_pwd"
+  }, 
+  "431": {
+    "feature": "verify pin verify pin confirmedapplicantpin password confirmedapplicantpin 6", 
+    "type": "short_pwd"
+  }, 
+  "432": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "433": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "434": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "435": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "436": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "437": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "438": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "439": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "44": {
+    "feature": "work phone text ctl00 content eappart contact repphone ctl01 txtphone inputcontrol ctl00 content eappart contact repphone ctl01 txtphone inputcontrol 20", 
+    "type": "phone"
+  }, 
+  "440": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "441": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "442": {
+    "feature": "last name or family name or surname text s user last nm s user last nm 30", 
+    "type": "lname"
+  }, 
+  "443": {
+    "feature": "first name or given name text s user first nm s user first nm 20", 
+    "type": "fname"
+  }, 
+  "444": {
+    "feature": "middle name text s user middle nm s user middle nm 20", 
+    "type": "mname"
+  }, 
+  "445": {
+    "feature": "suffix e g jr iii etc but do not enter mr mrs ms etc s user suffix nm text s user suffix nm 5", 
+    "type": "suffix"
+  }, 
+  "446": {
+    "feature": "birthdate 4 digit year birthdate day birthdate month date of birth 4 digit year s user dob cy text s user dob cy 4", 
+    "type": "year-yyyy"
+  }, 
+  "447": {
+    "feature": "city text s city of birth s city of birth 22", 
+    "type": "city"
+  }, 
+  "448": {
+    "feature": "4 digit year permanent resident card issued day permanent resident card issued month permanent resident card issued permanent resident card s alien num issued cy text s alien num issued cy 4", 
+    "type": "year-yyyy"
+  }, 
+  "449": {
+    "feature": "alien number text s alien num s alien num 12", 
+    "type": "alien_number"
+  }, 
+  "45": {
+    "feature": "mobile phone text ctl00 content eappart contact repphone ctl02 txtphone inputcontrol ctl00 content eappart contact repphone ctl02 txtphone inputcontrol 20", 
+    "type": "phone"
+  }, 
+  "450": {
+    "feature": "e mail address text s user email s user email 75", 
+    "type": "email"
+  }, 
+  "451": {
+    "feature": "confirm e mail address please re type email address text s confirm email s confirm email 75", 
+    "type": "email"
+  }, 
+  "452": {
+    "feature": "street address line 1 address only do not re enter your name include apartment number if you have one text s user perm addr1 s user perm addr1 40", 
+    "type": "street-line-1"
+  }, 
+  "453": {
+    "feature": "street address line 2 use only if street address line 1 is too long text s user perm addr2 s user perm addr2 40", 
+    "type": "street-line-2"
+  }, 
+  "454": {
+    "feature": "city text s user perm city s user perm city 22", 
+    "type": "city"
+  }, 
+  "455": {
+    "feature": "postal zip code do not include dashes text s user perm postal code s user perm postal code 14", 
+    "type": "zipcode"
+  }, 
+  "456": {
+    "feature": "street address if different from permanent address include apartment number if you have one text s user area addr1 s user area addr1 40", 
+    "type": "street-line-1"
+  }, 
+  "457": {
+    "feature": "street address line 2 use only if street address line 1 is too long text s user area addr2 s user area addr2 40", 
+    "type": "street-line-2"
+  }, 
+  "458": {
+    "feature": "city text s user area city s user area city 22", 
+    "type": "city"
+  }, 
+  "459": {
+    "feature": "postal zip code do not include dashes text s user area postal code s user area postal code 14", 
+    "type": "zipcode"
+  }, 
+  "46": {
+    "feature": "address line 1 must be entered ctl00 content eappart address txtaddrline1 inputcontrol text ctl00 content eappart address txtaddrline1 inputcontrol 50", 
+    "type": "street-line-1"
+  }, 
+  "460": {
+    "feature": "4 digit year day month physical address is good until physical address good until s user area good cy text s user area good cy 4", 
+    "type": "year-yyyy"
+  }, 
+  "461": {
+    "feature": "required preferred phone required numbers only text s primary phone s primary phone 12", 
+    "type": "phone"
+  }, 
+  "462": {
+    "feature": "preferred phone country code if not a u s number s user perm ph country code text s user perm ph country code 3", 
+    "type": "phone-prefix"
+  }, 
+  "463": {
+    "feature": "alternate phone numbers only text s alternate phone s alternate phone 12", 
+    "type": "phone"
+  }, 
+  "464": {
+    "feature": "alternate phone country code if not a u s number s user area ph country code text s user area ph country code 3", 
+    "type": "phone-prefix"
+  }, 
+  "465": {
+    "feature": "first name text s emer contact first nm s emer contact first nm 15", 
+    "type": "fname"
+  }, 
+  "466": {
+    "feature": "last name text s emer contact last nm s emer contact last nm 30", 
+    "type": "lname"
+  }, 
+  "467": {
+    "feature": "phone numbers only include country code if applicable text s emer contact phone s emer contact phone 15", 
+    "type": "phone"
+  }, 
+  "468": {
+    "feature": "street address text s emer contact addr1 s emer contact addr1 35", 
+    "type": "street-line-1"
+  }, 
+  "469": {
+    "feature": "street address line 2 text s emer contact addr2 s emer contact addr2 35", 
+    "type": "street-line-2"
+  }, 
+  "47": {
+    "feature": "address line 2 ctl00 content eappart address txtaddrline2 inputcontrol text ctl00 content eappart address txtaddrline2 inputcontrol 50", 
+    "type": "street-line-2"
+  }, 
+  "470": {
+    "feature": "city text s emer contact city s emer contact city 22", 
+    "type": "city"
+  }, 
+  "471": {
+    "feature": "postal zip code s emer contact postal code text s emer contact postal code 14", 
+    "type": "zipcode"
+  }, 
+  "472": {
+    "feature": "e mail address text s emer contact email s emer contact email 75", 
+    "type": "email"
+  }, 
+  "473": {
+    "feature": "answer text s pw q answer1 s pw q answer1 30", 
+    "type": "secure_ans"
+  }, 
+  "474": {
+    "feature": "answer text s pw q answer2 s pw q answer2 30", 
+    "type": "secure_ans"
+  }, 
+  "475": {
+    "feature": "answer text s pw q answer3 s pw q answer3 30", 
+    "type": "secure_ans"
+  }, 
+  "476": {
+    "feature": "answer text s pw q answer4 s pw q answer4 30", 
+    "type": "secure_ans"
+  }, 
+  "477": {
+    "feature": "answer text s pw q answer5 s pw q answer5 30", 
+    "type": "secure_ans"
+  }, 
+  "478": {
+    "feature": "password password s inpwd s user pwd 12", 
+    "type": "pwd"
+  }, 
+  "479": {
+    "feature": "confirm password password s user pwd confirm s user pwd confirm 12", 
+    "type": "pwd"
+  }, 
+  "48": {
+    "feature": "address line 3 ctl00 content eappart address txtaddrline3 inputcontrol text ctl00 content eappart address txtaddrline3 inputcontrol 50", 
+    "type": "street-line-3"
+  }, 
+  "480": {
+    "feature": "same as above text ctl00 cphmain txtstudentnumber ctl00 cphmain txtstudentnumber 10", 
+    "type": "special_id"
+  }, 
+  "481": {
+    "feature": "same as above text ctl00 cphmain txtgivenname ctl00 cphmain txtgivenname 40", 
+    "type": "fname"
+  }, 
+  "482": {
+    "feature": "same as above text ctl00 cphmain txtsurname ctl00 cphmain txtsurname 40", 
+    "type": "lname"
+  }, 
+  "483": {
+    "feature": "same as above text ctl00 cphmain txtprevsurname ctl00 cphmain txtprevsurname 40", 
+    "type": "lname"
+  }, 
+  "484": {
+    "feature": "same as above text ctl00 cphmain txttelephonearea ctl00 cphmain txttelephonearea 3", 
+    "type": "phone-prefix"
+  }, 
+  "485": {
+    "feature": "same as above text ctl00 cphmain txttelephoneexchange ctl00 cphmain txttelephoneexchange 3", 
+    "type": "phone-middle"
+  }, 
+  "486": {
+    "feature": "same as above text ctl00 cphmain txttelephone ctl00 cphmain txttelephone 4", 
+    "type": "phone-postfix"
+  }, 
+  "487": {
+    "feature": "same as above text ctl00 cphmain txttelephoneforeign ctl00 cphmain txttelephoneforeign 40", 
+    "type": "phone"
+  }, 
+  "488": {
+    "feature": "same as above text ctl00 cphmain txtworknumberarea ctl00 cphmain txtworknumberarea 3", 
+    "type": "phone-prefix"
+  }, 
+  "489": {
+    "feature": "same as above text ctl00 cphmain txtworknumberexchange ctl00 cphmain txtworknumberexchange 3", 
+    "type": "phone-middle"
+  }, 
+  "49": {
+    "feature": "suburb town must be entered ctl00 content eappart address txtaddrsuburb inputcontrol text ctl00 content eappart address txtaddrsuburb inputcontrol 50", 
+    "type": "city"
+  }, 
+  "490": {
+    "feature": "same as above text ctl00 cphmain txtworknumber ctl00 cphmain txtworknumber 4", 
+    "type": "phone-postfix"
+  }, 
+  "491": {
+    "feature": "same as above text ctl00 cphmain txtworkextension ctl00 cphmain txtworkextension 4", 
+    "type": "phone-ext"
+  }, 
+  "492": {
+    "feature": "same as above text ctl00 cphmain txtworknumberforeign ctl00 cphmain txtworknumberforeign 40", 
+    "type": "phone"
+  }, 
+  "493": {
+    "feature": "same as above text ctl00 cphmain txtfaxnumberarea ctl00 cphmain txtfaxnumberarea 3", 
+    "type": "phone-prefix"
+  }, 
+  "494": {
+    "feature": "same as above text ctl00 cphmain txtfaxnumberexchange ctl00 cphmain txtfaxnumberexchange 3", 
+    "type": "phone-middle"
+  }, 
+  "495": {
+    "feature": "same as above text ctl00 cphmain txtfaxnumber ctl00 cphmain txtfaxnumber 4", 
+    "type": "phone-postfix"
+  }, 
+  "496": {
+    "feature": "same as above text ctl00 cphmain txtfaxnumberforeign ctl00 cphmain txtfaxnumberforeign 40", 
+    "type": "phone"
+  }, 
+  "497": {
+    "feature": "same as above text ctl00 cphmain txtemail ctl00 cphmain txtemail 50", 
+    "type": "email"
+  }, 
+  "498": {
+    "feature": "same as above ctl00 cphmain txtconfirmemail text ctl00 cphmain txtconfirmemail 50", 
+    "type": "email"
+  }, 
+  "499": {
+    "feature": "same as above ctl00 cphmain txtmailcareof text ctl00 cphmain txtmailcareof 60", 
+    "type": "full_name"
+  }, 
+  "5": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "50": {
+    "feature": "state ctl00 content eappart address txtaddrstate inputcontrol text ctl00 content eappart address txtaddrstate inputcontrol 40", 
+    "type": "state"
+  }, 
+  "500": {
+    "feature": "same as above ctl00 cphmain txtmailstreet text ctl00 cphmain txtmailstreet 54", 
+    "type": "street"
+  }, 
+  "501": {
+    "feature": "same as above ctl00 cphmain txtmailapartment text ctl00 cphmain txtmailapartment 5", 
+    "type": "room_number"
+  }, 
+  "502": {
+    "feature": "same as above ctl00 cphmain txtmailcity text ctl00 cphmain txtmailcity 60", 
+    "type": "city"
+  }, 
+  "503": {
+    "feature": "same as above ctl00 cphmain txtmailpostalcd text ctl00 cphmain txtmailpostalcd 12", 
+    "type": "zipcode"
+  }, 
+  "504": {
+    "feature": "same as above ctl00 cphmain txtcareof text ctl00 cphmain txtcareof 60", 
+    "type": "full_name"
+  }, 
+  "505": {
+    "feature": "same as above ctl00 cphmain txtstreet text ctl00 cphmain txtstreet 54", 
+    "type": "street"
+  }, 
+  "506": {
+    "feature": "same as above ctl00 cphmain txtapartment text ctl00 cphmain txtapartment 5", 
+    "type": "room_number"
+  }, 
+  "507": {
+    "feature": "same as above ctl00 cphmain txtcity text ctl00 cphmain txtcity 60", 
+    "type": "city"
+  }, 
+  "508": {
+    "feature": "same as above ctl00 cphmain txtpostalcd text ctl00 cphmain txtpostalcd 12", 
+    "type": "zipcode"
+  }, 
+  "509": {
+    "feature": "same as above password ctl00 cphmain txtpassword1 ctl00 cphmain txtpassword1 20", 
+    "type": "pwd"
+  }, 
+  "51": {
+    "feature": "postcode ctl00 content eappart address txtaddrpostcode inputcontrol text ctl00 content eappart address txtaddrpostcode inputcontrol 15", 
+    "type": "zipcode"
+  }, 
+  "510": {
+    "feature": "same as above password ctl00 cphmain txtpassword2 ctl00 cphmain txtpassword2 20", 
+    "type": "pwd"
+  }, 
+  "511": {
+    "feature": "text first name 35", 
+    "type": "fname"
+  }, 
+  "512": {
+    "feature": "text last name 35", 
+    "type": "lname"
+  }, 
+  "513": {
+    "feature": "text email 35", 
+    "type": "email"
+  }, 
+  "514": {
+    "feature": "text check email 35", 
+    "type": "email"
+  }, 
+  "515": {
+    "feature": "text login name 25", 
+    "type": "uname"
+  }, 
+  "516": {
+    "feature": "password password 25", 
+    "type": "pwd"
+  }, 
+  "517": {
+    "feature": "password check password 25", 
+    "type": "pwd"
+  }, 
+  "518": {
+    "feature": "origin key text useroriginkey data user origin key", 
+    "type": "special_id"
+  }, 
+  "519": {
+    "feature": "email data user email email useremail 255", 
+    "type": "email"
+  }, 
+  "52": {
+    "feature": "firstname text 30", 
+    "type": "fname"
+  }, 
+  "520": {
+    "feature": "password password userpassword data user password", 
+    "type": "pwd"
+  }, 
+  "521": {
+    "feature": "confirm password password userconfirmpassword data user confirm password", 
+    "type": "pwd"
+  }, 
+  "522": {
+    "feature": "first name text firstname firstname", 
+    "type": "fname"
+  }, 
+  "523": {
+    "feature": "middle name text middlename middlename", 
+    "type": "mname"
+  }, 
+  "524": {
+    "feature": "last name text lastname lastname", 
+    "type": "lname"
+  }, 
+  "525": {
+    "feature": "previous name text previousname previousname", 
+    "type": "full_name"
+  }, 
+  "526": {
+    "feature": "date of birth text dateofbirth dateofbirth", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "527": {
+    "feature": "email address text emailaddress emailaddress", 
+    "type": "email"
+  }, 
+  "528": {
+    "feature": "password password password password", 
+    "type": "pwd"
+  }, 
+  "529": {
+    "feature": "confirm password password confirmpassword confirmpassword", 
+    "type": "pwd"
+  }, 
+  "53": {
+    "feature": "middlename text 30", 
+    "type": "mname"
+  }, 
+  "530": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "531": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "532": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "533": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "534": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "535": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "536": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "537": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "538": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "539": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "54": {
+    "feature": "lastname text 30", 
+    "type": "lname"
+  }, 
+  "540": {
+    "feature": "legal first name text processrequest firstname processrequest firstname", 
+    "type": "fname"
+  }, 
+  "541": {
+    "feature": "middle name text processrequest middlename processrequest middlename", 
+    "type": "mname"
+  }, 
+  "542": {
+    "feature": "legal last name text processrequest lastname processrequest lastname", 
+    "type": "lname"
+  }, 
+  "543": {
+    "feature": "address line 1 processrequest address1 text processrequest address1 55", 
+    "type": "street-line-1"
+  }, 
+  "544": {
+    "feature": "address line 2 processrequest address2 text processrequest address2 55", 
+    "type": "street-line-2"
+  }, 
+  "545": {
+    "feature": "address line 3 processrequest address3 text processrequest address3 55", 
+    "type": "street-line-3"
+  }, 
+  "546": {
+    "feature": "city processrequest city text processrequest city 30", 
+    "type": "city"
+  }, 
+  "547": {
+    "feature": "postal code processrequest postalcode text processrequest postalcode 12", 
+    "type": "zipcode"
+  }, 
+  "548": {
+    "feature": "phone text processrequest telephone processrequest telephone", 
+    "type": "phone"
+  }, 
+  "549": {
+    "feature": "e mail address text processrequest emailaddress processrequest emailaddress", 
+    "type": "email"
+  }, 
+  "55": {
+    "feature": "visanumber text 15", 
+    "type": "visa_number"
+  }, 
+  "550": {
+    "feature": "social security number text processrequest nationalid processrequest nationalid", 
+    "type": "ssn"
+  }, 
+  "551": {
+    "feature": "new password password password password", 
+    "type": "pwd"
+  }, 
+  "552": {
+    "feature": "confirm password password password2 password2", 
+    "type": "pwd"
+  }, 
+  "553": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "554": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "555": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "556": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "557": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "558": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "559": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "56": {
+    "feature": "emailaddress text 70", 
+    "type": "email"
+  }, 
+  "560": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "561": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "562": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "563": {
+    "feature": "first name first name mainform firstname text mainform firstname 255", 
+    "type": "fname"
+  }, 
+  "564": {
+    "feature": "last name last name text mainform lastname mainform lastname 255", 
+    "type": "lname"
+  }, 
+  "565": {
+    "feature": "enter your email confirm your email enter your email confirm your email text mainform email mainform email 40", 
+    "type": "email"
+  }, 
+  "566": {
+    "feature": "confirm your email enter your email confirm your email enter your email text mainform confirmemail mainform confirmemail 40", 
+    "type": "email"
+  }, 
+  "567": {
+    "feature": "cwl login name cwl login name mainform loginname text mainform loginname 8", 
+    "type": "uname"
+  }, 
+  "568": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "569": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "57": {
+    "feature": "emailaddress2 text 70", 
+    "type": "email"
+  }, 
+  "570": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "571": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "572": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "573": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "574": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "575": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "576": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "577": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "578": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "579": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "58": {
+    "feature": "text login 14", 
+    "type": "uname"
+  }, 
+  "580": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "581": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "582": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "583": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "584": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "585": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "586": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "587": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "588": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "589": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "59": {
+    "feature": "password password 14", 
+    "type": "pwd"
+  }, 
+  "590": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "591": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "592": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "593": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "594": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "595": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "596": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "597": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "598": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "599": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "6": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "60": {
+    "feature": "password password2 14", 
+    "type": "pwd"
+  }, 
+  "600": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "601": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "602": {
+    "feature": "according to official document familyname familyname text 30", 
+    "type": "lname"
+  }, 
+  "603": {
+    "feature": "according to official document e g marc peter ralph givenname givenname text 30", 
+    "type": "fname"
+  }, 
+  "604": {
+    "feature": "first name for correspondence e g marc preferredgivenname preferredgivenname text 30", 
+    "type": "fname"
+  }, 
+  "605": {
+    "feature": "if any previousname previousname text 30", 
+    "type": "full_name"
+  }, 
+  "606": {
+    "feature": "date format yyyy mm dd dateofbirth birthdate text 10", 
+    "type": "date-yyyy-mm-dd"
+  }, 
+  "607": {
+    "feature": "swiss social security number socialsecuritynum1 756 text socialsecuritynum1 3", 
+    "type": "ssn-swiss-prefix-3"
+  }, 
+  "608": {
+    "feature": "swiss social security number socialsecuritynum2 socialsecuritynum2 text 4", 
+    "type": "ssn-swiss-middle-4"
+  }, 
+  "609": {
+    "feature": "swiss social security number socialsecuritynum3 socialsecuritynum3 text 4", 
+    "type": "ssn-swiss-middle-4"
+  }, 
+  "61": {
+    "feature": "first given name firstname text firstname 50", 
+    "type": "fname"
+  }, 
+  "610": {
+    "feature": "swiss social security number socialsecuritynum4 socialsecuritynum4 text 2", 
+    "type": "ssn-swiss-postfix-2"
+  }, 
+  "611": {
+    "feature": "important note if you change your e mail address your login name will also change emailaddress emailaddress text 400", 
+    "type": "email"
+  }, 
+  "612": {
+    "feature": "additional e g c o miller permanentco text permanentco 34", 
+    "type": "address-additional"
+  }, 
+  "613": {
+    "feature": "additional e g c o miller studiesco text studiesco 34", 
+    "type": "address-additional"
+  }, 
+  "614": {
+    "feature": "street and number permanentstr text permanentstr 34", 
+    "type": "street-line-1"
+  }, 
+  "615": {
+    "feature": "street and number studiesstr text studiesstr 34", 
+    "type": "street-line-1"
+  }, 
+  "616": {
+    "feature": "additional permanentadd text permanentadd 34", 
+    "type": "street-line-2"
+  }, 
+  "617": {
+    "feature": "additional studiesadd text studiesadd 34", 
+    "type": "street-line-2"
+  }, 
+  "618": {
+    "feature": "zipcode permanentpostalcode text permanentpostalcode 10", 
+    "type": "zipcode"
+  }, 
+  "619": {
+    "feature": "zipcode studiespostalcode text studiespostalcode 10", 
+    "type": "zipcode"
+  }, 
+  "62": {
+    "feature": "middle name middlename text middlename 50", 
+    "type": "mname"
+  }, 
+  "620": {
+    "feature": "town permanentcity text permanentcity 27", 
+    "type": "city"
+  }, 
+  "621": {
+    "feature": "town studiescity text studiescity 27", 
+    "type": "city"
+  }, 
+  "622": {
+    "feature": "phone permanenttel text permanenttel 20", 
+    "type": "phone"
+  }, 
+  "623": {
+    "feature": "phone studiestel text studiestel 20", 
+    "type": "phone"
+  }, 
+  "624": {
+    "feature": "mobile phone privatemobile text privatemobile 20", 
+    "type": "phone"
+  }, 
+  "625": {
+    "feature": "password must consist of at least 6 characters plus 2 digits password password password 32", 
+    "type": "complex_pwd"
+  }, 
+  "626": {
+    "feature": "repeat password password2 password password2 32", 
+    "type": "pwd"
+  }, 
+  "627": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "628": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "629": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "63": {
+    "feature": "last family name lastname text lastname 50", 
+    "type": "lname"
+  }, 
+  "630": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "631": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "632": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "633": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "634": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "635": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "636": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "637": {
+    "feature": "email required email address text ctl00 cphcontent tbexistingemail ctl00 cphcontent tbexistingemail", 
+    "type": "email"
+  }, 
+  "638": {
+    "feature": "ucsb net id required ucsb net id text ctl00 cphcontent tbucsbnetid ctl00 cphcontent tbucsbnetid", 
+    "type": "special_id"
+  }, 
+  "639": {
+    "feature": "first name required first name ctl00 cphcontent tbfirstname text ctl00 cphcontent tbfirstname", 
+    "type": "fname"
+  }, 
+  "64": {
+    "feature": "for example your nickname other first names for example your nickname otherfirstname text otherfirstname 50", 
+    "type": "fname"
+  }, 
+  "640": {
+    "feature": "last name required last name ctl00 cphcontent tblastname text ctl00 cphcontent tblastname", 
+    "type": "lname"
+  }, 
+  "641": {
+    "feature": "email required email format invalid email address ctl00 cphcontent tbnewemail text ctl00 cphcontent tbnewemail", 
+    "type": "email"
+  }, 
+  "642": {
+    "feature": "password required password password ctl00 cphcontent tbexistingpassword ctl00 cphcontent tbexistingpassword", 
+    "type": "pwd"
+  }, 
+  "643": {
+    "feature": "password required password password ctl00 cphcontent tbnetidpassword ctl00 cphcontent tbnetidpassword", 
+    "type": "pwd"
+  }, 
+  "644": {
+    "feature": "password required password must be at least 8 characters password minimum 8 characters ctl00 cphcontent tbnewpassword password ctl00 cphcontent tbnewpassword", 
+    "type": "pwd"
+  }, 
+  "645": {
+    "feature": "confirm password required passwords do not match confirm password ctl00 cphcontent tbconfirmpassword password ctl00 cphcontent tbconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "646": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "647": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "648": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "649": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "65": {
+    "feature": "for example your maiden name other last names for example your maiden name otherlastname text otherlastname 50", 
+    "type": "lname"
+  }, 
+  "650": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "651": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "652": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "653": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "654": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "655": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "656": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "657": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "658": {
+    "feature": "q text search", 
+    "type": "search_term"
+  }, 
+  "659": {
+    "feature": "first given name first name text first name 20", 
+    "type": "fname"
+  }, 
+  "66": {
+    "feature": "city or town of birth text cityortownofbirth cityortownofbirth", 
+    "type": "city"
+  }, 
+  "660": {
+    "feature": "middle name mid name text mid name 20", 
+    "type": "mname"
+  }, 
+  "661": {
+    "feature": "last name surname last name text last name 30", 
+    "type": "lname"
+  }, 
+  "662": {
+    "feature": "student email address email addr text email addr 50", 
+    "type": "email"
+  }, 
+  "663": {
+    "feature": "confirm student email address confirm email addr text confirm email addr 50", 
+    "type": "email"
+  }, 
+  "664": {
+    "feature": "email address parent email addr text parent email addr 50", 
+    "type": "email"
+  }, 
+  "665": {
+    "feature": "confirm email address confirm parent email addr text confirm parent email addr 50", 
+    "type": "email"
+  }, 
+  "666": {
+    "feature": "security question security question text security question 255", 
+    "type": "secure_q"
+  }, 
+  "667": {
+    "feature": "security answer security answer text security answer 45", 
+    "type": "secure_ans"
+  }, 
+  "668": {
+    "feature": "minimum of 6 characters maximum of 25 characters username form username text form username 25", 
+    "type": "uname"
+  }, 
+  "669": {
+    "feature": "minimum of 6 characters maximum of 25 characters same name as parent grandparent set birth date carefully it cannot be changed after account creation username password password again security question security answer email address confirm email address first given name middle name last name surname generation name birth date birth date day birth date year student email address confirm student email address text admissions hidden input guess admissions hidden input guess", 
+    "type": "captcha"
+  }, 
+  "67": {
+    "feature": "why do we ask for your ssn u s social security number why do we ask for your ssn studentssna text studentssna 3", 
+    "type": "ssn-prefix"
+  }, 
+  "670": {
+    "feature": "password password form password form password", 
+    "type": "pwd"
+  }, 
+  "671": {
+    "feature": "password again password form password2 form password2", 
+    "type": "pwd"
+  }, 
+  "672": {
+    "feature": "mm dd yyyy 00000 for international applicants firstname text 100", 
+    "type": "fname"
+  }, 
+  "673": {
+    "feature": "mm dd yyyy 00000 for international applicants lastname text 100", 
+    "type": "lname"
+  }, 
+  "674": {
+    "feature": "mm dd yyyy 00000 for international applicants email text 255", 
+    "type": "email"
+  }, 
+  "675": {
+    "feature": "mm dd yyyy 00000 for international applicants email2 text 255", 
+    "type": "email"
+  }, 
+  "676": {
+    "feature": "mm dd yyyy birthdate text 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "677": {
+    "feature": "00000 for international applicants zip5 text 5", 
+    "type": "zipcode"
+  }, 
+  "678": {
+    "feature": "mm dd yyyy 00000 for international applicants password password", 
+    "type": "pwd"
+  }, 
+  "679": {
+    "feature": "mm dd yyyy 00000 for international applicants password password2", 
+    "type": "pwd"
+  }, 
+  "68": {
+    "feature": "why do we ask for your ssn u s social security number why do we ask for your ssn studentssnb text studentssnb 2", 
+    "type": "ssn-middle"
+  }, 
+  "680": {
+    "feature": "last name is required birth month is required birth day is required birth year is required citizenship status is required the native english speaker question is required email is required a valid email address is required confirm email is required the email and confirm email must match do not use or password is required confirm password is required the password and confirmation password must match security question is required security answer is required confirm security answer is required the security answer and confirm security answer must match male female united states citizen united states green card holder united states immigrant visa none of the above yes no not applicable i am a us citizen yes no text txtboxfirstname txtboxfirstname 22", 
+    "type": "fname"
+  }, 
+  "681": {
+    "feature": "last name is required text txtboxlastname txtboxlastname 22", 
+    "type": "lname"
+  }, 
+  "682": {
+    "feature": "text txtboxformerlastname1 txtboxformerlastname1 22", 
+    "type": "lname"
+  }, 
+  "683": {
+    "feature": "text txtboxformerfirstname1 txtboxformerfirstname1 22", 
+    "type": "fname"
+  }, 
+  "684": {
+    "feature": "text txtboxformerlastname2 txtboxformerlastname2 22", 
+    "type": "lname"
+  }, 
+  "685": {
+    "feature": "text txtboxformerfirstname2 txtboxformerfirstname2 22", 
+    "type": "fname"
+  }, 
+  "686": {
+    "feature": "a valid email address is required text txtboxemail txtboxemail 50", 
+    "type": "email"
+  }, 
+  "687": {
+    "feature": "the email and confirm email must match text txtboxconfirmemail txtboxconfirmemail 50", 
+    "type": "email"
+  }, 
+  "688": {
+    "feature": "do not use or password is required password txtboxpassword txtboxpassword 128", 
+    "type": "pwd"
+  }, 
+  "689": {
+    "feature": "the password and confirmation password must match password txtboxconfirmpassword txtboxconfirmpassword 128", 
+    "type": "pwd"
+  }, 
+  "69": {
+    "feature": "why do we ask for your ssn u s social security number why do we ask for your ssn studentssnc text studentssnc 4", 
+    "type": "ssn-postfix"
+  }, 
+  "690": {
+    "feature": "security answer is required password txtboxanswer txtboxanswer 128", 
+    "type": "secure_ans"
+  }, 
+  "691": {
+    "feature": "the security answer and confirm security answer must match password txtboxconfirmanswer txtboxconfirmanswer 128", 
+    "type": "secure_ans"
+  }, 
+  "692": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "693": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "694": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "695": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "696": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "697": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "698": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "699": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "7": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "70": {
+    "feature": "the 16 digit number on the front of your ut austin id card if you have one ut austin id card number text idcardnumber idcardnumber", 
+    "type": "digit-16"
+  }, 
+  "700": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "701": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "702": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "703": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "704": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "705": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "706": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "707": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "708": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "709": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "71": {
+    "feature": "use an e mail account you will have access to several months from now why e mail address text emailaddress emailaddress", 
+    "type": "email"
+  }, 
+  "710": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "711": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "712": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "713": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "714": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "715": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "716": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "717": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "718": {
+    "feature": "text fetch email fetch email", 
+    "type": "email"
+  }, 
+  "719": {
+    "feature": "text validate email validate email", 
+    "type": "email"
+  }, 
+  "72": {
+    "feature": "verify your e mail address text emailaddressverify emailaddressverify", 
+    "type": "email"
+  }, 
+  "720": {
+    "feature": "register sign in student number login text account account", 
+    "type": "uname"
+  }, 
+  "721": {
+    "feature": "register sign in student number login text verification code verification code", 
+    "type": "captcha"
+  }, 
+  "722": {
+    "feature": "register sign in student number login password password password", 
+    "type": "pwd"
+  }, 
+  "723": {
+    "feature": "register sign in student number login password confirm password confirm password", 
+    "type": "pwd"
+  }, 
+  "724": {
+    "feature": "first name j id0 osuthemegradapptemplate theform firstname text j id0 osuthemegradapptemplate theform firstname 40", 
+    "type": "fname"
+  }, 
+  "725": {
+    "feature": "last name j id0 osuthemegradapptemplate theform lastname text j id0 osuthemegradapptemplate theform lastname 59", 
+    "type": "lname"
+  }, 
+  "726": {
+    "feature": "email j id0 osuthemegradapptemplate theform email text j id0 osuthemegradapptemplate theform email 80", 
+    "type": "email"
+  }, 
+  "727": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "728": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "729": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "73": {
+    "feature": "create a login id create a login id text login id newid 9", 
+    "type": "uname"
+  }, 
+  "730": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "731": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "732": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "733": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "734": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "735": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "736": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "737": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "738": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "739": {
+    "feature": "enter your email enter your password email password ctl00 content txtemailaddrlogin text ctl00 content txtemailaddrlogin 255", 
+    "type": "email"
+  }, 
+  "74": {
+    "feature": "create a password create a password password pin id newpin 99", 
+    "type": "pwd"
+  }, 
+  "740": {
+    "feature": "enter your first name first name ctl00 content txtfirstname text ctl00 content txtfirstname 35", 
+    "type": "fname"
+  }, 
+  "741": {
+    "feature": "enter your last name last name ctl00 content txtlastname text ctl00 content txtlastname 60", 
+    "type": "lname"
+  }, 
+  "742": {
+    "feature": "mm dd yyyy enter your birth date enter a valid birth date in mm dd yyyy format birth date ctl00 content txtbirthdate text ctl00 content txtbirthdate 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "743": {
+    "feature": "enter a valid email address enter a valid email address email ctl00 content txtemailaddr text ctl00 content txtemailaddr 90", 
+    "type": "email"
+  }, 
+  "744": {
+    "feature": "the email field did not match the email confirm field try again confirm your email address confirm email text ctl00 content txtconfirmemail ctl00 content txtconfirmemail", 
+    "type": "email"
+  }, 
+  "745": {
+    "feature": "enter your email enter your password password email ctl00 content txtpasswordlogin password ctl00 content txtpasswordlogin 15", 
+    "type": "pwd"
+  }, 
+  "746": {
+    "feature": "enter a password at least 8 characters long but less than 15 consisting of numbers or letters your password must be at least 8 characters long but less than 15 characters long enter your password password password ctl00 content txtpassword ctl00 content txtpassword", 
+    "type": "pwd"
+  }, 
+  "747": {
+    "feature": "the password field did not match the confirm field try again confirm your password confirm password password ctl00 content txtconfirm ctl00 content txtconfirm", 
+    "type": "pwd"
+  }, 
+  "748": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "749": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "75": {
+    "feature": "verify password verify password password verify pin id verifypin 99", 
+    "type": "pwd"
+  }, 
+  "750": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "751": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "752": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "753": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "754": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "755": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "756": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "757": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "758": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "759": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "76": {
+    "feature": "user name password text ay login userid", 
+    "type": "uname"
+  }, 
+  "760": {
+    "feature": "textboxfirstname textboxfirstname text 25", 
+    "type": "fname"
+  }, 
+  "761": {
+    "feature": "textboxlastname textboxlastname text 25", 
+    "type": "lname"
+  }, 
+  "762": {
+    "feature": "textboxemailaddress textboxemailaddress text 100", 
+    "type": "email"
+  }, 
+  "763": {
+    "feature": "textboxemailaddressretype textboxemailaddressretype text 100", 
+    "type": "email"
+  }, 
+  "764": {
+    "feature": "textboxsigninemailaddress textboxsigninemailaddress text 100", 
+    "type": "email"
+  }, 
+  "765": {
+    "feature": "textboxpassword textboxpassword password 100", 
+    "type": "pwd"
+  }, 
+  "766": {
+    "feature": "textboxpasswordretype textboxpasswordretype password 100", 
+    "type": "pwd"
+  }, 
+  "767": {
+    "feature": "textboxsigninpassword textboxsigninpassword password 100", 
+    "type": "pwd"
+  }, 
+  "768": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "769": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "77": {
+    "feature": "e g david first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "770": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "771": {
+    "feature": "text username username 256", 
+    "type": "uname"
+  }, 
+  "772": {
+    "feature": "text security code securitycode 6", 
+    "type": "captcha"
+  }, 
+  "773": {
+    "feature": "password password password 16", 
+    "type": "pwd"
+  }, 
+  "774": {
+    "feature": "password password confirm password confirm 16", 
+    "type": "pwd"
+  }, 
+  "775": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "776": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "777": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "778": {
+    "feature": "required text zip zip", 
+    "type": "zipcode"
+  }, 
+  "779": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "78": {
+    "feature": "e g smith last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "780": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "781": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "782": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "783": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "784": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "785": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "786": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "787": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "788": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "789": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "79": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "790": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "791": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "792": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "793": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "794": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "795": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "796": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "797": {
+    "feature": "email address emailaddress emailaddress text", 
+    "type": "email"
+  }, 
+  "798": {
+    "feature": "full name fullname fullname text", 
+    "type": "full_name"
+  }, 
+  "799": {
+    "feature": "date of birth dd mm yyyy dateofbirth dateofbirth text", 
+    "type": "date-dd/mm/yyyy"
+  }, 
+  "8": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "80": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "800": {
+    "feature": "password minimum 6 characters password password password", 
+    "type": "pwd"
+  }, 
+  "801": {
+    "feature": "confirm password minimum 6 characters confirmpassword password confirmpassword", 
+    "type": "pwd"
+  }, 
+  "802": {
+    "feature": "create a login id create a login id text login id newid 9", 
+    "type": "uname"
+  }, 
+  "803": {
+    "feature": "create a pin create a pin password pin id newpin 99", 
+    "type": "short_pwd"
+  }, 
+  "804": {
+    "feature": "verify pin verify pin password verify pin id verifypin 99", 
+    "type": "short_pwd"
+  }, 
+  "805": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "806": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "807": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "808": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "809": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "81": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "810": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "811": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "812": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "813": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "814": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "815": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "816": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "817": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "818": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "819": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "82": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "820": {
+    "feature": "first given name middle name last family name other names used fname text fname 25", 
+    "type": "fname"
+  }, 
+  "821": {
+    "feature": "middle name first given name last family name other names used text mname mname 25", 
+    "type": "mname"
+  }, 
+  "822": {
+    "feature": "last family name middle name first given name other names used lname text lname 25", 
+    "type": "lname"
+  }, 
+  "823": {
+    "feature": "other names used last family name middle name first given name oname text oname 100", 
+    "type": "full_name"
+  }, 
+  "824": {
+    "feature": "issued by the univ of nebraska or a nebraska state college issued by the united states government id number type id number again to confirm accuracy nuid number issued by the univ of nebraska or a nebraska state college us social security number issued by the united states government neither i do not have an nuid or ssn text nuid nuid", 
+    "type": "special_id"
+  }, 
+  "825": {
+    "feature": "issued by the univ of nebraska or a nebraska state college issued by the united states government type id number again to confirm accuracy id number nuid number issued by the univ of nebraska or a nebraska state college us social security number issued by the united states government neither i do not have an nuid or ssn text nuid v nuid v", 
+    "type": "special_id"
+  }, 
+  "826": {
+    "feature": "day month year birthdd text birthdd 2", 
+    "type": "date-dd"
+  }, 
+  "827": {
+    "feature": "year day month birthyy text birthyyyy 4", 
+    "type": "year-yyyy"
+  }, 
+  "828": {
+    "feature": "birth city country of citizenship birth country type of visa expected birthcity text birthcity 30", 
+    "type": "city"
+  }, 
+  "829": {
+    "feature": "email address phone number email text email 50", 
+    "type": "email"
+  }, 
+  "83": {
+    "feature": "user name text aycreateusername aycreateusername", 
+    "type": "uname"
+  }, 
+  "830": {
+    "feature": "phone number email address text phone phone 13", 
+    "type": "phone"
+  }, 
+  "831": {
+    "feature": "line 1 line 2 city country zip postal code if us if non us cstreet text cstreet 30", 
+    "type": "street-line-1"
+  }, 
+  "832": {
+    "feature": "line 2 line 1 city country zip postal code if us if non us cstreet2 text cstreet2 30", 
+    "type": "street-line-2"
+  }, 
+  "833": {
+    "feature": "city line 2 line 1 country zip postal code if us if non us ccity text ccity 25", 
+    "type": "city"
+  }, 
+  "834": {
+    "feature": "if non us if us nonstate text nonstate 20", 
+    "type": "state"
+  }, 
+  "835": {
+    "feature": "zip postal code country city line 2 line 1 if us if non us czip text czip 10", 
+    "type": "zipcode"
+  }, 
+  "836": {
+    "feature": "mm yyyy mm yyyy mm yyyy start of ne residence mm yyyy employer location position start date mm yyyy end date mm yyyy neresmm text neresmm 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "837": {
+    "feature": "mm yyyy mm yyyy employer location position start date mm yyyy end date mm yyyy employer text nebresi3 30", 
+    "type": "employer"
+  }, 
+  "838": {
+    "feature": "mm yyyy mm yyyy location employer position start date mm yyyy end date mm yyyy employloc text nebresi4 30", 
+    "type": "city"
+  }, 
+  "839": {
+    "feature": "mm yyyy mm yyyy position location employer start date mm yyyy end date mm yyyy jobtitle text nebresi5 30", 
+    "type": "job_title"
+  }, 
+  "84": {
+    "feature": "password user name password ay password password", 
+    "type": "pwd"
+  }, 
+  "840": {
+    "feature": "mm yyyy mm yyyy start date mm yyyy position location employer end date mm yyyy jobfrommonth text jobfrom 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "841": {
+    "feature": "mm yyyy mm yyyy end date mm yyyy start date mm yyyy position location employer jobtomonth text jobto 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "842": {
+    "feature": "name of school 1 city state country from mm yyyy to mm yyyy collegename1 text collegename1 32", 
+    "type": "school_name"
+  }, 
+  "843": {
+    "feature": "city name of school 1 state country from mm yyyy to mm yyyy loc1 text loc1 32", 
+    "type": "city"
+  }, 
+  "844": {
+    "feature": "from mm yyyy to mm yyyy start1 text start1 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "845": {
+    "feature": "to mm yyyy from mm yyyy finish1 text finish1 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "846": {
+    "feature": "date degree grad1a text grad1a 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "847": {
+    "feature": "date degree grad1b text grad1b 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "848": {
+    "feature": "date degree grad1c text grad1c 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "849": {
+    "feature": "mm yyyy mm yyyy name of school 2 city state country from mm yyyy to mm yyyy collegename2 text collegename2 32", 
+    "type": "school_name"
+  }, 
+  "85": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "850": {
+    "feature": "mm yyyy mm yyyy city name of school 2 state country from mm yyyy to mm yyyy loc2 text loc2 32", 
+    "type": "city"
+  }, 
+  "851": {
+    "feature": "mm yyyy mm yyyy from mm yyyy to mm yyyy start2 text start2 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "852": {
+    "feature": "mm yyyy mm yyyy to mm yyyy from mm yyyy finish2 text finish2 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "853": {
+    "feature": "date degree grad2a text grad2a 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "854": {
+    "feature": "date degree grad2b text grad2b 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "855": {
+    "feature": "date degree grad2c text grad2c 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "856": {
+    "feature": "name of school 3 city state country from to collegename3 text collegename3 32", 
+    "type": "school_name"
+  }, 
+  "857": {
+    "feature": "city name of school 3 state country from to loc3 text loc3 32", 
+    "type": "city"
+  }, 
+  "858": {
+    "feature": "from to start3 text start3 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "859": {
+    "feature": "to from finish3 text finish3 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "86": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "860": {
+    "feature": "date degree grad3a text grad3a 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "861": {
+    "feature": "date degree grad3b text grad3b 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "862": {
+    "feature": "date degree grad3c text grad3c 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "863": {
+    "feature": "name of school 4 city state country from to collegename4 text collegename4 32", 
+    "type": "school_name"
+  }, 
+  "864": {
+    "feature": "city name of school 4 state country from to loc4 text loc4 32", 
+    "type": "city"
+  }, 
+  "865": {
+    "feature": "from to start4 text start4 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "866": {
+    "feature": "to from finish4 text finish4 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "867": {
+    "feature": "date degree grad4a text grad4a 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "868": {
+    "feature": "date degree grad4b text grad4b 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "869": {
+    "feature": "date degree grad4c text grad4c 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "87": {
+    "feature": "register already a member login here data email email address email text", 
+    "type": "email"
+  }, 
+  "870": {
+    "feature": "name of school 5 city state country from to collegename5 text collegename5 32", 
+    "type": "school_name"
+  }, 
+  "871": {
+    "feature": "city name of school 5 state country from to loc5 text loc5 32", 
+    "type": "city"
+  }, 
+  "872": {
+    "feature": "from to start5 text start5 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "873": {
+    "feature": "to from finish5 text finish5 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "874": {
+    "feature": "date degree grad5a text grad5a 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "875": {
+    "feature": "date degree grad5b text grad5b 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "876": {
+    "feature": "date degree grad5c text grad5c 7", 
+    "type": "date-mm/yyyy"
+  }, 
+  "877": {
+    "feature": "if you have been given a no fee authorization code enter that code here i don t have to pay the fee text promo code promo code", 
+    "type": "promo_code"
+  }, 
+  "878": {
+    "feature": "email address password confirm password searchtext search text 255", 
+    "type": "search_term"
+  }, 
+  "879": {
+    "feature": "password confirm password text email email", 
+    "type": "email"
+  }, 
+  "88": {
+    "feature": "register already a member login here code verification code code text 30", 
+    "type": "captcha"
+  }, 
+  "880": {
+    "feature": "email address confirm password password password password", 
+    "type": "pwd"
+  }, 
+  "881": {
+    "feature": "password email address password password2 password2", 
+    "type": "pwd"
+  }, 
+  "882": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "883": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "884": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "885": {
+    "feature": "user name password text ay login userid", 
+    "type": "uname"
+  }, 
+  "886": {
+    "feature": "e g david first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "887": {
+    "feature": "e g smith last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "888": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "889": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "89": {
+    "feature": "text submitemail", 
+    "type": "email"
+  }, 
+  "890": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "891": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "892": {
+    "feature": "user name text aycreateusername aycreateusername", 
+    "type": "uname"
+  }, 
+  "893": {
+    "feature": "password user name password ay password password", 
+    "type": "pwd"
+  }, 
+  "894": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "895": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "896": {
+    "feature": "search searchterm text searchterm", 
+    "type": "search_term"
+  }, 
+  "897": {
+    "feature": "text fname 30", 
+    "type": "fname"
+  }, 
+  "898": {
+    "feature": "text lname 30", 
+    "type": "lname"
+  }, 
+  "899": {
+    "feature": "text email 60", 
+    "type": "email"
+  }, 
+  "9": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "90": {
+    "feature": "register already a member login here data password password password cu passowrd", 
+    "type": "pwd"
+  }, 
+  "900": {
+    "feature": "text emailconf 60", 
+    "type": "email"
+  }, 
+  "901": {
+    "feature": "pword password 30", 
+    "type": "pwd"
+  }, 
+  "902": {
+    "feature": "conf pword password 30", 
+    "type": "pwd"
+  }, 
+  "903": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "904": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "905": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "906": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "907": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "908": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "909": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "91": {
+    "feature": "first name first text first 64", 
+    "type": "fname"
+  }, 
+  "910": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "911": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "912": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "913": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "914": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "915": {
+    "feature": "text f name", 
+    "type": "fname"
+  }, 
+  "916": {
+    "feature": "denotes required field male female preferred preferred preferred american indian or alaska native a person having origins in any of the original peoples of north and south america including central america and who maintains tribal affiliation or community attachment asian a person having origins in any of the original peoples of the far east southeast asia or the indian subcontinent including for example cambodia china india japan korea malaysia pakistan the philippine islands thailand and vietnam black or african american a person having origins in any of the black racial groups of africa native hawaiian or other pacific islander a person having origins in any of the peoples of hawaii guam samoa or other pacific islands white a person having origins in any of the original peoples of europe the middle east or north africa text m name", 
+    "type": "mname"
+  }, 
+  "917": {
+    "feature": "text l name", 
+    "type": "lname"
+  }, 
+  "918": {
+    "feature": "denotes required field male female preferred preferred preferred american indian or alaska native a person having origins in any of the original peoples of north and south america including central america and who maintains tribal affiliation or community attachment asian a person having origins in any of the original peoples of the far east southeast asia or the indian subcontinent including for example cambodia china india japan korea malaysia pakistan the philippine islands thailand and vietnam black or african american a person having origins in any of the black racial groups of africa native hawaiian or other pacific islander a person having origins in any of the peoples of hawaii guam samoa or other pacific islands white a person having origins in any of the original peoples of europe the middle east or north africa text alt name", 
+    "type": "full_name"
+  }, 
+  "919": {
+    "feature": "text perm address1", 
+    "type": "street-line-1"
+  }, 
+  "92": {
+    "feature": "last name last text last 64", 
+    "type": "lname"
+  }, 
+  "920": {
+    "feature": "denotes required field male female preferred preferred preferred american indian or alaska native a person having origins in any of the original peoples of north and south america including central america and who maintains tribal affiliation or community attachment asian a person having origins in any of the original peoples of the far east southeast asia or the indian subcontinent including for example cambodia china india japan korea malaysia pakistan the philippine islands thailand and vietnam black or african american a person having origins in any of the black racial groups of africa native hawaiian or other pacific islander a person having origins in any of the peoples of hawaii guam samoa or other pacific islands white a person having origins in any of the original peoples of europe the middle east or north africa text perm address2", 
+    "type": "street-line-2"
+  }, 
+  "921": {
+    "feature": "text perm city", 
+    "type": "city"
+  }, 
+  "922": {
+    "feature": "denotes required field male female preferred preferred preferred american indian or alaska native a person having origins in any of the original peoples of north and south america including central america and who maintains tribal affiliation or community attachment asian a person having origins in any of the original peoples of the far east southeast asia or the indian subcontinent including for example cambodia china india japan korea malaysia pakistan the philippine islands thailand and vietnam black or african american a person having origins in any of the black racial groups of africa native hawaiian or other pacific islander a person having origins in any of the peoples of hawaii guam samoa or other pacific islands white a person having origins in any of the original peoples of europe the middle east or north africa text perm province", 
+    "type": "state"
+  }, 
+  "923": {
+    "feature": "denotes required field male female preferred preferred preferred american indian or alaska native a person having origins in any of the original peoples of north and south america including central america and who maintains tribal affiliation or community attachment asian a person having origins in any of the original peoples of the far east southeast asia or the indian subcontinent including for example cambodia china india japan korea malaysia pakistan the philippine islands thailand and vietnam black or african american a person having origins in any of the black racial groups of africa native hawaiian or other pacific islander a person having origins in any of the peoples of hawaii guam samoa or other pacific islands white a person having origins in any of the original peoples of europe the middle east or north africa text perm zip 10", 
+    "type": "zipcode"
+  }, 
+  "924": {
+    "feature": "text phone home 0 3", 
+    "type": "phone-prefix"
+  }, 
+  "925": {
+    "feature": "text phone home 1 16", 
+    "type": "phone-middle-postfix"
+  }, 
+  "926": {
+    "feature": "text phone work 0 3", 
+    "type": "phone-prefix"
+  }, 
+  "927": {
+    "feature": "text phone work 1 16", 
+    "type": "phone-middle-postfix"
+  }, 
+  "928": {
+    "feature": "text phone mobile 0 3", 
+    "type": "phone-prefix"
+  }, 
+  "929": {
+    "feature": "text phone mobile 1 16", 
+    "type": "phone-middle-postfix"
+  }, 
+  "93": {
+    "feature": "email address email email email 64", 
+    "type": "email"
+  }, 
+  "930": {
+    "feature": "text email1 b1776415 trbvn com", 
+    "type": "email"
+  }, 
+  "931": {
+    "feature": "denotes required field preferred preferred preferred male female american indian or alaska native a person having origins in any of the original peoples of north and south america including central america and who maintains tribal affiliation or community attachment asian a person having origins in any of the original peoples of the far east southeast asia or the indian subcontinent including for example cambodia china india japan korea malaysia pakistan the philippine islands thailand and vietnam black or african american a person having origins in any of the black racial groups of africa native hawaiian or other pacific islander a person having origins in any of the peoples of hawaii guam samoa or other pacific islands white a person having origins in any of the original peoples of europe the middle east or north africa text email2", 
+    "type": "email"
+  }, 
+  "932": {
+    "feature": "pin password text ay login userid", 
+    "type": "uname"
+  }, 
+  "933": {
+    "feature": "first or given name text aycreatefn aycreatefn 30", 
+    "type": "fname"
+  }, 
+  "934": {
+    "feature": "last or family name text aycreateln aycreateln 30", 
+    "type": "lname"
+  }, 
+  "935": {
+    "feature": "email address aycreateemail aycreateemail text 120", 
+    "type": "email"
+  }, 
+  "936": {
+    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text", 
+    "type": "email"
+  }, 
+  "937": {
+    "feature": "mm dd yyyy birth date text aycreatedob aycreatedob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "938": {
+    "feature": "zip postal code text aycreatepc aycreatepc 10", 
+    "type": "zipcode"
+  }, 
+  "939": {
+    "feature": "password pin password ay password password", 
+    "type": "pwd"
+  }, 
+  "94": {
+    "feature": "p surname text 40", 
+    "type": "lname"
+  }, 
+  "940": {
+    "feature": "password password aycreatepassword aycreatepassword", 
+    "type": "pwd"
+  }, 
+  "941": {
+    "feature": "confirm password password aycreateconfirmpassword aycreateconfirmpassword", 
+    "type": "pwd"
+  }, 
+  "942": {
+    "feature": "your email address is your username email text user example com email 100", 
+    "type": "email"
+  }, 
+  "943": {
+    "feature": "first name text firstname firstname 45", 
+    "type": "fname"
+  }, 
+  "944": {
+    "feature": "middle name text middlename middlename 25", 
+    "type": "mname"
+  }, 
+  "945": {
+    "feature": "last name text lastname lastname 45", 
+    "type": "lname"
+  }, 
+  "946": {
+    "feature": "english first name text englishfirstname englishfirstname 45", 
+    "type": "fname"
+  }, 
+  "947": {
+    "feature": "english middle name text englishmiddlename englishmiddlename 25", 
+    "type": "mname"
+  }, 
+  "948": {
+    "feature": "english last name englishlastname text englishlastname 45", 
+    "type": "lname"
+  }, 
+  "949": {
+    "feature": "date of birth dateofbirth mm dd yyyy text date input 10", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "95": {
+    "feature": "p first given name text 40", 
+    "type": "fname"
+  }, 
+  "950": {
+    "feature": "please include area or city code and local number homenumber text 5555555555 homenumber 16", 
+    "type": "phone"
+  }, 
+  "951": {
+    "feature": "please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16", 
+    "type": "phone"
+  }, 
+  "952": {
+    "feature": "new password password password password password 80", 
+    "type": "pwd"
+  }, 
+  "953": {
+    "feature": "confirm password password password confirmpassword confirmpassword 80", 
+    "type": "pwd"
+  }, 
+  "954": {
+    "feature": "city of birth txtr1 text 128", 
+    "type": "city"
+  }, 
+  "955": {
+    "feature": "e mails sent to txtemailsentto text 64", 
+    "type": "email"
+  }, 
+  "956": {
+    "feature": "e mail address txtusername text 64", 
+    "type": "uname"
+  }, 
+  "957": {
+    "feature": "password txtpassword password 32", 
+    "type": "pwd"
+  }, 
+  "958": {
+    "feature": "verify password txtpasswordagain password 32", 
+    "type": "pwd"
+  }, 
+  "959": {
+    "feature": "password password txtpassword 32", 
+    "type": "pwd"
+  }, 
+  "96": {
+    "feature": "text p apa email address 50", 
+    "type": "email"
+  }, 
+  "960": {
+    "feature": "text psurname 30", 
+    "type": "lname"
+  }, 
+  "961": {
+    "feature": "text pmi name 30", 
+    "type": "mname"
+  }, 
+  "962": {
+    "feature": "text pothername 30", 
+    "type": "fname"
+  }, 
+  "963": {
+    "feature": "text pemail 30", 
+    "type": "email"
+  }, 
+  "964": {
+    "feature": "text pemail2 30", 
+    "type": "email"
+  }, 
+  "965": {
+    "feature": "pusername text 20", 
+    "type": "uname"
+  }, 
+  "966": {
+    "feature": "password ppassword 20", 
+    "type": "pwd"
+  }, 
+  "967": {
+    "feature": "password ppassword2 20", 
+    "type": "pwd"
+  }, 
+  "968": {
+    "feature": "first name last name choose a username email address choose password re enter password text firstname firstname", 
+    "type": "fname"
+  }, 
+  "969": {
+    "feature": "last name first name choose a username email address choose password re enter password text lastname lastname", 
+    "type": "lname"
+  }, 
+  "97": {
+    "feature": "text p confirm email address 50", 
+    "type": "email"
+  }, 
+  "970": {
+    "feature": "choose a username last name first name email address choose password re enter password text username username", 
+    "type": "uname"
+  }, 
+  "971": {
+    "feature": "email address choose a username last name first name choose password re enter password text email email", 
+    "type": "email"
+  }, 
+  "972": {
+    "feature": "choose password email address choose a username last name first name re enter password password password password", 
+    "type": "pwd"
+  }, 
+  "973": {
+    "feature": "re enter password choose password email address choose a username last name first name password password2 password2", 
+    "type": "pwd"
+  }, 
+  "974": {
+    "feature": "required text firstname firstname", 
+    "type": "fname"
+  }, 
+  "975": {
+    "feature": "middle name text middlename middlename", 
+    "type": "mname"
+  }, 
+  "976": {
+    "feature": "required text lastname lastname", 
+    "type": "lname"
+  }, 
+  "977": {
+    "feature": "e mail is invalid required text email email", 
+    "type": "email"
+  }, 
+  "978": {
+    "feature": "verify e mail text verifyemail verifyemail", 
+    "type": "email"
+  }, 
+  "979": {
+    "feature": "month january february march april may june july august september october november december day text dob dob", 
+    "type": "date-mm/dd/yyyy"
+  }, 
+  "98": {
+    "feature": "p password password 30", 
+    "type": "pwd"
+  }, 
+  "980": {
+    "feature": "required text zip zip", 
+    "type": "zipcode"
+  }, 
+  "981": {
+    "feature": "required text login login", 
+    "type": "uname"
+  }, 
+  "982": {
+    "feature": "required text password password", 
+    "type": "pwd"
+  }, 
+  "983": {
+    "feature": "required password newpassword newpassword", 
+    "type": "pwd"
+  }, 
+  "984": {
+    "feature": "verify password password verifypassword verifypassword", 
+    "type": "pwd"
+  }, 
+  "99": {
+    "feature": "p confirm password password 30", 
+    "type": "pwd"
+  }
+}

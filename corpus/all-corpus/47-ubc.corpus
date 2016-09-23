@@ -1,0 +1,5 @@
+first name first name mainform firstname text mainform firstname 255
+last name last name text mainform lastname mainform lastname 255
+enter your email confirm your email enter your email confirm your email text mainform email mainform email 40
+confirm your email enter your email confirm your email enter your email text mainform confirmemail mainform confirmemail 40
+cwl login name cwl login name mainform loginname text mainform loginname 8

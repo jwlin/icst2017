@@ -1,0 +1,12 @@
+q search websites and people search field text
+required text firstname firstname
+required text lastname lastname
+e mail is invalid required text email email
+verify e mail text verifyemail verifyemail
+required text zip zip
+month january february march april may june july august september october november december day text dob dob
+required text login login
+required text password password
+hobsons data collecting text text741 text741
+required password newpassword newpassword
+verify password password verifypassword verifypassword

@@ -1,0 +1,13 @@
+rit home q search rit text metaritsearchbox 250
+first name text 30
+middle name text 30
+last name text 30
+suffix text 15
+email text 70
+text birth date 10
+address text 55
+address1 text 55
+address2 text 55
+city text 30
+zip code text 12
+home phone text 24

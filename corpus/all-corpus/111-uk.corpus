@@ -1,0 +1,11 @@
+user name password text ay login userid
+ e g david first or given name text aycreatefn aycreatefn 30
+ e g smith last or family name text aycreateln aycreateln 30
+email address aycreateemail aycreateemail text 120
+confirm email address aycreateconfirmemail aycreateconfirmemail text
+mm dd yyyy birth date text aycreatedob aycreatedob
+zip postal code text aycreatepc aycreatepc 10
+user name text aycreateusername aycreateusername
+password user name password ay password password
+password password aycreatepassword aycreatepassword
+confirm password password aycreateconfirmpassword aycreateconfirmpassword

@@ -1,0 +1,6 @@
+city of birth txtr1 text 128
+e mails sent to txtemailsentto text 64
+e mail address txtusername text 64
+password txtpassword password 32
+verify password txtpasswordagain password 32
+password password txtpassword 32

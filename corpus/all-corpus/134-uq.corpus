@@ -1,0 +1,9 @@
+email required username email required text field loginemail
+first given name firstname first given name text field firstname
+other given name s middlename other given name s text field middlename
+family name s required lastname family name s required text field lastname
+email address required email email address required email field email
+confirm email address required confirmemail confirm email address required email field confirmemail
+password required password required password field loginpassword password
+password required password required password field password password
+confirm password required confirm password required password field confirmpassword confirmpassword

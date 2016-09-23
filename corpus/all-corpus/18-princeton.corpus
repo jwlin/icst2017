@@ -1,0 +1,12 @@
+your email address is your username email text user example com email 100
+first name text firstname firstname 45
+middle name text middlename middlename 25
+last name text lastname lastname 45
+english first name text englishfirstname englishfirstname 45
+english middle name text englishmiddlename englishmiddlename 25
+english last name englishlastname text englishlastname 45
+date of birth dateofbirth mm dd yyyy text date input 10
+please include area or city code and local number homenumber text 5555555555 homenumber 16
+please include area or city code and local number mobilenumber text 5555555555 mobilenumber 16
+new password password password password password 80
+confirm password password password confirmpassword confirmpassword 80

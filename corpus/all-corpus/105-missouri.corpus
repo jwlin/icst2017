@@ -1,0 +1,13 @@
+text q
+required text firstname firstname
+middle name text middlename middlename
+required text lastname lastname
+month january february march april may june july august september october november december day text dob dob
+e mail is invalid required text email email
+verify e mail text verifyemail verifyemail
+required text login login
+required text password password
+required text date563 date563
+email alternate text text581 text581
+required password newpassword newpassword
+verify password password verifypassword verifypassword

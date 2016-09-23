@@ -1,0 +1,92 @@
+[
+  {
+    "dom": "<input class=\"validate[required,funccall[ckmail]]\" id=\"fetch_email\" name=\"fetch_email\" style=\"width:208px;\" type=\"text\"/>", 
+    "feature": "text fetch email fetch email", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ], 
+      "type": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input class=\"validate[required,funccall[ckmail]]\" id=\"validate_email\" name=\"validate_email\" style=\"width:208px;\" type=\"text\"/>", 
+    "feature": "text validate email validate email", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ], 
+      "type": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input class=\"validate[required,funccall[ckmail]]\" id=\"account\" name=\"account\" type=\"text\"/>", 
+    "feature": "register sign in student number login text account account", 
+    "rule": {
+      "id": [
+        "account"
+      ], 
+      "name": [
+        "account"
+      ]
+    }, 
+    "type": "uname"
+  }, 
+  {
+    "dom": "<input id=\"verification_code\" name=\"verification_code\" style=\"width:100px;\" type=\"text\"/>", 
+    "feature": "register sign in student number login text verification code verification code", 
+    "rule": {
+      "id": [
+        "verification_code"
+      ], 
+      "name": [
+        "verification_code"
+      ]
+    }, 
+    "type": "captcha"
+  }, 
+  {
+    "dom": "<input class=\"validate[required, funccall[ckpassword]]\" id=\"password\" name=\"password\" type=\"password\"/>", 
+    "feature": "register sign in student number login password password password", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }, 
+  {
+    "dom": "<input class=\"validate[required, funccall[ckrepassword]]\" id=\"confirm_password\" name=\"confirm_password\" type=\"password\"/>", 
+    "feature": "register sign in student number login password confirm password confirm password", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }
+]

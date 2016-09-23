@@ -1,0 +1,180 @@
+[
+  {
+    "dom": "<input id=\"processrequest_firstname\" name=\"processrequest.firstname\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "legal first name text processrequest firstname processrequest firstname", 
+    "rule": {
+      "id": [
+        "first"
+      ], 
+      "name": [
+        "first"
+      ]
+    }, 
+    "type": "fname"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_middlename\" name=\"processrequest.middlename\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "middle name text processrequest middlename processrequest middlename", 
+    "rule": {
+      "id": [
+        "middle"
+      ], 
+      "name": [
+        "middle"
+      ]
+    }, 
+    "type": "mname"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_lastname\" name=\"processrequest.lastname\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "legal last name text processrequest lastname processrequest lastname", 
+    "rule": {
+      "id": [
+        "last"
+      ], 
+      "name": [
+        "last"
+      ]
+    }, 
+    "type": "lname"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_address1\" maxlength=\"55\" name=\"processrequest.address1\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "address line 1 processrequest address1 text processrequest address1 55", 
+    "rule": {
+      "id": [
+        "address1"
+      ], 
+      "name": [
+        "address1"
+      ]
+    }, 
+    "type": "street-line-1"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_address2\" maxlength=\"55\" name=\"processrequest.address2\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "address line 2 processrequest address2 text processrequest address2 55", 
+    "rule": {
+      "id": [
+        "address2"
+      ], 
+      "name": [
+        "address2"
+      ]
+    }, 
+    "type": "street-line-2"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_address3\" maxlength=\"55\" name=\"processrequest.address3\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "address line 3 processrequest address3 text processrequest address3 55", 
+    "rule": {
+      "id": [
+        "address3"
+      ], 
+      "name": [
+        "address3"
+      ]
+    }, 
+    "type": "street-line-3"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_city\" maxlength=\"30\" name=\"processrequest.city\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "city processrequest city text processrequest city 30", 
+    "rule": {
+      "id": [
+        "city"
+      ], 
+      "name": [
+        "city"
+      ]
+    }, 
+    "type": "city"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_postalcode\" maxlength=\"12\" name=\"processrequest.postalcode\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "postal code processrequest postalcode text processrequest postalcode 12", 
+    "rule": {
+      "id": [
+        "postal"
+      ], 
+      "name": [
+        "postal"
+      ]
+    }, 
+    "type": "zipcode"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_telephone\" name=\"processrequest.telephone\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "phone text processrequest telephone processrequest telephone", 
+    "rule": {
+      "id": [
+        "phone"
+      ], 
+      "name": [
+        "phone"
+      ]
+    }, 
+    "type": "phone"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_emailaddress\" name=\"processrequest.emailaddress\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "e mail address text processrequest emailaddress processrequest emailaddress", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ], 
+      "type": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input id=\"processrequest_nationalid\" name=\"processrequest.nationalid\" size=\"50\" type=\"text\" value=\"\"/>", 
+    "feature": "social security number text processrequest nationalid processrequest nationalid", 
+    "rule": {
+      "id": [
+        "nationalid"
+      ], 
+      "name": [
+        "nationalid"
+      ]
+    }, 
+    "type": "ssn"
+  }, 
+  {
+    "dom": "<input id=\"password\" name=\"password\" size=\"10\" type=\"password\"/>", 
+    "feature": "new password password password password", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }, 
+  {
+    "dom": "<input id=\"password2\" name=\"password2\" size=\"10\" type=\"password\"/>", 
+    "feature": "confirm password password password2 password2", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }
+]

@@ -1,0 +1,6 @@
+p surname text 40
+p first given name text 40
+text p apa email address 50
+text p confirm email address 50
+p password password 30
+p confirm password password 30

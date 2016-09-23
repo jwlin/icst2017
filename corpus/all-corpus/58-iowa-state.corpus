@@ -1,0 +1,14 @@
+q text search
+first given name first name text first name 20
+middle name mid name text mid name 20
+last name surname last name text last name 30
+student email address email addr text email addr 50
+confirm student email address confirm email addr text confirm email addr 50
+email address parent email addr text parent email addr 50
+confirm email address confirm parent email addr text confirm parent email addr 50
+security question security question text security question 255
+security answer security answer text security answer 45
+ minimum of 6 characters maximum of 25 characters username form username text form username 25
+ minimum of 6 characters maximum of 25 characters same name as parent grandparent set birth date carefully it cannot be changed after account creation username password password again security question security answer email address confirm email address first given name middle name last name surname generation name birth date birth date day birth date year student email address confirm student email address text admissions hidden input guess admissions hidden input guess
+password password form password form password
+password again password form password2 form password2

@@ -1,0 +1,122 @@
+[
+  {
+    "dom": "<input class=\"pseditbox\" id=\"um_gap_derived_emailid\" maxlength=\"70\" name=\"um_gap_derived_emailid\" style=\"width:268px; \" tabindex=\"16\" type=\"text\" value=\"\"/>", 
+    "feature": "your security code case sensitive um gap derived emailid um gap derived emailid text 70", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input class=\"pseditbox\" id=\"um_gap_derived_um_sec_cd\" maxlength=\"6\" name=\"um_gap_derived_um_sec_cd\" style=\"width:92px; \" tabindex=\"17\" type=\"text\" value=\"\"/>", 
+    "feature": "required your security code case sensitive what is a security code required forgotten your password required for security purposes please type the six characters shown above into the security code field sign on and register help email address required security code required password required um gap derived um sec cd um gap derived um sec cd text 6", 
+    "rule": {
+      "id": [
+        "sec_cd"
+      ], 
+      "name": [
+        "sec_cd"
+      ]
+    }, 
+    "type": "captcha"
+  }, 
+  {
+    "dom": "<input id=\"ptus_defaultlocalnode\" name=\"ptus_defaultlocalnode\" readonly=\"readonly\" type=\"text\" value=\"psft_hr\"/>", 
+    "feature": "default local node dbname portal node workcenter id url text ptus defaultlocalnode psft hr ptus defaultlocalnode", 
+    "rule": {
+      "id": [
+        "defaultlocalnode"
+      ], 
+      "name": [
+        "defaultlocalnode"
+      ]
+    }, 
+    "type": "default_local_node"
+  }, 
+  {
+    "dom": "<input id=\"ptus_dbname\" name=\"ptus_dbname\" readonly=\"readonly\" type=\"text\" value=\"cs89prod\"/>", 
+    "feature": "dbname default local node portal node workcenter id url text ptus dbname cs89prod ptus dbname", 
+    "rule": {
+      "id": [
+        "dbname"
+      ], 
+      "name": [
+        "dbname"
+      ]
+    }, 
+    "type": "db_name"
+  }, 
+  {
+    "dom": "<input id=\"ptus_portal\" name=\"ptus_portal\" readonly=\"readonly\" type=\"text\" value=\"employee\"/>", 
+    "feature": "portal dbname default local node node workcenter id url text ptus portal employee ptus portal", 
+    "rule": {
+      "id": [
+        "portal"
+      ], 
+      "name": [
+        "portal"
+      ]
+    }, 
+    "type": "portal"
+  }, 
+  {
+    "dom": "<input id=\"ptus_node\" name=\"ptus_node\" readonly=\"readonly\" type=\"text\" value=\"hrms\"/>", 
+    "feature": "node portal dbname default local node workcenter id url text ptus node hrms ptus node", 
+    "rule": {
+      "id": [
+        "node"
+      ], 
+      "name": [
+        "node"
+      ]
+    }, 
+    "type": "local_node"
+  }, 
+  {
+    "dom": "<input id=\"ptus_workcenterid\" name=\"ptus_workcenterid\" readonly=\"readonly\" type=\"text\" value=\"\"/>", 
+    "feature": "workcenter id node portal dbname default local node url text ptus workcenterid ptus workcenterid", 
+    "rule": {
+      "id": [
+        "workcenterid"
+      ], 
+      "name": [
+        "workcenterid"
+      ]
+    }, 
+    "type": "special_id"
+  }, 
+  {
+    "dom": "<input id=\"ptus_componenturl\" name=\"ptus_componenturl\" readonly=\"readonly\" type=\"text\" value=\"https://pgapplication.manchester.ac.uk/psp/umgap/employee/hrms/c/um_gap_mnu.um_gap_identify.gbl\"/>", 
+    "feature": "url workcenter id node portal dbname default local node text ptus componenturl https pgapplication manchester ac uk psp umgap employee hrms c um gap mnu um gap identify gbl ptus componenturl", 
+    "rule": {
+      "id": [
+        "url"
+      ], 
+      "name": [
+        "url"
+      ]
+    }, 
+    "type": "url"
+  }, 
+  {
+    "dom": "<input class=\"pseditbox\" id=\"um_gap_derived_operpswd\" maxlength=\"32\" name=\"um_gap_derived_operpswd\" style=\"width:92px; \" tabindex=\"18\" type=\"password\" value=\"\"/>", 
+    "feature": "required what is a security code required your security code case sensitive forgotten your password required for security purposes please type the six characters shown above into the security code field sign on and register help security code required email address required password required um gap derived operpswd um gap derived operpswd password 32", 
+    "rule": {
+      "id": [
+        "pswd"
+      ], 
+      "name": [
+        "pswd"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }
+]

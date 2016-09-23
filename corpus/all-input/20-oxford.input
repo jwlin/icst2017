@@ -1,0 +1,99 @@
+[
+  {
+    "dom": "<input id=\"ipu_fnm1\" maxlength=\"30\" name=\"ipu_fnm1.ipu.srs.1\" size=\"45\" type=\"text\" value=\"\"/>", 
+    "feature": "given name forename ipu fnm1 ipu srs 1 text ipu fnm1 30", 
+    "rule": {
+      "id": [
+        "fn"
+      ], 
+      "name": [
+        "fn"
+      ]
+    }, 
+    "type": "fname"
+  }, 
+  {
+    "dom": "<input id=\"ipu_surn\" maxlength=\"40\" name=\"ipu_surn.ipu.srs.1\" size=\"45\" type=\"text\" value=\"\"/>", 
+    "feature": "family name surname ipu surn ipu srs 1 text ipu surn 40", 
+    "rule": {
+      "id": [
+        "surn"
+      ], 
+      "name": [
+        "surn"
+      ]
+    }, 
+    "type": "lname"
+  }, 
+  {
+    "dom": "<input id=\"ipu_dob\" maxlength=\"11\" name=\"ipu_dob.ipu.srs.1\" size=\"15\" type=\"text\" value=\"\"/>", 
+    "feature": "date of birth dd mm yyyy ipu dob ipu srs 1 text ipu dob 11", 
+    "rule": {
+      "id": [
+        "dob"
+      ], 
+      "name": [
+        "dob"
+      ]
+    }, 
+    "type": "date-dd/mm/yyyy"
+  }, 
+  {
+    "dom": "<input id=\"usercode\" name=\"usercode.ipu.srs.1\" size=\"45\" type=\"text\" value=\"\"/>", 
+    "feature": "username email address text usercode ipu srs 1 usercode", 
+    "rule": {
+      "id": [
+        "usercode"
+      ], 
+      "name": [
+        "usercode"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input id=\"ipu_haem\" maxlength=\"255\" name=\"ipu_haem.ipu.srs.1\" size=\"45\" type=\"text\" value=\"\"/>", 
+    "feature": "confirm username email address ipu haem ipu srs 1 text ipu haem 255", 
+    "rule": {
+      "id": [
+        "haem"
+      ], 
+      "name": [
+        "haem"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input id=\"password1\" name=\"password1.ipu.srs.1\" size=\"45\" type=\"password\" value=\"\"/>", 
+    "feature": "password password password1 ipu srs 1 password1", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }, 
+  {
+    "dom": "<input id=\"password2\" name=\"password2.ipu.srs.1\" size=\"45\" type=\"password\" value=\"\"/>", 
+    "feature": "confirm password password password2 ipu srs 1 password2", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }
+]

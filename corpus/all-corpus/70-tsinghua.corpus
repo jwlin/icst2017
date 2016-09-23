@@ -1,0 +1,4 @@
+text username username 256
+text security code securitycode 6
+password password password 16
+password password confirm password confirm 16

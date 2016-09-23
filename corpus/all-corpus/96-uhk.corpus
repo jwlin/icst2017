@@ -1,0 +1,8 @@
+text psurname 30
+text pmi name 30
+text pothername 30
+text pemail 30
+text pemail2 30
+pusername text 20
+password ppassword 20
+password ppassword2 20

@@ -1,0 +1,6 @@
+first name firstname text firstname 50
+last name lastname text lastname 50
+email email email text 70
+confirm email confirmemail text confirmemail 70
+create password password1 password1 password 50
+confirm password password2 password2 password 50

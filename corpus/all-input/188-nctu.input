@@ -1,0 +1,63 @@
+[
+  {
+    "dom": "<input class=\"w300 text\" id=\"email\" maxlength=\"255\" name=\"email\" size=\"60\" type=\"text\" value=\"\"/>", 
+    "feature": "email email email text 255", 
+    "rule": {
+      "id": [
+        "email"
+      ], 
+      "name": [
+        "email"
+      ], 
+      "type": [
+        "email"
+      ]
+    }, 
+    "type": "email"
+  }, 
+  {
+    "dom": "<input class=\"verification\" id=\"authkey\" maxlength=\"4\" name=\"authkey\" type=\"text\" value=\"\"/>", 
+    "feature": "verification code authkey authkey text 4", 
+    "rule": {
+      "id": [
+        "authkey"
+      ], 
+      "name": [
+        "authkey"
+      ]
+    }, 
+    "type": "captcha"
+  }, 
+  {
+    "dom": "<input class=\"w200 text\" id=\"password\" maxlength=\"12\" name=\"password\" size=\"20\" type=\"password\"/>", 
+    "feature": "password password password password 12", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }, 
+  {
+    "dom": "<input class=\"w200 text\" id=\"password_cfm\" maxlength=\"12\" name=\"password_cfm\" size=\"20\" type=\"password\"/>", 
+    "feature": "confirm password password cfm password cfm password 12", 
+    "rule": {
+      "id": [
+        "password"
+      ], 
+      "name": [
+        "password"
+      ], 
+      "type": [
+        "password"
+      ]
+    }, 
+    "type": "pwd"
+  }
+]
