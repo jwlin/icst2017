@@ -27,5 +27,5 @@ Download from Google Drive:
 
 `corpus`: Preprocessed corpus from `forms`
 
-`label-all-corpus.json`: Labeled topics of all 985 input fields from the 100 subject forms used in the experiments
+`corpus/label-all-corpus.json`: Labeled topics of all 985 input fields from the 100 subject forms used in the experiments
 
