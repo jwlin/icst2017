@@ -1,0 +1,748 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register a Product (US) | Sony Product Registration</title>
+
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyD-Yve5vyHd-COgn_-GXQIgBXYmzuLywqU">
+</script>
+ <meta name="csrf-param" content="authenticity_token"/><meta name="csrf-token" content="oN4K9eE5esKeobTUHr8V9cQFWcT2dbjlWqag6DEYCnDuxWV7JrMSRrPat7JP8pwqBQUoriGjvk1JZFNHFyYFng=="/><link href="/stylesheets/register.css?ts=1519422109&media=all" rel="stylesheet" type="text/css" media="all" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/i18n/jquery-ui-i18n.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/airbrake-js/0.5.9/client.min.js"></script><link href="/stylesheets/end_user.css" rel="stylesheet" type="text/css" media="all" /><link href="/stylesheets/jquery.jgrowl.css" rel="stylesheet" type="text/css" media="all" /><link href="/stylesheets/admin/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="all" /><script src="/javascripts/jquery.validate.js" type="text/javascript"></script><script src="/javascripts/jquery.jgrowl_minimized.js" type="text/javascript"></script><script src="/javascripts/ajaxfileupload.js" type="text/javascript"></script><script src="/javascripts/jquery.autocomplete.min.js" type="text/javascript"></script><script src="/javascripts/jquery.tools.min.js" type="text/javascript"></script><script src="/javascripts/jquery.ui.datepicker.validation.js" type="text/javascript"></script><script src="/javascripts/jcookie.js" type="text/javascript"></script><script src="/javascripts/registria_helpers.js" type="text/javascript"></script><script src="/javascripts/registria_form.js" type="text/javascript"></script><script src="/javascripts/registria_validations.js" type="text/javascript"></script><script src="/javascripts/registria_services.js" type="text/javascript"></script><script src="https://djdzi85khno9j.cloudfront.net/javascripts/server_side_cart.js"></script><script src="/public_javascripts/page.js?page_id=4232&extra_info=&locale=en&ts=1519422242" type="text/javascript"></script>
+<script type="text/javascript">
+  $.extraInfo = "";
+  $.queryParams = {"controller":"pages","action":"show","page_name":"register"};
+  $.returnTo = "";
+  $.IPInfo = {"country_code":"US","country_code3":"USA","country_name":"United States","region":"CA","region_name":"California","city":"Newport Beach","postal_code":"92658","latitude":33.618900299072266,"longitude":-117.92900085449219,"dma_code":803,"area_code":949};
+  $.currencyCode = "USD";
+  $.currencyUnit = "$";
+  $.availableLocales = ['ca','cn','cs','cs-cz','da','de','de-at','de-ch','de-de','en','en-au','en-ca','en-ch','en-dk','en-gb','en-id','en-ie','en-my','en-nl','en-no','en-nz','en-pl','en-pt','en-se','en-th','en-uk','en-us','en-vn','en_GB','es','es-es','es-us','fi','fr','fr-be','fr-ca','fr-fr','fr-lu','hk','hu','hu-hu','id','in','it','it-it','ja','ja-jp','jp','ko','kr','my','nl','nl-be','nl-nl','no','ph','pl','pt','pt-pt','ro','ro-ro','ru','sg','sv','th','tw','uk','vn','zh','zh-cn','zh-tw'];
+  $.currentLocale = "en";
+  $.secure = true;
+  $.gender = null;
+  $.cim = false;
+  $.airbrake =  new airbrakeJs.Client({projectId: 134633, projectKey: '6cf15375c6ff1a244ffd1281c8221df7'});
+  $.airbrake.addFilter(function(notice) {
+    notice.context.environment = 'production';
+    if (false) {
+      return null;
+    }
+    return notice;
+  });
+
+  function Translator(){
+    var self = this;
+
+    self.items = {};
+    self.items["Please wait"] = "Please wait";self.items["country_prompt"] = "Select a country";self.items["product_prompt"] = "Select a product";self.items["product_family_prompt"] = "Select a product family";self.items["product_category_prompt"] = "Select a product category";self.items["state_prompt"] = "Select a state";self.items["Added to cart"] = "Item added to cart";self.items["Error"] = "Error";self.items["Name"] = "Name";self.items["Quantity"] = "Quantity";self.items["Total"] = "Total";self.items["Remove"] = "Remove";self.items["Your Cart is empty"] = "Your Cart is Empty!";
+  };
+
+  Translator.prototype.t =
+  function(key) {
+    var self = this;
+    return self.items[key];
+  };
+
+  $.translator = new Translator();
+
+  
+</script>
+  <link rel="shortcut icon" href="https://djdzi85khno9j.cloudfront.net/system/images/4260/original/sony_favicon.ico?1469239007">
+<script>
+var model_link_clicked;
+$( document ).ready(function() {
+   $('#next_button').on('click',function(){$("label.singleton-helptext").remove()});
+   $('#WhereIsMyModel').on('click',function(){ 
+    model_link_clicked = "Yes"; 
+    window.model_link_clicked = model_link_clicked;
+  }); 
+});
+if(model_link_clicked == "Yes") {
+  console.log("model link clicked");
+  if (typeof window.SonyAnalytics === 'undefined') {
+    window.SonyAnalytics = function() { 
+      this.build = function() { 
+        var dataLayer = {}; 
+        dataLayer.analytics = {}; 
+        dataLayer.analytics.version = '1'; 
+        dataLayer.analytics.page = {};
+        
+          dataLayer.analytics.page.brand = 'US'; // 'CA' for Canada
+          dataLayer.analytics.page.country = 'US'; // 'CA' for Canada
+          dataLayer.analytics.page.language = 'en';
+          dataLayer.analytics.page.omniture_rsid = "sonygwt-us-prod";
+          dataLayer.analytics.page.name = "usa:product registration:where's my model"; 
+          dataLayer.analytics.page.section = 'usa';
+          dataLayer.analytics.page.template = "usa:product registration:where's my model";
+        
+        
+        return dataLayer; 
+      };
+    };
+  }
+} else {
+  console.log("model link not clicked");
+    if (typeof window.SonyAnalytics === 'undefined') {
+    window.SonyAnalytics = function() { 
+      this.build = function() { 
+
+        var dataLayer = {}; 
+        dataLayer.analytics = {}; 
+        dataLayer.analytics.version = '1'; 
+        dataLayer.analytics.page = {}; 
+        
+          dataLayer.analytics.page.brand = 'US'; // 'CA' for Canada
+          dataLayer.analytics.page.country = 'US'; // 'CA' for Canada
+          dataLayer.analytics.page.language = 'en';
+          dataLayer.analytics.page.omniture_rsid = "sonygwt-us-prod"
+        
+          
+            dataLayer.analytics.page.name = 'usa:product registration:home'; 
+            dataLayer.analytics.page.section = 'usa'; // 'ca' for Canada
+            dataLayer.analytics.page.template = 'usa:product registration:home';
+
+          
+        
+
+        
+         
+
+        return dataLayer; 
+      };
+    };
+  }
+
+}
+</script>
+<script type="text/javascript"src="//nexus.ensighten.com/sonyglobal/Bootstrap.js"></script>
+
+<style>
+  /* Standard SST Font */
+  @font-face {
+    font-family: "SST W15 Light";
+    src: url("../system/fonts/sony/SST/Pro/SSTPro-Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "SST W15 Medium";
+    src: url("../system/fonts/sony/SST/Pro/SSTPro-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family:"SST W15 Ultra Light";
+    src: url("../system/fonts/sony/SST/Pro/SSTPro-UltraLight.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "SST W15 Bold";
+    src: url("../system/fonts/sony/SST/Pro/SSTPro-Bold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "SST W15 Heavy";
+    src: url("../system/fonts/sony/SST/Pro/SSTPro-Heavy.otf") format("opentype");
+  }
+ body,html{font-family: SST W15 Medium;;}
+</style>
+
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="icon-arrow-left" viewBox="0 0 12 9">
+    <path d="M11.4,3.9H2.1l2.7-2.8C5,0.8,5,0.4,4.8,0.2c-0.2-0.2-0.6-0.2-0.9,0L0.2,4.1c-0.2,0.2-0.2,0.6,0,0.9l3.7,3.9
+    C4,9,4.2,9,4.3,9C4.5,9,4.7,9,4.8,8.8C5,8.6,5,8.2,4.8,8L2.1,5.1h9.3c0.3,0,0.6-0.3,0.6-0.6C12,4.2,11.7,3.9,11.4,3.9z"></path>
+  </symbol>
+  <symbol id="icon-triangle-arrow-left" viewBox="-954 554 4 8">
+    <path d="M-950,554l-4,4l4,4V554z"></path>
+  </symbol>
+  <symbol id="icon-triangle-arrow-right" viewBox="-954 554 4 8">
+    <path d="M-954,562l4-4l-4-4V562z"></path>
+  </symbol>
+  <symbol id="icon-checkmark-circle" viewBox="0 0 70 70">
+    <path d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M35,65.4
+    C18.2,65.4,4.6,51.8,4.6,35C4.6,18.2,18.2,4.6,35,4.6c16.8,0,30.4,13.6,30.4,30.4C65.4,51.8,51.8,65.4,35,65.4z M47.7,23.5l-18,18
+    l-7.3-7.3c-0.9-0.9-2.3-0.9-3.2,0c-0.9,0.9-0.9,2.3,0,3.2l8.9,8.9c0.4,0.4,1,0.7,1.6,0.7s1.2-0.2,1.6-0.7c0,0,0,0,0,0l19.7-19.7
+    c0.9-0.9,0.9-2.3,0-3.2C50,22.6,48.6,22.6,47.7,23.5z"></path>
+  </symbol>
+  <symbol id="icon-close-sml" viewBox="0 0 12 12">
+    <path d="M12,1.6L10.4,0L6,4.4L1.6,0L0,1.6L4.4,6L0,10.4L1.6,12L6,7.6l4.4,4.4l1.6-1.6L7.6,6L12,1.6z"></path>
+  </symbol>
+  <symbol id="icon-close" viewBox="0 0 20.1 20.1">
+    <polygon points="20.1,19.1 11.2,10.1 20.1,1.1 19,0 10.1,9 1.1,0 0,1.1 9,10.1 0,19.1 1.1,20.1 10.1,11.1 19.1,20.1"></polygon>
+  </symbol>
+  <symbol id="icon-question-circle" viewBox="0 0 13 13">
+    <path d="M6.5,0C2.9,0,0,2.9,0,6.5C0,10.1,2.9,13,6.5,13c3.6,0,6.5-2.9,6.5-6.5C13,2.9,10.1,0,6.5,0z M7,10.1
+    c-0.2,0.1-0.3,0.2-0.5,0.2c-0.2,0-0.4-0.1-0.5-0.2C5.8,10,5.7,9.8,5.7,9.6c0-0.2,0.1-0.4,0.2-0.5C6,8.9,6.2,8.8,6.4,8.8
+    C6.7,8.8,6.8,8.9,7,9c0.1,0.1,0.2,0.3,0.2,0.5C7.2,9.8,7.1,10,7,10.1z M8.8,5.4C8.7,5.7,8.6,5.8,8.4,6C8.3,6.2,8,6.4,7.6,6.8
+    C7.5,6.9,7.4,7,7.3,7.1C7.2,7.1,7.2,7.2,7.1,7.3c0,0.1-0.1,0.1-0.1,0.2C7,7.5,7,7.7,7,7.8C6.9,8.2,6.7,8.4,6.4,8.4
+    c-0.2,0-0.3-0.1-0.4-0.2C5.8,8.1,5.8,7.9,5.8,7.7c0-0.3,0-0.5,0.1-0.7C6,6.7,6.1,6.5,6.2,6.4c0.1-0.2,0.3-0.3,0.6-0.6
+    C7,5.6,7.2,5.5,7.3,5.4c0.1-0.1,0.2-0.2,0.2-0.3C7.6,5,7.6,4.8,7.6,4.7c0-0.3-0.1-0.5-0.3-0.7C7.1,3.8,6.9,3.7,6.6,3.7
+    C6.2,3.7,5.9,3.8,5.7,4C5.6,4.2,5.4,4.5,5.3,4.9C5.2,5.2,5,5.4,4.7,5.4c-0.2,0-0.3-0.1-0.5-0.2C4,5.1,4,4.9,4,4.8
+    c0-0.3,0.1-0.6,0.3-1C4.5,3.5,4.8,3.2,5.2,3C5.6,2.8,6,2.7,6.6,2.7C7,2.7,7.5,2.8,7.9,3c0.4,0.2,0.7,0.4,0.9,0.7C8.9,4,9,4.3,9,4.7
+    C9,5,9,5.2,8.8,5.4z"></path>
+  </symbol>
+  <symbol id="icon-calendar" viewBox="0 0 19 17">
+    <path d="M0,0v17h19V0H0z M18,16H1V3h17V16z M9,4H6v3h3V4z M13,4h-3v3h3V4z M17,4h-3v3h3V4z M5,8H2v3h3V8z M9,8H6v3h3V8
+    z M13,8h-3v3h3V8z M17,8h-3v3h3V8z M5,12H2v3h3V12z M9,12H6v3h3V12z M13,12h-3v3h3V12z M17,12h-3v3h3V12z"></path>
+  </symbol>
+  <symbol id="icon-hamburger" viewBox="0 0 20 15.9">
+    <path d="M0.4,15.9c-0.2,0-0.4-0.2-0.4-0.4v-3c0-0.2,0.2-0.4,0.4-0.4h19.1c0.2,0,0.4,0.2,0.4,0.4v3c0,0.2-0.2,0.4-0.4,0.4H0.4z
+    M0.4,9.9C0.2,9.9,0,9.7,0,9.5v-3C0,6.2,0.2,6,0.4,6h19.1C19.8,6,20,6.2,20,6.5v3c0,0.2-0.2,0.4-0.4,0.4H0.4z M0.4,3.8
+    C0.2,3.8,0,3.7,0,3.4v-3C0,0.2,0.2,0,0.4,0h19.1C19.8,0,20,0.2,20,0.4v3c0,0.2-0.2,0.4-0.4,0.4H0.4z"></path>
+  </symbol>
+  <symbol id="icon-share" viewBox="0 0 12 12">
+    <path class="st0" d="M4.2,6c0,0,0,0.1,0,0.1l4.3,2.1C8.9,8,9.4,7.8,9.9,7.8c1.2,0,2.1,0.9,2.1,2.1c0,1.2-0.9,2.1-2.1,2.1
+    c-1.2,0-2.1-0.9-2.1-2.1c0,0,0-0.1,0-0.1L3.5,7.6C3.1,7.9,2.6,8.1,2.1,8.1C0.9,8.1,0,7.2,0,6c0-1.2,0.9-2.1,2.1-2.1
+    c0.5,0,1,0.2,1.4,0.5l4.3-2.1c0,0,0-0.1,0-0.1C7.8,0.9,8.7,0,9.9,0C11.1,0,12,0.9,12,2.1c0,1.2-0.9,2.1-2.1,2.1
+    c-0.5,0-1-0.2-1.4-0.5L4.2,5.9C4.2,5.9,4.2,6,4.2,6z"></path>
+  </symbol>
+  <symbol id="icon-sony" viewBox="0 0 273.3 48.1">
+    <path class="st0" d="M97.4,48.1c-9.9,0-19.1-3-25.2-8.5c-4.6-4.1-6.9-9.8-6.9-15.6c0-5.7,2.3-11.5,6.9-15.6C77.8,3.3,87.9,0,97.4,0
+    c10.5,0,18.9,2.7,25.3,8.5c4.6,4.2,6.8,9.8,6.8,15.6c0,5.6-2.3,11.5-6.8,15.6C116.7,45.2,107.3,48.1,97.4,48.1v-6.3
+    c5.3,0,10.1-1.8,13.5-5.2c3.4-3.4,5-7.5,5-12.6c0-4.9-1.7-9.4-5-12.6c-3.3-3.3-8.3-5.2-13.5-5.2c-5.2,0-10.2,1.9-13.6,5.2
+    c-3.2,3.2-4.9,7.7-4.9,12.6c0,4.8,1.7,9.3,4.9,12.6c3.4,3.3,8.4,5.2,13.6,5.2V48.1z M25,0C19.7,0,13.7,1,8.6,3.3
+    C3.9,5.4,0,8.8,0,14.5c0,5.1,3.2,8,3.1,8c1.4,1.3,3.6,3.4,9.4,4.7c2.6,0.6,8.1,1.4,13.6,2c5.5,0.6,10.9,1.1,13,1.7
+    c1.7,0.5,4.6,1.1,4.6,4.3c0,3.3-3.1,4.3-3.6,4.5c-0.5,0.2-4.2,1.9-10.9,1.9c-4.9,0-10.8-1.5-12.9-2.2c-2.5-0.9-5-2.1-7.5-5
+    c-0.6-0.7-1.5-2.8-1.5-4.7H1.3v16.8H8c0,0,0-1.8,0-2.3c0-0.2,0.3-1.3,1.4-0.8c1.4,0.6,5.5,2.2,9.8,3.1c3.5,0.7,5.8,1.3,10.1,1.3
+    c7.1,0,11-1.1,13.6-1.9c2.5-0.7,5.6-2,8.1-4c1.4-1.1,4.3-3.8,4.3-8.9c0-4.8-2.6-7.8-3.5-8.7c-1.2-1.2-2.7-2.2-4.3-2.9
+    c-1.4-0.6-3.6-1.4-5.3-1.8c-3.5-0.9-11.2-1.9-14.9-2.3c-3.9-0.4-10.7-1-13.4-1.8c-0.8-0.2-2.5-1.1-2.5-3c0-1.4,0.8-2.6,2.3-3.5
+    C16.1,7.3,21,6.4,26,6.4c6,0,11,1.3,14.2,2.8c1.1,0.5,2.4,1.2,3.4,2c1.1,0.9,2.7,2.9,3.3,5.6h5.4V2.1h-6v1.7c0,0.6-0.6,1.3-1.7,0.7
+    C42,3.1,34.4,0.1,25,0z M136,2.7v5.3h4.7c3.4,0,3.6,1.9,3.6,3.5v25c0,1.5,0.1,3.5-2.1,3.5c-3.4,0-5.8,0-5.8,0v5.4h24.7v-5.4
+    c0,0-2.6,0-6,0c-2.4,0-2.5-1.1-2.6-3.4V15.3l33.9,30.2h8.6l-0.4-34.1c0.1-2.5,0.2-3.3,2.8-3.3c3.4,0,5.4,0,5.4,0V2.7h-25.1V8
+    c0,0,2.1,0,5.5,0c2.5,0,3,1,3,3.3l0.3,17.9L157,2.7H136z M226.2,40.1v5.4h29.3v-5.4c0,0-4.5,0-5.6,0l-1.5-0.1c-0.6-0.2-1-0.6-1.1-1
+    l-0.1-1.2c0-0.8,0-8.1,0-8.4l0.2-0.8c0.4-0.5,15.6-17.8,16.3-18.5c1.5-1.7,2.3-2,4.2-2c1.8,0,5.4,0,5.4,0V2.7h-24.2V8
+    c0,0,3,0,3.6,0c1.1,0,1.4,1.1,0.9,1.7l-10.3,12l-0.3,0l-10-12C232.4,8.8,233,8,233.8,8c0.7,0,3.6,0,3.6,0V2.7h-29.5V8
+    c0,0,3.4,0,5.3,0c2.3,0,3.8,1.4,4.6,2.4c0.7,0.7,15.7,17.8,16,18.2c0.4,0.5,0.4,0.5,0.4,0.7v8.4l-0.1,1.2c-0.2,0.4-0.6,0.8-1.2,1
+    l-1.5,0.1H226.2z"></path>
+  </symbol>
+  <symbol id="icon-social-facebook" viewBox="0 0 26.9 58.2">
+    <path class="st0" d="M26.9,10.2h-6.5c-1.3,0-2.6,1.4-2.6,2.4v6.7h9.1c-0.4,5.1-1.1,9.8-1.1,9.8h-8v29.1h-12V29.1H0v-9.8h5.8v-8
+    C5.8,9.8,5.5,0,18.1,0h8.9V10.2z"></path>
+  </symbol>
+  <symbol id="icon-social-twitter" viewBox="0 0 273.4 222.2">
+    <path class="st0" d="M273.4,26.3c-10.1,4.5-20.9,7.5-32.2,8.8c11.6-6.9,20.5-17.9,24.7-31C255,10.5,243,15.2,230.2,17.7
+    C220,6.8,205.4,0,189.3,0c-31,0-56.1,25.1-56.1,56.1c0,4.4,0.5,8.7,1.5,12.8C88,66.5,46.7,44.2,19,10.3c-4.8,8.3-7.6,17.9-7.6,28.2
+    c0,19.5,9.9,36.6,25,46.7c-9.2-0.3-17.8-2.8-25.4-7c0,0.2,0,0.5,0,0.7c0,27.2,19.3,49.8,45,55c-4.7,1.3-9.7,2-14.8,2
+    c-3.6,0-7.1-0.4-10.6-1c7.1,22.3,27.9,38.5,52.4,39c-19.2,15-43.4,24-69.7,24c-4.5,0-9-0.3-13.4-0.8c24.8,15.9,54.3,25.2,86,25.2
+    c103.2,0,159.6-85.5,159.6-159.6c0-2.4-0.1-4.9-0.2-7.3C256.4,47.4,265.9,37.5,273.4,26.3z"></path>
+  </symbol>
+  <symbol id="icon-social-instagram" viewBox="0 0 98.7 98.7">
+    <path class="st0" d="M12.7,0h73.4c7,0,12.7,5.7,12.7,12.7v73.4c0,7-5.7,12.7-12.7,12.7H12.7C5.7,98.7,0,93,0,86.1V12.7
+    C0,5.7,5.7,0,12.7,0L12.7,0z M71.9,11c-2.4,0-4.4,2-4.4,4.4v10.6c0,2.4,2,4.4,4.4,4.4h11.2c2.4,0,4.4-2,4.4-4.4V15.4
+    c0-2.4-2-4.4-4.4-4.4H71.9L71.9,11z M87.6,41.8h-8.7c0.8,2.7,1.3,5.5,1.3,8.5C80.1,66.6,66.4,80,49.5,80
+    c-16.9,0-30.7-13.3-30.7-29.7c0-2.9,0.4-5.8,1.3-8.5H11v41.7c0,2.2,1.8,3.9,3.9,3.9h68.8c2.2,0,3.9-1.8,3.9-3.9V41.8L87.6,41.8z
+     M49.5,29.9c-11,0-19.8,8.6-19.8,19.2c0,10.6,8.9,19.2,19.8,19.2c11,0,19.8-8.6,19.8-19.2C69.3,38.5,60.4,29.9,49.5,29.9z"></path>
+  </symbol>
+  <symbol id="icon-social-vine" viewBox="0 0 282.3 322">
+    <path class="st0" d="M282.3,160.1c-8.3,1.9-16.3,2.8-23.5,2.8c-40.6,0-71.9-28.4-71.9-77.7c0-24.2,9.3-36.8,22.6-36.8
+    c12.6,0,21,11.3,21,34.2c0,13-3.5,27.3-6.1,35.7c0,0,12.5,21.8,46.8,15.1c7.3-16.1,11.2-37,11.2-55.4c0-49.3-25.2-78-71.3-78
+    c-47.4,0-75.1,36.4-75.1,84.5c0,47.6,22.2,88.5,58.9,107.1c-15.4,30.9-35.1,58-55.5,78.5c-37.1-44.9-70.7-104.8-84.5-221.7H0
+    C25.3,243.1,100.8,305.1,120.7,317c11.3,6.8,21,6.4,31.3,0.6c16.2-9.2,64.8-57.8,91.8-114.8c11.3,0,24.9-1.3,38.5-4.4V160.1z"></path>
+  </symbol>
+  <symbol id="icon-social-tumblr" viewBox="0 0 11.5 20">
+    <path class="st0" d="M10.5,15.9c-0.4,0.2-1.1,0.3-1.6,0.3c-1.6,0-1.9-1.1-1.9-2V8.1h4v-3H7V0c0,0-2.9,0-2.9,0c0,0-0.1,0-0.1,0.1
+    C3.8,1.7,3,4.4,0,5.5v2.6h2v6.5C2,16.9,3.7,20,8,20c1.5,0,3.1-0.6,3.5-1.2L10.5,15.9z"></path>
+  </symbol>
+  <symbol id="icon-social-pinterest" viewBox="0 0 16 20">
+    <path d="M3.3,19.5c0-0.9,0-1.9,0.2-2.8C3.7,15.6,5,9.9,5,9.9S4.6,9.1,4.6,8c0-1.8,1-3.2,2.3-3.2c1.1,0,1.6,0.8,1.6,1.9
+    c0,1.1-0.7,2.8-1,4.4c-0.3,1.3,0.6,2.4,1.9,2.4c2.3,0,3.8-3,3.8-6.6c0-2.7-1.8-4.7-4.9-4.7C4.6,2.1,2.3,4.9,2.3,8
+    c0,1.1,0.3,1.8,0.8,2.4c0.2,0.3,0.2,0.4,0.2,0.7c-0.1,0.2-0.2,0.8-0.2,1c-0.1,0.3-0.3,0.4-0.6,0.3C0.8,11.7,0,9.8,0,7.7
+    C0,4.2,2.8,0,8.5,0C13,0,16,3.4,16,7.1c0,4.8-2.6,8.5-6.4,8.5c-1.3,0-2.5-0.7-2.9-1.5c0,0-0.7,2.8-0.8,3.4c-0.3,0.9-0.7,1.9-1.2,2.6
+    "></path>
+  </symbol>
+  <symbol id="icon-social-google-plus" viewBox="0 0 20 18">
+    <path d="M10.9,0H6C6,0,1,0.1,1,4.4c0,4.3,4.3,3.8,4.3,3.8v1.1c0,0.4,0.6,0.3,0.7,1.2c-0.3,0-6-0.2-6,3.8
+    C0,18.2,5,18,5,18s5.8,0.3,5.8-4.6c0-2.9-3.3-3.8-3.3-5c0-1.2,2.5-1.5,2.5-4.3c0-1.7-0.1-2.6-1.4-3.2C8.6,0.5,10.9,0.8,10.9,0z
+     M9.3,13.8c0.1,1.5-1.5,2.9-3.5,3c-2,0.1-3.7-1-3.8-2.5c-0.1-1.5,1.5-2.9,3.5-3C7.5,11.1,9.2,12.2,9.3,13.8z M6.3,7.2
+    c-1.2,0.3-2.5-0.8-3-2.5C2.9,3,3.5,1.3,4.7,0.9c1.2-0.3,2.5,0.8,3,2.5C8.1,5.2,7.5,6.9,6.3,7.2z M16.6,3.5V0h-1v3.5h-3.4v1h3.4V8h1
+    V4.5H20v-1H16.6z"></path>
+  </symbol>
+</svg>
+
+
+  <div class="header">
+    <div class="header-wrapper">
+
+      <div class="grid">
+        <div class="col-1-2 header-left" style="margin-bottom: 0px;">
+           <div class='header-image-mobile'>
+              <a href="http://sony.com">
+              <img class="logo mobile-img" src="https://djdzi85khno9j.cloudfront.net/system/images/4259/original/sony_logo_white.png?1473864835" alt="Sony" style="margin-right:10px;">
+              </a>
+            </div>
+            <div class='header-image-web'>
+              <a href="http://sony.com">
+              <img class="logo" src="https://djdzi85khno9j.cloudfront.net/system/images/4259/original/sony_logo_white.png?1473864835" alt="Sony">
+              </a>
+            </div>
+         <div class="title sony-flag-text-web">
+             Product Registration <img class="flag" src="https://djdzi85khno9j.cloudfront.net/system/images/3824/original/us_flag.png?1472207707" alt="US">
+          </div>
+
+        </div>
+        <div class="col-1-2">
+        <input type="hidden" value="" />
+        
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+<div class="banner-orange">
+   <div class="banner-text"> <b>Get your chance to win a $500 USD Visa® Prepaid Card when you register. </b> <a target="_blank" class="a-color" href="http://www.sony.com/registration-sweepstakes"> Learn more </a>
+</div>
+</div>
+<script>
+
+
+setTimeout(function(){
+  var sony_stores_us = [ 
+
+"17th Street Photo",
+"192 CameraCom",
+"AAFES",
+"Abel Cine Tech",
+"Abt Electronics",
+"ACE Photo",
+"Adorama",
+"Al-Art Video",
+"Allen Leichters Camera & Video",
+"Allen's Camera & Sound",
+"Amazon",
+"Arlington Camera",
+"Army and Air Force Exchange",
+"Art's Camera Plus ",
+"Artsons Corporation",
+"ASAP Photo And Camera",
+"Audio Video Communication Store",
+"AZ 1 Hour Photo Lab",
+"B & C Camera",
+"B&H Photo Video",
+"Backscatter",
+"Band Pro Film & Digital",
+"Bay Camera Company",
+"Beach Trading Company",
+"Bedford Camera & Video",
+"Bergen County Camera",
+"Berger Bros Cameras",
+"Bernie's Photo Center",
+"Best Buy",
+"Biggs Camera and  Image Center",
+"Billmeier Camera Shop",
+"Bluewater Photo",
+"Bozeman Camera & Repair",
+"BrandsMart",
+"Bromfield Camera Co",
+"Burke Camera",
+"Calagaz Photo Supply",
+"Camcor",
+"Camera Bar",
+"Camera Case",
+"Camera Craft",
+"Camera Land",
+"Camera Mart",
+"Camera Rental Company",
+"Camera Stop",
+"Camera West",
+"Camera Wholesales",
+"Camera-Corner",
+"Cameta Camera",
+"Camstamp",
+"Capture and Connect Corporation",
+"Cardinal Camera & Video Center",
+"Christian Photo",
+"Colonial Photo & Hobby",
+"Competitive Cameras",
+"Costco",
+"Cozy Stylish Chic",
+"Creve Coeur Camera",
+"Crick Camera Shop",
+"Crown Camera",
+"Crutchfield,",
+"Dan's Camera City",
+"Digital Darkroom & Photography",
+"Digital Goja",
+"Dive and Photo",
+"EC Electronics",
+"Englewood Photography",
+"Fairbanks Fast Foto",
+"Fireside Camera",
+"Focus Camera",
+"Fort Worth Camera",
+"Foto Forum",
+"Foto-Care",
+"Fry's Electronics",
+"Gene's Camera Store",
+"George's Camera & Video Exchange",
+"Glazer's Camera",
+"Gordon's Photo Service",
+"Green Mountain Camera",
+"Harolds Photo Center",
+"Helix Camera & Video ",
+"HH Gregg",
+"Horn Photo",
+"Hot Rod Cameras",
+"Hoyer's Photo Supply",
+"Huppin's Hi-Fi, Photo & Video",
+"Image One Enterprise",
+"Jabbour Corporation",
+"Jack's Camera Shop",
+"Johnson PhotoImaging",
+"Kaufmann's Cameras",
+"Kenmore Camera",
+"Khorovsky Enterprise",
+"Kralhinkle Photography",
+"KSP",
+"Lake Shore Camera Exchange",
+"Lakeside Camera Center",
+"Larmon Photo",
+"Lightwriter",
+"ListenUp",
+"Luminous AV",
+"Lundgrens of Wisconsin",
+"Mack Camera Service",
+"Madison Photo Shop",
+"Marine Corps Exchange",
+"Microsearch Inc.",
+"Midtown Video",
+"Midwest Photo Exchange",
+"Mike Crivello's Camera and Imaging Center",
+"Mike's Camera",
+"Milford Photo",
+"Military Exchange",
+"Millennium Foto, Inc",
+"Molers Camera",
+"MoMA",
+"Monadnock Imaging of Keene",
+"Murphy's Camera",
+"National Camera Exchange",
+"Navy Exchange",
+"Nebraska Furniture Mart",
+"Neptune Photo Inc",
+"New York Camera",
+"New York Camera, Inc",
+"Newtonville Camera",
+"Norman Camera Company",
+"OC Camera",
+"Oceanside Photo and Telescope",
+"Odessa Camera Center",
+"Olympia Trading Compan",
+"Omega Broadcast Group",
+"Omega Photo",
+"Other",
+"Other (received as a gift),",
+"Palm Beach Photography",
+"Paul's Photo",
+"PC Richard",
+"Peoria Camera Shop",
+"Perfect Image Service Center",
+"Photo Source",
+"Photo Technologies",
+"Pictureline",
+"Pitman Photo",
+"Pixels Connection",
+"Pixels Foto and Frame",
+"Precision Camera & Video",
+"Pro Camera Hawaii",
+"Pro Photo Supply",
+"PROCAM Photo & Video Gear ",
+"Ra-Lin",
+"Rand's Camera & Hi-Fi",
+"Ray Supply",
+"RC Wiley",
+"Richmond Camera Shop",
+"Roberts Distributors",
+"Robi's Quik Color Labs",
+"Rockbrook Camera",
+"Rowe Professional Photographers",
+"Samy's Camera",
+"San Jose Camera Shop",
+"Service Photo Supply",
+"Showcase",
+"Shutterbug Camera",
+"Sierra Nevada Photography",
+"Silvio's Photographic Center",
+"Sony Rewards Store",
+"Sony Store",
+"Southeastern Camera",
+"Southern Photo",
+"Spartan Photo Center",
+"Staples",
+"Star Power",
+"Stewart's Photo Shop",
+"Sunny Schick Camera",
+"T & F Camera Shop",
+"Target",
+"Tempe Camera Repair",
+"The Camera Company",
+"The Camera Corner",
+"The Camera Exchange",
+"The Camera Shop of Muskegon",
+"The Dodd Company",
+"The Imaging Depot",
+"The Looking Glass Photography",
+"The Photo Center",
+"The Shutterbug",
+"The Whole Picture",
+"Unique Photo",
+"US Coast Guard Exchange",
+"Van's Camera",
+"Veterans Canteen Service",
+"Video & Audio Center",
+"Video Audio Center",
+"W Schiller and Co",
+"Walmart",
+"Wanted Design",
+"WB Hunt Co",
+"Wholesale Photo Supply",
+"Wolfe's Camera Shops",
+"Woodward Camera",
+"World Wide Stereo"
+
+ ];
+  $('#purchased_at').frautoComplete(sony_stores_us.sort(), {
+    listLimit: Infinity
+  });
+}, 1000);
+</script>
+
+
+  <!-- Hero Area -->
+  <div class="hero hero-web" >
+    <div class="wrapper">
+      <div class="hero-tabs">
+        <!-- Toggle Buttons -->
+        <div class="tab-toggle centered-text" data-tab="register" data-selected="true">
+          <span>Register Product</span>
+        </div>
+        <div class="tab-toggle centered-text" data-tab="login">
+          <span>Log In</span>
+        </div>
+
+        <!-- Register Panel -->
+        <div class="tab-panel" data-panel="register">
+          <form id="product_form" action="#">
+            <p class="small-text">* Indicates a required field</p>
+            <div class="grid">
+              <div class="col-1">
+                <label for="username">
+                  <span class="label-text">Email Address *</span>
+                  <input type="email" id="username" class="registria_field" name="user[email]">
+                </label>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-1">
+                <label for="model">
+                  <span class="label-text">Model Number *<a id="WhereIsMyModel" href="http://esupport.sony.com/info/264/US/" target="_blank" class="small-text text-color-primary right">Where's my Model #?</a></span>
+                  <label style="margin-top:0px" class="error-helptext"></label>
+                  <input type="text" autocomplete="off" class="autocomplete-product registria_field" data-productcategory="en_US" name="product[model]" id="model" data-showall="true" value="">
+                  <input type="hidden" id="product" name="product[product]" class="registria_field" value="">
+                </label>
+  <label style="margin-top:0px" class="singleton-helptext">Start typing first three characters to see a list</label> 
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="col-1">
+                <label for="serial">
+                  <span class="label-text">Serial Number</span>
+                  <input class="registria_field " id="serial" name="product[serial_number]" type="text" value="">
+                </label>
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="col-1-2 sm-1">
+                <label for="purchase_date">
+                  <span class="label-text">Purchase Date *</span>
+                  <input type="tel" class="registria_field mask-date" name="product[purchase_date]" id="purchase_date">
+                </label>
+              </div>
+              <div class="col-1-2 sm-1">
+                <label for="purchased_at">
+                  <span class="label-text">Place of Purchase *</span>
+                    <input type="text" class="registria_field" name="product[purchased_at]" id="purchased_at" autocomplete="off">
+                </label>
+              </div>
+            </div>
+
+            <p class="small-text">Already have a Product Registration Account? <button class="button-text" type="button" data-tab-target="login">Log In</button> to your existing account.</p>
+
+            <div class="grid">
+              <div class="col-1">
+                <input class="registria_field" id="page_name" name="page[name]" type="hidden" value="register">
+                <input type="hidden" class="registria_field" id="input_version" name="product[input_version]" value=" VWC01">
+                <button class="button-primary RegisterForm" id="next_button" type="submit">Submit</button>
+               <!-- <input type="hidden" class="registria_field" id="check_user" name="source" value="">
+                <button onclick="return createAccount()"  class="button-primary" id="next_button RegisterForm" type="submit">Submit</button> -->
+               <!--T13<button onclick="guestRegistrationAccount()" style="font-size:14px;float: right;margin-top: 0px;" class="button-primary" id="next_button_guest RegisterForm" type="submit">Register as Guest</button>  -->   
+ <a style="padding-top:10px" class="right" href="http://community.sony.com/t5/Product-Registration/ct-p/product-registration" target="_blank">Need help?</a>            
+              </div>
+            </div>
+        
+          </form>
+        </div>
+
+        <!-- Login Panel -->
+        <div class="tab-panel" data-panel="login">
+          <form action="#" id="registria_form" method="POST">
+            <div class='registria form_errors' style='display:none'></div>
+
+            <div class='registria form_messages' style='display:none'></div>
+
+            <div class="grid">
+              <p class='email_exists_msg'>Looks like you already have an account. Please login. </p>
+              <div class="col-1">
+                <label for="username">
+                  <span class="label-text">Email Address *</span>
+                  <input type="text" id="username" class="registria_field" name="login[username]">
+                </label>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-1">
+                <label for="password">
+                  <span class="label-text">Password *</span>
+                  <input type="password" id="password" class="registria_field" name="login[password]">
+                </label>
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="col-1">
+                <input class="registria_field" id="page_name" name="page[name]" type="hidden" value="register">
+                <input type="hidden" class="registria_field" id="input_version" name="product[input_version]" value=" VWC01">
+                <input id="next_button" type="hidden" value="">
+                <button type="submit" id="LogInForm" class="button-primary login_button">Log In</button>
+                <a href="/reset_password" id="forgotPassword" class="right forgot_password ">Forgot Your Password?</a>
+              </div>
+            </div>
+
+            <p class="small-text">Don't have an account? <button class="button-text" type="button" data-tab-target="register">Register a new product</button> with your email address to create one.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><!-- end .hero -->
+
+  <!-- Call to Action -->
+  <div class="padding-vertical">
+    <div class="wrapper">
+      <h1 class="centered-text">Registration has its benefits.</h1>
+
+      <div class="grid">
+        <div class="col-1-3 sm-1 centered-text">
+          <img class="cta-icon" src="https://djdzi85khno9j.cloudfront.net/system/images/4342/original/icon-box.png?1472207295" alt="box">
+          <p>Proof of Ownership</p>
+          <p class="small-text">In case your product is ever lost or stolen.</p>
+        </div>
+        <div class="col-1-3 sm-1 centered-text">
+          <img class="cta-icon" src="https://djdzi85khno9j.cloudfront.net/system/images/4343/original/icon-search.png?1472206817" alt="search">
+          <p>No More Searching</p>
+          <p class="small-text">Product manuals, drivers, and warranty information in one easy online location.</p>
+        </div>
+        <div class="col-1-3 sm-1 centered-text">
+          <img class="cta-icon" src="https://djdzi85khno9j.cloudfront.net/system/images/4341/original/icon-bell.png?1472207119" alt="bell">
+          <p>Receive Notifications</p>
+          <p class="small-text">The latest firmware and software updates to get the most out of your product.</p>
+        </div>
+        <!-- <div class="col-1-4 med-1-2 sm-1 centered-text">
+          <img class="cta-icon" src="img/icon-rewards.png" alt="rewards">
+          <p>Sony Rewards</p>
+          <p class="small-text">Join a rewards program and earn points to use towards the hottest electronics, PlayStation games and even VIP experiences.</p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="padding-vertical panel-gray centered-text small-text">
+    <div class="wrapper">
+      <p>Registration is voluntary and failure to register will not diminish your limited warranty rights.</p>
+      <p>To register Sony Professional products, please visit <a href="http://www.sony.com/pro">www.sony.com/pro</a>.<br />
+      For Sony customers in <a href="https://productregistration.sony.ca">Canada</a>, <a href="http://www.sony-latin.com/corporate/SOLA/home.html">Caribbean/Latin America</a> and <a href="http://www.sony.net/electronics/index.html?cc=US">other countries worldwide</a>, please refer to the appropriate <a href="http://www.sony.net/electronics/index.html?cc=US">regional Sony site</a>.</p>
+    </div>
+  </div>
+
+<script>
+$(window).load(function() {
+  
+  console.log("user guest value = " + "");
+  var RegistriaTranslations = {
+    "required": "required",
+    "validationNoFutureDate": "Can't select a future date",
+  }
+  $('#purchase_date').rules('add', {
+    messages: {
+      futureDate: RegistriaTranslations.required
+    }
+  });
+  $('#purchase_date').on('keyup', function() {
+    if(isFutureDate($('#purchase_date').val())){
+      $('#purchase_date').rules('add', {
+        messages: {
+          futureDate: RegistriaTranslations.validationNoFutureDate
+        }
+      }); 
+    } else {
+      $('#purchase_date').rules('add', {
+        messages: {
+          futureDate: RegistriaTranslations.required
+        }
+      });
+    }
+  }); // End of Keyup function
+   
+}); // End of document ready function
+
+/* Check given purchase date is future date or not */
+  function isFutureDate(idate){
+    var today = new Date().getTime(),
+    idate = idate.split("/");
+    idate = new Date(idate[2], idate[1] - 1, idate[0]).getTime();
+    return (today - idate) < 0 ? true : false;
+  }
+
+</script>
+      <!-- Footer -->
+      <div class="footer small-text">
+        <div class="wrapper">
+          <div class="grid">
+            <div class="col-3-4 lg-2-3 med-1-2 sm-1">
+              <p class="copyright">
+                <a href="http://sony.com" target="_blank">&copy; 2016 Sony Electronics Inc.</a>
+                <a href="http://discover.store.sony.com/electronics/terms-conditions.html?14348&rid=1&cid=eml-seed&CRMID=eml-0&XID=E:14348:FTL11TERMSCONDITIONS" target="_blank">Terms and Conditions</a> | <a href="http://www.sonyrewards.com/en/footer/privacy-legal" target="_blank">Privacy Policy/Your California Privacy Rights</a>
+              </p>
+            </div>
+            <div class="col-1-4 lg-1-3 med-1-2 sm-1">
+              <div class="right">
+                <p>Join our <a href="http://community.sony.com/t5/Product-Registration/ct-p/product-registration" target="_blank">community</a> or follow us on:</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/Sony" target="_blank">
+                    <svg><use xlink:href="#icon-social-facebook"></use></svg>
+                    <span class="hidden-text">Facebook</span>
+                  </a>
+                  <a href="https://twitter.com/SonyElectronics" target="_blank">
+                    <svg><use xlink:href="#icon-social-twitter"></use></svg>
+                    <span class="hidden-text">Twitter</span>
+                  </a>
+                  <a href="http://instagram.com/sony" target="_blank">
+                    <svg><use xlink:href="#icon-social-instagram"></use></svg>
+                    <span class="hidden-text">Instagram</span>
+                  </a>
+                  <a href="https://vine.co/sony" target="_blank">
+                    <svg><use xlink:href="#icon-social-vine"></use></svg>
+                    <span class="hidden-text">Vine</span>
+                  </a>
+                  <a href="http://sony.tumblr.com/" target="_blank">
+                    <svg><use xlink:href="#icon-social-tumblr"></use></svg>
+                    <span class="hidden-text">Tumblr</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>

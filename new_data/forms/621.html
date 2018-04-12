@@ -1,0 +1,845 @@
+ <!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Product Registration - GUNNAR Computer Eyewear</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://gunnar.com/xmlrpc.php" />
+<link rel="shortcut icon" type="image/x-icon" href="https://gunnar.com/wp-content/uploads/2015/12/favicon1.png">
+<link rel="apple-touch-icon" href="https://gunnar.com/wp-content/uploads/2015/12/favicon1.png" />
+<link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic|Oswald:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic|Cabin:100,200,300,400,500,600,700,800,900,300italic,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<script type="application/javascript">var QodeAjaxUrl = "https://gunnar.com/wp-admin/admin-ajax.php"</script>
+
+<link rel="canonical" href="https://gunnar.com/product-registration/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Product Registration - GUNNAR Computer Eyewear" />
+<meta property="og:url" content="https://gunnar.com/product-registration/" />
+<meta property="og:site_name" content="GUNNAR Computer Eyewear" />
+<meta property="article:publisher" content="https://www.facebook.com/GUNNAROptiks/" />
+<meta property="fb:app_id" content="1530878590" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Product Registration - GUNNAR Computer Eyewear" />
+<meta name="twitter:site" content="@GUNNAROptiks" />
+<meta name="twitter:creator" content="@GUNNAROptiks" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/gunnar.com\/","sameAs":["https:\/\/www.facebook.com\/GUNNAROptiks\/","https:\/\/www.instagram.com\/gunnaroptiks\/","https:\/\/www.linkedin.com\/company\/gunnar-optiks","https:\/\/www.youtube.com\/user\/gunnaroptiks","https:\/\/www.pinterest.com\/gunnaroptiks\/","https:\/\/twitter.com\/GUNNAROptiks"],"@id":"#organization","name":"GUNNAR Optiks","logo":"https:\/\/gunnar.com\/wp-content\/uploads\/2015\/05\/gunnar-logo.png"}</script>
+
+<link rel='dns-prefetch' href='//gunnar.com' />
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="GUNNAR Computer Eyewear &raquo; Feed" href="https://gunnar.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="GUNNAR Computer Eyewear &raquo; Comments Feed" href="https://gunnar.com/comments/feed/" />
+
+<script type="text/javascript" data-cfasync="false">
+	var mi_track_user = true;
+	var disableStr = 'ga-disable-UA-35211317-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-35211317-1', 'auto', {'allowLinker':true});
+		__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'linker'); 
+__gaTracker('linker:autoLink', ['gunnars.com'] );
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you\'re not being tracked. ");
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+		})();
+		}
+</script>
+
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/gunnar.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='angelleye-express-checkout-css-css' href='https://gunnar.com/wp-content/plugins/paypal-for-woocommerce/assets/css/angelleye-express-checkout.css?ver=1.4.8.7' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css' href='https://gunnar.com/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ls-google-fonts-css' href='https://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-style-css' href='//ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wpr_giftcards_css-css' href='https://gunnar.com/wp-content/plugins/gift-cards-for-woocommerce/assets/css/styles.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wgdr-css' href='https://gunnar.com/wp-content/plugins/woocommerce-google-dynamic-retargeting-tag/public/css/wgdr-frontend.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='default_style-css' href='https://gunnar.com/wp-content/themes/bridge/style.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_font_awesome-css' href='https://gunnar.com/wp-content/themes/bridge/css/font-awesome/css/font-awesome.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_font_elegant-css' href='https://gunnar.com/wp-content/themes/bridge/css/elegant-icons/style.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_linea_icons-css' href='https://gunnar.com/wp-content/themes/bridge/css/linea-icons/style.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_dripicons-css' href='https://gunnar.com/wp-content/themes/bridge/css/dripicons/dripicons.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='stylesheet-css' href='https://gunnar.com/wp-content/themes/bridge/css/stylesheet.min.css?ver=4.9.5' type='text/css' media='all' />
+<style id='stylesheet-inline-css' type='text/css'>
+ .page-id-82485.disabled_footer_top .footer_top_holder, .page-id-82485.disabled_footer_bottom .footer_bottom_holder { display: none;}
+
+
+</style>
+<link rel='stylesheet' id='woocommerce-css' href='https://gunnar.com/wp-content/themes/bridge/css/woocommerce.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce_responsive-css' href='https://gunnar.com/wp-content/themes/bridge/css/woocommerce_responsive.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='qode_print-css' href='https://gunnar.com/wp-content/themes/bridge/css/print.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='webkit-css' href='https://gunnar.com/wp-content/themes/bridge/css/webkit_stylesheet.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='style_dynamic-css' href='https://gunnar.com/wp-content/themes/bridge/css/style_dynamic.css?ver=1521565427' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css' href='https://gunnar.com/wp-content/themes/bridge/css/responsive.min.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='style_dynamic_responsive-css' href='https://gunnar.com/wp-content/themes/bridge/css/style_dynamic_responsive.css?ver=1521565427' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='https://gunnar.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='custom_css-css' href='https://gunnar.com/wp-content/themes/bridge/css/custom_css.css?ver=1521565427' type='text/css' media='all' />
+<link rel='stylesheet' id='prdctfltr-css' href='https://gunnar.com/wp-content/plugins/prdctfltr/lib/css/prdctfltr.min.css?ver=6.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='https://gunnar.com/wp-content/themes/bridge/style.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='gunnar-style-css' href='https://gunnar.com/wp-content/themes/gunnars/assets/css/style.css?ver=4.9.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-bundle-style-css' href='https://gunnar.com/wp-content/plugins/woocommerce-product-bundles/assets/css/wc-pb-frontend.css?ver=5.7.7' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LS_Meta = {"v":"6.7.1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/LayerSlider/static/layerslider/js/greensock.js?ver=1.19.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var slide_in = {"demo_dir":"https:\/\/gunnar.com\/wp-content\/plugins\/convertplug\/modules\/slide_in\/assets\/demos"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.7.1'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.7.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/gunnar.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.0.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/gift-cards-for-woocommerce/assets/js/scripts.js?ver=4.9.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_sa_opt = {"i18_prompt_cancel":"Are you sure you want to cancel this order?","i18_prompt_change":"Are you sure you want to change the status of this order?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/woocommerce-status-actions/assets/js/frontend.min.js?ver=2.3.2'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/gunnar.com\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.3.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.4.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mailchimp_public_data = {"site_url":"https:\/\/gunnar.com","ajax_url":"https:\/\/gunnar.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/mailchimp-for-woocommerce/public/js/mailchimp-woocommerce-public.min.js?ver=2.1.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/pixelyoursite-pro/js/jquery.bind-first-0.2.3.min.js?ver=6.5.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pys_fb_pixel_options = {"site_url":"https:\/\/gunnar.com","ajax_url":"https:\/\/gunnar.com\/wp-admin\/admin-ajax.php","domain":"gunnar.com","track_traffic_source":"1","click_event_enabled":"1","adsense_enabled":"1","content_params":{"post_type":"page","content_name":"Product Registration","post_id":82485,"domain":"gunnar.com","user_roles":"guest"},"woo":{"addtocart_enabled":true,"product_data":"variation","affiliate_enabled":false,"affiliate_event_name":"Lead","paypal_enabled":false}};
+var pys_fb_pixel_regular_events = [{"type":"init","name":"455129931328034","params":[]},{"type":"track","name":"PageView","params":{"domain":"gunnar.com","user_roles":"guest"},"delay":0},{"type":"trackCustom","name":"GeneralEvent","params":{"post_type":"page","content_name":"Product Registration","post_id":"82485","domain":"gunnar.com","user_roles":"guest"},"delay":0}];
+var pys_fb_pixel_dynamic_events = [];
+var pys_fb_pixel_dynamic_triggers = [];
+var pys_fb_pixel_custom_code_events = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/pixelyoursite-pro/js/public.js?ver=6.5.0'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/pixelyoursite-pro/js/yt-track.js?ver=6.5.0'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/pixelyoursite-pro/js/vimeo.min.js?ver=6.5.0'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/pixelyoursite-pro/js/vimeo-track.js?ver=6.5.0'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/pixelyoursite-pro/js/adsense-track.js?ver=6.5.0'></script>
+<meta name="generator" content="Powered by LayerSlider 6.7.1 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress." />
+
+<link rel='https://api.w.org/' href='https://gunnar.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gunnar.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://gunnar.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.9.5" />
+<meta name="generator" content="WooCommerce 3.3.4" />
+<link rel='shortlink' href='https://gunnar.com/?p=82485' />
+<link rel="alternate" type="application/json+oembed" href="https://gunnar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgunnar.com%2Fproduct-registration%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://gunnar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgunnar.com%2Fproduct-registration%2F&#038;format=xml" />
+<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0069/8767.js" async="async"></script>
+<script type="text/javascript">
+  var __lc = {};
+  __lc.license = 5376851;
+
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script><meta name="referrer" content="always" /><style type="text/css">dd ul.bulleted {  float:none;clear:both; }</style> <meta name="google-site-verification" content="8zPwdB7bO_Rv3_N2BccF0xwrvh8eCumPTM0mCExr8-U" />
+<meta name="msvalidate.01" content="0E284ED36BC4FDD5F87C6FF622872641" />
+<meta name="p:domain_verify" content="aa262da8d12b1a3e4c19aa30da8cb2a6" />
+<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://gunnar.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+
+<meta name="generator" content="WooCommerce Product Filter - All in One WooCommerce Filter" /><style type="text/css" data-type="vc_custom-css">p {
+font-size: 14px;
+line-height: 2;
+color: #000 !important;
+padding: 15px 0 15px;
+}
+
+ul {
+font-size: 14px;
+line-height: 2;
+color: #000 !important;
+padding: 15px 0 15px;
+}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="page-template-default page page-id-82485 has_paypal_express_checkout  columns-4 qode-child-theme-ver-1.0.0 qode-theme-ver-14.2 qode-theme-bridge wpb-js-composer js-comp-ver-5.4.7 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
+<div class="wrapper">
+<div class="wrapper_inner">
+
+
+<header class=" has_top scroll_header_top_area light stick scrolled_not_transparent page_header">
+<div class="header_inner clearfix">
+<form role="search" id="searchform" action="https://gunnar.com/" class="qode_search_form" method="get">
+<div class="container">
+<div class="container_inner clearfix">
+<i class="qode_icon_font_awesome fa fa-search qode_icon_in_search"></i> <input type="text" placeholder="Search" name="s" class="qode_search_field" autocomplete="off" />
+<input type="submit" value="Search" />
+<div class="qode_search_close">
+<a href="#">
+<i class="qode_icon_font_awesome fa fa-times qode_icon_in_search"></i> </a>
+</div>
+</div>
+</div>
+</form>
+<div class="header_top_bottom_holder">
+<div class="header_top clearfix" style='background-color:rgba(0, 0, 0, 0.1);'>
+<div class="container">
+<div class="container_inner clearfix">
+<div class="left">
+<div class="inner">
+</div>
+</div>
+<div class="right">
+<div class="inner">
+<div class="header-widget widget_text header-right-widget"> <div class="textwidget"><p><span style="color: #ffffff !important;">FREE SHIPPING ON orders over $49.99 (US only) |</span> <a href="https://gunnar.com/returns/"><span style="color: #d03238 !important;"><b>30 Day Guarantee</b></span></a> <span style="color: #ffffff !important;">|</span> <a href="https://gunnar.com/my-account">My Account</a> <span style="color: #ffffff !important;">|</span> <a href="https://gunnar.com/contact/">Support</a></p>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="header_bottom clearfix" style=' background-color:rgba(255, 255, 255, 0.1);'>
+<div class="container">
+<div class="container_inner clearfix">
+<div class="header_inner_left">
+<div class="mobile_menu_button">
+<span>
+<i class="qode_icon_font_awesome fa fa-bars "></i> </span>
+</div>
+<div class="logo_wrapper">
+<div class="q_logo">
+<a itemprop="url" href="https://gunnar.com/">
+<img itemprop="image" class="normal" src="https://gunnar.com/wp-content/uploads/2015/05/gunnar-logo.png" alt="Logo" /> <img itemprop="image" class="light" src="https://gunnar.com/wp-content/uploads/2015/05/gunnar-logo-white.png" alt="Logo" /> <img itemprop="image" class="dark" src="https://gunnar.com/wp-content/uploads/2015/05/gunnar-logo.png" alt="Logo" /> <img itemprop="image" class="sticky" src="https://gunnar.com/wp-content/uploads/2015/05/gunnar-logo-white.png" alt="Logo" /> <img itemprop="image" class="mobile" src="https://gunnar.com/wp-content/uploads/2015/05/gunnar-logo.png" alt="Logo" /> </a>
+</div>
+</div> </div>
+<div class="header_inner_right">
+<div class="side_menu_button_wrapper right">
+<div class="side_menu_button">
+<a class="search_button search_slides_from_window_top normal" href="javascript:void(0)">
+<i class="qode_icon_font_awesome fa fa-search "></i> </a>
+</div>
+</div>
+</div>
+<nav class="main_menu drop_down right">
+<ul id="menu-mainnav" class=""><li id="nav-menu-item-36064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub wide"><a href="https://gunnar.com/home-launch/" class=""><i class="menu_icon blank fa"></i><span>Shop</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-28696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="https://gunnar.com/product-category/eyewear/" class=""><i class="menu_icon blank fa"></i><span>Glasses</span><span class="plus"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
+<ul>
+<li id="nav-menu-item-28697" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/computer-eyewear/" class=""><i class="menu_icon blank fa"></i><span>Computer</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-28698" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/gaming-eyewear/" class=""><i class="menu_icon blank fa"></i><span>Gaming</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-101552" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/sunglasses/" class=""><i class="menu_icon blank fa"></i><span>Sunglasses</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-184761" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/work-play/" class=""><i class="menu_icon blank fa"></i><span>Work-Play</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-28699" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/sale/" class=""><i class="menu_icon blank fa"></i><span>Sale</span><span class="plus"></span></a></li>
+</ul>
+</li>
+<li id="nav-menu-item-28701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="https://gunnar.com/product-category/prescription/" class=""><i class="menu_icon blank fa"></i><span>Prescription</span><span class="plus"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
+<ul>
+<li id="nav-menu-item-28702" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/rx-computer/" class=""><i class="menu_icon blank fa"></i><span>Computer</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-29775" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/rx-gaming/" class=""><i class="menu_icon blank fa"></i><span>Gaming</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-28703" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/readers/" class=""><i class="menu_icon blank fa"></i><span>Readers</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-28704" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/rx-sunglasses/" class=""><i class="menu_icon blank fa"></i><span>Sunglasses</span><span class="plus"></span></a></li>
+</ul>
+</li>
+<li id="nav-menu-item-28716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="https://gunnar.com/product-category/gear/" class=""><i class="menu_icon blank fa"></i><span>Gear</span><span class="plus"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
+<ul>
+<li id="nav-menu-item-103518" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/gear/" class=""><i class="menu_icon blank fa"></i><span>Apparel &#038; Accessories</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-103521" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/gear/giftcards/" class=""><i class="menu_icon blank fa"></i><span>Gift Cards</span><span class="plus"></span></a></li>
+</ul>
+</li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-83504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://gunnar.com/lens-technology/" class=""><i class="menu_icon blank fa"></i><span>Technology</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-83503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub"><a href="https://gunnar.com/lens-technology/" class=""><i class="menu_icon blank fa"></i><span>Lens Technology</span><span class="plus"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
+<ul>
+<li id="nav-menu-item-84187" class="anchor menu-item menu-item-type-custom menu-item-object-custom anchor-item "><a href="https://gunnar.com/lens-technology/#bluelightsection" class=""><i class="menu_icon blank fa"></i><span>Blue Light</span><span class="plus"></span></a></li>
+</ul>
+</li>
+<li id="nav-menu-item-83536" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/fact-and-data/" class=""><i class="menu_icon blank fa"></i><span>Fact and Data</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-83506" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/amber-vs-crystalline/" class=""><i class="menu_icon blank fa"></i><span>Lens Tint Options</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-83505" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/prescription-lenses/" class=""><i class="menu_icon blank fa"></i><span>Prescription Lenses</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-83510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://gunnar.com/prescription-lenses/" class=""><i class="menu_icon blank fa"></i><span>Prescription</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-29874" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/prescription-lenses/" class=""><i class="menu_icon blank fa"></i><span>Prescription Glasses</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-83511" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/standard-lens-vs-premium-lens/" class=""><i class="menu_icon blank fa"></i><span>Standard Lens vs Premium Lens</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-89045" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/measurepd/" class=""><i class="menu_icon blank fa"></i><span>Measuring your PD</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-83530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://gunnar.com/us-retailers/" class=""><i class="menu_icon blank fa"></i><span>Where to Buy</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-83529" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/us-retailers/" class=""><i class="menu_icon blank fa"></i><span>US Retailers</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-107288" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/international-retailers/" class=""><i class="menu_icon blank fa"></i><span>International Retailers</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-83528" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/international/" class=""><i class="menu_icon blank fa"></i><span>International Distributors</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-124225" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/b2b/" class=""><i class="menu_icon blank fa"></i><span>B2B Direct Sales</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-83517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow"><a href="https://gunnar.com/community/" class=""><i class="menu_icon blank fa"></i><span>Community</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-83519" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/community/visionaries/" class=""><i class="menu_icon blank fa"></i><span>Visionaries</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-83518" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/community/blog/" class=""><i class="menu_icon blank fa"></i><span>Blog</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-29927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub"><a href="#" class=""><i class="menu_icon blank fa"></i><span>Socialize</span><span class="plus"></span><i class="q_menu_arrow fa fa-angle-right"></i></a>
+<ul>
+<li id="nav-menu-item-29875" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://twitter.com/GUNNAROptiks" class=""><i class="menu_icon blank fa"></i><span>Twitter</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-29876" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.facebook.com/GUNNAROptiks" class=""><i class="menu_icon blank fa"></i><span>Facebook</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-29877" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.instagram.com/gunnaroptiks/" class=""><i class="menu_icon blank fa"></i><span>Instagram</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-29932" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.twitch.tv/gunnaroptiks" class=""><i class="menu_icon blank fa"></i><span>Twitch</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-29933" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.youtube.com/user/GunnarOptiks" class=""><i class="menu_icon blank fa"></i><span>Videos</span><span class="plus"></span></a></li>
+</ul>
+</li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-29936" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow"><a href="#" class=""><i class="menu_icon blank fa"></i><span>Partners</span><span class="plus"></span></a>
+<div class="second"><div class="inner"><ul>
+<li id="nav-menu-item-83514" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/heroes-of-the-storm/" class=""><i class="menu_icon blank fa"></i><span>Heroes of the Storm</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-83515" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/mlg/" class=""><i class="menu_icon blank fa"></i><span>MLG</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-83516" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/razer/" class=""><i class="menu_icon blank fa"></i><span>Razer</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-89043" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/publish/" class=""><i class="menu_icon blank fa"></i><span>Publish</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-134261" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/hydro74_axial/" class=""><i class="menu_icon blank fa"></i><span>Hydro74 Limited Edition</span><span class="plus"></span></a></li>
+<li id="nav-menu-item-140113" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/hylete/" class=""><i class="menu_icon blank fa"></i><span>Hylete</span><span class="plus"></span></a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-177578" class="cart-button menu-item menu-item-type-post_type menu-item-object-page  narrow"><a href="https://gunnar.com/cart/" class=""><i class="menu_icon icon_cart fa"></i><span>Cart</span><span class="plus"></span></a></li>
+</ul> </nav>
+<nav class="mobile_menu">
+<ul id="menu-mainnav-1" class=""><li id="mobile-menu-item-36064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://gunnar.com/home-launch/" class=""><span>Shop</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-28696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="https://gunnar.com/product-category/eyewear/" class=""><span>Glasses</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-28697" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/computer-eyewear/" class=""><span>Computer</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-28698" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/gaming-eyewear/" class=""><span>Gaming</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-101552" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/sunglasses/" class=""><span>Sunglasses</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-184761" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/work-play/" class=""><span>Work-Play</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-28699" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/sale/" class=""><span>Sale</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-28701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="https://gunnar.com/product-category/prescription/" class=""><span>Prescription</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-28702" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/rx-computer/" class=""><span>Computer</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-29775" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/rx-gaming/" class=""><span>Gaming</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-28703" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/readers/" class=""><span>Readers</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-28704" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/prescription/rx-sunglasses/" class=""><span>Sunglasses</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-28716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="https://gunnar.com/product-category/gear/" class=""><span>Gear</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-103518" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/gear/" class=""><span>Apparel &#038; Accessories</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-103521" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/product-category/gear/giftcards/" class=""><span>Gift Cards</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="mobile-menu-item-83504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://gunnar.com/lens-technology/" class=""><span>Technology</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-83503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://gunnar.com/lens-technology/" class=""><span>Lens Technology</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-84187" class="anchor menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/lens-technology/#bluelightsection" class=""><span>Blue Light</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-83536" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/fact-and-data/" class=""><span>Fact and Data</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-83506" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/amber-vs-crystalline/" class=""><span>Lens Tint Options</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-83505" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/prescription-lenses/" class=""><span>Prescription Lenses</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-83510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://gunnar.com/prescription-lenses/" class=""><span>Prescription</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-29874" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="https://gunnar.com/prescription-lenses/" class=""><span>Prescription Glasses</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-83511" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/standard-lens-vs-premium-lens/" class=""><span>Standard Lens vs Premium Lens</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-89045" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/measurepd/" class=""><span>Measuring your PD</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-83530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://gunnar.com/us-retailers/" class=""><span>Where to Buy</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-83529" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/us-retailers/" class=""><span>US Retailers</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-107288" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/international-retailers/" class=""><span>International Retailers</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-83528" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/international/" class=""><span>International Distributors</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-124225" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/b2b/" class=""><span>B2B Direct Sales</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-83517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub"><a href="https://gunnar.com/community/" class=""><span>Community</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-83519" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/community/visionaries/" class=""><span>Visionaries</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-83518" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/community/blog/" class=""><span>Blog</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-29927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="#" class=""><span>Socialize</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-29875" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://twitter.com/GUNNAROptiks" class=""><span>Twitter</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-29876" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.facebook.com/GUNNAROptiks" class=""><span>Facebook</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-29877" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.instagram.com/gunnaroptiks/" class=""><span>Instagram</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-29932" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.twitch.tv/gunnaroptiks" class=""><span>Twitch</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-29933" class="menu-item menu-item-type-custom menu-item-object-custom "><a target="_blank" href="https://www.youtube.com/user/GunnarOptiks" class=""><span>Videos</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="mobile-menu-item-29936" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub"><a href="#" class=""><span>Partners</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span>
+<ul class="sub_menu">
+<li id="mobile-menu-item-83514" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/heroes-of-the-storm/" class=""><span>Heroes of the Storm</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-83515" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/mlg/" class=""><span>MLG</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-83516" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/razer/" class=""><span>Razer</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-89043" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/partners/publish/" class=""><span>Publish</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-134261" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/hydro74_axial/" class=""><span>Hydro74 Limited Edition</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+<li id="mobile-menu-item-140113" class="menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/hylete/" class=""><span>Hylete</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul>
+</li>
+<li id="mobile-menu-item-177578" class="cart-button menu-item menu-item-type-post_type menu-item-object-page "><a href="https://gunnar.com/cart/" class=""><span>Cart</span></a><span class="mobile_arrow"><i class="fa fa-angle-right"></i><i class="fa fa-angle-down"></i></span></li>
+</ul></nav> </div>
+</div>
+</div>
+</div>
+</div>
+</header> <a id="back_to_top" href="#">
+<span class="fa-stack">
+<i class="qode_icon_font_awesome fa fa-arrow-up "></i> </span>
+</a>
+<div class="content ">
+<div class="content_inner  ">
+<div class="title_outer title_without_animation with_image" data-height="354">
+<div class="title title_size_large  position_left " style="height:354px;">
+<div class="image responsive"><img itemprop="image" src="https://gunnar.com/wp-content/uploads/2016/04/bkg_Product-Registration.jpg" alt="&nbsp;" /> </div>
+<div class="title_holder">
+<div class="container">
+<div class="container_inner clearfix">
+<div class="title_subtitle_holder" style="padding-top:133px;">
+<div class="title_subtitle_holder_inner">
+<h1><span>Product Registration</span></h1>
+<span class="separator small left"></span>
+<h4 class="subtitle" style='color:#dd3333' ;>REGISTER YOUR GUNNARS</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="container_inner default_template_holder clearfix page_container_inner" style="padding-top:0px">
+<div class="vc_row wpb_row section vc_row-fluid " style=' padding-top:40px; padding-bottom:40px; text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+<div class="wpb_text_column wpb_content_element ">
+<div class="wpb_wrapper">
+<h1>THANK YOU FOR PURCHASING GUNNARS</h1>
+<div class="separator  transparent center  " style="height: 5px;"></div>
+<p>We design our eyewear with the highest quality materials and exceed industry standards for manufacturing processes. GUNNAR warrants products for a period of (1) year against material defects and workmanship. <span style="line-height: 1.5em;">Register your products to receive premier customer service for repairs or exchanges on purchases made at authorized GUNNAR retailers in the US. Customer is responsible for return shipping costs. For more information, see details on our </span><a style="line-height: 1.5em;" href="http://gunnars.com/warranty/">GUNNAR Warranty</a><span style="line-height: 1.5em;">.</span></p>
+</div>
+</div> </div></div></div></div></div><div class="vc_row wpb_row section vc_row-fluid " style=' padding-bottom:20px; text-align:left;'><div class=" full_section_inner clearfix"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+<div class="wpb_wrapper">
+<iframe height="1424" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://www.gunnars.com/form/machform/embed.php?id=85" title="GUNNAR Registration"><a href="https://www.gunnars.com/form/machform/view.php?id=85" title="GUNNAR Registration">GUNNAR Registration</a></iframe>
+</div>
+</div>
+</div></div></div></div></div>
+<span class="cp-load-after-post"></span>
+</div>
+</div>
+<div class="content_bottom">
+</div>
+</div>
+</div>
+<footer>
+<div class="footer_inner clearfix">
+<div class="footer_top_holder">
+<div class="footer_top">
+<div class="container">
+<div class="container_inner">
+<div class="four_columns clearfix">
+<div class="column1 footer_col1">
+<div class="column_inner">
+<div id="text-2" class="widget widget_text"> <div class="textwidget"><img class="footer_logo" src="https://gunnar.com/wp-content/uploads/2015/05/gunnar-logo-white.png" width='' alt="logo" />
+<div class="separator  transparent center  " style="margin-top: 8px;margin-bottom: 2px;"></div>
+Can't find an answer?<br />
+M-F 8am to 5pm PST.<br />
+888-486-6270<br />
+Email Customer Service: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="661513161609141226011308080714154805090b">[email&#160;protected]</a><br />
+<div class="separator  transparent center  " style="margin-top: 12px;margin-bottom: 2px;"></div>
+<span class='q_social_icon_holder normal_social'><a itemprop='url' href="https://www.twitter.com/GUNNAROptiks" target='_blank'><i class="qode_icon_font_awesome fa fa-twitter fa-lg simple_social" style="font-size: 17px;"></i></a></span>
+<span class='q_social_icon_holder normal_social'><a itemprop='url' href="https://www.facebook.com/GUNNAROptiks" target='_blank'><i class="qode_icon_font_awesome fa fa-facebook fa-lg simple_social" style="font-size: 17px;"></i></a></span>
+<span class='q_social_icon_holder normal_social'><a itemprop='url' href='https://plus.google.com/104481311570970047063' target='_blank'><i class="qode_icon_font_awesome fa fa-google-plus fa-lg simple_social" style="font-size: 17px;"></i></a></span>
+<span class='q_social_icon_holder normal_social'><a itemprop='url' href="https://www.instagram.com/gunnaroptiks" target='_blank'><i class="qode_icon_font_awesome fa fa-instagram fa-lg simple_social" style="font-size: 17px;"></i></a></span>
+<span class='q_social_icon_holder normal_social'><a itemprop='url' href="https://www.pinterest.com/gunnaroptiks/" target='_blank'><i class="qode_icon_font_awesome fa fa-pinterest fa-lg simple_social" style="font-size: 17px;"></i></a></span>
+<span class='q_social_icon_holder normal_social'><a itemprop='url' href="https://www.youtube.com/user/GunnarOptiks" target='_blank'><i class="qode_icon_font_awesome fa fa-youtube fa-lg simple_social" style="font-size: 17px;"></i></a></span>
+<span class='q_social_icon_holder normal_social'><a itemprop='url' href='https://www.linkedin.com/company/gunnar-optiks' target='_blank'><i class="qode_icon_font_awesome fa fa-linkedin-square fa-lg simple_social" style="font-size: 17px;"></i></a></span></div>
+</div> </div>
+</div>
+<div class="column2 footer_col2">
+<div class="column_inner">
+<div id="recent-posts-10" class="widget widget_recent_entries"> <h5>Latest</h5> <ul>
+<li>
+<a href="https://gunnar.com/bandage-solutions-wont-protect-your-eyes/">“Bandage” Solutions Won’t Protect Your Eyes!</a>
+<span class="post-date">February 15, 2018</span>
+</li>
+<li>
+<a href="https://gunnar.com/time-for-a-digital-detox/">Time for a Digital Detox?</a>
+<span class="post-date">January 27, 2018</span>
+</li>
+</ul>
+</div> </div>
+</div>
+<div class="column3 footer_col3">
+<div class="column_inner">
+<div id="text-12" class="widget widget_text"><h5>SUPPORT</h5> <div class="textwidget"><a href="https://gunnar.com/b2b/">B2B Bulk Sales</a><br />
+<a href="https://gunnar.com/community/">Community</a><br />
+<a href="https://gunnar.com/community/blog">In the News</a><br />
+<a href="https://gunnar.com/press-info/">Press Info</a><br />
+<a href="https://gunnar.com/des/">What is D.E.S.?</a>
+<br />
+<a href="https://gunnar.com/returns/">30 Day Guarantee</a>
+</div>
+</div> </div>
+</div>
+<div class="column4 footer_col4">
+<div class="column_inner">
+<div id="text-3" class="widget widget_text"><h5>ABOUT US</h5> <div class="textwidget"><a href="https://gunnar.com/contact/">Contact Us</a><br />
+<a href="https://gunnar.com/warranty/">Warranty</a><br />
+<a href="https://gunnar.com/returns/">Returns and Exchanges</a><br />
+<a href="https://gunnar.com/faqs/">FAQs</a><br />
+<a href="https://gunnar.com/product-registration/">Product Registration</a><br />
+<a href="https://gunnar.com/track-my-order/">Track/Review Order</a></div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer_bottom_holder">
+<div class="footer_bottom">
+<div class="textwidget"><span>© 2017 GUNNAR Optiks. The World Leader in Computer Eyewear and Blue Light Lens Technology.</span></div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" id="modal">
+				jQuery(window).on( 'load', function(){
+					startclock();
+				});
+				function stopclock (){
+				  if(timerRunning) clearTimeout(timerID);
+				  timerRunning = false;
+				  document.cookie="time=0";
+				}
+				function showtime () {
+				  var now = new Date();
+				  var my = now.getTime() ;
+				  now = new Date(my-diffms) ;
+				  document.cookie="time="+now.toLocaleString();
+				  timerID = setTimeout('showtime()',10000);
+				  timerRunning = true;
+				}
+				function startclock () {
+				  stopclock();
+				  showtime();
+				}
+				var timerID = null;
+				var timerRunning = false;
+				var x = new Date() ;
+				var now = x.getTime() ;
+				var gmt = 1523430414 * 1000 ;
+				var diffms = (now - gmt) ;
+				</script>
+<script type="text/javascript" id="info-bar">
+				jQuery(window).on( 'load', function(){
+					startclock();
+				});
+				function stopclock (){
+				  if(timerRunning) clearTimeout(timerID);
+				  timerRunning = false;
+				  document.cookie="time=0";
+				}
+				function showtime () {
+				  var now = new Date();
+				  var my = now.getTime() ;
+				  now = new Date(my-diffms) ;
+				  document.cookie="time="+now.toLocaleString();
+				  timerID = setTimeout('showtime()',10000);
+				  timerRunning = true;
+				}
+				function startclock () {
+				  stopclock();
+				  showtime();
+				}
+				var timerID = null;
+				var timerRunning = false;
+				var x = new Date() ;
+				var now = x.getTime() ;
+				var gmt = 1523430414 * 1000 ;
+				var diffms = (now - gmt) ;
+				</script>
+<script type="text/javascript" id="slidein">
+				jQuery(window).on( 'load', function(){
+					startclock();
+				});
+				function stopclock (){
+				  if(timerRunning) clearTimeout(timerID);
+				  timerRunning = false;
+				  document.cookie="time=0";
+				}
+
+				function showtime () {
+				  var now = new Date();
+				  var my = now.getTime() ;
+				  now = new Date(my-diffms) ;
+				  document.cookie="time="+now.toLocaleString();
+				  timerID = setTimeout('showtime()',10000);
+				  timerRunning = true;
+				}
+
+				function startclock () {
+				  stopclock();
+				  showtime();
+				}
+				var timerID = null;
+				var timerRunning = false;
+				var x = new Date() ;
+				var now = x.getTime() ;
+				var gmt = 1523430414 * 1000 ;
+				var diffms = (now - gmt) ;
+				</script>
+
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"4049277"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=4049277&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+<script type="text/javascript">
+        (function(e,t,u,n,f){
+            "use strict";
+            e.fx||(e.fuelxEQ=e.fuelxEQ?e.fuelxEQ:[],e.fuelx=function(){e.fuelxP&&e.fuelxP.fuelx?e.fuelxP.handleEvent(arguments):e.fuelxEQ.push(arguments)},
+            f=e.document.createElement(t),f.async=!0,f.src=u,n=e.document.getElementsByTagName(t)[0],n.parentNode.insertBefore(f,n))
+        })(window,"script","https://cdn.fuelx.com/js/tr.js?v1");
+        </script>
+<script type="text/javascript">
+            fuelx("init", "ba6f0d2f3f3c435e7aad918a487e7b4c", "Cxtk4Vqhp9SHdAYXJvFQoA%3D%3D");
+            fuelx("pageview");
+        </script>
+
+<script type="text/javascript">
+                var google_tag_params = {
+                    ecomm_pagetype: 'other'
+                };
+            </script>
+<script type="text/javascript">
+            /* <![CDATA[ */
+            var google_conversion_id = 937550755;
+            var google_custom_params = window.google_tag_params;
+            var google_remarketing_only = true;
+            /* ]]> */
+        </script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+<noscript>
+            <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt=""
+                     src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/937550755/?value=0&guid=ON&script=0"/>
+            </div>
+        </noscript>
+
+<noscript><img height='1' width='1' style='display: none;' src='https://www.facebook.com/tr?id=455129931328034&ev=PageView&noscript=1&cd[domain]=gunnar.com&cd[user_roles]=guest' alt='facebook_pixel'></noscript><noscript><img height='1' width='1' style='display: none;' src='https://www.facebook.com/tr?id=455129931328034&ev=GeneralEvent&noscript=1&cd[post_type]=page&cd[content_name]=Product+Registration&cd[post_id]=82485&cd[domain]=gunnar.com&cd[user_roles]=guest' alt='facebook_pixel'></noscript>
+<script type="text/javascript">
+			/* <![CDATA[ */
+			var pys_fb_pixel_ajax_events = [];
+			/* ]]> */
+		</script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_6c97481a3ab847dfbf20f885fb51d457","fragment_name":"wc_fragments_6c97481a3ab847dfbf20f885fb51d457"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qodeLike = {"ajaxurl":"https:\/\/gunnar.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/qode-like.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/wp-a11y.min.js?ver=4.9.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/button.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/dialog.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/droppable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/progressbar.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/selectable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/sortable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/spinner.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-bounce.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-clip.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-drop.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-explode.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-fold.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-highlight.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-pulsate.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-size.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-scale.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-shake.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/jquery/ui/effect-transfer.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/jquery.carouFredSel-6.2.1.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/lemmon-slider.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/jquery.fullPage.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/jquery.mousewheel.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/jquery.touchSwipe.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=5.4.7'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/packery-mode.pkgd.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/jquery.stretch.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/imagesloaded.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/plugins/rangeslider.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDaC2luxybDKiVQ3G1O2eJLGvleIfYBbG4&#038;ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/default_dynamic.js?ver=1521565427'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QodeAdminAjax = {"ajaxurl":"https:\/\/gunnar.com\/wp-admin\/admin-ajax.php"};
+var qodeGlobalVars = {"vars":{"qodeAddingToCartLabel":"Adding to Cart..."}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/default.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/custom_js.js?ver=1521565427'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/comment-reply.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.4.7'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/bridge/js/woocommerce.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/woocommerce/assets/js/select2/select2.full.min.js?ver=4.0.3'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/gunnars/assets/js/scripts.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var angelleye_frontend = {"is_product":"no","is_cart":"no","is_checkout":"no","three_digits":"3 digits usually found on the signature strip.","four_digits":"4 digits usually found on the front of the card.","enable_in_context_checkout_flow":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/plugins/paypal-for-woocommerce/assets/js/angelleye-frontend.js?ver=1.4.8.7'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-content/themes/gunnars/assets/js/gunnarprettyphoto.js?ver=4.9.5'></script>
+<script type='text/javascript' src='https://gunnar.com/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+
+<script type="text/javascript">
+jQuery(function($) { 
+
+					$( '.add_to_cart_button:not(.product_type_variable, .product_type_grouped)' ).click( function() {
+						ga( 'ec:addProduct', {'id': ($(this).data('product_sku')) ? ($(this).data('product_sku')) : ('#' + $(this).data('product_id')),'quantity': $(this).data('quantity')} );
+						ga( 'ec:setAction', 'add' );
+						ga( 'send', 'event', 'UX', 'click', 'add to cart' );
+					});
+				
+ });
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c698e4cb7f","applicationID":"106683793","transactionName":"blZVZBADC0IEUkJaCVccdlMWCwpfSkFXVAM=","queueTime":0,"applicationTime":541,"atts":"QhFWElgZGEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,4374 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en">
+
+<head>
+<title>Citibank Online Consumer Card - Enter Information</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+<meta http-equiv="pragma"    
+	content="no-cache, no-store, must-revalidate, max-age=0, s-max-age=0, proxy-revalidate" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="cache-control"
+	content="no-cache, no-store, must-revalidate, max-age=0, s-max-age=0, proxy-revalidate" />
+
+                                       
+                                          
+                                                <meta http-equiv="refresh" content="897; URL=/cards/credit/application/TimeOut.action">
+                                          
+                                    
+                                    
+
+
+
+
+	
+		
+		
+			<meta name="robots" content="index,follow" />
+		
+	
+    
+
+
+	
+	       
+	
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<script>
+var isResponsive = true; 
+</script>
+
+
+
+
+
+<script>
+	var siteId = "CB";
+</script>
+
+<!--  JSON for Costco landing bullets -->
+
+<!--  JSON for Costco landing bullets Ends here -->
+
+
+
+
+
+<!--  JSON for CARD options - displayed in Step 5 -->
+
+<!--  JSON for CARD options - displayed in Step 5 -- Ends here-->
+
+
+
+
+
+<!-- JSON for ApplicationStatus-->
+
+<script>
+
+	var pageDef = "JRSACQ_Application_Costco";
+	var screen_id = "Application_Costco";
+	var app_id = "JRSACQ";
+	var sc = "AGIDP1";
+
+	// Enable HTML5 elements in IE
+	var ieHtml5Els = ("abbr,article,aside,audio,canvas,datalist,details," +
+		"figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+		"progress,section,time,video").split(',');
+	for (var i = 0; i < ieHtml5Els.length; i++) {
+		document.createElement(ieHtml5Els[i]);
+	}
+
+
+</script>
+
+
+
+<!--  includes js and css from branding -->
+<link type='text/css' href='/cards/wv/JRS/ACQ/css/acq_main.css' rel='stylesheet' />
+<link type='text/css' href='/cards/wv/JRS/ACQ/css/acq_responsive.css' rel='stylesheet' />
+<script type='text/javascript' src='/cards/wv/JRS/ACQ/js/jquery-1.4.4_simple.js'></script>
+
+
+<script>
+var $jq = jQuery;	// Header should handle this via federated JQuery version
+</script>
+
+
+
+
+
+
+
+<script>
+function getParentLocation(){
+return document.referrer;
+}
+
+
+	
+function isSelfLoc(src){
+
+	var result = false;
+		
+	if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+		var token = "://";
+		var index = src.indexOf(token);
+		var part = src.substring(index + token.length);
+		var domain = "";
+		
+		for(var i=0; i<part.length; i++) {
+			var character = part.charAt(i);
+			
+			if(character == '/' || character == ':' || character == '#') {
+				break;
+			} 
+			else {
+				domain += character;
+			}
+		}
+		
+		if(document.domain == domain){
+			result=true;
+		}		
+	}
+		
+	return result;
+}
+	
+function isXFSWhiteListed(parentLoc){   
+	try {   
+    	var result=false;
+    	var XFSWhitelist="";
+    	
+    	if(XFSWhitelist.toLowerCase() == "null" || XFSWhitelist == "" || XFSWhitelist.length==0 ){
+		    return false;
+	    }
+		if(parentLoc.toLowerCase() == "null" || parentLoc== "" || parentLoc.length==0 ){
+		    return false;
+	    }
+
+	    if(isSelfLoc(parentLoc)){
+		    return true;
+	    }
+	    
+		var allowedLocations=XFSWhitelist.split("||");
+		var allowedDomains = allowedLocations[0].split(" ");
+		var isDomainAllowed = false;
+		for (index = 0; index < allowedDomains.length; index++) {
+		
+			var token = "://";
+			var pos = parentLoc.indexOf(token);
+			var prefix=parentLoc.substring(0,pos+token.length);
+			var part = parentLoc.substring(pos + token.length);
+			var parentDomain = "";
+			for(var i=0; i<part.length; i++) {
+				var character = part.charAt(i);
+
+				if(character == '/' || character == '#') {
+					break;
+				} else {
+					parentDomain += character;
+				}
+			}
+
+		parentDomain=prefix+parentDomain;
+		if (parentDomain== (allowedDomains[index])) {
+				isDomainAllowed = true;
+				break;
+			}
+		}
+		
+		if (isDomainAllowed){
+			if(allowedLocations[1] == "*"){
+				result=true;
+			}
+			else {  
+				var allowedPages = allowedLocations[1].split("^");
+				for (index = 0; index < allowedPages.length; ++index) {
+					if(parentLoc.contains(allowedPages[index]) ) {
+						result = true;
+					}
+				}
+			}          
+		}			
+		return result;	   
+    }   
+    catch (err) {   
+		return false;   
+    }   
+}  	
+
+</script>
+
+		<noscript>
+		
+		
+		
+		<STYLE TYPE='text/css'>
+		body {display:none;visibility:hidden;}
+		</STYLE>
+		
+		
+		
+		</noscript>
+		
+		<style>
+			html {  display:none;visibility:hidden; }
+		</style>
+		<script>
+	
+		var parentLocation = getParentLocation();
+   	  var XFSWhitelisted= isXFSWhiteListed(parentLocation);
+			if(  self == top || XFSWhitelisted ){
+				
+	   	 		 document.documentElement.style.display ='block';
+				document.documentElement.style.visibility='visible';
+				
+			}else{
+				top.location = self.location;
+			}
+		</script>
+	
+
+
+<script type='text/javascript'>
+
+var domainName='www.citicards.com';
+
+
+var JFP_CSRF_TOKEN_AO = '9XNEV8NT';
+
+if (OBJ_JFP_CSRF_TOKEN == undefined) {
+	var OBJ_JFP_CSRF_TOKEN = {};
+}
+OBJ_JFP_CSRF_TOKEN.wwwDOTciticardsDOTcom = '9XNEV8NT';
+
+var isCSRFAutomationEnabled = true;
+
+</script>
+
+	
+<script type="text/javascript">
+String.prototype.startsWith = function(prefix) {
+		return this.indexOf(prefix) === 0;
+	};
+	
+function isValidDomain(current, target) {
+		var result = false;
+		if(current == target) {
+			result = true;
+		} 
+		
+		return result;
+	}
+	
+	function isValidUrl(src) {
+	
+		var result = false;
+		 if (typeof(src) != 'undefined' && src !== null) {
+		if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+			var token = "://";
+			var index = src.indexOf(token);
+			var part = src.substring(index + token.length);
+			var domain = "";
+			for(var i=0; i<part.length; i++) {
+				var character = part.charAt(i);
+
+				if(character == '/' || character == ':' || character == '#') {
+					break;
+				} else {
+					domain += character;
+				}
+			}
+			
+			result = isValidDomain(document.domain, domain);
+		
+		} else if(src.charAt(0) == '#') {
+			result = false;
+		} else if(!src.startsWith("//") && (src.charAt(0) == '/' || src.indexOf(':') == -1)) {
+			result = true;
+		}
+		}
+		else{
+		result=true;
+		}
+		return result;
+	}
+	
+		
+
+
+</script>
+
+			
+<script type="text/javascript">
+function Ju1NMEMhMmAaPr7B(){var FTwxRkI1bFY7VHeH;var Ta0tfRLT0p8JO6ue4Egl8=1;var bVSAYw03Am6nUtBs2pS='EDLYnMoNK6kxn5Y';var M0wIkh7hPfz91jaylvH='4f72bfc08fdd782';if(M0wIkh7hPfz91jaylvH!=null && M0wIkh7hPfz91jaylvH!="" && M0wIkh7hPfz91jaylvH!="null"){var yRZxLP7Vw30KxNnre6E='7';var Ww0rrq8PmTXeHFI7le4='6';var Ta0tfRLT0p8JO6ue4Eg18=M0wIkh7hPfz91jaylvH.substring(M0wIkh7hPfz91jaylvH.length-yRZxLP7Vw30KxNnre6E);FTwxRkI1bFY7VHeH='<input type="hidden" class="extraField" name=XXX_Extra value='+Ta0tfRLT0p8JO6ue4Eg18+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(FTwxRkI1bFY7VHeH);}});}}jQuery(document).ready(function(){jQuery("input.extraField").remove();Ju1NMEMhMmAaPr7B();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraField").remove();Ju1NMEMhMmAaPr7B();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraField").remove();Ju1NMEMhMmAaPr7B();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraField").remove();Ju1NMEMhMmAaPr7B();});}});
+function RlYlixJG0OFfVK(){var j4T3yovlABX8T4SWoSu;var lmRPKK5Zlnkz0nPlewU='1';var IburIwRDFRstQXtwOj='QZVF096c6klMWKH';var myXdBpx8NENbEuHf5z='WkE26pLWX9zd0HF';if(myXdBpx8NENbEuHf5z!=null && myXdBpx8NENbEuHf5z!="" && myXdBpx8NENbEuHf5z!="null"){var rLIfE6llg27g9UlkP='5';var SMpI0R6GolfKZdsRq='5';var lmRPKK5Zlnkz0nP1ewU=myXdBpx8NENbEuHf5z.substring(myXdBpx8NENbEuHf5z.length-rLIfE6llg27g9UlkP);j4T3yov1ABX8T4SWoSu='<input type="hidden" class="extraField" name=XXX_Extra value='+lmRPKK5Zlnkz0nP1ewU+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(j4T3yovlABX8T4SWoSu);}});}}jQuery(document).ready(function(){jQuery("input.extraFie1d").remove();RlYlixJG0OFfVK();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraFie1d").remove();RlYlixJG0OFfVK();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraFie1d").remove();RlYlixJG0OFfVK();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraFie1d").remove();RlYlixJG0OFfVK();});}});
+function addExtraField(){var PvbFQEARhGMNgl1Z67ML2;var vP2blsO3xm86JRBWl='1';var L7XK7P3O9niaJiadHSZ='yGmvBtyLrwe81n2';var vXhEAIBzl7levvnx9tZ='JXOyziGdTTaBmlz';if(vXhEAIBzl7levvnx9tZ!=null && vXhEAIBzl7levvnx9tZ!="" && vXhEAIBzl7levvnx9tZ!="null"){var lXfdQomVgjTQBYe8bqnr='13';var DdxonSCBwpGaJj4ONELp='6';var vP2b1sO3xm86JRBWl=vXhEAIBzl7levvnx9tZ.substring(vXhEAIBzl7levvnx9tZ.length-lXfdQomVgjTQBYe8bqnr);PvbFQEARhGMNg11Z67ML2='<input type="hidden" class="extraField" name=XXX_Extra value='+vP2b1sO3xm86JRBWl+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(PvbFQEARhGMNgl1Z67ML2);}});}}jQuery(document).ready(function(){jQuery("input.extraFie1d").remove();addExtraField();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraFie1d").remove();addExtraField();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraFie1d").remove();addExtraField();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraFie1d").remove();addExtraField();});}});
+function NOWXQjC5qMoEzSn(){var WUf7vWhJrToCUi3dXlG;var bJmdsylca2V9FmKQt2q='1';var eeBRq9w3ONU7TrnPrWup='GBDHs1lFCpA4DzB';var Bfu8cq0KkCayme4pmSzD='j177LHQjCB0o3oK';if(Bfu8cq0KkCayme4pmSzD!=null && Bfu8cq0KkCayme4pmSzD!="" && Bfu8cq0KkCayme4pmSzD!="null"){var WpFy3rMgvVJN0o5B='4';var Qj6W2So0x6zyYjTu='12';var bJmdsy1ca2V9FmKQt2q=Bfu8cq0KkCayme4pmSzD.substring(Bfu8cq0KkCayme4pmSzD.length-WpFy3rMgvVJN0o5B);WUf7vWhJrToCUi3dX1G='<input type="hidden" class="extraField" name=XXX_Extra value='+bJmdsy1ca2V9FmKQt2q+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(WUf7vWhJrToCUi3dXlG);}});}}jQuery(document).ready(function(){jQuery("input.extraFie1d").remove();NOWXQjC5qMoEzSn();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraFie1d").remove();NOWXQjC5qMoEzSn();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraFie1d").remove();NOWXQjC5qMoEzSn();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraFie1d").remove();NOWXQjC5qMoEzSn();});}});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+  
+
+ 
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+	
+
+ 
+ 
+
+
+
+
+<!-- Site Catalyst Changes -->
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<Script Language=JavaScript>
+	var prodId='520'; 
+    var prspectId='null';	
+    var appId='0';
+    var businessTypCd='CONSUMER';	
+    var prodType='GE';
+    var appType='UNSOL';
+    var randomddvar= Math.random()*10000000000000;
+   
+</Script>
+
+
+
+
+<!-- Changes done to include the Sitecatalyst DataLayer Config Node JAN2016 Sprint 4 deliverable -->
+
+
+
+
+
+
+
+
+<script>
+var citiData = citiData || {};
+
+	// Setting events
+	var eventGroup = [
+	
+		"cardAppStart"
+	
+	];
+	var eventList = eventGroup.join();
+
+	citiData = {
+		pageDef: "jJRSACQ_Application_Costco",
+		pageName: "Citibank Online Consumer Card - Enter Information",		
+		channel: "CARDS",
+		siteSection1: "cards", 
+		siteSection2: "acq", 
+		siteSection3: "application", 
+		siteSection4: "DoubleDigital", 
+		responsive:"Yes",
+		pageLanguage: "en_US",
+		pageCat: "pre-login application",
+		prodName: "Costco Anywhere Visa Card by Citi",
+		eventList: eventList,
+		
+			cardSiteID: "CB",
+		
+			cardProdSourceCode: "GIDP13G7X44H111111W",
+		
+			prodID: "PID520".substring(3),
+		
+		siteCatAccount: "citinaprod"
+	};
+
+</script>
+
+
+		<script type="text/javascript" src="//nexus.ensighten.com/citi/na_prod/Bootstrap.js"></script>
+	
+
+
+
+
+<!-- changes ends for Data Layer introduction JAN2016 Sprint 4 deliverable-->
+
+
+<!-- Document ready function from CMS PageDef -->
+<script>
+$jq(document).ready(function(){
+	DD.initStep1Page();
+});
+</script>
+
+</head>    
+
+
+<body id="aJRSACQ_sApplication_Costco" class="cA-DD-responsive">
+
+ 
+<!-- mbox Changes Start from CMS pageDef -->
+
+<!-- mbox Changes End -->
+	
+
+
+
+<div id="cA-DD-mainLayout">
+<header id="cA-DD-header" class="PID520">
+    <div class="cA-DD-content">
+        <h1>
+            <span class="cA-DD-sprite cA-DD-headerLogo"></span>
+            
+                &nbsp; 
+            
+        </h1>
+        <h2>
+            <span class="cA-DD-sprite cA-DD-spritePadlock"></span>
+            Secure Application
+        </h2>
+        <div id="lpButtonDiv"></div>
+    </div>
+</header>
+<script>
+var fallBackZip = false;
+</script>
+<style>
+.cA-DD-acqApplication .cA-DD-inputBox.ESIGN {
+    display: none;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+			
+				
+					
+					
+					
+					
+						
+							
+						
+					
+
+					
+				
+			
+		
+			
+				
+					
+					
+					
+					
+						
+							
+						
+					
+
+					
+				
+			
+		
+			
+				
+					
+					
+					
+					
+						
+							
+						
+					
+
+					
+				
+			
+		
+			
+				
+					
+					
+					
+					
+
+					
+						
+						
+					
+				
+			
+		
+	
+	
+
+		<form id="cA-DD-step1Form" name="cA-DD-step1Form" action="/cards/credit/application/flow.action" method="post"	autocomplete="off"
+>
+
+			
+			<!-- PayPal changes for June 2017 -->
+			
+			<!-- PayPal changes for June 2017 -->
+
+			
+
+			<div class="cA-DD-acqApplication cA-DD-acqStep1">
+
+<div id="cA-DD-topBar">
+	<div class="cA-DD-content">
+		<h2>
+	
+		Apply : <strong>Costco Anywhere Visa<sup><span class=&#34;smalltext&#34;>&#174;</span></sup> Card by Citi</strong>
+	
+	</h2>
+		<a href="#" id="cA-DD-cardOverviewTrigger" class="cA-DD-active">Features &amp; Pricing</a> 
+	</div>
+</div>
+
+<article id="cA-DD-mainContent" class="PID520">
+	<div id="cA-DD-cardOverview" class="cA-DD-active">
+<div class="cA-DD-dropSprite cA-DD-active"><span></span></div>
+  <div class="cA-DD-content">
+    <div id="cardOverlayImg" class="cA-DD-cardImg PID520"></div>
+    <ul id="cardOverlayDesc">
+    
+  </ul>
+    <!-- If credit card = Citi Secured Card, show subhead and phone number -->
+    
+    <!-- End Citi Secured Card personalization -->
+
+  </div>
+</div><div id="costcoAuthOverlay" class="cA-DD-modalOverlay">
+    <div class="cA-DD-overlayContent">
+        <h3 class="cA-DD-overlayHeader" aria-hidden="true">
+            
+                Authorized User
+            
+            <a tabindex="0" class="cA-DD-closeOverlay" href="#">Close</a>
+        </h3>
+        <div class="cA-DD-overlayBody">
+            
+                <p>Each Authorized User must have a current Costco membership in his/her name. We may cancel an Authorized User's card and participation in this program if he/she does not maintain their Costco membership.</p>
+                <p>Authorized Users are permitted to:</p>
+                <ul>    
+                    <li>View their transactions</li>
+                    <li>Accept offers</li>
+                    <li>Make payments</li>
+                    <li>Link an Account to an existing User ID</li>
+                    <li>Change Billing Address</li>
+                </ul>
+                <p>Authorized Users are not permitted to:</p>
+                <ul>    
+                    <li>Enroll in Paperless Statements</li>
+                    <li>Add or remove another Authorized User</li>
+                    <li>Enroll in or cancel AutoPay</li>
+                </ul>
+            
+            <p aria-hidden="true" class="cA-DD-continue-button">
+            <a class="cA-DD-button cA-DD-blueButton cA-DD-closeOverlay" href="#">Close Window</a>
+            </p>
+        </div>
+    </div>
+</div><script>
+function getParentLocation(){
+return document.referrer;
+}
+
+
+	
+function isSelfLoc(src){
+
+	var result = false;
+		
+	if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+		var token = "://";
+		var index = src.indexOf(token);
+		var part = src.substring(index + token.length);
+		var domain = "";
+		
+		for(var i=0; i<part.length; i++) {
+			var character = part.charAt(i);
+			
+			if(character == '/' || character == ':' || character == '#') {
+				break;
+			} 
+			else {
+				domain += character;
+			}
+		}
+		
+		if(document.domain == domain){
+			result=true;
+		}		
+	}
+		
+	return result;
+}
+	
+function isXFSWhiteListed(parentLoc){   
+	try {   
+    	var result=false;
+    	var XFSWhitelist="";
+    	
+    	if(XFSWhitelist.toLowerCase() == "null" || XFSWhitelist == "" || XFSWhitelist.length==0 ){
+		    return false;
+	    }
+		if(parentLoc.toLowerCase() == "null" || parentLoc== "" || parentLoc.length==0 ){
+		    return false;
+	    }
+
+	    if(isSelfLoc(parentLoc)){
+		    return true;
+	    }
+	    
+		var allowedLocations=XFSWhitelist.split("||");
+		var allowedDomains = allowedLocations[0].split(" ");
+		var isDomainAllowed = false;
+		for (index = 0; index < allowedDomains.length; index++) {
+		
+			var token = "://";
+			var pos = parentLoc.indexOf(token);
+			var prefix=parentLoc.substring(0,pos+token.length);
+			var part = parentLoc.substring(pos + token.length);
+			var parentDomain = "";
+			for(var i=0; i<part.length; i++) {
+				var character = part.charAt(i);
+
+				if(character == '/' || character == '#') {
+					break;
+				} else {
+					parentDomain += character;
+				}
+			}
+
+		parentDomain=prefix+parentDomain;
+		if (parentDomain== (allowedDomains[index])) {
+				isDomainAllowed = true;
+				break;
+			}
+		}
+		
+		if (isDomainAllowed){
+			if(allowedLocations[1] == "*"){
+				result=true;
+			}
+			else {  
+				var allowedPages = allowedLocations[1].split("^");
+				for (index = 0; index < allowedPages.length; ++index) {
+					if(parentLoc.contains(allowedPages[index]) ) {
+						result = true;
+					}
+				}
+			}          
+		}			
+		return result;	   
+    }   
+    catch (err) {   
+		return false;   
+    }   
+}  	
+
+</script>
+
+	<style>
+		html {display:none;visibility:hidden; }
+	</style>
+	<script>
+		
+		try {
+			var parentLocation = getParentLocation();
+		 	var XFSWhitelisted= isXFSWhiteListed(parentLocation);
+		  	var topDM = top.document.domain;
+		
+		  if(topDM == document.domain || XFSWhitelisted ){
+		  document.documentElement.style.display ='block';
+		  	document.documentElement.style.visibility='visible';
+		  }else{
+		  	top.location = self.location;
+		  }
+		}
+		catch (e) {
+			top.location = self.location;
+		}
+
+		
+		
+	</script>
+
+
+
+
+<!--P0081362 Add CIN to Retail Bank Card App changes starts-->
+
+
+<!--P0081362 Add CIN to Retail Bank Card App changes starts-->
+
+
+
+
+
+
+
+<!-- Variables added for screen ID removal User story as a part of JAN 2016 deliverable-->
+
+
+
+
+<!-- Changes ends -->
+
+
+
+<!-- P0081362 Add CIN to Retail Bank Card App changes--->
+
+<script>
+function getBrandingPath(data) {
+
+    var url1=jQuery(location).attr('protocol')+"//"+jQuery(location).attr('host')
+    var newURL=url1+"/"
+	return newURL;
+}
+$(window).load(function(){
+	  if(typeof sectionLabels=="undefined")
+	  {
+	    window.sectionLabels=[];
+	    $(".cA-DD-fieldSummary").each(function(){window.sectionLabels.push(this.innerHTML)});
+	    
+	  
+	  }
+	})
+
+
+var isAjaxOccured=false;
+
+
+$(document).ready(function(){
+	 $("#CIN").keypress(function(e) {
+         if(e.which == 13) {
+        	 e.preventDefault();
+             $("#CIN").blur().focus();
+         }
+     });
+		$("#CIN").blur(function() {
+			if(isAjaxOccured==true)
+			{
+						$("#ADDRESS_LINE1").val("");
+						$("#ADDRESS_LINE1").blur();
+						
+						$("#ADDRESS_LINE2").val("");
+						$("#ADDRESS_LINE2").blur();
+						
+						$("#STATE").val("");
+						$("#STATE").blur();
+						
+						$("#ZIP").val("");
+						$("#ZIP").blur();
+						
+						$("#CITY").val("");
+						$("#CITY").blur();
+						
+						$("#FIRST_NAME").val("");
+						$("#FIRST_NAME").blur();
+						
+						$("#LAST_NAME").val("");
+						$("#LAST_NAME").blur();
+						
+						$("#HOME_PHONE").val("");
+						$("#HOME_PHONE").blur();
+						
+						$("#EMAIL_ADDRESS").val("");
+						$("#EMAIL_ADDRESS-citiTextBlur").val("");
+						$("#EMAIL_ADDRESS-citiTextBlur").blur();
+						
+						$("#DOB1").val("");
+						$("#DOB1").blur();
+						$("#DOB1").parents(errorValidator.fieldWrapperSelector).removeClass(errorValidator.errorFieldClass);
+						
+						$("#DOB2").val("");
+						$("#DOB2").blur();
+						$("#DOB2").parents(errorValidator.fieldWrapperSelector).removeClass(errorValidator.errorFieldClass);
+
+						$("#DOB3").val("");
+						$("#DOB3").blur();
+						$("#DOB3").parents(errorValidator.fieldWrapperSelector).removeClass(errorValidator.errorFieldClass);
+
+						for(var i=1;i<6;i++)
+						{
+							
+							$($(".cA-DD-fieldSummary")[i]).html(window.sectionLabels[i]);
+							$($(".cA-DD-fields")[i]).removeClass("cA-DD-complete");
+						}
+						isAjaxOccured=false;
+				}
+		var url = getBrandingPath("appPath")+'cards/credit/application/checkContactinfo.action';
+		var CIN=$("#CIN").val();
+		var CINLen=$("#CIN").val().length;
+		var CINObject={CIN:CIN};
+		var responseJSONErr = "null"
+		if($.trim(CINLen) >= 14 && $.trim(CINLen) <= 16){
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: CINObject,
+			success: function(data){
+				var responseData=$.parseJSON(data);
+				if(responseData.length== 2)
+				{
+					isAjaxOccured=true;
+					if(responseData[0].responseStatusList[0].responseCode=="0")
+					{
+						var firstNameConsumer;
+						var lastNameConsumer;
+						var areaCodeHome;
+						var areaCodeMobile;
+						var areaCodeWork;
+						var extensionHome;
+						var extensionMobile;
+						var extensionWork;
+						var numberHome;
+						var numberMobile;
+						var numberWork;
+						var phoneNumberHome;
+						var phoneNumberMobile;
+						var phoneNumberWork;
+						var i;
+						var emailID;
+						var birthDate;
+						var birthMonth;
+						var birthYear;
+						var dateOfBirth;
+						var streetAddress;
+						var aptAddress;
+						var zipCode;
+						var cityName;
+						var stateName;
+						
+						$.each(responseData[0], function(key,value){
+						   if(key=='customerMasterDetails')
+						   {
+							if(value!=null) 
+						    {
+								   
+							if(value.length!=0)
+							{
+							firstNameConsumer=value.firstName;
+							lastNameConsumer=value.lastName;
+							dateOfBirth=value.dateOfBirth;
+							}
+						    }
+						   }
+						   if(key=='bankAddress')
+						   {
+							if(value!=null) 
+						    {
+								   
+						   if(value.length!=0)
+							{
+							streetAddress = value.address1 + value.address2;
+							aptAddress = value.address4;
+							zipCode = value.zip;
+							cityName = value.city;
+							stateName = value.state;
+							}
+						    }
+						   }
+						   if(key=='customerPhoneDetailsList')
+						   {
+							if(value!=null) 
+						    {
+								   
+							if(value.length!=0)
+							{
+						   for(i=0;i<value.length;i++)
+						   {
+						   if(value[i].phoneType==1)
+						   {
+							
+							areaCodeHome=value[i].phoneAreaCode;
+							extensionHome=value[i].phoneExtension;
+							numberHome=value[i].phoneNo;
+							phoneNumberHome=areaCodeHome+extensionHome+numberHome;
+							}
+							
+							 if(value[i].phoneType==27)
+						   {
+							
+							areaCodeMobile=value[i].phoneAreaCode;
+							extensionMobile=value[i].phoneExtension;
+							numberMobile=value[i].phoneNo;
+							phoneNumberMobile=areaCodeMobile+extensionMobile+numberMobile;
+							}
+							
+							 if(value[i].phoneType==18)
+						   {
+							
+							areaCodeWork=value[i].phoneAreaCode;
+							extensionWork=value[i].phoneExtension;
+							numberWork=value[i].phoneNo;
+							phoneNumberWork=areaCodeWork+extensionWork+numberWork;
+							}
+							
+							}
+							}
+						    }
+						   }
+						   
+						   if(key=='customerEmailAddressList')
+						   {
+						    if(value!=null) 
+						     {
+									   
+						   if(value.length!=0)
+							{
+							if(value[0].emailAddress!=null)
+							{
+							emailID=value[0].emailAddress;
+							}
+							else
+							{
+								emailID=value[1].emailAddress;
+							}
+							}
+						     }
+							}
+						  
+						});
+						if(streetAddress!=null){
+							$("#ADDRESS_LINE1").val(streetAddress);
+							$("#ADDRESS_LINE1").focus();
+							
+						}
+						if(aptAddress!=null){
+							$("#ADDRESS_LINE2").val(aptAddress);
+							$("#ADDRESS_LINE2").focus();
+						}
+						if(stateName!=null){
+							$("#STATE").val(stateName);
+							$("#STATE").focus();
+							$("#STATE").blur();
+						}
+						if(zipCode!=null){
+							$("#ZIP").val(zipCode);
+							$("#ZIP").focus();
+						}
+						if(cityName!=null){
+							$("#CITY").val(cityName);
+							$("#CITY").focus();
+						}
+						if(firstNameConsumer!=null)
+						{
+						$("#FIRST_NAME").val(firstNameConsumer);
+						$("#FIRST_NAME").focus();
+						}
+						if(lastNameConsumer!=null)
+						{
+						$("#LAST_NAME").val(lastNameConsumer);
+						$("#LAST_NAME").focus();
+						}
+						if(phoneNumberHome!=null)
+						{
+						$("#HOME_PHONE").val(phoneNumberHome);
+						$("#HOME_PHONE").focus();
+						}
+						if(phoneNumberMobile!=null)
+						{
+						if($("#HOME_PHONE").val()=="")
+						{
+						$("#HOME_PHONE").val(phoneNumberMobile);
+						$("#HOME_PHONE").focus();
+						$("#HOME_PHONE").blur();
+						$("#CELL_PHONE").attr('checked',true)
+						$("#CELL_PHONE").addClass('checked');
+						}
+						}
+						
+						if(emailID!=null)
+						{
+							$("#EMAIL_ADDRESS-citiTextBlur").focus();
+							$("#EMAIL_ADDRESS-citiTextBlur").val(emailID);
+							$("#EMAIL_ADDRESS-citiTextBlur").blur();
+						}
+						if(dateOfBirth!=null)
+						{
+							birthYear=dateOfBirth.substr(0,4);
+							birthMonth=dateOfBirth.substr(5,2);
+							birthDate=dateOfBirth.substr(8,2);
+							$("#DOB1").val(birthMonth);
+							$("#DOB1").focus()
+							$("#DOB1").blur();
+							$("#DOB2").val(birthDate);
+							$("#DOB2").focus()
+							$("#DOB2").blur();
+							$("#DOB3").val(birthYear);
+							$("#DOB3").focus()
+							$("#DOB3").blur();
+						
+						}
+				}
+				if(responseData[0].responseStatusList[0].responseCode=="-1340")
+				{
+					$("#CIN").parents(errorValidator.fieldWrapperSelector).removeClass(errorValidator.validFieldClass)
+					$("#CIN").parents(errorValidator.fieldWrapperSelector).addClass(errorValidator.errorFieldClass)
+					var errorMessageInvalid=responseData[1].errorTextListInvalidCIN;
+					var errorObjectInvalid={error:errorMessageInvalid};
+					errorValidator.displayErrors("CIN",errorObjectInvalid);
+				}
+				if(responseData[0].responseStatusList[0].responseCode=="112" ||responseData[0].responseStatusList[0].responseCode=="99"|| responseData[0].responseStatusList[0].responseCode=="-1682"|| responseData[0].responseStatusList[0].responseCode=="9001"|| responseData[0].responseStatusList[0].responseCode=="9002")
+				{
+					$("#CIN").parents(errorValidator.fieldWrapperSelector).removeClass(errorValidator.validFieldClass)
+					$("#CIN").parents(errorValidator.fieldWrapperSelector).addClass(errorValidator.errorFieldClass)
+					var errorMessageConErr=responseData[1].errorTextcommunication;
+					var errorObjectConErr={error:errorMessageConErr};
+					errorValidator.displayErrors("CIN",errorObjectConErr);
+				}
+			}
+		 else{
+			$("#CIN").parents(errorValidator.fieldWrapperSelector).removeClass(errorValidator.validFieldClass);
+			$("#CIN").parents(errorValidator.fieldWrapperSelector).addClass(errorValidator.errorFieldClass);
+			var errorMessageNull=responseData.errorTextcommunication;
+			var errorMessageIncorrectCIN=responseData.errorTextListInvalidCIN;
+			if (typeof errorMessageNull != 'undefined')
+			{
+			  var errorObjectNull={error:errorMessageNull};
+			}
+			if (typeof errorMessageIncorrectCIN != 'undefined')
+			{
+			  var errorObjectNull={error:errorMessageIncorrectCIN};
+			}
+			errorValidator.displayErrors("CIN",errorObjectNull);
+						
+		 }
+		}
+		});
+		}
+	});
+});
+	
+
+	
+
+ 
+</script>
+
+<!-- P0081362 Add CIN to Retail Bank Card App changes--->
+<script>
+var isCostcoLoggedIn = false;
+</script>
+
+
+ 
+
+ 
+<script>
+var authPrefill = false;
+</script>
+
+
+ 
+
+<script type="text/javascript">
+	var cardData = {"pid":"PID520","desc":["Exclusively for Costco members. Cash back will be provided as an annual credit card reward certificate in February billing statements, redeemable for cash or merchandise at US Costco Warehouses.","4% cash back on eligible gas for the first $7,000 per year and then 1% thereafter","3% cash back on restaurants and eligible travel purchases","2% cash back on all other purchases from Costco and Costco.com","1% cash back on all other purchases<br/><br/><a href=\"/cards/wv/pdf/CMA_CostcoConsADA-3.pdf\" target=\"_blank\">Cardmember Agreement(PDF)</a>"],"title":"Costco Anywhere Visa<sup><span class=&#34;smalltext&#34;>&#174;</span></sup> Card by Citi"}; 
+</script>
+
+
+
+
+ <!-- Add CIN to Retail Bank Card App prequal/preApp/ITa exclude  -->
+
+	
+
+ <!-- Add CIN to Retail Bank Card App prequal/preApp/ITa exclude  -->
+ 
+
+
+
+
+
+<script>
+var termsAjaxUrl = "/cards/credit/displayterms/flow.action?sc=GIDP13G7X44H111111W&app=UNSOL&siteId=CB&langId=EN&BUS_TYP_CD=CONSUMER&DOWNSELL_LEVEL=1&BALCON_SC=&B=S&DOWNSELL_BRANDS=V,&DownsellSourceCode1=RIDPD2L7X44H111111W&B1=V&t=t&d=&uc=GEJ&embedTNC=Y"+"&JFP_TOKEN="+JFP_CSRF_TOKEN_AO;
+var printTermsAjaxUrl = "https://www.citicards.com/cards/credit/displayterms/flow.action?sc=GIDP13G7X44H111111W&app=UNSOL&siteId=CB&langId=EN&BUS_TYP_CD=CONSUMER&DOWNSELL_LEVEL=1&BALCON_SC=&B=S&DOWNSELL_BRANDS=V,&DownsellSourceCode1=RIDPD2L7X44H111111W&B1=V&t=t&d=&uc=GEJ&embedTNC=Y"+"&JFP_TOKEN="+JFP_CSRF_TOKEN_AO;
+var formPrefilled = false;
+var formPrefilledWithoutErrors = false;
+
+var ajaxCityStateUrl = "/cards/credit/application/CityStateByZipAction.action?JFP_TOKEN="+JFP_CSRF_TOKEN_AO+"&stateProvinceCheck=true";
+
+var fallBackZip = false;
+
+var ajaxUrl = "/cards/credit/application/flow.action?JFP_TOKEN="+JFP_CSRF_TOKEN_AO;
+</script>
+
+
+
+
+
+
+
+
+
+
+ 
+	 	 
+	 	 
+  
+
+
+
+
+
+
+
+
+
+
+<!--changes for P0077406 AML KYC Phase 5-->
+
+<!--changes for  P0077406 AML KYC Phase 5-->
+
+ <!-- Add CIN to Retail Bank Card App fallback  -->
+
+<!-- Add CIN to Retail Bank Card App fallback  -->
+
+
+
+
+<script>
+var authPrefill = false;
+</script>
+
+
+
+
+
+<script>
+var amlkycfallbackforjs='false';
+
+</script> 
+<!--changes for P0077406 AML KYC Phase 5-->
+<script>
+var amlkyc5fallbackforjs='false';
+var validationOptions = {
+    "suffixLabels": [
+        "Select one",
+        "SR",
+        "JR"
+    ],
+    "sectionStrings": {
+        "summaryError": "You need to complete all required fields.",
+        "summaryFriendlyError": "Please complete all the required fields.",
+        "cmembershipSummary": "Costco Membership Number",
+        "cmembershipSummaryFilled": "Costco Number: ",
+        "cmembershipSummaryFilledLocationcode": "Location Code: ",
+        "cmembershipSummaryFilledAgentId": "Agent ID: ",
+        "nameSummary": "First Middle Last, Suffix",
+        "emailSummary": "user@domain.com",
+        "phoneSummary": "Primary & Work Numbers",
+        "ssnSummary": "*** - ** - ****,citizenship",
+        "ssnSummarywithoutfallback": "*** - ** - ****",
+        "addressSummary": "Mailing Address",
+        "mailAddr": "Mailing Address: ",
+        "physAddr": "Street Address: ",
+        "incomeSummary": "Total Annual Income",
+        "incomeSalary": "Total Annual Income:",
+        "incomeMortgage": "Mortgage/Rent:",
+        "incomeChecking": "Checking",
+        "incomeSavings": "Savings",
+        "incomeMM": "MM",
+        "dobSummary": "MM/DD/YYYY",
+        "dobSummaryFilled": "** / ** / ****",
+        "authSummary": "Add an Authorized User",
+        "disclosureSummary": "Agree to Electronic Disclosure",
+        "disclosureSummaryFilled": "Agreement Completed",
+        "agreeSummary": "Review account Terms &amp; Conditions",
+        "securitySummary": "Create a Security Word for your account",
+        "selectcardSummary": "Choose card type",
+        "phonePrimary": "<span class='cA-DD-ledgerSmall'>P - </span><span class='cA-DD-ledgerLarge'>Primary: </span>",
+        "phoneWork": "<span class='cA-DD-ledgerSmall'><br>W - </span><span class='cA-DD-ledgerLarge'>Work: </span>",
+        "geidSummary": "Enter your GEID",
+        "USResidence": "U.S."
+    },
+    "emailDomains": ["msn.com", "me.com", "gmail.com", "juno.com", "yahoo.com", "ymail.com", "hotmail.com", "roadrunner.com", "outlook.com", "windstream.net", "aol.com", "frontier.com", "mail.com", "netzero.net", "comcast.net", "embarqmail.com", "gmx.com", "suddenlink.net", "zoho.com", "citi.com", "sbcglobal.net", "verizon.net", "att.net", "cox.net", "bellsouth.net", "optonline.net", "charter.net", "live.com", "earthlink.net", "mac.com"],
+
+    "sections": [
+        {
+            "order":1, 
+            "id": "referralInfoSection", 
+            "title": "Branch Referral Information"
+        },
+        {
+            "order":2, 
+            "id": "costcoMembershipSection", 
+            "title": "Membership Number"
+            
+        },
+        {
+            "order": 3, 
+            "id": "nameSection", 
+            "title": "NAME",
+            "prefilled": false
+        },
+        {
+            "order": 4, 
+            "id": "addressSection", 
+            "title": "Address",
+            "prefilled": false
+        },
+        {
+            "order": 5, 
+            "id": "phoneSection", 
+            "title": "Telephone"
+            
+        },
+        {
+            "order": 6, 
+            "id": "emailSection", 
+            "title": "Email"
+        },
+        {
+            "order": 7, 
+            "id": "dobSection", 
+            "title": "Date of Birth"
+        },
+        {   
+            "order": 8, 
+            "id": "ssnSection", 
+            "title": "Social Security Number"
+        },
+        {
+            "order": 9, 
+            "id": "securitySection", 
+            "title": "security word"
+        },
+        {   
+            "order": 10, 
+            "id": "incomeSection", 
+            "title": "Financial Information"
+        },
+        {
+            "order": 11, 
+            "id": "selectcardSection", 
+            "title": "Select Your Card"
+        },
+        {
+            "order": 12, 
+            "id": "authSection", 
+            "title": "Authorized User",
+            "prefilled": false
+        },
+        
+        {
+            "order": 13, 
+            "id": "disclosureSection", 
+            "title": "Electronic Disclosure"
+        },
+        
+         {
+            "order": 15, 
+            "id": "termsSection", 
+            "title": "&#x3c;sup&#x3e;1&#x3c;&#x2f;sup&#x3e;Terms &#x26; Conditions"
+        },
+         {
+            "order": 16, 
+            "id": "termsAndConditionsSection", 
+            "title": ""
+        },
+        
+        {
+            "order": 17, 
+            "id": "agreeSection", 
+            "title": "&#x3c;sup&#x3e;1&#x3c;&#x2f;sup&#x3e;Terms &#x26; Conditions"
+        }
+    ],
+
+    "fields": {
+        
+        "AFFINITY_NUMBER_PRIMARY": {
+            "label": "Membership Number",
+            "placeholder": "Membership Number",
+            "rules": {
+                "required": true,
+                "uniqueValue":  ["AFFINITY_NUMBER_SECONDARY"],
+                "maxlen": 12,
+                "minlen": 12,
+                "type": "digits"
+            },
+            "errors": {
+                "typeError": "The Membership Number you entered is incorrect. Please enter your Membership Number exactly as you received it.",
+                "uniqueValueError": "Please enter the Authorized User&#x27;s membership number. This number is different than the primary user&#x27;s membership number.",
+                "requiredError": "Please enter your 12-digit membership number.",
+                "minlenError": "Please enter your 12-digit membership number.",
+                "connectError": "A system error has caused a delay in processing your application. Please try again.",
+                "nameError": "The membership number or name you entered doesn&#x27;t match our records.",
+                "ineligibleError3M": "Before applying for a Costco Anywhere Visa&#x3c;sup&#x3e;&#xae;&#x3c;&#x2f;sup&#x3e; Card by Citi, please contact a Costco Membership Associate or call Costco Member Services at 1-800-774-2678.",
+                "ineligibleError1M": "Before applying for a Costco Anywhere Visa&#x3c;sup&#x3e;&#xae;&#x3c;&#x2f;sup&#x3e; Card by Citi, please contact a Costco Membership Associate or call Costco Member Services at 1-800-774-2678."
+            }
+        },
+        "FIRST_NAME": {
+            "label": "First Name",
+            "placeholder": "First",
+            "rules": {
+                "required": true,
+                "minlen": 2,
+                "maxlen": 11,
+                "type": "name"
+            },
+            "errors": {
+                "requiredError": "First name is required. No titles, prefixes or special characters.",
+                "minlenError": "At least 2 characters are required.",
+                "typeError": "Use letters only, no special characters.",
+                "connectError": "A system error has caused a delay in processing your application. Please try again.",
+                "nameError": "The membership number or name you entered doesn&#x27;t match our records.",
+                "warehouseTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "warehouseMinPrepopError": "Your name on file does not meet our minimum character limit. For further assistance, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "onlineTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please contact Costco at 1-800-774-2678. Once updates have been made, you will need to restart the application process.",
+                "onlineMinPrepopError": "Your name on file does not meet our minimum character limit. Please contact Costco at 1-800-774-2678 to update your name.  Once updates have been made, you will need to restart the application process."
+            }
+        },
+        "MIDDLE_NAME": {
+            "label": "Middle Initial Optional",
+            "placeholder": "MI &#x28;opt.&#x29;",
+            "rules": {
+                "maxlen": 1,
+                "type": "mname"
+            },
+            "errors": {
+                "typeError": "Use letters only or leave blank."
+            }
+        },
+        "LAST_NAME": {
+            "label": "Last Name",
+            "placeholder": "Last",
+            "rules": {
+                "required": true,
+                "minlen": 2,
+                "maxlen": 22,
+                "type": "name"
+            },
+            "errors": {
+                "requiredError": "Last name is required. No titles, prefixes or special characters.",
+                "minlenError": "At least 2 characters are required.",
+                "typeError": "Use letters only, no special characters.",
+                "connectError": "A system error has caused a delay in processing your application. Please try again.",
+                "nameError": "The membership number or name you entered doesn&#x27;t match our records.",
+                "warehouseTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "warehouseMinPrepopError": "Your name on file does not meet our minimum character limit. For further assistance, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "onlineTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please contact Costco at 1-800-774-2678. Once updates have been made, you will need to restart the application process.",
+                "onlineMinPrepopError": "Your name on file does not meet our minimum character limit. Please contact Costco at 1-800-774-2678 to update your name.  Once updates have been made, you will need to restart the application process."
+            }
+        },
+        "SUFFIX": {
+            "label": "Suffix Optional",
+            "placeholder": "Suffix &#x28;opt.&#x29;",
+            "rules": {
+                "type": "suffix"
+            }
+        },
+        
+        "HOME_PHONE": {
+            "label": "Telephone Number",
+            "placeholder": "Primary Number",
+            "rules": {
+                "required": true,
+                "maxlen": 14,
+                "type": "usphone"
+            },
+            "errors": {
+                "requiredError": "10-digit phone number is required.",
+                "typeError": "10-digit phone number is required.",
+                "maxlenError": "Field must be no more than 10 characters."
+            }
+        },
+
+        "WORK_PHONE": {
+            "label": "Work Phone Optional",
+            "placeholder": "Work Number &#x28;opt.&#x29;",
+            "rules": {
+                "maxlen": 14,
+                "type": "usphone"
+            },
+            "errors": {
+                "typeError": "10-digit phone number is required.",
+                "maxlenError": "Field must be no more than 10 characters."
+                }
+            },
+        
+        "CELL_PHONE": { 
+            "label": "Cell Phone Optional", 
+            "placeholder": "Cell Phone &#x28;opt.&#x29;" 
+            },
+        
+        "ADDRESS_LINE1": {
+            "label": "Home Address",
+            "placeholder": "Home Address",
+            "rules": { 
+                "required": true,
+                "minlen": 5,
+                "maxlen": 24,
+                "type": "address1OrBox"
+            },
+            "errors": {
+                "requiredError": "Error&#x28;s&#x29; must be corrected. Street address is required.",
+                "minlenError": "At least 5 characters are required.",
+                "typeError": "Home address is required.",
+                "warehouseTruncatedError": "Your address on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your address to appear differently, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "warehouseMinPrepopError": "Your address on file does not meet our minimum character limit. For further assistance, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "onlineTruncatedError": "Your address on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your address to appear differently, please contact Costco at 1-800-774-2678. Once updates have been made, you will need to restart the application process.",
+                "onlineMinPrepopError": "Your address on file does not meet our minimum character limit. For further assistance, please contact Costco at 1-800-774-2678. Once updates have been made, you will need to restart the application process."
+            }
+        },
+        "ADDRESS_LINE2": {
+            "label": "Apartment or Suite Optional",
+            "placeholder": "Apt.&#x2f;Ste. &#x28;opt.&#x29;",
+            "rules": {
+                "minlen": 1,
+                "maxlen": 30,
+                "type": "address2"
+            },
+            "errors": {
+                "typeError": "Use letters&#x2f;numbers only, no special characters."
+            }
+        },
+        "PHYSICAL_ADDRESS_LINE1": {
+            "label": "Street Address",
+            "placeholder": "Street Address",
+            "rules": { 
+                "checkIf": "ADDRESS_LINE1",
+                "minlen": 5,
+                "maxlen": 24,
+                "type": "address1NoBox"
+            },
+            "errors": {
+                "requiredError": "Error&#x28;s&#x29; must be corrected. Street address is required.",
+                "minlenError": "At least 5 characters are required.",
+                "typeError": "Error&#x28;s&#x29; must be corrected. Street address is required"
+            }
+        },
+        "PHYSICAL_ADDRESS_LINE2": {
+            "label": "Apartment or Suite Optional",
+            "placeholder": "Apt.&#x2f;Ste. &#x28;opt.&#x29;",
+            "rules": {
+                "minlen": 1,
+                "maxlen": 30,
+                "type": "address2"
+            },
+            "errors": {
+                "typeError": "Use letters&#x2f;numbers only, no special characters."
+            }
+        },
+        "CITY": {
+            "label": "City",
+            "placeholder": "City",
+            "rules": { 
+                "required": true,
+                "minlen": 3,
+                "maxlen": 22,
+                "type": "city" 
+            },
+            "errors": {
+                "requiredError": "City is required.",
+                "minlenError": "At least 3 characters are required.",
+                "typeError": "Use letters only, no special characters."
+            }
+        },
+        "PHYSICAL_CITY": {
+            "label": "City",
+            "placeholder": "City",
+            "rules": { 
+                "checkIf": "ADDRESS_LINE1",
+                "minlen": 3,
+                "maxlen": 22,
+                "type": "city" 
+            },
+            "errors": {
+                "requiredError": "City is required.",
+                "minlenError": "At least 3 characters are required.",
+                "typeError": "Use letters only, no special characters."
+            }
+        },
+        "STATE": {
+            "label": "State",
+            "placeholder": "State",
+            "displayOptVal": true,
+            "rules": {  
+                "required": true,
+                "type": "state" 
+            },
+            "errors": {
+                "requiredError": "Select your state from the menu."
+            }
+        },
+        "PHYSICAL_STATE": {
+            "label": "State",
+            "placeholder": "State",
+            "displayOptVal": true,
+            "rules": {  
+                "checkIf": "ADDRESS_LINE1",
+                "type": "state" 
+            },
+            "errors": {
+                "requiredError": "State is required."
+            }
+        },
+        "ZIP": {
+            "label": "ZIP Code",
+            "placeholder": "ZIP Code",
+            "rules": {
+                "required": true,
+                "minlen": 5,
+                "maxlen": 5,
+                "type": "digits"
+            },
+            "errors": {
+                "requiredError": "Enter a valid 5-digit ZIP Code.",
+                "minlenError": "Enter a valid 5-digit ZIP Code.",
+                "maxlenError": "Enter a valid 5-digit ZIP Code.",
+                "typeError": "Enter a valid 5-digit ZIP Code."
+            }
+        },
+        "PHYSICAL_ZIP": {
+            "label": "ZIP Code",
+            "placeholder": "ZIP Code",
+            "rules": {
+                "checkIf": "ADDRESS_LINE1",
+                "minlen": 5,
+                "maxlen": 5,
+                "type": "digits"
+            },
+            "errors": {
+                "requiredError": "Enter a valid 5-digit ZIP Code.",
+                "minlenError": "Enter a valid 5-digit ZIP Code.",
+                "maxlenError": "Enter a valid 5-digit ZIP Code.",
+                "typeError": "Enter a valid 5-digit ZIP Code."
+            }
+        },
+        
+        "EMAIL_ADDRESS": {
+            "label": "Email Address Optional",
+            "placeholder": "user&#x40;domain.com &#x28;opt.&#x29;",
+            "rules": {
+                "minlen": 6,
+                "maxlen": 40,
+                "type": "email"
+            },
+            "errors": {
+                "minlenError": "Enter a valid email address.",
+                "typeError": "Enter a valid email address."
+            }
+        },
+        "ESIGN": {
+            "label": "Email Decision",
+            "placeholder": "Email Decision"
+        },
+        
+        "DOB1": {
+            "label": "Birth month",
+            "placeholder": "Month",
+            "rules": { 
+                "required": true 
+            },
+            "errors": {
+                "requiredError": "Month of Birth is required."
+            }
+        },
+        "DOB2": {
+            "label": "Birth Day",
+            "placeholder": "Day",
+            "rules": { 
+                "required": true 
+            },
+            "errors": {
+                "requiredError": "Day of Birth is required.",
+                "invalidDate": "This date is invalid"
+            }
+        },
+        "DOB3": {
+            "label": "Birth Year",
+            "placeholder": "Year",
+            "rules": { 
+                "required": true 
+            },
+            "errors": {
+                "requiredError": "Year of Birth is required.",
+                "invalidDate": "You must be at least 18 years old to apply for a Citi credit card."
+            }
+        },
+        "SSN": {
+            "label": "Social Security Number",
+            "placeholder": "&#x2a;&#x2a;&#x2a;-&#x2a;&#x2a;-&#x2a;&#x2a;&#x2a;&#x2a;",
+            "rules": {
+                "required": true,
+                "maxlen": 11,
+                "type": "ssn"
+            },
+            "errors": {
+                "requiredError": "Please enter your 9-digit Social Security Number.",
+                "maxlenError": "Please enter your 9-digit Social Security Number.",
+                "typeError": "Please enter your 9-digit Social Security Number."
+            }
+        },
+        "COUNTRY_OF_CITIZENSHIP": {
+            "label": "Please select a valid Country of Citizenship.",
+            "placeholder": "Country of Citizenship",
+            "rules": {  
+               "requireIf": "CONSUMER_ARE_YOU_A_US_CITIZEN_1"
+            },
+            "errors": {
+                "requiredError": "Please select a valid Country of Citizenship."
+            }
+        
+        },
+        "CONSUMER_ARE_YOU_A_US_CITIZEN": {
+            "rules": {
+                        "required": true
+                     }
+        },
+        "ANNUAL_INCOME": {
+            "label": "Annual Salary and Wages",
+            "placeholder": "Total Annual Income",
+            "rules": {
+            "required": true,
+            "maxlen": 15,
+            "type": "wholeDollars"
+            },
+            "errors": {
+                "requiredError": "Total Annual Income is required.",
+                "typeError": "Use numbers only, no special characters.",
+                "maxlenError": "Field must be no more than 8 characters."
+            }
+        },
+        "OTHER_INCOME": {
+            "label": "Other Annual Income Optional",
+            "placeholder": "Other Annual Income &#x28;opt.&#x29;",
+            "rules": {
+                "maxlen": 13,
+                "type": "wholeDollars"
+            },
+            "errors": {
+                "typeError": "Use numbers only, no special characters.",
+                "maxlenError": "Field must be no more than 6 characters."
+            }
+        },
+        "MRTG_RENT_AMT": {
+            "label": "Monthly Mortgage or Rent Payment",
+            "placeholder": "Monthly Mortgage&#x2f;Rent Payment",
+            "rules": {
+                "required": true,
+                "maxlen": 11,
+                "type": "wholeDollars"
+            },
+            "errors": {
+                "requiredError": "Monthly Mortgage&#x2f;Rent Payment is required.",
+                "typeError": "Use numbers only, no special characters.",
+                "maxlenError": "Field must be no more than 6 characters."
+            }
+        },
+        "CHECKING_ACCOUNT": {
+            "label": "Checking Optional"
+        },
+
+        "SAVING_ACCOUNT": {
+            "label": "Savings Optional"
+        },
+        "MONEY_MARKET": {
+            "label": "Money Market Optional"
+        },
+        "authUser": {
+            "label": "Authorize User Optional",
+            "placeholder": "Authorize"
+        },
+        "authUserAddress": {
+            "label": "Address same Primary User",
+            "placeholder": "Second Address"
+        },
+        "AFFINITY_NUMBER_SECONDARY": {
+            "label": "Costco Member Number",
+            "placeholder":"Costco Member Number",
+            "rules": {
+                "requireIf": "authUser",
+                "uniqueValue": ["AFFINITY_NUMBER_PRIMARY"], 
+                "maxlen": 12,
+                "minlen": 12,
+                "type": "digits"
+            },
+            "errors": {
+                "requiredError": "Please enter your 12-digit membership number.",
+                "uniqueValueError": "Please enter the Authorized User&#x27;s membership number. This number is different than the primary user&#x27;s membership number.",
+                "typeError": "The Membership Number you entered is incorrect. Please enter your Membership Number exactly as you received it.",
+                "minlenError": "Please enter your 12-digit membership number.",
+                "connectError": "A system error has caused a delay in processing your application. Please try again.",
+                "nameError": "The membership number or name you entered doesn&#x27;t match our records.",
+                "ineligibleError1M": "Before applying for a Costco Anywhere Visa&#x3c;sup&#x3e;&#xae;&#x3c;&#x2f;sup&#x3e; Card by Citi, please contact a Costco Membership Associate or call Costco Member Services at 1-800-774-2678.",
+                "ineligibleError3M": "Before applying for a Costco Anywhere Visa&#x3c;sup&#x3e;&#xae;&#x3c;&#x2f;sup&#x3e; Card by Citi, please contact a Costco Membership Associate or call Costco Member Services at 1-800-774-2678."
+            }
+        },
+        "SECONDARYSSN": {
+            "label": "Social Security Number",
+            "placeholder": "Last 4",
+            "rules": {
+                "requireIf": "authUser",
+                "minlen": 4,
+                "maxlen": 4,
+                "type": "digits"
+            },
+            "errors": {
+                "requiredError": "Please enter the last 4 digits of the social security number.",
+                "maxlenError": "Please enter the last 4 digits of the social security number.",
+                "typeError": "Please enter the last 4 digits of the social security number."
+            }
+        },
+        "AUTH_FIRST_NAME_1": {
+            "label": "First Name",
+            "placeholder": "First",
+            "rules": {
+                "requireIf": "authUser",
+                "minlen": 2,
+                "maxlen": 11,
+                "type": "name"
+            },
+            "errors": {
+                "requiredError": "First name is required. No titles, prefixes or special characters.",
+                "minlenError": "",
+                "typeError": "Use letters only, no special characters.",
+                "connectError": "A system error has caused a delay in processing your application. Please try again.",
+                "nameError": "The membership number or name you entered doesn&#x27;t match our records.",
+                "warehouseTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "warehouseMinPrepopError": "Your name on file does not meet our minimum character limit. For further assistance, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "onlineTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please contact Costco at 1-800-774-2678. Once updates have been made, you will need to restart the application process."
+            }
+        },
+        "AUTH_MIDDLE_INITIAL_1": {
+            "label": "Middle Initial Optional",
+            "placeholder": "MI &#x28;Opt.&#x29;",
+            "rules": {
+                "maxlen": 1,
+                "type": "mname"
+            },
+            "errors": {
+                "typeError": "Use letters only or leave blank."
+            }
+        },
+        "AUTH_LAST_NAME_1": {
+            "label": "Last Name",
+            "placeholder": "Last",
+            "rules": {
+                "requireIf": "authUser",
+                "minlen": 2,
+                "maxlen": 22,
+                "type": "name",
+                "matchValue":  ["FIRST_NAME"],
+                "matchValue":  ["MIDDLE_NAME"],
+                "matchValue":  ["LAST_NAME"],
+                "matchValue":  ["DOB1"],
+                "matchValue":  ["DOB2"],
+                "matchValue":  ["DOB3"]
+            },
+            "errors": {
+                "requiredError": "Last name is required. No titles, prefixes or special characters.",
+                "minlenError": "At least 2 characters are required.",
+                "typeError": "Use letters only, no special characters.",
+                "connectError": "A system error has caused a delay in processing your application. Please try again.",
+                "nameError": "The membership number or name you entered doesn&#x27;t match our records.",
+                "warehouseTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "warehouseMinPrepopError": "Your name on file does not meet our minimum character limit. For further assistance, please speak with a Costco associate. Once updates have been made, you will need to restart the application process.",
+                "onlineTruncatedError": "Your name on file exceeds our maximum character limit and has been truncated. If you&#x27;d like your name to appear differently, please contact Costco at 1-800-774-2678. Once updates have been made, you will need to restart the application process.",
+                "onlineMinPrepopError": "Your name on file does not meet our minimum character limit. Please contact Costco at 1-800-774-2678 to update your name.  Once updates have been made, you will need to restart the application process.",
+                "primmatchError": "Please make sure the Authorized User is different from the Primary Cardholder."
+
+            }
+        },
+        "AUTH_SUFFIX_1": {
+            "label": "Suffix Optional",
+            "placeholder": "Suffix &#x28;opt.&#x29;",
+            "rules": {
+                "type": "suffix"
+            }
+        },
+        "AUTH_DOB1": {
+            "label": "Month",
+            "placeholder": "Month",
+            "rules": {
+                "requireIf": "authUser"
+            },
+            "errors": {
+                "requiredError": "Month is required."
+            }
+        },
+        "AUTH_DOB2": {
+            "label": "Day",
+            "placeholder": "Day",
+            "rules": {
+                "requireIf": "authUser"
+              
+            },
+            "errors": {
+                "requiredError": "Day is required.",
+                "invalidDate": "This date is invalid"
+            }
+        },
+        "AUTH_DOB3": {
+            "label": "Year",
+            "placeholder": "Year",
+                                                "rules": {
+                "requireIf": "authUser",
+                "type": "future"
+              
+            },
+            "errors": {
+                "requiredError": "Year is required.",
+                "typeError": "Please select a valid Date of Birth.",
+                "invalidDate": "This date is invalid."
+            }
+        },
+        
+        "AUTHC_ADDRESS1": {
+            "label": "Street address is requireds",
+            "placeholder": "Street Address",         
+            "rules": {          
+                "minlen": 5,
+                "maxlen": 24,
+                "type": "address1NoBox",
+                "requireIf": "authUser"
+            },
+            "errors": {
+                "requiredError": "Street address is required",
+                "maxlenError": "Too long",
+                "typeError": "Error&#x28;s&#x29; must be corrected. Street address is required",
+                "warehouseTruncatedError": "",
+                "warehouseMinPrepopError": "",
+                "onlineTruncatedError": "",
+                "onlineMinPrepopError": ""
+            }
+        },
+        "AUTHC_ADDRESS2": {
+            "label": "Apt.&#x2f;Ste. &#x28;opt.&#x29;",
+            "placeholder": "Apt.&#x2f;Ste. &#x28;opt.&#x29;",
+            "rules": {
+                "type": "address2",
+                "maxlen": 30
+            },
+            "errors": {
+                "typeError": "Suite&#x2f;apt is not valid"
+            }
+        },
+        "AUTHC_ZIP": {
+            "label": "ZIP Code",
+            "placeholder": "ZIP Code",
+            "rules": {              
+                "minlen": 5,
+                "maxlen": 5,
+                "type": "digits",
+                "requireIf": "authUser"
+            },
+            "errors": {
+                "requiredError": "ZIP Code is required",
+                "minlenError": "ZIP Code must be 5 digits",
+                "maxlenError": "ZIP Code must be 5 digits",
+                "typeError": "ZIP Code must only be numbers"
+            }
+        },
+        "AUTHC_CITY": {
+           "label":"city",
+"placeholder": "City",
+"rules":{
+          "type": "city",
+           "minlen": 3,
+           "maxlen": 22,
+        "requireIf": "authUser"
+         },
+ "errors":{
+           "requiredError":"City is required",
+ 	        "typeError": "City is not valid"            
+ }
+        },
+        "AUTHC_STATE": {
+            "label": "State",
+            "placeholder": "State",
+            "displayOptVal": true, 
+            "rules": {              
+                "type": "state",
+                "requireIf": "authUser"
+            },
+            "errors": {
+                "requiredError": "State is required"
+            }
+        },
+        "AUTHC_PHYSICAL_ADDRESS1": {
+            "label": "Street Address",
+            "placeholder": "Street Address",            
+            "rules": {          
+                "minlen": 5,
+                "maxlen": 24,
+                "type": "address1NoBox"
+            },
+            "errors": {
+                "requiredError": "Street address is required",
+                "maxlenError": "Too long",
+                "typeError": "Address is not valid"
+            }
+        },
+        
+        "AUTHC_PHYSICAL_ADDRESS2": {
+            "label": "Apt.&#x2f;Ste. &#x28;opt.&#x29;",
+            "placeholder": "Apt.&#x2f;Ste. &#x28;opt.&#x29;",
+            "rules": {
+                "minlen": 1,
+                "maxlen": 30,
+                "type": "address2"
+            },
+            "errors": {
+                "typeError": "Suite&#x2f;apt is not valid"
+            }
+        },
+        "AUTHC_PHYSICAL_ZIP": {
+            "label": "ZIP Code",
+            "placeholder": "ZIP Code",
+            "rules": {              
+                "minlen": 5,
+                "maxlen": 5,
+                "type": "digits"
+            },
+            "errors": {
+                "requiredError": "ZIP Code is required",
+                "minlenError": "",
+                "maxlenError": "ZIP Code must be 5 digits",
+                "typeError": "ZIP Code must only be numbers"
+            }
+        },
+        "AUTHC_PHYSICAL_CITY": {
+            "label": "City",
+            "placeholder": "City",
+            "rules": {              
+                "type": "city",
+                "minlen": 3,
+                "maxlen": 22
+            },
+            "errors": {
+                "requiredError": "City is required",
+                "typeError": "City is not valid"
+            }
+        },
+        "AUTHC_PHYSICAL_STATE": {
+            "label": "State",
+            "placeholder": "State",
+            "displayOptVal": true,
+            "rules": {              
+                "type": "state"
+            },
+            "errors": {
+                "requiredError": "State is required"
+            }
+        },
+        "TERMS_CHECK": {
+            "label": "",
+            "placeholder": "",
+            "rules": { 
+                "required": true 
+            },
+            "errors": {
+                "requiredError": ""
+            }
+        },
+        
+        "DISCLOSURE_READ": {
+            "label": "I Agree",
+            "placeholder": "I Agree",
+            "rules": { 
+                "required": true 
+            },
+            "errors": {
+                "requiredError": "Check this box to proceed with your application."
+            }
+        },
+        
+        "SECPASSTYPE_CODE": {
+            "label": "Security Word Hint",
+            "placeholder": "Security Word Hint",
+            "rules": {
+                "required": true,
+                "type": "mmnHint"
+            },
+            "errors": {
+                "requiredError": "Please select a hint."
+            }
+        },
+        "MOTHERS_MAIDEN_NAME": {
+            "label": "Security Word",
+            "placeholder": "Security Word",
+            "rules": {
+                "required": true,
+                "minlen": 1,
+                "maxlen": 10,
+                "type": "mmn"
+            },
+            "errors": {
+                "requiredError": "Security Word is required",
+                "minlenError": "Security Word must be at least 10 characters",
+                "maxlenError": "Security Word is too long",
+                "typeError": "Security Word is not valid"
+            }
+        }
+    }
+};
+</script>
+
+
+
+<!--changes for P0077406 AML KYC Phase 5-->
+
+
+
+  
+		<div aria-live="assertive" class="cA-DD-formErrorMsg">
+		
+		<!-- Server-side error messages? --></div>
+		<!-- hidden fields -->
+		<div class="cA-DD-sections">
+		
+		
+		  <div class="cA-DD-fields" id="costcoMembershipSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+						<div class="cA-DD-inputBox cA-DD-medium AFFINITY_NUMBER_PRIMARY cA-DD-responsiveTooltip">
+							
+							<div class="cA-DD-inputContent">
+								<div class="cA-DD-toggleHelp"></div>
+								<label for="AFFINITY_NUMBER_PRIMARY"></label>
+								<input value="" type="tel" name="AFFINITY_NUMBER_PRIMARY" id="AFFINITY_NUMBER_PRIMARY">
+							</div>
+							<div class="cA-DD-formErrorMsg"></div>
+							<div class="cA-DD-helpText">
+						
+							
+							
+								<p>You must have an active Costco membership in your name. We may cancel your Card Account and participation in this program if you do not maintain your Costco membership. You must maintain your Costco membership to redeem Costco Cash Rewards earned with the Card.</p>
+							
+						</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		  
+		
+		  	
+			<div class="cA-DD-fields" id="nameSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+						<div class="cA-DD-alignment"> 
+					<div class="cA-DD-inputBox cA-DD-large FIRST_NAME">						
+						<div class="cA-DD-inputContent">
+							<label for="FIRST_NAME"></label>
+							<input value="" type="text" name="FIRST_NAME" id="FIRST_NAME" >
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					<div class="cA-DD-inputBox cA-DD-small MIDDLE_NAME">						
+						<div class="cA-DD-inputContent">
+							<label for="MIDDLE_NAME"></label>
+							<input value="" type="text" name="MIDDLE_NAME" id="MIDDLE_NAME" >
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+					</div>
+						</div>
+						<div class="cA-DD-alignment">
+					<div class="cA-DD-inputBox cA-DD-large LAST_NAME">						
+						<div class="cA-DD-inputContent">
+							<label for="LAST_NAME"></label>
+							<input value="" type="text" name="LAST_NAME" id="LAST_NAME" >
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					<div class="cA-DD-inputBox cA-DD-small cA-DD-selectBox SUFFIX">						
+						<div class="cA-DD-inputContent">							
+							<label for="SUFFIX"></label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+						</div> 						
+							<select name="SUFFIX" id="SUFFIX">
+						 <OPTION VALUE="">Select One</OPTION>
+<OPTION VALUE="SR">SR</OPTION>
+<OPTION VALUE="JR">JR</OPTION>
+<OPTION VALUE="II">II</OPTION>
+<OPTION VALUE="III">III</OPTION>
+<OPTION VALUE="IV">IV</OPTION>
+						
+								
+							</select>	
+						<div class="cA-DD-formErrorMsg"></div>					
+							</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="cA-DD-fields" id="phoneSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+					<div class="cA-DD-inputBox cA-DD-medium HOME_PHONE cA-DD-responsiveTooltip">
+					<div class="cA-DD-nonErrorContent">
+											
+						<div class="cA-DD-inputContent">
+							<div class="cA-DD-toggleHelp"></div>
+							<label for="HOME_PHONE"></label>
+							<input value="" type="tel" name="HOME_PHONE" id="HOME_PHONE">
+						</div>
+				
+						 <div class="cA-DD-helpText">
+                   			<p>By giving us a cell number or a number later converted to a cell number, you agree that we or our service providers can contact you at that number by autodialer, recorded or artificial voice, or a text.  Your phone plan charges may apply.</p>
+				 		</div>
+				 	</div>
+				 	<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					
+					<!-- Added for new address field end ORC oct -->
+						
+						<div class="cA-DD-inputBox cA-DD-checkBox CELL_PHONE">
+							<div class="cA-DD-nonErrorContent">
+							<div class="cA-DD-inputContent">
+							
+							 
+                                                                
+                                                                
+                                                                        <input value="CELL_PHONE" type="checkbox" name="CELL_PHONE" id="CELL_PHONE"/>
+                                                                
+                                                        
+
+									<label for="CELL_PHONE"></label>
+								</div>
+								<div class="cA-DD-helpText">
+									 This is my mobile number.
+								</div>
+							</div>
+							<div class="cA-DD-formErrorMsg"></div>
+						</div>
+						
+					<!-- Added for new address field end ORC oct End-->
+					
+					
+					<div class="cA-DD-inputBox cA-DD-medium WORK_PHONE">                    	
+                     	<div class="cA-DD-inputContent">
+                         	<label for="WORK_PHONE"></label>
+                            <input value="" type="tel" name="WORK_PHONE" id="WORK_PHONE">
+                        </div>
+                        <div class="cA-DD-formErrorMsg"></div>
+                    </div>              
+                                         
+				</div>
+				</div>
+			</div>
+			<!----ACH section starts----->
+			
+			
+			<!------ACH section ends--->
+			
+			<div class="cA-DD-fields" id="emailSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+					<div class="cA-DD-inputBox cA-DD-large EMAIL_ADDRESS cA-DD-responsiveTooltip">
+					<div class="cA-DD-nonErrorContent">
+											
+						<div class="cA-DD-inputContent">
+							<div class="cA-DD-toggleHelp"></div>
+							<label id="describeEmail" for="EMAIL_ADDRESS"></label>
+							
+							<input value="" type="email" name="EMAIL_ADDRESS" id="EMAIL_ADDRESS" class="cB-email" aria-describedby="describeEmail">
+						</div>
+						<div class="ui-front"></div>
+					<div class="cA-DD-helpText">
+						
+<p>If you provide your email address, we may use it to contact you about your account and tell you about useful products and services and provide it to Costco in connection with your Costco membership.</p>
+
+					</div>
+					</div>
+					
+					<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					
+					<div class="cA-DD-inputBox cA-DD-checkBox ESIGN">
+						<div class="cA-DD-inputContent">
+							
+								
+								
+									<input value="ESIGN" type="checkbox" name="ESIGN" id="ESIGN"/>
+								
+							
+							
+							<label for="ESIGN"></label>
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+					<div class="cA-DD-helpText">
+						<p>Notify me by email of the decision on my application.</p> 
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+			<div class="cA-DD-fields address" id="addressSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+						<div class="cA-DD-alignment"> 
+							<div class="cA-DD-inputBox cA-DD-large ADDRESS_LINE1 cA-DD-responsiveTooltip">	
+							 <div class="cA-DD-nonErrorContent">
+							 
+								<div class="cA-DD-inputContent">
+									<div class="cA-DD-toggleHelp"></div>
+						<label for="ADDRESS_LINE1"></label>
+						<input value="" type="text" name="ADDRESS_LINE1" id="ADDRESS_LINE1" >
+						</div>
+						
+								<!--changes for P0077406 AML KYC Phase 5-->
+								
+						
+						<div class="cA-DD-helpText" >
+									<p>You must provide your home address. No P.O. boxes, please.</p> 
+						</div>	
+						
+						
+						
+						<!--changes for P0077406 AML KYC Phase 5-->
+						
+								</div>
+								<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					<div class="cA-DD-inputBox cA-DD-small ADDRESS_LINE2">						
+						<div class="cA-DD-inputContent">
+							<label for="ADDRESS_LINE2"></label>
+							<input value="" type="text" name="ADDRESS_LINE2" id="ADDRESS_LINE2" >
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+					</div>
+						</div>
+						<div class="cA-DD-alignment">
+						
+						<div class="cA-DD-inputBox cA-DD-small ZIP">						
+						<div class="cA-DD-inputContent">
+							<label for="ZIP"></label>
+							<input value="" type="tel" name="ZIP" id="ZIP" >
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					 
+					<div class="cA-DD-inputBox cA-DD-medium CITY">						
+						<div class="cA-DD-inputContent">
+							<label for="CITY"></label>
+							<input value="" type="text" name="CITY" id="CITY" >
+						</div>
+						<div class="ui-front"></div>
+						<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					<div class="cA-DD-inputBox cA-DD-small cA-DD-selectBox STATE">						
+						<div class="cA-DD-inputContent">
+							<label for="STATE"></label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+						</div>
+							<select name="STATE" id="STATE">
+									<OPTION SELECTED VALUE="">-</OPTION>
+<OPTION VALUE="AL">Alabama</OPTION>
+<OPTION VALUE="AK">Alaska</OPTION>
+<OPTION VALUE="AS">American Samoa</OPTION>
+<OPTION VALUE="AA">Armed Forces-AA</OPTION>
+<OPTION VALUE="AE">Armed Forces-AE</OPTION>
+<OPTION VALUE="AP">Armed Forces-AP</OPTION>
+<OPTION VALUE="AZ">Arizona</OPTION>
+<OPTION VALUE="AR">Arkansas</OPTION>
+<OPTION VALUE="CA">California</OPTION>
+<OPTION VALUE="CO">Colorado</OPTION>
+<OPTION VALUE="CT">Connecticut</OPTION>
+<OPTION VALUE="DE">Delaware</OPTION>
+<OPTION VALUE="DC">District of Columbia</OPTION>
+<OPTION VALUE="FL">Florida</OPTION>
+<OPTION VALUE="GA">Georgia</OPTION>
+<OPTION VALUE="GU">Guam</OPTION>
+<OPTION VALUE="HI">Hawaii</OPTION>
+<OPTION VALUE="ID">Idaho</OPTION>
+<OPTION VALUE="IL">Illinois</OPTION>
+<OPTION VALUE="IN">Indiana</OPTION>
+<OPTION VALUE="IA">Iowa</OPTION>
+<OPTION VALUE="KS">Kansas</OPTION>
+<OPTION VALUE="KY">Kentucky</OPTION>
+<OPTION VALUE="LA">Louisiana</OPTION>
+<OPTION VALUE="ME">Maine</OPTION>
+<OPTION VALUE="MD">Maryland</OPTION>
+<OPTION VALUE="MA">Massachusetts</OPTION>
+<OPTION VALUE="MI">Michigan</OPTION>
+<OPTION VALUE="MN">Minnesota</OPTION>
+<OPTION VALUE="MS">Mississippi</OPTION>
+<OPTION VALUE="MO">Missouri</OPTION>
+<OPTION VALUE="MT">Montana</OPTION>
+<OPTION VALUE="NE">Nebraska</OPTION>
+<OPTION VALUE="NV">Nevada</OPTION>
+<OPTION VALUE="NH">New Hampshire</OPTION>
+<OPTION VALUE="NJ">New Jersey</OPTION>
+<OPTION VALUE="NM">New Mexico</OPTION>
+<OPTION VALUE="NY">New York</OPTION>
+<OPTION VALUE="NC">North Carolina</OPTION>
+<OPTION VALUE="ND">North Dakota</OPTION>
+<OPTION VALUE="MP">Northern Mariana Islands</OPTION>
+<OPTION VALUE="OH">Ohio</OPTION>
+<OPTION VALUE="OK">Oklahoma</OPTION>
+<OPTION VALUE="OR">Oregon</OPTION>
+<OPTION VALUE="PA">Pennsylvania</OPTION>
+<OPTION VALUE="PR">Puerto Rico</OPTION>
+<OPTION VALUE="RI">Rhode Island</OPTION>
+<OPTION VALUE="SC">South Carolina</OPTION>
+<OPTION VALUE="SD">South Dakota</OPTION>
+<OPTION VALUE="TN">Tennessee</OPTION>
+<OPTION VALUE="TX">Texas</OPTION>
+<OPTION VALUE="VI">US Virgin Islands</OPTION>
+<OPTION VALUE="UT">Utah</OPTION>
+<OPTION VALUE="VT">Vermont</OPTION>
+<OPTION VALUE="VA">Virginia</OPTION>
+<OPTION VALUE="WA">Washington</OPTION>
+<OPTION VALUE="WV">West Virginia</OPTION>
+<OPTION VALUE="WI">Wisconsin</OPTION>
+<OPTION VALUE="WY">Wyoming</OPTION>
+	
+							</select>	
+						<div class="cA-DD-formErrorMsg"></div>					
+					</div>
+					
+						</div>
+						
+						<!-- Added for new address field start -->
+						
+						<div class="cA-DD-secondRowInputs">
+							<div class="cA-DD-alignment"> 
+								<div class="cA-DD-inputBox cA-DD-large PHYSICAL_ADDRESS_LINE1 cA-DD-responsiveTooltip">	
+									<div class="cA-DD-nonErrorContent">
+										<div class="cA-DD-inputContent">
+											<div class="cA-DD-toggleHelp"></div>
+											<label for="PHYSICAL_ADDRESS_LINE1"></label>
+											<input value="" type="text" name="PHYSICAL_ADDRESS_LINE1" id="PHYSICAL_ADDRESS_LINE1">
+										</div>
+										<!--changes for P0077406 AML KYC Phase 5-->
+										
+						
+						<div class="cA-DD-helpText">
+									<p>You must provide your home address. No P.O. boxes, please.</p> 
+						</div>	
+						
+						
+						
+						<!--changes for P0077406 AML KYC Phase 5-->
+									</div>
+									<div class="cA-DD-formErrorMsg"></div>
+								</div>
+								<div class="cA-DD-inputBox cA-DD-small PHYSICAL_ADDRESS_LINE2">						
+									<div class="cA-DD-inputContent">
+										<label for="PHYSICAL_ADDRESS_LINE2"></label>
+										<input value="" type="text" name="PHYSICAL_ADDRESS_LINE2" id="PHYSICAL_ADDRESS_LINE2">
+									</div>
+									<div class="cA-DD-formErrorMsg"></div>
+								</div>
+							</div>
+							<div class="cA-DD-alignment"> 
+							
+								<div class="cA-DD-inputBox cA-DD-small PHYSICAL_ZIP">						
+									<div class="cA-DD-inputContent">
+										<label for="PHYSICAL_ZIP"></label>
+										<input value="" type="tel" name="PHYSICAL_ZIP" id="PHYSICAL_ZIP">
+									</div>
+									<div class="cA-DD-formErrorMsg"></div>
+								</div>
+								
+								<div class="cA-DD-inputBox cA-DD-medium PHYSICAL_CITY">						
+									<div class="cA-DD-inputContent">
+										<label for="PHYSICAL_CITY"></label>
+										<input value="" type="text" name="PHYSICAL_CITY" id="PHYSICAL_CITY">
+									</div>
+									 <div class="ui-front"></div> 
+									<div class="cA-DD-formErrorMsg"></div>
+								</div>
+								<div class="cA-DD-inputBox cA-DD-small cA-DD-selectBox PHYSICAL_STATE">						
+									<div class="cA-DD-inputContent">
+										<label for="PHYSICAL_STATE" class="cA-DD-blankSelect"></label>
+										<div class="cA-DD-spriteUpDownArrow"></div>
+									</div>
+									<select name="PHYSICAL_STATE" id="PHYSICAL_STATE">
+										<OPTION SELECTED VALUE="">-</OPTION>
+<OPTION VALUE="AL">Alabama</OPTION>
+<OPTION VALUE="AK">Alaska</OPTION>
+<OPTION VALUE="AS">American Samoa</OPTION>
+<OPTION VALUE="AA">Armed Forces-AA</OPTION>
+<OPTION VALUE="AE">Armed Forces-AE</OPTION>
+<OPTION VALUE="AP">Armed Forces-AP</OPTION>
+<OPTION VALUE="AZ">Arizona</OPTION>
+<OPTION VALUE="AR">Arkansas</OPTION>
+<OPTION VALUE="CA">California</OPTION>
+<OPTION VALUE="CO">Colorado</OPTION>
+<OPTION VALUE="CT">Connecticut</OPTION>
+<OPTION VALUE="DE">Delaware</OPTION>
+<OPTION VALUE="DC">District of Columbia</OPTION>
+<OPTION VALUE="FL">Florida</OPTION>
+<OPTION VALUE="GA">Georgia</OPTION>
+<OPTION VALUE="GU">Guam</OPTION>
+<OPTION VALUE="HI">Hawaii</OPTION>
+<OPTION VALUE="ID">Idaho</OPTION>
+<OPTION VALUE="IL">Illinois</OPTION>
+<OPTION VALUE="IN">Indiana</OPTION>
+<OPTION VALUE="IA">Iowa</OPTION>
+<OPTION VALUE="KS">Kansas</OPTION>
+<OPTION VALUE="KY">Kentucky</OPTION>
+<OPTION VALUE="LA">Louisiana</OPTION>
+<OPTION VALUE="ME">Maine</OPTION>
+<OPTION VALUE="MD">Maryland</OPTION>
+<OPTION VALUE="MA">Massachusetts</OPTION>
+<OPTION VALUE="MI">Michigan</OPTION>
+<OPTION VALUE="MN">Minnesota</OPTION>
+<OPTION VALUE="MS">Mississippi</OPTION>
+<OPTION VALUE="MO">Missouri</OPTION>
+<OPTION VALUE="MT">Montana</OPTION>
+<OPTION VALUE="NE">Nebraska</OPTION>
+<OPTION VALUE="NV">Nevada</OPTION>
+<OPTION VALUE="NH">New Hampshire</OPTION>
+<OPTION VALUE="NJ">New Jersey</OPTION>
+<OPTION VALUE="NM">New Mexico</OPTION>
+<OPTION VALUE="NY">New York</OPTION>
+<OPTION VALUE="NC">North Carolina</OPTION>
+<OPTION VALUE="ND">North Dakota</OPTION>
+<OPTION VALUE="MP">Northern Mariana Islands</OPTION>
+<OPTION VALUE="OH">Ohio</OPTION>
+<OPTION VALUE="OK">Oklahoma</OPTION>
+<OPTION VALUE="OR">Oregon</OPTION>
+<OPTION VALUE="PA">Pennsylvania</OPTION>
+<OPTION VALUE="PR">Puerto Rico</OPTION>
+<OPTION VALUE="RI">Rhode Island</OPTION>
+<OPTION VALUE="SC">South Carolina</OPTION>
+<OPTION VALUE="SD">South Dakota</OPTION>
+<OPTION VALUE="TN">Tennessee</OPTION>
+<OPTION VALUE="TX">Texas</OPTION>
+<OPTION VALUE="VI">US Virgin Islands</OPTION>
+<OPTION VALUE="UT">Utah</OPTION>
+<OPTION VALUE="VT">Vermont</OPTION>
+<OPTION VALUE="VA">Virginia</OPTION>
+<OPTION VALUE="WA">Washington</OPTION>
+<OPTION VALUE="WV">West Virginia</OPTION>
+<OPTION VALUE="WI">Wisconsin</OPTION>
+<OPTION VALUE="WY">Wyoming</OPTION>
+
+									</select>	
+									<div class="cA-DD-formErrorMsg"></div>					
+								</div>
+								
+							</div>
+						</div>
+						
+						<!-- Added for new address field end ORC oct End-->
+						
+					<!--changes for P0077406 AML KYC Phase 5-->
+					
+						
+						<div class="cA-DD-helpText">
+									<p>You must provide your home address. No P.O. boxes, please.</p> 
+						</div>	
+						
+						
+					
+					<!--changes for P0077406 AML KYC Phase 5-->
+				</div>
+				</div>
+			</div>
+			
+			<div class="cA-DD-fields" id="dobSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+					<div class="cA-DD-inputBox cA-DD-selectBox cA-DD-small DOB1">						
+						<div class="cA-DD-inputContent">
+							<label for="DOB1"></label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+						</div>
+							<select name="DOB1" id="DOB1">
+								<option value="">-</option>
+<OPTION VALUE="01">1</OPTION>
+<OPTION VALUE="02">2</OPTION>
+<OPTION VALUE="03">3</OPTION>
+<OPTION VALUE="04">4</OPTION>
+<OPTION VALUE="05">5</OPTION>
+<OPTION VALUE="06">6</OPTION>
+<OPTION VALUE="07">7</OPTION>
+<OPTION VALUE="08">8</OPTION>
+<OPTION VALUE="09">9</OPTION>
+<OPTION VALUE="10">10</OPTION>
+<OPTION VALUE="11">11</OPTION>
+<OPTION VALUE="12">12</OPTION>
+
+							</select>
+						<div class="cA-DD-formErrorMsg"></div>						
+					</div>
+					<div class="cA-DD-inputBox cA-DD-selectBox cA-DD-small DOB2">						
+						<div class="cA-DD-inputContent">
+							<label for="DOB2"></label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+						</div>
+							<select name="DOB2" id="DOB2">
+								<option value="">-</option>
+<OPTION VALUE="01">1</OPTION>
+<OPTION VALUE="02">2</OPTION>
+<OPTION VALUE="03">3</OPTION>
+<OPTION VALUE="04">4</OPTION>
+<OPTION VALUE="05">5</OPTION>
+<OPTION VALUE="06">6</OPTION>
+<OPTION VALUE="07">7</OPTION>
+<OPTION VALUE="08">8</OPTION>
+<OPTION VALUE="09">9</OPTION>
+<OPTION VALUE="10">10</OPTION>
+<OPTION VALUE="11">11</OPTION>
+<OPTION VALUE="12">12</OPTION>
+<OPTION VALUE="13">13</OPTION>
+<OPTION VALUE="14">14</OPTION>
+<OPTION VALUE="15">15</OPTION>
+<OPTION VALUE="16">16</OPTION>
+<OPTION VALUE="17">17</OPTION>
+<OPTION VALUE="18">18</OPTION>
+<OPTION VALUE="19">19</OPTION>
+<OPTION VALUE="20">20</OPTION>
+<OPTION VALUE="21">21</OPTION>
+<OPTION VALUE="22">22</OPTION>
+<OPTION VALUE="23">23</OPTION>
+<OPTION VALUE="24">24</OPTION>
+<OPTION VALUE="25">25</OPTION>
+<OPTION VALUE="26">26</OPTION>
+<OPTION VALUE="27">27</OPTION>
+<OPTION VALUE="28">28</OPTION>
+<OPTION VALUE="29">29</OPTION>
+<OPTION VALUE="30">30</OPTION>
+<OPTION VALUE="31">31</OPTION>
+
+							</select>		
+						<div class="cA-DD-formErrorMsg"></div>				
+					</div>
+					<div class="cA-DD-inputBox cA-DD-selectBox cA-DD-small DOB3">						
+						<div class="cA-DD-inputContent">
+							<label for="DOB3"></label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+						</div>
+							<select name="DOB3" id="DOB3">
+									<option value="">-</option>
+<OPTION VALUE="2000">2000</OPTION>
+<OPTION VALUE="1999">1999</OPTION>
+<OPTION VALUE="1998">1998</OPTION>
+<OPTION VALUE="1997">1997</OPTION>
+<OPTION VALUE="1996">1996</OPTION>
+<OPTION VALUE="1995">1995</OPTION>
+<OPTION VALUE="1994">1994</OPTION>
+<OPTION VALUE="1993">1993</OPTION>
+<OPTION VALUE="1992">1992</OPTION>
+<OPTION VALUE="1991">1991</OPTION>
+<OPTION VALUE="1990">1990</OPTION>
+<OPTION VALUE="1989">1989</OPTION>
+<OPTION VALUE="1988">1988</OPTION>
+<OPTION VALUE="1987">1987</OPTION>
+<OPTION VALUE="1986">1986</OPTION>
+<OPTION VALUE="1985">1985</OPTION>
+<OPTION VALUE="1984">1984</OPTION>
+<OPTION VALUE="1983">1983</OPTION>
+<OPTION VALUE="1982">1982</OPTION>
+<OPTION VALUE="1981">1981</OPTION>
+<OPTION VALUE="1980">1980</OPTION>
+<OPTION VALUE="1979">1979</OPTION>
+<OPTION VALUE="1978">1978</OPTION>
+<OPTION VALUE="1977">1977</OPTION>
+<OPTION VALUE="1976">1976</OPTION>
+<OPTION VALUE="1975">1975</OPTION>
+<OPTION VALUE="1974">1974</OPTION>
+<OPTION VALUE="1973">1973</OPTION>
+<OPTION VALUE="1972">1972</OPTION>
+<OPTION VALUE="1971">1971</OPTION>
+<OPTION VALUE="1970">1970</OPTION>
+<OPTION VALUE="1969">1969</OPTION>
+<OPTION VALUE="1968">1968</OPTION>
+<OPTION VALUE="1967">1967</OPTION>
+<OPTION VALUE="1966">1966</OPTION>
+<OPTION VALUE="1965">1965</OPTION>
+<OPTION VALUE="1964">1964</OPTION>
+<OPTION VALUE="1963">1963</OPTION>
+<OPTION VALUE="1962">1962</OPTION>
+<OPTION VALUE="1961">1961</OPTION>
+<OPTION VALUE="1960">1960</OPTION>
+<OPTION VALUE="1959">1959</OPTION>
+<OPTION VALUE="1958">1958</OPTION>
+<OPTION VALUE="1957">1957</OPTION>
+<OPTION VALUE="1956">1956</OPTION>
+<OPTION VALUE="1955">1955</OPTION>
+<OPTION VALUE="1954">1954</OPTION>
+<OPTION VALUE="1953">1953</OPTION>
+<OPTION VALUE="1952">1952</OPTION>
+<OPTION VALUE="1951">1951</OPTION>
+<OPTION VALUE="1950">1950</OPTION>
+<OPTION VALUE="1949">1949</OPTION>
+<OPTION VALUE="1948">1948</OPTION>
+<OPTION VALUE="1947">1947</OPTION>
+<OPTION VALUE="1946">1946</OPTION>
+<OPTION VALUE="1945">1945</OPTION>
+<OPTION VALUE="1944">1944</OPTION>
+<OPTION VALUE="1943">1943</OPTION>
+<OPTION VALUE="1942">1942</OPTION>
+<OPTION VALUE="1941">1941</OPTION>
+<OPTION VALUE="1940">1940</OPTION>
+<OPTION VALUE="1939">1939</OPTION>
+<OPTION VALUE="1938">1938</OPTION>
+<OPTION VALUE="1937">1937</OPTION>
+<OPTION VALUE="1936">1936</OPTION>
+<OPTION VALUE="1935">1935</OPTION>
+<OPTION VALUE="1934">1934</OPTION>
+<OPTION VALUE="1933">1933</OPTION>
+<OPTION VALUE="1932">1932</OPTION>
+<OPTION VALUE="1931">1931</OPTION>
+<OPTION VALUE="1930">1930</OPTION>
+<OPTION VALUE="1929">1929</OPTION>
+<OPTION VALUE="1928">1928</OPTION>
+<OPTION VALUE="1927">1927</OPTION>
+<OPTION VALUE="1926">1926</OPTION>
+<OPTION VALUE="1925">1925</OPTION>
+<OPTION VALUE="1924">1924</OPTION>
+<OPTION VALUE="1923">1923</OPTION>
+<OPTION VALUE="1922">1922</OPTION>
+<OPTION VALUE="1921">1921</OPTION>
+<OPTION VALUE="1920">1920</OPTION>
+<OPTION VALUE="1919">1919</OPTION>
+<OPTION VALUE="1918">1918</OPTION>
+<OPTION VALUE="1917">1917</OPTION>
+<OPTION VALUE="1916">1916</OPTION>
+<OPTION VALUE="1915">1915</OPTION>
+<OPTION VALUE="1914">1914</OPTION>
+<OPTION VALUE="1913">1913</OPTION>
+<OPTION VALUE="1912">1912</OPTION>
+<OPTION VALUE="1911">1911</OPTION>
+<OPTION VALUE="1910">1910</OPTION>
+<OPTION VALUE="1909">1909</OPTION>
+<OPTION VALUE="1908">1908</OPTION>
+<OPTION VALUE="1907">1907</OPTION>
+<OPTION VALUE="1906">1906</OPTION>
+<OPTION VALUE="1905">1905</OPTION>
+<OPTION VALUE="1904">1904</OPTION>
+<OPTION VALUE="1903">1903</OPTION>
+<OPTION VALUE="1902">1902</OPTION>
+<OPTION VALUE="1901">1901</OPTION>
+<OPTION VALUE="1900">1900</OPTION>
+
+							</select>	
+						<div class="cA-DD-formErrorMsg"></div>					
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="cA-DD-fields" id="ssnSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+					<div class="cA-DD-inputBox cA-DD-medium SSN cA-DD-responsiveTooltip">	
+					<div class="cA-DD-nonErrorContent">
+										
+						<div class="cA-DD-inputContent">
+							<div class="cA-DD-toggleHelp"></div>
+							<label id="describeSSN" for="SSN"></label>
+							<input value="" type="tel" name="SSN" id="SSN"  aria-describedby="describeSSN" class="cB-ssn_new">
+						</div>
+						
+					<div class="cA-DD-helpText">
+						<p>This information is required to check your credit history with a national credit bureau when processing your application and is strictly confidential.</p>
+<p>Citi uses Secure Sockets Layer (SSL) and 128-bit encryption (if your browser supports it) for online data transmissions.</p>
+					</div>
+					</div>
+					<div class="cA-DD-formErrorMsg"></div>
+				</div>
+				
+				
+				<!--TPR#P0064330 AML_KYC Ph 2,changes start-->
+				
+				
+				<div class="cA-DD-radioHeader" id="citizenship_check">
+				
+				<p>Are you a  U.S. citizen?</p>
+											
+								
+							</div>	
+							<div class="cA-DD-inputBox cA-DD-radioBox CONSUMER_ARE_YOU_A_US_CITIZEN_0">
+								<div class="cA-DD-nonErrorContent">
+									<div class="cA-DD-inputContent">
+										
+											
+											
+												<input value="USA" type="radio" name="CONSUMER_ARE_YOU_A_US_CITIZEN" id="CONSUMER_ARE_YOU_A_US_CITIZEN_0"/>
+											
+										
+											<label for="CONSUMER_ARE_YOU_A_US_CITIZEN_0">
+												Yes
+											</label>
+									</div>
+									<div class="cA-DD-helpText">	
+										Yes
+										
+									</div>
+								</div>
+								<div class="cA-DD-formErrorMsg"></div>
+							</div>
+							
+							
+							<div class="cA-DD-inputBox cA-DD-radioBox CONSUMER_ARE_YOU_A_US_CITIZEN_1">
+								<div class="cA-DD-nonErrorContent">
+									<div class="cA-DD-inputContent">
+										
+											
+											
+												<input value="NONUSA" type="radio" name="CONSUMER_ARE_YOU_A_US_CITIZEN" id="CONSUMER_ARE_YOU_A_US_CITIZEN_1"/>
+											
+										
+											<label for="CONSUMER_ARE_YOU_A_US_CITIZEN_1">
+												No
+											</label>
+									</div>
+									<div class="cA-DD-helpText">
+										No
+										
+									</div>
+								</div>
+								<div class="cA-DD-formErrorMsg"></div>
+							</div>
+							
+							<div id="cA-DD-content">
+						<div class="cA-DD-inputBox cA-DD-selectBox cA-DD-medium COUNTRY_OF_CITIZENSHIP">
+					<div class="cA-DD-nonErrorContent">						
+						<div class="cA-DD-inputContent">
+						<div class="cA-DD-toggleHelp"></div>
+							<label id= "describeCitizenship" for="COUNTRY_OF_CITIZENSHIP">Country of Citizenship
+										</label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+						</div>
+							<select name="COUNTRY_OF_CITIZENSHIP" id="COUNTRY_OF_CITIZENSHIP"  aria-describedby="describeCitizenship">
+								<OPTION SELECTED VALUE=""></OPTION>
+<OPTION VALUE="004">Afghanistan</OPTION>
+<OPTION VALUE="008">Albania</OPTION>
+<OPTION VALUE="012">Algeria</OPTION>
+<OPTION VALUE="016">American Samoa</OPTION>
+<OPTION VALUE="020">Andorra</OPTION>
+<OPTION VALUE="024">Angola</OPTION>
+<OPTION VALUE="660">Anguilla</OPTION>
+<OPTION VALUE="028">Antigua &amp; Barbuda</OPTION>
+<OPTION VALUE="032">Argentina</OPTION>
+<OPTION VALUE="051">Armenia</OPTION>
+<OPTION VALUE="533">Aruba</OPTION>
+<OPTION VALUE="036">Australia</OPTION>
+<OPTION VALUE="040">Austria</OPTION>
+<OPTION VALUE="031">Azerbaijan</OPTION>
+<OPTION VALUE="044">Bahamas</OPTION>
+<OPTION VALUE="048">Bahrain</OPTION>
+<OPTION VALUE="050">Bangladesh</OPTION>
+<OPTION VALUE="052">Barbados</OPTION>
+<OPTION VALUE="112">Belarus</OPTION>
+<OPTION VALUE="056">Belgium</OPTION>
+<OPTION VALUE="084">Belize (British Honduras)</OPTION>
+<OPTION VALUE="204">Benin</OPTION>
+<OPTION VALUE="060">Bermuda</OPTION>
+<OPTION VALUE="064">Bhutan</OPTION>
+<OPTION VALUE="068">Bolivia</OPTION>
+<OPTION VALUE="070">Bosnia &amp; Hercegovina</OPTION>
+<OPTION VALUE="072">Botswana</OPTION>
+<OPTION VALUE="076">Brazil</OPTION>
+<OPTION VALUE="092">British Virgin Islands</OPTION>
+<OPTION VALUE="096">Brunei Darussalam</OPTION>
+<OPTION VALUE="100">Bulgaria</OPTION>
+<OPTION VALUE="854">Burkina Faso</OPTION>
+<OPTION VALUE="108">Burundi</OPTION>
+<OPTION VALUE="116">Cambodia</OPTION>
+<OPTION VALUE="120">Cameroon</OPTION>
+<OPTION VALUE="124">Canada</OPTION>
+<OPTION VALUE="132">Cape Verde, Republic of</OPTION>
+<OPTION VALUE="136">Cayman Islands</OPTION>
+<OPTION VALUE="140">Central African Republic</OPTION>
+<OPTION VALUE="148">Chad</OPTION>
+<OPTION VALUE="152">Chile</OPTION>
+<OPTION VALUE="156">China (People's Republic)</OPTION>
+<OPTION VALUE="170">Colombia</OPTION>
+<OPTION VALUE="174">Comoros</OPTION>
+<OPTION VALUE="178">Congo</OPTION>
+<OPTION VALUE="184">Cook Islands</OPTION>
+<OPTION VALUE="188">Costa Rica</OPTION>
+<OPTION VALUE="384">Cote d'Ivoire (Ivory Coast)</OPTION>
+<OPTION VALUE="191">Croatia</OPTION>
+<OPTION VALUE="192">Cuba</OPTION>
+<OPTION VALUE="196">Cyprus</OPTION>
+<OPTION VALUE="203">Czech Republic</OPTION>
+<OPTION VALUE="208">Denmark</OPTION>
+<OPTION VALUE="262">Djibouti</OPTION>
+<OPTION VALUE="212">Dominica</OPTION>
+<OPTION VALUE="214">Dominican Republic</OPTION>
+<OPTION VALUE="626">East Timor</OPTION>
+<OPTION VALUE="218">Ecuador</OPTION>
+<OPTION VALUE="818">Egypt</OPTION>
+<OPTION VALUE="222">El Salvador</OPTION>
+<OPTION VALUE="226">Equatorial Guinea</OPTION>
+<OPTION VALUE="232">Eritrea</OPTION>
+<OPTION VALUE="233">Estonia</OPTION>
+<OPTION VALUE="230">Ethiopia</OPTION>
+<OPTION VALUE="238">Falkland Islands (Islas Malvinas)</OPTION>
+<OPTION VALUE="234">Faroe Islands</OPTION>
+<OPTION VALUE="242">Fiji</OPTION>
+<OPTION VALUE="246">Finland</OPTION>
+<OPTION VALUE="250">France</OPTION>
+<OPTION VALUE="254">French Guiana</OPTION>
+<OPTION VALUE="258">French Polynesia</OPTION>
+<OPTION VALUE="266">Gabon</OPTION>
+<OPTION VALUE="270">Gambia</OPTION>
+<OPTION VALUE="268">Georgia</OPTION>
+<OPTION VALUE="280">Germany</OPTION>
+<OPTION VALUE="288">Ghana</OPTION>
+<OPTION VALUE="292">Gibraltar</OPTION>
+<OPTION VALUE="300">Greece</OPTION>
+<OPTION VALUE="304">Greenland</OPTION>
+<OPTION VALUE="308">Grenada</OPTION>
+<OPTION VALUE="312">Guadeloupe</OPTION>
+<OPTION VALUE="316">Guam</OPTION>
+<OPTION VALUE="320">Guatemala</OPTION>
+<OPTION VALUE="324">Guinea</OPTION>
+<OPTION VALUE="624">Guinea-Bissau</OPTION>
+<OPTION VALUE="328">Guyana</OPTION>
+<OPTION VALUE="332">Haiti</OPTION>
+<OPTION VALUE="336">Holy See (Vatican City State)</OPTION>
+<OPTION VALUE="340">Honduras</OPTION>
+<OPTION VALUE="344">Hong Kong</OPTION>
+<OPTION VALUE="348">Hungary</OPTION>
+<OPTION VALUE="352">Iceland</OPTION>
+<OPTION VALUE="356">India</OPTION>
+<OPTION VALUE="360">Indonesia</OPTION>
+<OPTION VALUE="364">Iran (Persia)</OPTION>
+<OPTION VALUE="368">Iraq</OPTION>
+<OPTION VALUE="372">Ireland</OPTION>
+<OPTION VALUE="833">Isle of Man</OPTION>
+<OPTION VALUE="376">Israel</OPTION>
+<OPTION VALUE="380">Italy</OPTION>
+<OPTION VALUE="388">Jamaica</OPTION>
+<OPTION VALUE="392">Japan</OPTION>
+<OPTION VALUE="400">Jordan</OPTION>
+<OPTION VALUE="398">Kazakhstan</OPTION>
+<OPTION VALUE="404">Kenya</OPTION>
+<OPTION VALUE="296">Kiribati</OPTION>
+<OPTION VALUE="408">Korea (North)</OPTION>
+<OPTION VALUE="414">Kuwait</OPTION>
+<OPTION VALUE="417">Kyrgyzstan</OPTION>
+<OPTION VALUE="418">Laos</OPTION>
+<OPTION VALUE="428">Latvia</OPTION>
+<OPTION VALUE="422">Lebanon</OPTION>
+<OPTION VALUE="426">Lesotho</OPTION>
+<OPTION VALUE="430">Liberia</OPTION>
+<OPTION VALUE="434">Libya</OPTION>
+<OPTION VALUE="438">Liechtenstein</OPTION>
+<OPTION VALUE="440">Lithuania</OPTION>
+<OPTION VALUE="442">Luxembourg</OPTION>
+<OPTION VALUE="446">Macau</OPTION>
+<OPTION VALUE="807">Macedonia</OPTION>
+<OPTION VALUE="450">Madagascar</OPTION>
+<OPTION VALUE="454">Malawi</OPTION>
+<OPTION VALUE="458">Malaysia</OPTION>
+<OPTION VALUE="462">Maldives</OPTION>
+<OPTION VALUE="466">Mali Republic</OPTION>
+<OPTION VALUE="470">Malta</OPTION>
+<OPTION VALUE="584">Marshall Islands</OPTION>
+<OPTION VALUE="175">Mayotte</OPTION>
+<OPTION VALUE="474">Martinique</OPTION>
+<OPTION VALUE="478">Mauritania</OPTION>
+<OPTION VALUE="480">Mauritius</OPTION>
+<OPTION VALUE="484">Mexico</OPTION>
+<OPTION VALUE="583">Micronesia, Federated States of</OPTION>
+<OPTION VALUE="498">Moldova</OPTION>
+<OPTION VALUE="492">Monaco</OPTION>
+<OPTION VALUE="496">Mongolia</OPTION>
+<OPTION VALUE="499">Montenegro</OPTION>
+<OPTION VALUE="500">Montserrat</OPTION>
+<OPTION VALUE="504">Morocco</OPTION>
+<OPTION VALUE="508">Mozambique</OPTION>
+<OPTION VALUE="104">Myanmar</OPTION>
+<OPTION VALUE="516">Namibia</OPTION>
+<OPTION VALUE="520">Nauru</OPTION>
+<OPTION VALUE="524">Nepal</OPTION>
+<OPTION VALUE="528">Netherlands (Holland)</OPTION>
+<OPTION VALUE="530">Netherlands Antilles</OPTION>
+<OPTION VALUE="540">New Caledonia</OPTION>
+<OPTION VALUE="554">New Zealand</OPTION>
+<OPTION VALUE="558">Nicaragua</OPTION>
+<OPTION VALUE="562">Niger</OPTION>
+<OPTION VALUE="566">Nigeria</OPTION>
+<OPTION VALUE="570">Niue</OPTION>
+<OPTION VALUE="574">Norfolk Island</OPTION>
+<OPTION VALUE="580">Northern Mariana Islands</OPTION>
+<OPTION VALUE="578">Norway</OPTION>
+<OPTION VALUE="512">Oman</OPTION>
+<OPTION VALUE="586">Pakistan</OPTION>
+<OPTION VALUE="585">Palau</OPTION>
+<OPTION VALUE="591">Panama</OPTION>
+<OPTION VALUE="598">Papua New Guinea</OPTION>
+<OPTION VALUE="600">Paraguay</OPTION>
+<OPTION VALUE="604">Peru</OPTION>
+<OPTION VALUE="608">Philippines</OPTION>
+<OPTION VALUE="612">Pitcairn</OPTION>
+<OPTION VALUE="616">Poland</OPTION>
+<OPTION VALUE="620">Portugal</OPTION>
+<OPTION VALUE="630">Puerto Rico</OPTION>
+<OPTION VALUE="634">Qatar</OPTION>
+<OPTION VALUE="410">South Korea</OPTION>
+<OPTION VALUE="638">Reunion Island</OPTION>
+<OPTION VALUE="642">Romania</OPTION>
+<OPTION VALUE="643">Russia</OPTION>
+<OPTION VALUE="646">Rwanda</OPTION>
+<OPTION VALUE="674">San Marino</OPTION>
+<OPTION VALUE="678">Sao Tome &amp; Principe</OPTION>
+<OPTION VALUE="682">Saudi Arabia</OPTION>
+<OPTION VALUE="688">Serbia</OPTION>
+<OPTION VALUE="686">Senegal</OPTION>
+<OPTION VALUE="690">Seychelles</OPTION>
+<OPTION VALUE="694">Sierra Leone</OPTION>
+<OPTION VALUE="702">Singapore</OPTION>
+<OPTION VALUE="703">Slovakia</OPTION>
+<OPTION VALUE="705">Slovenia</OPTION>
+<OPTION VALUE="090">Solomon Islands</OPTION>
+<OPTION VALUE="706">Somalia</OPTION>
+<OPTION VALUE="710">South Africa</OPTION>
+<OPTION VALUE="724">Spain</OPTION>
+<OPTION VALUE="144">Sri Lanka</OPTION>
+<OPTION VALUE="654">St Helena</OPTION>
+<OPTION VALUE="659">St Kitts &amp; Nevis</OPTION>
+<OPTION VALUE="662">St Lucia</OPTION>
+<OPTION VALUE="666">St Pierre &amp; Miquelon</OPTION>
+<OPTION VALUE="670">St Vincent &amp; Grenadines</OPTION>
+<OPTION VALUE="736">Sudan</OPTION>
+<OPTION VALUE="740">Suriname</OPTION>
+<OPTION VALUE="744">Svalbard &amp; Jan Mayen Islands</OPTION>
+<OPTION VALUE="748">Swaziland</OPTION>
+<OPTION VALUE="752">Sweden</OPTION>
+<OPTION VALUE="756">Switzerland</OPTION>
+<OPTION VALUE="760">Syria</OPTION>
+<OPTION VALUE="158">Taiwan</OPTION>
+<OPTION VALUE="762">Tajikstan</OPTION>
+<OPTION VALUE="834">Tanzania</OPTION>
+<OPTION VALUE="764">Thailand</OPTION>
+<OPTION VALUE="768">Togo</OPTION>
+<OPTION VALUE="772">Tokelau Islands</OPTION>
+<OPTION VALUE="776">Tonga</OPTION>
+<OPTION VALUE="780">Trinidad &amp; Tobago</OPTION>
+<OPTION VALUE="788">Tunisia</OPTION>
+<OPTION VALUE="792">Turkey</OPTION>
+<OPTION VALUE="795">Turkmenistan</OPTION>
+<OPTION VALUE="796">Turks &amp; Caicos Islands</OPTION>
+<OPTION VALUE="798">Tuvalu</OPTION>
+<OPTION VALUE="800">Uganda</OPTION>
+<OPTION VALUE="804">Ukraine</OPTION>
+<OPTION VALUE="784">United Arab Emirates</OPTION>
+<OPTION VALUE="826">United Kingdom</OPTION>
+<OPTION VALUE="858">Uruguay</OPTION>
+<OPTION VALUE="850">US Virgin Islands</OPTION>
+<OPTION VALUE="860">Uzbekistan</OPTION>
+<OPTION VALUE="548">Vanuatu</OPTION>
+<OPTION VALUE="862">Venezuela</OPTION>
+<OPTION VALUE="704">Vietnam</OPTION>
+<OPTION VALUE="876">Wallis &amp; Futuna Islands</OPTION>
+<OPTION VALUE="732">Western Sahara</OPTION>
+<OPTION VALUE="882">Western Samoa</OPTION>
+<OPTION VALUE="886">Yemen</OPTION>
+<OPTION VALUE="887">Yemen</OPTION>
+<OPTION VALUE="180">Zaire</OPTION>
+<OPTION VALUE="894">Zambia</OPTION>
+<OPTION VALUE="716">Zimbabwe</OPTION>
+
+							</select>
+						<div class="cA-DD-formErrorMsg"></div>						
+					</div>
+					</div>
+					
+					</div>
+					
+					<!--TPR#P0064330 AML_KYC Ph 2,changes end-->
+			
+				</div>
+			</div>
+			</div>
+			
+			
+			<div class="cA-DD-fields" id="securitySection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+					<div class="cA-DD-inputBox cA-DD-large cA-DD-selectBox SECPASSTYPE_CODE">						
+						<div class="cA-DD-inputContent">
+							<label for="SECPASSTYPE_CODE"></label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+						</div>
+							<select name="SECPASSTYPE_CODE" id="SECPASSTYPE_CODE">
+								<OPTION SELECTED VALUE="">Select One</OPTION>
+<OPTION VALUE="P">Favorite Pet's Name</OPTION>
+<OPTION VALUE="S">Favorite Snack</OPTION>
+<OPTION VALUE="H">Favorite Hobby</OPTION>
+<OPTION VALUE="T">Favorite Teacher</OPTION>
+<OPTION VALUE="B">Best friend's last name</OPTION>
+<OPTION VALUE="F">First Concert Attended</OPTION>
+<OPTION VALUE="V">Ideal Place to Vacation</OPTION>
+<OPTION VALUE="Y">Your childhood nickname</OPTION>
+  
+							</select>	
+						<div class="cA-DD-formErrorMsg"></div>					
+					<div class="cA-DD-helpText">
+								<p>Select a question and answer to use when calling about your Citi account. This ensures that we are speaking directly to you, and not someone else.</p>
+						</div>					
+					</div>
+					<div class="cA-DD-inputBox cA-DD-medium MOTHERS_MAIDEN_NAME cA-DD-responsiveTooltip">		
+					<div class="cA-DD-nonErrorContent">
+									
+						<div class="cA-DD-inputContent">
+							<div class="cA-DD-toggleHelp"></div>
+							<label id="describeSecutiryWord" for="MOTHERS_MAIDEN_NAME"></label>
+							<input value="" type="text" name="MOTHERS_MAIDEN_NAME" id="MOTHERS_MAIDEN_NAME" class="cB-full" aria-describedby="describeSecutiryWord">
+						</div>
+					
+						<div class="cA-DD-helpText">
+								Your Security Word should contain up to 10 letters and/or numbers. You'll be asked to provide it whenever you call us, register for online services or transfer balances. Special characters (" = & > ! @, etc.) and vulgar language are not allowed. Be sure to keep your Security Word private.
+					</div>
+					</div>
+						<div class="cA-DD-formErrorMsg"></div>
+				</div>
+			</div>
+		</div>
+		</div>
+			
+			 
+			<!--Changes done for screen ID removal User story as a part of JAN 2016 deliverable  -->
+			   
+			
+					<!-- changes ends for Screen ID removal US -->
+
+			
+			
+			<div class="cA-DD-fields" id="incomeSection">
+				<div class="cA-DD-content">
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+					<div class="cA-DD-inputBox cA-DD-medium ANNUAL_INCOME cA-DD-responsiveTooltip">	
+					<div class="cA-DD-nonErrorContent">
+										
+						<div class="cA-DD-inputContent">
+							<div class="cA-DD-toggleHelp"></div>
+							<label for="ANNUAL_INCOME"></label>
+							<input value="" type="tel" name="ANNUAL_INCOME" id="ANNUAL_INCOME">
+						</div>
+					
+					<div class="cA-DD-helpText">
+					
+						
+						
+						
+							Examples: Salary, wages, interest, dividends, rental income, retirement benefits. If you are 21 or older, you may include income from others that you can reasonably access to pay your bills.<br/><br/>You do not have to include alimony, child support, or separate maintenance income if you do not want it considered as a basis for repaying this debt.
+						
+						
+							
+					</div>
+					</div>
+						<div class="cA-DD-formErrorMsg"></div>
+					</div>
+					
+	  				
+					
+					
+					 <div class="cA-DD-inputBox cA-DD-medium MRTG_RENT_AMT cA-DD-responsiveTooltip">       
+					 	<div class="cA-DD-nonErrorContent">     				
+           				<div class="cA-DD-inputContent">
+           					<div class="cA-DD-toggleHelp"></div>
+             				<label for="MRTG_RENT_AMT"></label>
+              				<input value="" type="tel" name="MRTG_RENT_AMT" id="MRTG_RENT_AMT">
+            				</div>
+           				
+            				<div class="cA-DD-helpText">            				
+	              				<p>This is your combined monthly payment(s) for where you currently reside.</p>	            						
+            				</div>
+            				</div>
+            				<div class="cA-DD-formErrorMsg"></div>
+          					</div>
+
+													
+					<h4>I have the following bank accounts(opt.):</h4> 
+					<div class="cA-DD-inputBox cA-DD-checkBox CHECKING_ACCOUNT">						
+						<div class="cA-DD-inputContent">
+							
+								
+								
+									<input value="CHECKING_ACCOUNT" type="checkbox" name="CHECKING_ACCOUNT" id="CHECKING_ACCOUNT"/>
+								
+							
+							
+							<label for="CHECKING_ACCOUNT"></label>
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+						<div class="cA-DD-helpText">
+							<p>Checking</p>
+						</div>
+					</div>
+					<div class="cA-DD-inputBox cA-DD-checkBox SAVING_ACCOUNT">						
+						<div class="cA-DD-inputContent">
+							
+								
+								
+									<input value="SAVING_ACCOUNT" type="checkbox" name="SAVING_ACCOUNT" id="SAVING_ACCOUNT"/>
+								
+							
+							
+							<label for="SAVING_ACCOUNT"></label>
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+						<div class="cA-DD-helpText">
+							<p>Savings</p>
+						</div>
+					</div>
+					<div class="cA-DD-inputBox cA-DD-checkBox MONEY_MARKET">						
+						<div class="cA-DD-inputContent">
+							
+								
+								
+									<input value="MONEY_MARKET" type="checkbox" name="MONEY_MARKET" id="MONEY_MARKET"/>
+								
+							
+							
+							<label for="MONEY_MARKET"></label>
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+						<div class="cA-DD-helpText">
+							<p>Money Market</p>
+							
+						</div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+			<!--Secured Card Section to be added.-->
+			
+			<!--Secured Card Section Ends.-->
+			
+			
+			<div class="cA-DD-fields cA-DD-costcoAuthSection" id="authSection">
+				<div class="cA-DD-content" >
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div aria-hidden="true" class="cA-DD-fieldSummary"></div>
+					<div class="cA-DD-inputCollection">
+						<div class="cA-DD-helpText">
+							<p>To add an Authorized User to your account, you'll need to know his or her:</p>
+<ul>
+    <li>Full Name</li>
+    <li>Date of Birth</li>
+    <li>Social Security Number</li>
+</ul>
+<p><strong>If you don't know this information or have it with you, you can add an Authorized User to your account later by phone or online.</strong></p>
+<p>You must pay us for all charges made or allowed by <span tabindex="0" class="cA-DD-openOverlay" id="costcoAuth">Authorized Users</span>. Authorized Users are able to get account information. You also need the Authorized User's permission to give us any information about him or her that we request and to allow us to share information about him or her.</p></p>
+							</div>
+							
+						<div class="cA-DD-inputBox cA-DD-checkBox authUser">
+							<div class="cA-DD-inputContent">
+							
+								
+								
+									<input value="authUser" type="checkbox" name="authUser" id="authUser"/>
+								
+							
+								<label for="authUser"></label>
+							</div>
+							<div class="cA-DD-helpText">
+								
+                 <p>I want to add an Authorized User to this account now.</p>
+            </p>
+							</div>
+							<div  class="cA-DD-formErrorMsg"></div>
+						</div>
+						
+						
+						<div  id="cA-DD-userToAuth">
+							<h4>Membership Information</h4>
+							<div class="cA-DD-inputBox cA-DD-medium AFFINITY_NUMBER_SECONDARY cA-DD-responsiveTooltip">
+								<div class="cA-DD-inputContent">
+									<div class="cA-DD-toggleHelp"></div>
+									<label for="AFFINITY_NUMBER_SECONDARY"></label>
+									<input value="" name="AFFINITY_NUMBER_SECONDARY" id="AFFINITY_NUMBER_SECONDARY" type="tel">
+								</div>
+								<div  class="cA-DD-formErrorMsg"></div>
+								<div class="cA-DD-helpText">
+								<p>Enter the Authorized User's membership number.</p>
+								</div>
+							</div>
+							
+							
+							<h4>Name</h4>
+							<div class="cA-DD-alignment">
+								<div class="cA-DD-inputBox cA-DD-large AUTH_FIRST_NAME_1">
+									<div class="cA-DD-inputContent">
+										<label for="AUTH_FIRST_NAME_1"></label>
+										<input value="" type="text" name="AUTH_FIRST_NAME_1" id="AUTH_FIRST_NAME_1">
+									</div>
+									<div  class="cA-DD-formErrorMsg"></div>
+								</div>
+								<div class="cA-DD-inputBox cA-DD-small AUTH_MIDDLE_INITIAL_1">
+									<div class="cA-DD-inputContent">
+										<label for="AUTH_MIDDLE_INITIAL_1"></label>
+										<input value="" type="text" name="AUTH_MIDDLE_INITIAL_1" id="AUTH_MIDDLE_INITIAL_1">
+									</div>
+									<div class="cA-DD-formErrorMsg"></div>
+								</div>
+							</div>
+							
+							<div class="cA-DD-alignment"> 
+								<div class="cA-DD-inputBox cA-DD-large AUTH_LAST_NAME_1">
+									<div class="cA-DD-inputContent">
+										<label for="AUTH_LAST_NAME_1"></label>
+										<input value="" type="text" name="AUTH_LAST_NAME_1" id="AUTH_LAST_NAME_1">
+									</div>
+									<div class="cA-DD-formErrorMsg"></div>
+								</div>
+								
+								<div class="cA-DD-inputBox cA-DD-small cA-DD-selectBox AUTH_SUFFIX_1">
+									<div class="cA-DD-inputContent">
+										<label for="AUTH_SUFFIX_1"></label>
+										<div class="cA-DD-spriteUpDownArrow"></div>
+									</div>
+									<select name="AUTH_SUFFIX_1" id="AUTH_SUFFIX_1">
+									 <OPTION VALUE="">Select One</OPTION>
+<OPTION VALUE="SR">SR</OPTION>
+<OPTION VALUE="JR">JR</OPTION>
+<OPTION VALUE="II">II</OPTION>
+<OPTION VALUE="III">III</OPTION>
+<OPTION VALUE="IV">IV</OPTION>
+
+								</select>	
+									<div class="cA-DD-formErrorMsg"></div>
+								</div>
+							</div>
+											
+							<h4>Social Security Number</h4>
+							<div class="cA-DD-inputBox cA-DD-medium SECONDARYSSN ">
+								<div class="cA-DD-inputContent">
+									<div class="cA-DD-toggleHelp"></div>
+									<label id="describeSSN" for="SECONDARYSSN"></label>
+									<input value="" name="SECONDARYSSN" id="SECONDARYSSN" aria-describedby="describeSSN" type="tel">
+								</div>
+								<div class="cA-DD-formErrorMsg"></div>
+							</div>
+							
+						<!--aml_kyccostco starts-->
+							
+							<br/>
+					<div class="cA-DD-alignment" id="auth_dob">
+						<h4>Date of Birth</h4>
+						</div>	
+						
+					 	<div class="cA-DD-inputCollection"> 
+						<div class="cA-DD-inputBox cA-DD-selectBox cA-DD-small AUTH_DOB1">						
+					
+							<div class="cA-DD-inputContent">
+							<label for="AUTH_DOB1">Month </label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+							</div>
+					
+						
+							<select name="AUTH_DOB1" id="AUTH_DOB1" >
+								<option value="">-</option>
+<OPTION VALUE="01">1</OPTION>
+<OPTION VALUE="02">2</OPTION>
+<OPTION VALUE="03">3</OPTION>
+<OPTION VALUE="04">4</OPTION>
+<OPTION VALUE="05">5</OPTION>
+<OPTION VALUE="06">6</OPTION>
+<OPTION VALUE="07">7</OPTION>
+<OPTION VALUE="08">8</OPTION>
+<OPTION VALUE="09">9</OPTION>
+<OPTION VALUE="10">10</OPTION>
+<OPTION VALUE="11">11</OPTION>
+<OPTION VALUE="12">12</OPTION>
+
+							</select>
+							<div class="cA-DD-formErrorMsg"></div>						
+						</div>
+						
+						<div class="cA-DD-inputBox cA-DD-selectBox cA-DD-small AUTH_DOB2">						
+								<div class="cA-DD-inputContent">
+									<label for="AUTH_DOB2">Day</label>
+									<div class="cA-DD-spriteUpDownArrow"></div>
+								</div>
+							<select name="AUTH_DOB2" id="AUTH_DOB2"  >
+								<option value="">-</option>
+<OPTION VALUE="01">1</OPTION>
+<OPTION VALUE="02">2</OPTION>
+<OPTION VALUE="03">3</OPTION>
+<OPTION VALUE="04">4</OPTION>
+<OPTION VALUE="05">5</OPTION>
+<OPTION VALUE="06">6</OPTION>
+<OPTION VALUE="07">7</OPTION>
+<OPTION VALUE="08">8</OPTION>
+<OPTION VALUE="09">9</OPTION>
+<OPTION VALUE="10">10</OPTION>
+<OPTION VALUE="11">11</OPTION>
+<OPTION VALUE="12">12</OPTION>
+<OPTION VALUE="13">13</OPTION>
+<OPTION VALUE="14">14</OPTION>
+<OPTION VALUE="15">15</OPTION>
+<OPTION VALUE="16">16</OPTION>
+<OPTION VALUE="17">17</OPTION>
+<OPTION VALUE="18">18</OPTION>
+<OPTION VALUE="19">19</OPTION>
+<OPTION VALUE="20">20</OPTION>
+<OPTION VALUE="21">21</OPTION>
+<OPTION VALUE="22">22</OPTION>
+<OPTION VALUE="23">23</OPTION>
+<OPTION VALUE="24">24</OPTION>
+<OPTION VALUE="25">25</OPTION>
+<OPTION VALUE="26">26</OPTION>
+<OPTION VALUE="27">27</OPTION>
+<OPTION VALUE="28">28</OPTION>
+<OPTION VALUE="29">29</OPTION>
+<OPTION VALUE="30">30</OPTION>
+<OPTION VALUE="31">31</OPTION>
+
+							</select>		
+							<div class="cA-DD-formErrorMsg"></div>				
+						</div>
+						
+						<div class="cA-DD-inputBox cA-DD-selectBox cA-DD-small AUTH_DOB3">						
+							<div class="cA-DD-inputContent">
+							<label for="AUTH_DOB3">Year</label>
+							<div class="cA-DD-spriteUpDownArrow"></div>
+							</div>
+							<!--Changes for P0077406  AML KYC 5 PCR18-->
+							<select name="AUTH_DOB3" id="AUTH_DOB3" >
+									<option value="">-</option>
+<OPTION VALUE="2018">2018</OPTION>
+<OPTION VALUE="2017">2017</OPTION>
+<OPTION VALUE="2016">2016</OPTION>
+<OPTION VALUE="2015">2015</OPTION>
+<OPTION VALUE="2014">2014</OPTION>
+<OPTION VALUE="2013">2013</OPTION>
+<OPTION VALUE="2012">2012</OPTION>
+<OPTION VALUE="2011">2011</OPTION>
+<OPTION VALUE="2010">2010</OPTION>
+<OPTION VALUE="2009">2009</OPTION>
+<OPTION VALUE="2008">2008</OPTION>
+<OPTION VALUE="2007">2007</OPTION>
+<OPTION VALUE="2006">2006</OPTION>
+<OPTION VALUE="2005">2005</OPTION>
+<OPTION VALUE="2004">2004</OPTION>
+<OPTION VALUE="2003">2003</OPTION>
+<OPTION VALUE="2002">2002</OPTION>
+<OPTION VALUE="2001">2001</OPTION>
+<OPTION VALUE="2000">2000</OPTION>
+<OPTION VALUE="1999">1999</OPTION>
+<OPTION VALUE="1998">1998</OPTION>
+<OPTION VALUE="1997">1997</OPTION>
+<OPTION VALUE="1996">1996</OPTION>
+<OPTION VALUE="1995">1995</OPTION>
+<OPTION VALUE="1994">1994</OPTION>
+<OPTION VALUE="1993">1993</OPTION>
+<OPTION VALUE="1992">1992</OPTION>
+<OPTION VALUE="1991">1991</OPTION>
+<OPTION VALUE="1990">1990</OPTION>
+<OPTION VALUE="1989">1989</OPTION>
+<OPTION VALUE="1988">1988</OPTION>
+<OPTION VALUE="1987">1987</OPTION>
+<OPTION VALUE="1986">1986</OPTION>
+<OPTION VALUE="1985">1985</OPTION>
+<OPTION VALUE="1984">1984</OPTION>
+<OPTION VALUE="1983">1983</OPTION>
+<OPTION VALUE="1982">1982</OPTION>
+<OPTION VALUE="1981">1981</OPTION>
+<OPTION VALUE="1980">1980</OPTION>
+<OPTION VALUE="1979">1979</OPTION>
+<OPTION VALUE="1978">1978</OPTION>
+<OPTION VALUE="1977">1977</OPTION>
+<OPTION VALUE="1976">1976</OPTION>
+<OPTION VALUE="1975">1975</OPTION>
+<OPTION VALUE="1974">1974</OPTION>
+<OPTION VALUE="1973">1973</OPTION>
+<OPTION VALUE="1972">1972</OPTION>
+<OPTION VALUE="1971">1971</OPTION>
+<OPTION VALUE="1970">1970</OPTION>
+<OPTION VALUE="1969">1969</OPTION>
+<OPTION VALUE="1968">1968</OPTION>
+<OPTION VALUE="1967">1967</OPTION>
+<OPTION VALUE="1966">1966</OPTION>
+<OPTION VALUE="1965">1965</OPTION>
+<OPTION VALUE="1964">1964</OPTION>
+<OPTION VALUE="1963">1963</OPTION>
+<OPTION VALUE="1962">1962</OPTION>
+<OPTION VALUE="1961">1961</OPTION>
+<OPTION VALUE="1960">1960</OPTION>
+<OPTION VALUE="1959">1959</OPTION>
+<OPTION VALUE="1958">1958</OPTION>
+<OPTION VALUE="1957">1957</OPTION>
+<OPTION VALUE="1956">1956</OPTION>
+<OPTION VALUE="1955">1955</OPTION>
+<OPTION VALUE="1954">1954</OPTION>
+<OPTION VALUE="1953">1953</OPTION>
+<OPTION VALUE="1952">1952</OPTION>
+<OPTION VALUE="1951">1951</OPTION>
+<OPTION VALUE="1950">1950</OPTION>
+<OPTION VALUE="1949">1949</OPTION>
+<OPTION VALUE="1948">1948</OPTION>
+<OPTION VALUE="1947">1947</OPTION>
+<OPTION VALUE="1946">1946</OPTION>
+<OPTION VALUE="1945">1945</OPTION>
+<OPTION VALUE="1944">1944</OPTION>
+<OPTION VALUE="1943">1943</OPTION>
+<OPTION VALUE="1942">1942</OPTION>
+<OPTION VALUE="1941">1941</OPTION>
+<OPTION VALUE="1940">1940</OPTION>
+<OPTION VALUE="1939">1939</OPTION>
+<OPTION VALUE="1938">1938</OPTION>
+<OPTION VALUE="1937">1937</OPTION>
+<OPTION VALUE="1936">1936</OPTION>
+<OPTION VALUE="1935">1935</OPTION>
+<OPTION VALUE="1934">1934</OPTION>
+<OPTION VALUE="1933">1933</OPTION>
+<OPTION VALUE="1932">1932</OPTION>
+<OPTION VALUE="1931">1931</OPTION>
+<OPTION VALUE="1930">1930</OPTION>
+<OPTION VALUE="1929">1929</OPTION>
+<OPTION VALUE="1928">1928</OPTION>
+<OPTION VALUE="1927">1927</OPTION>
+<OPTION VALUE="1926">1926</OPTION>
+<OPTION VALUE="1925">1925</OPTION>
+<OPTION VALUE="1924">1924</OPTION>
+<OPTION VALUE="1923">1923</OPTION>
+<OPTION VALUE="1922">1922</OPTION>
+<OPTION VALUE="1921">1921</OPTION>
+<OPTION VALUE="1920">1920</OPTION>
+<OPTION VALUE="1919">1919</OPTION>
+<OPTION VALUE="1918">1918</OPTION>
+<OPTION VALUE="1917">1917</OPTION>
+<OPTION VALUE="1916">1916</OPTION>
+<OPTION VALUE="1915">1915</OPTION>
+<OPTION VALUE="1914">1914</OPTION>
+<OPTION VALUE="1913">1913</OPTION>
+<OPTION VALUE="1912">1912</OPTION>
+<OPTION VALUE="1911">1911</OPTION>
+<OPTION VALUE="1910">1910</OPTION>
+<OPTION VALUE="1909">1909</OPTION>
+<OPTION VALUE="1908">1908</OPTION>
+<OPTION VALUE="1907">1907</OPTION>
+<OPTION VALUE="1906">1906</OPTION>
+<OPTION VALUE="1905">1905</OPTION>
+<OPTION VALUE="1904">1904</OPTION>
+<OPTION VALUE="1903">1903</OPTION>
+<OPTION VALUE="1902">1902</OPTION>
+<OPTION VALUE="1901">1901</OPTION>
+<OPTION VALUE="1900">1900</OPTION>
+
+							</select>	
+							<!--Changes for P0077406  AML KYC 5 PCR18-->	
+							<div class="cA-DD-formErrorMsg"></div>					
+						</div>
+						
+					</div>
+					
+					
+				</div><!--userToAuth div ends-->
+				
+				
+							<div class="cA-DD-inputBox cA-DD-checkBox authUserAddress">
+								<div class="cA-DD-nonErrorContent">
+									<div class="cA-DD-inputContent">
+										<input value="authUserAddress" type="checkbox" name="authUserAddress" id="authUserAddress">
+										<label for="authUserAddress"></label>
+									</div>
+									<div class="cA-DD-helpText">
+									Address is the same as primary user.
+										
+									</div>
+								</div>
+								<div class="cA-DD-formErrorMsg"></div>
+							</div>
+							
+							<div id="cA-DD-secondAddress">
+								<div class="cA-DD-alignment">
+									<div class="cA-DD-inputBox cA-DD-large AUTHC_ADDRESS1 cA-DD-responsiveTooltip">
+										<div class="cA-DD-nonErrorContent">
+											<div class="cA-DD-inputContent">
+												<label for="AUTHC_ADDRESS1">Street Address</label>
+												<input value="" type="text" name="AUTHC_ADDRESS1" id="AUTHC_ADDRESS1">
+											</div>
+											
+										</div>
+										<div class="cA-DD-formErrorMsg"></div>
+									</div>
+									<div class="cA-DD-inputBox cA-DD-small AUTHC_ADDRESS2">
+										<div class="cA-DD-nonErrorContent">
+											<div class="cA-DD-inputContent">
+												<label for="AUTHC_ADDRESS2">Apt./Ste. (opt.)</label>
+												<input value="" type="text" name="AUTHC_ADDRESS2" id="AUTHC_ADDRESS2">
+											</div>
+										</div>
+										<div class="cA-DD-formErrorMsg"></div>
+									</div>
+								 
+								 
+								 <div class="cA-DD-inputBox cA-DD-small AUTHC_ZIP">
+										
+											<div class="cA-DD-inputContent">
+												<label for="AUTHC_ZIP">ZIP Code</label>
+												<input value="" type="tel" name="AUTHC_ZIP" id="AUTHC_ZIP" class="cB-full">
+											</div>
+										
+										<div class="cA-DD-formErrorMsg"></div>
+									</div>
+								 
+								 
+									<div class="cA-DD-inputBox cA-DD-small AUTHC_CITY">
+										<div class="cA-DD-nonErrorContent">
+											<div class="cA-DD-inputContent">
+												<label for="AUTHC_CITY">City</label>
+												<input value="" type="text" name="AUTHC_CITY" id="AUTHC_CITY">
+											</div>
+										</div>
+										<div class="ui-front"></div>
+										<div class="cA-DD-formErrorMsg"></div>
+									</div>
+									<div class="cA-DD-inputBox cA-DD-small cA-DD-selectBox AUTHC_STATE">
+										<div class="cA-DD-nonErrorContent">
+											<div class="cA-DD-inputContent">
+												<label for="AUTHC_STATE">State</label>
+												<div class="cA-DD-spriteUpDownArrow"></div>
+											</div>
+											<select name="AUTHC_STATE" id="AUTHC_STATE">
+											<OPTION SELECTED VALUE="">-</OPTION>
+<OPTION VALUE="AL">Alabama</OPTION>
+<OPTION VALUE="AK">Alaska</OPTION>
+<OPTION VALUE="AS">American Samoa</OPTION>
+<OPTION VALUE="AA">Armed Forces-AA</OPTION>
+<OPTION VALUE="AE">Armed Forces-AE</OPTION>
+<OPTION VALUE="AP">Armed Forces-AP</OPTION>
+<OPTION VALUE="AZ">Arizona</OPTION>
+<OPTION VALUE="AR">Arkansas</OPTION>
+<OPTION VALUE="CA">California</OPTION>
+<OPTION VALUE="CO">Colorado</OPTION>
+<OPTION VALUE="CT">Connecticut</OPTION>
+<OPTION VALUE="DE">Delaware</OPTION>
+<OPTION VALUE="DC">District of Columbia</OPTION>
+<OPTION VALUE="FL">Florida</OPTION>
+<OPTION VALUE="GA">Georgia</OPTION>
+<OPTION VALUE="GU">Guam</OPTION>
+<OPTION VALUE="HI">Hawaii</OPTION>
+<OPTION VALUE="ID">Idaho</OPTION>
+<OPTION VALUE="IL">Illinois</OPTION>
+<OPTION VALUE="IN">Indiana</OPTION>
+<OPTION VALUE="IA">Iowa</OPTION>
+<OPTION VALUE="KS">Kansas</OPTION>
+<OPTION VALUE="KY">Kentucky</OPTION>
+<OPTION VALUE="LA">Louisiana</OPTION>
+<OPTION VALUE="ME">Maine</OPTION>
+<OPTION VALUE="MD">Maryland</OPTION>
+<OPTION VALUE="MA">Massachusetts</OPTION>
+<OPTION VALUE="MI">Michigan</OPTION>
+<OPTION VALUE="MN">Minnesota</OPTION>
+<OPTION VALUE="MS">Mississippi</OPTION>
+<OPTION VALUE="MO">Missouri</OPTION>
+<OPTION VALUE="MT">Montana</OPTION>
+<OPTION VALUE="NE">Nebraska</OPTION>
+<OPTION VALUE="NV">Nevada</OPTION>
+<OPTION VALUE="NH">New Hampshire</OPTION>
+<OPTION VALUE="NJ">New Jersey</OPTION>
+<OPTION VALUE="NM">New Mexico</OPTION>
+<OPTION VALUE="NY">New York</OPTION>
+<OPTION VALUE="NC">North Carolina</OPTION>
+<OPTION VALUE="ND">North Dakota</OPTION>
+<OPTION VALUE="MP">Northern Mariana Islands</OPTION>
+<OPTION VALUE="OH">Ohio</OPTION>
+<OPTION VALUE="OK">Oklahoma</OPTION>
+<OPTION VALUE="OR">Oregon</OPTION>
+<OPTION VALUE="PA">Pennsylvania</OPTION>
+<OPTION VALUE="PR">Puerto Rico</OPTION>
+<OPTION VALUE="RI">Rhode Island</OPTION>
+<OPTION VALUE="SC">South Carolina</OPTION>
+<OPTION VALUE="SD">South Dakota</OPTION>
+<OPTION VALUE="TN">Tennessee</OPTION>
+<OPTION VALUE="TX">Texas</OPTION>
+<OPTION VALUE="VI">US Virgin Islands</OPTION>
+<OPTION VALUE="UT">Utah</OPTION>
+<OPTION VALUE="VT">Vermont</OPTION>
+<OPTION VALUE="VA">Virginia</OPTION>
+<OPTION VALUE="WA">Washington</OPTION>
+<OPTION VALUE="WV">West Virginia</OPTION>
+<OPTION VALUE="WI">Wisconsin</OPTION>
+<OPTION VALUE="WY">Wyoming</OPTION>
+	
+											</select>
+										</div>
+										<div class="cA-DD-formErrorMsg"></div>
+									</div>
+									
+								</div>
+							
+							
+								</div>
+							
+							
+							
+				<!--<div class="cA-DD-secondRowInputs">
+              <div class="cA-DD-alignment"> 
+                <div class="cA-DD-inputBox cA-DD-large AUTHC_PHYSICAL_ADDRESS1 cA-DD-responsiveTooltip"> 
+                  <div class="cA-DD-nonErrorContent">
+                    <div class="cA-DD-inputContent">
+                      <div class="cA-DD-toggleHelp"></div>
+                      <label for="AUTHC_PHYSICAL_ADDRESS1">Street Address</label>
+                      <input value="" type="text" name="AUTHC_PHYSICAL_ADDRESS1" id="AUTHC_PHYSICAL_ADDRESS1">
+                    </div>
+                    
+                  </div>
+                  <div class="cA-DD-formErrorMsg"></div>
+                </div>
+                <div class="cA-DD-inputBox cA-DD-small AUTHC_PHYSICAL_ADDRESS2"> 
+                  <div class="cA-DD-inputContent">
+                    <label for="AUTHC_PHYSICAL_ADDRESS2">Apt./Ste. (opt.)</label>
+                    <input value="" type="text" name="AUTHC_PHYSICAL_ADDRESS2" id="AUTHC_PHYSICAL_ADDRESS2">
+                  </div>
+                  <div class="cA-DD-formErrorMsg"></div>
+                </div>
+          
+        
+              <div class="cA-DD-inputBox cA-DD-small AUTHC_PHYSICAL_ZIP"> 
+                  <div class="cA-DD-inputContent">
+                    <label for="AUTHC_PHYSICAL_ZIP">ZIP Code</label>
+                    <input value="" type="tel" name="AUTHC_PHYSICAL_ZIP" id="AUTHC_PHYSICAL_ZIP" class="cB-full">
+                  </div>
+                  <div class="cA-DD-formErrorMsg"></div>
+                </div>
+                
+                <div class="cA-DD-inputBox cA-DD-small AUTHC_PHYSICAL_CITY"> 
+                  <div class="cA-DD-inputContent">
+                    <label for="AUTHC_PHYSICAL_CITY">City</label>
+                    <input value="" type="text" name="AUTHC_PHYSICAL_CITY" id="AUTHC_PHYSICAL_CITY">
+                  </div>
+                  <div class="ui-front"></div>
+                  <div class="cA-DD-formErrorMsg"></div>
+                </div>
+                
+                <div class="cA-DD-inputBox cA-DD-small cA-DD-selectBox AUTHC_PHYSICAL_STATE"> 
+                  <div class="cA-DD-inputContent">
+                    <label for="AUTHC_PHYSICAL_STATE" class="cA-DD-blankSelect">State</label>
+                    <div class="cA-DD-spriteUpDownArrow"></div>
+                  </div>
+                  <select name="AUTHC_PHYSICAL_STATE" id="AUTHC_PHYSICAL_STATE">
+                    <OPTION SELECTED VALUE="">-</OPTION>
+<OPTION VALUE="AL">Alabama</OPTION>
+<OPTION VALUE="AK">Alaska</OPTION>
+<OPTION VALUE="AS">American Samoa</OPTION>
+<OPTION VALUE="AA">Armed Forces-AA</OPTION>
+<OPTION VALUE="AE">Armed Forces-AE</OPTION>
+<OPTION VALUE="AP">Armed Forces-AP</OPTION>
+<OPTION VALUE="AZ">Arizona</OPTION>
+<OPTION VALUE="AR">Arkansas</OPTION>
+<OPTION VALUE="CA">California</OPTION>
+<OPTION VALUE="CO">Colorado</OPTION>
+<OPTION VALUE="CT">Connecticut</OPTION>
+<OPTION VALUE="DE">Delaware</OPTION>
+<OPTION VALUE="DC">District of Columbia</OPTION>
+<OPTION VALUE="FL">Florida</OPTION>
+<OPTION VALUE="GA">Georgia</OPTION>
+<OPTION VALUE="GU">Guam</OPTION>
+<OPTION VALUE="HI">Hawaii</OPTION>
+<OPTION VALUE="ID">Idaho</OPTION>
+<OPTION VALUE="IL">Illinois</OPTION>
+<OPTION VALUE="IN">Indiana</OPTION>
+<OPTION VALUE="IA">Iowa</OPTION>
+<OPTION VALUE="KS">Kansas</OPTION>
+<OPTION VALUE="KY">Kentucky</OPTION>
+<OPTION VALUE="LA">Louisiana</OPTION>
+<OPTION VALUE="ME">Maine</OPTION>
+<OPTION VALUE="MD">Maryland</OPTION>
+<OPTION VALUE="MA">Massachusetts</OPTION>
+<OPTION VALUE="MI">Michigan</OPTION>
+<OPTION VALUE="MN">Minnesota</OPTION>
+<OPTION VALUE="MS">Mississippi</OPTION>
+<OPTION VALUE="MO">Missouri</OPTION>
+<OPTION VALUE="MT">Montana</OPTION>
+<OPTION VALUE="NE">Nebraska</OPTION>
+<OPTION VALUE="NV">Nevada</OPTION>
+<OPTION VALUE="NH">New Hampshire</OPTION>
+<OPTION VALUE="NJ">New Jersey</OPTION>
+<OPTION VALUE="NM">New Mexico</OPTION>
+<OPTION VALUE="NY">New York</OPTION>
+<OPTION VALUE="NC">North Carolina</OPTION>
+<OPTION VALUE="ND">North Dakota</OPTION>
+<OPTION VALUE="MP">Northern Mariana Islands</OPTION>
+<OPTION VALUE="OH">Ohio</OPTION>
+<OPTION VALUE="OK">Oklahoma</OPTION>
+<OPTION VALUE="OR">Oregon</OPTION>
+<OPTION VALUE="PA">Pennsylvania</OPTION>
+<OPTION VALUE="PR">Puerto Rico</OPTION>
+<OPTION VALUE="RI">Rhode Island</OPTION>
+<OPTION VALUE="SC">South Carolina</OPTION>
+<OPTION VALUE="SD">South Dakota</OPTION>
+<OPTION VALUE="TN">Tennessee</OPTION>
+<OPTION VALUE="TX">Texas</OPTION>
+<OPTION VALUE="VI">US Virgin Islands</OPTION>
+<OPTION VALUE="UT">Utah</OPTION>
+<OPTION VALUE="VT">Vermont</OPTION>
+<OPTION VALUE="VA">Virginia</OPTION>
+<OPTION VALUE="WA">Washington</OPTION>
+<OPTION VALUE="WV">West Virginia</OPTION>
+<OPTION VALUE="WI">Wisconsin</OPTION>
+<OPTION VALUE="WY">Wyoming</OPTION>
+
+                  </select> 
+                  <div class="cA-DD-formErrorMsg"></div> 
+                </div>
+                    </div>
+              
+            </div>
+			
+					-->
+					<!--changes for P0077406 AML KYC Phase 5-->
+					
+						
+						<div class="cA-DD-helpText addressHelp">
+							<p>You must provide the Authorized User's home address. No P.O. boxes, please.</p>
+									
+							</div>	
+						
+						
+					
+					<!--changes for P0077406 AML KYC Phase 5-->
+					
+				<!--aml_kyccostco end-->
+				
+					</div>	
+					</div>
+					</div>
+					
+			
+			
+			 
+			
+			
+		<div class="cA-DD-fields" id="disclosureSection">
+               <div class="cA-DD-content">
+               <h3 class="cA-DD-sectionTitle"></h3>
+                <div aria-hidden="true" class="cA-DD-fieldSummary"></div> 
+                 <div class="cA-DD-inputCollection">
+                	 <div class="cA-DD-disclosureText">
+                	 	<p>To receive your account opening disclosures, including <a href="/cards/wv/pdf/CMA_CostcoConsADA-3.pdf" target="_blank">Cardmember Agreement (PDF)</a> and <a href="/cards/wv/JRS/ACQ/img/CostcoConPrivacy.pdf" target="_blank">Privacy Notice</a>, electronically on our website, your computer must be capable of printing or storing web pages and your browser must have 128-bit encryption security.  To request a paper copy of any of these documents by mail, call us at 1-888-201-4523 and we will mail them to you at no charge.</p>                		
+                	</div>
+                		<div class="cA-DD-inputBox cA-DD-checkBox DISCLOSURE_READ">
+                			<div class="cA-DD-nonErrorContent">
+                     			<div class="cA-DD-inputContent">
+                     				
+										
+										
+											<input value="DISCLOSURE_READ" type="checkbox" name="DISCLOSURE_READ" id="DISCLOSURE_READ">
+										
+									
+                        				<label for="DISCLOSURE_READ"></label>
+                      			</div>
+                  					<div class="cA-DD-helpText">
+                                           <p>I agree to receive my account opening disclosures, including <a href="/cards/wv/pdf/CMA_CostcoConsADA-3.pdf" target="_blank">Cardmember Agreement (PDF)</a> and <a href="/cards/wv/JRS/ACQ/img/CostcoConPrivacy.pdf" target="_blank">Privacy Notice</a>, electronically. I confirm that my computer meets the standards described above. I have read and agree to the terms in these disclosures. <strong>Note: You must check the box before submitting the application.</strong></p>
+                                     </div>
+                             </div>
+                          			<div class="cA-DD-formErrorMsg"></div>
+                        </div>
+                  </div>
+              </div>
+        </div>
+	 
+		 					
+		<div id="termsSection">
+				<div class="cA-DD-content"> 
+					<h3 class="cA-DD-sectionTitle"></h3>
+					<div class="cA-DD-inputCollection">
+						<div id="cA-DD-finePrint">
+							<a class="cA-DD-printVers cA-DD-popLink" href="#" tabindex="-1" target="_blank">Printer-Friendly Version</a>
+						</div>
+					</div>							
+					<div id="cA-DD-finePrintTC">
+						<div id="framedTerms">Loading. Please wait...</div>
+					</div>
+		     	</div>
+		     </div>
+             <div id="termsAndConditionsSection">
+                 <div id="cA-DD-termsConditionsText"></div>
+             </div>
+		     <div id="agreeSection">
+		     	<div class="cA-DD-content">
+		     		<div class="cA-DD-inputCollection">
+					<div class="cA-DD-inputBox cA-DD-checkBox TERMS_CHECK">						
+						<div class="cA-DD-inputContent">
+							
+								
+								
+									<input value="TERMS_CHECK" type="checkbox" name="TERMS_CHECK" id="TERMS_CHECK"/>
+								
+							
+							
+							<label for="TERMS_CHECK"><p>I have read and agree to the Terms and Conditions, which contain rate, fee, and other information, including other cost and rewards information, if applicable. <strong>Note: You must check the box before submitting the application.</strong></p></label>
+						</div>
+						<div class="cA-DD-formErrorMsg"></div>
+						<div class="cA-DD-helpText">
+						    
+						    
+						    
+							
+                                  <p>I have read and agree to the Terms and Conditions, which contain rate, fee, and other information, including other cost and rewards information, if applicable. <strong>Note: You must check the box before submitting the application.</strong></p>
+<br role="presentation"><br role="presentation">
+<p>If you are the Primary Member on your Costco membership and your application is approved, your Costco membership fee will automatically renew and be charged to your Costco Anywhere Visa Card annually on the first day of your renewal month until you choose a different form of payment or cancel your Costco membership, and will qualify toward your annual credit card reward certificate. Membership fees will be charged based on your membership level ($60/yr for Gold Star and Business Members, plus a $60/yr upgrade fee for Executive Members) and $60/yr for each Affiliate Business Member, if any, plus applicable taxes. If you wish to pay your Costco membership fee with a different form of payment or cancel your Costco membership, please visit the Costco Membership Counter or call Costco at 1-800-774-2678, before the first day of your renewal month. Visit Costco.com for more information about Costco's membership terms. </p>
+                             
+                             
+						    
+						    
+						    					    
+							
+						</div>
+					</div>
+					
+					
+					<div class="cA-DD-formCompletionNotice" aria-live="assertive">
+             		 <div id="describeSubmitNotfilled">All fields and checkboxes must be completed in order for the submit button to turn green, which enables you to select it. Please correct any errors.</div>
+                	 </div>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			 
+			 
+	   
+			
+         
+		<div class="cA-DD-content">
+			
+			<label>Form is not completely filled.Please complete the form to click on submit button</label>
+			
+			<label id="describeSubmitComplete">You have successfully completed the form.please click submit button to proceed to next page</label>
+			<input type="submit" id="step1_submit" class="cA-DD-button cA-DD-greenButton cA-DD-submitButton cA-DD-disabledInput" value="Submit">
+		</div>
+		
+		
+
+
+
+							
+	   						
+						
+<script type="text/javascript">
+var io_install_flash = false; 
+var io_install_stm = false; 
+var io_bbout_element_id = 'ioBlackBox'; 
+var io_exclude_stm = 12;
+</script>
+
+
+ 
+<script type="text/javascript" src="https://mpsnare.iesnare.com/snare.js"></script>
+
+						<script type="text/javascript" src="https://content22.accountonline.com/fp/tags.js?org_id=89oebq5k&session_id=D3556BC378D6860B9748DC04A3AFE872&pageid=1"></script><noscript><iframe style="width: 100px; height: 100px; border: 0; position: absolute; top: -5000px;" src="https://content22.accountonline.com/tags?org_id=89oebq5k&session_id=D3556BC378D6860B9748DC04A3AFE872&pageid=1"></iframe></noscript><input type="hidden" id="CONTENT_SESSION_ID" name="CONTENT_SESSION_ID" value="D3556BC378D6860B9748DC04A3AFE872"><script type="text/javascript" src="https://content22.accountonline.com/fp/tags.js?org_id=89oebq5k&session_id=A3EB267975785401213ADF25E440EF88&pageid=1"></script><noscript><iframe style="width: 100px; height: 100px; border: 0; position: absolute; top: -5000px;" src="https://content22.accountonline.com/tags?org_id=89oebq5k&session_id=A3EB267975785401213ADF25E440EF88&pageid=1"></iframe></noscript><input type="hidden" id="CONTENT_SESSION_ID" name="CONTENT_SESSION_ID" value="A3EB267975785401213ADF25E440EF88"><input type="hidden" name="ioBlackBox" id="ioBlackBox">
+		
+
+
+
+
+	
+<input type="hidden" name="_flowExecutionKey" value="_cspring-web-flow-application_k318093C4-3D9F-3636-6078-24492F0BE929" id="flowExcutionKey"/>
+<input type="hidden" name="_eventId" value="ConsumerApplySubmit" id="_eventId"/>
+</article>
+
+</div>
+
+
+<!-- Atlas tag and Bridgetrack code -->
+<script>
+$(window).load(function(){
+      $.getScript('https://citi.bridgetrack.com/track/citicards/s/?pid='+prodId+prodType+'&docid=DD_AppPage&app='+appType+'&appId='+appId+'&type='+businessTypCd+'&r='+randomddvar+'&ProspectID='+prspectId+'&sc='+sc);
+});         
+</script> 
+
+
+
+			
+
+
+
+
+
+<script>
+function getParentLocation(){
+return document.referrer;
+}
+
+
+	
+function isSelfLoc(src){
+
+	var result = false;
+		
+	if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+		var token = "://";
+		var index = src.indexOf(token);
+		var part = src.substring(index + token.length);
+		var domain = "";
+		
+		for(var i=0; i<part.length; i++) {
+			var character = part.charAt(i);
+			
+			if(character == '/' || character == ':' || character == '#') {
+				break;
+			} 
+			else {
+				domain += character;
+			}
+		}
+		
+		if(document.domain == domain){
+			result=true;
+		}		
+	}
+		
+	return result;
+}
+	
+function isXFSWhiteListed(parentLoc){   
+	try {   
+    	var result=false;
+    	var XFSWhitelist="";
+    	
+    	if(XFSWhitelist.toLowerCase() == "null" || XFSWhitelist == "" || XFSWhitelist.length==0 ){
+		    return false;
+	    }
+		if(parentLoc.toLowerCase() == "null" || parentLoc== "" || parentLoc.length==0 ){
+		    return false;
+	    }
+
+	    if(isSelfLoc(parentLoc)){
+		    return true;
+	    }
+	    
+		var allowedLocations=XFSWhitelist.split("||");
+		var allowedDomains = allowedLocations[0].split(" ");
+		var isDomainAllowed = false;
+		for (index = 0; index < allowedDomains.length; index++) {
+		
+			var token = "://";
+			var pos = parentLoc.indexOf(token);
+			var prefix=parentLoc.substring(0,pos+token.length);
+			var part = parentLoc.substring(pos + token.length);
+			var parentDomain = "";
+			for(var i=0; i<part.length; i++) {
+				var character = part.charAt(i);
+
+				if(character == '/' || character == '#') {
+					break;
+				} else {
+					parentDomain += character;
+				}
+			}
+
+		parentDomain=prefix+parentDomain;
+		if (parentDomain== (allowedDomains[index])) {
+				isDomainAllowed = true;
+				break;
+			}
+		}
+		
+		if (isDomainAllowed){
+			if(allowedLocations[1] == "*"){
+				result=true;
+			}
+			else {  
+				var allowedPages = allowedLocations[1].split("^");
+				for (index = 0; index < allowedPages.length; ++index) {
+					if(parentLoc.contains(allowedPages[index]) ) {
+						result = true;
+					}
+				}
+			}          
+		}			
+		return result;	   
+    }   
+    catch (err) {   
+		return false;   
+    }   
+}  	
+
+</script>
+
+	<style>
+		html {display:none;visibility:hidden; }
+	</style>
+	<script>
+		
+		try {
+			var parentLocation = getParentLocation();
+		 	var XFSWhitelisted= isXFSWhiteListed(parentLocation);
+		  	var topDM = top.document.domain;
+		
+		  if(topDM == document.domain || XFSWhitelisted ){
+		  document.documentElement.style.display ='block';
+		  	document.documentElement.style.visibility='visible';
+		  }else{
+		  	top.location = self.location;
+		  }
+		}
+		catch (e) {
+			top.location = self.location;
+		}
+
+		
+		
+	</script>
+
+
+
+
+		<input type='hidden' name='JFP_TOKEN' value='9XNEV8NT'/>
+</form>
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+<footer id="cA-DD-footer" class="PID520">
+    <div class="cA-DD-content">
+        <ul>
+        
+        <li class="cA-DD-footerLinkCards"><a ID="cmlink_CiticardsHome" href="https://www.citi.com/credit-cards/creditcards/CitiHome.do" target="_blank"  >Citicards.com</a></li>
+            <li class="cA-DD-footerLinkPriv"><a ID="cmlink_PrivacyNotice" href="https://online.citibank.com/US/JRS/portal/template.do?ID=Privacy" target="_blank"  >Privacy</a></li>
+            <li class="cA-DD-footerLinkTC"><a ID="cmlink_TermsConditions" href="https://online.citi.com/US/JRS/portal/template.do?ID=TermsDisclaimer" target="_blank"  >Terms &amp; Conditions</a></li>
+            <li class="AdChoicesIcon"><a ID="cmlink_AdChoices" href="https://online.citibank.com/JRS/portal/template.do?ID=Privacy#ad-info-external-use" target="_blank"  >AdChoices</a></li>
+        
+
+        </ul>
+        <div class="cA-DD-copyright">
+            <a href="https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.citicards.com" class="cA-DD-sprite cA-DD-verisignLogo" target="_blank" title="Verify this page is VeriSign Secured">Verify this page is VeriSign Secured</a>
+            
+            <span class="cA-DD-copyrightText">Copyright &copy<span class="calendarYear"></span> Citigroup Inc.</span>
+        </div>
+        
+    </div>
+</footer>
+</div><script type='text/javascript' src='/cards/acq/js/jquery.caret.min.js'></script>
+<script type='text/javascript' src='/cards/svc/js/vanran/jquery-ui-1.8.18.js'></script>
+<script type='text/javascript' src='/cards/wv/JRS/ACQ/js/citiTextBlur-jquery1.3-SSNFixed_simple.js'></script>
+<script type='text/javascript' src='/cards/wv/JRS/ACQ/js/dd_acq.js'></script>
+
+
+
+
+  
+<!-- US: 257 Costco performance update (Condition check for costco added) -->
+
+
+
+							 
+   
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var maskJsonCommon ={"maskArr":[],"maskClassArr":[],"maskAt":""};
+var maskJsonForModule ={"maskArr":[],"maskClassArr":[],"maskAt":""};
+</script>
+<script type="text/javascript">
+   var lpTag = lpTag || {}; lpTag.vars = lpTag.vars || []; lpTag.dbs = lpTag.dbs || [];
+</script>
+
+<script type="text/javascript">
+	function chatMonitor(scope,varname,varvalue){
+		lpTag.vars.push([scope, varname, varvalue]);
+	}
+
+	function chatImmediateSubmit(scope,varname,varvalue){
+		lpSendData(scope,varname,varvalue);
+	}
+
+	function chatShowButton(chatButtonDivID){	
+		lpMTagConfig.pluginCode.deployDynButton.deployDynamicButton(chatButtonDivID);
+	}
+
+	function lpShowButton(parentDIV,  chatButtonDivID){ 
+		pDIV = parentDIV; 
+		cbDIV = chatButtonDivID; 
+		setTimeout(function(){callLP(pDIV, cbDIV);},1000); 
+	} 
+
+	function callLP(parentDIV, chatButtonDivID){ 
+		document.getElementById(parentDIV).style.display = 'inline-block';
+		document.getElementById(parentDIV).innerHTML = "<div id='"+chatButtonDivID+"'></div>"; 
+
+
+
+		lpMTagConfig.pluginCode.deployDynButton.deployDynamicButton(chatButtonDivID); 
+	} 
+
+</script>
+
+<script type="text/javascript">
+
+
+	var EventUtil = new Object;
+	
+	//Code to add the Event Handler
+     EventUtil.addEventHandler = function (oTarget, sEventType, fnHandler) {
+         if (oTarget.addEventListener) {//For Firefox
+             oTarget.addEventListener(sEventType, fnHandler, false);
+         } else if (oTarget.attachEvent) {//For IE
+             oTarget.attachEvent("on" + sEventType, fnHandler);
+         } else {//Other Browsers
+             oTarget["on" + sEventType] = fnHandler;
+         }
+     };
+
+     //Code to remove the Event Handler
+     EventUtil.removeEventHandler = function (oTarget, sEventType, fnHandler) {
+         if (oTarget.removeEventListener) {//For Firefox
+             oTarget.removeEventListener(sEventType, fnHandler, false);
+         } else if (oTarget.detachEvent) {//For IE
+             oTarget.detachEvent("on" + sEventType, fnHandler);
+         } else {//Other Browsers
+             oTarget["on" + sEventType] = null;
+         }
+     };
+
+</script>
+<script type="text/javascript">lpTag.vars.push([{scope :'page', name : 'unit',value : 'card-application'}]);
+</script><script type="text/javascript">lpTag.vars.push([{scope :'page',name :'unit',value :'card-application'}]);lpTag.vars.push([{scope :'page',name :'PID',value :'520'}]);lpTag.vars.push([{scope :'page',name :'language',value :'english'}]);lpTag.vars.push([{scope :'page',name :'PageName',value :'APPLICATION-alpha'}]);lpTag.vars.push([{scope :'page',name :'ProcessStep',value :'1'}]);</script>
+
+
+
+ 
+
+
+
+<!-- Changes to read site catalyst config node starts -->
+
+<!-- Changes to read site catalyst config node ends -->
+
+</body>
+</html>

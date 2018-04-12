@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=996"/>
+    <title>Enter Account Information | Nespresso US</title>
+
+    <script type="text/javascript" src="/_UEM/dtagent_ICA23STVghjpqrx_7000000091019.js" data-dtconfig="agentUri=/_UEM/dtagent_ICA23STVghjpqrx_7000000091019.js|rid=RID_-1709061588|rpid=-316833803|rt=10000|cors=1|md=buildVersion=bconfig.buildVersion,clubMemberId=bnestms.DataLayer.user.clubMemberId,selectionId=bnestms.DataLayer.user.segments.selectionId,membershiptierid=bnestms.DataLayer.user.segments.membershiptierid,status=bnestms.DataLayer.user.status,pageUid=bnestms.DataLayer.page.pageUid|lastModification=1522848260207|lab=1|tp=500,50,3,1|reportUrl=https://rum.nespresso.com/_UEM/dynaTraceMonitor/dynaTraceMonitor|app=Mosaic|domain=nespresso.com"></script><link rel="shortcut icon" type="image/x-icon" href="/mosaic/_ui/img/favicon.ico"/>
+
+    <link href="/mosaic/_ui/generated/all.css?v=19.12.17" rel="stylesheet" media="screen" />
+    <script>
+        var P = {
+            baseUrl: '/mosaic/_ui/generated/frontend-polyfills'
+        };
+    </script>
+    <script src="/mosaic/_ui/generated/frontend-polyfills/polyfill-loader.js?v=19.12.17"></script>
+    <script>
+        P.insertPolyfills();
+    </script>
+
+    <script type="text/javascript" src="//service.maxymiser.net/api/eu/nespresso.us/e41182/mmapi.js"></script>
+    <script type="text/javascript">
+    var config = {};
+    config.capsulesThirdLineQuantities = '100,150,200,250,300';
+    config.resUrl = '/mosaic/_ui';
+    config.responsiveModeEnabled = false;
+
+    config.buildVersion = '19.12.17';
+
+    
+    config.urls = {
+        loginPage: '/us/en/secure/login',
+        loadCrossSells: '/us/en/view/PushCrossSellsBlockController',
+        saveEditAddress: '/us/en/checkout/saveEditDeliveryAddress',
+        saveNewAddress: '/us/en/checkout/saveNewDeliveryAddress',
+        saveEditBillingAddress: '/us/en/checkout/saveEditBillingAddress',
+        saveNewBillingAddress: '/us/en/checkout/saveNewBillingAddress',
+        validateSelectedBillingAddress: '/us/en/checkout/validateSelectedBillingAddress',
+        giftCard: '/us/en/giftCard',
+        myAccountAddressBook: '/us/en/myaccount/addressbook.action',
+        resendActivationEmailUrl : '/us/en/resendActivationEmail',
+        errorPage : '/us/en/error/unexpected.jsp',
+        homePage : '/us/en/'
+    };
+
+    config.labels = {
+        authentication: {
+            wrongLoginOrPassword: 'The username and\/or password entered are not valid. Please check again.',
+            required: 'Field required',
+            bruteForce: 'You tried {0} times to log in. You can try again in {1}',
+            descLogged: 'You are now logged so you can access your account preferences using the links below',
+            headingLogged: 'Login dropdown',
+            headingNotLogged: 'My Account dropdown'
+        },
+        addToBagA11yQuantityInCart: 'You have \u003Cspan class=\"quantity\"\u003E{0}\u003C\/span\u003E of {1} in your cart, click on button to \u003Cspan class=\"label\"\u003E{2}\u003C\/span\u003E',
+        addToBagAddButtonLabel: 'Add to bag',
+        addToBagAddButtonMaxQuantityReachedLabel: 'Maximum quantity reached',
+        addToBagAddButtonProductUnavailableLabel: 'Product unavailable',
+        addToBagTooltipErrorSalesMultipleMessage: 'Wrong sales multiple',
+        addToBagTooltipErrorMaxNumberPerOrderMessage: 'Maximum order quantity reached',
+        addToBagUpdateButtonLabel: 'Update basket',
+        close: 'Close',
+        quantitySelector: {
+            description: 'You can choose the predifined quantities below or the next input field to set your custom quantity',
+            addQuantityProductToCart: 'Add {0}',
+            removeProductFromCart: 'Click to remove {0} from your cart',
+            warningProductLimit: 'For this premium coffee you are able to order a maximum of {0} capsules',
+            warningProductLimitZero: 'For this premium coffee you are able to order a maximum of {0} capsules. You have reached the limit',
+            warningProductLimitRemaining: 'For this premium coffee you are able to order a maximum of {0} capsules. You can still order {1} capsules'
+        },
+        a11yMainNavigationBar: '',
+        a11yMainNavigationSubMenu: {
+            open: '',
+            close: ''
+        },
+        a11yProductListPager: {
+            currentPage: '',
+            activePage: '',
+            sliderMinimumDescription: '',
+            sliderMaximumDescription: ''
+        },
+        a11yProductQuantity: {
+            update: '',
+            remove: ''
+        },
+        a11yActivationCode: {
+            submitSuccess: '',
+            deleteSuccess: ''
+        },
+        machineRegistration: {
+            a11ySearchingForStores: 'Searching for stores',
+            a11yNoStoresFound: '',
+            a11yStoresFound: ''
+        },
+        a11yAddressUpdatedMessage: '',
+        checkoutBoutiques: {
+            a11yBoutiquesFound: '',
+            a11yNoBoutiquesFound: '',
+            a11ySearchingForBoutiques: '',
+            a11yBoutiqueSelected: 'Your boutique is now selected'
+        },
+        a11yProductBrowserBlockFilteredList: '',
+        machineCompare: {
+            a11yFilterChangeNotify: ''
+        },
+        a11ySlider: {
+            startPlaying: '',
+            pausePlaying: '',
+            triggerPlay: '',
+            triggerPause: ''
+        },
+        a11yRatingScore: 'rating.product.reviews.a11y.rating.label',
+        passwordStrength: {
+            weak: 'weak',
+            medium: 'medium',
+            strong: 'strong',
+            a11yReviewPassword: 'Password is {0}, Password requires (list requirements)',
+            containsCapital: 'Contain a capital letter'
+        },
+        cart: {
+            warning: {
+                updated: 'Your shopping bag has been updated.',
+                merged: 'Your shopping bag has been updated.',
+                product: {
+                    not: {
+                        added: 'One or more products could not be added to your shopping bag since they are no longer available.'
+                    }
+                },
+                tariff: {
+                    changed: 'Your shopping bag has been updated according to your tariff.'
+                }
+            }
+        },
+        accountordersblock: {
+            myorders: {
+                orderdetail: {
+                    reorderconfirmation: {
+                        message: 'If you continue, the contents of your previous order will be added to your shopping bag.'
+                    }
+                }
+            }
+        },
+        order: {
+            reorderProduct: {
+                contentMessage: 'If you continue, the contents of your previous order will be added to your shopping bag.'
+            }
+        },
+        pickupPoint: {
+            close: 'Close',
+            a11yErrorOccurred: 'Something went wrong, please try again',
+            a11yPickUpPointsFound: '{0} pick up points found. Navigate to next form to get more information. In order to choose a pick up point, select it in the result list and click on the select button after the list.',
+            a11yOnePickUpPointFound: 'One pick up point found. Navigate to next form to get more information. In order to choose a pick up point, select it in the result list and click on the select button after the list.',
+            a11yNoPickUpPointsFound: 'There are no pickup points at the requested address',
+            a11yAmbiguousResultsFound: 'No pick up point found, navigate to next form to select possible address near to your search criteria',
+            a11ySearchingForPickUpPoints: 'Searching for pick up points',
+            a11yPickUpPointSelected: 'Your pick up point is now selected, you need to save it',
+        },
+        checkout: {
+          shipping: {
+            yourTime: {
+              a11yNoSlotsFound : 'There are no time slots available with your selected delivery options.',
+              a11ySlotsFound : '{0} time slots match with your selected delivery options.',
+              a11yNarrowSlotsFound : '{0} time slots match for current day with your selected delivery options.'
+            },
+            boutiquePickup: {
+              a11yOutOfStockMessage: 'Some products from your order can not be delivered with the chosen delivery mode.'
+            }
+          },
+          payment: {
+              noneOption: 'None'
+          }
+        }
+    };
+
+    config.defaults = {
+        addressType: 'private',
+        addressTypeNesoa: 'PRIVATE',
+        addressCountry: 'us'
+    };
+
+    config.tracking = {
+        namespace: 'nestms',
+        sCodeNameSpace: 's',
+        satelliteNameSpace: '_satellite',
+        disableScode: false,
+        debug: {
+            debugMode: false
+        },
+        dtm: {
+            missingValue: "missing",
+            pendingValue: "pending",
+            defaultValue: "other",
+            dataLayerInitialized: "initialized",
+            dataLayerParsingError: "parsing error"
+        },
+        defaults: {
+            app: {
+                version: {
+                    type: "string",
+                    allowedValues: ["NC2-classic", "NC2-mosaic", "NC3"]
+                },
+                platform: {
+                    type: "string",
+                    allowedValues: ["desktop-site", "mobile-site", "iOS", "android", "mini-site"]
+                },
+                release: {
+                    type: "string",
+                    example: "4.7"
+                },
+                channel: {
+                    type: "string",
+                    allowedValues: ["B2C", "B2B"]
+                },
+                language: {
+                    type: "string",
+                    regexp: "^\\b[a-z]{2,2}\\b$"
+                },
+                country: {
+                    type: "string",
+                    regexp: "^\\b[A-Z]{2,2}\\b$"
+                },
+                currency: {
+                    type: "string",
+                    allowedValues: ["CHF", "EUR"]
+                },
+                taxSystem: {
+                    type: "string",
+                    allowedValues: ["withTax", "withoutTax"]
+                }
+            },
+            page: {
+                pageId: {
+                    type: "string",
+                    example: "MyAccountPersonnalInformation"
+                },
+                techno: {
+                    type: "array",
+                    example: "['vertuo']"
+                },
+                breadcrumb: {
+                    type: "array",
+                    example: "['coffee','Volluto']"
+                }
+            },
+            user: {
+                userId: {
+                    type: "string",
+                    example: ""
+                },
+                status: {
+                    type: "string",
+                    allowedValues: ["not logged", "logged in", "remember-me"]
+                },
+                zip: {
+                    type: "string",
+                    example: "1234"
+                },
+                city: {
+                    type: "string",
+                    example: "Lausanne"
+                }
+            }
+        }
+    };
+
+    
+    config.padl = {
+        namespace : 'padl-b2c-' + 'us'
+    };
+
+    window[config.padl.namespace] = window[config.padl.namespace] || {dataLayer: {}};
+
+    
+    var gtmDataObject = [];
+</script>
+<script type="text/javascript">
+    config.liveChat = {
+            isLiveChatAnonymousEnabled: false,
+            isLiveChatEmbeddedActivated: false,
+            isLiveChatProactiveActivated: false
+        };
+    </script>
+    <script type="text/javascript">
+    if (config && config.tracking && config.tracking.namespace ) {
+
+        window[config.tracking.namespace] = window[config.tracking.namespace] || {DataLayer: {}};
+
+        window[config.tracking.namespace].DataLayer.app = {"version":"NC2-mosaic","platform":"desktop-site","release":"19.12.17","country":"US","language":"en","currency":"USD","taxSystemCode":"0","channel":"B2C"};
+
+        window[config.tracking.namespace].DataLayer.page = {"pageTechnicalPath":"/registration/enterAccountInformation","pageUid":"checkister:::registration-account-information:"};
+
+        
+        window[config.tracking.namespace].DataLayer.user = {"clubMemberId":"","segments":{"selectionId":""},"status":"Anonymous","loginMean":"none","loginMeanResult":"","hadRememberMeEnabled":"no","zip":"","city":"","techno":[]};
+        
+    }
+</script>
+<script type="text/javascript">
+    var padlNamespace = config.padl.namespace,
+        padlPromotions;
+
+    window[padlNamespace].dataLayer.app = {"app":{"affiliation":"Nespresso Online Store","brand":"Nespresso","currency":"USD","landscape":"NC2-mosaic","market":"US","version":"19.12.17","isEnvironmentProd":true}};
+
+    window[padlNamespace].dataLayer.page = {"page":{"pageInfo":{"language":"en","breadcrumbUID":"checkister:::registration-account-information:","pageName":"Enter Account Information","primaryCategory":"","secondaryCategory":[],"segmentBusiness":"B2C","technology":[],"type":"","variant":""}}};
+
+    window[padlNamespace].dataLayer.pageInstanceID = {"pageInstanceID":"checkister:::registration-account-information::NC2-mosaic:true:B2C:US:en"};
+
+    
+        window[padlNamespace].dataLayer.registration = {"registration":{"step":"General information","preferredTechnology":"","contactPreferenceSelected":["Email","Phone","PostMail"],"emailSubscriber":true}};
+    
+
+    window[padlNamespace].dataLayer.user = {"isLoggedIn":false};
+
+    // Initilizing promotions tracking data structure
+    padlPromotions = {
+        promotions: {}
+    };
+</script>
+<script type="text/javascript">
+    </script><script src="https://maps.googleapis.com/maps/api/js?language=en&client=gme-nestlenespressosa&libraries=places"></script><script src="//www.nespresso.com/dtm/prod/2016687db8840fa748bbdc966b49915a93243a15/satelliteLib-7534d9ec2b2d1c92a804f9e1163a0d6f4ae90ac1.js?v=19.12.17"></script>
+    <script src="/mosaic/_ui/generated/allHeader.js?v=19.12.17"></script>
+    <link href="/mosaic/_ui/generated/registration/registration.css?v=19.12.17" rel="stylesheet" media="screen" />
+<style id="antiClickjack">body{display:none !important;}</style>
+
+<script type="text/javascript">
+    if (self === top || self.location.hostname === top.location.hostname) {
+       var antiClickjack = document.getElementById("antiClickjack");
+       antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+</script>
+<noscript>
+            <iframe src="//www.googletagmanager.com/ns.html?id=GTM-598JH6"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','gtmDataObject','GTM-598JH6');</script>
+    </head>
+
+<body>
+<!--[if lt IE 7]><div id="is-ie" class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"></div><![endif]-->
+    <!--[if IE 7]><div id="is-ie" class="lt-ie10 lt-ie9 lt-ie8"></div><![endif]-->
+    <!--[if IE 8]><div id="is-ie" class="lt-ie10 lt-ie9"></div><![endif]-->
+    <!--[if IE 9]><div id="is-ie" class="lt-ie10"></div><![endif]-->
+
+    <script>
+        var jIsIE = $('#is-ie');
+        if (jIsIE.length) {
+            $('html').addClass(jIsIE[0].className);
+        }
+    </script>
+
+    <h1 id="a11y-main-heading" class="visually-hidden" tabindex="-1">Enter Account Information | Nespresso US</h1>
+    <span tabindex="-1" id="a11y-message-area" class="visually-hidden display-none"></span>
+
+    <div >
+
+        <header id="top">
+    <h2 class="visually-hidden">Header</h2>
+    <div id="header" class="clearfix">
+        <div id="block-8811468751932" class="header noscroll " data-label=""  >
+    <div class="wrapper clearfix centered-on-page site-width">
+        <div class="logo responsive-header-logo">
+            <a href="https://www.nespresso.com/us/en/home"  id="ta-header-logo">
+                <img width="175" height="33" alt="" class="bi" src="/ecom/medias/sys_master/public/9450099015710/nespresso-logo-2.png" />
+            </a>
+        </div>
+        <div class="pull-right clearfix">
+
+            <div class="pull-left lang">
+        <h3 class="visually-hidden">Language and country selection</h3>
+        <ul class="unstyled pull-left">
+                <li class="pull-left">
+                                <span class="current-lang">
+                                    <span class="visually-hidden">your current language is </span>EN</span>
+                            </li>
+                        <li class="pull-left">
+                                <a href="/us/es/registration?execution=e1s1">
+                                    <span class="visually-hidden">click to change language to </span>ES</a>
+                            </li>
+                        </ul>
+        <a href="/us/en/country" >
+                <img class="pull-left" src="/mosaic/_ui/img/flags/us.png" alt="You are viewing the Nespresso United States website, click to change country" />
+            </a>
+        </div>
+</div>
+    </div>
+</div>
+
+<div id="block-8810123875829" class="free-html" data-label=""  >
+    <style>
+@font-face{font-family:Lucas;src:url(https://www.nespresso.com/shared_res/agility/commons/fonts/NespressoLucas-Light.woff) format("woff");font-style:normal;font-weight:300}
+@font-face{font-family:Lucas;src:url(https://www.nespresso.com/shared_res/agility/commons/fonts/NespressoLucas-Regular.woff) format("woff");font-style:normal;font-weight:400}
+@font-face{font-family:Lucas;src:url(https://www.nespresso.com/shared_res/agility/commons/fonts/NespressoLucas-Medium.woff) format("woff");font-style:normal;font-weight:500}
+@font-face{font-family:Lucas;src:url(https://www.nespresso.com/shared_res/agility/commons/fonts/NespressoLucas-SemiBd.woff) format("woff");font-style:normal;font-weight:600}
+@font-face{font-family:Lucas;src:url(https://www.nespresso.com/shared_res/agility/commons/fonts/NespressoLucas-Bold.woff) format("woff");font-style:normal;font-weight:700}
+@font-face{font-family:Lucas;src:url(https://www.nespresso.com/shared_res/agility/commons/fonts/NespressoLucas-XtraBd.woff) format("woff");font-style:normal;font-weight:800}
+* {font-family: 'Lucas', 'Trebuchet MS', Helvetica, Arial, sans-serif !important;}
+#header .lang ul.unstyled {display: none !important;}
+</style>
+
+<script>
+$(window).on('load',function() {
+	var url = window.location.href;
+	if (url.includes("/es/")) {
+		var res = url.replace("/es/", "/en/");
+		window.location.replace(res);
+	}
+	if (url.includes("/es") && url.length==31) {
+		var res = url.replace("/es", "/en");
+		window.location.replace(res);
+	}
+});
+</script></div>
+
+</div>
+
+</header>
+<main id="registration-layout-0" class="wrapper lbt-component responsive-registration-0">
+            <script type="text/javascript">
+                _Lbt.dl.components.push({
+                    elementId: 'registration-layout-0',
+                    type: 'registration',
+                    layout: 'window',
+                    dynamic: 'static',
+                    step: 0
+                });
+            </script>
+            <nav class="responsive-registration steps-nav four-steps">
+
+    <ul class="unstyled registration-navigation__list responsive-clearfix">
+
+        <li class="active registration-navigation__item">
+                <span class="step registration-navigation__step">
+                            Step 1</span>
+                        <span class="title registration-navigation__title registration-navigation__title--active">
+                            General information</span>
+
+                    <span class="visually-hidden">
+                        </span>
+
+                <span class="border"></span>
+
+                </li>
+
+        <li class=" registration-navigation__item">
+                <span class="step registration-navigation__step">
+                            Step 2</span>
+                        <span class="title registration-navigation__title ">
+                            My address</span>
+
+                    <span class="border"></span>
+
+                </li>
+
+        <li class=" registration-navigation__item">
+                <span class="step registration-navigation__step">
+                            Step 3</span>
+                        <span class="title registration-navigation__title ">
+                            My machine</span>
+
+                    <span class="border"></span>
+
+                </li>
+
+        <li class=" registration-navigation__item">
+                <span class="step registration-navigation__step">
+                            Step 4</span>
+                        <span class="title registration-navigation__title ">
+                            Welcome to The Nespresso Club</span>
+
+                    </li>
+
+        </ul>
+
+</nav>
+
+<form id="registration" class="register-form register-step-1 " novalidate="novalidate" action="/us/en/registration?execution=e1s1" method="post"><div class="personal-infos">
+
+            <div class="delivery-title" id="ta-registration-step1">
+                <h2 class="heading">
+                  General information</h2>
+              </div>
+            <div class="block-form form-container">
+                <p class="nes_free_text clearfix">
+                        To choose your country, <a href="http://www.nespresso.com/us/en/country">click here</a>.</p>
+                <fieldset class="clearfix">
+                    <legend class="disclaimer">
+                        <style>#registration > div.personal-infos > div.block-form > fieldset > div.col.right > div:nth-child(3) > div > div.tooltip-top, #registration > div.personal-infos > div.block-form.form-container > fieldset > div.col.right > div:nth-child(3) > div > div > div > div > div.tooltip {display: none!important;}</style>Please complete the form below. Fields marked with * are required.</legend>
+
+                    <div class="col left">
+
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        <div class="field-line ">
+            
+            <label class="input-label" for="ta-registration-firstName">
+                
+                First name
+                        
+                            <span aria-hidden="true">&thinsp;*</span>
+                        
+                    
+                
+                
+            </label>
+
+            
+
+            
+            
+
+            
+
+            
+
+            <input id="ta-registration-firstName" name="information.firstName" aria-describedby="tooltip-firstName" aria-invalid="false" type="text" aria-required="true" value="" maxlength="20"/>
+
+            
+
+            
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        <div class="field-line ">
+            
+            <label class="input-label" for="ta-registration-lastName">
+                
+                Last name
+                        
+                            <span aria-hidden="true">&thinsp;*</span>
+                        
+                    
+                
+                
+            </label>
+
+            
+
+            
+            
+
+            
+
+            
+
+            <input id="ta-registration-lastName" name="information.lastName" aria-describedby="tooltip-lastName" aria-invalid="false" type="text" aria-required="true" value="" maxlength="35"/>
+
+            
+
+            
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        <div class="field-line ">
+            
+            <label class="input-label" for="ta-registration-email">
+                
+                Email address
+                        
+                            <span aria-hidden="true">&thinsp;*</span>
+                        
+                    
+                
+                
+            </label>
+
+            
+                
+            
+
+            
+            
+                
+            
+
+            
+
+            
+
+            <input id="ta-registration-email" name="information.email" class="doNotCopy" aria-describedby="tooltip-email" aria-invalid="false" type="email" aria-required="true" value="" maxlength="50"/>
+
+            
+
+            
+        </div>
+    
+
+</div>
+                                <div class="col right">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        <div class="field-line ">
+            
+            <label class="input-label" for="ta-registration-confirmationEmail">
+                
+                Confirm email address
+                        
+                            <span aria-hidden="true">&thinsp;*</span>
+                        
+                    
+                
+                
+            </label>
+
+            
+                
+            
+
+            
+            
+                
+            
+
+            
+
+            
+
+            <input id="ta-registration-confirmationEmail" name="information.confirmationEmail" class="doNotCopy" aria-describedby="tooltip-confirmationEmail" aria-invalid="false" type="email" aria-required="true" value="" maxlength="50"/>
+
+            
+
+            
+        </div>
+    
+
+<div class="field-line nes_bloc_pass ">
+                                <label class="input-label" for="ta-registration-password">
+                                            Password<span aria-hidden="true">&thinsp;*</span>
+                                                </label>
+
+                                        <div class="tt-container progressBar-active">
+                                                <input id="ta-registration-password" name="password" class="focus-tooltip js-registration-password-input" aria-describedby="registration-password-tooltip" aria-invalid="false" aria-required="true" type="password" value="" maxlength="100"/><div class="tooltip-top js-registration-password-tooltip">
+    <div class="top"></div>
+    <div class="body">
+        <div id="registration-password-tooltip" class="content" tabindex="-1">
+            <span class="tooltip-content-info">
+                Password must:
+            </span>
+            <ul class="tooltip-content-list">
+                <li class="js-tooltip-content-list-minCharacters rule">
+                    <i aria-hidden="true" class="icon Glyph Glyph--check"></i>
+                    Have at least 8 characters</li>
+                <li class="js-tooltip-content-list-hasNumber rule">
+                    <i aria-hidden="true" class="icon Glyph Glyph--check"></i>
+                    Contain a number</li>
+                <li class="js-tooltip-content-list-hasCapitalLetter display-none rule">
+                    <i aria-hidden="true" class="icon Glyph Glyph--check"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</div><div class="progress-bar">
+    <span class="progress-bar__weak-level"></span>
+    <span class="progress-bar__medium-level"></span>
+    <span class="progress-bar__strong-level"></span>
+    <p class="progress-bar__result">
+        Password strength:
+        <span class="progress-bar__result-info"></span>
+    </p>
+    <span id="a11y-review-password-error" class="visually-hidden" tabindex="-1"></span>
+</div><div class="nes_pass-caps display-none">
+                                                    <p>
+                                                        Caps lock active</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                        <div class="field-line nes_bloc_pass ">
+                                <label class="input-label" for="ta-registration-password-confirm">
+                                            Confirm password<span aria-hidden="true">&thinsp;*</span>
+                                                </label>
+                                        <div class="tt-container">
+                                                <input id="ta-registration-password-confirm" name="confirmPassword" class="focus-tooltip" aria-describedby="a11y-review-password-error" aria-invalid="false" aria-required="true" type="password" value="" maxlength="100"/><div class="nes_pass-caps display-none">
+                                                    <p>
+                                                        Caps lock active</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                        </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="membership">
+          <div class="delivery-title form-title">
+                <span class="heading">
+                    Club membership</span>
+            </div>
+          <div class="block-form form-container">
+                <fieldset>
+                    <legend class="disclaimer">
+                            Do you already have a Club membership number?</legend>
+                    <div class="mstr-cradio clearfix mb25 radio-group" id="register-form-step1-controller1">
+                        <label for="ta-registration-member-no" class="radio">
+                            <input id="ta-registration-member-no" name="hasNumber" type="radio" value="false" checked="checked"/>No, I do not have a Nespresso Club membership number.</label>
+                    </div>
+                    <div class="mstr-cradio clearfix mb25 radio-group" id="register-form-step1-controller2">
+                        <label for="ta-registration-member-yes" class="radio">
+                            <input id="ta-registration-member-yes" name="hasNumber" type="radio" value="true"/>Yes, I do have a Nespresso Club membership number.</label>
+                    </div>
+
+                    <div class="confirm block-form responsive-registration__member-fields" id="register-form-step1-view1" aria-expanded="false" style="display: none;">
+                        <div class="col">
+                            <div class="field-line ">
+                                    <label class="input-label" for="ta-registration-member-number">
+                                                Membership number*</label>
+                                            <input id="ta-registration-member-number" name="membershipNumber" aria-describedby="membership-help-tooltip membership-help" aria-invalid="false" aria-required="true" disabled="disabled" type="text" value="" maxlength="7"/><div class="more help-membership-number popin-trigger registration__membership-number" data-popin-id="membership-help">
+                                                        <span class="orange" aria-hidden="true">→</span>
+                                                        <button
+                                                                type="button"
+                                                                class="as-link">
+                                                            Help me find my Club number</button>
+                                                    </div>
+                                                    <div class="popin-page" id="membership-help">
+                                                        <div class="content">
+                                                            <div id="block-8798059189749" class="free-html" data-label=""  >
+    <div style="padding: 0 80px 40px 80px;color:#fff;">
+    <div style="background: url('/mosaic/_ui/img/popin-title-sep.png') bottom no-repeat; line-height: 22px;margin: 0 0 15px 0;padding: 0 0 25px 0;text-align: center;">
+        <p style="font-size:20px;font-weight:bold;">Membership number</p>
+    </div>
+    <div class="popin-vscroll">
+        <p style="font-size:13px;">Your Club member number can be found in your last invoice or the delivery note. If you have any questions please contact our coffee specialists by phone under<br/> 1-800-562-1465 for OriginalLine and 1-877-964-6299 for VertuoLine.</p>
+    </div>
+</div></div>
+
+</div>
+                                                    </div>
+                                                </div>
+                            <div class="field-line ">
+                                    <label class="input-label" for="ta-registration-member-zip">
+                                        My postal code*</label>
+
+                                    <div class="tt-container">
+                                        <input id="ta-registration-member-zip" name="postalCode" class="focus-tooltip" aria-describedby="membership-postal-code-tooltip" aria-invalid="false" aria-required="true" disabled="disabled" type="text" value=""/><div class="tooltip-top">
+                                            <div class="top"></div>
+                                            <div class="body">
+                                                <div class="content" id="membership-postal-code-tooltip">
+                                                    <p>Postal code example: 10017</p>
+                                                </div>
+                                            </div>
+                                            <div class="bottom"></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="mstr-delivery-footer bg3" role="footer">
+            <p class="footer-label">
+                    &nbsp;</p>
+            <div class="footer-actions-wrap">
+                        <button
+                            type="submit"
+                            id="ta-continue-bottom"
+                            name="_eventId_Continue"
+                            class="btn button-primary button-green js-registration-continue-bottom disabled">
+                            Continue</button>
+                    </div>
+                </div>
+
+    </form></main>
+
+        <footer role="contentinfo">
+    <div id="footer" class="footer-block" data-ng-controller="footerBlockController">
+
+        <h2 class="visually-hidden">Footer</h2>
+        <div id="block-8811470980156" class="centered-on-page site-width footer-extra clearfix" data-label="" role="contentinfo" >
+    <div class="pull-left">
+        <a href="/us/en/home"><img width="96" height="19" src="/ecom/medias/sys_master/public/9450103210014/nespresso-logo-footer.png" alt="More information on Nespresso"/></a>
+        &copy;
+        Nestlé Nespresso S.A. 2017<script type="text/javascript" src="https://www.nespresso.com/shared_res/soho/scripts/mosaic-personalization.js"></script></div>
+    <ul class="unstyled pull-right">
+
+        <li class="back2top"><a href="#top" id="ta-back-to-top"><img src="/mosaic/_ui/img/back2top.png" class="icon" alt="" />Top of the page</a></li>
+        </ul>
+
+    <div class="clearfix"></div>
+
+    <h3 class="visually-hidden">Website links</h3>
+        <ul class="unstyled">
+            <li class=""><a href="https://www.facebook.com/nespresso" target='_blank'>
+                <img src="/ecom/medias/sys_master/public/9515026382878/footer-facebook.png" alt="Facebook" />
+            </a>
+        </li>
+            <li class=""><a href="https://twitter.com/nespresso" target='_blank'>
+                <img src="/ecom/medias/sys_master/public/9904791650334/TwitterLogo.png" alt="Twitter" />
+            </a>
+        </li>
+            <li class=""><a href="http://youtube.com/nespresso" target='_blank'>
+                <img src="/ecom/medias/sys_master/public/9515026513950/footer-youtube.png" alt="Youtube" />
+            </a>
+        </li>
+            <li class=""><a href="http://instagram.com/nespressousa" target='_blank'>
+                <img src="/ecom/medias/sys_master/public/9533424042014.png" alt="" />
+            </a>
+        </li>
+            <li class="last"><a href="https://www.pinterest.com/nespresso/" target='_blank'>
+                <img src="/ecom/medias/sys_master/public/9533608558622/footer-pinterest.png" alt="" />
+            </a>
+        </li>
+            </ul>
+    <ul class="unstyled gray">
+            <li class=""><a href="https://www.nespresso.com/us/en/legal" >Privacy</a>
+        </li>
+            <li class=""><a href="https://www.nespresso.com/us/en/legal" >Terms & Conditions</a>
+        </li>
+            <li class=""><a href="https://www.nespressojobs.com" target='_blank'>Careers</a>
+        </li>
+            <li class=""><a href="https://www.nespresso.com/us/en/legal#online-tracking" >Ad Options</a>
+        </li>
+            <li class=""><a href="http://www.nespresso.com/mediacenter/index.php?lang=en" >Media Center</a>
+        </li>
+            <li class=""><a href="https://www.nespresso.com/us/en/glossary" >Glossary</a>
+        </li>
+            <li class=""><a href="https://www.nespresso.com/us/en/sitemap" >Sitemap</a>
+        </li>
+            <li class="last"><a href="https://www.nespresso.com/us/en/supply-chains-act" >California Transparency in Supply Chains Act</a>
+        </li>
+            </ul>
+    </div>
+
+<div
+    id="account-not-activated-lightbox"
+    class="confirm-info-dialog display-none "
+    data-nes-lightbox="account-not-activated-lightbox"   
+    data-dlg-attributes='
+    {
+        "autoOpen": false,
+        "width": 838,"dialogClass": "popin-dialog-open dark popin-page","closeText": ""
+    }
+    '>
+    <div>
+        <div>
+            <div class="art-title popin-title">
+                    Registration process not completed yet</div>
+                <div class="text-center popin-content">
+                    <p class="subtitle">
+                        Please click on the link in the mail we sent you or click on the button below to sen another mail</p>
+                    <a class="btn button-grey button-content-padding button-primary button-grey-shadow" ng-href="{{resendActivationEmailUrl}}" title="Send another e-mail">
+                        Send another e-mail</a>
+                </div>
+            </div>
+    </div>
+</div></div></footer>
+</div>
+<div id="quantity-selector" class="quantity-popin display-none lbt-component">
+    <script type="text/javascript">
+        _Lbt.dl.components.push({
+            elementId: 'quantity-selector',
+            type: 'cart',
+            layout: 'box',
+            dynamic: 'static',
+            actions: {
+                action: 'addToCart',
+                eventName: 'cartUpdate',
+                eventType: 'click'
+            }
+        });
+    </script>
+    <div class="quantity-popin-inner">
+        <div class="quantity-popin-content clearfix" tabindex="-1">
+            <p class="visually-hidden">
+                    You can choose the predifined quantities below or the next input field to set your custom quantity</p>
+            <ul id="quantity-selector-options"></ul>
+            <div class="separator"></div>
+            <form id="quantity-selector-form" action="#" novalidate="novalidate">
+                <label for="quantity-selector-other" class="other-quantity">Please enter quantity</label>
+                <input
+                    type="text"
+                    id="quantity-selector-other"
+                    placeholder="Other quantity"
+                    aria-describedby="quantity-selector-hint"
+                    maxlength="4" />
+                <span id="quantity-selector-hint" class="visually-hidden">
+                        Other quantity</span>
+                <div class="separator"></div>
+                <button id="quantity-selector-ok" class="qty-btn-styled pull-left">
+                    <span class="qty-btn button-primary button-grey-shadow small">
+                        ok</span>
+                </button>
+            </form>
+            <p id="quantity-selector-warning" class="display-none"></p>
+        </div>
+    </div>
+    <div class="quantity-popin-bottom"></div>
+    <div class="arrow"></div>
+</div>
+<div id="shared-tooltip" class="tooltip-top">
+    <div class="top"></div>
+    <div class="body">
+        <div class="content">
+            <p class="text"></p>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</div>
+<div id="product-popin" class="display-none lbt-component" data-ng-controller="simplePopin">
+    <div id="product-dialog" class="popin popin-template lbt-component">
+        <p class="center prod-name" data-ng-bind="data.name"></p>
+        <a
+            class="track-product-click"
+            data-ng-href="{{data.moreInformation.url}}"
+            target="{{data.moreInformation.target}}"
+            data-product-item-id="{{data.nesOAInternationalProductId}}"
+            data-product-code="{{data.productCode}}"
+            data-product-position="{{data.tracking.position}}"
+            data-product-section="{{data.tracking.section}}">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="{{data.image.alternativeText}}" class="your-product" data-ng-src="{{data.image.url}}" />
+            <span
+                id="lazy-ratings-persistent"
+                class="smaller"
+                data-ng-if="data.isRatingOnPopin"
+                data-product-code="{{ data.productCode }}"
+            ></span>
+        </a>
+
+        <div class="prod-info">
+            <p class="primaryPrice">
+                <span class="priceValue" data-ng-bind="data.primaryPrice.value"></span>
+                <span class="priceLabel" data-ng-bind="data.primaryPrice.label"></span>
+            </p>
+            <p data-ng-if="data.isDoublePriceDisplay" class="alternativePrice">
+                <span class="priceValue" data-ng-bind="data.alternativePrice.value"></span>
+                <span class="priceLabel" data-ng-bind="data.alternativePrice.label"></span>
+            </p>
+
+            <div class="clearfix btn-addtocart">
+                <button
+    type="button"
+    id="ta-add-to-cart-{{data.productCode}}"
+    aria-labelledby="aria-{{data.productCode}}"
+    class="button-primary quantity-btn-title"
+    data-ng-class="{'button-green two-parts add-to-cart': data.addToCartButton.activated, 'add-to-cart disabled two-parts': !data.addToCartButton.activated}"
+    data-product-id="{{data.productCode}}"
+    data-min="0"
+    data-step="{{data.addToCartButton.step}}"
+    data-max="{{data.addToCartButton.max}}"
+    data-orientation=""
+    data-use-custom-third-line="{{data.addToCartButton.useCustomThirdLine}}"
+    data-force-page-reload="{{forcePageReload()}}"
+    data-product-name="{{data.name}}"
+    data-number-of-units="{{}}"
+    aria-disabled="{{!data.addToCartButton.activated}}">
+
+    <span data-ng-if="data.addToCartButton.activated" class="visually-hidden" id="aria-{{data.productCode}}" tabindex="-1">
+        You have <span class="quantity">0</span> of  {{data.name}} in your cart, click on button to <span class="label"> Add to bag</span></span>
+    <span
+        data-ng-if="data.addToCartButton.activated"
+        aria-hidden="true"
+        class="left-part quantity"
+        data-product-id="{{data.productCode}}">
+        <img src="/mosaic/_ui/img/Elements/cross_plus.png" alt="" width="16" />
+    </span>
+    <span
+        data-ng-if="data.addToCartButton.activated"
+        aria-hidden="true"
+        class="label right-part">
+        Add to bag</span>
+    <span data-ng-if="!data.addToCartButton.activated">
+        Product unavailable</span>
+</button>
+</div>
+        </div>
+        <div class="description" data-ng-bind-html="toTrusted(data.description)"></div>
+        <div class="clearfix">
+            <p data-ng-if="data.moreInformation.name" class="moar pull-right jsMoreLink">
+                <a
+                    class="track-product-click"
+                    data-ng-href="{{data.moreInformation.url}}"
+                    target="{{data.moreInformation.target}}"
+                    data-product-code="{{data.productCode}}"
+                    data-product-position="{{data.tracking.position}}"
+                    data-product-section="{{data.tracking.section}}"
+                    data-ng-bind="data.moreInformation.name"></a>
+            </p>
+        </div>
+        <div class="accessories clearfix">
+            <p data-ng-if="data.allTheProducts.name" class="moar pull-right jsAllLink">
+                <span class="orange" aria-hidden="true">&rarr;</span>
+                <a
+                    data-ng-href="{{data.allTheProducts.url}}"
+                    target="{{data.allTheProducts.target}}"
+                    data-ng-bind="data.allTheProducts.name"></a>
+            </p>
+        </div>
+    </div>
+</div>
+<div
+        id="full-page-loader"
+        class="display-none dark-overlay full-page-loader"
+        tabindex="-1">
+
+        <div class="loader-outer">
+            <div class="loader-inner">
+                <img src="/mosaic/_ui/img/ajax-loader-dark-bg.gif" alt="Loading" />
+            </div>
+        </div>
+    </div>
+
+    <div id="full-page-loader-discreet" class="display-none overlay full-page-loader"></div>
+
+    <span
+        id="a11y-notification-area"
+        class="visually-hidden"
+        aria-live="assertive"
+        aria-relevant="text"
+        role="alert"></span>
+
+    <script src="/mosaic/_ui/generated/libs.js?v=19.12.17"></script>
+    <script src="/mosaic/_ui/generated/registration/customer_registration.js?v=19.12.17"></script><script src="/mosaic/_ui/generated/allFooter.js?v=19.12.17"></script>
+    <script>
+        (function() {
+            napi.staticInit = true;
+            napi.initialize(
+                'b2c',
+                'us',
+                'en',
+                'desktop',
+                '/mosaic'
+            );
+        })();
+    </script>
+
+    <script src="/mosaic/_ui/generated/lazy-ratings.js?v=19.12.17"></script>
+    
+
+
+
+
+
+<!--[if lt IE 8]>
+<div id="outdated-browser" class="display-none">
+    <div>
+        <h3>Outdated browser</h3>
+        <p>You&#x27;re using a browser that seems to be out-of-date. You may not be able to experience the site to its fullest capacity.</p>
+        <div>
+            <a href="#" class="btn black confirm">
+                I understand
+                <span class="border"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    oldBrowser();
+</script>
+
+<![endif]-->
+</body></html>

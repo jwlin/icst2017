@@ -1,0 +1,1275 @@
+<!doctype html>
+<html lang="en-US">
+    <head >
+        <script>
+    var require = {
+        "baseUrl": "https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US"
+    };
+</script>
+        <meta charset="utf-8"/>
+<meta name="description" content="Swell"/>
+<meta name="keywords" content="Swell"/>
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<title>Checkout</title>
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/mage/calendar.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/css/styles-m.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/Magetrend_NewsletterPopup/css/newsletterpopup.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/Magento_Swatches/css/swatches.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/mage/gallery/gallery.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/Cryozonic_StripePayments/css/cryozonic_stripe.css" />
+<link  rel="stylesheet" type="text/css"  media="screen and (min-width: 768px)" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/css/styles-l.css" />
+<link  rel="stylesheet" type="text/css"  media="print" href="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/css/print.css" />
+<script  type="text/javascript"  src="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/requirejs/require.min.js"></script>
+<script  type="text/javascript"  src="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/requirejs-min-resolver.min.js"></script>
+<script  type="text/javascript"  src="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/mage/requirejs/mixins.min.js"></script>
+<script  type="text/javascript"  src="https://www.swellbottle.com/static/_requirejs/frontend/OneRockwell/swell/en_US/requirejs-config.min.js"></script>
+<script  type="text/javascript"  src="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/Cryozonic_StripePayments/js/cryozonic_stripe.min.js"></script>
+<script  type="text/javascript"  src="//connect.facebook.net/en_US/sdk.js"></script>
+<link  rel="icon" type="image/x-icon" href="https://www.swellbottle.com/media/favicon/stores/1/favicon.png" />
+<link  rel="shortcut icon" type="image/x-icon" href="https://www.swellbottle.com/media/favicon/stores/1/favicon.png" />
+<meta name="google-site-verification" content="DM5Aoh9UaHaLsSEHp6oTNjtYxDDSCmcL5vkROwcOjsA" />
+<meta name="google-site-verification" content="LQ5cRnQksEfEy7sPuyNVeQQsYN7bT33YLwv791gjDN0" />
+<meta name="google-site-verification" content="7jDrKS_flrXw2HvW289g4kqQldSWz_T5GxKBlEhsHi8" />
+
+<meta name="msvalidate.01" content="FBBABDCBC696178D357B019840C423C8" />
+<meta name="msvalidate.01" content="A7B2FD38008A0629C396C5D6FFB1E033" />
+
+<!-- Hotjar Tracking Code for www.swellbottle.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:790618,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<style>
+.catalog-category-view .product-options-bottom .box-tocart .special-price,
+.catalog-product-view .product-options-bottom .box-tocart .special-price {
+    color: rgb(0, 174, 219);
+    margin: -6px 0 0px;
+    display: block !important;
+}
+.catalog-category-view .product-options-bottom .box-tocart .old-price,
+.catalog-product-view .product-options-bottom .box-tocart .old-price {
+	display: block;
+    line-height: 1em;
+    margin: -8px 0 0;
+    line-height: normal;
+    display: block !important;
+    color: rgb(0, 0, 0) !important;
+}
+.catalog-category-view .product-item-details .price-box .special-price {
+    color: rgb(0, 174, 219);
+}
+.catalog-category-view .product-item-details .price-box .old-price {
+    color: rgb(0, 0, 0);
+    text-decoration: line-through;
+}
+.catalog-category-view .price-box .special-price .price-label,
+.catalog-product-view .price-box .special-price .price-label {
+    display:none;
+}
+.catalog-category-view .product-container .product-info-main .product-oos .price-box,
+.catalog-product-view .price-box .old-price .price-label {
+    display:none;
+}
+.catalog-product-view .price-box .old-price .price {
+  font-size: 1.1em;
+}
+.opc-wrapper .reset-message,
+.customer-account-login .login .modal-link  {
+    display: none;
+}
+
+body .minicart-items .item .product-item-details {
+    position: relative;
+    float: left;
+    padding: 10px 0;
+    top: 0;
+    -webkit-transform: translate(translateY(0), 0);
+    -moz-transform: translate(translateY(0), 0);
+    -o-transform: translate(translateY(0), 0);
+    -ms-transform: translate(translateY(0), 0);
+    transform: translate(translateY(0), 0);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+body .minicart-items .product-item-name {
+    font-size: 1em;
+}
+
+body .minicart-items .item .product-item-details .product-item-options {
+    margin: 5px 0;
+}
+body #opc-sidebar .minicart-items-wrapper {
+    padding: 0 15px;
+}
+
+#opc-sidebar .minicart-items-wrapper .minicart-items .item .product-item-photo {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.footer .block.newsletter .action.subscribe span {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+	.category-view .category-image {
+	    height: 300px;
+	}
+}
+
+@media (max-width: 830px) {
+	.category-view .category-image {
+	    height: 240px;
+	}
+}
+
+@media (max-width: 680px) {
+	.category-view .category-image {
+	    height: 190px;
+	}
+}
+
+@media (max-width: 520px) {
+	.category-view .category-image {
+	    height: 130px;
+	}
+}
+
+@media (max-width: 370px) {
+	.category-view .category-image {
+	    height: 100px;
+	}
+}
+</style>            </head>
+    <body data-container="body" data-mage-init='{"loaderAjax": {}, "loader": { "icon": "https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/images/loader-2.gif"}}' class="checkout-index-index page-layout-1column">
+            <script>
+        require.config({
+            deps: [
+                'jquery',
+                'mage/translate',
+                'jquery/jquery-storageapi'
+            ],
+            callback: function ($) {
+                'use strict';
+
+                var dependencies = [],
+                    versionObj;
+
+                $.initNamespaceStorage('mage-translation-storage');
+                $.initNamespaceStorage('mage-translation-file-version');
+                versionObj = $.localStorage.get('mage-translation-file-version');
+
+                if (versionObj.version !== 'bd21ad334d6cce48acb62c3c3fba617b1b8524dc') {
+                    dependencies.push(
+                        'text!js-translation.json'
+                    );
+
+                }
+
+                require.config({
+                    deps: dependencies,
+                    callback: function (string) {
+                        if (typeof string === 'string') {
+                            $.mage.translate.add(JSON.parse(string));
+                            $.localStorage.set('mage-translation-storage', string);
+                            $.localStorage.set(
+                                'mage-translation-file-version',
+                                {
+                                    version: 'bd21ad334d6cce48acb62c3c3fba617b1b8524dc'
+                                }
+                            );
+                        } else {
+                            $.mage.translate.add($.localStorage.get('mage-translation-storage'));
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "/",
+                "domain": ".www.swellbottle.com",
+                "secure": false,
+                "lifetime": "3600"
+            }
+        }
+    }
+</script>
+    <noscript>
+        <div class="message global noscript">
+            <div class="content">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong>
+                    <span>For the best experience on our site, be sure to turn on Javascript in your browser.</span>
+                </p>
+            </div>
+        </div>
+    </noscript>
+                <!-- GOOGLE TAG MANAGER -->
+                <noscript>
+                    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PVZWCP" height="0" width="0"
+                            style="display:none;visibility:hidden"></iframe>
+                </noscript>
+                <script>
+                    //<![CDATA[
+                    (function (w, d, s, l, i) {
+                        w[l] = w[l] || [];
+                        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                        var f = d.getElementsByTagName(s)[0];
+                        var j = d.createElement(s);
+                        var dl = l != 'dataLayer' ? '&l=' + l : '';
+                        j.async = true;
+                        j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                        f.parentNode.insertBefore(j, f);
+                    })(window, document, 'script', 'dataLayer', 'GTM-PVZWCP');
+
+                    var dlCurrencyCode = 'USD';
+                                        //]]>
+                </script>
+                <!-- END GOOGLE TAG MANAGER -->
+            <script>
+    var dlCurrencyCode = dlCurrencyCode || '';
+    var dataLayer = dataLayer || [];
+    var staticImpressions = staticImpressions || [];
+    var staticPromotions = staticPromotions || [];
+    var updatedImpressions = updatedImpressions || [];
+    var updatedPromotions = updatedPromotions || [];
+    var cookieAddToCart = 'add_to_cart';
+    var cookieRemoveFromCart = cookieRemoveFromCart || 'remove_from_cart';
+    var bannerCounter = bannerCounter || 0;
+
+    require([
+        "jquery",
+        "prototype",
+        "Magento_Customer/js/customer-data"
+    ], function(jQuery, prototype, customerData){
+
+        function GoogleAnalyticsUniversal(){}
+        GoogleAnalyticsUniversal.prototype = {
+            activeOnCategory : function(id, name, category, list, position) {
+                dataLayer.push({
+                    'event': 'productClick',
+                    'ecommerce': {
+                        'click': {
+                            'actionField': {
+                                'list': list
+                            },
+                            'products': [{
+                                'id': id,
+                                'name': name,
+                                'category': category,
+                                'list': list,
+                                'position': position
+                            }]
+                        }
+                    }
+                });
+            },
+            activeOnProducts : function(id, name, list, position) {
+                dataLayer.push({
+                    'event': 'productClick',
+                    'ecommerce': {
+                        'click': {
+                            'actionField': {
+                                'list': list
+                            },
+                            'products': [{
+                                'id': id,
+                                'name': name,
+                                'list': list,
+                                'position': position
+                            }]
+                        }
+                    }
+                });
+            },
+            addToCart : function(id, name, price, quantity) {
+                dataLayer.push({
+                    'event': 'addToCart',
+                    'ecommerce': {
+                        'currencyCode' : dlCurrencyCode,
+                        'add': {
+                            'products': [{
+                                'id': id,
+                                'name': name,
+                                'price': price,
+                                'quantity': quantity
+                            }]
+                        }
+                    }
+                });
+            },
+            clickBanner : function(id, name, creative, position) {
+                dataLayer.push({
+                    'event': 'promotionClick',
+                    'ecommerce': {
+                        'promoClick': {
+                            'promotions': [{
+                                'id': id,
+                                'name': name,
+                                'creative': creative,
+                                'position': position
+                            }]
+                        }
+                    }
+                });
+            },
+            bindImpressionClick : function(id, type, name, category, list, position, blockType, listPosition) {
+                var productLink = [];
+                var eventBlock;
+                switch (blockType)  {
+                    case 'catalog.product.related':
+                        eventBlock = '.products-related .products';
+                        break;
+                    case 'product.info.upsell':
+                        eventBlock = '.products-upsell .products';
+                        break;
+                    case 'checkout.cart.crosssell':
+                        eventBlock = '.products-crosssell .products';
+                        break;
+                    case 'category.products.list':
+                    case 'search_result_list':
+                        eventBlock = '.products .products';
+                        break;
+                }
+                productLink = $$(eventBlock + ' .item:nth(' + (listPosition) + ') a');
+                if (type == 'configurable' || type == 'bundle' || type == 'grouped') {
+                    productLink = $$(
+                        eventBlock + ' .item:nth(' + (listPosition) + ') .tocart',
+                        eventBlock + ' .item:nth(' + (listPosition) + ') a'
+                    );
+                }
+                productLink.each(function(element) {
+                    element.observe('click', function(event) {
+                        googleAnalyticsUniversal.activeOnProducts(
+                            id,
+                            name,
+                            list,
+                            position);
+                    });
+                });
+            },
+
+            updateImpressions: function() {
+                var pageImpressions = this.mergeImpressions();
+                var dlImpressions = {
+                    'event' : 'productImpression',
+                    'ecommerce' : {
+                        'impressions' : []
+                    }
+                };
+                var impressionCounter = 0;
+                for (blockName in pageImpressions) {
+                    if (blockName === 'length' || !pageImpressions.hasOwnProperty(blockName))
+                        continue;
+                    for (var i = 0; i < pageImpressions[blockName].length; i++) {
+                        var impression = pageImpressions[blockName][i];
+                        dlImpressions.ecommerce.impressions.push({
+                            'id': impression.id,
+                            'name': impression.name,
+                            'category': impression.category,
+                            'list': impression.list,
+                            'position': impression.position
+                        });
+                        impressionCounter++;
+                        this.bindImpressionClick(
+                            impression.id,
+                            impression.type,
+                            impression.name,
+                            impression.category,
+                            impression.list,
+                            impression.position,
+                            blockName,
+                            impression.listPosition
+                        );
+                    }
+                }
+                if (impressionCounter > 0) {
+                    dataLayer.push(dlImpressions);
+                }
+            },
+
+            mergeImpressions: function() {
+                var pageImpressions = [];
+                var blockNames = ["category.products.list","product.info.upsell","catalog.product.related","checkout.cart.crosssell","search_result_list"];
+                blockNames.each(function(blockName) {
+                    // check if there is a new block generated by FPC placeholder update
+                    if (blockName in updatedImpressions) {
+                        pageImpressions[blockName] = updatedImpressions[blockName];
+                    } else if (blockName in staticImpressions) { // use the static data otherwise
+                        pageImpressions[blockName] = staticImpressions[blockName];
+                    }
+                });
+                return pageImpressions;
+            },
+
+            updatePromotions : function() {
+                var dlPromotions = {
+                    'event' : 'promotionView',
+                    'ecommerce': {
+                        'promoView': {
+                            'promotions' : []
+                        }
+                    }
+                };
+                var pagePromotions = [];
+                // check if there is a new block generated by FPC placeholder update
+                if (updatedPromotions.length) {
+                    pagePromotions = updatedPromotions;
+                }
+                // use the static data otherwise
+                if (pagePromotions.length == 0 && staticPromotions.length) {
+                    pagePromotions = staticPromotions;
+                }
+                var promotionCounter = 0;
+                var bannerIds = [];
+                if (jQuery('[data-banner-id]').length) {
+                    _.each(jQuery('[data-banner-id]'), function (banner) {
+                        var banner = jQuery(banner);
+                        var ids = (banner.data('ids') + '').split(',');
+                        bannerIds = jQuery.merge(bannerIds, ids);
+                    });
+                }
+                bannerIds = jQuery.unique(bannerIds);
+                for (var i = 0; i < pagePromotions.length; i++) {
+                    var promotion = pagePromotions[i];
+                    if (jQuery.inArray(promotion.id, bannerIds) == -1 || promotion.activated == '0') {
+                        continue;
+                    }
+                    dlPromotions.ecommerce.promoView.promotions.push({
+                        'id': promotion.id,
+                        'name': promotion.name,
+                        'creative': promotion.creative,
+                        'position': promotion.position
+                    });
+                    promotionCounter++;
+                }
+                if (promotionCounter > 0) {
+                    dataLayer.push(dlPromotions);
+                }
+                jQuery('[data-banner-id]').on('click', '[data-banner-id]', function(e){
+                    var bannerId = jQuery(this).attr('data-banner-id');
+                    var promotions = _.filter(pagePromotions, function(item) {
+                        return item.id === bannerId;
+                    });
+                    _.each(promotions, function(promotion) {
+                        googleAnalyticsUniversal.clickBanner(
+                            promotion.id,
+                            promotion.name,
+                            promotion.creative,
+                            promotion.position
+                        );
+                    });
+                });
+            }
+        };
+
+        GoogleAnalyticsUniversalCart = function(){
+            this.productQtys = [];
+            this.origProducts = {};
+            this.productWithChanges = [];
+            this.addedProducts = [];
+            this.removedProducts = [];
+            this.googleAnalyticsUniversalData = {};
+        };
+        GoogleAnalyticsUniversalCart.prototype = {
+            // ------------------- shopping cart ------------------------
+            listenMinicartReload : function() {
+                var context = this;
+                if (typeof(Minicart) != 'undefined' && typeof(Minicart.prototype.initAfterEvents)) {
+                    Minicart.prototype.initAfterEvents['GoogleAnalyticsUniversalCart:subscribeProductsUpdateInCart']
+                        = function() {
+                        context.subscribeProductsUpdateInCart();
+                        context.parseAddToCartCookies();
+                        context.parseRemoveFromCartCookies();
+                    };
+                    // if we are removing last item init don't calling
+                    Minicart.prototype.removeItemAfterEvents[
+                        'GoogleAnalyticsUniversalCart:subscribeProductsRemoveFromCart'
+                        ] = function() {
+                        context.parseRemoveFromCartCookies();
+                    };
+                }
+            },
+            subscribeProductsUpdateInCart : function() {
+                var context = this;
+                $$('[data-cart-item-update]').each(function(element) {
+                    $(element).stopObserving('click').observe('click', function(){
+                        context.updateCartObserver();
+                    });
+                });
+                jQuery('[data-block="minicart"]').on('mousedown', '.update-cart-item', function(){
+                    context.updateCartObserver();
+                });
+
+                $$('[data-multiship-item-update]').each(function(element) {
+                    $(element).stopObserving('click').observe('click', function(){
+                        context.updateMulticartCartObserver();
+                    });
+                });
+                $$('[data-cart-empty]').each(function(element){
+                    $(element).stopObserving('click').observe('click', function(){
+                        context.emptyCartObserver();
+                    });
+                });
+            },
+            emptyCartObserver : function() {
+                this.collectOriginalProducts();
+                for (var i in this.origProducts) {
+                    if (i != 'length' && this.origProducts.hasOwnProperty(i)) {
+                        var product = Object.extend({}, this.origProducts[i]);
+                        this.removedProducts.push(product);
+                    }
+                }
+                this.cartItemRemoved();
+            },
+            updateMulticartCartObserver : function() {
+                this.collectMultiProductsWithChanges();
+                this.collectProductsForMessages();
+                this.cartItemAdded();
+                this.cartItemRemoved();
+            },
+            updateCartObserver : function() {
+                this.collectProductsWithChanges();
+                this.collectProductsForMessages();
+                this.cartItemAdded();
+                this.cartItemRemoved();
+            },
+            collectMultiProductsWithChanges : function() {
+                this.collectOriginalProducts();
+                this.collectMultiCartQtys();
+                this.productWithChanges = [];
+                var groupedProducts = {};
+                for (var i = 0; i < this.productQtys.length; i++) {
+                    var cartProduct = this.productQtys[i];
+                    if (typeof(groupedProducts[cartProduct.id]) == 'undefined') {
+                        groupedProducts[cartProduct.id] = parseInt(cartProduct.qty, 10);
+                    } else {
+                        groupedProducts[cartProduct.id] += parseInt(cartProduct.qty, 10);
+                    }
+                }
+                for (var j in groupedProducts) {
+                    if (groupedProducts.hasOwnProperty(j)) {
+                        if (
+                            (typeof(this.origProducts[j]) != 'undefined')
+                            && (groupedProducts[j] != this.origProducts[j].qty)
+                        ) {
+                            var product = Object.extend({}, this.origProducts[j]);
+                            product['qty'] = groupedProducts[j];
+                            this.productWithChanges.push(product);
+                        }
+                    }
+                }
+            },
+            collectProductsWithChanges : function () {
+                this.collectOriginalProducts();
+                this.collectCartQtys();
+                this.collectMiniCartQtys();
+                this.productWithChanges = [];
+                for (var i = 0; i < this.productQtys.length; i++) {
+                    var cartProduct = this.productQtys[i];
+                    if (
+                        (typeof(this.origProducts[cartProduct.id]) != 'undefined') &&
+                        (cartProduct.qty != this.origProducts[cartProduct.id].qty)
+                    ) {
+                        var product = Object.extend({}, this.origProducts[cartProduct.id]);
+                        if (parseInt(cartProduct.qty, 10) > 0) {
+                            product['qty'] = cartProduct.qty;
+                            this.productWithChanges.push(product);
+                        }
+                    }
+                }
+            },
+            collectOriginalProducts : function() {
+                var products = {};
+                var items = customerData.get('cart')().items;
+                if (items !== undefined) {
+                    items.each(function(item) {
+                        products[item.product_sku] = {
+                            "id": item.product_sku,
+                            "name": item.product_name,
+                            "price": item.product_price_value,
+                            "qty": parseInt(item.qty, 10)
+                        };
+                    });
+                }
+                this.googleAnalyticsUniversalData['shoppingCartContent'] = products;
+                this.origProducts = this.googleAnalyticsUniversalData['shoppingCartContent'];
+            },
+            collectMultiCartQtys : function() {
+                var productQtys = [];
+                $$('[data-multiship-item-id]').each(function(element){
+                    productQtys.push({
+                        'id' : $(element).readAttribute('data-multiship-item-id'),
+                        'qty' : $(element).getValue()
+                    });
+                });
+                this.productQtys = productQtys;
+            },
+            collectCartQtys : function() {
+                var productQtys = [];
+                $$('[data-cart-item-id]').each(function(element){
+                    productQtys.push({
+                        'id' : $(element).readAttribute('data-cart-item-id'),
+                        'qty' : $(element).getValue()
+                    });
+                });
+                this.productQtys = productQtys;
+            },
+            collectMiniCartQtys : function() {
+                var productQtys = [];
+                $$('input[data-cart-item-id]').each(function(element){
+                    productQtys.push({
+                        'id' : $(element).readAttribute('data-cart-item-id'),
+                        'qty' : $(element).getValue()
+                    });
+                });
+                this.productQtys = productQtys;
+            },
+            collectProductsForMessages : function() {
+                this.addedProducts = [];
+                this.removedProducts = [];
+                for (var i = 0; i < this.productWithChanges.length; i++) {
+                    var product = this.productWithChanges[i];
+                    if (typeof(this.origProducts[product.id]) != 'undefined') {
+                        if (product.qty > this.origProducts[product.id].qty) {
+                            product.qty = Math.abs(product.qty - this.origProducts[product.id].qty);
+                            this.addedProducts.push(product);
+                        } else if (product.qty < this.origProducts[product.id].qty) {
+                            product.qty = Math.abs(this.origProducts[product.id].qty - product.qty);
+                            this.removedProducts.push(product);
+                        }
+                    }
+                }
+            },
+            formatProductsArray : function(productsIn) {
+                var productsOut = [];
+                var itemId;
+                for (var i in productsIn)
+                {
+                    if (i != 'length' && productsIn.hasOwnProperty(i)) {
+                        if (typeof(productsIn[i]['sku']) != 'undefined') {
+                            itemId = productsIn[i].sku;
+                        } else {
+                            itemId = productsIn[i].id;
+                        }
+                        productsOut.push({
+                            'id': itemId,
+                            'name': productsIn[i].name,
+                            'price': productsIn[i].price,
+                            'quantity': parseInt(productsIn[i].qty, 10)
+                        });
+                    }
+                }
+                return productsOut;
+            },
+            cartItemAdded : function() {
+                if (this.addedProducts.length == 0) {
+                    return;
+                }
+                dataLayer.push({
+                    'event': 'addToCart',
+                    'ecommerce': {
+                        'currencyCode' : dlCurrencyCode,
+                        'add': {
+                            'products': this.formatProductsArray(this.addedProducts)
+                        }
+                    }
+                });
+                this.addedProducts = [];
+            },
+            cartItemRemoved : function() {
+                if (this.removedProducts.length == 0) {
+                    return;
+                }
+                dataLayer.push({
+                    'event': 'removeFromCart',
+                    'ecommerce': {
+                        'currencyCode' : dlCurrencyCode,
+                        'remove': {
+                            'products': this.formatProductsArray(this.removedProducts)
+                        }
+                    }
+                });
+                this.removedProducts = [];
+            },
+            parseAddToCartCookies : function(){
+                if(getCookie(cookieAddToCart)){
+                    this.addedProducts = [];
+                    var addProductsList = decodeURIComponent(getCookie(cookieAddToCart));
+                    this.addedProducts = JSON.parse(addProductsList);
+                    delCookie(cookieAddToCart);
+                    this.cartItemAdded();
+                }
+            },
+            parseRemoveFromCartCookies : function(){
+                if(getCookie(cookieRemoveFromCart)){
+                    this.removedProducts = [];
+                    var removeProductsList = decodeURIComponent(getCookie(cookieRemoveFromCart));
+                    this.removedProducts = JSON.parse(removeProductsList);
+                    delCookie(cookieRemoveFromCart);
+                    this.cartItemRemoved();
+                }
+            }
+        };
+
+        var googleAnalyticsUniversal = new GoogleAnalyticsUniversal();
+        var googleAnalyticsUniversalCart = new GoogleAnalyticsUniversalCart();
+
+        document.observe('dom:loaded', function() {
+            googleAnalyticsUniversal.updatePromotions();
+            googleAnalyticsUniversal.updateImpressions();
+            googleAnalyticsUniversalCart.parseAddToCartCookies();
+            googleAnalyticsUniversalCart.parseRemoveFromCartCookies();
+            googleAnalyticsUniversalCart.subscribeProductsUpdateInCart();
+            googleAnalyticsUniversalCart.listenMinicartReload();
+            dataLayer.push({'ecommerce':{'impressions':0,'promoView':0}});
+        });
+
+        function getCookie(name) {
+            var cookie = " " + document.cookie;
+            var search = " " + name + "=";
+            var setStr = null;
+            var offset = 0;
+            var end = 0;
+            if (cookie.length > 0) {
+                offset = cookie.indexOf(search);
+                if (offset != -1) {
+                    offset += search.length;
+                    end = cookie.indexOf(";", offset);
+                    if (end == -1) {
+                        end = cookie.length;
+                    }
+                    setStr = decodeURI(cookie.substring(offset, end));
+                }
+            }
+            return(setStr);
+        }
+
+        function delCookie(name) {
+            var date = new Date(0);
+            var cookie = name + "=" + "; path=/; expires=" + date.toUTCString();
+            document.cookie = cookie;
+        }
+    });
+</script>
+<!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_pagetype: 'other'
+};
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 943346520;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/943346520/?guid=ON&amp;script=0"/>
+</div>
+</noscript><script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5525161"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5525161&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript><!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: Universal
+URL of the webpage where the tag is expected to be placed: http://www.swellbottle.com/
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 11/14/2016
+-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://6260767.fls.doubleclick.net/activityi;src=6260767;type=unive0;cat=unive0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<noscript>
+<iframe src="https://6260767.fls.doubleclick.net/activityi;src=6260767;type=unive0;cat=unive0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+</noscript>
+<!-- End of DoubleClick Floodlight Tag: Please do not remove --><!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1522684704714381');
+fbq('track', 'PageView');
+
+fbq('track', 'InitiateCheckout');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1522684704714381&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code --><div class="page-wrapper"><div class="global-banner">
+            <div class="inner-wrapper show-in-checkout owl-carousel">
+    <div class="item"><a href="https://www.swellbottle.com/stories/help/#ordering_and_shipping" target="_blank">ENJOY FREE GROUND SHIPPING ON ALL US ORDERS OVER $50</a></div>
+</div>    </div><header class="page-header"><div class="header content"><span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
+<a class="logo" href="https://www.swellbottle.com/" title="S'well">
+    <img src="https://www.swellbottle.com/media/logo/stores/1/Swell_Logo.svg"
+         alt="S'well"
+         width="189"         height="64"    />
+</a>
+<nav class="navigation" role="navigation">
+    <ul class="nav-wrapper">
+        <li class="level-1 hasdropdown">
+            <span class="nav-title"><span>Shop</span></span>
+            <div class="nav-dropdown">
+                <div class="inner-wrapper items-six">
+                    <div class="col col-cat">
+                        <a class="cat-link" href="https://www.swellbottle.com/bottles">
+                            <img src="https://d10jywiytp22lb.cloudfront.net/wysiwyg/menu/swell-moonstone-grey.png" alt="Bottles" />
+                            <span>Bottles</span>
+                        </a><!--
+                        --><a class="cat-link" href="https://www.swellbottle.com/travelers">
+                            <img src="https://d10jywiytp22lb.cloudfront.net/wysiwyg/menu/travelers-swell.png" alt="Travelers" />
+                            <span>Travelers</span>
+                        </a><!--
+                        --><a class="cat-link" href="https://www.swellbottle.com/tumblers">
+                            <img src="https://d10jywiytp22lb.cloudfront.net/wysiwyg/menu/tumblers-swell.png" alt="Tumblers" />
+                            <span>Tumblers</span>
+                        </a><!--
+                        --><a class="cat-link" href="https://www.swellbottle.com/roamers">
+                            <img src="https://d10jywiytp22lb.cloudfront.net/wysiwyg/menu/swell-roamers-nav-v2.png" alt="Roamers" />
+                            <span>Roamers</span>
+                        </a><!--
+                        --><a class="cat-link" href="https://www.swellbottle.com/accessories">
+                            <img src="https://d10jywiytp22lb.cloudfront.net/wysiwyg/menu/swell-accessories-brush-cap.png" alt="Accessories" />
+                            <span>Accessories</span>
+                        </a><!--
+                        --><a class="cat-link" href="https://www.swellbottle.com/goodbye-party-sale">
+                            <img src="https://d10jywiytp22lb.cloudfront.net/wysiwyg/menu/Sale_ShopNav.png" alt="Sale" />
+                            <span>Sale</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="level-1">
+            <a class="nav-title" href="https://www.swellbottle.com/personalize"><span>Personalize</span></a>
+        </li>
+        <li class="level-1 hasdropdown abs-visually-hidden-desktop">
+            <span class="nav-title"><span>Stories</span></span>
+            <div class="nav-dropdown">
+                <div class="inner-wrapper">
+                    <div class="col col-cat">
+                        <a class="cat-link" href="https://www.swellbottle.com/stories/">
+                            <span>Blog</span>
+                        </a><!--
+                        --><a class="cat-link" href="https://www.swellbottle.com/stories/social/">
+                            <span>Social</span>
+                        </a><!--
+                        --><a class="cat-link" href="https://www.swellbottle.com/stories/adventures/">
+                            <span>Accessories</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="level-1 abs-visually-hidden-mobile">
+            <a class="nav-title" href="https://www.swellbottle.com/stories"><span>Stories</span></a>
+        </li>
+        <li class="level-1">
+            <a class="nav-title" href="https://www.swellbottle.com/stories/about-us"><span>About</span></a>
+        </li>
+        <li class="level-1">
+            <a class="nav-title" href="https://www.swellbottle.com/stories/welcome-to-swell?utm_source=website&utm_medium=link&utm_campaign=corporate_gifts"><span>Corporate Gifts</span></a>
+        </li>
+    </ul>
+</nav>
+<style>
+
+.nav-item-with-image img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    float: left;
+    margin-top: -2px;
+}
+@media(min-width: 768px) {
+    header.page-header .navigation .nav-wrapper .level-1 .nav-title span { display: inline-block; width: auto; }
+}
+@media(max-width: 1024px) {
+    .nav-item-with-image img {
+        margin-top:2px;
+    }
+}
+</style><div class="account-links-menu_wrapper"><div class="account-links-menu"><div data-bind="scope:'accountlinkscomp'">
+	<!-- ko template: getTemplate() --><!-- /ko -->
+	<script type="text/x-magento-init">	
+	{
+		"*": {
+			"Magento_Ui/js/core/app": {"components":{"accountlinkscomp":{"component":"Magento_Theme\/js\/view\/accountlinks","template":"Magento_Theme\/accountlinks"}}}		}
+	}
+	</script>
+</div>
+
+
+</div><div class="additional-links-block">
+	<a href="#" id="signup-newsletter-open" class="header-link">Subscribe</a>
+	<a href="/stories/help" class="header-link">Help</a>
+</div>
+
+<style>
+.minicart-wrapper {
+    z-index: 110;
+}
+@media (max-height: 610px) {
+	.esns_theme_default .pop-wrapper-right {
+		display: none;
+	}
+	.esns_theme_default .pop-wrapper-left {
+		width: 100%;
+		padding: 20px 35px;
+	}
+	.esns_theme_default #esns_box_block_2 {
+		margin: 12px 0;
+	}
+	.esns_theme_default #esns_box_subscribe_input input {
+	    margin: 0 0 10px;
+	}
+	.esns_theme_default .pop-disclaimer {
+		margin-top: 0;
+	}
+	.esns_theme_default#esns_box_layer {
+		top: 40px;
+	}
+}
+</style></div></div></header><div class="mobile-menu-wrapper" id="mobile-menu">
+    <div class="close">X</div>
+    <a class="logo" href="https://www.swellbottle.com/" >
+<img src="https://www.swellbottle.com//media/logo/stores/1/Swell_Logo.svg" alt="S'well Bottle" alt="S'well" width="189" height="64" />
+</a>    <div class="content">
+            <div class="cat-container active section" data-content="cat-container" data-title="Main Menu">
+                <div class="menu-container">
+                    Main Menu                </div>
+                <ul class="nav-wrapper bottom-nav">
+    <li class="level-1">
+        <a class="nav-title" href="https://www.swellbottle.com/our-products">Our Products</a>
+    </li>
+
+    <li class="level-1">
+        <a class="nav-title" href="https://www.swellbottle.com/customer/account">My Account</a>
+    </li>
+
+    <li class="level-1">
+        <a class="nav-title" href="https://www.swellbottle.com/stories/help">Help</a>
+    </li>
+</ul>        </div>
+        
+    </div>
+</div>
+<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+<div class="columns"><div class="column main"><input name="form_key" type="hidden" value="SywlFwBmole8Ceem" /><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+    <script>
+        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/www.swellbottle.com\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/www.swellbottle.com\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/www.swellbottle.com\/"};
+    </script>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#authenticationPopup": {
+                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"}}}}}            },
+            "*": {
+                "Magento_Ui/js/block-loader": "https\u003A\u002F\u002Fwww.swellbottle.com\u002Fstatic\u002Ffrontend\u002FOneRockwell\u002Fswell\u002Fen_US\u002Fimages\u002Floader\u002D1.gif"
+            }
+        }
+    </script>
+</div>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","*":["messages"],"customer\/account\/logout":"*","customer\/account\/loginpost":"*","customer\/account\/createpost":"*","customer\/ajax\/login":["checkout-data","cart"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"giftregistry\/index\/cart":["cart"],"giftregistry\/view\/addtocart":["cart"],"wishlist\/index\/copyitem":["wishlist"],"wishlist\/index\/copyitems":["wishlist"],"wishlist\/index\/deletewishlist":["wishlist","multiplewishlist"],"wishlist\/index\/createwishlist":["multiplewishlist"],"wishlist\/index\/moveitem":["wishlist"],"wishlist\/index\/moveitems":["wishlist"],"wishlist\/search\/addtocart":["cart","wishlist"],"multishipping\/checkout\/overviewpost":["cart"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"customer_order\/cart\/updatefaileditemoptions":["cart"],"checkout\/cart\/updatefaileditemoptions":["cart"],"customer_order\/cart\/advancedadd":["cart"],"checkout\/cart\/advancedadd":["cart"],"checkout\/cart\/removeallfailed":["cart"],"customer_order\/cart\/addfaileditems":["cart"],"checkout\/cart\/addfaileditems":["cart"],"customer_order\/sku\/uploadfile":["cart"],"review\/product\/post":["review"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"checkout\/cart\/index":["cart"],"vipcategory\/check":"*"},"clientSideSections":["checkout-data"],"baseUrls":["https:\/\/www.swellbottle.com\/"]}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/www.swellbottle.com\/customer\/section\/load\/","cookieLifeTime":"3600","updateSessionUrl":"https:\/\/www.swellbottle.com\/customer\/account\/updateSession\/"}}}</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"https:\/\/www.swellbottle.com\/page_cache\/block\/render\/","handles":["default","checkout_index_index"],"originalRequest":{"route":"checkout","controller":"index","action":"index","uri":"\/checkout\/"},"versionCookieName":"private_content_version"}        }
+    }
+</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Banner\/js\/model\/banner":{"sectionLoadUrl":"https:\/\/www.swellbottle.com\/banner\/ajax\/load\/"}}}</script>
+
+<script>
+    dataLayer.push({
+        'event' : 'pageType',
+        'action': 'checkout-index-index'
+    });
+</script><div id="checkout" data-bind="scope:'checkout'" class="checkout-container">
+    <div id="checkout-loader" data-role="checkout-loader" class="loading-mask" data-mage-init='{"checkoutLoader": {}}'>
+        <div class="loader">
+            <img src="https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/images/loader-1.gif"
+                 alt="Loading..."
+                 style="position: absolute;">
+        </div>
+    </div>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#checkout": {
+                "Magento_Ui/js/core/app": {"components":{"checkout":{"children":{"steps":{"children":{"billing-step":{"component":"uiComponent","sortOrder":"2","children":{"payment":{"children":{"renders":{"children":{"free-payments":{"component":"Magento_Payment\/js\/view\/payment\/payments"},"cryozonic_stripe":{"component":"Cryozonic_StripePayments\/js\/view\/payment\/cryozonic_stripe"},"paypal-payments":{"component":"Magento_Paypal\/js\/view\/payment\/paypal-payments"}},"component":"uiComponent"},"afterMethods":{"children":{"discount":{"component":"Magento_SalesRule\/js\/view\/payment\/discount","children":{"errors":{"sortOrder":"0","component":"Magento_SalesRule\/js\/view\/payment\/discount-messages","displayArea":"messages"}}},"storeCredit":{"component":"Magento_CustomerBalance\/js\/view\/payment\/customer-balance"}},"component":"uiComponent","displayArea":"afterMethods"},"additional-payment-validators":{"component":"uiComponent","children":{"email-validator":{"component":"Magento_Checkout\/js\/view\/payment\/email-validator"},"agreements-validator":{"component":"Magento_CheckoutAgreements\/js\/view\/agreement-validation"}}},"customer-email":{"component":"Magento_Checkout\/js\/view\/form\/element\/email","displayArea":"customer-email","children":{"before-login-form":{"component":"uiComponent","displayArea":"before-login-form","children":[]},"additional-login-form-fields":{"component":"uiComponent","displayArea":"additional-login-form-fields","children":{"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"guest_checkout","configSource":"checkoutConfig"}}}}},"beforeMethods":{"component":"uiComponent","displayArea":"beforeMethods","children":[],"validation":{"validate-select":"true"},"filterBy":{"target":"${ $.provider }:${ $.parentScope }.country_id","field":"country_id"}},"payments-list":{"component":"Magento_Checkout\/js\/view\/payment\/list","displayArea":"payment-methods-list","config":{"deps":["checkout.steps.billing-step.payment.renders","checkout.steps.billing-step.payment.additional-payment-validators"]},"children":{"before-place-order":{"component":"uiComponent","displayArea":"before-place-order","dataScope":"before-place-order","provider":"checkoutProvider","config":{"template":"Magento_Checkout\/payment\/before-place-order"},"children":{"agreements":{"component":"Magento_CheckoutAgreements\/js\/view\/checkout-agreements","sortOrder":"100","displayArea":"before-place-order","dataScope":"checkoutAgreements","provider":"checkoutProvider"}}},"free-form":{"component":"Magento_Checkout\/js\/view\/billing-address","displayArea":"billing-address-form-free","provider":"checkoutProvider","deps":"checkoutProvider","dataScopePrefix":"billingAddressfree","sortOrder":1,"children":{"form-fields":{"component":"uiComponent","displayArea":"additional-fieldsets","children":{"country_id":{"component":"Magento_Ui\/js\/form\/element\/select","config":{"customScope":"billingAddressfree","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddressfree.country_id","label":"Country","provider":"checkoutProvider","sortOrder":115,"validation":{"required-entry":true},"filterBy":null,"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.country_id","setOptions":"index = checkoutProvider:dictionaries.country_id"},"value":"US"},"region":{"visible":false},"region_id":{"component":"Magento_Ui\/js\/form\/element\/region","config":{"customScope":"billingAddressfree","customEntry":"billingAddressfree.region","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddressfree.region_id","label":"State\/Province","provider":"checkoutProvider","sortOrder":"100","validation":{"required-entry":true},"filterBy":{"target":"${ $.provider }:${ $.parentScope }.country_id","field":"country_id"},"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.region_id","setOptions":"index = checkoutProvider:dictionaries.region_id"}},"postcode":{"component":"Magento_Ui\/js\/form\/element\/post-code","config":{"customScope":"billingAddressfree","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddressfree.postcode","label":"Zip\/Postal Code","provider":"checkoutProvider","sortOrder":"110","validation":{"required-entry":true},"options":[],"filterBy":null,"customEntry":null,"visible":true},"company":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddressfree","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddressfree.company","label":"Company","provider":"checkoutProvider","sortOrder":"60","validation":{"max_text_length":255,"min_text_length":0},"options":[],"filterBy":null,"customEntry":null,"visible":true},"fax":{"validation":{"min_text_length":0}},"telephone":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddressfree","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":{"description":"For delivery questions."}},"dataScope":"billingAddressfree.telephone","label":"Phone Number","provider":"checkoutProvider","sortOrder":"120","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"100"},"options":[],"filterBy":null,"customEntry":null,"visible":true},"firstname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddressfree","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddressfree.firstname","label":"First Name","provider":"checkoutProvider","sortOrder":"20","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"lastname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddressfree","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddressfree.lastname","label":"Last Name","provider":"checkoutProvider","sortOrder":"40","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"street":{"component":"Magento_Ui\/js\/form\/components\/group","label":"Street Address","required":true,"dataScope":"billingAddressfree.street","provider":"checkoutProvider","sortOrder":"70","type":"group","config":{"template":"ui\/group\/group","additionalClasses":"street"},"children":[{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddressfree","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":0,"provider":"checkoutProvider","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":true},{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddressfree","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":1,"provider":"checkoutProvider","validation":{"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":"additional"}]},"city":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddressfree","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddressfree.city","label":"City","provider":"checkoutProvider","sortOrder":"80","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true}}}}},"cryozonic_stripe-form":{"component":"Magento_Checkout\/js\/view\/billing-address","displayArea":"billing-address-form-cryozonic_stripe","provider":"checkoutProvider","deps":"checkoutProvider","dataScopePrefix":"billingAddresscryozonic_stripe","sortOrder":1,"children":{"form-fields":{"component":"uiComponent","displayArea":"additional-fieldsets","children":{"country_id":{"component":"Magento_Ui\/js\/form\/element\/select","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddresscryozonic_stripe.country_id","label":"Country","provider":"checkoutProvider","sortOrder":115,"validation":{"required-entry":true},"filterBy":null,"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.country_id","setOptions":"index = checkoutProvider:dictionaries.country_id"},"value":"US"},"region":{"visible":false},"region_id":{"component":"Magento_Ui\/js\/form\/element\/region","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":"billingAddresscryozonic_stripe.region","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddresscryozonic_stripe.region_id","label":"State\/Province","provider":"checkoutProvider","sortOrder":"100","validation":{"required-entry":true},"filterBy":{"target":"${ $.provider }:${ $.parentScope }.country_id","field":"country_id"},"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.region_id","setOptions":"index = checkoutProvider:dictionaries.region_id"}},"postcode":{"component":"Magento_Ui\/js\/form\/element\/post-code","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe.postcode","label":"Zip\/Postal Code","provider":"checkoutProvider","sortOrder":"110","validation":{"required-entry":true},"options":[],"filterBy":null,"customEntry":null,"visible":true},"company":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe.company","label":"Company","provider":"checkoutProvider","sortOrder":"60","validation":{"max_text_length":255,"min_text_length":0},"options":[],"filterBy":null,"customEntry":null,"visible":true},"fax":{"validation":{"min_text_length":0}},"telephone":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":{"description":"For delivery questions."}},"dataScope":"billingAddresscryozonic_stripe.telephone","label":"Phone Number","provider":"checkoutProvider","sortOrder":"120","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"100"},"options":[],"filterBy":null,"customEntry":null,"visible":true},"firstname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe.firstname","label":"First Name","provider":"checkoutProvider","sortOrder":"20","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"lastname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe.lastname","label":"Last Name","provider":"checkoutProvider","sortOrder":"40","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"street":{"component":"Magento_Ui\/js\/form\/components\/group","label":"Street Address","required":true,"dataScope":"billingAddresscryozonic_stripe.street","provider":"checkoutProvider","sortOrder":"70","type":"group","config":{"template":"ui\/group\/group","additionalClasses":"street"},"children":[{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":0,"provider":"checkoutProvider","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":true},{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":1,"provider":"checkoutProvider","validation":{"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":"additional"}]},"city":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe.city","label":"City","provider":"checkoutProvider","sortOrder":"80","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true}}}}},"cryozonic_stripe_apple_pay-form":{"component":"Magento_Checkout\/js\/view\/billing-address","displayArea":"billing-address-form-cryozonic_stripe_apple_pay","provider":"checkoutProvider","deps":"checkoutProvider","dataScopePrefix":"billingAddresscryozonic_stripe_apple_pay","sortOrder":1,"children":{"form-fields":{"component":"uiComponent","displayArea":"additional-fieldsets","children":{"country_id":{"component":"Magento_Ui\/js\/form\/element\/select","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddresscryozonic_stripe_apple_pay.country_id","label":"Country","provider":"checkoutProvider","sortOrder":115,"validation":{"required-entry":true},"filterBy":null,"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.country_id","setOptions":"index = checkoutProvider:dictionaries.country_id"},"value":"US"},"region":{"visible":false},"region_id":{"component":"Magento_Ui\/js\/form\/element\/region","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":"billingAddresscryozonic_stripe_apple_pay.region","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddresscryozonic_stripe_apple_pay.region_id","label":"State\/Province","provider":"checkoutProvider","sortOrder":"100","validation":{"required-entry":true},"filterBy":{"target":"${ $.provider }:${ $.parentScope }.country_id","field":"country_id"},"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.region_id","setOptions":"index = checkoutProvider:dictionaries.region_id"}},"postcode":{"component":"Magento_Ui\/js\/form\/element\/post-code","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe_apple_pay.postcode","label":"Zip\/Postal Code","provider":"checkoutProvider","sortOrder":"110","validation":{"required-entry":true},"options":[],"filterBy":null,"customEntry":null,"visible":true},"company":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe_apple_pay.company","label":"Company","provider":"checkoutProvider","sortOrder":"60","validation":{"max_text_length":255,"min_text_length":0},"options":[],"filterBy":null,"customEntry":null,"visible":true},"fax":{"validation":{"min_text_length":0}},"telephone":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":{"description":"For delivery questions."}},"dataScope":"billingAddresscryozonic_stripe_apple_pay.telephone","label":"Phone Number","provider":"checkoutProvider","sortOrder":"120","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"100"},"options":[],"filterBy":null,"customEntry":null,"visible":true},"firstname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe_apple_pay.firstname","label":"First Name","provider":"checkoutProvider","sortOrder":"20","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"lastname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe_apple_pay.lastname","label":"Last Name","provider":"checkoutProvider","sortOrder":"40","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"street":{"component":"Magento_Ui\/js\/form\/components\/group","label":"Street Address","required":true,"dataScope":"billingAddresscryozonic_stripe_apple_pay.street","provider":"checkoutProvider","sortOrder":"70","type":"group","config":{"template":"ui\/group\/group","additionalClasses":"street"},"children":[{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":0,"provider":"checkoutProvider","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":true},{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":1,"provider":"checkoutProvider","validation":{"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":"additional"}]},"city":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresscryozonic_stripe_apple_pay","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresscryozonic_stripe_apple_pay.city","label":"City","provider":"checkoutProvider","sortOrder":"80","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true}}}}},"paypal_billing_agreement-form":{"component":"Magento_Checkout\/js\/view\/billing-address","displayArea":"billing-address-form-paypal_billing_agreement","provider":"checkoutProvider","deps":"checkoutProvider","dataScopePrefix":"billingAddresspaypal_billing_agreement","sortOrder":1,"children":{"form-fields":{"component":"uiComponent","displayArea":"additional-fieldsets","children":{"country_id":{"component":"Magento_Ui\/js\/form\/element\/select","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddresspaypal_billing_agreement.country_id","label":"Country","provider":"checkoutProvider","sortOrder":115,"validation":{"required-entry":true},"filterBy":null,"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.country_id","setOptions":"index = checkoutProvider:dictionaries.country_id"},"value":"US"},"region":{"visible":false},"region_id":{"component":"Magento_Ui\/js\/form\/element\/region","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":"billingAddresspaypal_billing_agreement.region","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"billingAddresspaypal_billing_agreement.region_id","label":"State\/Province","provider":"checkoutProvider","sortOrder":"100","validation":{"required-entry":true},"filterBy":{"target":"${ $.provider }:${ $.parentScope }.country_id","field":"country_id"},"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.region_id","setOptions":"index = checkoutProvider:dictionaries.region_id"}},"postcode":{"component":"Magento_Ui\/js\/form\/element\/post-code","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresspaypal_billing_agreement.postcode","label":"Zip\/Postal Code","provider":"checkoutProvider","sortOrder":"110","validation":{"required-entry":true},"options":[],"filterBy":null,"customEntry":null,"visible":true},"company":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresspaypal_billing_agreement.company","label":"Company","provider":"checkoutProvider","sortOrder":"60","validation":{"max_text_length":255,"min_text_length":0},"options":[],"filterBy":null,"customEntry":null,"visible":true},"fax":{"validation":{"min_text_length":0}},"telephone":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":{"description":"For delivery questions."}},"dataScope":"billingAddresspaypal_billing_agreement.telephone","label":"Phone Number","provider":"checkoutProvider","sortOrder":"120","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"100"},"options":[],"filterBy":null,"customEntry":null,"visible":true},"firstname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresspaypal_billing_agreement.firstname","label":"First Name","provider":"checkoutProvider","sortOrder":"20","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"lastname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresspaypal_billing_agreement.lastname","label":"Last Name","provider":"checkoutProvider","sortOrder":"40","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"street":{"component":"Magento_Ui\/js\/form\/components\/group","label":"Street Address","required":true,"dataScope":"billingAddresspaypal_billing_agreement.street","provider":"checkoutProvider","sortOrder":"70","type":"group","config":{"template":"ui\/group\/group","additionalClasses":"street"},"children":[{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresspaypal_billing_agreement","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":0,"provider":"checkoutProvider","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":true},{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresspaypal_billing_agreement","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":1,"provider":"checkoutProvider","validation":{"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":"additional"}]},"city":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"billingAddresspaypal_billing_agreement","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"billingAddresspaypal_billing_agreement.city","label":"City","provider":"checkoutProvider","sortOrder":"80","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true}}}}}}}},"component":"Magento_Checkout\/js\/view\/payment","config":{"title":"Review & Payments"}}}},"shipping-step":{"component":"uiComponent","sortOrder":"1","children":{"step-config":{"component":"uiComponent","children":{"shipping-rates-validation":{"children":{"amstrates-rates-validation":{"component":"Amasty_ShippingTableRates\/js\/view\/shipping-rates-validation"}}}}},"shippingAddress":{"config":{"deps":["checkout.steps.shipping-step.step-config","checkoutProvider"],"popUpForm":{"element":"#opc-new-shipping-address","options":{"type":"popup","responsive":true,"innerScroll":true,"title":"Shipping Address","trigger":"opc-new-shipping-address","buttons":{"save":{"text":"Save Address","class":"action primary action-save-address"},"cancel":{"text":"Cancel","class":"action secondary action-hide-popup"}}}}},"component":"Magento_Checkout\/js\/view\/shipping","provider":"checkoutProvider","sortOrder":"1","children":{"customer-email":{"component":"Magento_Checkout\/js\/view\/form\/element\/email","displayArea":"customer-email","children":{"before-login-form":{"component":"uiComponent","displayArea":"before-login-form","children":[]},"additional-login-form-fields":{"component":"uiComponent","displayArea":"additional-login-form-fields","children":{"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"guest_checkout","configSource":"checkoutConfig"}}}}},"before-form":{"component":"uiComponent","displayArea":"before-form","children":[]},"before-fields":{"component":"uiComponent","displayArea":"before-fields","children":[]},"address-list":{"component":"Magento_Checkout\/js\/view\/shipping-address\/list","displayArea":"address-list","config":{"deps":"checkout.steps.shipping-step.gift-registry-address-provider"},"rendererTemplates":{"gift-registry":{"component":"Magento_GiftRegistry\/js\/view\/shipping-address\/address-renderer\/gift-registry"}}},"address-list-additional-addresses":{"component":"uiComponent","displayArea":"address-list-additional-addresses","children":[]},"before-shipping-method-form":{"component":"uiComponent","displayArea":"before-shipping-method-form","children":{"shipping_policy":{"component":"Magento_Shipping\/js\/view\/checkout\/shipping\/shipping-policy"}}},"shipping-address-fieldset":{"component":"uiComponent","config":{"deps":["checkoutProvider"]},"displayArea":"additional-fieldsets","children":{"company":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"shippingAddress","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"shippingAddress.company","label":"Company","provider":"checkoutProvider","sortOrder":"60","validation":{"max_text_length":255,"min_text_length":"0"},"options":[],"filterBy":null,"customEntry":null,"visible":true},"region_id":{"component":"Magento_Ui\/js\/form\/element\/region","config":{"customScope":"shippingAddress","customEntry":"shippingAddress.region","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"shippingAddress.region_id","label":"State\/Province","provider":"checkoutProvider","sortOrder":"112","validation":{"required-entry":true},"filterBy":{"target":"${ $.provider }:${ $.parentScope }.country_id","field":"country_id"},"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.region_id","setOptions":"index = checkoutProvider:dictionaries.region_id"}},"region":{"sortOrder":"113","visible":false},"postcode":{"component":"Magento_Ui\/js\/form\/element\/post-code","config":{"customScope":"shippingAddress","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"shippingAddress.postcode","label":"Zip\/Postal Code","provider":"checkoutProvider","sortOrder":"114","validation":{"required-entry":"true"},"options":[],"filterBy":null,"customEntry":null,"visible":true},"country_id":{"component":"Magento_Ui\/js\/form\/element\/select","config":{"customScope":"shippingAddress","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/select","tooltip":null},"dataScope":"shippingAddress.country_id","label":"Country","provider":"checkoutProvider","sortOrder":"115","validation":{"required-entry":true},"filterBy":null,"customEntry":null,"visible":true,"deps":["checkoutProvider"],"imports":{"initialOptions":"index = checkoutProvider:dictionaries.country_id","setOptions":"index = checkoutProvider:dictionaries.country_id"},"value":"US"},"telephone":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"shippingAddress","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"shippingAddress.telephone","label":"Phone Number","provider":"checkoutProvider","sortOrder":"120","validation":{"required-entry":"true","min_text_length":"1","max_text_length":"100"},"options":[],"filterBy":null,"customEntry":null,"visible":true},"firstname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"shippingAddress","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"shippingAddress.firstname","label":"First Name","provider":"checkoutProvider","sortOrder":"20","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"lastname":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"shippingAddress","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"shippingAddress.lastname","label":"Last Name","provider":"checkoutProvider","sortOrder":"40","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true},"street":{"component":"Magento_Ui\/js\/form\/components\/group","label":"Street Address","required":true,"dataScope":"shippingAddress.street","provider":"checkoutProvider","sortOrder":"70","type":"group","config":{"template":"ui\/group\/group","additionalClasses":"street"},"children":[{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"shippingAddress","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":0,"provider":"checkoutProvider","validation":{"required-entry":true,"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":true},{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"shippingAddress","template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"},"dataScope":1,"provider":"checkoutProvider","validation":{"min_text_length":"1","max_text_length":"255","validate-street":true},"additionalClasses":"additional"}]},"city":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"customScope":"shippingAddress","customEntry":null,"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input","tooltip":null},"dataScope":"shippingAddress.city","label":"City","provider":"checkoutProvider","sortOrder":"80","validation":{"required-entry":true,"max_text_length":255,"min_text_length":1},"options":[],"filterBy":null,"customEntry":null,"visible":true}}},"price":{"component":"Magento_Tax\/js\/view\/checkout\/shipping_method\/price","displayArea":"price","template":"Amasty_Shiprestriction\/tax-price"}},"template":"Amasty_ShippingTableRates\/shipping"},"gift-registry-address-provider":{"component":"Magento_GiftRegistry\/js\/view\/shipping-address\/gift-registry"},"progressBarShipping":{"sortOrder":"0","component":"Magento_Checkout\/js\/view\/progress-bar","displayArea":"progressBar","config":{"deps":["checkout.steps.shipping-step.shippingAddress","checkout.steps.billing-step.payment"]}}}}},"component":"uiComponent","displayArea":"steps"},"sidebar":{"children":{"summary":{"children":{"totals":{"children":{"discount":{"component":"Magento_SalesRule\/js\/view\/summary\/discount","config":{"title":"Discount:"},"sortOrder":"20"},"subtotal":{"component":"Magento_Tax\/js\/view\/checkout\/summary\/subtotal","config":{"title":"Cart Subtotal","excludingTaxMessage":"Excl. Tax","includingTaxMessage":"Incl. Tax"},"sortOrder":"10"},"shipping":{"component":"Magento_Tax\/js\/view\/checkout\/summary\/shipping","config":{"title":"Shipping & Handling","notCalculatedMessage":"Not yet calculated","excludingTaxMessage":"Excl. Tax","includingTaxMessage":"Incl. Tax"},"sortOrder":"30"},"grand-total":{"component":"Magento_Tax\/js\/view\/checkout\/summary\/grand-total","config":{"title":"Order Total","exclTaxLabel":"Order Total Excl. Tax","inclTaxLabel":"Order Total Incl. Tax","basicCurrencyMessage":"Your credit card will be charged for"},"sortOrder":"100"},"customerbalance":{"component":"Magento_CustomerBalance\/js\/view\/summary\/customer-balance","config":{"title":"Store Credit"},"sortOrder":"95"},"before_grandtotal":{"component":"uiComponent","sortOrder":"30","children":{"gift-wrapping-order-level":{"component":"Magento_GiftWrapping\/js\/view\/summary\/totals","config":{"title":"Gift Wrapping for Order","level":"order"}},"gift-wrapping-item-level":{"component":"Magento_GiftWrapping\/js\/view\/summary\/totals","config":{"title":"Gift Wrapping for Items","level":"item"}},"printed-card":{"component":"Magento_GiftWrapping\/js\/view\/summary\/totals","config":{"title":"Printed Card","level":"printed-card"}}}},"tax":{"component":"Magento_Tax\/js\/view\/checkout\/summary\/tax","config":{"title":"Tax"},"sortOrder":"40"}},"component":"Magento_Checkout\/js\/view\/summary\/totals","displayArea":"totals","config":{"template":"Magento_Checkout\/summary\/totals"}},"itemsBefore":{"component":"uiComponent","children":[]},"cart_items":{"component":"Magento_Checkout\/js\/view\/summary\/cart-items","children":{"details":{"component":"Magento_Checkout\/js\/view\/summary\/item\/details","children":{"thumbnail":{"component":"Magento_Checkout\/js\/view\/summary\/item\/details\/thumbnail","displayArea":"before_details"},"subtotal":{"component":"Magento_Tax\/js\/view\/checkout\/summary\/item\/details\/subtotal","displayArea":"after_details"}}}}},"itemsAfter":{"component":"uiComponent","children":[]}},"component":"Magento_Checkout\/js\/view\/summary","displayArea":"summary","config":{"template":"Magento_Checkout\/summary"}},"shipping-information":{"component":"Magento_Checkout\/js\/view\/shipping-information","config":{"deps":"checkout.steps.shipping-step.shippingAddress"},"displayArea":"shipping-information","children":{"ship-to":{"component":"Magento_Checkout\/js\/view\/shipping-information\/list","displayArea":"ship-to","rendererTemplates":{"gift-registry":{"component":"uiComponent","config":{"template":"Magento_GiftRegistry\/shipping-information\/address-renderer\/gift-registry"}}}}}}},"sortOrder":"0","component":"Magento_Checkout\/js\/view\/sidebar","displayArea":"sidebar","config":{"template":"Magento_Checkout\/sidebar"}},"errors":{"sortOrder":"0","component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"authentication":{"sortOrder":"1","component":"Magento_Checkout\/js\/view\/authentication","displayArea":"authentication","children":{"errors":{"sortOrder":"0","component":"Magento_Checkout\/js\/view\/authentication-messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkoutConfig"}}},"estimation":{"sortOrder":"10","component":"Magento_Checkout\/js\/view\/estimation","displayArea":"estimation","config":{"template":"Magento_Checkout\/estimation","deps":["checkout.sidebar"]}}},"component":"uiComponent","config":{"template":"Magento_Checkout\/onepage"}},"checkoutProvider":{"component":"uiComponent","dictionaries":{"country_id":[{"value":"","label":" "},{"value":"AU","label":"Australia","is_region_visible":true},{"value":"AT","label":"Austria","is_region_required":true},{"value":"BE","label":"Belgium","is_region_visible":true},{"value":"BR","label":"Brazil","is_region_required":true},{"value":"CA","label":"Canada","is_region_required":true},{"value":"CN","label":"China","is_region_visible":true},{"value":"CZ","label":"Czech Republic","is_region_visible":true},{"value":"DK","label":"Denmark","is_region_visible":true},{"value":"FI","label":"Finland","is_region_required":true},{"value":"FR","label":"France","is_region_required":true},{"value":"DE","label":"Germany","is_region_required":true},{"value":"GR","label":"Greece","is_region_visible":true},{"value":"HK","label":"Hong Kong SAR China","is_region_visible":true,"is_zipcode_optional":true},{"value":"HU","label":"Hungary","is_region_visible":true},{"value":"IN","label":"India","is_region_visible":true},{"value":"ID","label":"Indonesia","is_region_visible":true},{"value":"IE","label":"Ireland","is_region_visible":true,"is_zipcode_optional":true},{"value":"IT","label":"Italy","is_region_visible":true},{"value":"JP","label":"Japan","is_region_visible":true},{"value":"LV","label":"Latvia","is_region_required":true},{"value":"LI","label":"Liechtenstein","is_region_visible":true},{"value":"LT","label":"Lithuania","is_region_required":true},{"value":"LU","label":"Luxembourg","is_region_visible":true},{"value":"MY","label":"Malaysia","is_region_visible":true},{"value":"MX","label":"Mexico","is_region_visible":true},{"value":"MC","label":"Monaco","is_region_visible":true},{"value":"NL","label":"Netherlands","is_region_visible":true},{"value":"PL","label":"Poland","is_region_visible":true},{"value":"PT","label":"Portugal","is_region_visible":true},{"value":"SA","label":"Saudi Arabia","is_region_visible":true},{"value":"SG","label":"Singapore","is_region_visible":true},{"value":"SK","label":"Slovakia","is_region_visible":true},{"value":"ZA","label":"South Africa","is_region_visible":true},{"value":"KR","label":"South Korea","is_region_visible":true},{"value":"ES","label":"Spain","is_region_required":true},{"value":"SE","label":"Sweden","is_region_visible":true},{"value":"CH","label":"Switzerland","is_region_required":true},{"value":"TW","label":"Taiwan","is_region_visible":true},{"value":"TH","label":"Thailand","is_region_visible":true},{"value":"TR","label":"Turkey","is_region_visible":true},{"value":"AE","label":"United Arab Emirates","is_region_visible":true},{"value":"GB","label":"United Kingdom","is_region_visible":true,"is_zipcode_optional":true},{"value":"US","label":"United States","is_region_required":true}],"region_id":[{"title":null,"value":null,"label":"State"},{"value":"130","title":"A Coru\u00f1a","country_id":"ES","label":"A Coru\u00f1a"},{"value":"104","title":"Aargau","country_id":"CH","label":"Aargau"},{"value":"485","title":"Acre","country_id":"BR","label":"Acre"},{"value":"471","title":"\u0100da\u017eu novads","country_id":"LV","label":"\u0100da\u017eu novads"},{"value":"366","title":"Aglonas novads","country_id":"LV","label":"Aglonas novads"},{"value":"339","title":"Ahvenanmaa","country_id":"FI","label":"Ahvenanmaa"},{"value":"182","title":"Ain","country_id":"FR","label":"Ain"},{"value":"183","title":"Aisne","country_id":"FR","label":"Aisne"},{"value":"367","title":"Aizkraukles novads","country_id":"LV","label":"Aizkraukles novads"},{"value":"368","title":"Aizputes novads","country_id":"LV","label":"Aizputes novads"},{"value":"369","title":"Akn\u012bstes novads","country_id":"LV","label":"Akn\u012bstes novads"},{"value":"1","title":"Alabama","country_id":"US","label":"Alabama"},{"value":"486","title":"Alagoas","country_id":"BR","label":"Alagoas"},{"value":"2","title":"Alaska","country_id":"US","label":"Alaska"},{"value":"131","title":"Alava","country_id":"ES","label":"Alava"},{"value":"132","title":"Albacete","country_id":"ES","label":"Albacete"},{"value":"66","title":"Alberta","country_id":"CA","label":"Alberta"},{"value":"133","title":"Alicante","country_id":"ES","label":"Alicante"},{"value":"184","title":"Allier","country_id":"FR","label":"Allier"},{"value":"134","title":"Almeria","country_id":"ES","label":"Almeria"},{"value":"370","title":"Alojas novads","country_id":"LV","label":"Alojas novads"},{"value":"185","title":"Alpes-de-Haute-Provence","country_id":"FR","label":"Alpes-de-Haute-Provence"},{"value":"187","title":"Alpes-Maritimes","country_id":"FR","label":"Alpes-Maritimes"},{"value":"371","title":"Alsungas novads","country_id":"LV","label":"Alsungas novads"},{"value":"372","title":"Al\u016bksnes novads","country_id":"LV","label":"Al\u016bksnes novads"},{"value":"475","title":"Alytaus Apskritis","country_id":"LT","label":"Alytaus Apskritis"},{"value":"487","title":"Amap\u00e1","country_id":"BR","label":"Amap\u00e1"},{"value":"373","title":"Amatas novads","country_id":"LV","label":"Amatas novads"},{"value":"488","title":"Amazonas","country_id":"BR","label":"Amazonas"},{"value":"3","title":"American Samoa","country_id":"US","label":"American Samoa"},{"value":"374","title":"Apes novads","country_id":"LV","label":"Apes novads"},{"value":"106","title":"Appenzell Ausserrhoden","country_id":"CH","label":"Appenzell Ausserrhoden"},{"value":"105","title":"Appenzell Innerrhoden","country_id":"CH","label":"Appenzell Innerrhoden"},{"value":"188","title":"Ard\u00e8che","country_id":"FR","label":"Ard\u00e8che"},{"value":"189","title":"Ardennes","country_id":"FR","label":"Ardennes"},{"value":"190","title":"Ari\u00e8ge","country_id":"FR","label":"Ari\u00e8ge"},{"value":"4","title":"Arizona","country_id":"US","label":"Arizona"},{"value":"5","title":"Arkansas","country_id":"US","label":"Arkansas"},{"value":"6","title":"Armed Forces Africa","country_id":"US","label":"Armed Forces Africa"},{"value":"7","title":"Armed Forces Americas","country_id":"US","label":"Armed Forces Americas"},{"value":"8","title":"Armed Forces Canada","country_id":"US","label":"Armed Forces Canada"},{"value":"9","title":"Armed Forces Europe","country_id":"US","label":"Armed Forces Europe"},{"value":"10","title":"Armed Forces Middle East","country_id":"US","label":"Armed Forces Middle East"},{"value":"11","title":"Armed Forces Pacific","country_id":"US","label":"Armed Forces Pacific"},{"value":"135","title":"Asturias","country_id":"ES","label":"Asturias"},{"value":"191","title":"Aube","country_id":"FR","label":"Aube"},{"value":"375","title":"Auces novads","country_id":"LV","label":"Auces novads"},{"value":"192","title":"Aude","country_id":"FR","label":"Aude"},{"value":"193","title":"Aveyron","country_id":"FR","label":"Aveyron"},{"value":"136","title":"Avila","country_id":"ES","label":"Avila"},{"value":"376","title":"Bab\u012btes novads","country_id":"LV","label":"Bab\u012btes novads"},{"value":"137","title":"Badajoz","country_id":"ES","label":"Badajoz"},{"value":"80","title":"Baden-W\u00fcrttemberg","country_id":"DE","label":"Baden-W\u00fcrttemberg"},{"value":"489","title":"Bahia","country_id":"BR","label":"Bahia"},{"value":"377","title":"Baldones novads","country_id":"LV","label":"Baldones novads"},{"value":"138","title":"Baleares","country_id":"ES","label":"Baleares"},{"value":"378","title":"Baltinavas novads","country_id":"LV","label":"Baltinavas novads"},{"value":"379","title":"Balvu novads","country_id":"LV","label":"Balvu novads"},{"value":"139","title":"Barcelona","country_id":"ES","label":"Barcelona"},{"value":"249","title":"Bas-Rhin","country_id":"FR","label":"Bas-Rhin"},{"value":"108","title":"Basel-Landschaft","country_id":"CH","label":"Basel-Landschaft"},{"value":"109","title":"Basel-Stadt","country_id":"CH","label":"Basel-Stadt"},{"value":"380","title":"Bauskas novads","country_id":"LV","label":"Bauskas novads"},{"value":"81","title":"Bayern","country_id":"DE","label":"Bayern"},{"value":"82","title":"Berlin","country_id":"DE","label":"Berlin"},{"value":"107","title":"Bern","country_id":"CH","label":"Bern"},{"value":"381","title":"Bever\u012bnas novads","country_id":"LV","label":"Bever\u012bnas novads"},{"value":"194","title":"Bouches-du-Rh\u00f4ne","country_id":"FR","label":"Bouches-du-Rh\u00f4ne"},{"value":"83","title":"Brandenburg","country_id":"DE","label":"Brandenburg"},{"value":"84","title":"Bremen","country_id":"DE","label":"Bremen"},{"value":"67","title":"British Columbia","country_id":"CA","label":"British Columbia"},{"value":"382","title":"Broc\u0113nu novads","country_id":"LV","label":"Broc\u0113nu novads"},{"value":"102","title":"Burgenland","country_id":"AT","label":"Burgenland"},{"value":"140","title":"Burgos","country_id":"ES","label":"Burgos"},{"value":"383","title":"Burtnieku novads","country_id":"LV","label":"Burtnieku novads"},{"value":"141","title":"Caceres","country_id":"ES","label":"Caceres"},{"value":"142","title":"Cadiz","country_id":"ES","label":"Cadiz"},{"value":"12","title":"California","country_id":"US","label":"California"},{"value":"195","title":"Calvados","country_id":"FR","label":"Calvados"},{"value":"143","title":"Cantabria","country_id":"ES","label":"Cantabria"},{"value":"196","title":"Cantal","country_id":"FR","label":"Cantal"},{"value":"384","title":"Carnikavas novads","country_id":"LV","label":"Carnikavas novads"},{"value":"144","title":"Castellon","country_id":"ES","label":"Castellon"},{"value":"490","title":"Cear\u00e1","country_id":"BR","label":"Cear\u00e1"},{"value":"387","title":"C\u0113su novads","country_id":"LV","label":"C\u0113su novads"},{"value":"385","title":"Cesvaines novads","country_id":"LV","label":"Cesvaines novads"},{"value":"145","title":"Ceuta","country_id":"ES","label":"Ceuta"},{"value":"197","title":"Charente","country_id":"FR","label":"Charente"},{"value":"198","title":"Charente-Maritime","country_id":"FR","label":"Charente-Maritime"},{"value":"199","title":"Cher","country_id":"FR","label":"Cher"},{"value":"386","title":"Ciblas novads","country_id":"LV","label":"Ciblas novads"},{"value":"146","title":"Ciudad Real","country_id":"ES","label":"Ciudad Real"},{"value":"13","title":"Colorado","country_id":"US","label":"Colorado"},{"value":"14","title":"Connecticut","country_id":"US","label":"Connecticut"},{"value":"147","title":"Cordoba","country_id":"ES","label":"Cordoba"},{"value":"200","title":"Corr\u00e8ze","country_id":"FR","label":"Corr\u00e8ze"},{"value":"201","title":"Corse-du-Sud","country_id":"FR","label":"Corse-du-Sud"},{"value":"203","title":"C\u00f4te-d'Or","country_id":"FR","label":"C\u00f4te-d'Or"},{"value":"204","title":"C\u00f4tes-d'Armor","country_id":"FR","label":"C\u00f4tes-d'Armor"},{"value":"205","title":"Creuse","country_id":"FR","label":"Creuse"},{"value":"148","title":"Cuenca","country_id":"ES","label":"Cuenca"},{"value":"388","title":"Dagdas novads","country_id":"LV","label":"Dagdas novads"},{"value":"355","title":"Daugavpils","country_id":"LV","label":"Daugavpils"},{"value":"389","title":"Daugavpils novads","country_id":"LV","label":"Daugavpils novads"},{"value":"15","title":"Delaware","country_id":"US","label":"Delaware"},{"value":"261","title":"Deux-S\u00e8vres","country_id":"FR","label":"Deux-S\u00e8vres"},{"value":"16","title":"District of Columbia","country_id":"US","label":"District of Columbia"},{"value":"511","title":"Distrito Federal","country_id":"BR","label":"Distrito Federal"},{"value":"390","title":"Dobeles novads","country_id":"LV","label":"Dobeles novads"},{"value":"206","title":"Dordogne","country_id":"FR","label":"Dordogne"},{"value":"207","title":"Doubs","country_id":"FR","label":"Doubs"},{"value":"208","title":"Dr\u00f4me","country_id":"FR","label":"Dr\u00f4me"},{"value":"391","title":"Dundagas novads","country_id":"LV","label":"Dundagas novads"},{"value":"392","title":"Durbes novads","country_id":"LV","label":"Durbes novads"},{"value":"393","title":"Engures novads","country_id":"LV","label":"Engures novads"},{"value":"472","title":"\u0112rg\u013cu novads","country_id":"LV","label":"\u0112rg\u013cu novads"},{"value":"491","title":"Esp\u00edrito Santo","country_id":"BR","label":"Esp\u00edrito Santo"},{"value":"273","title":"Essonne","country_id":"FR","label":"Essonne"},{"value":"333","title":"Etel\u00e4-Karjala","country_id":"FI","label":"Etel\u00e4-Karjala"},{"value":"326","title":"Etel\u00e4-Pohjanmaa","country_id":"FI","label":"Etel\u00e4-Pohjanmaa"},{"value":"325","title":"Etel\u00e4-Savo","country_id":"FI","label":"Etel\u00e4-Savo"},{"value":"209","title":"Eure","country_id":"FR","label":"Eure"},{"value":"210","title":"Eure-et-Loir","country_id":"FR","label":"Eure-et-Loir"},{"value":"17","title":"Federated States Of Micronesia","country_id":"US","label":"Federated States Of Micronesia"},{"value":"211","title":"Finist\u00e8re","country_id":"FR","label":"Finist\u00e8re"},{"value":"18","title":"Florida","country_id":"US","label":"Florida"},{"value":"110","title":"Freiburg","country_id":"CH","label":"Freiburg"},{"value":"212","title":"Gard","country_id":"FR","label":"Gard"},{"value":"394","title":"Garkalnes novads","country_id":"LV","label":"Garkalnes novads"},{"value":"111","title":"Genf","country_id":"CH","label":"Genf"},{"value":"19","title":"Georgia","country_id":"US","label":"Georgia"},{"value":"214","title":"Gers","country_id":"FR","label":"Gers"},{"value":"149","title":"Girona","country_id":"ES","label":"Girona"},{"value":"215","title":"Gironde","country_id":"FR","label":"Gironde"},{"value":"112","title":"Glarus","country_id":"CH","label":"Glarus"},{"value":"492","title":"Goi\u00e1s","country_id":"BR","label":"Goi\u00e1s"},{"value":"150","title":"Granada","country_id":"ES","label":"Granada"},{"value":"113","title":"Graub\u00fcnden","country_id":"CH","label":"Graub\u00fcnden"},{"value":"395","title":"Grobi\u0146as novads","country_id":"LV","label":"Grobi\u0146as novads"},{"value":"151","title":"Guadalajara","country_id":"ES","label":"Guadalajara"},{"value":"20","title":"Guam","country_id":"US","label":"Guam"},{"value":"152","title":"Guipuzcoa","country_id":"ES","label":"Guipuzcoa"},{"value":"396","title":"Gulbenes novads","country_id":"LV","label":"Gulbenes novads"},{"value":"85","title":"Hamburg","country_id":"DE","label":"Hamburg"},{"value":"250","title":"Haut-Rhin","country_id":"FR","label":"Haut-Rhin"},{"value":"202","title":"Haute-Corse","country_id":"FR","label":"Haute-Corse"},{"value":"213","title":"Haute-Garonne","country_id":"FR","label":"Haute-Garonne"},{"value":"225","title":"Haute-Loire","country_id":"FR","label":"Haute-Loire"},{"value":"234","title":"Haute-Marne","country_id":"FR","label":"Haute-Marne"},{"value":"252","title":"Haute-Sa\u00f4ne","country_id":"FR","label":"Haute-Sa\u00f4ne"},{"value":"256","title":"Haute-Savoie","country_id":"FR","label":"Haute-Savoie"},{"value":"269","title":"Haute-Vienne","country_id":"FR","label":"Haute-Vienne"},{"value":"186","title":"Hautes-Alpes","country_id":"FR","label":"Hautes-Alpes"},{"value":"247","title":"Hautes-Pyr\u00e9n\u00e9es","country_id":"FR","label":"Hautes-Pyr\u00e9n\u00e9es"},{"value":"274","title":"Hauts-de-Seine","country_id":"FR","label":"Hauts-de-Seine"},{"value":"21","title":"Hawaii","country_id":"US","label":"Hawaii"},{"value":"216","title":"H\u00e9rault","country_id":"FR","label":"H\u00e9rault"},{"value":"86","title":"Hessen","country_id":"DE","label":"Hessen"},{"value":"153","title":"Huelva","country_id":"ES","label":"Huelva"},{"value":"154","title":"Huesca","country_id":"ES","label":"Huesca"},{"value":"22","title":"Idaho","country_id":"US","label":"Idaho"},{"value":"397","title":"Iecavas novads","country_id":"LV","label":"Iecavas novads"},{"value":"398","title":"Ik\u0161\u0137iles novads","country_id":"LV","label":"Ik\u0161\u0137iles novads"},{"value":"217","title":"Ille-et-Vilaine","country_id":"FR","label":"Ille-et-Vilaine"},{"value":"23","title":"Illinois","country_id":"US","label":"Illinois"},{"value":"399","title":"Il\u016bkstes novads","country_id":"LV","label":"Il\u016bkstes novads"},{"value":"400","title":"In\u010dukalna novads","country_id":"LV","label":"In\u010dukalna novads"},{"value":"24","title":"Indiana","country_id":"US","label":"Indiana"},{"value":"218","title":"Indre","country_id":"FR","label":"Indre"},{"value":"219","title":"Indre-et-Loire","country_id":"FR","label":"Indre-et-Loire"},{"value":"25","title":"Iowa","country_id":"US","label":"Iowa"},{"value":"220","title":"Is\u00e8re","country_id":"FR","label":"Is\u00e8re"},{"value":"337","title":"It\u00e4-Uusimaa","country_id":"FI","label":"It\u00e4-Uusimaa"},{"value":"155","title":"Jaen","country_id":"ES","label":"Jaen"},{"value":"401","title":"Jaunjelgavas novads","country_id":"LV","label":"Jaunjelgavas novads"},{"value":"402","title":"Jaunpiebalgas novads","country_id":"LV","label":"Jaunpiebalgas novads"},{"value":"403","title":"Jaunpils novads","country_id":"LV","label":"Jaunpils novads"},{"value":"357","title":"J\u0113kabpils","country_id":"LV","label":"J\u0113kabpils"},{"value":"405","title":"J\u0113kabpils novads","country_id":"LV","label":"J\u0113kabpils novads"},{"value":"356","title":"Jelgava","country_id":"LV","label":"Jelgava"},{"value":"404","title":"Jelgavas novads","country_id":"LV","label":"Jelgavas novads"},{"value":"221","title":"Jura","country_id":"FR","label":"Jura"},{"value":"114","title":"Jura","country_id":"CH","label":"Jura"},{"value":"358","title":"J\u016brmala","country_id":"LV","label":"J\u016brmala"},{"value":"322","title":"Kainuu","country_id":"FI","label":"Kainuu"},{"value":"406","title":"Kandavas novads","country_id":"LV","label":"Kandavas novads"},{"value":"26","title":"Kansas","country_id":"US","label":"Kansas"},{"value":"335","title":"Kanta-H\u00e4me","country_id":"FI","label":"Kanta-H\u00e4me"},{"value":"99","title":"K\u00e4rnten","country_id":"AT","label":"K\u00e4rnten"},{"value":"412","title":"K\u0101rsavas novads","country_id":"LV","label":"K\u0101rsavas novads"},{"value":"476","title":"Kauno Apskritis","country_id":"LT","label":"Kauno Apskritis"},{"value":"473","title":"\u0136eguma novads","country_id":"LV","label":"\u0136eguma novads"},{"value":"474","title":"\u0136ekavas novads","country_id":"LV","label":"\u0136ekavas novads"},{"value":"27","title":"Kentucky","country_id":"US","label":"Kentucky"},{"value":"330","title":"Keski-Pohjanmaa","country_id":"FI","label":"Keski-Pohjanmaa"},{"value":"331","title":"Keski-Suomi","country_id":"FI","label":"Keski-Suomi"},{"value":"477","title":"Klaip\u0117dos Apskritis","country_id":"LT","label":"Klaip\u0117dos Apskritis"},{"value":"407","title":"Kokneses novads","country_id":"LV","label":"Kokneses novads"},{"value":"410","title":"Kr\u0101slavas novads","country_id":"LV","label":"Kr\u0101slavas novads"},{"value":"408","title":"Krimuldas novads","country_id":"LV","label":"Krimuldas novads"},{"value":"409","title":"Krustpils novads","country_id":"LV","label":"Krustpils novads"},{"value":"411","title":"Kuld\u012bgas novads","country_id":"LV","label":"Kuld\u012bgas novads"},{"value":"338","title":"Kymenlaakso","country_id":"FI","label":"Kymenlaakso"},{"value":"156","title":"La Rioja","country_id":"ES","label":"La Rioja"},{"value":"222","title":"Landes","country_id":"FR","label":"Landes"},{"value":"320","title":"Lappi","country_id":"FI","label":"Lappi"},{"value":"157","title":"Las Palmas","country_id":"ES","label":"Las Palmas"},{"value":"158","title":"Leon","country_id":"ES","label":"Leon"},{"value":"413","title":"Lielv\u0101rdes novads","country_id":"LV","label":"Lielv\u0101rdes novads"},{"value":"359","title":"Liep\u0101ja","country_id":"LV","label":"Liep\u0101ja"},{"value":"360","title":"Liep\u0101jas novads","country_id":"LV","label":"Liep\u0101jas novads"},{"value":"417","title":"L\u012bgatnes novads","country_id":"LV","label":"L\u012bgatnes novads"},{"value":"414","title":"Limba\u017eu novads","country_id":"LV","label":"Limba\u017eu novads"},{"value":"418","title":"L\u012bv\u0101nu novads","country_id":"LV","label":"L\u012bv\u0101nu novads"},{"value":"159","title":"Lleida","country_id":"ES","label":"Lleida"},{"value":"223","title":"Loir-et-Cher","country_id":"FR","label":"Loir-et-Cher"},{"value":"224","title":"Loire","country_id":"FR","label":"Loire"},{"value":"226","title":"Loire-Atlantique","country_id":"FR","label":"Loire-Atlantique"},{"value":"227","title":"Loiret","country_id":"FR","label":"Loiret"},{"value":"228","title":"Lot","country_id":"FR","label":"Lot"},{"value":"229","title":"Lot-et-Garonne","country_id":"FR","label":"Lot-et-Garonne"},{"value":"28","title":"Louisiana","country_id":"US","label":"Louisiana"},{"value":"230","title":"Loz\u00e8re","country_id":"FR","label":"Loz\u00e8re"},{"value":"415","title":"Lub\u0101nas novads","country_id":"LV","label":"Lub\u0101nas novads"},{"value":"416","title":"Ludzas novads","country_id":"LV","label":"Ludzas novads"},{"value":"160","title":"Lugo","country_id":"ES","label":"Lugo"},{"value":"115","title":"Luzern","country_id":"CH","label":"Luzern"},{"value":"419","title":"Madonas novads","country_id":"LV","label":"Madonas novads"},{"value":"161","title":"Madrid","country_id":"ES","label":"Madrid"},{"value":"29","title":"Maine","country_id":"US","label":"Maine"},{"value":"231","title":"Maine-et-Loire","country_id":"FR","label":"Maine-et-Loire"},{"value":"162","title":"Malaga","country_id":"ES","label":"Malaga"},{"value":"421","title":"M\u0101lpils novads","country_id":"LV","label":"M\u0101lpils novads"},{"value":"232","title":"Manche","country_id":"FR","label":"Manche"},{"value":"68","title":"Manitoba","country_id":"CA","label":"Manitoba"},{"value":"493","title":"Maranh\u00e3o","country_id":"BR","label":"Maranh\u00e3o"},{"value":"478","title":"Marijampol\u0117s Apskritis","country_id":"LT","label":"Marijampol\u0117s Apskritis"},{"value":"233","title":"Marne","country_id":"FR","label":"Marne"},{"value":"30","title":"Marshall Islands","country_id":"US","label":"Marshall Islands"},{"value":"422","title":"M\u0101rupes novads","country_id":"LV","label":"M\u0101rupes novads"},{"value":"31","title":"Maryland","country_id":"US","label":"Maryland"},{"value":"32","title":"Massachusetts","country_id":"US","label":"Massachusetts"},{"value":"494","title":"Mato Grosso","country_id":"BR","label":"Mato Grosso"},{"value":"495","title":"Mato Grosso do Sul","country_id":"BR","label":"Mato Grosso do Sul"},{"value":"235","title":"Mayenne","country_id":"FR","label":"Mayenne"},{"value":"420","title":"Mazsalacas novads","country_id":"LV","label":"Mazsalacas novads"},{"value":"87","title":"Mecklenburg-Vorpommern","country_id":"DE","label":"Mecklenburg-Vorpommern"},{"value":"163","title":"Melilla","country_id":"ES","label":"Melilla"},{"value":"236","title":"Meurthe-et-Moselle","country_id":"FR","label":"Meurthe-et-Moselle"},{"value":"237","title":"Meuse","country_id":"FR","label":"Meuse"},{"value":"33","title":"Michigan","country_id":"US","label":"Michigan"},{"value":"496","title":"Minas Gerais","country_id":"BR","label":"Minas Gerais"},{"value":"34","title":"Minnesota","country_id":"US","label":"Minnesota"},{"value":"35","title":"Mississippi","country_id":"US","label":"Mississippi"},{"value":"36","title":"Missouri","country_id":"US","label":"Missouri"},{"value":"37","title":"Montana","country_id":"US","label":"Montana"},{"value":"238","title":"Morbihan","country_id":"FR","label":"Morbihan"},{"value":"239","title":"Moselle","country_id":"FR","label":"Moselle"},{"value":"164","title":"Murcia","country_id":"ES","label":"Murcia"},{"value":"423","title":"Nauk\u0161\u0113nu novads","country_id":"LV","label":"Nauk\u0161\u0113nu novads"},{"value":"165","title":"Navarra","country_id":"ES","label":"Navarra"},{"value":"38","title":"Nebraska","country_id":"US","label":"Nebraska"},{"value":"424","title":"Neretas novads","country_id":"LV","label":"Neretas novads"},{"value":"116","title":"Neuenburg","country_id":"CH","label":"Neuenburg"},{"value":"39","title":"Nevada","country_id":"US","label":"Nevada"},{"value":"70","title":"New Brunswick","country_id":"CA","label":"New Brunswick"},{"value":"40","title":"New Hampshire","country_id":"US","label":"New Hampshire"},{"value":"41","title":"New Jersey","country_id":"US","label":"New Jersey"},{"value":"42","title":"New Mexico","country_id":"US","label":"New Mexico"},{"value":"43","title":"New York","country_id":"US","label":"New York"},{"value":"69","title":"Newfoundland and Labrador","country_id":"CA","label":"Newfoundland and Labrador"},{"value":"425","title":"N\u012bcas novads","country_id":"LV","label":"N\u012bcas novads"},{"value":"117","title":"Nidwalden","country_id":"CH","label":"Nidwalden"},{"value":"96","title":"Nieder\u00f6sterreich","country_id":"AT","label":"Nieder\u00f6sterreich"},{"value":"79","title":"Niedersachsen","country_id":"DE","label":"Niedersachsen"},{"value":"240","title":"Ni\u00e8vre","country_id":"FR","label":"Ni\u00e8vre"},{"value":"241","title":"Nord","country_id":"FR","label":"Nord"},{"value":"88","title":"Nordrhein-Westfalen","country_id":"DE","label":"Nordrhein-Westfalen"},{"value":"44","title":"North Carolina","country_id":"US","label":"North Carolina"},{"value":"45","title":"North Dakota","country_id":"US","label":"North Dakota"},{"value":"46","title":"Northern Mariana Islands","country_id":"US","label":"Northern Mariana Islands"},{"value":"72","title":"Northwest Territories","country_id":"CA","label":"Northwest Territories"},{"value":"71","title":"Nova Scotia","country_id":"CA","label":"Nova Scotia"},{"value":"73","title":"Nunavut","country_id":"CA","label":"Nunavut"},{"value":"97","title":"Ober\u00f6sterreich","country_id":"AT","label":"Ober\u00f6sterreich"},{"value":"118","title":"Obwalden","country_id":"CH","label":"Obwalden"},{"value":"426","title":"Ogres novads","country_id":"LV","label":"Ogres novads"},{"value":"47","title":"Ohio","country_id":"US","label":"Ohio"},{"value":"242","title":"Oise","country_id":"FR","label":"Oise"},{"value":"48","title":"Oklahoma","country_id":"US","label":"Oklahoma"},{"value":"427","title":"Olaines novads","country_id":"LV","label":"Olaines novads"},{"value":"74","title":"Ontario","country_id":"CA","label":"Ontario"},{"value":"49","title":"Oregon","country_id":"US","label":"Oregon"},{"value":"243","title":"Orne","country_id":"FR","label":"Orne"},{"value":"166","title":"Ourense","country_id":"ES","label":"Ourense"},{"value":"428","title":"Ozolnieku novads","country_id":"LV","label":"Ozolnieku novads"},{"value":"334","title":"P\u00e4ij\u00e4t-H\u00e4me","country_id":"FI","label":"P\u00e4ij\u00e4t-H\u00e4me"},{"value":"50","title":"Palau","country_id":"US","label":"Palau"},{"value":"167","title":"Palencia","country_id":"ES","label":"Palencia"},{"value":"479","title":"Panev\u0117\u017eio Apskritis","country_id":"LT","label":"Panev\u0117\u017eio Apskritis"},{"value":"497","title":"Par\u00e1","country_id":"BR","label":"Par\u00e1"},{"value":"498","title":"Para\u00edba","country_id":"BR","label":"Para\u00edba"},{"value":"499","title":"Paran\u00e1","country_id":"BR","label":"Paran\u00e1"},{"value":"432","title":"P\u0101rgaujas novads","country_id":"LV","label":"P\u0101rgaujas novads"},{"value":"257","title":"Paris","country_id":"FR","label":"Paris"},{"value":"244","title":"Pas-de-Calais","country_id":"FR","label":"Pas-de-Calais"},{"value":"433","title":"P\u0101vilostas novads","country_id":"LV","label":"P\u0101vilostas novads"},{"value":"51","title":"Pennsylvania","country_id":"US","label":"Pennsylvania"},{"value":"500","title":"Pernambuco","country_id":"BR","label":"Pernambuco"},{"value":"501","title":"Piau\u00ed","country_id":"BR","label":"Piau\u00ed"},{"value":"328","title":"Pirkanmaa","country_id":"FI","label":"Pirkanmaa"},{"value":"434","title":"P\u013cavi\u0146u novads","country_id":"LV","label":"P\u013cavi\u0146u novads"},{"value":"327","title":"Pohjanmaa","country_id":"FI","label":"Pohjanmaa"},{"value":"323","title":"Pohjois-Karjala","country_id":"FI","label":"Pohjois-Karjala"},{"value":"321","title":"Pohjois-Pohjanmaa","country_id":"FI","label":"Pohjois-Pohjanmaa"},{"value":"324","title":"Pohjois-Savo","country_id":"FI","label":"Pohjois-Savo"},{"value":"168","title":"Pontevedra","country_id":"ES","label":"Pontevedra"},{"value":"429","title":"Prei\u013cu novads","country_id":"LV","label":"Prei\u013cu novads"},{"value":"430","title":"Priekules novads","country_id":"LV","label":"Priekules novads"},{"value":"431","title":"Prieku\u013cu novads","country_id":"LV","label":"Prieku\u013cu novads"},{"value":"75","title":"Prince Edward Island","country_id":"CA","label":"Prince Edward Island"},{"value":"52","title":"Puerto Rico","country_id":"US","label":"Puerto Rico"},{"value":"245","title":"Puy-de-D\u00f4me","country_id":"FR","label":"Puy-de-D\u00f4me"},{"value":"246","title":"Pyr\u00e9n\u00e9es-Atlantiques","country_id":"FR","label":"Pyr\u00e9n\u00e9es-Atlantiques"},{"value":"248","title":"Pyr\u00e9n\u00e9es-Orientales","country_id":"FR","label":"Pyr\u00e9n\u00e9es-Orientales"},{"value":"76","title":"Quebec","country_id":"CA","label":"Quebec"},{"value":"435","title":"Raunas novads","country_id":"LV","label":"Raunas novads"},{"value":"361","title":"R\u0113zekne","country_id":"LV","label":"R\u0113zekne"},{"value":"442","title":"R\u0113zeknes novads","country_id":"LV","label":"R\u0113zeknes novads"},{"value":"89","title":"Rheinland-Pfalz","country_id":"DE","label":"Rheinland-Pfalz"},{"value":"53","title":"Rhode Island","country_id":"US","label":"Rhode Island"},{"value":"251","title":"Rh\u00f4ne","country_id":"FR","label":"Rh\u00f4ne"},{"value":"436","title":"Riebi\u0146u novads","country_id":"LV","label":"Riebi\u0146u novads"},{"value":"362","title":"R\u012bga","country_id":"LV","label":"R\u012bga"},{"value":"363","title":"R\u012bgas novads","country_id":"LV","label":"R\u012bgas novads"},{"value":"502","title":"Rio de Janeiro","country_id":"BR","label":"Rio de Janeiro"},{"value":"503","title":"Rio Grande do Norte","country_id":"BR","label":"Rio Grande do Norte"},{"value":"504","title":"Rio Grande do Sul","country_id":"BR","label":"Rio Grande do Sul"},{"value":"437","title":"Rojas novads","country_id":"LV","label":"Rojas novads"},{"value":"505","title":"Rond\u00f4nia","country_id":"BR","label":"Rond\u00f4nia"},{"value":"438","title":"Ropa\u017eu novads","country_id":"LV","label":"Ropa\u017eu novads"},{"value":"506","title":"Roraima","country_id":"BR","label":"Roraima"},{"value":"439","title":"Rucavas novads","country_id":"LV","label":"Rucavas novads"},{"value":"440","title":"Rug\u0101ju novads","country_id":"LV","label":"Rug\u0101ju novads"},{"value":"443","title":"R\u016bjienas novads","country_id":"LV","label":"R\u016bjienas novads"},{"value":"441","title":"Rund\u0101les novads","country_id":"LV","label":"Rund\u0101les novads"},{"value":"90","title":"Saarland","country_id":"DE","label":"Saarland"},{"value":"91","title":"Sachsen","country_id":"DE","label":"Sachsen"},{"value":"92","title":"Sachsen-Anhalt","country_id":"DE","label":"Sachsen-Anhalt"},{"value":"444","title":"Salacgr\u012bvas novads","country_id":"LV","label":"Salacgr\u012bvas novads"},{"value":"169","title":"Salamanca","country_id":"ES","label":"Salamanca"},{"value":"445","title":"Salas novads","country_id":"LV","label":"Salas novads"},{"value":"446","title":"Salaspils novads","country_id":"LV","label":"Salaspils novads"},{"value":"447","title":"Saldus novads","country_id":"LV","label":"Saldus novads"},{"value":"98","title":"Salzburg","country_id":"AT","label":"Salzburg"},{"value":"507","title":"Santa Catarina","country_id":"BR","label":"Santa Catarina"},{"value":"170","title":"Santa Cruz de Tenerife","country_id":"ES","label":"Santa Cruz de Tenerife"},{"value":"508","title":"S\u00e3o Paulo","country_id":"BR","label":"S\u00e3o Paulo"},{"value":"253","title":"Sa\u00f4ne-et-Loire","country_id":"FR","label":"Sa\u00f4ne-et-Loire"},{"value":"254","title":"Sarthe","country_id":"FR","label":"Sarthe"},{"value":"77","title":"Saskatchewan","country_id":"CA","label":"Saskatchewan"},{"value":"329","title":"Satakunta","country_id":"FI","label":"Satakunta"},{"value":"448","title":"Saulkrastu novads","country_id":"LV","label":"Saulkrastu novads"},{"value":"255","title":"Savoie","country_id":"FR","label":"Savoie"},{"value":"120","title":"Schaffhausen","country_id":"CH","label":"Schaffhausen"},{"value":"93","title":"Schleswig-Holstein","country_id":"DE","label":"Schleswig-Holstein"},{"value":"122","title":"Schwyz","country_id":"CH","label":"Schwyz"},{"value":"171","title":"Segovia","country_id":"ES","label":"Segovia"},{"value":"259","title":"Seine-et-Marne","country_id":"FR","label":"Seine-et-Marne"},{"value":"258","title":"Seine-Maritime","country_id":"FR","label":"Seine-Maritime"},{"value":"275","title":"Seine-Saint-Denis","country_id":"FR","label":"Seine-Saint-Denis"},{"value":"455","title":"S\u0113jas novads","country_id":"LV","label":"S\u0113jas novads"},{"value":"509","title":"Sergipe","country_id":"BR","label":"Sergipe"},{"value":"172","title":"Sevilla","country_id":"ES","label":"Sevilla"},{"value":"480","title":"\u0160iauli\u0173 Apskritis","country_id":"LT","label":"\u0160iauli\u0173 Apskritis"},{"value":"449","title":"Siguldas novads","country_id":"LV","label":"Siguldas novads"},{"value":"451","title":"Skr\u012bveru novads","country_id":"LV","label":"Skr\u012bveru novads"},{"value":"450","title":"Skrundas novads","country_id":"LV","label":"Skrundas novads"},{"value":"452","title":"Smiltenes novads","country_id":"LV","label":"Smiltenes novads"},{"value":"121","title":"Solothurn","country_id":"CH","label":"Solothurn"},{"value":"262","title":"Somme","country_id":"FR","label":"Somme"},{"value":"173","title":"Soria","country_id":"ES","label":"Soria"},{"value":"54","title":"South Carolina","country_id":"US","label":"South Carolina"},{"value":"55","title":"South Dakota","country_id":"US","label":"South Dakota"},{"value":"119","title":"St. Gallen","country_id":"CH","label":"St. Gallen"},{"value":"100","title":"Steiermark","country_id":"AT","label":"Steiermark"},{"value":"453","title":"Stopi\u0146u novads","country_id":"LV","label":"Stopi\u0146u novads"},{"value":"454","title":"Stren\u010du novads","country_id":"LV","label":"Stren\u010du novads"},{"value":"456","title":"Talsu novads","country_id":"LV","label":"Talsu novads"},{"value":"263","title":"Tarn","country_id":"FR","label":"Tarn"},{"value":"264","title":"Tarn-et-Garonne","country_id":"FR","label":"Tarn-et-Garonne"},{"value":"174","title":"Tarragona","country_id":"ES","label":"Tarragona"},{"value":"481","title":"Taurag\u0117s Apskritis","country_id":"LT","label":"Taurag\u0117s Apskritis"},{"value":"482","title":"Tel\u0161i\u0173 Apskritis","country_id":"LT","label":"Tel\u0161i\u0173 Apskritis"},{"value":"56","title":"Tennessee","country_id":"US","label":"Tennessee"},{"value":"272","title":"Territoire-de-Belfort","country_id":"FR","label":"Territoire-de-Belfort"},{"value":"175","title":"Teruel","country_id":"ES","label":"Teruel"},{"value":"458","title":"T\u0113rvetes novads","country_id":"LV","label":"T\u0113rvetes novads"},{"value":"124","title":"Tessin","country_id":"CH","label":"Tessin"},{"value":"57","title":"Texas","country_id":"US","label":"Texas"},{"value":"123","title":"Thurgau","country_id":"CH","label":"Thurgau"},{"value":"94","title":"Th\u00fcringen","country_id":"DE","label":"Th\u00fcringen"},{"value":"101","title":"Tirol","country_id":"AT","label":"Tirol"},{"value":"510","title":"Tocantins","country_id":"BR","label":"Tocantins"},{"value":"176","title":"Toledo","country_id":"ES","label":"Toledo"},{"value":"457","title":"Tukuma novads","country_id":"LV","label":"Tukuma novads"},{"value":"125","title":"Uri","country_id":"CH","label":"Uri"},{"value":"58","title":"Utah","country_id":"US","label":"Utah"},{"value":"483","title":"Utenos Apskritis","country_id":"LT","label":"Utenos Apskritis"},{"value":"336","title":"Uusimaa","country_id":"FI","label":"Uusimaa"},{"value":"459","title":"Vai\u0146odes novads","country_id":"LV","label":"Vai\u0146odes novads"},{"value":"277","title":"Val-d'Oise","country_id":"FR","label":"Val-d'Oise"},{"value":"276","title":"Val-de-Marne","country_id":"FR","label":"Val-de-Marne"},{"value":"177","title":"Valencia","country_id":"ES","label":"Valencia"},{"value":"460","title":"Valkas novads","country_id":"LV","label":"Valkas novads"},{"value":"178","title":"Valladolid","country_id":"ES","label":"Valladolid"},{"value":"364","title":"Valmiera","country_id":"LV","label":"Valmiera"},{"value":"461","title":"Valmieras novads","country_id":"LV","label":"Valmieras novads"},{"value":"265","title":"Var","country_id":"FR","label":"Var"},{"value":"462","title":"Varak\u013c\u0101nu novads","country_id":"LV","label":"Varak\u013c\u0101nu novads"},{"value":"469","title":"V\u0101rkavas novads","country_id":"LV","label":"V\u0101rkavas novads"},{"value":"332","title":"Varsinais-Suomi","country_id":"FI","label":"Varsinais-Suomi"},{"value":"266","title":"Vaucluse","country_id":"FR","label":"Vaucluse"},{"value":"463","title":"Vecpiebalgas novads","country_id":"LV","label":"Vecpiebalgas novads"},{"value":"464","title":"Vecumnieku novads","country_id":"LV","label":"Vecumnieku novads"},{"value":"267","title":"Vend\u00e9e","country_id":"FR","label":"Vend\u00e9e"},{"value":"365","title":"Ventspils","country_id":"LV","label":"Ventspils"},{"value":"465","title":"Ventspils novads","country_id":"LV","label":"Ventspils novads"},{"value":"59","title":"Vermont","country_id":"US","label":"Vermont"},{"value":"268","title":"Vienne","country_id":"FR","label":"Vienne"},{"value":"466","title":"Vies\u012btes novads","country_id":"LV","label":"Vies\u012btes novads"},{"value":"467","title":"Vi\u013cakas novads","country_id":"LV","label":"Vi\u013cakas novads"},{"value":"468","title":"Vi\u013c\u0101nu novads","country_id":"LV","label":"Vi\u013c\u0101nu novads"},{"value":"484","title":"Vilniaus Apskritis","country_id":"LT","label":"Vilniaus Apskritis"},{"value":"60","title":"Virgin Islands","country_id":"US","label":"Virgin Islands"},{"value":"61","title":"Virginia","country_id":"US","label":"Virginia"},{"value":"179","title":"Vizcaya","country_id":"ES","label":"Vizcaya"},{"value":"103","title":"Vorarlberg","country_id":"AT","label":"Vorarlberg"},{"value":"270","title":"Vosges","country_id":"FR","label":"Vosges"},{"value":"126","title":"Waadt","country_id":"CH","label":"Waadt"},{"value":"127","title":"Wallis","country_id":"CH","label":"Wallis"},{"value":"62","title":"Washington","country_id":"US","label":"Washington"},{"value":"63","title":"West Virginia","country_id":"US","label":"West Virginia"},{"value":"95","title":"Wien","country_id":"AT","label":"Wien"},{"value":"64","title":"Wisconsin","country_id":"US","label":"Wisconsin"},{"value":"65","title":"Wyoming","country_id":"US","label":"Wyoming"},{"value":"271","title":"Yonne","country_id":"FR","label":"Yonne"},{"value":"78","title":"Yukon Territory","country_id":"CA","label":"Yukon Territory"},{"value":"260","title":"Yvelines","country_id":"FR","label":"Yvelines"},{"value":"180","title":"Zamora","country_id":"ES","label":"Zamora"},{"value":"181","title":"Zaragoza","country_id":"ES","label":"Zaragoza"},{"value":"470","title":"Zilupes novads","country_id":"LV","label":"Zilupes novads"},{"value":"128","title":"Zug","country_id":"CH","label":"Zug"},{"value":"129","title":"Z\u00fcrich","country_id":"CH","label":"Z\u00fcrich"}]}}},"types":{"form.input":{"component":"Magento_Ui\/js\/form\/element\/abstract","config":{"provider":"checkoutProvider","deps":["checkoutProvider"],"template":"ui\/form\/field","elementTmpl":"ui\/form\/element\/input"}}}}            }
+        }
+    </script>
+    <script>
+        window.checkoutConfig = {"payment":{"ccform":{"icons":{"AE":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/ae.png","width":46,"height":30},"VI":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/vi.png","width":46,"height":30},"MC":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/mc.png","width":46,"height":30},"DI":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/di.png","width":46,"height":30},"JCB":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/jcb.png","width":46,"height":30},"SM":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/sm.png","width":46,"height":30},"DN":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/dn.png","width":46,"height":30},"SO":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/so.png","width":46,"height":30},"MI":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/mi.png","width":46,"height":30},"MD":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Payment\/images\/cc\/md.png","width":46,"height":30}}},"cryozonic_stripe":{"months":{"1":"01 - January","2":"02 - February","3":"03 - March","4":"04 - April","5":"05 - May","6":"06 - June","7":"07 - July","8":"08 - August","9":"09 - September","10":"10 - October","11":"11 - November","12":"12 - December"},"years":{"2018":2018,"2019":2019,"2020":2020,"2021":2021,"2022":2022,"2023":2023,"2024":2024,"2025":2025,"2026":2026,"2027":2027,"2028":2028,"2029":2029,"2030":2030,"2031":2031,"2032":2032,"2033":2033},"cvvImageUrl":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Checkout\/cvv.png","isStripeJsEnabled":true,"useStoreCurrency":true,"stripeJsKey":"pk_live_5630KyaZIF1flzo8gq94qHN9","isAvsEnabled":false,"showSaveCardOption":false,"alwaysSaveCard":false,"savedCards":[],"module":"Stripe Payments M2 v1.4.2"},"cryozonic_stripe_apple_pay":{"months":{"1":"01 - January","2":"02 - February","3":"03 - March","4":"04 - April","5":"05 - May","6":"06 - June","7":"07 - July","8":"08 - August","9":"09 - September","10":"10 - October","11":"11 - November","12":"12 - December"},"years":{"2018":2018,"2019":2019,"2020":2020,"2021":2021,"2022":2022,"2023":2023,"2024":2024,"2025":2025,"2026":2026,"2027":2027,"2028":2028,"2029":2029,"2030":2030,"2031":2031,"2032":2032,"2033":2033},"cvvImageUrl":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Checkout\/cvv.png","isStripeJsEnabled":true,"useStoreCurrency":true,"stripeJsKey":"pk_live_5630KyaZIF1flzo8gq94qHN9","isAvsEnabled":false,"showSaveCardOption":false,"alwaysSaveCard":false,"savedCards":[],"module":"Stripe Payments M2 v1.4.2"},"iframe":{"timeoutTime":{"authorizenet_directpost":30000,"cybersource":30000,"payflowpro":30000},"dateDelim":{"authorizenet_directpost":"","cybersource":"","payflowpro":""},"cardFieldsMap":{"authorizenet_directpost":[],"cybersource":[],"payflowpro":[]},"source":{"authorizenet_directpost":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/blank.html","cybersource":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/blank.html","payflowpro":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/blank.html"},"controllerName":{"authorizenet_directpost":"checkout_flow","cybersource":"checkout_flow","payflowpro":"checkout_flow"},"cgiUrl":{"authorizenet_directpost":"https:\/\/secure.authorize.net\/gateway\/transact.dll","cybersource":"https:\/\/testsecureacceptance.cybersource.com\/silent\/embedded\/token\/create","payflowpro":"https:\/\/payflowlink.paypal.com"},"placeOrderUrl":{"authorizenet_directpost":"https:\/\/www.swellbottle.com\/authorizenet\/directpost_payment\/place\/","cybersource":"https:\/\/www.swellbottle.com\/cybersource\/SilentOrder\/TokenRequest\/","payflowpro":"https:\/\/www.swellbottle.com\/paypal\/transparent\/requestSecureToken\/"},"saveOrderUrl":{"authorizenet_directpost":"https:\/\/www.swellbottle.com\/checkout\/onepage\/saveOrder\/","cybersource":"https:\/\/www.swellbottle.com\/checkout\/onepage\/saveOrder\/","payflowpro":"https:\/\/www.swellbottle.com\/checkout\/onepage\/saveOrder\/"},"expireYearLength":{"authorizenet_directpost":2,"cybersource":4,"payflowpro":2}},"customerBalance":{"isAvailable":false,"amountSubstracted":false,"usedAmount":0,"balance":0,"balanceRemoveUrl":"https:\/\/www.swellbottle.com\/storecredit\/cart\/remove\/"},"eway":{"orderCancelUrl":"https:\/\/www.swellbottle.com\/eway\/order\/cancel\/","paymentGetAccessCodeUrl":"https:\/\/www.swellbottle.com\/eway\/payment\/getAccessCode\/","paymentUpdateUrl":"https:\/\/www.swellbottle.com\/eway\/payment\/complete\/","connectionType":"direct","cryptUrl":"https:\/\/secure.ewaypayments.com\/scripts\/eCrypt.js","encryptKey":"","endpoint":"Sandbox"},"giftCardAccount":{"hasUsage":false,"amount":"0.0000","cards":[],"available_amount":"0.0000"},"paypalExpress":{"paymentAcceptanceMarkHref":"https:\/\/www.paypal.com\/us\/cgi-bin\/webscr?cmd=xpt\/Marketing\/popup\/OLCWhatIsPayPal-outside","paymentAcceptanceMarkSrc":"https:\/\/www.paypalobjects.com\/webstatic\/en_US\/i\/buttons\/pp-acceptance-medium.png","isContextCheckout":false,"inContextConfig":[],"redirectUrl":{"paypal_express":"https:\/\/www.swellbottle.com\/paypal\/express\/start\/"},"billingAgreementCode":{"paypal_express":null}},"paypalIframe":[],"paypalBillingAgreement":{"agreements":[],"transportName":"ba_agreement_id"},"reward":{"isAvailable":false,"amountSubstracted":false,"usedAmount":0,"balance":0,"label":" store reward points available (<span class=\"price\">$0.00<\/span>)"},"braintree":{"isActive":false,"clientToken":null,"ccTypesMapper":{"american-express":"AE","discover":"DI","jcb":"JCB","mastercard":"MC","master-card":"MC","visa":"VI","maestro":"MI","diners-club":"DN","unionpay":"CUP"},"sdkUrl":"https:\/\/js.braintreegateway.com\/js\/braintree-2.25.0.min.js","countrySpecificCardTypes":[],"availableCardTypes":["CUP","AE","VI","MC","DI","JCB","DN","MI"],"useCvv":true,"environment":"sandbox","kountMerchantId":null,"hasFraudProtection":false,"merchantId":null,"ccVaultCode":"braintree_cc_vault"},"three_d_secure":{"enabled":false,"thresholdAmount":0,"specificCountries":[]},"braintree_paypal":{"isActive":false,"title":"PayPal (Braintree)","isAllowShippingAddressOverride":true,"merchantName":null,"locale":"en_us","paymentAcceptanceMarkSrc":"https:\/\/www.paypalobjects.com\/webstatic\/en_US\/i\/buttons\/pp-acceptance-medium.png","vaultCode":"braintree_paypal_vault","skipOrderReview":false,"paymentIcon":{"url":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/Magento_Braintree\/images\/paypal.png","width":54,"height":32}},"worldpay":{"transactionDataUrl":"https:\/\/www.swellbottle.com\/worldpay\/htmlredirect\/gettransactiondata\/"}},"formKey":"SywlFwBmole8Ceem","customerData":[],"quoteData":{"entity_id":"62e91cd717b68517e31361cb0c80d9a9","store_id":1,"created_at":"2018-04-12 07:57:20","updated_at":"0000-00-00 00:00:00","converted_at":null,"is_active":"1","is_virtual":0,"is_multi_shipping":0,"items_count":"1","items_qty":"1.0000","orig_order_id":"0","store_to_base_rate":"0.0000","store_to_quote_rate":"0.0000","base_currency_code":"USD","store_currency_code":"USD","quote_currency_code":"USD","grand_total":"42.0000","base_grand_total":"42.0000","checkout_method":null,"customer_id":null,"customer_tax_class_id":"3","customer_group_id":"0","customer_email":null,"customer_prefix":null,"customer_firstname":null,"customer_middlename":null,"customer_lastname":null,"customer_suffix":null,"customer_dob":null,"customer_note":null,"customer_note_notify":"1","customer_is_guest":"0","remote_ip":"10.0.2.117","applied_rule_ids":null,"reserved_order_id":null,"password_hash":null,"coupon_code":null,"global_currency_code":"USD","base_to_global_rate":"1.0000","base_to_quote_rate":"1.0000","customer_taxvat":null,"customer_gender":null,"subtotal":"42.0000","base_subtotal":"42.0000","subtotal_with_discount":"42.0000","base_subtotal_with_discount":"42.0000","is_changed":"1","trigger_recollect":"0","ext_shipping_info":null,"is_persistent":"0","customer_balance_amount_used":"0.0000","base_customer_bal_amount_used":"0.0000","use_customer_balance":null,"gift_cards":null,"gift_cards_amount":"0.0000","base_gift_cards_amount":"0.0000","gift_cards_amount_used":"0.0000","base_gift_cards_amount_used":"0.0000","gift_message_id":null,"gw_id":null,"gw_allow_gift_receipt":null,"gw_add_card":null,"gw_base_price":"0.0000","gw_price":"0.0000","gw_items_base_price":"0.0000","gw_items_price":"0.0000","gw_card_base_price":"0.0000","gw_card_price":"0.0000","gw_base_tax_amount":null,"gw_tax_amount":null,"gw_items_base_tax_amount":null,"gw_items_tax_amount":null,"gw_card_base_tax_amount":null,"gw_card_tax_amount":null,"gw_base_price_incl_tax":null,"gw_price_incl_tax":null,"gw_items_base_price_incl_tax":null,"gw_items_price_incl_tax":null,"gw_card_base_price_incl_tax":null,"gw_card_price_incl_tax":null,"use_reward_points":null,"reward_points_balance":"0","base_reward_currency_amount":"0.0000","reward_currency_amount":"0.0000","is_personalized":null,"items":[{}],"extension_attributes":{},"x_forwarded_for":"70.181.114.122, 70.181.114.122, 104.156.91.33"},"quoteItemData":[{"item_id":"2453328","quote_id":"792850","created_at":"2018-04-12 07:57:20","updated_at":"0000-00-00 00:00:00","product_id":"1152","store_id":1,"parent_item_id":null,"is_virtual":"0","sku":"10017-A18-08565","name":"Wiltshire","description":null,"applied_rule_ids":null,"additional_data":null,"is_qty_decimal":false,"no_discount":"0","weight":"0.7000","qty":1,"price":"42.0000","base_price":"42.0000","custom_price":null,"discount_percent":"0.0000","discount_amount":"0.0000","base_discount_amount":"0.0000","tax_percent":"0.0000","tax_amount":"0.0000","base_tax_amount":"0.0000","row_total":"42.0000","base_row_total":"42.0000","row_total_with_discount":"0.0000","row_weight":"0.7000","product_type":"configurable","base_tax_before_discount":null,"tax_before_discount":null,"original_custom_price":null,"redirect_url":null,"base_cost":null,"price_incl_tax":"42.0000","base_price_incl_tax":"42.0000","row_total_incl_tax":"42.0000","base_row_total_incl_tax":"42.0000","discount_tax_compensation_amount":"0.0000","base_discount_tax_compensation_amount":"0.0000","free_shipping":"0","gift_message_id":null,"gw_id":null,"gw_base_price":null,"gw_price":null,"gw_base_tax_amount":null,"gw_tax_amount":null,"event_id":null,"giftregistry_item_id":null,"autoadd_rule_id":null,"weee_tax_applied":null,"weee_tax_applied_amount":null,"weee_tax_applied_row_amount":null,"weee_tax_disposition":null,"weee_tax_row_disposition":null,"base_weee_tax_applied_amount":null,"base_weee_tax_applied_row_amnt":null,"base_weee_tax_disposition":null,"base_weee_tax_row_disposition":null,"is_personalized":null,"has_children":true,"qty_options":{"1153":{}},"product":{"row_id":"1157","entity_id":"1152","created_in":"1","updated_in":"2147483647","attribute_set_id":"4","type_id":"configurable","sku":"A18-08565","has_options":"1","required_options":"1","created_at":"2018-01-18 15:16:04","updated_at":"2018-04-09 13:08:14","is_salable":"1","name":"Wiltshire","small_image":"\/w\/i\/wiltshire-17oz.jpg","thumbnail":"\/w\/i\/wiltshire-17oz.jpg","msrp_display_actual_price_type":"0","url_key":"wiltshire","gift_message_available":"0","gift_wrapping_available":"0","status":"1","visibility":"4","tax_class_id":"4","personalize_type":"0","price":null,"special_price":null,"weight":"0.7000","gift_wrapping_price":null,"special_from_date":"2018-01-01 08:00:00","request_path":"wiltshire","tier_price":[],"store_id":1,"customer_group_id":"0","final_price":null},"tax_class_id":"4","has_error":false,"product_option":{},"options":[{"value":"17oz","label":"Size"}],"thumbnail":"https:\/\/www.swellbottle.com\/media\/catalog\/product\/cache\/thumbnail\/178x316\/beff4985b56e3afdbeabfc89641a4582\/w\/i\/wiltshire-17oz.jpg"}],"isCustomerLoggedIn":false,"selectedShippingMethod":null,"storeCode":"default","isGuestCheckoutAllowed":true,"isCustomerLoginRequired":false,"registerUrl":"https:\/\/www.swellbottle.com\/customer\/account\/create\/","checkoutUrl":"https:\/\/www.swellbottle.com\/checkout\/","defaultSuccessPageUrl":"https:\/\/www.swellbottle.com\/checkout\/onepage\/success\/","pageNotFoundUrl":"https:\/\/www.swellbottle.com\/checkout\/noroute\/","forgotPasswordUrl":"https:\/\/www.swellbottle.com\/customer\/account\/forgotpassword\/","staticBaseUrl":"https:\/\/www.swellbottle.com\/static\/","priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":1},"basePriceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":1},"postCodes":{"DZ":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"AS":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"AR":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"AM":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"AU":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"AT":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"AZ":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"},"pattern_2":{"example":"123456","pattern":"^[0-9]{6}$"}},"BD":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"BY":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"BE":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"BA":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"BR":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"},"pattern_2":{"example":"12345-678","pattern":"^[0-9]{5}\\-[0-9]{3}$"}},"BN":{"pattern_1":{"example":"AB1234","pattern":"^[a-zA-z]{2}[0-9]{4}$"}},"BG":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"CA":{"pattern_1":{"example":"A1B 2C3","pattern":"^[a-zA-z]{1}[0-9]{1}[a-zA-z]{1}\\s[0-9]{1}[a-zA-z]{1}[0-9]{1}$"}},"IC":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"CN":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"HR":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"CU":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"CY":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"CZ":{"pattern_1":{"example":"123 45","pattern":"^[0-9]{3}\\s[0-9]{2}$"}},"DK":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"EE":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"FI":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"FR":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"GF":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"GE":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"DE":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"GR":{"pattern_1":{"example":"123 45","pattern":"^[0-9]{3}\\s[0-9]{2}$"}},"GL":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"GP":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"GU":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"GG":{"pattern_1":{"example":"AB1 2CD","pattern":"^[a-zA-Z]{2}[0-9]{1}\\s[0-9]{1}[a-zA-Z]{2}$"}},"HU":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"IS":{"pattern_1":{"example":"123","pattern":"^[0-9]{3}$"}},"IN":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"ID":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"IL":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"IT":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"JP":{"pattern_1":{"example":"123-4567","pattern":"^[0-9]{3}-[0-9]{4}$"},"pattern_2":{"example":"123","pattern":"^[0-9]{3}$"}},"JE":{"pattern_1":{"example":"AB1 2CD","pattern":"^[a-zA-Z]{2}[0-9]{1}\\s[0-9]{1}[a-zA-Z]{2}$"}},"KZ":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"KE":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"KR":{"pattern_1":{"example":"123-456","pattern":"^[0-9]{3}-[0-9]{3}$"}},"KG":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"LV":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"LI":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"LT":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"LU":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"MK":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"MG":{"pattern_1":{"example":"123","pattern":"^[0-9]{3}$"}},"MY":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"MV":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"},"pattern_2":{"example":"1234","pattern":"^[0-9]{4}$"}},"MT":{"pattern_1":{"example":"ABC 123","pattern":"^[a-zA-Z]{3}\\s[0-9]{3}$"},"pattern_2":{"example":"ABC 12","pattern":"^[a-zA-Z]{3}\\s[0-9]{2}$"}},"MH":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"MQ":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"MX":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"MD":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"MC":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"MN":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"MA":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"NL":{"pattern_1":{"example":"1234 AB","pattern":"^[0-9]{4}\\s[a-zA-Z]{2}$"}},"NO":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"PK":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"PH":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"PL":{"pattern_1":{"example":"12-345","pattern":"^[0-9]{2}-[0-9]{3}$"}},"PT":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"},"pattern_2":{"example":"1234-567","pattern":"^[0-9]{4}-[0-9]{3}$"}},"PR":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"RE":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"RO":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"RU":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"MP":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"CS":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"SG":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"SK":{"pattern_1":{"example":"123 45","pattern":"^[0-9]{3}\\s[0-9]{2}$"}},"SI":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"ZA":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"ES":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"XY":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"SZ":{"pattern_1":{"example":"A123","pattern":"^[a-zA-Z]{1}[0-9]{3}$"}},"SE":{"pattern_1":{"example":"123 45","pattern":"^[0-9]{3}\\s[0-9]{2}$"}},"CH":{"pattern_1":{"example":"1234","pattern":"^[0-9]{4}$"}},"TW":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"},"pattern_2":{"example":"123","pattern":"^[0-9]{3}$"}},"TJ":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"TH":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"TR":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"TM":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"UA":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"GB":{"pattern_1":{"example":"AB12 3CD","pattern":"^[a-zA-Z]{2}[0-9]{2}\\s?[0-9]{1}[a-zA-Z]{2}$"},"pattern_2":{"example":"A1B 2CD","pattern":"^[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}\\s?[0-9]{1}[a-zA-Z]{2}$"},"pattern_3":{"example":"AB1 2CD","pattern":"^[a-zA-Z]{2}[0-9]{1}\\s?[0-9]{1}[a-zA-Z]{2}$"},"pattern_4":{"example":"AB1C 2DF","pattern":"^[a-zA-Z]{2}[0-9]{1}[a-zA-Z]{1}\\s?[0-9]{1}[a-zA-Z]{2}$"},"pattern_5":{"example":"A12 3BC","pattern":"^[a-zA-Z]{1}[0-9]{2}\\s?[0-9]{1}[a-zA-Z]{2}$"},"pattern_6":{"example":"A1 2BC","pattern":"^[a-zA-Z]{1}[0-9]{1}\\s?[0-9]{1}[a-zA-Z]{2}$"}},"US":{"pattern_1":{"example":"12345-6789","pattern":"^[0-9]{5}\\-[0-9]{4}$"},"pattern_2":{"example":"12345","pattern":"^[0-9]{5}$"}},"UY":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}},"UZ":{"pattern_1":{"example":"123456","pattern":"^[0-9]{6}$"}},"VI":{"pattern_1":{"example":"12345","pattern":"^[0-9]{5}$"}}},"imageData":{"2453328":{"src":"https:\/\/www.swellbottle.com\/media\/catalog\/product\/cache\/thumbnail\/178x316\/beff4985b56e3afdbeabfc89641a4582\/w\/i\/wiltshire-17oz.jpg","alt":"Wiltshire","width":"178","height":"316"}},"totalsData":{"subtotal":"42.0000","base_subtotal":"42.0000","subtotal_with_discount":"42.0000","base_subtotal_with_discount":"42.0000","tax_amount":"0.0000","base_tax_amount":"0.0000","shipping_amount":"0.0000","base_shipping_amount":"0.0000","shipping_tax_amount":"0.0000","base_shipping_tax_amount":"0.0000","discount_amount":"0.0000","base_discount_amount":"0.0000","grand_total":42,"base_grand_total":"42.0000","shipping_discount_amount":"0.0000","base_shipping_discount_amount":"0.0000","subtotal_incl_tax":"42.0000","shipping_incl_tax":"0.0000","base_shipping_incl_tax":"0.0000","entity_id":"1800572","total_segments":[{"code":"subtotal","title":"Subtotal","value":"42.0000","area":null},{"code":"shipping","title":"Shipping & Handling","value":"0.0000","area":null},{"code":"tax","title":"Tax","value":"0.0000","area":null,"extension_attributes":{"tax_grandtotal_details":[]}},{"code":"giftwrapping","title":"Gift Wrapping","value":null,"area":null,"extension_attributes":{"gw_item_ids":[],"gw_order_id":null,"gw_price":"0.0000","gw_base_price":"0.0000","gw_items_price":"0.0000","gw_items_base_price":"0.0000","gw_allow_gift_receipt":null,"gw_add_card":null,"gw_card_price":"0.0000","gw_card_base_price":"0.0000","gw_tax_amount":"0.0000","gw_base_tax_amount":"0.0000","gw_items_tax_amount":"0.0000","gw_items_base_tax_amount":"0.0000","gw_card_tax_amount":"0.0000","gw_card_base_tax_amount":"0.0000","gw_price_incl_tax":"0.0000","gw_base_price_incl_tax":"0.0000","gw_card_price_incl_tax":"0.0000","gw_card_base_price_incl_tax":"0.0000","gw_items_price_incl_tax":"0.0000","gw_items_base_price_incl_tax":"0.0000"}},{"code":"grand_total","title":"Grand Total","value":"42.0000","area":"footer"},{"code":"customerbalance","title":"Store Credit","value":-0,"area":null}],"coupon_code":null,"items":[{"item_id":"2453328","name":"Wiltshire","qty":1,"price":"42.0000","base_price":"42.0000","discount_percent":"0.0000","discount_amount":"0.0000","base_discount_amount":"0.0000","tax_percent":"0.0000","tax_amount":"0.0000","base_tax_amount":"0.0000","row_total":"42.0000","base_row_total":"42.0000","row_total_with_discount":"0.0000","price_incl_tax":"42.0000","base_price_incl_tax":"42.0000","row_total_incl_tax":"42.0000","base_row_total_incl_tax":"42.0000","weee_tax_applied":null,"weee_tax_applied_amount":null,"options":"[{\"value\":\"17oz\",\"label\":\"Size\"}]"}],"items_qty":"1.0000","base_currency_code":"USD","quote_currency_code":"USD","extension_attributes":{"reward_points_balance":"0","reward_currency_amount":"0.0000","base_reward_currency_amount":"0.0000"}},"shippingPolicy":{"isEnabled":false,"shippingPolicyContent":""},"activeCarriers":["iparcel","amstrates"],"originCountryCode":"US","paymentMethods":[],"autocomplete":"off","displayBillingOnPaymentMethod":true,"maxCartItemsToDisplay":10,"cartUrl":"https:\/\/www.swellbottle.com\/checkout\/cart\/","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.swellbottle.com\/captcha\/refresh\/","isRequired":false},"guest_checkout":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.swellbottle.com\/captcha\/refresh\/","isRequired":false}},"checkoutAgreements":{"isEnabled":false},"vault":[],"isDisplayShippingPriceExclTax":true,"isDisplayShippingBothPrices":false,"reviewShippingDisplayMode":"excluding","reviewItemPriceDisplayMode":"excluding","reviewTotalsDisplayMode":"excluding","includeTaxInGrandTotal":false,"isFullTaxSummaryDisplayed":false,"isZeroTaxDisplayed":false,"reloadOnBillingAddress":false,"defaultCountryId":"US","defaultRegionId":"0","defaultPostcode":null,"giftRegistry":{"available":true,"id":false},"giftWrapping":{"canDisplayGiftWrapping":false,"designCollectionCount":0,"allowForOrder":false,"allowForItems":false,"giftWrappingAvailable":false,"spacerSrc":"https:\/\/www.swellbottle.com\/static\/frontend\/OneRockwell\/swell\/en_US\/images\/spacer.gif","displayWrappingBothPrices":false,"displayCardBothPrices":false,"displayGiftWrappingInclTaxPrice":false,"displayCardInclTaxPrice":false,"designsInfo":[],"itemsInfo":{"2453328":{"is_available":false}},"isAllowPrintedCard":false,"isAllowGiftReceipt":false,"cardInfo":[],"appliedWrapping":[],"appliedPrintedCard":null,"appliedGiftReceipt":null},"quoteId":"62e91cd717b68517e31361cb0c80d9a9","persistenceConfig":{"isRememberMeCheckboxVisible":false,"isRememberMeCheckboxChecked":true},"authentication":{"reward":{"isAvailable":false,"tooltipLearnMoreUrl":"https:\/\/www.swellbottle.com\/loyalty-program","tooltipMessage":"Sign in now and earn 0 Reward points for this order."}},"review":{"reward":{"removeUrl":"https:\/\/www.swellbottle.com\/reward\/cart\/remove\/"}}};
+        // Create aliases for customer.js model from customer module
+        window.isCustomerLoggedIn = window.checkoutConfig.isCustomerLoggedIn;
+        window.customerData = window.checkoutConfig.customerData;
+    </script>
+    <script>
+        require([
+            'mage/url',
+            'Magento_Ui/js/block-loader'
+        ], function(url, blockLoader) {
+            blockLoader("https://www.swellbottle.com/static/frontend/OneRockwell/swell/en_US/images/loader-1.gif");
+            return url.setBaseUrl('https://www.swellbottle.com/');
+        })
+    </script>
+</div>
+</div></div></main><div id="ttdUniversalPixelTage87af1268958405088351bcfd829140b" style="display:none">
+            <script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                (function(global) {
+                    if (typeof TTDUniversalPixelApi === 'function') {
+                        var universalPixelApi = new TTDUniversalPixelApi();
+                        universalPixelApi.init("ezz65in", ["s6u1zzk"], "https://insight.adsrvr.org/track/up", "ttdUniversalPixelTage87af1268958405088351bcfd829140b");
+                    }
+                })(this);
+            </script>
+        </div><script id="form-tmpl-multiple" type="text/x-magento-template">
+    <form id="wishlist-hidden-form" method="post" action="<%- data.url %>" class="no-display">
+        <% if (data.itemId) { %>
+            <input name="item_id" value="<%- data.itemId %>">
+        <% } %>
+        <% if (data.wishlistId) { %>
+            <input name="wishlist_id" value="<%- data.wishlistId %>">
+        <% } %>
+        <% if (data.qty) { %>
+            <input name="qty" value="<%- data.qty %>">
+        <% } %>
+        <% if (data.item) { %>
+            <input name="item" value="<%- data.item %>">
+        <% } %>
+        <% if (data.entity) { %>
+            <input name="entity" value="<%- data.entity %>">
+        <% } %>
+        <% if (data.form_key) { %>
+            <input name="form_key" value="<%- data.form_key %>">
+        <% } %>
+    </form>
+</script>
+<script id="popup-tmpl" type="text/x-magento-template">
+    <div class="window wishlist overlay active"></div>
+    <div id="<%- data.popupWishlistBlockId %>" class="window wishlist popup active">
+        <div class="popup-actions">
+            <div class="secondary">
+                <button type="button"
+                        title="<%- window.jQuery.mage.__('Close') %>"
+                        class="action close <%- data.btnCloseClass %>"
+                        data-dismiss="popup">
+                    <span><%- window.jQuery.mage.__('Close') %></span>
+                </button>
+            </div>
+        </div>
+        <div class="popup-header">
+             <strong class="title" id="popup-title">
+                 <span>
+                     <% if (data.isEdit) { %>
+                        <%- window.jQuery.mage.__('Edit Wish List') %>
+                     <% } else { %>
+                        <%- window.jQuery.mage.__('Create New Wish List') %>
+                     <% } %>
+                 </span>
+             </strong>
+        </div>
+        <div class="popup-content" id="popup-content">
+            <form id="<%- data.popupWishlistFormId %>" method="post" action="<%- data.url %>" class="form wishlist">
+                <input name="form_key" type="hidden" value="SywlFwBmole8Ceem" />                <fieldset class="fieldset">
+                    <div class="field name">
+                        <label for="wishlist-name" class="label">
+                            <span><%- window.jQuery.mage.__('Wish List Name') %></span>
+                        </label>
+                        <div class="control">
+                            <input id="wishlist-name"
+                                   class="input-text"
+                                   data-validate="{required:true}"
+                                   type="text"
+                                   name="name"
+                                   maxlength="255"
+                                   value="<%- data.name %>">
+                        </div>
+                    </div>
+                    <div class="field choice">
+                        <input id="wishlist-public"
+                               type="checkbox"
+                               name="visibility"<% if (data.isPublic) { %> checked=true<% } %>>
+                        <label for="wishlist-public" class="label">
+                            <span><%- window.jQuery.mage.__('Public Wish List') %></span>
+                        </label>
+                    </div>
+                    <div class="actions-toolbar">
+                        <div class="primary">
+                            <button class="action save primary" type="submit" title="<%- window.jQuery.mage.__('Save') %>">
+                                <span><%- window.jQuery.mage.__('Save') %></span>
+                            </button>
+                        </div>
+                        <div class="secondary">
+                            <button class="action cancel <%- data.btnCloseClass %>" type="button" title="<%- window.jQuery.mage.__('Cancel') %>">
+                                <span><%- window.jQuery.mage.__('Cancel') %></span>
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</script>
+<script id="split-btn-tmpl" type="text/x-magento-template">
+    <div class="split button wishlist">
+        <button type="button" data-post='<%- JSON.stringify(data.generalParams) %>' data-action="add-to-wishlist" class="label action split">
+            <span><%- data.buttonName %></span>
+        </button>
+        <button class="action toggle change"
+                title="<%- window.jQuery.mage.__('Add to:') %>"
+                type="button"
+                data-mage-init='{"dropdown":{}}'
+                data-toggle="dropdown"
+                aria-haspopup="true">
+            <span><%- window.jQuery.mage.__('Add to:') %></span>
+        </button>
+        <ul class="items" data-target="dropdown">
+            <% _.each(data.wishlists, function(item) { %>
+                <li class="item">
+                    <% if (item.newClass) { %>
+                        <span class="action <%- item.newClass %>"
+                              data-post-new-wishlist='<%- JSON.stringify(item.params) %>'
+                              data-action="add-to-wishlist"
+                              title="<%- item.name %>">
+                            <span><%- item.name %></span>
+                        </span>
+                    <% } else { %>
+                        <span data-post='<%- JSON.stringify(item.params) %>' data-action="add-to-wishlist" title="<%- item.name %>">
+                            <%- item.name %>
+                        </span>
+                    <% } %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "multiplewishlist": {
+                        "component": "Magento_MultipleWishlist/js/view/multiple-wishlist",
+                        "config": {
+                            "multipleWishlistOptions": {
+                                "createUrl": "https://www.swellbottle.com/wishlist/index/createwishlist/",
+                                "wishlistLink": ".action.towishlist"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+
+
+<div id="checkout-shipping-load">
+    <!-- Content loaded dynamically -->
+</div>
+
+<script>
+    // Yang@Onerockwell Comment out since it has conflict with payment related blocks rendering
+    // require([
+    //     'Magento_Checkout/js/view/payment'
+    // ], function(payment) {
+    //     var subscription = payment.prototype.isVisible.subscribe(function(value){
+    //         if (value) {
+    //             notifyCheckoutStep('payment');
+    //             subscription.dispose();
+    //         }
+    //     });
+    // });
+    function notifyCheckoutStep(step)
+    {
+        console.log('GTM checkout step: -------------> ' + step);
+        var dlUpdate = {
+            'event': 'checkout',
+            'ecommerce' : {
+                'currencyCode' : dlCurrencyCode,
+                'checkout' : {
+                    'actionField' : {
+                        'step' : step
+                    },
+                    'products' : [ ]
+                }
+            }
+        };
+
+        var cart = [{"id":"10017-A18-08565","name":"Wiltshire","price":"42.0000","qty":1}];
+        for (var i = 0; i < cart.length; i++) {
+            var product = cart[i];
+            dlUpdate.ecommerce.checkout.products.push({
+                'id': product.id,
+                'name': product.name,
+                'price': product.price,
+                'quantity': product.qty
+            });
+        }
+        dataLayer.push(dlUpdate);
+        dataLayer.push({ 'ecommerce' : { 'checkout' : 0 }});
+    }
+    notifyCheckoutStep('shipping');
+</script>
+<div class="widget block block-static-block">
+    <script type="text/javascript"> // 
+//
+var s=document.createElement('script');
+s.setAttribute('src', 'https://xxredda.s3.amazonaws.com/swell/loader2.js');
+document.getElementsByTagName('body')[0].appendChild(s);
+
+function appendNote(){ 
+    checkForLoad = (document.getElementsByName("lastname")).length;
+    if (checkForLoad >= 1) {
+        var parent = document.getElementsByName('shippingAddress.postcode')[0];
+        var child = document.createElement('span');
+        child.innerHTML = 'Selecting a zip/postal code will fill in the city and state/providence';
+        child.classList.add('note');
+        parent.appendChild(child);
+    } else {
+        setTimeout(appendNote, 500); 
+}};
+
+appendNote();
+//
+//</script></div>
+<div class="widget block block-static-block">
+    <style>
+.checkout-index-index .discount-code .message.message-error.error {
+	display:none;
+}
+</style></div>
+</div>    </body>
+</html>

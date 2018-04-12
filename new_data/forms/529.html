@@ -1,0 +1,2448 @@
+<!DOCTYPE html>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+
+
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN"/>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"/>
+                <meta name="application-name" content="CareCredit"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+     
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://apply.syf.com/etail/css/eapply.css" />
+<link rel="stylesheet" href="https://apply.syf.com/etail/css/baseLayout.css" />
+<link rel="stylesheet" href="https://apply.syf.com/etail/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="./resource/css/font-awesome.min.css" /> -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://apply.syf.com/etail/css/dApply.css" /> 
+ <link rel="stylesheet" href="https://apply.syf.com/etail/css/jquery-ui.css" />
+   
+
+<script src="https://apply.syf.com/etail/js/jquery-1.9.1.js"></script>
+<script src="https://apply.syf.com/etail/js/bootstrap.min.js"></script>   
+<script src="https://apply.syf.com/etail/js/jquery-migrate-1.1.1.js"></script>
+<!-- <script src="./resource/js/jquery-ui.js"></script> -->
+<script src="https://apply.syf.com/etail/js/jquery.maskedinput.js"></script>
+<script src="https://apply.syf.com/etail/js/jquery.simplemodal-1.4.4.js"></script>
+<script src="https://apply.syf.com/etail/js/dapply.js"></script>
+<script src="https://apply.syf.com/etail/js/dapply_tabvalidations.js"></script> 
+
+<script src="https://apply.syf.com/etail/js/geo.js"></script>
+<script src='//nexus.ensighten.com/synchrony/rcdigitalapplyprod/Bootstrap.js'></script>
+
+ 
+ 
+
+<script language="JavaScript">
+  $(document).ready(function () {
+	  
+	  var sdpRedirectURL = '';
+
+		function sdpURLformat(sdpRedirectURL) {
+	    	if (!sdpRedirectURL.match(/^https?:\/\//i)) {
+	        	sdpRedirectURL = 'http://' + sdpRedirectURL;
+	    	}
+	    	return sdpRedirectURL;
+		}
+
+		$("#sdpRedirectURL").attr('href',sdpURLformat(''));
+	  
+	  $('#returnButton').click(function(){
+		  window.open('http://www.jcpenney.com/', '_self');
+	    });
+	  
+	  
+	
+		$("span.plccCrdName").replaceWith('JCPenney Credit Card');
+	  
+	
+	
+	
+	  $("div.psClientDisplayName").replaceWith('JCPenney Credit Card');
+	
+	  $("span.signBlockClientDisplayName").replaceWith('JCPenney Credit Card');
+      $("div.selectedCrdName").replaceWith('JCPenney Credit Card');  
+      $("div.allCardTypeNames").replaceWith('nullJCPenney Credit Card');  
+	  $("div.clientName").replaceWith('JCPenney');
+      $("span.selectedCrdName").replaceWith('JCPenney Credit Card');
+      $("span.bankNameFull").replaceWith('Synchrony Bank');
+      $("span.bankNameShort").replaceWith('SYNCB');
+      $("span.clientName").replaceWith('JCPenney');
+      $("span.selectedCrdName").replaceWith('JCPenney Credit Card');
+      $("div.bankNameFull").replaceWith('Synchrony Bank');
+      $("div.bankNameShort").replaceWith('SYNCB');
+      $("div.bodycontent span.pop_subcontent ul.list").append('');
+      
+  });
+</script>
+
+<script type = "text/javascript" >
+   window.history.forward();
+</script>
+<script>
+$(document).ready(function(){
+//1.siteBackgroundColor
+$('.container').css('background-color', '#FFFFFF');
+$('.progressbar li').css('color', '#E8E8E8');
+$('.progressbar li.done').css('color', '#333333');
+$('.progressbar li').css('border-color', '#E8E8E8');
+$('.progressbar li.done').css('border-color', '#333333');
+
+//Panel back-ground color
+
+$('.panel.panel-default').css('background-color', '#');
+//For Lable fields like fname,lname..
+$('.form-group .labeldynamic').css('color', '#333333');
+//
+$('.optional-text').css('color', '#333333');
+
+$('body, p.light-color').css('color', '#333333');
+$('p.light-color.subheaderTextColor').css('color', '#333333');
+$('.form-control').css('border-color', '#CCCCCC');
+//For error message field outline color
+$('.form-control-error').css('border-color', '#F75265');
+
+//for error message color
+ $('.error-msg span ').css('color', '#F75265');
+ $('.error-msg .erroralert').css('border-color', '#F75265');
+ 
+ //for help-text messages
+ $('p.light-color.helptext').css('color', '#666666');
+ 
+ //button text color
+ $('.btn-primary').css('color', '#FFFFFF');
+ 
+ //button color 
+ $('.btn-primary').css('background', '#C00C00');
+ 
+ $('.btn-secondary').css('background', '#');
+ 
+ //button border color 
+ $( ".btn-primary" ).focus(function() {
+  	$(".btn-primary").css( "outline", "" ); 
+	  $(this).css( "outline", "2px solid #" );
+	
+	  
+	});
+	
+	
+	  $( ".btn-primary" ).focusout(function() {
+	  $(".btn-primary").css( "outline", "" );
+	});  
+ 
+ //page header text color
+ $('.pageHeaderTextColor').css('color', '#333333');
+ 
+ //sharing location text and Joint-Applicant
+ $('.font-size2').css('color', '#333333');
+ //$('p.light-color').css('color', '333333');
+ 
+ //Primary Link color
+ $('.link-color').css('color', '#666666');
+ //Secondary Link color
+ $('.footer ul li a').css('color', '#666666');
+ 
+ 
+});
+</script> 
+
+ 
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<noscript>
+	<center>
+		<div>
+			<p>Please enable JavaScript in your browser.</p>
+		</div>
+	</center>
+</noscript>
+
+</head>
+<body onload="checkBrowserVersion();">
+<div id="browsererror" style="display:none;">
+            <table align="center">
+                <tr>
+                    <td>
+                        
+                            
+<!-- saved from url=(0091)http://vqlucmapda01.cpu.syfbank.com:16220/cs/groups/public/documents/et_appdoc/e027720.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/CSS">
+.browser {
+    font-family: Arial,Verdana,Geneva,sans-serif;
+    font-size: 17px;
+}
+</style>
+</head><body><div class="browser"></div>
+<b>If you are using an older version of Internet Explorer (IE8 or lower), we will not be able to process your application</b>.<br>	   
+To get the best possible experience using our website we recommend that you upgrade to a newer version or use a different web browser.<br>  Click on the icons below to go to their download page.<br><br>
+
+<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie-MCM?FORM=MI09J9&amp;OCID=MI09J9&amp;WT.mc_id=MSCOM_EN_US_DLC_4PF_141B2ENUS51787"><img alt="Internet Explorer" src="https://etail.mysynchrony.com/etail/images/ie.jpg"></a>&nbsp;<a href="https://downloads.yahoo.com/firefox/?code=107&amp;mktg=sem-goog-firef-nonbrand&amp;chan=sem&amp;ptnr=goog&amp;prop=firef&amp;cmp=nonbrand&amp;device=c&amp;kw=firefox&amp;adid=38076874051&amp;sid=sr3_6364545_go"><img alt="Mozilla Firefox" src="https://etail.mysynchrony.com/etail/images/firefox.jpg"></a>&nbsp;<a href="https://www.google.com/chrome/browser/"><img alt="Google Chrome" src="https://etail.mysynchrony.com/etail/images/chrome.jpg"></a>&nbsp;<a href="http://support.apple.com/downloads/#safari"><img alt="Safari" src="https://etail.mysynchrony.com/etail/images/safari.jpg"></a>
+
+</body></html>
+                        
+                    </td>
+                </tr>
+            </table>
+</div>
+<div id="main" style="display:none">
+	<div class="container">
+		
+			
+<!-- offer banner1 start here -->
+<div class="row offer1">
+	<div class="col-sm-12 text-center">
+		<!-- Merchant Logo -->
+	
+		
+       	
+       		<img src="/cs/groups/public/documents/et_clientoffer/e042842.png" class="img-responsive" title="JCPenney Logo" alt="JCPenney Logo"></img>
+       	
+      
+	</div>
+</div>
+		
+		
+			
+<!-- offer banner2 start here -->
+<div class="row offer2a">
+	<div class="col-sm-12 text-center">
+		<!-- Merchant Banner for Desktop -->
+	
+		
+       
+       		<img src="/cs/groups/public/documents/et_clientoffer/e042845.png" class="img-responsive display-desktop" title="JCPenney credit offer. Click Tap for Details." alt="JCPenney credit offer. Click Tap for Details."></img>
+       
+    
+    
+       
+       
+       		<img src="/cs/groups/public/documents/et_clientoffer/e042843.png" class="img-responsive display-mobile" title="JCPenney Banner" alt="JCPenney Banner"></img>
+       
+    		
+	</div>
+</div>
+
+			
+	
+		<div class="tabDetails"><span id="TabForDetailsId"><a href="javascript:void(0);" title="Tap for details"  >
+Tap for details</a></span></div>
+		<div style="text-align: justify;"><span id="TabForDetailsUCMContentId" style="display:none;">
+
+<div>
+*A different offer may be available in store. Offer for new accounts only. 
+<br/><br/>
+<b>OFFER DETAILS: Subject to credit approval. In US and PR, save 15% on select apparel, shoes, accessories, fine jewellery, salon products, furniture and mattresses, and home; and save 5% on Electrics/Electronics (including TV&#39;s), Modern Bride<sup>&#174;</sup> Design Your Dream Ring, and Smart Watches. In US stores only save 15% on custom blinds and shades, and 5% on Major Appliances</b>. Applicants who do not receive a credit decision the day they apply, but are later approved, will receive a $10 off $10 coupon in their credit card package. Delivery of major appliances limited to designated zip codes. See <a href="http://www.jcp.com/appliances" target="_blank">jcp.com/appliances</a> or store associate for details. Each offer good in store and at <a href="http://www.jcp.com" target="_blank">jcp.com</a>, excluding taxes and shipping/handling charges, through 7/1/2018. In PR stores only save 15% on cosmetics. Offers good upon new JCPenney Credit Card account approval. Full amount of purchase must be on the JCPenney Credit Card to receive account-opening discount. Coupon can be used multiple times within 24 hours after first use when you present this coupon at time of purchase in store or enter your code at <a href="http://www.jcp.com" target="_blank">jcp.com</a>. The offers can be combined with another coupon and earned JCPenney Rewards. Dollar-off offers (including JCPenney Rewards) applied prior to company wide percent-off discounts or coupons. Coupon cannot be used for payment on account. Coupon cannot be replaced or redeemed as cash or merchandise credit if merchandise is returned. May not be used for purchases made by cash, Gift Cards, debit cards, American Express, Discover Card or bankcards. No cash value. JCPenney may refuse, or limit the use of, any coupon and/or return for any reason, including reoccurring disruptive behavior. REPRODUCTIONS WILL NOT BE ACCEPTED.
+<br/><br/>
+<b>US AND PR EXCLUSIONS:</b> Nike, Sephora, In-Store Services, Home Services (other than In-Home Custom Window Treatments), Shipping/Handling charges, Closing Store Purchases, Gift Cards, JCPenney Final Take purchases or current orders/prior purchases.
+<br/><br/>
+<b>ADDITIONAL PR EXCLUSIONS:</b> Optical, Gift Wrap & More and Universal Sunglasses.
+<br/><br/>
+<b>JCPENNEY REWARDS:</b> JCPenney credit card members are automatically enrolled in JCPenney Rewards and are eligible to earn rewards points on purchases made with their JCPenney credit card account. For each $1 spent on a qualifying purchase at JCPenney stores or jcp.com using your JCPenney credit card account, you will receive 1 JCPenney Rewards point, up to the point maximum ($2,000). If you use a different payment method, you will receive 1 point for every $2 spent on a qualifying purchase up to the point maximum. Rewards apply to net card purchases (minus returns). Once you reach 200 points,you will be issued a $10 JCPenney Rewards certificate, redeemable on eligible JCPenney purchases. Your account must be in good standing when the reward points are earned and reward certificates are issued.For qualifying purchases and exclusions and restrictions that may apply, please see the full Rewards Program Terms provided with your account agreement (as may be amended) or <a href="http://www.jcp.com/rewards" target="_blank">jcp.com/rewards</a>.
+</div>
+</span></div>
+	
+		
+
+
+
+
+
+	<script language="JavaScript">
+    var io_bbout_element_id = 'ioBlackBox';// populate ioBlackBox in form
+    var io_install_stm = false;// do not install Active X
+    var io_exclude_stm = 12;// do not run Active X
+    var io_install_flash = false;// do not install Flash
+    var io_enable_rip = true;// enable detection of Real IP
+    var io_flash_needs_update_handler = '';
+  </script>
+  <style>
+   @media (max-width: 480px){ 
+  	.radio_box{
+		margin-left:10px;
+	}
+  }
+  </style>
+	<script language="JavaScript" src='https://mpsnare.iesnare.com/snare.js'></script>
+
+
+
+
+<script language="JavaScript">
+ document.title="dApply - "+"JCPenney";
+</script>
+<div class="content">
+  
+<form id="#" name="dApplyForm" action="#" method="post" autocomplete="off">
+<input type="hidden" name="struts.token.name" value="token" />
+<input type="hidden" name="token" value="JO8AKGRPLPIUUZ52LXK45W73FZA4VQV5" />
+		<input type="hidden" name="applyVTO.brandingInfoVO.abandonFlag" id="abandonFlag" value=""/>
+		
+		
+			<input type="hidden" name="applyVTO.brandingInfoVO.coApplicantPresent" value="false" id="coAppPresentId"/>
+		
+		
+		<input type="hidden" name="applyVTO.brandingInfoVO.emailRequired" value="" id="emailRequired"/>
+		<input type="hidden" name="applyVTO.iovationVO.ioBlackBox" value="" id="ioBlackBox"/>
+		<input type="hidden" id="dapplyAdaNumber" value="305-555-1212"/>
+		<input type=hidden name="promoCCFBInfo1" value="/cs/groups/public/documents/et_appdoc/008568.html" id="promoCCFBInfo1">
+		<input type=hidden name="promoCCFBInfo2" value="/cs/groups/public/documents/et_appdoc/008569.html" id="promoCCFBInfo2">
+		<div class="row">
+			<div class="col-sm-12 text-center progressbar-main">
+				<ul class="progressbar">
+					<li class="done">Start</li>
+					<li class="done">Apply<span class="sr-only">You are here</span></li>
+					<li>Options</li>
+					<li>Results</li>
+				</ul>
+				<span></span>
+			</div>
+		</div>
+   <div class="row">	
+     
+  <div class="col-sm-12 col-md-12">
+  
+   <div id="clientSpecificContentField" style="display:none">
+		</div>
+  
+	<div class="error-msg-top" id="formErrors" style="display:none;">
+		Please correct the errors below.
+	</div>
+
+	
+	<div style="padding: 0px 5% 0px 5%;">
+		<p>Please read our <a href="javascript:readTCDoc()">Terms & Conditions</a> before applying.</p>
+</div>
+
+
+
+
+	
+  <div class="row main-container">
+  <div class="panel panel-default">
+  <div class="panel-heading">
+  <div class="main-heading-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+  <div class="main-heading-icon-text"><h1 class="pageHeaderTextColor">Your Information</h1>
+  <p class="light-color subheaderTextColor"><i>All fields are required unless stated otherwise.</i></p>
+  </div>
+  </div>
+  <div class="panel-body">
+  <div class="panel-container">
+  <div class="row">
+    <div class="">
+	
+	 
+        </div>
+    </div> 
+   
+     
+     
+    	
+    
+    
+<div class="row">
+	<div class="form-group col-xs-8 col-sm-10 padding-right0-mobiel">
+  		<div class="showDiv">
+       		<label for="firstName" class="labeldynamic">First Name</label>
+			<div class="error-msg" id="fnameErrDiv" style="display:none;" role="alert" aria-live="assertive">
+			<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="fnameError"/>                  				
+			</div>
+			<span id="fnameErrorMsg"></span>
+			<input type="text" name="applyVTO.applicantVO.firstName" maxlength="20" value="" id="firstName" class="commoninputtext form-control" title="First Name" onblur="firstNameCheck();" autocomplete="off" aria-describedby="fnameErrDiv" aria-required="true"/>
+    	</div>
+	</div>
+	<div class="form-group col-xs-4 col-sm-2 margin_botton">
+ 		<div class="showDiv">
+                        <label for="middleIntiate" class="labeldynamic">M.I.</label>
+		<div class="error-msg" id="middleInitialErrDiv" style="display:none;" role="alert" aria-live="assertive">
+		<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+		<span id="middleInitialError"/>                  				
+     		</div>
+           <span id="MIErrorMsg"></span>
+           <input type="text" name="applyVTO.applicantVO.middleIntiateDapply" maxlength="1" value="" id="middleIntiateDapply" class="commoninputtext form-control" title="Middle Initial" onblur="middleInitialCheck();" autocomplete="off" aria-describedby="middleInitialErrDiv"/>
+           <span class="optional-text">Optional</span>
+         </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-xs-8 col-sm-10 padding-right0-mobiel">
+  <div class="showDiv">
+                        <label for="lastName" class="labeldynamic">Last Name</label>
+             <div class="error-msg" id="lnameErrDiv" style="display:none;" role="alert" aria-live="assertive">
+        				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+       				<span id="lnameError"/>
+       		</div>
+             <span id="lnameErrorMsg"></span>
+             <input type="text" name="applyVTO.applicantVO.lastName" maxlength="25" value="" id="lastName" class="commoninputtext form-control" title="Last Name" onblur="lastNameCheck();" autocomplete="off" aria-describedby="lnameErrDiv" aria-required="true"/>
+           </div>
+</div>
+<div class="form-group col-xs-4 col-sm-2 margin_botton">
+<div class="showDiv" style="padding-right:0px;">
+                        <label for="suffix" class="labeldynamic">Suffix</label>
+             <select name="applyVTO.applicantVO.suffix" id="#_applyVTO_applicantVO_suffix" class="inputselect form-control suffix-drop-down" title="Suffix" autocomplete="off">
+    <option value=""
+    selected="selected"
+    >Select</option>
+    <option value="II">II</option>
+    <option value="III">III</option>
+    <option value="IV">IV</option>
+    <option value="JR">JR</option>
+    <option value="SR">SR</option>
+
+
+</select>
+
+
+             <span class="optional-text">Optional</span>
+           </div>
+</div>
+</div>
+	
+<div class="row">
+	<div class="form-group col-xs-8 col-sm-10 padding-right0-mobiel">
+              <div class="formdiv showDiv">
+              <label for="streetAddress" class="labeldynamic">Street Address</label>
+                <div class="error-msg" id="mailingAddressErrDiv" style="display:none;" role="alert" aria-live="assertive">
+           				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+          				<span id="mailingAddressError"/>
+          		</div>
+                <span id="streetErrorMsg"></span>
+                <input type="text" name="applyVTO.applicantVO.streetAddressDapply" maxlength="35" value="" id="mailingAddress" class="commoninputtext form-control" title="Street Address" onblur="mailingAddressCheck();" autocomplete="off" aria-describedby="mailingAddressErrDiv" aria-required="true"/>
+			</div>
+</div>
+<div class="form-group col-xs-4 col-sm-2 margin_botton">
+  <div class="showDiv">
+                        <label for="aptmtNumber" class="labeldynamic">Apt #</label>
+              <div class="error-msg" id="aptmNumberErrDiv" style="display:none;" role="alert" aria-live="assertive">
+         				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+        				<span id="aptmNumberError"/>
+        		</div>
+              <span id="aptErrorMsg"></span>                        
+              <input type="text" name="applyVTO.applicantVO.aptmtNumber" maxlength="25" value="" id="appAptmtNumber" class="commoninputtext form-control" title="Apartment Number" onblur="apartmentNumberCheck();" autocomplete="off" aria-describedby="aptmNumberErrDiv"/>
+              <span class="optional-text">Optional</span>
+            </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-xs-3 col-sm-3 xs1to11-mobile-fullwidth">
+ <div class=" showDiv" style="padding-right:0px;">
+                        <label for="zipCode" class="labeldynamic">Zip Code</label>
+             <div class="error-msg" id="zipErrDiv" style="display:none;" role="alert" aria-live="assertive">
+        				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+       				<span id="zipError"/>
+       		</div>
+             <span id="zipErrorMsg"></span>
+             <input type="tel" name="applyVTO.applicantVO.zip" maxlength="9" value="" id="applyVTO_applicantVO_zip_id" class="commoninputtext form-control" title="Zip Code" onblur="zipCodeCheck();getStationsLocations();" min="0" max="999999999" autocomplete="off" aria-describedby="zipErrDiv" aria-required="true"/>
+           </div>
+</div>
+<input type="hidden" name="applyVTO.applicantVO.state" value="" id="applicantVO_state"/>
+<input type="hidden" name="applyVTO.applicantVO.city" value="" id="applicantVO_city"/>
+<div class="form-group col-xs-8 col-sm-6 padding-right0-mobiel" id="cityDiv">
+  <div class="showDiv">
+                        <label for="cityAndState" class="labeldynamic">City &amp; State</label>
+           <div class="error-msg" id="cityAndStateErrDiv" style="display:none;" role="alert" aria-live="assertive">
+      				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+     				<span id="cityAndStateError"/>
+     		</div>
+           <span id="cityStateErrorMsg"></span>
+           <input type="text" name="applyVTO.applicantVO.cityAndStateDapply" maxlength="20" value="" id="applyVTO_applicantVO_city_id" class="commoninputtext form-control" title="City and State" onblur="cityAndStateCheck();" autocomplete="off" aria-describedby="cityAndStateErrDiv"/>                        
+           </div>
+  
+</div>
+<div class="form-group col-xs-4 col-sm-3">
+  <div class="showDiv" id="housingDapplyDiv">
+            <label for="housing" class="labeldynamic">Housing</label>
+            <div class="error-msg" id="housingTypeErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="housingTypeError"/>
+		 	</div>            
+            <span id="housingTypeErrorMsg"></span>
+            <select name="applyVTO.applicantVO.housingDapply" id="applyVTO_applicantVO_housing" class="inputselect form-control" title="Housing Information" onblur="housingTypeDApplyCheck();" autocomplete="off" aria-describedby="housingTypeErrDiv" aria-required="true">
+    <option value="Select"
+    >Select</option>
+    <option value="L">Other</option>
+    <option value="O">Own</option>
+    <option value="R">Rent</option>
+    <option value="  ">N/A</option>
+
+
+</select>
+
+
+            <!-- span class="optional-text">Optional</span-->
+          </div> 
+</div>
+</div>
+<div class="row">
+<div class="form-group col-sm-7 col-xs-8 padding-right0-mobiel help-icon-success">
+  <div class="showDiv" style="position: relative;">
+              <label for="primaryPhone" class="labeldynamic"> Primary Phone</label>
+              <div class="error-msg" id="primaryPhoneErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="primaryPhoneError"/>
+		 	</div>
+              <span id="primPhoneErrorMsg"></span>
+              <input type="tel" name="applyVTO.applicantVO.primaryPhoneDapply" value="" id="appPrimaryPhone" class="commoninputtext form-control on-focus-text" title="Primary Phone" onclick="setCursorPosition(this);" onblur="PrimaryPhoneCheck();" onkeyup="validateADA(this.value, '305-555-1212','Y');" autocomplete="off" aria-describedby="primaryPhoneErrDiv" aria-required="true"/>
+          <span class="help-icon" id="PriPhone"></span>
+          </div>
+	
+	
+</div>
+
+
+<div class="form-group col-sm-5 col-xs-4 pull-right help-icon-success">
+  <div class="showDiv">
+            <label for="phoneType" class="labeldynamic"> Type</label>
+            <div class="error-msg" id="primaryPhoneTypeErrDiv" style="display:none;" role="alert" aria-live="assertive">
+   				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+  				<span id="primaryPhoneTypeError"/>
+  			</div>
+            <span id="primPhoneTypeErrorMsg"></span>                             
+            <select name="applyVTO.applicantVO.phoneTypeDapply" id="appPrimaryPhoneType" class="inputselect form-control" title="Phone Type" onblur="PrimaryPhoneTypeCheck();" autocomplete="off" aria-describedby="primaryPhoneTypeErrDiv" aria-required="true">
+    <option value="Select"
+    >Select</option>
+    <option value="Home">Home</option>
+    <option value="Cell">Cell</option>
+    <option value="Business">Business</option>
+
+
+</select>
+
+
+          </div>
+</div>
+
+<input type="hidden" name="appADACheck" value="" id="appADACheck"/>
+           <div class="formdiv" id="adaContent" style="display:none;"> 
+                 <div class="formdiv showDiv" style="padding-right:0px;padding-bottom:5px;">
+                   <p  class="light-color"><input type="checkbox" name="applyVTO.applicantVO.checkADA" value="true" id="checkADA"/><input type="hidden" id="__checkbox_checkADA" name="__checkbox_applyVTO.applicantVO.checkADA" value="true" />If you do not have a phone number because you are deaf or hard of hearing, please check this box.</p>
+                 </div>
+                 <div class="formdiv showDiv" id="adaNote" style="display:none;">
+                    <p class="light-color"><b>Important Notice:</b> This is only for the use of individuals  who do not have a phone number because of a disability-related reason. Individuals who check this box should submit all other required information and will be contacted to complete the application process. If you checked the box in error, please uncheck the box to complete your application.</p>
+                 </div>
+           </div>
+
+<div id = "help-textPriPhone" class="col-sm-12 help-text">
+
+<p class="light-color">You authorize Synchrony Bank to contact you at each phone number you have provided. By providing a cell phone number and/or email address, you agree to receive account updates and information, including text messages, from Synchrony Bank and JCPenney. Standard text messaging rates may apply.</p></div>
+</div>
+
+<div class="showDiv">
+<div class="row">
+<div class="form-group col-sm-7 col-xs-8 padding-right0-mobiel">
+                <label for="alternatePhone" class="labeldynamic">Alternate Phone</label>
+                <div class="error-msg" id="alternatePhoneErrDiv" style="display:none;" role="alert" aria-live="assertive">
+       				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+      				<span id="alternatePhoneError"/>
+      			</div>                        
+				<span id="altPhoneErrorMsg"></span>                  			     
+                <input type="tel" name="applyVTO.applicantVO.alternatePhoneDapply" value="" id="appAlterPhone" class="commoninputtext form-control" title="Alternate Phone" onclick="setCursorPosition(this);" onblur="alternatePhoneCheck();" autocomplete="off" aria-describedby="alternatePhoneErrDiv"/>
+                <span class="optional-text">Optional</span>
+</div>
+<div class="form-group col-sm-5 col-xs-4 pull-right">
+	<div class="showDiv" style="padding-right:0px;">
+               <label for="alternatePhoneType" class="labeldynamic">Type</label>
+               <div class="error-msg" id="alternatePhoneTypeErrDiv" style="display:none;" role="alert" aria-live="assertive">
+      				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+     				<span id="alternatePhoneTypeError"/>
+     			</div>
+     			<span id="altPhoneTypeErrorMsg"></span>                             
+               <select name="applyVTO.applicantVO.alternatePhoneTypeDapply" id="appAltPhoneType" class="inputselect form-control" title="Phone Type" onblur="alternatePhoneTypeCheck();" autocomplete="off" aria-describedby="alternatePhoneTypeErrDiv">
+    <option value="Select"
+    >Select</option>
+    <option value="Home">Home</option>
+    <option value="Cell">Cell</option>
+    <option value="Business">Business</option>
+
+
+</select>
+
+
+             </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-sm-12">
+  <div class="showDiv">
+             <label for="email" class="labeldynamic">Email Address</label>
+             <div class="error-msg" id="emailErrDiv" style="display:none;" role="alert" aria-live="assertive">
+    				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+   				<span id="emailError"/>
+   			</div>
+             <span id="emailErrorMsg"></span>
+             <input type="email" name="applyVTO.applicantVO.email" maxlength="40" value="" id="emailCheck" class="commoninputtext form-control" title="Email Address" onblur="emailChecking();" autocomplete="off" aria-describedby="emailErrDiv" aria-required="true"/>
+           </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-sm-12">
+<div class="showDiv" style="padding-right:0px;">
+          <label for="confirmEmail" class="labeldynamic">Confirm Email Address</label>
+           <div class="error-msg" id="confirmEmailErrDiv" style="display:none;" role="alert" aria-live="assertive">
+ 				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="confirmEmailError"/>
+			</div>
+			<span id="confirmEmailErrorMsg"></span>
+          <input type="email" name="applyVTO.applicantVO.confirmEmail" maxlength="40" value="" id="confirmEmailCheck" class="commoninputtext form-control" title="Confirm Email Address" onblur="confirmEmailChecking();" oncopy="return false;" onpaste="return false;" autocomplete="off" aria-describedby="confirmEmailErrDiv" aria-required="true" oncut="return false;"/>                            
+        </div>
+</div>
+</div>
+
+
+
+ 
+
+<div class="row">
+<div class="form-group col-sm-6">
+  <div class="showDiv">
+          <label for="socialSecurityNumber" class="labeldynamic">SSN/ITIN</label>
+          <div class="error-msg" id="ssnErrorDiv" style="display:none;">
+  				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+ 				<span id="ssnError"/>
+ 			</div>
+          <span id="ssnErrorMsg"></span>
+
+           <input type="tel" name="applyVTO.applicantVO.socialSecurityNumberDapply" value="" id="appSSN" class="commoninputtext form-control" title="Social Security Number" onclick="setCursorPosition(this);" onblur="ssnValid();" autocomplete="off" aria-describedby="ssnErrorDiv" pattern="[0-9]*" aria-required="true"/>
+         </div>
+</div>
+<div class="form-group col-sm-6">
+  <div class="showDiv" style="padding-right:0px;">
+          <label for="DOB" class="labeldynamic">Date of Birth</label>
+          <div class="error-msg" id="dobErrorDiv" style="display:none;">
+ 				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="dobError"/>
+			</div>
+          <span id="dobErrorMsg"></span>
+          <input type="tel" name="applyVTO.applicantVO.dob" value="" id="appDOB" class="commoninputtext form-control" title="Date of Birth" onclick="setCursorPosition(this);" onblur="dobCheck();" autocomplete="off" aria-describedby="dobErrorDiv" aria-required="true"/>
+        </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-sm-6 help-icon-success">
+<div class="showDiv" style="position: relative;padding-right:0px;width:330px;">
+         <label for="annualNetIncome" class="labeldynamic"> Annual Net Income</label>
+         <div class="error-msg" id="amountErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="amountError"/>
+		</div>
+		<span id="aniErrorMsg"></span>
+		<div class="input-group">
+         <span class="input-group-addon">$</span>
+         <input type="tel" name="applyVTO.applicantVO.annualNetIncomeDapply" maxlength="6" value="" id="appNetIncome" class="commoninputtext form-control on-focus-text-ani" title="Annual Net Income" onfocus="amtCommaRemove();" onblur="amountCheck();" onkeyup="allnumeric();" max="999999" autocomplete="off" aria-describedby="amountErrDiv" aria-required="true"/>
+         <span class="input-group-addon"id="income-lastlattres">.00</span>
+         <span class="help-icon" id="net-income"></span>
+         </div>
+          <div class="error-msg" id="amountErrDivInfo" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="amountErrorInfo"/>
+		</div>
+</div>
+ </div> 
+	<div id="help-netincome" style="display:none;">
+	<p class="light-color">
+			Alimony, child support or separate maintenance income need not be included unless relied upon for credit. You may include the annual amount that you have available to spend from your assets.
+			<div id="wiText" style="display:none;">
+			<div><p><b>Married WI Residents Only: </b> If you are applying for an individual account and your spouse also is a WI resident, combine your and your spouse&#8217;s financial information.</p></div>
+			</div>
+			</p>
+			</div>                             
+</div>
+
+<div class="hideDiv">
+<div class="row">
+<div class="form-group col-sm-12">
+         <label for="stationId" class="labeldynamic">
+         
+          
+          
+          
+          
+          &nbsp;</label><label class="graycolour"></label>
+          <div class="error-msg" id="stationIdErrDiv" style="display:none;" role="alert" aria-live="assertive">
+ 		  <span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+          <span id="stationIdError"/>
+          </div>
+          <span id="stationIDErrorMsg"></span>
+          <input type="text" name="applyVTO.applicantVO.stationIdDapply" maxlength="17" value="" id="stationId" class="commoninputtext form-control" onblur="stationIdCheck();" data-target="#stationIds" data-toggle="modal" autocomplete="off" pattern="[a-zA-Z0-9\s]+"/>
+          <span class="optional-text">Optional</span>
+</div>
+</div>
+</div>
+
+
+<input type="hidden" name="applyVTO.brandingInfoVO.stationLocatorFlag" value="N" id="stationLocatorFlag"/>
+
+	<div class="radio_box" id="asiaMilesMemberContent">
+									
+								</div>
+<div class="hideDiv">
+<div class="row">
+<div class="form-group col-sm-12">
+          <label for="associateId" class="labeldynamic"> 
+          
+           
+          
+          
+          
+          &nbsp;</label>
+          <label class="graycolour"></label>
+          <div class="error-msg" id="associateIdErrDiv" style="display:none;" role="alert" aria-live="assertive">
+ 		  <span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+          <span id="associateIdError"/>
+          </div>
+          <span id="assoIdErrorMsg"></span>
+          <input type="text" name="applyVTO.applicantVO.associateIdDapply" maxlength="10" value="" id="associateId" class="commoninputtext form-control" onblur="associateIdCheck();" autocomplete="off" pattern="[a-zA-Z0-9\s]+"/>
+          <span class="optional-text">Optional</span>
+</div>
+</div>
+</div>
+
+<div class="hideDiv">
+<div class="row" >
+<div class="form-group col-sm-12" id="rewardsNumberId">
+          <label for="rewardsNumber" class="labeldynamic"> 
+          
+           
+          
+          
+          
+          &nbsp;</label><label class="graycolour"></label>
+          <label class="graycolour"></label>
+          <div class="error-msg" id="rewardsNumberErrDiv" style="display:none;" role="alert" aria-live="assertive">
+ 		  <span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+          <span id="rewardsNumberError"/>
+          </div>
+          <span id="rewardsNumberErrorMsg"></span>
+          <input type="text" name="applyVTO.applicantVO.rewardsNumberDapply" maxlength="20" value="" id="rewardsNumber" class="commoninputtext form-control" onblur="rewardsNumberCheck();" autocomplete="off" pattern="[a-zA-Z0-9\s]+"/>
+          <!-- DE-580 UAT Prep Cathay Pacific Changes -->
+          <div id="optional-text-ucm" style="display: none"></div>
+          <div  id="rewards-optional-text" class="optional-text">Optional</div>
+</div>
+</div>
+</div>
+<div id="asiaMilesMemberNoFlag">
+
+</div>
+</div>
+  </div>
+</div>
+  
+  
+ 
+<div class="panel panel-default">
+  <div class="panel-body add-joint-remove" id="coappHeader">
+  
+ 
+ 
+  <div id="joint-applicant" style="display:none">
+<div class="panel-container">
+<div class="row">
+<div class="col-sm-12 form-group">
+<h1 class="pageHeaderTextColor">Joint Applicant</h1>
+  
+  <p>
+             <div>Joint Applicant Information - An additional card will be issued to the person indicated below. The applicant (and joint applicant, if any) will be liable for all transactions made on the account including those made by any authorized user.</div>
+&nbsp;
+<div>JOINT APPLICANT: you agree that we may send notices to you and/or at the applicant&#8217;s address, regardless of whether you live at that address. Your providing your name below represents your signature to the application and agreement to all of the terms in this application.</div> 
+  </p>
+  </div>
+  </div>
+  <div class="row">
+	<div class="form-group col-xs-8 col-sm-10 padding-right0-mobiel">
+	
+  <div class="showDiv">
+           <label for="firstName" class="labeldynamic">First Name</label>
+           <div class="error-msg" id="coappfnameErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="coappfnameError"/>
+			</div>
+           <span id="coAppFNameErrorMsg"></span>
+           <input type="text" name="applyVTO.jointApplicantVO.firstName" maxlength="20" value="" id="coappFirstName" class="commoninputtext form-control" title="Joint Applicant First Name" onblur="coappfirstNameCheck();" autocomplete="off" aria-describedby="coappfnameErrDiv" aria-required="true"/>
+         </div>
+</div>
+<div class="form-group col-xs-4 col-sm-2 margin_botton">
+  <div class="showDiv">
+	         <label for="middleIntiate" class="labeldynamic">M.I.</label>
+	         <div class="error-msg" id="coappMiddleInitialErrDiv" style="display:none;" role="alert" aria-live="assertive">
+			<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+		<span id="coappMiddleInitialError"/>
+		</div>
+	         <span id="coAppMIErrorMsg"></span>                               
+	         <input type="text" name="applyVTO.jointApplicantVO.middleIntiateDapply" maxlength="1" value="" id="coappMiddleInitial" class="commoninputtext form-control" title="Joint Applicant Middle Initial" onblur="coappMiddleInitialCheck();" autocomplete="off" aria-describedby="coappMiddleInitialErrDiv"/>                               
+	       <span class="optional-text">Optional</span>
+	       </div>
+</div>
+</div>	
+
+<div class="row">
+<div class="form-group col-xs-8 col-sm-10 padding-right0-mobiel">
+  <div class="showDiv">
+          <label for="lastName" class="labeldynamic">Last Name</label>
+          <div class="error-msg" id="coappLnameErrDiv" style="display:none;" role="alert" aria-live="assertive">
+			<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+		<span id="coappLnameError"/>
+	</div>
+          <span id="coApplNameErrorMsg"></span>
+          <input type="text" name="applyVTO.jointApplicantVO.lastName" maxlength="25" value="" id="coappLastName" class="commoninputtext form-control" title="Joint Applicant Last Name" onblur="coapplastNameCheck();" autocomplete="off" aria-describedby="coappLnameErrDiv" aria-required="true"/>
+        </div>
+</div>
+<div class="form-group col-xs-4 col-sm-2 margin_botton">
+<div class="showDiv" style="padding-right:0px;">
+           <label for="suffix" class="labeldynamic">Suffix</label>
+           <select name="applyVTO.jointApplicantVO.suffix" id="coApplicantSuffix" class="inputselect form-control suffix-drop-down" title="Joint Applicant Suffix" autocomplete="off">
+    <option value=""
+    selected="selected"
+    >Select</option>
+    <option value="II">II</option>
+    <option value="III">III</option>
+    <option value="IV">IV</option>
+    <option value="JR">JR</option>
+    <option value="SR">SR</option>
+
+
+</select>
+
+
+           <span class="optional-text">Optional</span>
+         </div>
+</div>
+</div>
+
+<div class="row">
+	<div class="form-group col-xs-8 col-sm-10 padding-right0-mobiel">
+  <div class="showDiv">
+           <label for="streetAddress" class="labeldynamic">Street Address</label>
+           <div class="error-msg" id="coAppMailingAddressErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="coAppMailingAddressError"/>
+		</div>
+           <span id="coAppStreetErrorMsg"></span>
+           <input type="text" name="applyVTO.jointApplicantVO.streetAddressDapply" maxlength="35" value="" id="coAppMailingAddress" class="commoninputtext form-control" title="Joint Applicant Street Address" onblur="coappMailingAddressCheck();" autocomplete="off" aria-describedby="coAppMailingAddressErrDiv" aria-required="true"/>
+         </div>
+</div>
+<div class="form-group col-xs-4 col-sm-2 margin_botton">
+  <div class="showDiv">
+            <label for="aptmtNumber" class="labeldynamic">Apt #</label>
+            <div class="error-msg" id="jointApartmentNumberErrDiv" style="display:none;" role="alert" aria-live="assertive">
+ 				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="jointApartmentNumberError"/>
+			</div>
+            <span id="coAppAptErrorMsg"></span>
+            <input type="text" name="applyVTO.jointApplicantVO.aptmtNumber" maxlength="25" value="" id="jointApartmentNumber" class="commoninputtext form-control" title="Joint Applicant Apartment Number" onblur="jointApartmentNumberCheck();" autocomplete="off" aria-describedby="jointApartmentNumberErrDiv"/>
+          <span class="optional-text">Optional</span>
+          </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-sm-3">
+  <div class="showDiv" style="padding-right:0px;">
+            <label for="zipCode" class="labeldynamic"> Zip Code</label>
+           <div class="error-msg" id="jointZipErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="jointZipError"/>
+			</div>
+           <span id="coAppZipErrorMsg"></span>
+           <input type="tel" name="applyVTO.jointApplicantVO.zip" maxlength="9" value="" id="applyVTO_jointApplicantVO_zip_id" class="commoninputtext form-control" title="Joint Applicant Zip Code" onblur="jointZipCodeCheck();" min="0" max="999999999" autocomplete="off" aria-describedby="jointZipErrDiv" aria-required="true"/>
+         </div>
+</div>
+<input type="hidden" name="applyVTO.jointApplicantVO.state" value="" id="jointApplicantVO_state"/>
+<input type="hidden" name="applyVTO.jointApplicantVO.city" value="" id="jointApplicantVO_city"/>
+<div class="form-group col-xs-8 col-sm-6 padding-right0-mobiel" id="jointAppCityDiv">
+  <div class="showDiv" >
+		           <label for="cityAndState" class="labeldynamic">City &amp; State</label>
+		           <div class="error-msg" id="jointCityStateErrDiv" style="display:none;" role="alert" aria-live="assertive">
+						<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+							<span id="jointCityStateError"/>
+					</div>
+		           <span id="coAppCityStateErrorMsg"></span>
+		           <input type="text" name="applyVTO.jointApplicantVO.cityAndStateDapply" maxlength="20" value="" id="applyVTO_jointApplicantVO_city_id" class="commoninputtext form-control" title="Joint Applicant City and State" onblur="jointCityAndStateCheck();" autocomplete="off" aria-describedby="jointCityStateErrDiv"/>                                  
+		       </div>
+</div>
+<div class="form-group col-xs-4 col-sm-3">
+ 
+  <div class="showDiv">
+               <label for="housing" class="labeldynamic">Housing</label>
+                <select name="applyVTO.jointApplicantVO.housingDapply" id="coApplicantHousing" class="inputselect form-control" title="Joint Applicant Housing Information" autocomplete="off">
+    <option value="A">Other</option>
+    <option value="R">Rent</option>
+    <option value="O">Own</option>
+
+
+</select>
+
+
+                <span class="optional-text">Optional</span>
+            </div>
+  
+</div>
+</div>
+<div class="row">
+<div class="form-group col-sm-7 col-xs-8 padding-right0-mobiel help-icon-success">
+  <div class="showDiv" style="position: relative;">
+               <label for="primaryPhone" class="labeldynamic"> Primary Phone</label>
+               <div class="error-msg" id="coappPrimaryPhoneErrDiv" style="display:none;" role="alert" aria-live="assertive">
+					<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="coappPrimaryPhoneError"></span>
+			 	</div>
+               <span id="coAppPrimPhoneErrorMsg"></span>
+               <input type="tel" name="applyVTO.jointApplicantVO.primaryPhoneDapply" value="" id="jointPrimaryPhone" class="commoninputtext form-control on-focus-text-coapp" title="Joint Applicant Primary Phone" onblur="coappPrimaryPhoneCheck();" onkeyup="validateCoappADA(this.value, '305-555-1212','Y');" autocomplete="off" aria-describedby="coappPrimaryPhoneErrDiv" aria-required="true"/>
+           <span class="help-icon" id="jointPriPhone"></span>
+           </div>
+	
+</div>
+<div class="form-group col-sm-5 col-xs-4 pull-right help-icon-success">
+  <div class="showDiv">
+	             <label for="phoneType" class="labeldynamic"> Type</label>
+	             <div class="error-msg" id="coappPrimaryPhoneTypeErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="coappPrimaryPhoneTypeError"/>
+		 	</div>
+	             <span id="coAppPrimPhTypeErrorMsg"></span>
+	             <select name="applyVTO.jointApplicantVO.phoneTypeDapply" id="coApplicantPrimaryPhone" class="inputselect form-control" title="Joint Applicant Phone Type" onblur="coappPrimaryPhoneTypeCheck();" autocomplete="off" aria-describedby="coappPrimaryPhoneTypeErrDiv" aria-required="true">
+    <option value="Select"
+    >Select</option>
+    <option value="Home">Home</option>
+    <option value="Cell">Cell</option>
+    <option value="Business">Business</option>
+
+
+</select>
+
+
+	         </div>
+</div>
+<input type="hidden" name="CoappADACheck" value="" id="CoappADACheck"/>
+             <div class="formdiv" id="coAppadaContent" style="display:none;"> 
+                   <div class="formdiv showDiv" style="padding-right:0px;padding-bottom:5px;">
+                     <p class="light-color"><input type="checkbox" name="applyVTO.jointApplicantVO.coAppcheckADA" value="true" id="CoappcheckADA"/><input type="hidden" id="__checkbox_CoappcheckADA" name="__checkbox_applyVTO.jointApplicantVO.coAppcheckADA" value="true" />If you do not have a phone number because you are deaf or hard of hearing, please check this box.</p>
+                   </div>
+                   <div class="formdiv showDiv" id="CoAppadaNote" style="display:none;">
+                      <p class="light-color"><b>Important Notice:</b> This is only for the use of individuals  who do not have a phone number because of a disability-related reason. Individuals who check this box should submit all other required information and will be contacted to complete the application process. If you checked the box in error, please uncheck the box to complete your application.</p>
+                   </div>
+             </div>
+	<div id = "joint-help-textPriPhone" class="col-sm-12 help-text">
+	 
+	<p class="light-color">You authorize Synchrony Bank to contact you at each phone number you have provided. By providing a cell phone number and/or email address, you agree to receive account updates and information, including text messages, from Synchrony Bank and JCPenney. Standard text messaging rates may apply.</p>
+	</div>
+</div>
+
+<div class="showDiv">
+<div class="row">
+<div class="form-group col-sm-7 col-xs-8 padding-right0-mobiel">
+                 <label for="alternatePhone" class="labeldynamic"> Alternate Phone</label>
+                <div class="error-msg" id="jointAlterPhoneErrDiv" style="display:none;" role="alert" aria-live="assertive">
+ 					<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+					<span id="jointAlterPhoneError"></span>
+				 	</div>
+				 	<span id="coAppaltPhErrorMsg"></span>
+                <input type="tel" name="applyVTO.jointApplicantVO.alternatePhoneDapply" value="" id="jointAlterPhone" class="commoninputtext form-control" title="Joint Applicant Alternate Phone" onblur="jointAlternatePhoneCheck();" autocomplete="off" aria-describedby="jointAlterPhoneErrDiv"/>
+            <span class="optional-text">Optional</span>
+</div>
+<div class="form-group col-sm-5 col-xs-4 pull-right">
+	<div class="showDiv" style="padding-right:0px;">
+               <label for="alternatePhoneType" class="labeldynamic">Type</label>
+               <div class="error-msg" id="coappAlternatePhoneTypeErrDiv" style="display:none;" role="alert" aria-live="assertive">
+					<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="coappAlternatePhoneTypeError"/>
+			 	</div>
+			 	<span id="coAppAltPhTypeErrorMsg"></span>
+               	<br/><select name="applyVTO.jointApplicantVO.alternatePhoneTypeDapply" id="coApplicantAltPhoneType" class="inputselect form-control" title="Joint Applicant Phone Type" onblur="jointAlternatePhoneTypeCheck();" autocomplete="off" aria-describedby="coappAlternatePhoneTypeErrDiv">
+    <option value="Select"
+    >Select</option>
+    <option value="Home">Home</option>
+    <option value="Cell">Cell</option>
+    <option value="Business">Business</option>
+
+
+</select>
+
+
+          </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-sm-12">
+  <div class="showDiv">
+             <label for="email" class="labeldynamic">Email Address</label>
+             <div class="error-msg" id="coappEmailErrDiv" style="display:none;" role="alert" aria-live="assertive">
+			<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+		<span id="coappEmailError"/>
+	 	</div>
+             <span id="coAppEmailErrorMsg"></span>
+             <input type="email" name="applyVTO.jointApplicantVO.email" maxlength="40" value="" id="coAppEmail" class="commoninputtext form-control" title="Joint Applicant Email Address" onblur="coappEmailChecking();" autocomplete="off" aria-describedby="coappEmailErrDiv" aria-required="true"/>
+       </div>
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-sm-12">
+<div class="showDiv" style="padding-right:0px;">
+          <label for="confirmEmail" class="labeldynamic">Confirm Email Address</label>
+           <div class="error-msg" id="coappConfirmEmailErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="coappConfirmEmailError"/>
+		</div>
+			<span id="coAppConfirmMailErrorMsg"></span>
+           <input type="email" name="applyVTO.jointApplicantVO.confirmEmail" maxlength="40" value="" id="coAppConfirmEmail" class="commoninputtext form-control" title="Joint Applicant Confirm Email Address" onblur="coappConfirmEmailChecking();" oncopy="return false;" onpaste="return false;" autocomplete="off" aria-describedby="coappConfirmEmailErrDiv" aria-required="true" oncut="return false;"/>
+     </div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="form-group col-sm-6">
+   <div class="showDiv">
+               <label for="socialSecurityNumber" class="labeldynamic">SSN/ITIN</label>
+               <div class="error-msg" id="coappSSNErrDiv" style="display:none;" role="alert" aria-live="assertive">
+ 					<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+					<span id="coappSSNError"/>
+				 	</div>
+               <span id="coAppSSNErrorMsg"></span>
+               <input type="tel" name="applyVTO.jointApplicantVO.socialSecurityNumberDapply" value="" id="jointSSN" class="commoninputtext form-control" title="Joint Applicant Social Security Number" onblur="coappSSNValid();" autocomplete="off" aria-describedby="coappSSNErrDiv" aria-required="true"/>
+          </div>
+</div>
+<div class="form-group col-sm-6">
+  <div class="showDiv" style="padding-right:0px;">
+	            <label for="DOB" class="labeldynamic">Date of Birth&nbsp;</label>
+	            <div class="error-msg" id="jDOBErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+				<span id="jDOBError"/>
+	 			</div>
+	            <span id="coAppDobErrorMsg"></span>
+
+	            <input type="tel" name="applyVTO.jointApplicantVO.dob" value="" id="jointDOB" class="commoninputtext form-control" title="Joint Applicant Date of Birth" onblur="jointDOBCheck();" autocomplete="off" aria-describedby="jDOBErrDiv" aria-required="true"/>
+	      </div> 
+</div>
+</div>
+
+<div class="row">
+<div class="form-group col-sm-6 help-icon-success">  
+ <div class="showDiv" style="padding-right:0px;width:330px;">
+                <label for="annualNetIncome" class="labeldynamic">Annual Net Income&nbsp;</label>
+                <div class="error-msg" id="jAmountErrDiv" style="display:none;" role="alert" aria-live="assertive">
+				<span class="erroralert" id="cache268" ><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+			<span id="jAmountError"/>
+			</div>
+			<span id="coAppAniErrorMsg"></span>
+                <div class="input-group">				
+				<span class="input-group-addon">$</span>
+			<input type="tel" name="applyVTO.jointApplicantVO.annualNetIncomeDapply" maxlength="10" value="" id="jointAppNetIncome" class="commoninputtext form-control on-focus-text-coapp-ani" title="Joint Applicant Annual Net Income" onfocus="amtCommaRemoveJoint();" onblur="jointAmountCheck();" min="0" max="9999999999" autocomplete="off" aria-describedby="jAmountErrDiv" aria-required="true"/>
+			<span class="input-group-addon"id="income-lastlattres">.00</span>                    
+			<span class="help-icon" id="joint-net-income"></span>
+</div>           
+                     </div>
+
+</div>
+	<div id="joint-help-netincome" class="helptext-light-color" style="display:none;">
+			Alimony, child support or separate maintenance income need not be included unless relied upon for credit. You may include the annual amount that you have available to spend from your assets.
+			<span id="jointWiText" class="helptext-light-color" style="display:none;">
+			<div><p><b>Married WI Residents Only: </b> If you are applying for an individual account and your spouse also is a WI resident, combine your and your spouse&#8217;s financial information.</p></div>
+		</span> 
+		</div>
+</div>
+
+<div class="hideDiv">
+<div class="row">
+<div class="form-group col-sm-12">
+              <label for="stationId" class="labeldynamic">
+              
+          	  
+          		
+          		
+         		
+          	</label>
+              <span id="coAppstationIDErrorMsg"></span>
+              <input type="text" name="applyVTO.jointApplicantVO.stationIdDapply" value="" id="jointStationId" class="commoninputtext form-control" title="Joint Applicant " autocomplete="off" pattern="[0-9]*"/>
+            <span class="optional-text">Optional</span>
+</div>
+</div>
+</div>
+
+<div class="hideDiv">
+<div class="row">
+<div class="form-group col-sm-12">
+             <label for="associateId" class="labeldynamic">
+ 			
+           	
+          		
+          		
+          	
+          	</label>
+             <span id="coAppAssoIdErrorMsg"></span>
+             <input type="text" name="applyVTO.jointApplicantVO.associateIdDapply" value="" id="jointAssociateId" class="commoninputtext form-control" title="Joint Applicant " autocomplete="off"/>
+           <span class="optional-text">Optional</span>
+</div>
+</div>
+</div>
+
+<div class="hideDiv">
+<div class="row">
+<div class="form-group col-sm-12">
+          <label for="rewardsNumber" class="labeldynamic"> 
+          
+           
+          
+          
+          
+          &nbsp;</label><label class="graycolour"></label>
+          <span id="coAppRewardsNumberErrorMsg"></span>
+          <input type="text" name="applyVTO.jointApplicantVO.rewardsNumberDapply" maxlength="9" value="" id="jointrewardsNumber" class="commoninputtext form-control" title="Joint Applicant " autocomplete="off"/>
+         <span class="optional-text">Optional</span>
+</div>
+</div>
+</div>  
+  
+  </div>
+  </div>
+</div>
+</div> 
+<input type="hidden" name="applyVTO.applicantVO.geoLocatedOmniture" value="" id="applicantVO_geoLocatedOmni_id"/>
+<input type="hidden" name="applyVTO.applicantVO.geoLocatedStatus" value="" id="applicantVO_geoLocatedStatus_id"/>
+
+ 
+<div class="col-sm-8 col-md-7 marrgn-auto">
+<button type="button" class="btn btn-primary btn-lg btn-block ensightenevent ensightencathayevent" id="submitButton" 
+	onclick="javascript:dApplysubmit(false);" title="Continue" data-type="generic" data-object="button" data-reason="information-submit">Continue</button>
+<p>&nbsp;</p>
+<p class="light-color">
+
+  By applying you agree that, if approved, <span id="bankNameFull2" class="bankNameFull"></span> may provide you with a <span id="plccCrdName" class="plccCrdName"></span>.
+
+
+</p>
+  </div>
+  </div>
+  </div>
+  </div>
+ </form>
+
+
+
+ </div>
+         
+   
+    
+        <script type="text/javascript">
+                var inp = document.querySelector('#appSSN' );
+                if(inp.value == null || inp.value == ''){
+                	inp.type = 'tel';
+                }else{
+                	 inp.type = 'password';
+                	
+                }
+                
+        </script>
+    
+    
+    
+    
+        <script type="text/javascript">
+                var inp1 = document.querySelector('#jointSSN' );
+                inp1.type = 'password';
+        </script>
+    
+ 	
+    
+    <script type="text/javascript">
+    function allnumeric()  
+   {  
+   var inputtxt=document.getElementById("appNetIncome").value;
+      var numbers = /^[0-9]+$/;
+      
+      if(inputtxt.match(numbers))  
+      {  
+      document.dApplyForm.appNetIncome.focus();  
+      return true;  
+      }  
+      else  
+      { 
+     var i= inputtxt.replace(/[^0-9]/g, "");
+      document.getElementById("appNetIncome").value=i;     
+      return false;  
+      }  
+   } 
+    $(document).ready(function () {
+
+ 
+	});
+
+	
+	
+	
+	
+ $(document).ready(function () {
+ 
+        var inp = document.querySelector('#appSSN' );
+        inp.addEventListener( 'focus', function(){
+            inp.type = 'tel';
+            inp.pattern = '[0-9]*'; 
+        });
+       /* 
+        * commented for tab validations 2016
+        * 
+        * /
+       / * inp.addEventListener( 'blur', function(){
+            inp.type = 'password';
+        });
+        */
+        
+        var inp1 = document.querySelector('#jointSSN' );
+        inp1.addEventListener( 'focus', function(){
+            inp1.type = 'text';
+        });
+      /*  inp1.addEventListener( 'blur', function(){
+            inp1.type = 'password';
+        });
+        */
+      
+          //For Applicant Phone Lists during OnPage Load
+          var val;
+          var allOptions = $('#appPrimaryPhoneType option');
+          var secvar = $('#appAltPhoneType').get(0).value;
+          var firstvar = $('#appPrimaryPhoneType').get(0).value;
+          var allYr2Options = $.map(allOptions, function (option) {
+              val = option.value;
+              if (val != "Select") {
+                  $('#appAltPhoneType option[value=' + val + ']').remove();
+              }
+              return val;
+          });
+          var allOptsHTML = '';
+          $(allYr2Options).each(function () {
+              if ((this != firstvar) || (this == "Select")) {
+                  if (this == secvar) {
+                     allOptsHTML += '<option selected="' + true + '" value="' + this + '">' + this + '</option>';
+                  }
+                  else {
+                      allOptsHTML += '<option value="' + this + '">' + this + '</option>';
+                  }
+              }
+          });
+ 
+        
+          $('#appAltPhoneType').html(allOptsHTML);
+         if( $('#stationIDErrorMsg').html()!="")
+         {
+         $('#serviceId4').show();
+         $('#serviceId1').hide();
+         $('#serviceId2').hide();
+         $('#serviceId3').hide();
+         
+         }
+          
+          });
+ </script>
+ 
+ 
+
+    <script type="text/javascript">
+            var inp = document.querySelector('#appSSN' );
+                if(inp.value == null || inp.value == ''){
+                	inp.type = 'tel';
+                }else{
+                	 inp.type = 'password';
+                	
+                }
+               
+    </script>
+
+
+
+    <script type="text/javascript">
+            var inp1 = document.querySelector('#jointSSN' );
+            inp1.type = 'password';
+    </script>
+
+
+<script type="text/javascript">
+  $(document).ready(function () { 
+          var coApplicantVal;
+          var coApplicantAllOptions = $('#coApplicantPrimaryPhone option');
+          var coApplicantSecvar = $('#coApplicantAltPhoneType').get(0).value;
+          var coApplicantFirstvar = $('#coApplicantPrimaryPhone').get(0).value;
+          var coApplicantAllYr2Options = $.map(coApplicantAllOptions, function (option) {
+              coApplicantVal = option.value;
+              if (coApplicantVal != "Select") {
+                  $('#coApplicantAltPhoneType option[value=' + coApplicantVal + ']').remove();
+              }
+              return coApplicantVal;
+          });
+          var coApplicantAllOptsHTML = '';
+          $(coApplicantAllYr2Options).each(function () {
+              if ((this != coApplicantFirstvar) || (this == "Select")) {
+                  if (this == coApplicantSecvar) {
+                      coApplicantAllOptsHTML += '<option selected="' + true + '" value="' + this + '">' + this + '</option>';
+                  }
+                  else {
+                      coApplicantAllOptsHTML += '<option value="' + this + '">' + this + '</option>';
+                  }
+              }
+          });
+          $('#coApplicantAltPhoneType').html(coApplicantAllOptsHTML);
+          });
+		   
+</script>
+
+<script type="text/javascript">
+   $('#appPrimaryPhoneType').on('change', function () {
+          var val;
+          var allOptions = $('#appPrimaryPhoneType option');
+          var secvar = $('#appAltPhoneType').get(0).value;
+          var firstvar = $('#appPrimaryPhoneType').get(0).value;
+          var allYr2Options = $.map(allOptions, function (option) {
+              val = option.value;
+              if (val != "Select") {
+                  $('#appAltPhoneType option[value=' + val + ']').remove();
+              }
+              return val;
+          });
+          var allOptsHTML = '';
+          $(allYr2Options).each(function () {
+              if ((this != firstvar) || (this == "Select")) {
+                  if (this == secvar) {
+                      allOptsHTML += '<option selected="' + true + '" value="' + this + '">' + this + '</option>';
+                  }
+                  else {
+                      allOptsHTML += '<option value="' + this + '">' + this + '</option>';
+                  }
+              }
+          });
+          $('#appAltPhoneType').html(allOptsHTML);
+      });
+</script>
+
+<script type="text/javascript">
+  $('#coApplicantPrimaryPhone').on('change', function () {
+      var val;
+      var allOptions = $('#coApplicantPrimaryPhone option');
+      var secvar = $('#coApplicantAltPhoneType').get(0).value;
+      var firstvar = $('#coApplicantPrimaryPhone').get(0).value;
+      var allYr2Options = $.map(allOptions, function (option) {
+          val = option.value;
+          if (val != "Select") {
+              $('#coApplicantAltPhoneType option[value=' + val + ']').remove();
+          }
+          return val;
+      });
+      var allOptsHTML = '';
+      $(allYr2Options).each(function () {
+          if ((this != firstvar) || (this == "Select")) {
+              if (this == secvar) {
+                  allOptsHTML += '<option selected="' + true + '" value="' + this + '">' + this + '</option>';
+              }
+              else {
+                  allOptsHTML += '<option value="' + this + '">' + this + '</option>';
+              }
+          }
+      });
+      $('#coApplicantAltPhoneType').html(allOptsHTML);
+  });
+</script>
+ 
+  <script type="text/javascript">
+  
+  $(document).ready(function () { 
+  
+  //Prefill functionality - City and State are Prefill then populate the dApply City&State field in Apply screen
+  if(""!="" && ""!=""){
+  	$('#applyVTO_applicantVO_city_id').val(", "+"");
+  	}  
+    $('#applyVTO_applicantVO_zip_id').on('input propertychange keyup', function(e) {
+    if($.trim($('#applyVTO_applicantVO_zip_id').val())=="")
+    {
+    $('#applyVTO_applicantVO_city_id').val("");
+    }
+    });
+    $('#applyVTO_jointApplicantVO_zip_id').on('input propertychange keyup', function(e) {
+    if($.trim($('#applyVTO_jointApplicantVO_zip_id').val())=="")
+    {
+    $('#applyVTO_jointApplicantVO_city_id').val("");
+    }   
+    });   
+ });  
+</script>
+
+<script type="text/javascript">
+  
+  function toggleCoApp(displayCoApp) {
+  document.getElementById("coAppPresentId").value = displayCoApp;
+  	if(document.getElementById("joint-applicant").style.display == "none"){
+	  	document.getElementById("joint-applicant").style.display = "block";		
+		document.getElementById("add-joint").checked=true;
+		document.getElementById('coAppPresentId').checked='true';
+		
+		//document.getElementById("coappId").style.display = "";
+          document.getElementById("coappfnameErrDiv").style.display = "none";
+          document.getElementById("coappLnameErrDiv").style.display = "none";
+          document.getElementById("coAppMailingAddressErrDiv").style.display = "none";
+          document.getElementById("coappPrimaryPhoneTypeErrDiv").style.display = "none";
+          document.getElementById("jointZipErrDiv").style.display = "none";
+          
+          document.getElementById("jointCityStateErrDiv").style.display = "none";
+          //document.getElementById("jointStateErrDiv").style.display = "none";
+          document.getElementById("jAmountErrDiv").style.display = "none";
+          
+          
+           document.getElementById("coappPrimaryPhoneErrDiv").style.display = "none";
+        document.getElementById("jDOBErrDiv").style.display = "none";
+        document.getElementById("coappSSNErrDiv").style.display = "none";
+			
+	}else{		
+		document.getElementById("joint-applicant").style.display = "none";
+		document.getElementById("add-joint").checked=false;	
+		document.getElementById('coAppPresentId').checked='false';
+		
+		$('#CoappADACheck').val('N');
+		
+      $('#CoappcheckADA').attr('checked', false);
+        $('#CoAppadaNote').css( {
+              'display' : 'none'
+          }); 
+            $('#jointPrimaryPhone').css( {
+              'background-color' : ''
+          });  
+          $('#jointAlterPhone').css( {
+              'background-color' : ''
+          }); 
+            
+            $('#jointPrimaryPhone').removeAttr('disabled');
+                $('#coApplicantPrimaryPhone').removeAttr('disabled');
+         
+          $('#coApplicantPrimaryPhone').val('Select');
+          
+          $('#jointAlterPhone').removeAttr('disabled');
+          $('#coApplicantAltPhoneType').removeAttr('disabled');
+          $('#coApplicantAltPhoneType').val('Select');
+            
+          //$("#jointAppCityDiv").hide();
+          $("#jointSSN").val("");
+         //$("#jointSSN").blur();
+          $('#jointPrimaryPhone').val("");
+          //$('#jointPrimaryPhone').blur();
+ 
+            $('#jointDOB').val("");
+           // $('#jointDOB').blur();
+  
+         $('#jointAlterPhone').val("");
+          //$('#jointAlterPhone').blur();
+          document.getElementById("joint-applicant").style.display = "none";
+          
+          	$('#coApplicantAltPhoneType option').remove();
+            var $old=$('#coApplicantPrimaryPhone');
+            $old.data('myhtml',$old.html()); 
+            
+            var x = $old.data('myhtml');
+            $(x).appendTo('#coApplicantAltPhoneType');      
+       
+          var iTag = document.getElementById("joint-applicant").getElementsByTagName('input');
+          for (var i = 0;i < iTag.length;i++) {
+              var t = iTag[i];
+              if (t.type == "text") {
+                  t.value = "";
+              }                           
+          }
+          document.getElementById("coApplicantSuffix").value = '';
+              //document.getElementById("coApplicantState").value = '';
+              document.getElementById("coApplicantHousing").value = 'A';
+              document.getElementById("coApplicantPrimaryPhone").value = 'Select';              
+              document.getElementById("coApplicantDLState").value = '';
+          if(document.getElementById("coApplicantDLState") != undefined && document.getElementById("coApplicantDLState")!=null){
+                document.getElementById("coApplicantDLState").value = 'Select';
+              } 		
+	}
+  	
+  
+  }
+  
+  if(document.getElementById("add-joint").checked == true){
+	  document.getElementById("joint-applicant").style.display = "block";
+  }else{
+  	document.getElementById("joint-applicant").style.display = "none";
+  }
+  
+    
+   </script>
+	
+	
+	<script type="text/javascript">
+	
+$( "#PriPhone" ).click(function() {
+  $( "#help-textPriPhone" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+   
+});
+
+$( "#jointPriPhone" ).click(function() {
+  $( "#joint-help-textPriPhone" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+   
+});
+
+$( ".on-focus-text" ).focus(function() {
+$( ".help-text" ).slideToggle( "slow", function() {
+  });
+});
+
+
+
+$('.on-focus-text').blur( function() {
+  $( ".help-text" ).slideToggle( "hide", function() {
+  });
+});
+
+$( ".on-focus-text-coapp" ).focus(function() {
+$( "#joint-help-textPriPhone" ).slideToggle( "slow", function() {
+  });
+});
+
+
+
+$('.on-focus-text-coapp').blur( function() {
+  $( "#joint-help-textPriPhone" ).slideToggle( "hide", function() {
+  });
+});
+
+ 
+$( "#net-income" ).click(function() {
+  $( "#help-netincome" ).slideToggle( "slow", function() {
+    // Animation complete.
+    var cityStateSelected = document.getElementById("applyVTO_applicantVO_city_id").value;
+    var stateSelected = cityStateSelected.slice(-2).toUpperCase();
+	if(stateSelected == "WI"){
+	$( "#wiText" ).css("display", "block"); 
+	}
+	else{
+	$( "#wiText" ).css("display", "none"); 
+	}
+  });
+     
+}); 
+
+$( "#joint-net-income" ).click(function() {
+  $( "#joint-help-netincome" ).slideToggle( "slow", function() {
+    // Animation complete.
+    var jointCityStateSelected = document.getElementById("applyVTO_jointApplicantVO_city_id").value;
+    var jointStateSelected = jointCityStateSelected.slice(-2).toUpperCase();
+	if(jointStateSelected == "WI"){
+	$( "#jointWiText" ).css("display", "block"); 
+	}
+	else{
+	$( "#jointWiText" ).css("display", "none"); 
+	}
+  });  
+   
+}); 
+
+$( ".on-focus-text-ani" ).focus(function() {
+$( "#help-netincome" ).slideToggle( "slow", function() {
+var cityStateSelected = document.getElementById("applyVTO_applicantVO_city_id").value;
+    var stateSelected = cityStateSelected.slice(-2).toUpperCase();
+	if(stateSelected == "WI"){
+	$( "#wiText" ).css("display", "block"); 
+	}
+	else{
+	$( "#wiText" ).css("display", "none"); 
+	}
+  });
+});
+
+
+
+$('.on-focus-text-ani').blur( function() {
+  $( "#help-netincome" ).slideToggle( "hide", function() {
+  var cityStateSelected = document.getElementById("applyVTO_applicantVO_city_id").value;
+    var stateSelected = cityStateSelected.slice(-2).toUpperCase();
+	if(stateSelected == "WI"){	
+		 $( "#wiText" ).css("display", "block"); 
+	}
+	else{
+
+	$( "#wiText" ).css("display", "none"); 
+	}
+  });
+});
+
+$( ".on-focus-text-coapp-ani" ).focus(function() {
+$( "#joint-help-netincome" ).slideToggle( "slow", function() {
+var jointCityStateSelected = document.getElementById("applyVTO_jointApplicantVO_city_id").value;
+    var jointStateSelected = jointCityStateSelected.slice(-2).toUpperCase();
+	if(jointStateSelected == "WI"){
+	$( "#jointWiText" ).css("display", "block"); 
+	}
+	else{
+	$( "#jointWiText" ).css("display", "none"); 
+	}
+  });
+});
+
+
+
+$('.on-focus-text-coapp-ani').blur( function() {
+  $( "#joint-help-netincome" ).slideToggle( "hide", function() {
+  var jointCityStateSelected = document.getElementById("applyVTO_jointApplicantVO_city_id").value;
+    var jointStateSelected = jointCityStateSelected.slice(-2).toUpperCase();
+	if(jointStateSelected == "WI"){
+	$( "#jointWiText" ).css("display", "block"); 
+	}
+	else{
+	$( "#jointWiText" ).css("display", "none"); 
+	}
+  });
+});
+
+function readTCDoc()
+{
+  window.open('/cs/groups/public/documents/et_tcdoc/e042839.pdf');
+}
+
+function cityAndState()
+{
+ //splitting city and state 
+		var cityStateSelected = document.getElementById("applyVTO_applicantVO_city_id").value;
+    	if(cityStateSelected == null || cityStateSelected.search(",")==-1)
+		{
+			document.getElementById("cityAndStateErrDiv").style.display="block";
+			if(firstcity.search(",")==-1){
+				document.getElementById("cityAndStateError").innerHTML = "Please check the City and State Format. Ex: 'Wall Street, NY'";
+			}
+			else{
+			document.getElementById("cityAndStateError").innerHTML = "This is a required field.";
+			}
+			document.getElementById("applyVTO_applicantVO_city_id").setAttribute("class","commoninputtext form-control form-control-error");
+			document.getElementById("cityStateErrorMsg").style.display="none";
+			return false;
+		}
+    
+    	var cityStateArray = cityStateSelected.trim().split(',');
+	    document.getElementById("applicantVO_city").value = cityStateArray[0].trim();
+	    document.getElementById("applicantVO_state").value = cityStateArray[1].trim().toUpperCase();
+	    
+	    if($("#add-joint").is(':checked')){
+	    
+		    cityStateSelected = document.getElementById("applyVTO_jointApplicantVO_city_id").value;
+		    	if(cityStateSelected == null || cityStateSelected.search(",")==-1)
+		    	{
+					document.getElementById("jointCityStateErrDiv").style.display="block";
+						if(cityStateSelected.search(",")==-1){
+							document.getElementById("jointCityAndStateError").innerHTML = "Please check the City and State Format. Ex: 'Wall Street, NY'";	
+							}
+						else{
+							document.getElementById("jointCityAndStateError").innerHTML = "This is a required field.";
+							}
+							document.getElementById("applyVTO_jointApplicantVO_city_id").setAttribute("class","commoninputtext form-control form-control-error");
+							document.getElementById("jointCityStateError").style.display="none";
+							return false;
+					}
+		    
+		    cityStateArray = cityStateSelected.trim().split(',');
+		    cityDapplyVal=cityStateArray[0].trim();
+		    stateDapplyVal=cityStateArray[1].trim().toUpperCase();
+		    
+		    document.getElementById("jointApplicantVO_city").value=cityDapplyVal;
+		    document.getElementById("jointApplicantVO_state").value=stateDapplyVal;
+	    }
+	    return true;
+ 
+ }
+ 
+
+
+function dApplysubmit(geoLocationflag)
+{   
+		var amount=document.getElementById("appNetIncome").value;
+		var amountFiltered = amount.replace(/[,]/g, "");
+		document.getElementById("appNetIncome").value = amountFiltered;
+		var jointAmount=document.getElementById("jointAppNetIncome").value;
+		var jointAmountFiltered = jointAmount.replace(/[,]/g, "");
+		document.getElementById("jointAppNetIncome").value = jointAmountFiltered;
+	 	var myformStatus=dapplySubmitValidation();
+	// front end validations performed and return validation status
+          if(myformStatus==false){
+        	document.getElementById("appNetIncome").value = amount;
+        	document.getElementById("jointAppNetIncome").value = jointAmount;
+          	document.getElementById("formErrors").style.display = "block";
+            window.scrollTo(0,0);
+            return false;
+          } 
+          
+        cityAndState();
+        if($( "#stationId" ).val()==""){
+        $( "#stationId" ).val($( "#tempStationId" ).val())
+        }   
+        if(myformStatus==true){  // formstatus value came form dapplySubmitValidation()
+     		if(geoLocationflag){
+     			fetchGeoLocation();
+     		}else{
+     		
+     			document.getElementById("applicantVO_geoLocatedOmni_id").value = "unknow";
+	          	document.getElementById('submitButton').disabled = 'disabled';
+	          	enablePSprefill();
+				document.dApplyForm.action = "dapplysubmit.action";
+		      document.dApplyForm.submit();
+     		}
+     	} 
+  } 
+
+
+
+function enablePSprefill(){
+$('.prefilled').prop("disabled", false);
+}
+
+</script>
+<script>
+$(document).ready(function(){
+       
+          $('#appDOB').mask( {
+              mask : "99/99/9999"
+          });
+          $('#appSSN').mask( {
+              mask : "999-99-9999"
+          });
+          $('#appPrimaryPhone').mask( {
+              mask : "(999) 999-9999"
+          });
+          
+          $('#appAlterPhone').mask( {
+              mask : "(999) 999-9999"
+          });
+          $('#jointAlterPhone').mask( {
+              mask : "(999) 999-9999"
+          });
+         
+          $('#jointDOB').mask( {
+              mask : "99/99/9999"
+          });
+          
+          $('#jointSSN').mask( {
+              mask : "999-99-9999" 
+          }); 
+           $('#jointPrimaryPhone').mask( {
+              mask : "(999) 999-9999"
+          });
+           $('#dlExpiryDateDapply').mask( {
+              mask : "99/9999"
+          });
+          $('#coappDlExpiryDateDapply').mask( {
+              mask : "99/9999"
+          });
+                
+         ziplookup("#applyVTO_applicantVO_zip_id", "#applyVTO_applicantVO_city_id",true);
+         ziplookup("#applyVTO_jointApplicantVO_zip_id", "#applyVTO_jointApplicantVO_city_id",false);
+	   });
+	   
+	   function ziplookup(zipname, cityname, applicant) {
+          $(zipname).autocomplete( {
+              source : function (request, response) {
+                  jQuery.support.cors = true;
+                  
+                  $.ajax( {
+                      crossDomain : true, url : "/ZipCodeLookup/FetchCity", data :  {"Zip" : $(zipname).val()},
+                      type : "POST", 
+                      dataType : "json", 
+                      timeout : 30000, 
+                      processData : true, 
+                      cache : false, 
+                      success : function (data) {
+                          response($.map(data.ZipList, function (item) {
+                              return {label : (item.Zip + ":" + item.City + ":" + item.State), value : (item.Zip)}
+                          }))
+                      }
+                  });
+              },
+              select : function (event, ui) {
+                  var lableVal = ui.item.label.split(":");
+                  $(zipname).val(lableVal[0])
+                  $(cityname).val(lableVal[1] +", " + lableVal[2]);               
+              }
+          });
+      }
+      
+      
+      function autoTab(element, nxtelement, x) {
+      if (x.getAttribute && x.value.length == x.getAttribute("maxlength")) {
+          if (document.getElementById(nxtelement) != null)
+              document.getElementById(nxtelement).focus();
+      }
+  }
+
+  function activeXDetect(componentClassID) {
+      try {
+          var componentVersion = document.body.getComponentVersion('{' + componentClassID + '}', 'ComponentID');
+          return (componentVersion !== null) ? componentVersion : false;
+      }
+      catch (e) {
+      }
+ 
+      try {
+          document.body.addBehavior("#default#clientCaps");
+          var compVer;
+          compVer = activeXDetect("45EA75A0-A269-11D1-B5BF-0000F8051515");
+      }
+      catch (e) {
+      }
+      }
+    
+  
+</script>
+<script type="text/javascript">
+var PNLName="";
+var pageName='your information';
+var actionName='applyStart';
+var clientName="JCPCON";
+var programName="";
+var errorsize="0";
+var pageKind="";
+var merchantId="";
+var applicationId="";
+var device="desk";
+var product="";
+var result="";
+var declineReason="";
+var selectedCardTypeProdCode="099";
+var DC="020";
+var PLCC="099";
+if(""=="true"){
+product="_PREMIUM";
+}
+if(PLCC.search(selectedCardTypeProdCode)!=-1){
+product="PLCC"+product;
+}
+else if(DC.search(selectedCardTypeProdCode)!=-1){
+product="Dual"+product;
+}
+else{
+ product='Generic';
+}
+if(""==""){
+PNLName='rc';
+}
+else{
+ PNLName=clientName;
+}
+programName=" _JCPenney Credit Card";
+if (errorsize > 0) {
+pageName='dApply_start_error';
+actionName='dapplyStart_error';
+}
+
+if("false"=="true"){
+pageKind="prescreen"
+}
+else if("hideDiv"=="showDiv"){
+pageKind="thirdparty"
+}
+else{
+pageKind="apply"
+}
+if("PC"=="PC"){
+device="desk"
+}
+else if("PC"=="Mobile"){
+device="mobi"
+}
+else {
+device="tab"
+}
+	var _SFDDL = _SFDDL || {};
+	_SFDDL.pageInfo = _SFDDL.pageInfo || {};
+	_SFDDL.pageInfo = { 
+		"PageName" : pageName,
+		"SiteIdentifier" : "dapply",
+		"ClientName" : clientName,
+		"PageKind" : pageKind,
+		"PNL" : PNLName,
+		"CustomerType" : "Consumer",
+		"Country_Language" : "US|ENG",
+		"Device" : device,
+		"PageFunction" : "Application",
+		"Product" : product,
+        "Program" : programName, 
+        "Geolocation" : "" ,              
+        "Result" : result,
+        "MerchantId" : merchantId,
+        "DeclineReason" : declineReason,
+        "Token":"1523488451832",
+        "Application_ID" :applicationId
+	};
+	
+	_SFDDL.formAction = _SFDDL.formAction || {};
+	_SFDDL.formAction = {
+		"appType" : "Application",
+		"product" : product,
+		"action" : actionName
+	};
+ </script>
+ 
+ 
+<script type="text/javascript">
+
+
+function moreStationLocations() {
+		$( "#serviceId2" ).show();
+		$( "#serviceId1" ).hide(); 
+		$( "#serviceId4" ).hide();  
+		}
+function enterStationId() {
+		$( "#serviceId4" ).show();
+		$( "#serviceId1" ).hide();  
+		$( "#serviceId2" ).hide(); 
+		}
+
+
+	function getStationsLocations(){
+	 var stationLocatorFlag= document.getElementById("stationLocatorFlag").value;
+		 if(stationLocatorFlag=="showDiv" && "false"!="true"){
+		 var zipselected=document.getElementById("applyVTO_applicantVO_zip_id").value;
+		 
+	  		$.get("getStationIds.action",
+	        {
+	          zipId: zipselected,
+	                  },
+	        function(data,status){
+	             document.getElementById("serviceId1").innerHTML=data;
+	             $('#serviceId2').hide();
+	             $('#serviceId3').hide();
+	             $('#serviceId4').hide();
+	             $('#serviceId1').show();
+				$('.btn-dapply').css('border-color','#C00C00');
+				$('.btn-dapply').css('color','#C00C00');
+				$('.carousel-control.right').css('color','#C00C00');
+			     $('.carousel').carousel();	
+			     $('.carousel').carousel();
+				$("#myCarousel").carousel("pause");
+				checkitem(); 
+				$('#myCarousel').on('slid.bs.carousel', checkitem);
+    
+   
+   			       }); 
+		
+		 }
+		
+	}
+
+    
+var selectedStation="";
+function selectStation(selectedStation){
+		$( ".stationNumber" ).html('Select');
+		$( ".stationNumber" ).removeClass('active');
+		
+		$( ".stationNumber").css('background','');
+		$( ".stationNumber").css('border-color','#C00C00');
+		$( ".stationNumber").css('color','#C00C00');//button font color
+		
+		$( "#"+selectedStation).html('Selected');
+		$( "#"+selectedStation).addClass('active');
+		$( "#"+selectedStation).css('border-color','#');
+		$( "#"+selectedStation).css('background','#C00C00');
+		$( "#"+selectedStation).css('color','#FFFFFF');//button font color
+		$( "#tempStationId" ).val(selectedStation);
+	}
+
+function nextItems(){
+$("#myCarousel").carousel("next");
+}
+function prevItems(){
+$("#myCarousel").carousel("prev");
+}
+</script>
+<script type="text/javascript">
+function stationLocBtnHover(stationLocBtnId){
+	if($( "#"+stationLocBtnId).html()!='Selected'){
+		$( "#"+stationLocBtnId).css('background','#C00C00');
+		$( "#"+stationLocBtnId).css('border-color','#');
+		$( "#"+stationLocBtnId).css('color','#FFFFFF');//button font color
+	}
+	
+}
+function stationLocBtnOut(stationLocBtnId){
+	if($( "#"+stationLocBtnId).html()!='Selected'){	
+		$( "#"+stationLocBtnId).css('background','');
+		$( ".stationNumber").css('border-color','#C00C00');
+		$( "#"+stationLocBtnId).css('color','#C00C00');//button font color
+		}
+}
+
+//Find Differernt Station Location Details Button
+function findStationLocBtnHover(){
+		$( "#findLoc").css('background','#C00C00');
+		$( "#findLoc").css('border-color','#');
+		$( "#findLoc").css('color','#FFFFFF');//button font color
+	
+}
+function findStationLocBtnOut(){
+	
+		$( "#findLoc").css('background','');
+		$( "#findLoc").css('border-color','#C00C00');
+		$( "#findLoc").css('color','#C00C00');
+}
+
+
+$("#findLoc").click(function(){
+
+				var zipselected=document.getElementById("findZipLoc").value;
+				var cityState=document.getElementById("findCityStateLoc").value;
+				if(zipselected!="" ||cityState!=""){
+				var cityStateStatus=checkCityStateStatus();
+				var zipStatus=checkZipStatus();
+				
+				if( !cityStateStatus || !zipStatus){
+				return false;
+				}
+				
+				$( "#serviceId3" ).show();
+				  $.get("getStationIds.action",
+				        {
+				          zipId: zipselected,
+				          cityState:cityState,
+				                  },
+				        function(data,status){
+				           document.getElementById("serviceId1").innerHTML=data;
+				           $( "#serviceId1" ).show();
+				           $( "#serviceId3" ).hide();
+				           $('.btn-dapply').css('border-color','#C00C00');
+							$('.btn-dapply').css('color','#C00C00');
+							//$('.carousel-control.left').css('color','#C00C00');
+							$('.carousel-control.right').css('color','#C00C00');
+							$('.carousel').carousel();
+							$("#myCarousel").carousel("pause");
+							checkitem(); 
+						
+						    $('#myCarousel').on('slid.bs.carousel', checkitem);
+						    
+	
+																	          
+				        }); 				
+				$( "#serviceId2" ).hide();
+				$( "#serviceId4" ).hide();
+				}
+});
+
+function checkZipStatus(){
+    //alert("This input field has lost its focus.");
+    var zipcodee=document.getElementById("findZipLoc").value;
+	var zipRegex=/^\d*$/;
+     if((zipcodee.trim()!="") && !zipcodee.match(zipRegex)){
+		document.getElementById("findZipLocErrDiv").style.display="block";
+		document.getElementById("findZipLocError").innerHTML = "Please enter a valid zip code.";
+		document.getElementById("findZipLoc").setAttribute("class","commoninputtext form-control form-control-error");
+		document.getElementById("findZipLocErrorMsg").style.display="none";
+		return false;
+		}
+		else if((zipcodee.trim()!="") && (zipcodee.length < 5) || (zipcodee.length >5 && zipcodee.length < 9)){
+		document.getElementById("findZipLocErrDiv").style.display="block";
+		document.getElementById("findZipLocError").innerHTML = "Please enter a valid zip code.";
+		document.getElementById("findZipLoc").setAttribute("class","commoninputtext form-control form-control-error");
+		document.getElementById("findZipLocErrorMsg").style.display="none";
+		return false;
+		}
+		
+		else {
+		 document.getElementById("findZipLocError").innerHTML = ""; 
+		 document.getElementById("findZipLocErrDiv").style.display="none";
+		 //document.getElementById("findZipLoc").setAttribute("class","commoninputtext form-control form-control-success");
+		 document.getElementById("findZipLocErrorMsg").style.display="none";
+		 return true;
+		}
+		
+		
+}
+
+function checkCityStateStatus(){
+		var findCityStateLoc=document.getElementById("findCityStateLoc").value;
+		var zipcodee=document.getElementById("applyVTO_applicantVO_zip_id").value;
+		var citystate = "";
+		var city = "";
+		var state = "";
+		var cityRegex ="";
+		
+		if(findCityStateLoc.search(",")!=-1)
+		{
+		citystate = findCityStateLoc.split(',');		
+		city=citystate[0].toUpperCase();
+		state=citystate[1].trim().toUpperCase();
+		}
+		
+		
+		cityRegex=/^[.\s'\s,\sa-z\sA-Z]+$/;
+
+		if(findCityStateLoc != ""){
+		if(!findCityStateLoc.match(cityRegex)){
+		document.getElementById("findCityStateLocErrDiv").style.display="block";
+		document.getElementById("findCityStateLocError").innerHTML = "Please enter a valid city and state.";
+		document.getElementById("findCityStateLoc").setAttribute("class","commoninputtext form-control form-control-error");
+		document.getElementById("findCityStateLocErrorMsg").style.display="none";
+		return false;
+		}
+		 if(state.length > 2){
+		document.getElementById("findCityStateLocErrDiv").style.display="block";
+		document.getElementById("findCityStateLocError").innerHTML = "Please enter a valid city and state.";
+		document.getElementById("findCityStateLoc").setAttribute("class","commoninputtext form-control form-control-error");
+		document.getElementById("findCityStateLocErrorMsg").style.display="none";
+		return false;
+		}
+		else {
+		 document.getElementById("findCityStateLocError").innerHTML = ""; 
+		 document.getElementById("findCityStateLocErrDiv").style.display="none";
+		 //document.getElementById("findCityStateLoc").setAttribute("class","commoninputtext form-control form-control-success");
+		 document.getElementById("findCityStateLocErrorMsg").style.display="none";
+		 return true;
+		}
+	}
+		else {
+		 document.getElementById("findCityStateLocError").innerHTML = ""; 
+		 document.getElementById("findCityStateLocErrDiv").style.display="none";
+		 //document.getElementById("findCityStateLoc").setAttribute("class","commoninputtext form-control form-control-success");
+		 document.getElementById("findCityStateLocErrorMsg").style.display="none";
+		 $("#submitButton").removeAttr("disabled");
+		 return true;
+		}
+
+	
+		
+}
+		
+
+$('.carousel').carousel({
+  pause: false,
+    interval: false,
+	 wrap: false
+	//carousel('pause')
+})	
+
+
+
+$('#myCarousel').on('slid.bs.carousel', checkitem);
+
+function checkitem()                        // check function
+{
+    var $this = $('#myCarousel');
+    if($('.carousel-inner .item:first').hasClass('active') && $('.carousel-inner .item:last').hasClass('active') ){
+    	$this.children('.left.carousel-control').removeAttr( 'style' );
+        $this.children('.left.carousel-control').removeAttr( "onclick" );
+        $this.children('.right.carousel-control').removeAttr( 'style' );
+        $this.children('.right.carousel-control').removeAttr( "onclick" );
+     }else if ($('.carousel-inner .item:first').hasClass('active')) {
+        // Hide left arrow
+        $this.children('.left.carousel-control').removeAttr( 'style' );
+        $this.children('.left.carousel-control').removeAttr( "onclick" );
+		$('.carousel-control.right').css('color','#C00C00');
+		$('.carousel-control.right').attr( "onclick",'nextItems()');
+        // But show right arrow
+        //$this.children('.right.carousel-control').removeClass('arrow-gray');
+    } else if ($('.carousel-inner .item:last').hasClass('active') ) {
+        // Hide right arrow
+        $this.children('.right.carousel-control').removeAttr( 'style' );
+        $this.children('.right.carousel-control').removeAttr( "onclick" );
+        $('.carousel-control.left').css('color','#C00C00');
+        $('.carousel-control.left').attr( "onclick",'prevItems()' );
+        // But show left arrow
+       // $this.children('.left.carousel-control').removeClass('arrow-gray');
+    } else {
+   		$('.carousel-control.left').attr( "onclick",'prevItems()' );
+    	$('.carousel-control.right').attr( "onclick",'nextItems()');
+        $('.carousel-control.left').css('color','#C00C00');
+        $('.carousel-control.right').css('color','#C00C00');
+    }
+}
+var preScreenFlag="false";
+var housingVar = "N";
+if( housingVar =='N' && preScreenFlag=='true')
+{
+   document.getElementById("housing").style.display = 'none';  
+ }
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+    var preScreenFlag="false";
+    var asiaMilesMemberNumberFlag="";
+	if(preScreenFlag == 'true' && asiaMilesMemberNumberFlag == 'showDiv'){
+		$('#rewardsNumberId').hide();
+		$('#asiaMilesMemberContent').hide();
+		$('#asiaMilesMemberNoFlag').hide();
+	}else if(asiaMilesMemberNumberFlag == 'showDiv'){
+		$('#rewardsNumberId').hide();  
+  		$("#rewardsNumberId").css("padding-left", "24px");
+  		$("#rewardsNumberId").css("margin-bottom","0px");
+	}
+  });
+  //DE-580 UAT Prep Cathay Pacific Changes
+function asiaMilesMemberShipDisplay(){
+	$("#rewardsNumberId").show();
+	$("#rewards-optional-text").html($("#optional-text-ucm").html()); 
+	$('#rewardsMsg').html('');
+	$('#rewardsNumber').attr('readonly', false);
+}
+function asiaMilesMemberShipCheck(checkBox)
+ {
+ if(checkBox.checked){
+  $('#rewardsNumber').attr('readonly', true);
+  $('#rewardsNumber').val('');
+  }else{
+   $('#rewardsNumber').attr('readonly', false);
+  }
+}
+function asiaMilesMemberShipDisable(){
+$('#rewardsNumberId').hide();
+$('#rewards-optional-text').html('');
+$('#rewardsMsg').html('<span></span>');
+}
+</script>
+		
+	</div>
+	<div class="container">
+	
+			
+<!-- offer banner2 start here -->
+<div class="row offer2b">
+	<div class="col-sm-12 text-center">
+		<!-- Merchant Banner for Desktop -->
+	
+		
+            <a href='https://www.jcpenney.com/jsp/customerservice/serviceContent.jsp?pageId=pg40067700009' title="offer" data-type="offerArea2b" data-object="offerArea2b" data-reason="applyOffer2b" class="ensightenevent" target="_blank">
+            <img src="/cs/groups/public/documents/et_clientoffer/e046503.png" class="img-responsive display-desktop" title="Earn Rewards 2X faster with your JCPenney Credit Card. Visit jcp.com/rewards for details" alt="Earn Rewards 2X faster with your JCPenney Credit Card. Visit jcp.com/rewards for details"></img>
+            </a>
+       
+       
+    
+    	
+	</div>
+</div>
+
+		
+		
+<!-- for bottom promo disclosure -->
+		
+<!-- for bottom promo disclosure close-->
+		
+		
+		</div>
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+<div class="col-sm-12 col-md-12">
+
+<ul>
+<li><a href="javascript:CTECPopup()" title="Consent to Electronic Communications ">Consent to Electronic Communications  </a></li>
+<li><a href="javascript:PrivacyPopup()" title="Privacy Policy">Privacy Policy </a></li>
+<li><a href="javascript:webSiteAgreement()"  title="Web Site Usage Agreement">Web Site Usage Agreement  </a></li>
+<li><a href="javascript:GECRBPPPopup()" title="SYNCB Internet Privacy Policy">SYNCB Internet Privacy Policy</a></li>
+</ul>
+
+<div class="footer-security-text text-center"> 
+
+            
+            <div class="bodycontent showDiv">                         
+                <div style="width:35px; float:left;" class="security-icon-dApply"><i class="fa fa-lock" aria-hidden="true" title="Your security is important to us. We take great care to protect your information by using 128-bit secure socket layer technology."></i></div><div style="width:455px;" class="security-text-dApply">Your security is important to us. We take great care to protect your information by using 128-bit secure socket layer technology.</div>                     
+            </div>
+            
+            
+</div>
+</div>
+</div>
+
+<div id="privacyPolicy">
+
+
+
+	
+	
+	
+	
+  	
+
+
+
+
+	
+
+
+
+<input type="hidden" name="priv_file_path" value="/cs/groups/public/documents/et_tcdoc/e042841.pdf" id="priv_file_path"/>
+</div>
+
+
+
+ 
+
+<script>    
+isClose=false;
+$(document).ready(function() { 
+$(document).mousemove(function(e) {
+var popCloseFlag="";
+var deviceTypeFlag="PC";
+
+if(e.clientY <=5 && isClose==false && popCloseFlag !='true' && deviceTypeFlag!="Mobile")
+{
+$('#exit_content').modal({onOpen: Shomer_modalOpen, onClose: simplemodal_close});
+}
+});
+});
+
+/**
+ * When the open event is called, this function will be used to 'open'
+ * the overlay, container and data portions of the modal dialog.
+ *
+ * onOpen callbacks need to handle 'opening' the overlay, container
+ * and data.
+ */
+/* function modalOpen (dialog) {
+     	dialog.overlay.fadeIn('fast', function () {
+	dialog.container.fadeIn('fast', function () {
+		dialog.data.hide().slideDown('fast');
+                 
+	});
+	});
+} */
+
+function cardSecurity_modalOpen (dialog) {
+    modalOpen (dialog);
+}
+
+function Shomer_modalOpen (dialog) {
+    modalOpen (dialog);
+}
+
+function TC_modalOpen (dialog) {
+    modalOpen (dialog);
+}
+
+function TC_submission_modalOpen (dialog) {
+    modalOpen (dialog);
+}
+
+//Omniture posting function for modal popup
+
+
+   /**
+ * When the close event is called, this function will be used to 'close'
+ * the overlay, container and data portions of the modal dialog.
+ *
+ * The SimpleModal close function will still perform some actions that
+ * don't need to be handled here.
+ *
+ * onClose callbacks need to handle 'closing' the overlay, container
+ * and data.
+ */
+function simplemodal_close (dialog) {
+
+$('#modalCheck').val("N");
+    dialog.data.fadeOut('fast', function () {
+		dialog.container.hide('fast', function () {
+			dialog.overlay.slideUp('fast', function () {
+				$.modal.close();
+			});
+		});
+	});
+}
+
+
+//function that executes after accepting Terms and Conditions during submission 
+function TC_submissionModal_close (dialog) {
+    simplemodal_close(dialog);
+}
+
+function closewindow() {  
+    $.modal.close(); 
+	isClose=true;
+    $('#abandonFlag').val('true');    
+    return false;
+} 
+function continuewindow() {    
+    $.modal.close(); 
+	isClose=false;   
+    return false;
+}
+function closemodelwindow() { 
+    $.modal.close(); 
+	return false;
+} 
+
+function closeModelAcceptTCwindow() { 
+    $.modal.close(); 
+	return false;
+} 
+
+function PrivacyPopup(){
+var priv_file_path=document.getElementById("priv_file_path").value;
+	   	window.open(priv_file_path, '_blank');
+	}
+		
+
+function FAQ(){
+    window.open('/cs/groups/public/documents/et_appdoc/e026910.html','WindowFAQ_1523488452429');
+}
+function GECRBPPPopup(){ 
+    window.open('/cs/groups/public/documents/et_appdoc/e026513.html','WindowGPP_1523488452429');
+}
+
+function webSiteAgreement()
+{
+	var priv_file_path=document.getElementById("priv_file_path").value;                                           
+    window.open('/cs/groups/public/documents/et_appdoc/e026518.html'+"?priv_file="+priv_file_path);
+}
+
+function CTECPopup(){ 
+    window.open('/cs/groups/public/documents/et_appdoc/e026921.html','WindowCTE_1523488452429');
+}
+</script>
+
+</div>
+</body>
+<script type="text/javascript">
+//Progressbar contains an arrow image - Last stage of PB bg color will effect bg color of arrow 
+setTimeout(function(){
+var arrowcolor1 = $('.progressbar li:last-child').css("border-bottom-color");
+var arrowcolor2 = $('.progressbar li.done:last-child').css("border-bottom-color");
+$('.progressbar-main span').css("color", arrowcolor1);
+$('.progressbar-main span').css("color", arrowcolor2);
+},20);
+
+
+$( "#TabForDetailsId" ).click(function() {
+$( "#TabForDetailsUCMContentId" ).slideToggle( "slow", function() {
+    // Animation complete.
+ });
+});
+
+/* For bottom promo disclosure display */
+
+</script>
+</html>
+

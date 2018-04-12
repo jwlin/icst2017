@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Apply for a My Kohl's Charge card, and start saving even more at Kohl's today! Get access to exclusive deals and more with your very own Kohl's Charge card.">
+<meta name="keywords" content="My Kohl's Charge, Kohl's Charge">
+<meta name="viewport" content="width=device-width">
+<meta name="mobile-web-app-capable" content="yes">
+<!-- Following is to disable Mobile Safari from automatically detecting phone numbers since we explicitly define
+the links in the html -->
+<meta name="format-detection" content="telephone=no">
+
+<title>My Kohl's Charge Card | Kohl's</title>
+
+<!--
+	The data-main attribute in the the script tag below is what starts off the dependency chain.
+	Further inclusion of javascript files is handled 'as needed' through 'require' calls.
+	Please look at js/main.js.
+ -->
+<script data-main="js/main.js"
+	src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="https://www.kohls.com/media/css/fonts/hfjFonts.css">
+<link rel="stylesheet" type="text/css" href="jquery/jquery-ui-1.11.1/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/kohlsJquery.css">
+<link id="pagestyle" rel="stylesheet" type="text/css" href="css/styles.css">
+
+<link rel='stylesheet' media='handheld, screen and (max-width: 480px)' href='css/narrow.css' />
+<link rel='stylesheet' media='handheld, screen and (min-width: 481px) and (max-width: 1024px)' href='css/medium.css' />
+<link rel='stylesheet' media='handheld, screen and (min-width: 1025px)' href='css/wide.css' />
+
+<style>
+.header, #pleaseWaitStartPage, #baseinfo, #confirm,
+	#pleaseWaitConfirmSubmit, #confirmID, #pleaseWaitConfirmIDSubmit,
+	#editApp, #applicationConfirmation, #promoSent, #applicationPending,
+	#applicationDecline, #applicationDuplicate, #applicationError,
+	#startPagePolicyModal, #baseInfoClickHereModal, #baseInfoPolicyModal,
+	#confirmInfoPolicyModal, #confirmIDPolicyModal,
+	#appConfirmDisclosureModal, #appConfirmClickHereModal,
+	#appConfirmPolicyModal, #appPendingPolicyModal, #appDeclinePolicyModal,
+	#appDupePolicyModal, #appErrorPolicyModal, #countryField, #countryFieldEdit,
+	#errorHtmlBox, #promoCodeError, #errorHtmlBoxConfirm, #errorHtmlBoxPhone {
+	display: none;
+}
+
+#partialMatch, #partialMatchPrevLinked, #rewardsIDLabel, #partialMatchError, 
+#rewardsIDField, #rewardsIDButton, #rewardsIDButton,
+#Cards2Plus, #loyatlyIdTable, #optCard, #Card2Faded, #partialMatchErrorFinal,
+#loyaltyPartialSuccess, #Text503, #secondaryStartShopping, #Pend503, 
+#rewardsIDerror, #SecondaryText503 {
+	display: none;
+}
+
+.errorHtmlHeader {margin-bottom: .5em;}
+#errorHtmlBoxConfirm {margin-bottom: 1em;}
+#startPage {
+	display: none;
+}
+#applicationConfirmation{
+	display: none;
+}
+.label-text {
+	display: inline;
+}
+/*.errorMsg {display: block;}*/
+.special-chars { letter-spacing: 0.4em; }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+/*:focus {border: 1px solid red; background-color: pink;}*/
+
+:focus {border: 1px dotted #666;}
+
+/* ##FIX added by Kirk, move to style sheet */
+#baseinfo label {white-space: nowrap;}
+
+</style>
+
+</head>
+<body>
+	<div id="form">
+		<!-- START STARTPAGE SECTION -->
+		<script type="text/javascript">
+			var i = document.createElement("img");
+			i.src = "https://r.turn.com/r/beacon?b2=CpglEdsGRUf7DcDuZXX3cQcqUzkpW_MhwlcHG-vkUXSoAWKzjLJebUU-u-bg2_zqwRAWIONgaz_5WPlFPfNDEQ&cid=";
+	
+			var i = document.createElement("img"); 
+			i.src = "https://d.audienceiq.com/r/dd/id/L21rdC80NC9jaWQvMjg0NTEzMTEvdC8wL2NhdC8yOTg3MTE0NA/oid/[order_id]/oval/[order_value]";
+		</script>
+		<div class="subSections" id="startPage">
+			<div class="maxWidth">
+			<div id="kohlsBanner1" style="max-width:1024px; width: 100%; margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			</div>
+			<br>
+			<div id="largeStartPage" style="width: 100%;" >
+				<div class="largeHeaderContent" style="padding-bottom: 50px; padding-top: 10px; width:100%;" tabindex="0">
+					<div class="headerText">
+					<span alt="Apply for a Kohl's Charge, and save more than ever before!">Apply for a Kohl's Charge, and save more than ever before!</span>
+					</div>
+				</div>
+				<div class="maxWidth">
+				<div class="KohlsModel">
+				<img src="images/KohlsChargeModel.png" style="width: 100%;" alt="woman holding a Kohls charge card">
+				</div>
+				<div id="secondOfferLarge" style="text-align: center; margin-top:10px;" tabindex="0">
+					<div class="yourKohlsCharge" style= "text-align: center">Your <span style="font-family:'Gotham 5r', Helvetica, Arial, sans-serif;">Kohl's Charge</span> entitles you to at least</div>
+					<div>
+						<span class="twelveSpecialOffers">12 SPECIAL OFFERS</span>
+						<span class="yourKohlsCharge" style= "text-align: center"> every year.</span>
+					</div>
+				</div>
+				<br/><br/>
+				<div id="firstOfferLarge" style="text-align: center;" tabindex="0">
+					<p class="takeAnExtra">take an extra<br/></p>
+					<p class="extraPercent"></p>
+						<p class="percentage" id="percentageOff2"><sup>%</sup><span>OFF</span></p>
+					</p>
+					<p class="takeAnExtraBottom">your first kohl's<br />charge purchase*<br/></p>
+				</div>
+				<br/>
+				</div>
+			</div>
+			<div class="maxWidth">
+			<div class="subsectionNormalText" tabindex="0" style="text-align:center;">
+					<p alt="If you have received a
+                    Personal Offer Code, please enter it below. Otherwise, click
+                    Apply Now to apply for a Kohl's Charge**.">If you have received a
+					Personal Offer Code, please enter it below. Otherwise, click
+					Apply Now to apply for a Kohl's Charge**.</p>
+			</div> <br />
+				
+			<div id="promoCodeErrorDiv" class="subsectionCenteredText" aria-live="assertive" aria-atomic="true">
+					<p id="promoCodeError" class="errorHtml">Invalid Offer Code. Please Try Again.</p>
+			
+					<label id="enterPersonalOfferLabel" for="promoCode">Enter Your Personal Offer Code:</label>
+					<input class="inputPromoCode" maxlength="14" type="text" id="promoCode" style="width:200px !important;margin-bottom:0 !important" tabindex="0">
+				<div>
+					<button class="buttonLargePink" id="startPageSubmit" tabindex="0" style="color:white;">Submit Code</button>
+				</div> 
+				<!-- KOHLS SPINNER -->
+				<div id="pleaseWaitStartPage">
+					<div class="adding-to-cartSecondary">
+						<span class="animated-loading-black"></span>Please Wait
+					</div>
+				</div> <!-- END KOHLS SPINNER -->
+				<div style=" clear:both"></div>
+	
+			</div>
+			<div style="text-align: center">
+				<br>
+			</div>
+
+			<div>
+				<button class="buttonLargeLanding" id="startPageContinue" tabindex="0" style="margin: 10px auto; height: 70px">Apply Now</button>
+			</div> <br /> <br />
+				
+			</div>
+			<div id = "thirdOffer" style="background-color: #f9f9f9; text-align: center; margin:auto; margin-top:75px; padding-bottom:35px; border-top: 2px solid #c1c1c1;" tabindex="0">
+				
+				<!-- <div class="plus" style="font-size:4em; border: 0px solid red;">PLUS</div> -->
+				<div>
+					<img src="images/circle_PLUS.png" style="margin-top:-75px; width:150px; height:150px;" alt="Circle containing the word Plus">
+				</div>
+				<br>
+				<div class="maxWidth">
+				<div class="hideOnMobile">
+					<div style="text-align:center; width:33%; float: left; border: 0px solid red;">
+							<div class="" style="margin:auto; border: 0px solid red;">	
+								<p class="saveEvenMore" style="text-align: center; margin-bottom: 10px;">Get another</p>
+	  							<p></p><p class="smallPercentage">15<sup>%</sup><span>OFF</span></p>
+								<p class="spendOnYour" style="text-align:center;">discount when your</p> <p class="spendOnYour" style="text-align:center;">card arrives in the mail.</p>
+							</div>
+					</div>
+				
+					<div id="combineIwth" class="smallFloatL" style="padding: 0 15px; width:33%; text-align: center; border-left:1px solid #B8B8B9; border-right:1px solid #B8B8B9;">
+						<div>
+						<p class="saveEvenMore">COMBINE DISCOUNTS</p>
+						<br>
+						</div>
+						<div>
+						<p class="spendOnYour" style="margin: 0 20px; text-align: center;"> Use your Kohl's Cash and Yes2You Rewards with your Kohl's Charge discounts.***</p> 
+						<br>
+						</div>
+						<div style="margin: 0px;border: 0px solid red;">
+							<div class="combineDiscountsCards">
+							<img src="images/cashcards.png" style="max-width:90%;height:auto" alt="Kohls Cash and Yes Two You cards">
+							</div>
+							<div class="combineDiscountsCards">
+							<img src="images/yes-cards.png" style="max-width:90%;height:auto" alt="Kohls Cash and Yes Two You cards">
+							</div>
+						</div>
+					</div>
+				
+					<div id= "MVCOffer" class="MVC" style="text-align: center; max-width: 360px; margin:auto; border-left:2px solid #B8B8B9; float: left; width:33%; border: 0px solid red;" tabindex="0">
+						<div class="saveEvenMore">SAVE EVEN MORE!</div>
+						<div style="width: 80%; margin:auto;">
+							<div style="width: 20%; float:left;" tabindex="0">
+								<img src="images/mvc.png" style="max-width:100%; height:auto; padding-top: 10px" alt="Kohl's MVC logo">
+							</div>
+							<div class="saveEvenMoreHome">
+								Spend $600 on your Kohls's Charge to become a Most Valued Customer (MVC) and receive at least 18 discounts a year.<br/>
+							</div>
+							<div style="clear: both"></div>
+						</div>
+					</div>
+				
+					<div style="clear: both"></div>
+
+				</div>
+				<div class="hideOnDesktop" style="">
+					<ul tabindex=0 class="landingList" style="padding:30px; text-align:left; list-style:disc; ">
+						<li>Get another <span class="subsectionBold">15% discount</span> when your card arrives in mail.</li>
+						<li>Combine your <span class="subsectionBold">Kohl's Cash</span> and <span class="subsectionBold">Yes2You Rewards</span> with your Kohl's Charge discounts.***</li>
+						<li>Spend $600 on your Kohl's Charge to become a <span class="subsectionBold">Most Valued Customer(MVC)</span> and receive at least 18 special offers a year.</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="maxWidth">
+			<div class="hideOnMobile" >
+				<div class="rainBowContainer" style="clear: both;">
+					<img src="images/RBtop.png" class="rainBowtopImage" alt="rainbow border top">
+					<img src="images/RBtop.png" class="rainBowbottomImage" alt="rainbow border bottom">
+				<div style = "">
+					<!--  <img src="images/wideKaliascopeBox_03.png" style ="width:98%; border:0 solid red; margin:3px;">-->
+					<p tabindex=0 class="pTextYes2ou">Use your Kohl's Cash® and Yes2You Rewards® with your Kohl's Charge discounts. ***</p>
+				</div>			
+				<div class="allSectionsStack">
+					<div class="smallFloatLSection yes2youcard">
+						<img src="images/wideKaliascopeBox_05.png" style = "width:98%; border:0 solid red; margin:4px;" alt="Rainbow border box">
+					</div>
+					<div class="smallFloatLSection smallFloatLSectionIcons yes2youBalloons">
+							<img tabindex=0 src="images/allThreeBalloons.png" style="max-width:100%; margin-top:10px;" alt="Earn 1 point per dollar spent. Earn a 5 dollar reward for every 100 points. Also receive a birthday gift and other surprises.">
+					</div>
+					<div class="smallFloatLSection yes2youButton">
+						<button id="learnMoreLanding" class="newButtonSecondary" tabindex="0">Learn More</button>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+				</div>
+			</div>
+			
+			<div class=" hideOnDesktop rainBowContainer" style="clear: both; padding: 20px 10px">
+					<img src="images/RBtop.png" class="rainBowtopImage" alt="rainbow border top">
+					<img src="images/RBtop.png" class="rainBowbottomImage" alt="rainbow border bottom">
+				<div style="width:100%; border: 0px solid red; text-align: center;">
+					<img tabindex=0 src="images/mobileYesToYouCard.png" style = "margin:auto;" alt="yes to you rewards card">
+				</div>
+				<div tabindex=0 style="text-align:center; margin-top:10px; margin-bottom:15px;">
+					Use your Kohl's Cash and Yes2You Rewards with your Kohl's Charge discounts. ***
+				</div>
+				<button class="newButtonSecondary" id="mobileLearnMore" style="margin-top:10px;" tabindex="0">Learn More</button>
+			</div>
+			<br>
+			<br>
+			<div class="subsectionSmallText" tabindex="0">
+					<p>*OFFER IS VALID ON YOUR FIRST PURCHASE IN-STORE AND ONLINE WHEN YOU USE YOUR KOHL'S CHARGE. Offer must be presented at time of in-store purchase or Promo Code must be entered at Kohls.com to receive discount. </p>
+					<p>Limit one offer per customer. <span class="subsectionBold">Dollar-off discounts, including Kohl's Cash® coupons, Yes2You Rewards&reg; and Promotional Gifts, will be applied prior to percent-off total purchase discounts/coupons. </span> Offer cannot be used in conjunction with any other percent-off discounts, including age-specific discounts. Offer not valid on the following categories and brands of merchandise: Gift Cards; Kohl’s Cares® cause merchandise or other charitable items; fragrance; prestige brands of cosmetics and skincare; select electrics; premium electronics and warranty products; consumables; premium sunglasses; sporting goods; sports team merchandise; select online-exclusives; adidas; American Girl; Columbia; Converse; Dyson; Elf on the Shelf toys, books and DVDs; Koolaburra by UGG; Levi's; Nike; Timberland and Under Armour. See complete list of exclusions at Kohls.com/exclusions or look for signs in store. Offer also not valid on price adjustments on prior purchases; payment on a Kohl’s Charge account; taxes, shipping and/or handling fees. Subject to credit approval. Reproductions or duplicates not accepted. Offer is nontransferable. See associate for details.</p>
+			</div>
+
+			<div class="subsectionSmallText" tabindex="0">
+					<p>**Most applications can be
+					processed within 60 seconds. In some instances, an application may
+					require some additional time to process, and the account may not
+					be available for immediate use.</p>
+			</div>
+			
+			<div class="subsectionSmallText" tabindex="0">
+					<p>***Kohl's Cash® earn/redeem periods vary. See Kohls.com/Rewards for Yes2You Rewards&reg; program details, terms or to enroll.</p>
+			</div>
+
+			<div class="subsectionSmallText" tabindex="0">
+					<p>&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+					are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+					<button class="linkButton" id="startPagePolicy" tabindex="0">Security
+						and Privacy Policy</button></p>
+			</div>
+		
+			<div id="startPagePolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div><!-- END STARTPAGE SECTION-->
+
+		<!-- START APP ENTRY (BASEINFO) SECTION-->
+		<div class="subSections" id="baseinfo">
+			<div class="maxWidth" id="kohlsBanner2" style="max-width:1024px; margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			<form id='validateMainForm'></form>
+
+			<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+			<div class="maxWidth">
+			<br /><br />
+			<p class="subsectionNormalText" id="baseInfoHeader" aria-describedby="baseInfoHeaderInfo" tabindex="0">All fields are required unless otherwise marked as optional.</p>
+			<!-- ##FIXed replaced old div with div above; -->
+
+			<div class="hiddenDescribes" id="baseInfoHeaderInfo">Use the below form to enter your application information</div>
+
+			<div>
+				<div class="errorHtml" id="errorHtmlBox" aria-live="assertive" aria-atomic="true" aria-describedby="errorHtmlList">
+					<p class="errorHtmlHeader">Field(s) in error are highlighted in red and listed below:</p>
+					<ul id="errorHtmlList"></ul>
+					<!--<p id="emailErrorHtmlText"></p>-->
+				</div>
+			</div> <br />
+					
+			<!-- ##FIX need an "optional" class defined in style sheet for optional field labels (grey text ect...)
+					<span class="optional">(optional)</span>
+			-->
+			<div class="formContainer">
+				<div class="formLtop">
+				<div class="floatLeftfNnMi">
+					<label for="firstName">First Name</label>
+					<input placeholder="" type="text" id="firstName" tabindex="0" aria-required="true">
+				</div>
+				<div class="floatRightfNnMi">
+					<label for="middleInitial">MI <span class="optional">(optional)</span></label>
+					<input type="text" id="middleInitial" tabindex="0" >
+				</div>
+				<div class="clear"></div>
+				</div>
+				<div class="formRtop">
+				<div class="floatLeftfNnMi">
+					<label for="lastName">Last Name</label>
+					<input placeholder="" type="text" id="lastName" tabindex="0" aria-required="true">
+	
+				</div>
+				<div class="floatRightfNnMi">
+					<label for="suffix">Suffix <span class="optional">(optional)</span></label>
+					<div class="select">
+						<select name="suffix" id="suffix" tabindex="0">
+							<option value="" selected>&nbsp;</option>
+							<option value="2">II</option>
+							<option value="3">III</option>
+							<option value="4">IV</option>
+							<option value="J">JR</option>
+							<option value="S">SR</option>
+						</select>
+					</div>
+				</div>
+				<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="formL">
+					<label for="addrLn1">Address 1</label>
+					<input type="text" id="addrLn1" placeholder="Street Address, No PO Boxes" tabindex="0" aria-required="true">
+				</div>
+				<div class="formR">
+					<label for="addrLn2">Address 2 <span class="optional">(optional)</span></label>
+					<input type="text" id="addrLn2" placeholder="Apt, suite, unit, building, floor,etc." tabindex="0">
+				</div>
+				<div class="clear"></div>
+			
+			
+				<div class="cityStateZip">
+					<div class="formLCity">
+						<label for="city">City</label>
+						<input type="text" id="city" tabindex="0" aria-required="true">
+					</div>
+						
+					<!-- these hiddens are only there for the js issue below -->
+					<input type="hidden" id="country" value="United States">
+					<input type="hidden" id="postalcode" value="">
+					<input type="hidden" id="provinceSelect" value="">
+					<!--
+					<div id="countryField">
+							<div class="countrySelector" >
+								<label for="country">Country</label>
+								<div class="select">
+									<select name="country" id="country">
+										<option value="United States">United States</option>
+										<option value="Canada">Canada</option>
+									</select>
+								</div>
+							</div>
+					</div>
+						
+					<div id="provinces">
+							<div class="floatLeftSnZ">
+								<label for="provinceSelect">Province</label>
+								<div class="select">
+									<select name="province" id="provinceSelect">
+										<option value="" disabled selected>&nbsp;</option>
+										<option value="AB">AB</option>
+										<option value="BC">BC</option>
+										<option value="MB">MB</option>
+										<option value="NB">NB</option>
+										<option value="NL">NL</option>
+										<option value="NS">NS</option>
+										<option value="ON">ON</option>
+										<option value="PE">PE</option>
+										<option value="QC">QC</option>
+										<option value="SK">SK</option>
+										<option value="NT">NT</option>
+										<option value="NU">NU</option>
+										<option value="YT">YT</option>
+									</select>
+								</div>
+							</div>
+							<div class="floatRightSnZ">
+								<label for="postalcode">Postal Code</label>
+								<input type="text" id="postalcode" placeholder="A1A 1A1">
+							</div>
+							<div class="clear"></div>
+					</div>
+					-->
+					
+					<div class="formRStateZip">
+						<div id="states">
+							<div class="floatLeftSnZState">
+		
+								<label for="stateSelect">State</label>
+								<div class="select">
+									<select name="state" id="stateSelect" tabindex="0" aria-required="true">
+										<option value="" disabled selected>&nbsp;</option>
+										<option value="AA">AA</option>
+										<option value="AE">AE</option>
+										<option value="AK">AK</option>
+										<option value="AL">AL</option>
+										<option value="AP">AP</option>
+										<option value="AR">AR</option>
+										<option value="AS">AS</option>
+										<option value="AZ">AZ</option>
+										<option value="CA">CA</option>
+										<option value="CO">CO</option>
+										<option value="CT">CT</option>
+										<option value="DC">DC</option>
+										<option value="DE">DE</option>
+										<option value="FL">FL</option>
+										<option value="FM">FM</option>
+										<option value="GA">GA</option>
+										<option value="GU">GU</option>
+										<option value="HI">HI</option>
+										<option value="IA">IA</option>
+										<option value="ID">ID</option>
+										<option value="IL">IL</option>
+										<option value="IN">IN</option>
+										<option value="KS">KS</option>
+										<option value="KY">KY</option>
+										<option value="LA">LA</option>
+										<option value="MA">MA</option>
+										<option value="MD">MD</option>
+										<option value="ME">ME</option>
+										<option value="MH">MH</option>
+										<option value="MI">MI</option>
+										<option value="MN">MN</option>
+										<option value="MO">MO</option>
+										<option value="MP">MP</option>
+										<option value="MS">MS</option>
+										<option value="MT">MT</option>
+										<option value="NC">NC</option>
+										<option value="ND">ND</option>
+										<option value="NE">NE</option>
+										<option value="NH">NH</option>
+										<option value="NJ">NJ</option>
+										<option value="NM">NM</option>
+										<option value="NV">NV</option>
+										<option value="NY">NY</option>
+										<option value="OH">OH</option>
+										<option value="OK">OK</option>
+										<option value="OR">OR</option>
+										<option value="PA">PA</option>
+										<option value="PR">PR</option>
+										<option value="PW">PW</option>
+										<option value="RI">RI</option>
+										<option value="SC">SC</option>
+										<option value="SD">SD</option>
+										<option value="TN">TN</option>
+										<option value="TX">TX</option>
+										<option value="UT">UT</option>
+										<option value="VA">VA</option>
+										<option value="VI">VI</option>
+										<option value="VT">VT</option>
+										<option value="WA">WA</option>
+										<option value="WI">WI</option>
+										<option value="WV">WV</option>
+										<option value="WY">WY</option>
+									</select>
+								</div><!-- .select -->
+							</div> <!-- .floatLeftSnZState -->
+						</div> <!-- #states -->
+						<div class="floatRightZIP">
+							<label for="zipcode">ZIP Code</label>
+							<input placeholder="55555" type="text" id="zipcode" pattern="[0-9]*" tabindex="0" aria-required="true">
+						</div>
+						<div class="clear"></div>
+					</div> <!-- .formRStateZip -->
+					<div class="clear"></div>
+				</div>
+	
+				<div class="formL">
+					<label for="homePhone">Home Phone</label>
+					<input type="tel" id="homePhone" maxlength="12" placeholder="555-555-5555" tabindex="0" aria-required="true">
+				</div>
+				<div class="formR">
+					<label for="workPhone">Work Phone <span class="optional">(optional)</span></label>
+					<input type="tel" id="workPhone" maxlength="12" placeholder="555-555-5555" tabindex="0">
+				</div>
+				<div class="clear"></div>
+				<div class="formL">
+                	<label for="ssn1" id="ssnLabel">Social Security Number</label>
+                    <div id="ssnId1" class="floatLeftFirstThreeSSN">
+                        <input class="ssn1" type="password" pattern="[0-9]*" name="ssn1"
+                        id="ssn1" size="2" maxLength="3" placeholder="555" tabindex="0" aria-required="true" aria-describedby="ssnFirstThree">
+                    </div>
+                    <div class="hiddenDescribes" id="ssnFirstThree">Enter the first three digits of your social security  number</div>
+                    <div id="ssnIdDash1" class="floatLeftdash">-</div>
+
+                    <div id="ssnId2" class="floatLeftMiddleTwoSSN">
+                        <label class="hiddenDescribes" for="ssn2" id="ssn2Label">Social Security Number next two digits</label>
+                        <input class="ssn2" type="password" pattern="[0-9]*" name="ssn2"
+                        id="ssn2" size="2" maxLength="2" placeholder="55" tabindex="0" aria-required="true" aria-describedby="ssnSecondTwo">
+                    </div>
+                    <div class="hiddenDescribes" id="ssnSecondTwo">Enter the next two digits of your social security  number</div>
+                    <div id="ssnIdDash2" class="floatLeftdash">-</div>
+
+                    <div id="ssnId3" class="floatLeftLastFourSSN">
+                        <label class="hiddenDescribes" for="ssn3" id="ssn3Label">Social Security Number last four digits</label>
+                        <input class="ssn3" type="password" pattern="[0-9]*" name="ssn3"
+                        id="ssn3" size="2" maxLength="4" placeholder="5555" tabindex="0" aria-required="true" aria-describedby="ssnLastFour">
+                    </div>
+                    <div class="hiddenDescribes" id="ssnLastFour">Enter the last four digits of your social security  number</div>
+                    <div class="clear"></div>
+                </div> <!-- .formL -->
+
+
+                <!--
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" tabindex="0" aria-required="true">
+                -->
+
+                <div class="formR">
+
+                    <label for="bdaymonth" >Date of Birth</label>
+                    <!--label for="bdaymonth" >Date of Birth Month</label-->
+                    <div id="bddate" style="width: 80;" aria-required="true" aria-live="assertive" aria-atomic="true">
+                        <input name="Bdmonth" class="date dateMonth" id="bdaymonth" aria-required="true" tabindex="0" aria-describedby="birthdateDescription" type="tel" maxlength="2" placeholder="MM" pattern="\d*">
+                        <p class="floatLeftdash">-</p>
+                        <label class="hiddenDescribes" for="bdayday" >Date of Birth Day</label>
+                        <input name="Bdday" class="date dateDay" id="bdayday" aria-required="true" tabindex="0" type="tel" maxlength="2" placeholder="DD" pattern="\d*">
+                        <p class="floatLeftdash">-</p>
+                        <label class="hiddenDescribes"  for="bdayyear" >Date of Birth Year</label>
+                        <input name="Bdyear" class="date dateYear" id="bdayyear" aria-required="true" tabindex="0" type="tel" maxlength="4" placeholder="YYYY" pattern="\d*">
+                    </div>
+					
+					<div style=" clear:both"></div>
+					<div class="hiddenDescribes public" id="birthdateDescription">Format Example: enter your date of birth as month month, day day, year year year year. For example, January 26th 1957 				would be enterd as 01, 26, 19 57. Federal law requires us 				to obtain, verify, and record information that identifies each person on the account.
+					</div>
+					
+				</div>
+				<div class="clear"></div>
+				<div>
+					<div class="annualGross">
+					<label for="salary">Annual Gross Income</label>
+						<div >
+							<input id="salary" pattern="[0-9]*" placeholder="$              .00" class="salaryInput" tabindex="0" aria-required="true" aria-describedby="alimonyDescription">
+						</div>
+					</div>
+					<div class="annualGrossDisclaimer">
+						<div class="subsectionSmallTextAnnualIncome" id="alimonyDescription">Alimony, child support or
+							separate maintenance income need not be revealed if you do not
+							wish it to be considered as a basis for repaying this obligation.
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			
+				<div class="clear"></div>
+				<div class="formL">	
+				<label for="email">Email Address</label> 
+				<input id="email" type="email" placeholder="name@domain.XXX" tabindex="0" aria-required="true">
+				</div>
+				<div class="formR">
+					<label for="emailMatch">Confirm Email Address</label>
+					<input type="email" id="emailMatch" placeholder="name@domain.XXX" tabindex="0" aria-required="true"> <br />
+				</div>
+				<div class="clear"></div>
+			</div><!-- end from container -->				
+					
+			<div id="modalPopTOW" role="alert" alt="Timeout Warning" aria-live="assertive"></div>
+			<div id="modalPopTO" role="alert" alt="Application Timed Out" aria-live="assertive"></div>
+			<div style=" clear:both"></div>
+			
+			<div class="subsectionNormalText">
+					<span class="h3style" tabindex="0" alt="Important Disclosures">Important Disclosures</span>
+			</div>
+
+			<!-- Shumer content gets loaded when the baseinfo element is shown -->
+			<div class="shumerContainer2" id="shumerData" tabindex="0"></div> <br /> <br />
+
+			<div class="subsectionSmallText">
+				<!-- ##FIX replaced link below w/2 new links; need actual links from Candace, styling -->
+				<p>View <a id="baseInfoClickHere" tabindex="0"  style="cursor: pointer; font-family: 'Gotham 5r', Helvetica, Arial, sans-serif;"><b>Kohl’s Account Opening Disclosures, Cardmember Agreement and Credit Card Privacy Policy</b></a></p>
+				<p>View <a href="http://www.kohls.com/myaccount/common/rewards_content.jsp?pageName=rewardsTerms" target="_blank" style="font-family: 'Gotham 5r', Helvetica, Arial, sans-serif;"><b>Yes2You Rewards Member Agreement Terms &amp; Conditions</b></a></p>
+
+			
+			</div>
+		
+			<!-- BASE INFO CLICK HERE MODAL -->
+			
+			<div id="baseInfoClickHereModal" title="Kohl’s Account Opening Disclosures">
+			</div> 
+			<br />
+		
+			<div>
+				<button class="buttonlarge" id="appPageContinue" tabindex="0" style="background:#717171;">Continue
+					to Review</button>
+				<br />
+			</div>
+			
+			<div class="subsectionSmallText" tabindex="0">
+				&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+				are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+				<button class="linkButton" id="baseInfoPolicy" tabindex="0">Security
+					and Privacy Policy</button>
+			</div>
+			
+			<!-- BASE INFO POLICY MODAL -->
+			
+			<div id="baseInfoPolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div>
+		<!-- END APP ENTRY (BASEINFO) SECTION-->
+
+		<!-- START CONFIRM SECTION -->
+		<div class="subSections" id="confirm">
+			<div class="maxWidth">
+			<form id='validateEditForm'></form>
+			<form id='validateEditBox1'></form>
+			<form id='validateEditBox2'></form>
+			<form id='validateEditBox3'></form>
+			<form id='validateEditBox4'></form>
+			<div id="kohlsBanner3" style="maxWidth:1024px; width: 100%; margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			</div>
+			<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+			<div class="maxWidth">
+			<br>
+			<div style="width: 100%; text-align: left; font-size: 1em;">
+                <!--h3 id="confirmYourInformation" aria-describedby="confirmInfoHeaderInfo">Confirm Your Information</h3-->
+                <span class="h3style" id="confirmYourInformation" tabindex="0" aria-describedby="confirmInfoHeaderInfo">Confirm Your Information</span>
+				<div class="hiddenDescribes" id="confirmInfoHeaderInfo">Use the below to confirm and edit your information</div>
+			</div>
+			<div class="errorHtml" id="errorHtmlBoxConfirm" role="alert" aria-live="assertive" aria-atomic="true">
+				<p class="errorHtmlHeader">Field(s) in error are highlighted in red and listed below:</p>
+				<ul id="errorHtmlListConfirm"></ul>
+				<!--<p id="emailErrorHtmlText"></p>-->
+			</div>
+
+			<div>
+				<div class="subsectionConfirmInfo" id="nameDisplay">
+					<!--====Start name confirm====-->
+					<ul class="editUlstyle">
+						<li tabindex="0">How your name will appear on your card:</li>
+						<li id="firstNameConfirm"></li>
+					</ul>
+					<div class="editButtonContainer" >
+						<button class="buttonSmallEdit" id="editNameButton"  tabindex="0" aria-label="Select to edit how your name will appear on your card">Edit</button>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--===================End name confirm============-->
+				<div class="subsectionConfirmInfoEdit" id="editNameForm" style="display: none;">
+					<!--=================================Start name Edit====-->
+
+					<div class="floatLeftfNnMi">
+						<label for="firstNameEdit">First Name</label> 
+						<input type="text" id="firstNameEdit" value="" aria-required="true" tabindex="0">
+					</div>
+					<div class="floatRightfNnMi">
+						<label for="middleInitialEdit">MI <span class="optional">(optional)</label> 
+						<input type="text" id="middleInitialEdit" value="" tabindex="0">
+					</div>
+					<div class="clear"></div>
+
+					<div class="floatLeftfNnMi">
+						<label for="lastNameEdit">Last Name</label> 
+						<input type="text" id="lastNameEdit" value="" aria-required="true" tabindex="0">
+					</div>
+					<div class="floatRightfNnMi">
+						<label for="suffixEdit">Suffix <span class="optional">(optional)</label>
+						<div class="select">
+							<select name="suFfix" id="suffixEdit" tabindex="0">
+								<option value="" selected>&nbsp;</option>
+								<option value="2">II</option>
+								<option value="3">III</option>
+								<option value="4">IV</option>
+								<option value="J">JR</option>
+								<option value="S">SR</option>
+							</select>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+					<div class="doneButtonContainer">
+						<button class="buttonSmallDone" id="editNameDoneButton" tabindex="0">Done</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--=================================End name Edit===-->
+				<div class="subsectionConfirmInfo" id="addrDisplay">
+					<ul class="editUlstyle">
+						<li tabindex="0">Where your card will be mailed:</li>
+						<li id="addressConfirm"></li>
+					</ul>
+					<div class="editButtonContainer">
+						<button class="buttonSmallEdit" id="editAddrButton" aria-label="Select to edit where your card will be mailed" tabindex="0">Edit</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="subsectionConfirmInfoEdit" id="editAddrForm" style="display: none;">
+					<!--=====Start adder Edit===-->
+						<label for="addrLn1Edit">Address 1</label> 
+							<input type="text" id="addrLn1Edit" placeholder="Street Address, No PO Boxes" aria-required="true" tabindex="0">
+						<label for="addrLn2Edit">Address 2 <span class="optional">(optional)</label> 
+							<input type="text" id="addrLn2Edit" placeholder="Apt, suite, unit, building, floor,etc." tabindex="0">
+						<label for="cityEdit">City</label> 
+							<input type="text" id="cityEdit" aria-required="true" tabindex="0">
+						<div id="countryFieldEdit">
+							<div class="countrySelector">
+								<label for="countryEdit">Country</label>
+								<div class="select">
+									<select name="country" id="countryEdit">
+										<option value="United States">United States</option>
+										<option value="Canada">Canada</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div id="statesEdit">
+							<div class="floatLeftSnZ">
+								<label for="stateSelectEdit">State</label>
+								<div class="select">
+									<select name="state" id="stateSelectEdit" aria-required="true" tabindex="0">
+										<option value="" disabled selected>&nbsp;</option>
+										<option value="AA">AA</option>
+										<option value="AE">AE</option>
+										<option value="AK">AK</option>
+										<option value="AL">AL</option>
+										<option value="AP">AP</option>
+										<option value="AR">AR</option>
+										<option value="AS">AS</option>
+										<option value="AZ">AZ</option>
+										<option value="CA">CA</option>
+										<option value="CO">CO</option>
+										<option value="CT">CT</option>
+										<option value="DC">DC</option>
+										<option value="DE">DE</option>
+										<option value="FL">FL</option>
+										<option value="FM">FM</option>
+										<option value="GA">GA</option>
+										<option value="GU">GU</option>
+										<option value="HI">HI</option>
+										<option value="IA">IA</option>
+										<option value="ID">ID</option>
+										<option value="IL">IL</option>
+										<option value="IN">IN</option>
+										<option value="KS">KS</option>
+										<option value="KY">KY</option>
+										<option value="LA">LA</option>
+										<option value="MA">MA</option>
+										<option value="MD">MD</option>
+										<option value="ME">ME</option>
+										<option value="MH">MH</option>
+										<option value="MI">MI</option>
+										<option value="MN">MN</option>
+										<option value="MO">MO</option>
+										<option value="MP">MP</option>
+										<option value="MS">MS</option>
+										<option value="MT">MT</option>
+										<option value="NC">NC</option>
+										<option value="ND">ND</option>
+										<option value="NE">NE</option>
+										<option value="NH">NH</option>
+										<option value="NJ">NJ</option>
+										<option value="NM">NM</option>
+										<option value="NV">NV</option>
+										<option value="NY">NY</option>
+										<option value="OH">OH</option>
+										<option value="OK">OK</option>
+										<option value="OR">OR</option>
+										<option value="PA">PA</option>
+										<option value="PR">PR</option>
+										<option value="PW">PW</option>
+										<option value="RI">RI</option>
+										<option value="SC">SC</option>
+										<option value="SD">SD</option>
+										<option value="TN">TN</option>
+										<option value="TX">TX</option>
+										<option value="UT">UT</option>
+										<option value="VA">VA</option>
+										<option value="VI">VI</option>
+										<option value="VT">VT</option>
+										<option value="WA">WA</option>
+										<option value="WI">WI</option>
+										<option value="WV">WV</option>
+										<option value="WY">WY</option>
+									</select>
+								</div>
+							</div>
+							<div class="floatRightSnZ">
+								<label for="zipcodeEdit">ZIP Code</label> 
+								<input type="text" id="zipcodeEdit" pattern="[0-9]*" aria-required="true" tabindex="0">
+							</div>
+						</div>
+
+						<div id="provincesEdit">
+							<div class="floatLeftSnZ">
+								<label for="provinceSelectEdit">Province</label>
+								<div class="select">
+									<select name="province" id="provinceSelectEdit">
+										<option value="" disabled selected>&nbsp;</option>
+										<option value="AB">AB</option>
+										<option value="BC">BC</option>
+										<option value="MB">MB</option>
+										<option value="NB">NB</option>
+										<option value="NL">NL</option>
+										<option value="NS">NS</option>
+										<option value="ON">ON</option>
+										<option value="PE">PE</option>
+										<option value="QC">QC</option>
+										<option value="SK">SK</option>
+										<option value="NT">NT</option>
+										<option value="NU">NU</option>
+										<option value="YT">YT</option>
+									</select>
+								</div>
+							</div>
+							<div class="floatRightSnZ">
+								<label for="postalcodeEdit">Postal Code</label> 
+								<input type="text" id="postalcodeEdit" placeholder="A1A 1A1">
+							</div>
+						</div>
+						<div class="clear"></div>
+					<div class="doneButtonContainer">
+						<button class="buttonSmallDone" id="editAddrDoneButton" tabindex="0">Done</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--=================================End adder Edit===-->
+				<div class="subsectionConfirmInfo" id="contactDisplay">
+					<!--=========start contact display===-->
+					<ul class="editUlstyle">
+						<li tabindex="0">How we contact you:</li>
+						<li id=contactConfirm ></li>
+
+						<li class="displayEmail" id=emailEditScreen></li>
+					</ul>
+					<div class="editButtonContainer">
+						<button class="buttonSmallEdit" id="editContactButton" aria-label="Select to edit how we contact you" tabindex="0">Edit</button>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--================================End contact display===-->
+				<div class="subsectionConfirmInfoEdit" id="editContactForm" style="display: none;">
+					<!--==========Start contact Edit===-->
+						<label for="homePhoneEdit">Home Phone</label>
+							<input type="tel" id="homePhoneEdit" maxlength="12" placeholder="555-555-5555" aria-required="true" tabindex="0">
+
+						<label for="workPhoneEdit">Work Phone <span class="optional">(optional)</label>
+							<input type="tel" id="workPhoneEdit" maxlength="12" placeholder="555-555-5555" tabindex="0">
+
+						<label for="emailEdit">Email Address</label>
+							<input type="email" id="emailEdit" placeholder="name@domain.XXX" aria-required="true" tabindex="0">
+
+						<label for="emailMatchEdit">Confirm Email Address</label>
+							<input type="email" id="emailMatchEdit" placeholder="name@domain.XXX" aria-required="true" tabindex="0">
+
+					<div class="doneButtonContainer">
+						<button class="buttonSmallDone" id="editContactDoneButton" tabindex="0">Done</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--=================================End contact Edit===-->
+				<div class="subsectionConfirmInfo" id="personalDisplay">
+					<!--=====start personal display-->
+					<ul class="editUlstyle">
+						<li tabindex="0">Verification Information:</li>
+						<li id="verifInfoConfirm"></li>
+
+					</ul>
+					<div class="editButtonContainer">
+						<button class="buttonSmallEdit" id="editPersonalButton"  aria-label="Select to edit your verification information" tabindex="0">Edit</button>
+
+					</div>
+					<div class="clear"></div>
+				</diV>
+				<!--======start  personal display===-->
+				<div class="subsectionConfirmInfoEdit" id="editPersonalForm"
+					style="display: none;">
+					<!--======Start  personal Edit===-->
+						<div>
+						<label id="ssnLabelEdit"></label>
+
+							<div id="ssnId1Edit" class="floatLeftFirstThreeSSN">
+							<input class="ssn1" type="password" name="ssn1" id="ssn1Edit" size="2" maxLength="3" placeholder="555" pattern="[0-9]*" aria-required="true" tabindex="0" aria-describedby="ssnFirstThreeEdit">
+							<div class="hiddenDescribes" id="ssnFirstThreeEdit">Enter the first three digits of your social security  number</div>
+							</div>
+
+							<div id="ssnIdDash2Edit" class="floatLeftdash">-</div>
+
+							<div id="ssnId2Edit" class="floatLeftMiddleTwoSSN">
+							    <label class="hiddenDescribes" for="ssn2Edit" id="ssn2EditLabel">Social Security Number next two digits</label>                            
+								<input class="ssn2" type="password" name="ssn2" id="ssn2Edit" size="2" maxLength="2" placeholder="55" pattern="[0-9]*" aria-required="true" tabindex="0" aria-describedby="ssnSecondTwoEdit">
+
+							<div class="hiddenDescribes" id="ssnSecondTwoEdit">Enter the next two digits of your social security  number</div>
+							</div>
+
+							<div id="ssnIdDash1Edit" class="floatLeftdash">-</div>
+
+							<div id="ssnId3Edit" class="floatLeftLastFourSSN">
+								<label class="hiddenDescribes" for="ssn3Edit" id="ssn3EditLabel">Social Security Number last four digits</label>                            
+								<input class="ssn3" type="tel" name="ssn3" id="ssn3Edit" size="2" maxLength="4" placeholder="5555" pattern="[0-9]*" aria-required="true" tabindex="0" aria-describedby="ssnLastFourEdit">
+							<div class="hiddenDescribes" id="ssnLastFourEdit">Enter the last four digits of your social security  number</div>
+							
+							</div>
+							<div style=" clear:both"></div>
+					</div>
+							
+					<div>
+					
+						<label for="bdaymonthEdit" >Date of Birth</label>
+						<div id="bddateEdit" style="width: 80;" aria-required="true" aria-live="assertive" aria-atomic="true">
+						  	<input name="Bdmonth" class="date dateMonth" id="bdaymonthEdit" aria-required="true" tabindex="0" aria-describedby="birthdateDescription" type="tel" maxlength="2" placeholder="MM" pattern="\d*">
+							<p class="floatLeftdash">-</p>
+							<label class="hiddenDescribes" for="bdaydayEdit" >Date of Birth Day</label>
+                            <input name="Bdday" class="date dateDay" id="bdaydayEdit" aria-required="true" tabindex="0" type="tel" maxlength="2" placeholder="DD" pattern="\d*">
+							<p class="floatLeftdash">-</p>
+							<label class="hiddenDescribes" for="bdayyearEdit" >Date of Birth Year</label>
+                            <input name="Bdyear" class="date dateYear" id="bdayyearEdit" aria-required="true" tabindex="0" type="tel" maxlength="4" placeholder="YYYY" pattern="\d*"> 
+						</div>
+						
+						<div style=" clear:both"></div>
+						
+					</div>
+
+						<label for="salaryEdit">Annual Gross Income</label>
+							<div>
+								<input id="salaryEdit" placeholder="Enter Whole Dollar Amount" type="number" pattern="[0-9]*"
+									class="salaryInput" aria-required="true" tabindex="0" aria-describedby="alamonyInfoEdit">
+								<div class="dollarsign">$</div>
+							</div>
+
+							<div class="subsectionSmallText" id="alamonyInfoEdit">Alimony, child support
+								or separate maintenance income need not be revealed if you do
+								not wish it to be considered as a basis for repaying this
+								obligation.</div>
+					<br />
+					<div class="doneButtonContainer">
+						<button class="buttonSmallDone" id="editPersonalDoneButton" tabindex="0">Done</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--==================================End  personal Edit===-->
+			</div> <br />
+
+			<div class="subsectionSmallText" tabindex="0">
+				<p>I have read and agree to all the terms, conditions,
+					authorizations, and disclosures included with the Credit
+					Application, including those within the Account Opening
+					Disclosures, Cardmember Agreement and Credit Card Privacy Policy.</p>
+
+				<p>I filled out the Credit application and acknowledge that
+					everything I stated on the Credit Application is true and
+					correct.</p>
+
+				<p>I have been given an electronic copy of the Kohl’s Account
+					Opening Disclosures, Cardmember Agreement and Credit Card Privacy
+					Policy, which I understand will govern my account, if approved,
+					and I acknowledge that I have read it before using my account.</p>
+
+				<p>I agree that Kohl’s and Capital One may share information
+					about me and my account(s).</p>
+
+				<p>I acknowledge that, regardless of whether I use a web
+					browser with security features, Kohl’s and Capital One are unable
+					to ensure that the data will not be intercepted by third parties.
+					Kohl’s and Capital One will not be held liable should such an
+					interception occur.</p>
+
+				<p>I agree that I am consenting to receive by electronic means only, including through the email address provided above, the Account Opening Disclosures, Cardmember Agreement and Credit Card Privacy Policy. I understand that these materials may not be available in any paper or non-electronic form, so if I would like to retain a copy for my record, I may print or download these disclosures. I understand that  I may not be able to print or save from my mobile device important information regarding rates, fees and other costs, but if I am approved, this information will be sent to me at the email address provided above prior to the receipt of my credit card. I understand that to access and retain these electronic disclosures I must have or have access to equipment that allows me to access and view email messages and PDF files, and that supports the latest W3C HTML/DOM recommendations and 128 bit SSL encryption.   I understand that if I do not wish to consent to receive these disclosures electronically, I may not apply online.</p>
+				
+				<p>I understand that I am consenting to receive marketing materials via the provided email address and I have the right to opt out of these communications.
+</p>
+				
+				<p>I authorize the creditor to verify my application
+					information and check my credit history.</p>
+
+				<p>I expressly authorize Capital One, N.A. and Kohl’s
+					Department Stores, Inc. and its affiliates (“Kohl’s”) to exchange
+					information about myself so that I can receive the benefits of
+					the Kohl’s Charge program and so that Kohl’s can inform me of
+					additional information, offers and opportunities.</p>
+
+				<p>I agree that an email alert regarding my account, including
+					account opening disclosures, may be sent to the email address
+					provided on my application.</p>
+			</div> <br />
+
+			<div class="confirm checkboxDiv" style="font-weight: bold;">
+				<input type="checkbox" value="" id="checkbox2-unchecked" tabindex="0">
+				<label for="checkbox2-unchecked" class="disclosureCheckbox" style="padding-top:10px; font-family: 'Gotham 4r', Helvetica, Arial, sans-serif; font-size: 1em; font-weight: normal;">I agree to
+					the above information and disclosures
+				</label>
+				<div style="clear: both"></div>
+			</div>
+			<br />
+			<p class="" style="padding-bottom: 5px;">Savings is Just A Click Away!</p>
+			<div class="checkboxDiv" style="font-family: 'Gotham 4r', Helvetica, Arial, sans-serif; font-size: 1em;">
+				
+				<input type="checkbox" value="" checked id="salesAlertCheckbox" tabindex="0">
+				<label for="salesAlertCheckbox" class="salesCheckbox">Yes, sign me up to receive <span class="boldSpan">Kohl’s email offers</span>, updates on sales and events and more!
+				<br /><span class="">US Residents only. Get 15% off your next purchase. Terms apply; <a href="https://cs.kohls.com/app/answers/detail/a_id/691/kw/sales%20alerts" target="_blank" class="boldSpan">see details</a>. <a href="http://www.kohls.com/catalog/common/content.jsp?pageName=securityprivacy" target="_blank" class="boldSpan">Privacy Policy.</a></span></label>
+				<div style="clear: both"></div>
+			</div>
+			<br />
+			<div class="checkboxDiv" style="">
+				<input type="checkbox" value="" checked id="rewardsEnrollCheckbox" tabindex="0">
+				<label style="font-family: 'Gotham 4r', Helvetica, Arial, sans-serif; font-size: 1em;" for="rewardsEnrollCheckbox" class="salesCheckbox">Enroll me in <span class="boldSpan">Yes2YouRewards&reg;</span> today to earn points on all my Kohl’s purchases.
+				<br>
+				<p class="subsectionSmallText" style="margin: 10px 0 25px 0;">Your choice to enroll won't affect your approval for a Kohl’s Charge. You can always sign up for Yes2YouRewards&reg; in the future!</p></label>
+				<div style="clear: both"></div>
+			</div>
+
+			<div>
+				<button class="buttonlargeDisabled" id="confirmSubmit" style="font-size:.8em" tabindex="-1">SUBMIT
+					APPLICATION</button>
+			</div>
+
+			<!-- KOHLS SPINNER -->
+
+			<div id="pleaseWaitConfirmSubmit">
+				<div class="adding-to-cart">
+					<span class="animated-loading"></span>Please Wait
+				</div>
+			</div> <br />
+
+			<!-- END KOHLS SPINNER -->
+
+			<div class="subsectionSmallText" tabindex="0">
+				&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+				are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+				<button class="linkButton" id="confirmInfoPolicy" tabindex="0">Security
+					and Privacy Policy</button>
+			</div>
+
+			<!-- CONFIRM INFO POLICY MODAL -->
+			<div id="confirmInfoPolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div><!-- END CONFIRM SECTION -->
+		
+		<!-- START OUT OF WALLET SECTION -->
+		<div class="subSections" id="confirmID" >
+			<div class="maxWidth" id="kohlsBanner4" style="max-width:1024px; margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+			<div class="maxWidth">
+			<br>
+			<span class="h3style" id="confirmYourIdentity" tabindex="0" aria-describedby="confirmIdentityInfo" alt="Confirm Your Identity">Confirm Your Identity</span>
+			<div class="hiddenDescribes" id="confirmIdentityInfo" alt="Use the below to Confirm Your Identity">Use the below to Confirm Your Identity</div>
+
+			<div class="subsectionNormalText" id="confirmPIDInstructions" tabindex="0" alt="For your protection, please
+                confirm your identity by answering the following security
+                questions before submitting your application for approval.
+                Security questions are provided by a third party credit reporting
+                agency.">For your protection, please
+				confirm your identity by answering the following security
+				questions before submitting your application for approval.
+				Security questions are provided by a third party credit reporting
+				agency.</div> <br />
+			<div class="subsectionNormalText">
+				<p id="errorBoxVQ" class="error" role="alert" style="display: none;">
+					<strong>Please select an answer.</strong>
+				</p>
+				<div id="confirmIDQuestion" aria-live="assertive" aria-atomic="true">
+				  <p id="question" tabindex="0"></p>
+				</div>
+				<ul class="confirmID" tabindex="0" aria-describedby="question">
+					<li><input name="Question1" type="radio" value="1"
+						id="QUESTION_CHOICE_1"> <label for="QUESTION_CHOICE_1">
+							<span></span>
+						<p class="label-text"></p>
+					</label></li>
+					<li><input name="Question1" type="radio" value="2"
+						id="QUESTION_CHOICE_2"> <label for="QUESTION_CHOICE_2">
+							<span></span>
+						<p class="label-text"></p>
+					</label></li>
+					<li><input name="Question1" type="radio" value="3"
+						id="QUESTION_CHOICE_3"> <label for="QUESTION_CHOICE_3">
+							<span></span>
+						<p class="label-text"></p>
+					</label></li>
+					<li><input name="Question1" type="radio" value="4"
+						id="QUESTION_CHOICE_4"> <label for="QUESTION_CHOICE_4">
+							<span></span>
+						<p class="label-text"></p>
+					</label></li>
+					<li><input name="Question1" type="radio" value="5"
+						id="QUESTION_CHOICE_5"> <label for="QUESTION_CHOICE_5">
+							<span></span>
+						<p class="label-text"></p>
+					</label></li>
+				</ul>
+				<!--
+
+				 <ul class="confirmID">
+			          <li><input type="radio" name="verQuestion" id="QUESTION_CHOICE_1" value="1"><label for="QUESTION_CHOICE_1"></label></li>
+			          <span></span>
+			          <li><input type="radio" name="verQuestion" id="QUESTION_CHOICE_2" value="2"><label for="QUESTION_CHOICE_2"></label></li>
+			          <span></span>
+			          <li><input type="radio" name="verQuestion" id="QUESTION_CHOICE_3" value="3"><label for="QUESTION_CHOICE_3"></label></li>
+			          <span></span>
+			          <li><input type="radio" name="verQuestion" id="QUESTION_CHOICE_4" value="4"><label for="QUESTION_CHOICE_4"></label></li>
+			          <span></span>
+			          <li><input type="radio" name="verQuestion" id="QUESTION_CHOICE_5" value="5"><label for="QUESTION_CHOICE_5"></label></li>
+			          <span></span>
+			        </ul>
+				-->
+				<br />
+			</div>
+
+			<div>
+				<button class="buttonlarge" id="submitQuestionBtn" tabindex="0">SUBMIT</button>
+			</div>
+
+			<!-- KOHLS SPINNER -->
+
+			<div id="pleaseWaitConfirmIDSubmit">
+				<div class="adding-to-cart">
+					<span class="animated-loading"></span>Please Wait
+				</div>
+			</div> <br />
+
+			<!-- END KOHLS SPINNER -->
+
+			<div class="subsectionSmallText" tabindex="0">
+				&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+				are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+				<button class="linkButton" id="confirmIDPolicy" tabindex="0">Security
+					and Privacy Policy</button>
+			</div>
+
+			<!-- CONFIRM ID POLICY MODAL -->
+			<div id="confirmIDPolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div><!-- END OUT OF WALLET SECTION -->
+
+		<!-- START APPLICATION APPROVED SECTION -->
+		<div class="subSections" id="applicationConfirmation" style="margin:auto"><!-- ########################################### -->
+			
+			<div id="kohlsBanner5" style="max-width:1024px; width: 100%; margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+			<div class=maxWidth>
+			<br>
+			<div>
+				<p class="headerPink formTextCenter" id="appConfirm" aria-describedby="appConfirmInfo" style="font-size:1.6em" tabindex="0">Congratulations!</p>
+			</div>
+			<div class="hiddenDescribes" id="appConfirmInfo">Use the tab key to navigate through the details of your new card, and for additional offers.</div>
+			<br>
+			<div class="subsectionNormalText" >
+				<p tabindex="0" style="font-weight:normal;line-height:25px; font-size: 1.2em;">You have been approved for a Kohl's Charge. Your card will arrive in 7-10 business days. To shop at Kohl's stores before your card arrives, please bring a state-issued picture ID.</p>
+			</div>
+			<!-- 
+			<div class="subsectionSmallText" id="appConfirmDisclosure"
+				style="margin-top: 10px;" >
+				<span Class="linkSpan" tabindex="0">Click for Disclosures</span>
+			</div> <br />
+
+
+
+			<div id="appConfirmDisclosureModal" title="Kohl’s Account Opening Disclosures"></div>
+			-->
+			<br>
+			<br>
+			<div class="fiftyFormL" tabindex="0">
+				<!-- ##FIX show next img on "Approved - Opt In" and "Partial Match - Success" -->
+				<div id="Cards2Plus">
+					<img  src="images/mobileApproved.png" style="max-width:400px; padding:0 20px; width:100%;" alt="Kohl's Charge and Yes 2 You Rewards Cards"> <!-- 320 x --- -->
+				</div>
+				<!-- ##FIX show next img instead on "Approved - Opt Out" -->
+				<div id="optCard">
+					
+					<img class="hideOnDesktp" src="images/mobileHeaderCard-Only.png" style="max-width:400px; padding:0 20px; width:100%;" alt="Kohl's Charge Card"><!-- 320 x --- -->
+				</div>
+				<!-- ##FIX show next img instead on all "Partial Match" except Success:
+				     Default, Error, Error Final, Previously Linked, 503 Error -->
+				<div id="Card2Faded">
+					<img class="hideOnMobile" src="images/2001-Confirm-Desktop_Approved-Partial_Match_Default.png" style="max-width:400px; padding:0 20px; width:100%;" alt="Kohl's Charge and Yes 2 You Rewards Cards"> <!-- 404 x 361 -->
+					<img class="hideOnDesktop" src="images/mobileApprovedFadded.png" style="padding:0 10px; width:100%;" alt="Kohl's Charge and Yes 2 You Rewards Cards"> <!-- 320 x -->
+				</div>
+			</div>
+			<div class="fiftyFormL subsectionNormalText mobileMarginTop">
+				<p class="headerPink" tabindex=0 >KOHL'S CHARGE</p>
+                <br>
+                <table style="border-style: none;" tabindex=0>
+                  <tbody class="tstyle">
+                  <tr class="trrow">
+                    <td class="trcellLeft" >Account Number</td>
+                    <td class="trcellRight" id="accountNumber" ></td>
+                  </tr>
+
+                  <tr class="trrow">
+                    <td class="trcellLeft">Credit Limit</td>
+                    <td class="trcellRight" id="creditLimit" ></td>
+                  </tr>
+
+                  <tr class="trrow">
+                    <td class="trcellLeft">Promo Code </td>
+                    <td class="trcellRight" id="promoCodeReturn" ></td>
+                  </tr>
+
+                  <tr class="trrow">
+                    <td class="trcellLeft">Savings Percent</td>
+                    <td class="trcellRight" id="savingsPercent" ></td>
+                  </tr>
+
+                  <tr class="trrow">
+                    <td class="trcellLeft">Offer Good Through</td>
+                    <td class="trcellRight" id="offerGoodDates" style="font-weight:bold;"></td>
+                  </tr>
+                  </tbody>
+                </table>
+                <br>				
+				
+				<!-- ##FIX hide #optInOutcomes on "Approved - Opt Out", else display on all Opt In  -->
+				<div id="optInOutcomes" style="position:relative;">		
+
+          <!-- display for all Opt In outcomes -->
+					<div id="popoverContainer" role="alert" style="border: 0px solid red; width:100%;">
+					<br>
+						<span class="headerPink" tabindex="0" style="margin-right:20px;">YES2YOU REWARDS</span>
+						<div id="questionPopover" style="display: inline-block; position: relative; border: 0px solid red;">
+							<button id="popOverButton" aria-label="A Brief description of yes to you rewards" style="display:inline; font-size:1.25em; border: 2px solid black; color: black; height:40px; width:40px; padding:0; margin:0; background:white; border-radius:50%;">?</button>
+							<div id="popover" role="alert" style="background:white; width:228px;  border: 0px solid red; position: absolute; top:45px; z-index:1000">
+								<img src="images/popUp_02.png" alt="Yes to you rewards logo">
+								<img src="images/popUp_03.png" alt="Earn 1 point per dollar spent. Earn a 5 dollar reward for every 100 points. Also receive a birthday gift and other surprises.  Tab to the learn more button to learn more about yes to you rerwards. Press the escape key to close this message.">
+								<button class="linkButton" id="learnPopOver" tabindex="0" style="border: 0px solid red; font-weight:bold; margin:10px 0px 10px 75px;" aria-label="Learn More">Learn More</button>
+							</div>
+							<div id="popover2" role="alert" style="background:white; width:228px;  border: 0px solid red; position: absolute; top:45px; z-index:1000;">
+								<img src="images/popUp_02.png" alt="yes to you rewards logo">
+								<p style="margin: 0 20px; text-align:center;">Your Yes2You Rewards&reg; account is linked to your new Kohl's Charge.</p>
+								<br>
+								<p style="margin: 0 20px; text-align:center;">You will now earn rewards points on all purchases made with your new Kohl's Charge.</p>
+							</div>
+						</div>
+						<br>
+						<br>
+					</div>
+
+					<!-- ##FIX begin variations -->
+					<div id=loyaltyPartialSuccess>
+					<div tabindex=0 style="color:#388540; font-size:1.3em;">Success!</div>
+					<div tabindex=0 style="font-size:.92em;">Your Yes2You Rewards&reg; account is linked to your new Kohl's Charge.</div>
+					<br>
+					</div>
+
+                    <table id="loyatlyIdTable" style="border-style: none;" tabindex=0>
+                        <tbody class="tstyle">
+                            <tr class="trrow">
+                                <td class="trcellLeft" >Rewards ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td class="trcellRight" id="rewardsID" ></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+					<br>
+	
+					<div id="partialMatch">
+						<!-- ##FIX show this only on Partial Match - Default & Error -->
+						<p class="subsectionNormalText" style="background-color: #fffecb; line-height:18px; border: 1px solid #e5e5e5; font-weight: normal; padding: 10px;">Your 
+							information matches an existing Yes2You Rewards&reg; account. To make sure we have the correct account, 
+							enter your 11-digit Rewards ID to link it to your new Kohl's Charge.
+						</p>
+					</div> <!-- #partialMatch -->
+
+					<!-- ##FIX show this only on Partial Match - Previously Linked -->
+					<div id="partialMatchPrevLinked" tabindex="0" style="background-color: #fffecb; border: 1px solid #e5e5e5; font-weight: normal; padding: 5px;">The 
+						Yes2You Rewards&reg; ID entered <span id="rewardsIDEntered"></span> is already linked to an
+						existing Kohl&apos;s Charge and can&apos;t be linked to your new Kohl&apos;s Charge. If
+						you believe this is an error, please call us at 855-564-5751 and select the Yes2You Rewards&reg;
+						option.
+						<br /><br />
+						To register for a new Yes2You Rewards&reg; account, visit 
+						<a href="http://www.kohls.com/rewards" target="_blank">www.kohls.com/rewards</a>.
+					</div>
+					<div id="Text503" tabindex="0" style="background-color: #f5f5f5; border: 1px solid red; font-weight: normal; padding: 5px;">
+						<div style="float:left; margin-right: 0px;"><img src="images/warningRed.png" alt="red warning triangle with exclamation point."></div>
+						<div style=" overflow:hidden;"><p style="padding-left:15px;">The Yes2You Rewards&reg; system isn&apos;t responding. 
+						<ul style="list-style:disc; padding-left:30px;">
+							<li>To open a new Yes2You Rewards&reg; account, visit <a href="http://www.kohls.com/rewards" target="_blank">www.kohls.com/rewards.</a></li>
+							<li>To link an existing Yes2You Rewards&reg; account to your new Kohl&apos;s Charge, enter your 11 digit rewards ID.</li>
+						</ul>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					
+					<div id="SecondaryText503" tabindex="0" style="background-color: #f5f5f5; border: 1px solid red; font-weight: normal; padding: 5px;">
+						<div style="float:left; margin-right: 10px;"><img src="images/warningRed.png" alt="red warning triangle with exclamation point."></div>
+						<div style=" overflow:hidden;"><p>The Yes2You Rewards&reg; system still isn&apos;t responding. To link an existing Y2Y Rewards&reg; account to your new Kohl&apos;s Charge, please call us at 1-855-564-5751 and choose the Yes2You Rewards option. 
+							</p>
+						</div>
+						<div style="clear: both"></div>
+					</div>
+					<!-- ##FIX show this only on Partial Match - Default & Error & 503 Error -->
+					<label id=rewardsIDLabel tabindex=0 style="padding: 0; color: black; font-size:1.2em; font-weight: bold; margin-top:10px;">Rewards ID</label>
+					
+					<!-- ##FIX show error text only on Partial Match - Error -->
+					<div id="partialMatchError" role="alert" tabindex="0" class="subsectionNormalText" style="color: red;">The Rewards ID entered doesn&apos;t match our
+						information.<br> Please try again or call us at 855-564-5751.
+					</div>
+					
+					<div id="partialMatchErrorFinal" role="alert" tabindex="0" style="color: red;">The Rewards ID entered doesn&apos;t match our
+						information. To link your Yes2You Rewards&reg; account to your new Kohl&apos;s Charge, Please call us at 855-564-5751 and select the Yes2You Rewards&reg; option.
+					</div>
+					<div id="rewardsIDerror" role="alert" style="color: red;">
+						<p style="color: red;">Rewards ID must be 11 digits.</p>
+					</div>
+					<!-- ##FIX style: red border on text field on Partial Match - Error -->
+					<div style="margin-top:10px;">
+						<input type="text" id="rewardsIDField" class="rewardsStuff" aria-label="Enter your rewards ID here" maxlength="11" tabindex="0" style="margin-right: 20px;" onkeydown="return ( event.ctrlKey || event.altKey 
+                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
+                    || (95<event.keyCode && event.keyCode<106)
+                    || (event.keyCode==8) || (event.keyCode==9) 
+                    || (event.keyCode>34 && event.keyCode<40) 
+                    || (event.keyCode==46) )">
+						<button id="rewardsIDButton" class="rewardsStuff" style="color: #fff; height:44px;">LINK ACCOUNTS</button> <!-- ##FIX style button -->
+						<div id="fakeRewardsIDButton">
+						<div class="sendRewardsID rewardsStuff">
+							<span class="animated-loading"></span>LINKING ACCOUNTS
+						</div>
+			</div>
+						<br style="clear: left;">
+					</div>
+          
+          <!-- FIX hide on Partial Match - Error Final & Previously Linked -->
+        	<div id="findRewardsIDLink" style="font-weight:normal; margin-top:5px;">
+        		<br>
+        	
+						<div id="findIDContainer" style="display: inline-block; position: relative; border: 0px solid red;">
+						<button class="linkButton" id="idPopOver" tabindex="0" style="border: 0px solid red;" aria-label="">Where can I find my Rewards ID?</button>
+						<div id="popover3" role="alert" tabindex=0 aria-describedby="popover3Info" style="background:white; width:228px;  border: 0px solid red; position: absolute;">
+							
+							<img id="Horz" src="images/rewardsID-Horz.png" alt="How to find your rewards ID">
+							<img id="Vert" src="images/rewardsID-Vert.png" alt="How to find your rewards ID">
+						</div>
+						<div class="hiddenDescribes" id="popover3Info">You can find your yes to you rewards number within your yes to you emails, on Kohls.com in your shopping account wallet, or on the back of your yes to you rewards card. Press the escape key to close this message.</div>
+					</div>
+					</div>
+			
+				</div> <!-- #optInOutcomes -->
+
+			</div> <!-- .fiftyFormL -->
+			</div>
+			<div style="clear: both"></div>
+			
+			<div style="background: #f9f9f9; margin-top:40px; padding-top:40px; border-top: 2px solid #c1c1c1;">
+			<div class="maxWidth">
+			<div>
+				<p class="formTextCenter" tabindex=0 style="font-weight: bold; font-size:1.5em;">What's Next?</p>
+			</div>
+			<br>
+			<div class="formTextCenter" style="border: 2px solid #1A7AC4; padding: 10px;">
+				<div class="vanillaFormL">
+					<img src="images/personBlue.png" style="padding:5px 10px 0 10px;" alt="Outline of a person in a blue circle">
+				</div>
+				<div class="table">
+					<div class="tr" tabindex=0>
+						<ul class="centerList" type="disc" style="list-style:disc; list-style-position: inside;">
+							<li class="largerTitles" style="color: #1A7AC4; list-style:none;">Manage Your Kohl's Charge account online</li>
+							<li>FREE online payments</li>
+							<li>Easily View your statements and transactions history</li>
+							<li>Check your account on the go from your phone</li>
+							<li style="list-style:none;"><a href="https://credit.kohls.com/eCustService/" target="blank_" style="font-weight:bold;">REGISTER MY KOHL'S CHARGE ONLINE</a></li>
+						</ul>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			
+			
+			<div class="formTextCenter doubleContainer" id="primaryStartShopping" style="margin-top: 20px; width: 100%;">
+			<div class="vanillaFormL doubleBoxSmall formTextCenter" style="border: 2px solid #388540; padding: 10px;">
+				<div class="vanillaFormL">
+				<img src="images/bagGreen.png" style="padding:0 10px 0 10px;" alt="green shopping bag">
+				</div>
+				<div class="table mobileFill">
+				<div class="tr" tabindex=0>
+					<ul class="centerList" style="list-style:none;">
+						<li class="largerTitles" style="color: #388540;">Start shopping!</li>
+						<li>Earn rewards points on all purchases</li>
+						<li style="list-style:none;"><a href="https://kohls.com" target="blank_" style="font-weight:bold;">SHOP KOHLS.COM</a></li>
+					</ul>
+				</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			
+			<div class="vanillaFormR doubleBoxLarge formTextCenter" id="pinkRewardsBox" style="border: 2px solid #C6168D; padding: 10px;">
+				<div class="vanillaFormL">
+				<img src="images/starPink.png" style="padding:5px 10px 0 10px;" alt="pink start">
+				</div>
+				<div class="table mobileFill">
+					<div class="tr" tabindex=0>
+					<ul class="centerList">
+					<li class="largerTitles" style="color: #C6168D">Earn Yes2You Rewards<sup>&reg;</sup>!</li>
+					<li>Track, share or donate your points</li>
+					<li style="list-style:none;"><a href="http://kohls.com/rewards" target="blank_" style="font-weight:bold;">VIEW MY YES2YOU ACCOUNT</a></li>
+					</ul>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<div style="clear: both"></div>
+			</div>
+		
+			
+			<div class="formTextCenter" id="secondaryStartShopping" style="margin-top: 20px; width:100%; border: 2px solid #388540; padding: 10px;">
+				<div class="vanillaFormL">
+				<img src="images/bagGreen.png" style="padding:0 10px 0 10px;" alt="Green Colored Shopping Bag">
+				</div>
+				<div class="table">
+					<div class="tr" tabindex=0>
+					<ul class="centerList">
+					<li class="largerTitles" style="color: #388540;">Start shopping!</li>
+					<li>Take an extra 25% off your first day's Kohl's Charge purchases</li>
+					<li style="list-style:none;"><a href="https://kohls.com" target="blank_" style="font-weight:bold;">SHOP KOHLS.COM</a></li>
+					</ul>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			<br>
+			<br>	
+		
+			</div>
+			</div>
+			<div class="maxWidth">
+			<div style="margin-top:80px; margin-bottom:20px" >
+				<p class="formTextCenter" tabindex="0" style="font-weight:bold; font-size: 1.4em;">We can even text you your welcome promo code!</p>
+			</div>
+			
+			<div class="errorHtml" id="errorHtmlBoxPhone" role="alert" aria-live="assertive" aria-atomic="true">
+					<p class="errorHtmlHeader">Field(s) in error are highlighted in red and listed below:</p>
+					<ul id="errorHtmlBoxPhoneList"></ul>
+				</div>
+				
+			<form id='validateMobilePhone'></form>
+			<div class="vanillaFormL desktopMarginRight" style="">
+				<label class="formTextCenter" for="Mphone">Mobile Phone Number:</label> 
+				<input type="tel" id="Mphone" maxlength="12" style="" placeholder="555-555-5555" tabindex="0">
+			</div>
+			<div class="vanillaFormL">
+				<label class="formTextCenter" for="MphoneMatch">Confirm Mobile Phone Number:</label> 
+				<input class="phoneField" type="tel" id="MphoneMatch" maxlength="12" style="" placeholder="555-555-5555" tabindex="0">
+			</div>
+			<div style="clear: both"></div>
+			<br>		
+
+			<!-- href tel link should be cross-platform compatible (Android + iPhone) -->
+			<div class="subsectionVerySmallText" tabindex="0">I agree to receive the promo code via a one-time text message. Messages sent via auto-dialed text message to your mobile number. Participation not required to make a purchase. Message and data rates may apply. By entering a mobile number, you certify that you are 18 years or older and that you are the account holder of this service (or you have the account holder’s permission to use this service). <br><br> For help or information on this program, text HELP to 65710. To cancel your plan, text STOP to 65710 at any time. For a list of other available Commands, text COMMAND to 65710. For additional assistance, contact Customer Service at <a href="tel://1-800-564-5740">+1 (800) 564-5740</a>. See <a href="https://cs.kohls.com/app/answers/detail/a_id/1159" target="_blank">https://cs.kohls.com/app/answers/detail/a_id/1159</a> for other program Terms and Conditions. <br><br> Carriers include but are not limited to: T-Mobile, Verizon Wireless, AT&amp;T, Sprint, Interop - Appalachian Wireless, US Cellular Corp®, Cincinnati Bell, Boost Mobile, Cricket Communications, Virgin Mobile USA, ALLTEL Communications Inc.
+			</div> <br />
+			
+			<div class="vanillaFloatL">
+				<button class="buttonlarge txtPromo" id="promoText" style="height:50px; background-color:black; text-transform: uppercase;" tabindex="0" aria-label="Select to confirm that you want your promo code sent to you by text">Text Me My
+					Promo Code</button>
+				<button class="buttonlarge txtPromo" id="promoSent" style="height:50px; background-color:black; text-transform: uppercase;">Promo Code
+					Sent</button>
+			</div>
+			<div style="clear: both"></div>
+
+			<br />
+			<div class="subsectionSmallText" style="font-size:1.1em;">
+				<p style="font-weight:normal;">View <a id="appConfirmClickHere" tabindex="0"  style="cursor: pointer; font-family: 'Gotham 5r', Helvetica, Arial, sans-serif;"><b>Kohl’s Account Opening Disclosures, Cardmember Agreement and Credit Card Privacy Policy</b></a></p>
+			</div>
+			<!-- APP CONFIRM CLICK HERE MODAL -->
+
+			<div id="appConfirmClickHereModal" title="Kohl’s Account Opening Disclosures"></div>
+
+			<!-- ##FIX can probably remove these buttons
+				<div class="pageSpacer60"></div>
+
+				<div class="buttonLink">
+						<input type="button" class="buttonlargeSecondary" tabindex="0" onclick="location.href='https://cs.kohls.com/';" value="FAQs">
+				</div>
+				<div class="buttonLink">
+						<input type="button" class="buttonlargeSecondary" tabindex="0" onclick="location.href='https://www.kohls.com';" value="Shop Kohl's">
+				</div>
+			-->
+
+			<div class="subsectionSmallText" tabindex="0">
+				&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+				are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+				<button class="linkButton" id="appConfirmPolicy" tabindex="0">Security
+					and Privacy Policy</button>
+			</div>
+
+			<div id="appConfirmPolicyModal" title="Privacy and Security Policy"></div>
+
+			<div class="pageSpacer60">&nbsp;</div>
+			</div>
+		</div><!-- END APPLICATION APPROVED SECTION -->
+
+		<!-- START APPLICATION PEND SECTION -->
+		<div class="subSections" id="applicationPending">
+					<div class="maxWidth" id="kohlsBanner6" style="max-width:1024px; margin: auto;" tabindex="0">
+						<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+						<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+					</div>
+					<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+					<br>
+					<div class="maxWidth">
+
+					<div class="subsectionNormalText">
+						<p id="pend" tabindex="0" class="headerPink" alt="Thank you for applying for a Kohls Charge!">Thank you for applying for a Kohl’s Charge!</p>
+						<br>
+						<!-- ##FIX confirm new verbiage -->
+						<p tabindex="0" alt="We need a little more information to complete your application.">We need a little more information to complete your application.</p>
+						
+						<!-- ##FIX old text to delete
+						Your application is currently being processed.
+						-->
+						<br>
+						<br>
+						
+						<p tabindex=0 >Please call <a href="tel://1-855-564-5755">+1 (855) 564-5755</a>
+						and reference the Kohl’s Charge application number below. We will finish
+						processing your application within 30 days.</p>
+					</div>
+					 <!-- href tel link should be cross-platform compatible (Android + iPhone) -->
+
+					<!-- ##FIX this text probably shouldn't be centered -->
+
+                    <table style="border-style: none;" tabindex=0>
+                        <tbody class="tstyle">
+                            <tr class="trrow">
+                                <td class="trcellLeft2" style="font-weight:bold;" >Application Number:</td>
+                                <td class="trcellRight2" id="app-number-display" style="font-weight:bold;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+					<br /><br style="clear: both;"/>
+
+					<!-- ##FIX added this rainbow box; needs styling, mobile'izing; also show for case "Declined - No Matches" -->
+					<div id="pend-no-matches" class="rainBowContainer subsectionNormalText" style="width:100%; float:left; padding:6% 3%;">
+						<img src="images/RBtop.png" class="rainBowtopImage" alt="Rainbow Border Top"><!-- 280 x 5 -->
+						<img src="images/RBtop.png" class="rainBowbottomImage" alt="Rainbow Border Top"><!-- 280 x 5 -->
+						<div id="pendingCardImage" style="outline: 0px solid red; height: 100%; margin:auto;"><img id="pendImage" src="images/mobileYesToYouCard.png" alt="Image of Kohls Charge Card"></div><!-- 188 x 122 -->
+						<div id="pendContent" style="outline: 0px solid red; margin:auto;">
+							<div id="popoverContainerPend" class="formTextCenterMed" style="border: 0px solid red; width:100%;">
+								<span class="headerPink" tabindex="0" style="margin-right:20px;">YES2YOU REWARDS</span>
+								<div id="questionPopoverPend" style="display: inline-block; position: relative; border: 0px solid red;">
+									<button id="popOverButtonPend" aria-label="A Brief description of yes to you rewards" style="display:inline; font-size:1.25em; border: 2px solid black; color: black; height:40px; width:40px; padding:0; margin:0; background:white; border-radius:50%;">?</button>
+									<div id="popoverPend" role="alert" style="background:white; width:228px;  border: 0px solid red; position: absolute; top:45px; z-index:1000">
+										<img src="images/popUp_02.png" alt="Yes to you rewards logo">
+										<img src="images/popUp_03.png" alt="Earn 1 point per dollar spent. Earn a 5 dollar reward for every 100 points. Also receive a birthday gift and other surprises.  Tab to the learn more button to learn more about yes to you rerwards. Press the escape key to close this message.">
+										<button class="linkButton" id="learnPopOverPend" tabindex="0" style="border: 0px solid red; font-weight:bold; margin:10px 0px 10px 75px;" aria-label="">Learn More</button>
+									</div>
+								</div>
+							</div>
+
+                    <table id="loyatlyIdTableDcln1" style="border-style: none;" tabindex=0>
+                        <tbody class="tstyle">
+                            <tr class="trrow">
+                                <td class="trcellLeft" >Rewards ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td class="trcellRight" id="rainbowRewardsID" ></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+				   <!-- 
+							<p class="formTextCenterMed" tabindex=0 style="margin: 1em auto;">Rewards ID&nbsp;&nbsp;
+                                <span id="rainbowRewardsID" class="rewardsID" style="font-weight:bold; font-family: 'Gotham 5r', Helvetica; color: black;""></span></p>
+                   -->
+							<div style="position: relative; outline: 0px solid black; float: left; width: 100%; overflow: auto;">
+								
+								<div class="lowerRainbowContent" style="position: relative; margin-right: 30px; outline: 0px solid green; float: left; min-width: 230px;">
+									<img class="lowerRainbowImages" style="position: absolute; top: 0;" src="images/blue-envolope.png" alt="blue envelope"><!-- 45 x 45 -->
+									<div style="margin-left: 60px; outline: 0px solid gray;">
+										<p class="largerTitles" tabindex=0 style="color: #1A7AC4; margin-top:5px;">Check your inbox</p> <!-- ##FIX need style class -->
+										<p tabindex=0 >A welcome email is on its way, detailing how to manage
+											your Yes2You Rewards&reg; account and earn rewards points.</p>
+									</div>
+								</div>
+								<div class="lowerRainbowContent" style="position: relative; outline: 0px solid green; float: left; min-width: 230px; overflow: hidden;">
+									<img class="lowerRainbowImages" style="position: absolute; top: 0;" src="images/bagGreen.png" alt="green shopping bag"><!-- 45 x 45 -->
+									<div style="margin-left: 60px; outline: 0px solid gray;">
+										<p class="largerTitles" tabindex=0 style="color: #388540; margin-top:5px;">Start Shopping!</p> <!-- ##FIX need style class -->
+										<p tabindex=0 >Earn rewards points on all purchases, no matter how you pay.</p>
+										<a href="http://www.kohls.com" target="_blank" style="font-weight:bold">SHOP KOHLS.COM</a> <!-- ##FIX need link tags -->
+									</div>
+								</div>
+							</div>
+							<br>
+						</div>
+						<div id="Pend503" style="position:relative; float: left; margin-right:10px;">
+							<p id="pinkPendText" class="headerPink tabindex="0" formTextCenterMed" style="margin-bottom:5px; margin-top:10px;">YES2YOU REWARDS</p>
+							<div id="TextPend503" style="width: 100%; background-color: #f5f5f5; border: 1px solid red; font-weight: normal; padding:15px 10px 15px 10px; margin-bottom:5px;">
+								<div style="float:left; margin-right: 10px;"><img src="images/warningRed.png" alt="Red warning triangle with exclaimation point."></div>
+								<div style=" overflow:hidden;"><p>The Yes2You Rewards&reg; system isn&apos;t responding right now.
+								<br>To enroll or learn more about Yes2You Rewards&reg;, visit <a href="http://www.kohls.com/rewards" target="_blank">www.kohls.com/rewards</a>.</p>
+								</div>
+								<div style="clear: both"></div>
+							</div>
+							</div>
+					</div> <!-- #pend-no-matches -->
+					<div style=" clear:both"></div>
+					
+					<!-- ##FIX show these instead of rainbow box on desktop for "Pending - All Other Scenarios" -->
+					<!-- ##FIX show these instead of rainbow box on mobile for "Pending - Alt" -->
+					<div id="pendButtons" style="">
+	
+						<div class="buttonLink vanillaFormL desktopMarginRight">
+								<input type="button" class="buttonlargeSecondary" style="border-color:black;" tabindex="0" onclick="location.href='https://cs.kohls.com/';" value="FAQS">
+						</div>
+						<div class="buttonLink vanillaFormL">
+								<input type="button" class="buttonlargeSecondary" style="border-color:black;" tabindex="0" onclick="location.href='https://www.kohls.com';" value="SHOP KOHLS.COM">
+						</div>
+						<div style=" clear:both"></div>
+					</div>
+
+
+					<div class="subsectionSmallText" style="margin-top:30px; tabindex="0"">
+						&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+						are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+						<button class="linkButton" id="appPendingPolicy" tabindex="0">Security
+							and Privacy Policy</button>
+					</div>
+
+					<div id="appPendingPolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div><!-- END APPLICATION PEND SECTION -->
+
+		<!-- START APPLICATION DEC SECTION -->
+		<div class="subSections" id="applicationDecline">
+			<div class="maxWidth" id="kohlsBanner7" style="max-width:1024px;margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+			<br>
+			<div class="maxWidth">
+			<div class="subsectionNormalText">
+				<p id="decline" tabindex="0" class="headerPink">Thank you for applying for a Kohl’s Charge!</p>
+			</div>
+			<div class="subsectionSmallText" tabindex="0">Your application is being processed. 
+				Watch for additional information to arrive by mail within 30 days.</div>
+
+					<!-- ##FIX added this rainbow box; needs styling, mobile'izing; also show for case "Declined - No Matches" -->
+					<div id="declined-no-matches" class="rainBowContainer subsectionNormalText" style="width: 100%; float:left; padding:6% 3%;">
+						<img src="images/RBtop.png" class="rainBowtopImage" alt="Rainbow border top"><!-- 280 x 5 -->
+						<img src="images/RBtop.png" class="rainBowbottomImage" alt="rainbow border bottom"><!-- 280 x 5 -->
+						<div id="declCardImage" style="outline: 0px solid red; height: 100%; margin:auto;"><img id="declImage" src="images/mobileYesToYouCard.png" alt="Kohls charge card."></div><!-- 188 x 122 -->
+						<div id="declContent" style="outline: 0px solid red;">
+							<div class="formTextCenterMed" id="popoverContainerDecline" role="alert" style="border: 0px solid red; width:100%;">
+								<span class="headerPink" tabindex="0" style="margin-right:20px;">YES2YOU REWARDS</span>
+								<div id="questionPopoverDecline" style="display: inline-block; position: relative; border: 0px solid red;">
+									<button id="popOverButtonDecline" aria-label="A Brief description of yes to you rewards" style="display:inline; font-size:1.25em; border: 2px solid black; color: black; height:40px; width:40px; padding:0; margin:0; background:white; border-radius:50%;">?</button>
+									<div id="popoverDecline" role="alert" style="background:white; width:228px;  border: 0px solid red; position: absolute; top:45px; z-index:1000">
+										<img src="images/popUp_02.png" alt="Yes to you rewards logo">
+										<img src="images/popUp_03.png" alt="Earn 1 point per dollar spent. Earn a 5 dollar reward for every 100 points. Also receive a birthday gift and other surprises.  Tab to the learn more button to learn more about yes to you rerwards. Press the escape key to close this message.">
+										<button class="linkButton" id="learnPopOverDecline" tabindex="0" style="border: 0px solid red; font-weight:bold; margin:10px 0px 10px 75px;" aria-label="">Learn More</button>
+									</div>
+								</div>
+							</div>
+							<p class="formTextCenterMed" tabindex=0 style="margin: 1em 0;">Rewards ID&nbsp;&nbsp;<span id="rainbowRewardsIDdecline" class="rewardsID" style="font-weight:bold; font-family: 'Gotham 5r', Helvetica; color: black;"></span></p>
+							<div style="position: relative; outline: 0px solid black; float: left; width: 100%; overflow: auto;">
+								
+								<div class="lowerRainbowContent" style="position: relative; margin-right: 30px; outline: 0px solid green; float: left; min-width: 230px;">
+									<img class="lowerRainbowImages" style="position: absolute; top: 0;" src="images/blue-envolope.png" alt="blue envelope"><!-- 45 x 45 -->
+									<div style="margin-left: 60px; outline: 0px solid gray;">
+										<p class="largerTitles" tabindex=0 style="color: #1A7AC4; margin-top:5px;">Check your inbox</p> <!-- ##FIX need style class -->
+										<p tabindex=0 >A welcome email is on its way, detailing how to manage
+											your Yes2You Rewards&reg; account and earn rewards points.</p>
+									</div>
+								</div>
+								<div class="lowerRainbowContent" style="position: relative; outline: 0px solid green; float: left; min-width: 230px;">
+									<img class="lowerRainbowImages" style="position: absolute; top: 0;" src="images/bagGreen.png" alt="green shopping bag"><!-- 45 x 45 -->
+									<div style="margin-left: 60px; outline: 0px solid gray;">
+										<p class="largerTitles" tabindex=0 style="color: #388540; margin-top:5px;">Start Shopping!</p> <!-- ##FIX need style class -->
+										<p tabindex=0 >Earn rewards points on all purchases, no matter how you pay.</p>
+										<a href="http://www.kohls.com" target="_blank" style="font-weight:bold;">SHOP KOHLS.COM</a> <!-- ##FIX need link -->
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div id="Decl503" style="position:relative; float:left; margin-right: 10px;">
+							<p id="pinkDeclText" class="headerPink tabindex="0" formTextCenterMed" style="margin-bottom:5px; margin-top:10px;">YES2YOU REWARDS</p>
+							<div id="TextDecl503" style="width:100%; background-color: #f5f5f5; border: 1px solid red; font-weight: normal; padding: 15px 10px; margin-bottom:5px;">
+								<div style="float:left; margin-right: 10px;"><img src="images/warningRed.png" alt="red warning triangle with exclaimation point"></div>
+								<div style=" overflow:hidden;"><p>The Yes2You Rewards&reg; system isn&apos;t responding right now.
+								<br>To enroll or learn more about Yes2You Rewards&reg;, visit <a href="http://www.kohls.com/rewards" target="_blank">www.kohls.com/rewards</a>.</p>
+								</div>
+								<div style="clear: both"></div>
+							</div>
+							</div>
+							<div style="clear: both"></div>
+					</div> <!-- #declined-no-matches -->
+					<div style=" clear:both"></div>
+			<!-- ##FIX show these instead of rainbow box on desktop for "Declined - All Other Scenarios" -->
+			<!-- ##FIX show these instead of rainbow box on mobile for "Declined - Alt" -->
+			<div id="declButtons">
+
+			<div class="buttonLink vanillaFormL desktopMarginRight">
+					<input type="button" class="buttonlargeSecondary" style="border-color:black;" tabindex="0" onclick="location.href='https://cs.kohls.com/';" value="FAQS">
+			</div>
+			<div class="buttonLink vanillaFormL">
+					<input type="button" class="buttonlargeSecondary" style="border-color:black;" tabindex="0" onclick="location.href='https://www.kohls.com';" value="SHOP KOHLS.COM">
+			</div>
+			<div style=" clear:both"></div>
+			</div>
+			
+
+
+			<div class="subsectionSmallText" tabindex="0" style="margin-top:30px;">
+				&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+				are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+				<button class="linkButton" id="appDeclinePolicy" tabindex="0">Security
+					and Privacy Policy</button>
+			</div>
+
+			<div id="appDeclinePolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div><!-- END APPLICATION DEC SECTION -->
+
+		<!-- STAR APPLICATION DUP SECTION -->
+		<div class="subSections" id="applicationDuplicate">
+			<div class="maxWidth" id="kohlsBanner8" style="max-width:1024px; margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+			<br>
+			<div class="maxWidth">
+			<div class="subsectionNormalText">
+				<span class="h3style" id="dup" tabindex="0">Application Confirmation</span>
+			</div>
+
+			<div class="subsectionNormalText" alt="Thank you for applying for a Kohl's Charge!">
+				<span class="h3style" tabindex="0" >Thank you for applying for a Kohl’s Charge!</span>
+				<p alt="Our records indicate that you recently applied for a Kohls
+                charge. If you have not already received a response to that
+                application, one will be provided within the next 30 days.">Our records indicate that you recently applied for a Kohl’s
+				charge. If you have not already received a response to that
+				application, one will be provided within the next 30 days.</p>
+
+			</div>
+
+			<!-- ##FIX I don't see a "dupe" page in the spec screenshots
+			<div class="pageSpacer60">&nbsp;</div>
+
+			<div class="buttonLink">
+					<input type="button" class="buttonlargeSecondary" tabindex="0" onclick="location.href='https://cs.kohls.com/';" value="FAQs">
+			</div>
+			<div class="buttonLink">
+					<input type="button" class="buttonlargeSecondary" tabindex="0" onclick="location.href='https://www.kohls.com';" value="Shop Kohl's">
+			</div>
+			-->
+
+			<div class="pageSpacer60">&nbsp;</div>
+
+			<div class="subsectionSmallText" tabindex="0">
+				&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+				are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+				<button class="linkButton" id="appDupePolicy" tabindex="0">Security
+					and Privacy Policy</button>
+			</div>
+			<div id="appDupePolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div><!-- END APPLICATION DUP SECTION -->
+
+		<!-- STAR APPLICATION ERROR SECTION -->
+		<div class="subSections" id="applicationError">
+			<div class="maxWidth" id="kohlsBanner9" style="max-width:1024px; margin: auto;" tabindex="0">
+				<img class="hideOnMobile" src="images/KohlChargeHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+				<img class="hideOnDesktop mobileBanner" src="images/mobileHeader.png" style="width: 100%;" alt="Header Image: Kohl’s Charge Application and images of Kohl’s charge cards">
+			</div>
+			<div style="border: 1px solid #e5e5e5; border-width: 0 0 1px 0;">&nbsp;</div>
+			<br>
+			<div class="maxWidth">
+			<div class="subsectionNormalText" id="applicationError1">
+				<!-- <h3>Application Confirmation</h3>  -->
+			</div>
+			<br />
+			<div class="subsectionCenteredText" id="applicationError2">
+				<h2 id="appError" tabindex="0">WE'RE SORRY!</h2>
+			</div>
+
+			<div class="pageSpacer30">&nbsp;</div>
+
+
+			<div id="applicationError3">
+				<span class="h3style" tabindex="0">The Kohl’s Charge online application page is currently
+					unavailable. We’re working to get our site up and running as soon
+					as possible. In the meantime, we thank you for your patience.</span>
+			</div>
+
+			<!-- ##FIX I don't see an "error" page in the spec screenshots
+			<div class="pageSpacer30">&nbsp;</div>
+
+			<div class="buttonLink">
+					<input type="button" class="buttonlargeSecondary" tabindex="0" onclick="location.href='https://cs.kohls.com/';" value="FAQs">
+			</div>
+			<div class="buttonLink">
+					<input type="button" class="buttonlargeSecondary" tabindex="0" onclick="location.href='https://www.kohls.com';" value="Shop Kohl's">
+			</div>
+			-->
+
+			<div class="pageSpacer60">&nbsp;</div>
+
+			<div class="subsectionSmallText" tabindex="0">
+				&copy;2017 Kohl’s Illinois, Inc. KOHL'S&reg; and Kohl’s brand names
+				are trademarks of Kohl’s Illinois, Inc. Please read the&nbsp;
+				<button class="linkButton" id="appErrorPolicy" tabindex="0">Security
+					and Privacy Policy</button>
+			</div>
+
+			<div id="appErrorPolicyModal" title="Privacy and Security Policy"></div>
+			</div>
+		</div><!-- END APPLICATION ERROR SECTION -->
+		
+		<div class="pageSpacer120">&nbsp;</div>
+
+	</div> <!-- #form -->
+<!-- KOHLS CODE for opinion lab -->
+<style>
+/* CSS for standard-resolution devices */
+.oo_inline {
+    padding: 0 0 0 13px;
+}
+.oo_inline_icon {
+    background-image: url(../onlineopinionV5/oo_icon.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 9px;
+    width: 9px;
+    top: 13px;
+    position: absolute;
+}
+/* CSS for high-resolution retina devices */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+    .oo_inline_icon {
+        background-image: url(../onlineopinionV5/oo_icon_retina.gif);
+        background-size: 100%;
+    }
+}
+</style>
+<!-- <a href="#" class="oo_inline" onClick="OOo.oo_feedback.show(event)"><span class="oo_inline_icon" /></span> Feedback</a> -->
+<!-- End: INLINE FEEDBACK LINK EXAMPLE -->
+
+<!-- MAIN OL ENGINE MINI-->
+<script language="javascript" type="text/javascript" charset="windows-1252" src="../onlineopinionV5/oo_engine.min.js"></script>
+
+<!-- MAIN OL STYLESHEET CSS -->
+<link rel="stylesheet" type="text/css" href="../onlineopinionV5/oo_style.css" />
+
+
+<!-- FEEDBACK CONFIGURATION -->
+<script language="javascript" type="text/javascript" charset="windows-1252" src="../onlineopinionV5/oo_conf_exit.js"></script>
+<script language="javascript" type="text/javascript" charset="windows-1252" src="../onlineopinionV5/oo_conf_inline_tab_bar.js"></script>
+
+<!-- END: OnlineOpinion v5+ -->
+
+</body>
+</html>
+

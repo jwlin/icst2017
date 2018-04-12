@@ -1,0 +1,2948 @@
+
+<!doctype html>
+<html>
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="https://images.lululemon.com/is/image/lululemon/LLL_favicon_180x180_02_black?$pngstandard$&fmt=png-alpha">
+<link rel="apple-touch-icon" sizes="120x120" href="https://images.lululemon.com/is/image/lululemon/LLL_favicon_120x120_02?$pngstandard$&fmt=png-alpha">
+<link rel="shortcut icon" type="image/png" href="https://images.lululemon.com/is/image/lululemon/LLL_favicon_180x180_02_black?$pngstandard$&fmt=png-alpha">
+<link rel="shortcut icon" href="https://images.lululemon.com/is/image/lululemon/LLL_favicon_32x32_02?$pngstandard$&fmt=png-alpha">
+<script src="https://cdn.ravenjs.com/3.23.1/raven.min.js" crossorigin="anonymous"></script>
+<script src="//assets.adobedtm.com/845de3dd5190cee4844ff9606697dac660c2e9ae/satelliteLib-40b468fea95c65a9bef2c0355e8c53c339d69a42.js"></script><meta name="google-play-app" content="app-id=com.lululemon.shop">
+<link href="//cdn.lululemon.com/lulustatic/v1/gsr/css/styles.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="https://images.lululemon.com/is/image/lululemon/ui-favicon?$pngstandard$" />
+<link href="//cdn.lululemon.com/lulustatic/v1/gsr/css/pages/checkout.css" rel="stylesheet"  type="text/css" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | lululemon athletica</title>
+<script>
+/* if('false'){
+} */
+var LLL = {};
+LLL.services = {
+checkout: {
+addNewCardForm: '/gsr/chk/data/checkout/addNewCard.jsp',
+shippingMethodsForm: '/gsr/chk/data/checkout/addNewShippingAddr.jsp',
+editShippingForm: '/gsr/chk/data/checkout/editShippingAddr.jsp',
+deliveryMessageForm: '/gsr/chk/data/checkout/deliveryMessageForm.jsp',
+giftCardForm: '/gsr/chk/actions/redeem-card.jsp',
+promoForm: '/gsr/gadgets/submit-coupon-code.jsp',
+orderTotal: '/gsr/chk/data/checkout/orderTotal.jsp',
+orderTotal_apply: '/gsr/chk/actions/gift-card-submit.jsp',
+orderTotal_remove: '/gsr/chk/actions/gift-card-submit.jsp?action=remove',
+paymentMethods: '/gsr/chk/data/checkout/cardMethods.jsp',
+deliveryMethods: '/gsr/chk/data/checkout/getShippingMethods.jsp',
+shippingAddresses: '/gsr/chk/data/checkout/getShippingAddresses.jsp',
+cardMethods: '/gsr/chk/data/checkout/cardMethods.jsp',
+shippingNickName: '/gsr/chk/data/checkout/getshippingnickname.jsp',
+signIn: '/gsr/chk/data/checkout/signIn.jsp',
+signUp: '/gsr/chk/data/checkout/signUp.jsp',
+shippingSubmitForm: '/gsr/chk/actions/shipping-submit.jsp',
+ccRequiredCheck : '/gsr/chk/data/checkout/cc-required-check.jsp',
+calculateTaxSubmit : '/gsr/chk/actions/tax-submit.jsp',
+billingSubmitForm: '/gsr/chk/actions/billing-info-submit.jsp',
+submitOrder: '/gsr/chk/actions/order-submit.jsp',
+shippingMethodDetails: '/gsr/chk/actions/getShippingMethodDtls.jsp',
+numericCountryCode: '/gsr/chk/data/checkout/getNumericCountriesCodes.jsp',
+savedGiftMessage: '/gsr/chk/data/checkout/getSavedGiftMessage.jsp'
+}
+};
+LLL.checkout = {
+authenticated: false,
+express: false,
+promoFormEnabled: false
+};
+</script>
+<!-- GSR-5585 For collecting meta head data for CDP pages -->
+<script type="text/javascript">
+(function() {
+    if (document.readyState === 'complete' || typeof window.$ === 'function') {
+        $(function() {
+            onDomReady($);
+        });
+    } else {
+        document.addEventListener("DOMContentLoaded", function() {
+            onDomReady($);
+        });
+    }
+    var onDomReady = function($) {
+        var pictures = document.querySelectorAll('.product-tile [data-color] picture');
+        if(pictures.length) {
+            pictures.forEach(function(pic) {
+                pic.setAttribute('style', 'display:block');
+                var sources = pic.querySelectorAll('source');
+                var imgs = pic.querySelectorAll('img');
+                if (sources.length) {
+                    sources.forEach(function(source) {
+                        source.dataset.srcset = source.srcset;
+                        source.removeAttribute('srcset');
+                        source.setAttribute('style', 'display:block');
+                    });
+                }
+                if (imgs.length) {
+                    imgs.forEach(function(img) {
+                        img.dataset.srcset = img.srcset;
+                        img.removeAttribute('srcset');
+                        img.setAttribute('style', 'display:block');
+                        img.classList.add("lazyload");
+                    });
+                }
+            });
+        }
+    };
+})();
+</script>
+</head>
+<body>
+<header class="top-nav js-top-nav-toggle" role="banner">
+<div id="promoted-alert-bar" class="promoted-alert-bar alert-bar">
+<div class="container">
+<a class="close-alert clear-icon" href="javascript:void(0)"></a>
+<div class="promo-content">
+<h3>Free Shipping + Free Returns</h3>
+<p id="23j65">Breathe easy, it's on us.</p></div>
+</div>
+</div>
+<!-- GSR-510 Fix -->
+<div class="primary-nav-wrapper">
+<nav role="navigation" class="lulu-topbar container">
+<a href="#content-wrapper" class="sr-only skip-nav">Skip Navigation and go directly to Main Page Content</a>
+
+<div class="nav-options">
+
+<a href="javascript:void(0)" id="js-mobile-menu-trigger" class="small-menu ham-icon">
+<span></span>
+</a>
+
+<ul id="js-navigation-menu" class="large-menu">
+
+<li class="nav-item" data-menu-id="lll-menu-1"><a href="//shop.lululemon.com/story/women?mnid=mn;en-US-JSON;women"
+
+>women</a></li>
+
+<li class="nav-item" data-menu-id="lll-menu-2"><a href="//shop.lululemon.com/story/men?mnid=mn;en-US-JSON;men"
+
+>men</a></li>
+
+<li class="nav-item" data-menu-id="lll-menu-3"><a href="//shop.lululemon.com/story/girls?mnid=mn;en-US-JSON;girls"
+
+>Girls</a></li>
+
+<li class="nav-item" data-menu-id="lll-menu-4"><a href="//shop.lululemon.com/story/collections?mnid=mn;en-US;collections"
+
+>Collections</a></li>
+
+<li class="nav-item" data-menu-id="lll-menu-5"><a href="//shop.lululemon.com/story/community?mnid=mn;en-US;community"
+
+>Community</a></li>
+
+</ul>
+</div>
+<div class="logo">
+<a href="//shop.lululemon.com">
+
+<img alt="Lululemon Athletica" src="//images.lululemon.com/is/image/lululemon/lulu-logo-white?$pngstandard$">
+
+</a>
+</div>
+
+<input type="hidden" value="//shop.lululemon.com" id="currentSiteURL"/>
+<input type="hidden" value=" USD" name="currencyCode" id="currencyCode">
+<input type="hidden" value=" $" name="currencySymbol" id="currencySymbol">
+<div class="user-options">
+<ul class="navigation-menu">
+<li class="nav-item profile">
+<a href="//shop.lululemon.com/secure/account/login.jsp">
+<span>Profile</span>
+<svg class="icon-xlink icon-profile" width="88.324px" height="70.823px" viewBox="0 0 88.324 70.823">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="//cdn.lululemon.com/lulustatic/gsr/svg/icons.svg#profile"></use>
+</svg>
+</a>
+</li>
+<li class="nav-item my-bag">
+<a href="//shop.lululemon.com/shop/mybag.jsp">
+<span>My Bag</span>
+<svg class="icon-xlink icon-shoppingcart" width="88.324px" height="70.823px" viewBox="0 0 88.324 70.823">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="//cdn.lululemon.com/lulustatic/gsr/svg/icons.svg#shoppingcart"></use>
+</svg>
+<span class="item-count" id="cart-total-header">0</span>
+</a>
+<div class="bag-notification-wrapper">
+<div class="bag-notification">
+<h2>Added To Your Bag</h2>
+<hr />
+<h3 class="bag-count"></h3>
+<a class="button cta-button" href="//shop.lululemon.com/shop/mybag.jsp">View Bag</a>
+</div>
+</div>
+</li>
+<li class="nav-item search">
+<a class="modal_trigger" ref="search-modal" href="//shop.lululemon.com/common/searchoverlay.jsp">
+<svg class="icon-xlink icon-search" width="88.324px" height="70.823px" viewBox="0 0 88.324 70.823">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="//cdn.lululemon.com/lulustatic/gsr/svg/icons.svg#search"></use>
+</svg>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<nav role="navigation" class="secondary-nav-wrapper row">
+<a class="nav-header no-arrow no-border" href="//shop.lululemon.com/homepage">Home</a>
+
+<a class="section-nav-header" href="//shop.lululemon.com/story/women?mnid=mn;en-US-JSON;women">women</a>
+
+<div class="section-nav row" id="lll-menu-1">
+
+<div class="nav-content no-promo-exists">
+<ul class="secondary-items">
+
+<li class="submenu xs-all">
+<a class="no-arrow sub-all" href="//shop.lululemon.com/story/women?mnid=mn;en-US-JSON;women">All</a>
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/">Features</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/women/_/N-7vfZ1z13zii?mnid=mn;en-US;women;features;whats-new" class="OneLinkNoTx">What's New</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/_/N-7vfZ1z12l0t?mnid=mn;en-US;women;features;bestsellers" class="OneLinkNoTx">Bestsellers</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/_/N-7vfZ1z1166c?mnid=mn;en-US;women;features;office,-travel,-commute" class="OneLinkNoTx">Office, Travel, Commute</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/_/N-7vfZ1z1187b?mnid=mn;en-US;women;features;spring-cotton" class="OneLinkNoTx">Spring Cotton</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/_/N-7vfZ1z11d6h?mnid=mn;en-US;women;features;wunder-under-shop" class="OneLinkNoTx">Wunder Under Shop</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/_/N-1z13zi2Z7vf?mnid=mn;en-US;women;features;we-made-too-much" class="OneLinkNoTx">We Made Too Much</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/_/N-7vf?mnid=mn;en-US;women;features;view-all" class="OneLinkNoTx">View All</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/">Activity</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/women/yoga/_/N-1z141d0Z7vf?activity=true&mnid=mn;en-US;women;activity;yoga">Yoga</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/run/_/N-1z141cpZ7vf?activity=true&mnid=mn;en-US;women;activity;run">Run</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/train/_/N-1z13z6fZ7vf?activity=true&mnid=mn;en-US;women;activity;train">Train</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/swim/_/N-1z13zhoZ7vf?activity=true&mnid=mn;en-US;women;activity;swim">Swim</a></li>
+
+<li><a href="//shop.lululemon.com/c/women/to-+-from/_/N-1z13ytpZ7vf?activity=true&mnid=mn;en-US;women;activity;to-+-from">To + From</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/women-maintops/_/N-815?mnid=mn;en-US;women;tops">tops</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/women-maintops/_/N-815?mnid=mn;en-US;women;tops">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/women-sports-bras/_/N-816?mnid=mn;en-US;women;tops;bras" class="OneLinkNoTx">Bras</a></li>
+
+<li><a href="//shop.lululemon.com/c/tops-swim/_/N-8bj?mnid=mn;en-US;women;tops;swim" class="OneLinkNoTx">swim</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-tanks/_/N-81a?mnid=mn;en-US;women;tops;tanks" class="OneLinkNoTx">Tanks</a></li>
+
+<li><a href="//shop.lululemon.com/c/skirts-and-dresses-dresses/_/N-8bk?mnid=mn;en-US;women;tops;dresses-+-onesies" class="OneLinkNoTx">dresses + onesies</a></li>
+
+<li><a href="//shop.lululemon.com/c/tops-short-sleeve/_/N-8bl?mnid=mn;en-US;women;tops;short-sleeves" class="OneLinkNoTx">Short Sleeves</a></li>
+
+<li><a href="//shop.lululemon.com/c/tops-long-sleeve/_/N-8bm?mnid=mn;en-US;women;tops;long-sleeves" class="OneLinkNoTx">Long Sleeves</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-sweaters-and-wraps/_/N-8bn?mnid=mn;en-US;women;tops;sweaters" class="OneLinkNoTx">Sweaters</a></li>
+
+<li><a href="//shop.lululemon.com/c/womens-outerwear/_/N-8bp?mnid=mn;en-US;women;tops;hoodies-+-vests" class="OneLinkNoTx">Hoodies + Vests</a></li>
+
+<li><a href="//shop.lululemon.com/c/jackets-and-hoodies-jackets/_/N-8a1?mnid=mn;en-US;women;tops;jackets-+-outerwear" class="OneLinkNoTx">Jackets + Outerwear</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/women-bottoms/_/N-7yg?mnid=mn;en-US;women;bottoms">bottoms</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/women-bottoms/_/N-7yg?mnid=mn;en-US;women;bottoms">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/women-shorts/_/N-7yv?mnid=mn;en-US;women;bottoms;shorts" class="OneLinkNoTx">shorts</a></li>
+
+<li><a href="//shop.lululemon.com/c/bottoms-swim/_/N-8br?mnid=mn;en-US;women;bottoms;swim" class="OneLinkNoTx">swim</a></li>
+
+<li><a href="//shop.lululemon.com/c/skirts-and-dresses-skirts/_/N-8bs?mnid=mn;en-US;women;bottoms;skirts" class="OneLinkNoTx">skirts</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-crops/_/N-7yr?mnid=mn;en-US;women;bottoms;crops" class="OneLinkNoTx">crops</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-pants/_/N-7yh?mnid=mn;en-US;women;bottoms;pants" class="OneLinkNoTx">pants</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/women-mainaccessories/_/N-81l?mnid=mn;en-US;women;accessories">accessories</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/women-mainaccessories/_/N-81l?mnid=mn;en-US;women;accessories">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/women-mats-props/_/N-8bv?mnid=mn;en-US;women;accessories;yoga-mats-+-props" class="OneLinkNoTx">Yoga Mats + Props</a></li>
+
+<li><a href="//shop.lululemon.com/c/bags/_/N-8bt?mnid=mn;en-US;women;accessories;bags" class="OneLinkNoTx">Bags</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-headbands-hats/_/N-8bu?mnid=mn;en-US;women;accessories;hats-+-hair-accessories" class="OneLinkNoTx">Hats + Hair Accessories</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-scarves-gloves/_/N-8bw?mnid=mn;en-US;women;accessories;scarves-+-wraps" class="OneLinkNoTx">Scarves + Wraps</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-socks/_/N-8bx?mnid=mn;en-US;women;accessories;socks-+-underwear" class="OneLinkNoTx">Socks + Underwear</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-water-bottles/_/N-8by?mnid=mn;en-US;women;accessories;water-bottles" class="OneLinkNoTx">Water Bottles</a></li>
+
+<li><a href="//shop.lululemon.com/c/women-shoes/_/N-8f4?mnid=mn;en-US;women;accessories;shoes" class="OneLinkNoTx">Shoes</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<a class="section-nav-header" href="//shop.lululemon.com/story/men?mnid=mn;en-US-JSON;men">men</a>
+
+<div class="section-nav row" id="lll-menu-2">
+
+<div class="nav-content no-promo-exists">
+<ul class="secondary-items">
+
+<li class="submenu xs-all">
+<a class="no-arrow sub-all" href="//shop.lululemon.com/story/men?mnid=mn;en-US-JSON;men">All</a>
+</li>
+
+<li class="submenu">
+
+<a href="#">Features</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="#">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/men/_/N-7tuZ1z13zii?mnid=mn;en-US;men;features;whats-new" class="OneLinkNoTx">What's New</a></li>
+
+<li><a href="//shop.lululemon.com/c/men/_/N-7tuZ1z12l0t?mnid=mn;en-US;men;features;bestsellers" class="OneLinkNoTx">Bestsellers</a></li>
+
+<li><a href="//shop.lululemon.com/c/men/_/N-1z13zi2Z7tu?mnid=mn;en-US;men;features;we-made-too-much" class="OneLinkNoTx">We Made Too Much</a></li>
+
+<li><a href="//shop.lululemon.com/c/men/_/N-7tu?mnid=mn;en-US;men;features;view-all" class="OneLinkNoTx">View All</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="#">Activity</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="#">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/men/train/_/N-1z13z6fZ7tu?activity=true&mnid=mn;en-US;men;activity;train">Train</a></li>
+
+<li><a href="//shop.lululemon.com/c/men/run/_/N-1z141cpZ7tu?activity=true&mnid=mn;en-US;men;activity;run">Run</a></li>
+
+<li><a href="//shop.lululemon.com/c/men/yoga/_/N-1z141d0Z7tu?activity=true&mnid=mn;en-US;men;activity;yoga">Yoga</a></li>
+
+<li><a href="//shop.lululemon.com/c/men/swim/_/N-1z13zhoZ7tu?activity=true&mnid=mn;en-US;men;activity;swim">Swim</a></li>
+
+<li><a href="//shop.lululemon.com/c/men/to-+-from/_/N-1z13ytpZ7tu?activity=true&mnid=mn;en-US;men;activity;to-+-from">To + From</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/men-tops/_/N-87x?mnid=mn;en-US;men;tops">tops</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/men-tops/_/N-87x?mnid=mn;en-US;men;tops">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/mens-tanks/_/N-8ao?mnid=mn;en-US;men;tops;tanks" class="OneLinkNoTx">Tanks</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-ss-tops/_/N-8ap?mnid=mn;en-US;men;tops;short-sleeves" class="OneLinkNoTx">Short Sleeves</a></li>
+
+<li><a href="//shop.lululemon.com/c/mens-polos/_/N-8kx?mnid=mn;en-US;men;tops;polos" class="OneLinkNoTx">Polos</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-ls-tops/_/N-8aq?mnid=mn;en-US;men;tops;long-sleeves" class="OneLinkNoTx">Long Sleeves</a></li>
+
+<li><a href="//shop.lululemon.com/c/mens-jackets-and-hoodies-hoodies/_/N-8ar?mnid=mn;en-US;men;tops;jackets-+-hoodies" class="OneLinkNoTx">Jackets + Hoodies</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/men-bottoms/_/N-886?mnid=mn;en-US;men;bottoms">bottoms</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/men-bottoms/_/N-886?mnid=mn;en-US;men;bottoms">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/men-pants/_/N-88b?mnid=mn;en-US;men;bottoms;pants" class="OneLinkNoTx">Pants</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-joggers/_/N-8js?mnid=mn;en-US;men;bottoms;joggers" class="OneLinkNoTx">Joggers</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-tights/_/N-8co?mnid=mn;en-US;men;bottoms;tights" class="OneLinkNoTx">Tights</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-shorts/_/N-887?mnid=mn;en-US;men;bottoms;shorts" class="OneLinkNoTx">Shorts</a></li>
+
+<li><a href="//shop.lululemon.com/c/mens-swim/_/N-8ku?mnid=mn;en-US;men;bottoms;swim" class="OneLinkNoTx">Swim</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/men-accessories/_/N-88f?mnid=mn;en-US;men;accessories">accessories</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/men-accessories/_/N-88f?mnid=mn;en-US;men;accessories">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/men-mats-props/_/N-8ax?mnid=mn;en-US;men;accessories;yoga-mats-+-props" class="OneLinkNoTx">Yoga Mats + Props</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-bags/_/N-8av?mnid=mn;en-US;men;accessories;bags" class="OneLinkNoTx">Bags</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-hats/_/N-8aw?mnid=mn;en-US;men;accessories;hats" class="OneLinkNoTx">Hats</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-socks/_/N-8az?mnid=mn;en-US;men;accessories;socks-+-underwear" class="OneLinkNoTx">Socks + Underwear</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-water-bottles/_/N-8b0?mnid=mn;en-US;men;accessories;water-bottles" class="OneLinkNoTx">Water Bottles</a></li>
+
+<li><a href="//shop.lululemon.com/c/men-shoes/_/N-8f2?mnid=mn;en-US;men;accessories;shoes" class="OneLinkNoTx">Shoes</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<a class="section-nav-header" href="//shop.lululemon.com/story/girls?mnid=mn;en-US-JSON;girls">Girls</a>
+
+<div class="section-nav row" id="lll-menu-3">
+
+<div class="nav-content no-promo-exists">
+<ul class="secondary-items">
+
+<li class="submenu xs-all">
+<a class="no-arrow sub-all" href="//shop.lululemon.com/story/girls?mnid=mn;en-US-JSON;girls">All</a>
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/">Features</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/girls/_/N-8grZ1z13zii?mnid=mn;en-US;girls;features;whats-new" class="OneLinkNoTx">What's New</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls/_/N-8grZ1z12l0t?mnid=mn;en-US;girls;features;bestsellers" class="OneLinkNoTx">Bestsellers</a></li>
+
+<li><a href="//shop.lululemon.com/story/girls-swim?mnid=mn;en-US;girls;features;swim" class="OneLinkNoTx">Swim</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls/_/N-1z13zi2Z8gr?mnid=mn;en-US;girls;features;we-made-too-much" class="OneLinkNoTx">We Made Too Much</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls/_/N-8gr?mnid=mn;en-US;girls;features;view-all" class="OneLinkNoTx">View All</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/">Activity</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/girls/dance/_/N-8grZ1z13nw0?activity=true&mnid=mn;en-US;girls;activity;dance">Dance</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls/gymnastics/_/N-8grZ1z11gtp?activity=true&mnid=mn;en-US;girls;activity;gymnastics">Gymnastics</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls/train/_/N-1z13z6fZ8gr?activity=true&mnid=mn;en-US;girls;activity;train">Train</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls/swim/_/N-1z13zhoZ8gr?activity=true&mnid=mn;en-US;girls;activity;swim">Swim</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls/to-+-from/_/N-1z13ytpZ8gr?activity=true&mnid=mn;en-US;girls;activity;to-+-from">To + From</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/girls-maintops/_/N-8i4?mnid=mn;en-US;girls;tops">Tops</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/girls-maintops/_/N-8i4?mnid=mn;en-US;girls;tops">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/girls-sports-bras/_/N-8it?mnid=mn;en-US;girls;tops;bras" class="OneLinkNoTx">Bras</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-tanks/_/N-8i6?mnid=mn;en-US;girls;tops;tanks" class="OneLinkNoTx">Tanks</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-bodysuits-leotards/_/N-8ib?mnid=mn;en-US;girls;tops;bodysuits-+-leotards" class="OneLinkNoTx">Bodysuits + Leotards</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-short-sleeve/_/N-8i7?mnid=mn;en-US;girls;tops;short-sleeves" class="OneLinkNoTx">Short Sleeves</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-long-sleeve/_/N-8i8?mnid=mn;en-US;girls;tops;long-sleeves" class="OneLinkNoTx">Long Sleeves</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-sweaters-wraps/_/N-8i5?mnid=mn;en-US;girls;tops;sweaters-+-wraps" class="OneLinkNoTx">Sweaters + Wraps</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-hoodies-vests/_/N-8i9?mnid=mn;en-US;girls;tops;hoodies-+-vests" class="OneLinkNoTx">Hoodies + Vests</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-jackets-outerwear/_/N-8ia?mnid=mn;en-US;girls;tops;jackets-+-outerwear" class="OneLinkNoTx">Jackets + Outerwear</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-swim-tops/_/N-8kl?mnid=mn;en-US;girls;tops;swim" class="OneLinkNoTx">Swim</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/girls-bottoms/_/N-8hz?mnid=mn;en-US;girls;bottoms">Bottoms</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/girls-bottoms/_/N-8hz?mnid=mn;en-US;girls;bottoms">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/girls-pants/_/N-8i1?mnid=mn;en-US;girls;bottoms;pants" class="OneLinkNoTx">Pants</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-crops/_/N-8i0?mnid=mn;en-US;girls;bottoms;crops" class="OneLinkNoTx">Crops</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-shorts/_/N-8i3?mnid=mn;en-US;girls;bottoms;shorts" class="OneLinkNoTx">Shorts</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-skirts/_/N-8i2?mnid=mn;en-US;girls;bottoms;skirts" class="OneLinkNoTx">Skirts</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-swim-bottoms/_/N-8km?mnid=mn;en-US;girls;bottoms;swim" class="OneLinkNoTx">Swim</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/c/girls-mainaccessories/_/N-8ht?mnid=mn;en-US;girls;accessories">Accessories</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/c/girls-mainaccessories/_/N-8ht?mnid=mn;en-US;girls;accessories">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/girls-bags/_/N-8hu?mnid=mn;en-US;girls;accessories;bags" class="OneLinkNoTx">Bags</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-mats-props/_/N-8hv?mnid=mn;en-US;girls;accessories;yoga-mats-+-props" class="OneLinkNoTx">Yoga Mats + Props</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-scarves-gloves/_/N-8hy?mnid=mn;en-US;girls;accessories;scarves-+-gloves" class="OneLinkNoTx">Scarves + Gloves</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-headbands-hats/_/N-8is?mnid=mn;en-US;girls;accessories;headbands-+-hats" class="OneLinkNoTx">Headbands + Hats</a></li>
+
+<li><a href="//shop.lululemon.com/c/girls-socks/_/N-8hx?mnid=mn;en-US;girls;accessories;socks-+-underwear" class="OneLinkNoTx">Socks + Underwear</a></li>
+
+<li><a href="//shop.lululemon.com/c/PB-Teen-Bedding/_/N-8jq?mnid=mn;en-US;girls;accessories;pbteen-bedding" class="OneLinkNoTx">PBteen Bedding</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<a class="section-nav-header" href="//shop.lululemon.com/story/collections?mnid=mn;en-US;collections">Collections</a>
+
+<div class="section-nav row" id="lll-menu-4">
+
+<div class="nav-content no-promo-exists">
+<ul class="secondary-items">
+
+<li class="submenu xs-all">
+<a class="no-arrow sub-all" href="//shop.lululemon.com/story/collections?mnid=mn;en-US;collections">All</a>
+</li>
+
+<li class="submenu">
+
+<a href="">Women's</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/story/speedupcollection?activity=true&mnid=mn;en-US;collections;speed-up-collection" class="OneLinkNoTx">Speed Up Collection</a></li>
+
+<li><a href="//shop.lululemon.com/story/align-pants?activity=true&mnid=mn;en-US;collections;align-collection" class="OneLinkNoTx">Align Collection</a></li>
+
+<li><a href="//shop.lululemon.com/story/to+from?activity=true&mnid=mn;en-US;collections;to-+-from" class="OneLinkNoTx">To + From</a></li>
+
+<li><a href="//shop.lululemon.com/story/womensyoga?activity=true&mnid=mn;en-US;collections;yoga" class="OneLinkNoTx">Yoga</a></li>
+
+<li><a href="//shop.lululemon.com/story/womenstrain?activity=true&mnid=mn;en-US;collections;train" class="OneLinkNoTx">Train</a></li>
+
+<li><a href="//shop.lululemon.com/story/giftsforher?activity=true&mnid=mn;en-US;collections;gifts-for-her" class="OneLinkNoTx">Gifts for Her</a></li>
+
+<li><a href="//shop.lululemon.com/story/introducing-APL-shoes?activity=true&mnid=mn;en-US;collections;apl-shoes" class="OneLinkNoTx">APL Shoes</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="">Men's</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/story/mens-travel-essentials?activity=true&mnid=mn;en-US;collections;travel-essentials" class="OneLinkNoTx">Travel Essentials</a></li>
+
+<li><a href="//shop.lululemon.com/story/mens-spring-jackets?activity=true&mnid=mn;en-US;collections;spring-jackets" class="OneLinkNoTx">Spring Jackets</a></li>
+
+<li><a href="//shop.lululemon.com/c/lululemon-x-roden-gray?activity=true&mnid=mn;en-US;collections;lululemon-x-roden-gray" class="OneLinkNoTx">lululemon x roden gray</a></li>
+
+<li><a href="//shop.lululemon.com/story/mensmetalventtech?activity=true&mnid=mn;en-US;collections;metal-vent-tech" class="OneLinkNoTx">Metal Vent Tech</a></li>
+
+<li><a href="//shop.lululemon.com/story/mensrun?activity=true&mnid=mn;en-US;collections;run" class="OneLinkNoTx">Run</a></li>
+
+<li><a href="//shop.lululemon.com/story/giftsforhim?activity=true&mnid=mn;en-US;collections;gifts-for-him" class="OneLinkNoTx">Gifts for Him</a></li>
+
+<li><a href="//shop.lululemon.com/story/introducing-APL-shoes?activity=true&mnid=mn;en-US;collections;apl-shoes" class="OneLinkNoTx">APL Shoes</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="">Girls'</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/girls/_/N-8grZ1z12l0t?activity=true&mnid=mn;en-US;collections;bestsellers" class="OneLinkNoTx">Bestsellers</a></li>
+
+<li><a href="//shop.lululemon.com/story/girls-swim?activity=true&mnid=mn;en-US;collections;swim" class="OneLinkNoTx">Swim</a></li>
+
+<li><a href="//shop.lululemon.com/story/giftsforgirls?activity=true&mnid=mn;en-US;collections;gifts-for-girls" class="OneLinkNoTx">Gifts for Girls</a></li>
+
+<li><a href="//shop.lululemon.com/c/PB-Teen-Bedding/_/N-8jq?activity=true&mnid=mn;en-US;collections;pbteen-bedding" class="OneLinkNoTx">PBteen Bedding</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="//shop.lululemon.com/story/speedupcollection?mnid=mn;en-US;collections;run-360-test">Run 360 Test</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="//shop.lululemon.com/story/speedupcollection?mnid=mn;en-US;collections;run-360-test">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/c/women/run/_/N-1z141cpZ7vf?activity=true&mnid=mn;en-US;collections;threesixty-run" class="OneLinkNoTx">threesixty run</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<a class="section-nav-header" href="//shop.lululemon.com/story/community?mnid=mn;en-US;community">Community</a>
+
+<div class="section-nav row" id="lll-menu-5">
+
+<div class="nav-content no-promo-exists">
+<ul class="secondary-items">
+
+<li class="submenu">
+
+<a href="https://shop.lululemon.com/features/_/N-1z141e0?mnid=mn;en-US;community;stories">STORIES</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="https://shop.lululemon.com/features/_/N-1z141e0?mnid=mn;en-US;community;stories">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/features/_/N-1z13zftZ0?mnid=mn;en-US;community;stories;up-close-+-personal" class="OneLinkNoTx">Up-Close + Personal</a></li>
+
+<li><a href="//shop.lululemon.com/features/_/N-1z13zflZ0?mnid=mn;en-US;community;stories;our-gear" class="OneLinkNoTx">Our Gear</a></li>
+
+<li><a href="//shop.lululemon.com/features/_/N-1z13zfgZ0?mnid=mn;en-US;community;stories;this-just-in" class="OneLinkNoTx">This Just In</a></li>
+
+<li><a href="//shop.lululemon.com/features/_/N-1z13rfvZ0?mnid=mn;en-US;community;stories;the-sweatlife" class="OneLinkNoTx">The SweatLife</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="https://shop.lululemon.com/ambassadors/_/N-1z141e2?mnid=mn;en-US;community;ambassadors">Ambassadors</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="https://shop.lululemon.com/ambassadors/_/N-1z141e2?mnid=mn;en-US;community;ambassadors">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/ambassadors/_/N-1z13zhbZ0?mnid=mn;en-US;community;ambassadors;store" class="OneLinkNoTx">store</a></li>
+
+<li><a href="//shop.lululemon.com/ambassadors/_/N-1z13truZ0?mnid=mn;en-US;community;ambassadors;global-yoga" class="OneLinkNoTx">global yoga</a></li>
+
+</ul>
+
+</li>
+
+<li class="submenu">
+
+<a href="https://shop.lululemon.com/community/_/N-1z13zib?mnid=mn;en-US;community;events">Events</a>
+
+<ul>
+
+<li class="xs-all">
+<a href="https://shop.lululemon.com/community/_/N-1z13zib?mnid=mn;en-US;community;events">All</a>
+</li>
+
+<li><a href="//shop.lululemon.com/community/_/N-1z13xizZ0?mnid=mn;en-US;community;events;festivals-+-retreats" class="OneLinkNoTx">Festivals + Retreats</a></li>
+
+<li><a href="//shop.lululemon.com/community/_/N-1z13zkyZ0?mnid=mn;en-US;community;events;sweat-with-us" class="OneLinkNoTx">Sweat with Us</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+
+<div class="section-mobile-nav">
+<div class="nav-items-collection">
+<ul class="items">
+<li><a href="//shop.lululemon.com/secure/account/login.jsp?mnid=ftr;en-US;my-account">My Account</a></li>
+<li><a href="//info.lululemon.com/contact?mnid=ftr;en-US;contact-us">Contact Us</a></li>
+<li><a href="//info.lululemon.com/stores?mnid=ftr;en-US;store-locator">Store Locator</a></li>
+<li><a href="//info.lululemon.com/lululemon-apps?mnid=ftr;en-US;lululemon-apps">Download Our App</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<div id="checkout">
+<div class="checkout-fixed-header">
+<h1>Checkout</h1>
+<div class="checkout-progress container">
+<div class="checkout-progress-cta liveChat" id="liveChat">
+      <a class="button" href="" onClick="window.open('https://lululemon.custhelp.com/app/chat/chat_launch/site/en_US', 'custclient', 'width=770,height=768,scrollbars=1'); return false;">Live Chat</a>
+     </div><div class="checkout-progress-steps">
+<ol>
+<li><a id="step-link-1" class="step-link disabled" href="#checkout-step-shipping">01 <span class="stronger">Shipping</span></a></li>
+<li><a id="step-link-2" class="step-link disabled" href="#checkout-step-payment">02 <span class="stronger">Payment</span></a></li>
+<li><a id="step-link-3" class="step-link disabled" href="#checkout-step-review">03 <span class="stronger">Review</span></a></li>
+</ol>
+</div>
+<div class="checkout-progress-order">
+<div class="checkout-progress-edit-order"><span class="checkout-progress-order-items">1 Items</span><a href="/shop/shopping-bag.jsp" ref="mybag-modal" class="modal_trigger">Edit</a></div>
+<div class="checkout-progress-order-total">
+<a href="javascript:void(0);" class="toggle">
+Order Total
+<span class="order-summary-total-wrapper">
+<!--Order SUMMARY TOTAL TMPL -->
+</span>
+</a>
+</div>
+</div>
+<!--//checkout-progress-order-->
+<div class="checkout-progress-order-summary">
+<div class="order-summary">
+<!--ORDER SUMMARY TMPL -->
+</div>
+<!--//order-summary-->
+</div>
+<!--//checkout-progress-order-summary-->
+</div>
+<!--//checkout-progress-->
+</div>
+<!--//checkout-fixed-header-->
+<div class="checkout-container container">
+<div id="checkout-step-sign-in" class="checkout-step-wrapper active-step">
+<div class="checkout-step">
+<div class="checkout-section">
+<div>
+<div class="checkout-section-inner"">
+<h3 class="checkout-section-title">Almost there! </h3>
+<div class="signin">
+<div class="signin-auth-wrapper">
+<div class="signin-auth">
+<h4>Sign In to Your Account</h4>
+<form id="signin" name="login" action="/secure/account/frags/?_DARGS=/secure/account/frags/signinFrag.jsp" class="memorize" method="post"><input name="_dyncharset" value="ISO-8859-1" type="hidden"></input><input name="_dynSessConf" value="-3757710526424823019" type="hidden"></input><input name="/atg/userprofiling/ProfileFormHandler.formId" value="login" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.formId" value=" " type="hidden"><input name="/atg/userprofiling/ProfileFormHandler.value.modalPage" value="false" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.value.modalPage" value=" " type="hidden"><input name="/atg/userprofiling/ProfileFormHandler.giftCardNumber" value="" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.giftCardNumber" value=" " type="hidden"><div class="input-step field">
+<label for="email-signin-account"><span class="field-required">* </span>Email Address</label>
+<input id="email-signin-account" name="email" value="" required="true" type="text" autocomplete="on"><input name="_D:email" value=" " type="hidden"></div>
+<div class="input-step field">
+<label for="password"><span class="field-required">* </span>Password</label>
+<input id="password" name="password" value="" required="true" type="password" autocomplete="off"><input name="_D:password" value=" " type="hidden"></div>
+
+<a class="signin-link" role="link" id="forgotPwdLink" href="/secure/account/forgotpassword.jsp?email=">Forgot your password?</a>
+<input id="signin-submit" name="/atg/userprofiling/ProfileFormHandler.login" value="SIGN IN" class="button cta-button next-section-btn" type="submit"><input name="_D:/atg/userprofiling/ProfileFormHandler.login" value=" " type="hidden"><input name="_DARGS" value="/secure/account/frags/signinFrag.jsp" type="hidden"></input></form>
+<p class="signin-info">New Customer?</p>
+<a class="signin-link" id="register-link" href="#signup-guest" aria-controls="signup-guest">Register Now</a>
+
+</div>
+</div>
+<div class="signin-guest-wrapper">
+<div id="signup-guest">
+
+<div class="register-auth">
+<h4>Create an Account</h4>
+<form id="signup" action="/secure/account/frags/?_DARGS=/secure/account/frags/registerFrag.jsp" method="post"><input name="_dyncharset" value="ISO-8859-1" type="hidden"></input><input name="_dynSessConf" value="-3757710526424823019" type="hidden"></input><input name="/atg/userprofiling/ProfileFormHandler.modalPage" value="false" type="hidden"><input name="_D:/atg/userprofiling/ProfileFormHandler.modalPage" value=" " type="hidden">
+<div class="input-step field">
+<label for="email-signup-account"><span class="field-required">* </span>Email</label>
+
+<input type="email" name="email" id="email-signup-account" required autocomplete="off"/>
+
+</div>
+
+<div class="input-step field">
+
+<label for="new-password"><span class="field-required">* </span>Password</label>
+
+<input type="password" name="new-password" id="new-password" aria-live="polite" required autocomplete="off" maxlength="25"/>
+</div>
+
+<div class="input-step field">
+<label class="replace-checkbox">
+<input type="checkbox" name="email-signup" class="email-signup" value="true">
+<span class="replace-checkbox-label">
+<p>Sign me up for lululemon emails (you can unsubscribe at any time). See our <a target="_blank" href="//info.lululemon.com/legal/terms-of-use">terms and conditions</a> for details.</p>
+</span>
+</label>
+</div>
+
+<div class="input-step">
+
+<button id="signup-submit" class="button cta-button next-section-btn" type="submit">CREATE  ACCOUNT</button>
+
+</div>
+<input name="_DARGS" value="/secure/account/frags/registerFrag.jsp" type="hidden"></input></form></div>
+</div>
+<div class="signin-guest">
+<h4>Check Out as a Guest</h4>
+<p>Not ready to commit? Don't worry about it - we'll be here when you're ready to take things to the next level.</p>
+<a href="javascript:void(0);" class="button cta-button next-section-btn">Checkout</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="checkout-step-shipping" class="checkout-step-wrapper">
+<h2 class="checkout-step-title"><span>01 </span>Shipping</h2>
+<div class="checkout-step">
+<div class="checkout-section checkout-shipping">
+<div class="checkout-section-inner">
+<h3 class="checkout-section-title">
+Shipping Address
+</h3>
+<div class="checkout-radio-list">
+<div id="list-addresses">
+<!--Form Shipping Addresses TMPL -->
+</div>
+</div>
+<a class="button show-shipping-form">Add Address</a>
+<!--Form Shipping TMPL -->
+</div>
+</div>
+<div data-policy-open="false" class="checkout-section shipping-section-delivery">
+<div class="checkout-section-inner">
+<h3 class="checkout-section-title">Shipping Method</h3>
+<a class="shipping-policy-link accordion-trigger" href="javascript:void(0);">Shipping Policy</a>
+        <div class="checkout-shipping-policy accordion-hidden">
+        
+         <ul>
+          <li>We cannot guarantee expedited or overnight deliveries to P.O. Boxes or rural postal/zip codes. Selecting 'standard shipping' is the way to go.</li>
+          <li>We can ship to APO/FPO/DPO addresses however transit times for these addresses can take up to 45 business days.</li>
+          <li>Your gear will be processed and shipped within two business days of the order date.</li>
+          <li>Standard international shipping fees do not include taxes or duties.</li>
+          <li>If an order is placed on www.lululemon.com and then refused, you will be responsible for the original shipping costs, as well as any duties, taxes and/or customs charges that were incurred in shipping the package.</li>
+          <li>We're unable to supply estimated duties and taxes as this information will vary by country.</li>
+          <li>We do not ship to P.O. boxes outside of Canada and the US</li>
+          <li>We cannot adjust the value of your purchase. We are required by law to disclose the full value of the package content.</li>
+         </ul>
+        </div><div class="delivery-method checkout-block-wrapper">
+<!--DELIVERY METHOD TMPL -->
+</div>
+<!--//delivery-method-->
+<div class="delivery-notification">
+<div class="delivery-notification-inner">
+<p class="delivery-notification-form-desc">Shipping notifications will be sent to<span class="help-tooltip">        <a class="tooltip-trigger" href="javascript:void(0);"><span class="tooltip-question-mark">?</span></a>        <span class="tooltip-text">         <span class="tooltip-arrow"> </span>Once your order has shipped, we will use this email address to send you your order confirmation and tracking information.        </span>       </span>
+</p>
+<form class="delivery-notification-email memorize" id="delivery-notification-email" >
+<div class="delivery-notification-email-inner">
+<label for="delivery-email"><span class="field-required">* </span>Email address</label>
+<input type="email" id="delivery-email" name="delivery-email" value="" required placeholder="Enter email">
+<div class="clear-icon-wrapper"><button class="clear-icon" type="reset"></button></div>
+</div>
+<div class="global-email-signup">
+<label for="emailSignUp" class="replace-checkbox">
+
+<input id="emailSignUp" type="checkbox" value="true" name="emailSignUp" checked/>
+
+<span class="replace-checkbox-label">
+Sign me up for lululemon emails (you can unsubscribe at any time). See our <a href="//info.lululemon.com/legal/terms-of-use" target="_blank">terms and conditions</a> for details.</span>
+</label>
+</div>
+</form>
+</div>
+<form class="delivery-message-form memorize" id="delivery-message-form">
+<div class="form delivery-message-toggle">
+<label for="delivery-message-checkbox" class="replace-checkbox">
+<input id="delivery-message-checkbox" type="checkbox" value="gift-message" name="gift-message">
+<span class="replace-checkbox-label">This is a gift, add a message</span>
+</label>
+</div>
+<div class="delivery-message">
+<a class="edit-message" href="javascript:void(0);">Edit Message</a>
+<div class="delivery-message-form-recipient">
+<label for="delivery-recipient">To</label><input type="text" id="delivery-recipient" maxlength="50" name="delivery-recipient" />
+</div>
+<div class="delivery-message-form-sender">
+<label for="delivery-sender">From</label><input type="text" id="delivery-sender"  maxlength="50" name="delivery-sender" />
+</div>
+<div class="delivery-message-form-text">
+<textarea id="gift-message-text" aria-label="Gift Message" placeholder="Type something cute!" maxlength="150" name="delivery-message" ></textarea>
+</div>
+<button class="button delivery-message-submit" id="delivery-message-submit" type="submit">Add Message</button>
+<button class="button delivery-message-update" id="delivery-message-submit" type="submit">Update Message</button>
+<input class="button" type="reset" id="delivery-message-reset" value="cancel"/>
+</div>
+</form>
+</div>
+<!--//delivery-notification-->
+</div>
+<!--//checkout-section-inner-->
+</div>
+<!--//shipping-section-delivery-->
+<div class="form-continue">
+<input class="next-section-btn form-continue-button button bigger-button" id="shipping-submit" type="submit" value="Continue" data-step="shipping">
+<input class="next-section-btn form-update-button button bigger-button" id="shipping-submit" type="submit" value="Update" data-step="review">
+</div>
+</div>
+<!--//checkout-step-->
+<div class="checkout-step-preview">
+<div class="checkout-section checkout-shipping">
+<div class="checkout-section-inner">
+<div class="checkout-step-preview-shipping">
+<div class="confirmation-shipping-block-wrapper checkout-block-wrapper">
+<div class="confirmation-address-block checkout-block">
+<div class="checkout-block-inner">
+<!--review-shipping template -->
+</div>
+</div>
+<div class="delivery-method-block checkout-block">
+<!--review-shipping method template -->
+</div>
+<div class="delivery-message-block checkout-block">
+</div>
+</div>
+<a href="#checkout-step-shipping" class="checkout-review-edit edit-step" data-step="shipping">Edit Shipping</a>
+</div>
+</div>
+</div>
+</div>
+<!--//checkout-step-preview-->
+</div>
+<!--//checkout-step-wrapper-->
+<div id="checkout-step-payment" class="checkout-step-wrapper">
+<h2 class="checkout-step-title"><span>02 </span>Payment</h2>
+<div class="checkout-step">
+<div class="checkout-section checkout-payment">
+<div class="checkout-section-inner">
+<div class="checkout-credit-card">
+<h3 class="checkout-section-title">
+Credit Card(s)
+</h3>
+<div class="checkout-radio-list radio-credit-cards">
+<!-- Credit Card List TMPL -->
+</div>
+<!-- Add Credit Card TMPL -->
+<a class="button show-credit-card-form" id="submit-add-card">Add New Card</a>
+</div>
+<h3 class="checkout-section-title checkout-subsection-border">Other Payment Methods</h3>
+<div class="checkout-other-payment checkout-list">
+<ul>
+
+<li class="other-payment-paypal">
+<span class="list-img"><a href="javascript:void(0);" id="beginPaypal" class="paypalOnly"><img src="//cdn.lululemon.com/lulustatic/hr/img/btn-paypal.png" alt="PayPal"></a></span><span class="list-name">Paypal</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="checkout-section checkout-giftcards">
+<div class="checkout-section-inner">
+<h3 class="checkout-section-title">Your Gift Cards</h3>
+<div class="checkout-checkbox-list">
+<!--Gift Cards TMPL -->
+</div>
+<a class="button show-gift-card-btn">Redeem a Gift Card</a>
+<a class="edit-cancel hide-gift-card-btn">Cancel</a>
+<form id="gift-card" class="form-checkout form-giftcard" method="post" enctype="multipart/form-data">
+<h2 class="checkout-instruction">Please enter gift card code:</h2>
+<div class="input-step">
+<div class="field input-giftcard-num">
+<label for="giftcard-num"><span class="field-required">* </span>Enter Code</label>
+<input type="tel" name="giftcard-num" id="giftcard-num" required data-parsley-required-message="Please enter code" data-parsley-type="integer" data-parsley-type-message="please enter a valid code. Numbers only."/>
+</div>
+<div class="field input-giftcard-pin">
+<label for="giftcard-pin"><span class="field-required">* </span>Enter Pin</label>
+<input type="tel" name="giftcard-pin" id="giftcard-pin" required data-parsley-required-message="Please enter pin" data-parsley-type="integer" data-parsley-type-message="please enter a valid pin. Numbers only."/>
+</div>
+</div>
+<button type="submit" class="button">Apply</button>
+</form>
+</div>
+</div>
+
+<div class="checkout-section checkout-promo-code">
+<!-- Promo Code TMPL -->
+</div>
+<div class="form-continue">
+<input class="next-section-btn form-continue-button button bigger-button" id="payment-submit" type="submit" value="Continue" data-step="review">
+<input class="next-section-btn form-update-button button bigger-button" id="payment-submit" type="submit" value="Update" data-step="review">
+</div>
+</div>
+<!--//checkout-step-->
+<div class="checkout-step-preview">
+<div class="checkout-section checkout-payment">
+<div class="checkout-section-inner">
+<div class="checkout-step-preview-payment">
+<div class="confirmation-payment-block-wrapper checkout-block-wrapper">
+<!--REVIEW PAYMENT TMPL -->
+</div>
+<!--//checkout-block-wrapper-->
+<a href="#checkout-step-payment" class="checkout-review-edit edit-step" data-step="payment">Edit Payment</a>
+</div>
+</div>
+</div>
+</div>
+<!--//checkout-step-preview-->
+</div>
+<!--//checkout-step-wrapper-->
+<div id="checkout-step-review" class="checkout-step-wrapper">
+<h2 class="checkout-step-title"><span>03 </span>Review</h2>
+<div class="checkout-step">
+<div class="checkout-section checkout-summary">
+<div class="checkout-section-inner">
+<h3 class="checkout-section-title">
+These are your items
+</h3>
+<a href="/shop/mybag.jsp" class="edit-bag accordion-trigger">Edit Bag</a>
+<span class="OneLinkNoTx"></span>
+<div class="cart-product row">
+<div class="product-details is-above">
+<div class="row">
+<div class="product-copy">
+<h3 class="title OneLinkNoTx">
+Can You Feel The Pleat Crop *21"</h3>
+</div>
+</div>
+</div>
+<div class="product-image-price">
+<div class="product-image">
+<picture>
+<source
+media="(-webkit-max-device-pixel-ratio: 1.49) and (max-resolution: 143dpi)"
+srcset="https://images.lululemon.com/is/image/lululemon/LW6ANWS_030145_1?$gsr-pdt-thumb-xs$" > <!-- xs -->
+<source
+media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)"
+srcset="https://images.lululemon.com/is/image/lululemon/LW6ANWS_030145_1?$gsr-pdt-thumb-xs_2x$" > <!-- xs x2 -->
+<img srcset="https://images.lululemon.com/is/image/lululemon/LW6ANWS_030145_1?$gsr-pdt-thumb-xs$"> <!-- Fallback -->
+</picture>
+</div>
+<p class="product-price">
+$108.00
+&nbsp;USD
+</p>
+</div>
+<div class="product-details is-below">
+<div class="row">
+<div class="product-copy">
+<h3 class="title OneLinkNoTx">
+Can You Feel The Pleat Crop *21"</h3>
+</div>
+</div>
+</div>
+<div class="product-options">
+<div class="row">
+<div class="product-color">
+<label for="id1-color">Colour</label>
+<p class="OneLinkNoTx">heathered power grey</p>
+</div>
+<div class="product-size">
+<label for="id1-size">Size</label>
+<p>4</p>
+</div>
+<div class="product-quantity">
+<label for="id1-quantity">QTY</label>
+<p>1</p>
+</div>
+<div class="product-total">
+
+<p class="price-total">$108.00</p>
+
+<p class="price-currency">USD</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="checkout-section">
+<div class="checkout-section-inner">
+<h3 class="checkout-section-title">Shipping to:</h3>
+<div class="order-summary" id="order-summary-shipping">
+<!--ORDER SUMMARY SHIPPING TMPL -->
+</div>
+</div>
+</div>
+<div class="checkout-section">
+<div class="checkout-section-inner">
+<h3 class="checkout-section-title" id="order-summary-desc">
+<!-- ORDER SUMMARY DESC TMPL  -->
+</h3>
+<div class="order-summary order-review">
+<!--ORDER SUMMARY TMPL -->
+</div>
+<!--- Commenting out, as its breaking for US based Countries, have to uncomment once changes are done for the same
+Added For GSR-3475 check box and copy in line above place order button for Non US Shipping Country in US Site
+<div class="terms-of-sale">
+<div>
+<form id="frm-place-order" name="frm-place-order">
+<label for="agree-terms-of-sale" class="replace-checkbox">
+<input id="agree-terms-of-sale" type="checkbox" value="agree-terms-of-sale" name="agree-terms-of-sale" data-parsley-error-message="You must accept lululemon's term of sale to continue" required>
+<span class="replace-checkbox-label">
+By submitting an order, I agree to lululemon's <a href="//info.lululemon.com/legal/terms-of-use" target="_blank">terms of sale</a>.</span>
+</label>
+</form>
+</div>
+</div>
+-->
+</div>
+</div>
+<div class="form-continue">
+<input type="hidden" name="payerId" id="payerId" value=""/>
+<input class="form-continue-button button bigger-button" id="checkout-submit" type="submit" value="Place Order">
+</div>
+</div>
+<!--//checkout-step-->
+</div>
+<!--//checkout-step-wrapper-->
+</div>
+<!--//checkout-container-->
+</div>
+<!--//#checkout-->
+<!--TEMPLATES -->
+<script id="tpl_dav_checker" type="x-tmpl-mustache">
+<div class="modal-title">Address suggestion</div>
+<p>We've found an address that may be a better match:</p>
+<br>
+<form id="davForm" method="post" enctype="multipart/form-data">
+<ul class="checkout-radio-list">
+{{#dav}}
+<li class="dav-item">
+<label for="{{id}}" class="replace-radio list-label" data-id="{{id}}">
+<input type="radio" class="checkout-radio" id="{{id}}" name="dav-address" value="{{id}}" data-address1="{{address1}}" data-address2="{{address2}}" data-city="{{city}}" data-state="{{state}}" data-postalCode="{{postalCode}}" data-country="{{country}}" data-firstname="{{firstname}}" data-lastname="{{lastname}}" data-email="{{email}}" data-phone="{{phone}}">
+<span>
+<span class="list-name">{{address1}} {{address2}} {{city}}, {{state}} {{postalCode}} {{country}}</span>
+</label>
+</li>
+{{/dav}}
+</ul>
+</form>
+<br>
+<p>Do you want to use this address instead?</p>
+</script>
+<script id="tpl_dav_error" type="x-tmpl-mustache">
+<div class="modal-title">Address Not Found</div>
+{{#davError}}
+<div class="dav-error-modal-errormsg">{{{errorMsg}}}</div>
+<div class="dav-error-modal-address"><p>{{address1}} {{address2}} {{cszc}}</p></div>
+{{/davError}}
+<p>Would you like to edit your address?</p>
+</script>
+<script id="tpl_shipping_addresses" type="x-tmpl-mustache">
+<ul>
+{{#shippingInfo}}
+<li>
+<label for="{{id}}" class="replace-radio list-label" data-id="{{id}}">
+<input type="radio" class="checkout-radio" id="{{id}}"  data-state="{{state}}" data-postalCode="{{postalCode}}" data-davChecked="{{addressSuggestion}}" data-luluverified="{{lululemonVerified}}" data-daverroraccepted="false" name="shipping-address" value="{{id}}" {{#isDefault}}checked="checked"{{/isDefault}}/>
+<span class="replace-radio-label">
+<span class="list-name">{{firstName}} {{lastName}}</span>
+<span class="list-desc">{{address1}} {{address2}} {{cszc}}</span>
+<input id="{{id}}_country" type="hidden" value="{{country}}">
+</span>
+</label>
+<a role="link" href="javascript:void(0)" class="list-edit list-cancel">Cancel</a>
+{{^lululemonVerified}}<a role="link" href="javascript:void(0)" class="list-edit">Edit</a>{{/lululemonVerified}}
+</li>
+{{/shippingInfo}}
+</ul>
+</script>
+<script id="tpl_shipping_form" type="x-tmpl-mustache">
+<form id="shippingMethodsForm" class="form-checkout form-add-shipping-address memorize" method="post" data-id="{{#id}}{{id}}{{/id}}" data-edit-mode="{{editMode}}">
+<fieldset id="add-address">
+{{#authenticated}}
+{{^editMode}}<a href="#" class="edit-cancel cancel-info-add">Cancel</a>{{/editMode}}
+<h2 class="checkout-instruction">
+{{#editMode}}Edit an Address{{/editMode}}
+{{^editMode}}Add Shipping Address{{/editMode}}
+</h2>
+{{/authenticated}}
+<div class="input-step field input-country">
+<label for="shippingCountry_1"><span class="field-required">* </span>Country/Region</label>
+<div class="field-select">
+<select id="shippingCountry_1" name="country">
+<option value="USA" selected="selected">United States</option>
+
+<option value="ASM">American Samoa</option>
+
+<option value="ARG">Argentina</option>
+
+<option value="ABW">Aruba</option>
+
+<option value="BRB">Barbados</option>
+
+<option value="BHS">Bahamas</option>
+
+<option value="BHR">Bahrain</option>
+
+<option value="BMU">Bermuda</option>
+
+<option value="BOL">Bolivia</option>
+
+<option value="BRA">Brazil</option>
+
+<option value="CHL">Chile</option>
+
+<option value="COL">Columbia</option>
+
+<option value="CYM">Cayman Islands</option>
+
+<option value="CRO">Croatia</option>
+
+<option value="DOM">Dominican Republic</option>
+
+<option value="ECU">Ecuador</option>
+
+<option value="GRL">Greenland</option>
+
+<option value="GRD">Grenada</option>
+
+<option value="GUM">Guam</option>
+
+<option value="GTM">Guatemala</option>
+
+<option value="HND">Honduras</option>
+
+<option value="ISL">Iceland</option>
+
+<option value="IND">India</option>
+
+<option value="IDN">Indonesia</option>
+
+<option value="ISR">Israel</option>
+
+<option value="JAM">Jamaica</option>
+
+<option value="LIE">Liechtenstein</option>
+
+<option value="MEX">Mexico</option>
+
+<option value="MSR">Montserrat</option>
+
+<option value="PAN">Panama</option>
+
+<option value="PER">Peru</option>
+
+<option value="PHL">Philippines </option>
+
+<option value="PRI">Puerto Rico</option>
+
+<option value="ZAF">South Africa</option>
+
+<option value="TZA">Tanzania</option>
+
+<option value="TTO">Trinidad and Tabago</option>
+
+<option value="TUR">Turkey</option>
+
+<option value="TCA">Turks and Caicos Islands</option>
+
+<option value="UKR">Ukraine</option>
+
+<option value="VIR">Virgin Islands</option>
+</select>
+</div>
+</div>  <!-- end country field select-->
+<div class="input-step input-name">
+<div class="field">
+<label for="firstname"><span class="field-required">* </span>First Name</label>
+<input type="text" name="firstname" id="firstname" maxlength="17" value="{{firstName}}" required />
+</div>
+<div class="field">
+<label for="lastname"><span class="field-required">* </span>Last Name</label>
+<input type="text" name="lastname" id="lastname" maxlength="18" value="{{lastName}}" required />
+</div>
+</div>	 <!-- end name fields-->
+<div class="input-step input-address">
+<div class="field">
+<label for="address-1"><span class="field-required">* </span>Street Address</label>
+<input type="text" name="address-1" id="address-1" maxlength="35" value="{{address1}}" required />
+</div>
+<div class="field">
+<input type="text" name="address-2" id="address-2" maxlength="35" placeholder="(PO Box, unit #, etc.)" {{#address2}}value="{{address2}}"{{/address2}}  aria-label="Street Address Line 2 (Example: PO Box or unit number)"/>
+</div>
+</div> <!-- end address fields-->
+<div class="input-step">
+<div class="field input-city">
+<label for="city"><span class="field-required">* </span>City</label>
+<input type="text" id="city" name="city" value="{{city}}" required  />
+</div>
+<div class="field input-state">
+<label for="shippingProvinceState_1"><span class="field-required">* </span>
+State
+</label>
+<div class="field-select">
+<select name="province" id="shippingProvinceState_1" required>
+<option value="">select state</option>
+
+<option  value="AL">Alabama</option>
+
+<option  value="AK">Alaska</option>
+
+<option  value="AZ">Arizona</option>
+
+<option  value="AR">Arkansas</option>
+
+<option  value="CA">California</option>
+
+<option  value="CO">Colorado</option>
+
+<option  value="CT">Connecticut</option>
+
+<option  value="DE">Delaware</option>
+
+<option  value="DC">District of Columbia</option>
+
+<option  value="FL">Florida</option>
+
+<option  value="GA">Georgia</option>
+
+<option  value="HI">Hawaii</option>
+
+<option  value="ID">Idaho</option>
+
+<option  value="IL">Illinois</option>
+
+<option  value="IN">Indiana</option>
+
+<option  value="IA">Iowa</option>
+
+<option  value="KS">Kansas</option>
+
+<option  value="KY">Kentucky</option>
+
+<option  value="LA">Louisiana</option>
+
+<option  value="ME">Maine</option>
+
+<option  value="MD">Maryland</option>
+
+<option  value="MA">Massachusetts</option>
+
+<option  value="MI">Michigan</option>
+
+<option  value="MS">Mississippi</option>
+
+<option  value="MN">Minnesota</option>
+
+<option  value="MO">Missouri</option>
+
+<option  value="MT">Montana</option>
+
+<option  value="NE">Nebraska</option>
+
+<option  value="NV">Nevada</option>
+
+<option  value="NJ">New Jersey</option>
+
+<option  value="NH">New Hampshire</option>
+
+<option  value="NM">New Mexico</option>
+
+<option  value="NY">New York</option>
+
+<option  value="NC">North Carolina</option>
+
+<option  value="ND">North Dakota</option>
+
+<option  value="OH">Ohio</option>
+
+<option  value="OK">Oklahoma</option>
+
+<option  value="OR">Oregon</option>
+
+<option  value="PA">Pennsylvania</option>
+
+<option  value="RI">Rhode Island</option>
+
+<option  value="SC">South Carolina</option>
+
+<option  value="SD">South Dakota</option>
+
+<option  value="TN">Tennessee</option>
+
+<option  value="TX">Texas</option>
+
+<option  value="UT">Utah</option>
+
+<option  value="VT">Vermont</option>
+
+<option  value="VA">Virginia</option>
+
+<option  value="WA">Washington</option>
+
+<option  value="WI">Wisconsin</option>
+
+<option  value="WV">West Virginia</option>
+
+<option  value="WY">Wyoming</option>
+
+<option  value="AA">Armed Forces America</option>
+
+<option  value="AE">Armed Forces Europe</option>
+
+<option  value="AP">Armed Forces Pacific</option>
+</select>
+</div>
+</div>
+<div class="field input-state">
+<label for="postal-code"><span class="field-required">* </span>
+Zip Code
+</label>
+<input type="text" id="postal-code" name="postal-code" value="{{postalCode}}" required  />
+</div>
+</div> <!-- end city state zip field-->
+<div class="input-step input-phone">
+<label for="phone-number"><span class="field-required">* </span>Phone Number</label>
+<div class="intl-phone-number-field">
+<div class="phone-country-field visual-text-input">
+<span class="phone-code-prefix">+</span>
+<input type="tel" name="phone-country" id="country-code" class="invisible-field" title="Country Calling Code" data-parsley-type="digits" value="{{countryCode}}" placeholder=" " required maxlength="3"/>
+</div>
+<div class="phone-number-field">
+<input type="tel" name="phone-number" id="phone-number" value="{{phone}}" required="true" maxlength="13" data-parsley-required="true" data-parsley-required-message="Please enter a phone number" data-parsley-custom-phone-number="CA" data-parsley-custom-phone-number-message="Please enter a valid phone number" data-parsley-id="149">
+</div>
+</div>
+</div> <!-- end phone fields-->
+<input type="hidden" name="davSuggestionAccepted" id="davSuggestionAccepted"/>
+<input type="hidden" value="{{addressSuggestion}}" name="addressSuggestion" id="addressSuggestion"/>
+<input type="hidden" value="false" name="davErrorAccepted" id="davErrorAccepted"/>
+{{#authenticated}}
+<div class="input-step field input-nickname">
+<label for="nickname">Nickname for Shipping Address</label>
+<input type="text" name="nickname" id="nickname" {{#nickname}}value="{{nickname}}"{{/nickname}}/>
+<input type="hidden" name="oldNickName" id="oldNickName" {{#nickname}}value="{{nickname}}"{{/nickname}}/>
+</div> <!-- end nickname field-->
+{{^editMode}}
+<div class="input-step field input-checkbox-save">
+<label for="saveAddressFlag" class="replace-checkbox">
+<input type="checkbox" name="saveAddressFlag" value="true" id="saveAddressFlag"/>
+<span class="replace-checkbox-label">Save address to my account</span>
+</label>
+</div> <!-- end add to account field-->
+{{/editMode}}
+{{/authenticated}}
+</fieldset>
+{{#authenticated}}
+<button class="button" type="submit">
+{{#editMode}}Update{{/editMode}}
+{{^editMode}}Ship to this Address{{/editMode}}
+</button>
+{{/authenticated}}
+</form>
+</script>
+<script id="tpl_credit_cards" type="x-tmpl-mustache">
+<ul>
+{{#.}}
+<li>
+{{#invalid}}
+<div class="error">
+{{/invalid}}
+<label for="{{id}}" class="replace-radio list-label" data-id="{{id}}">
+<input type="radio" class="checkout-radio" id="{{id}}" data-expMonth="{{cardInfo.expMonth}}" data-expYear="{{cardInfo.expYear}}" name="payment-method" value="{{id}}" {{#cardInfo.isDefault}}checked="checked"{{/cardInfo.isDefault}}/>
+<span class="replace-radio-label">
+<img class="list-img" src="{{cardInfo.imgUrl}}" />
+<span class="list-name">
+{{#cardInfo.displayname}}{{cardInfo.displayname}}{{/cardInfo.displayname}}
+{{^cardInfo.displayname}}{{cardInfo.nameOnCard}}{{/cardInfo.displayname}}
+</span>
+<span class="list-desc">{{cardInfo.lastFour}}</span>
+<span class="list-sub-desc">Exp {{cardInfo.expMonth}}/{{cardInfo.expYear}}</span>
+</span><!--//replace-radio-label-->
+</label>
+<a role="link" href="javascript:void(0)" class="list-edit list-cancel">Cancel</a>
+<a role="link" href="javascript:void(0)" class="list-edit">Edit</a>
+{{#invalid}}
+</div><!--//error-->
+{{#errorMessage}}
+<span class="error-message">{{{errorMessage}}}</span>
+{{/errorMessage}}
+{{/invalid}}
+</li>
+{{/.}}
+</ul>
+</script>
+<script id="tpl_gift_cards" type="x-tmpl-mustache">
+<ul>
+{{#cards}}
+<li>
+<!--<label for="{{id}}" class="replace-checkbox list-label">-->
+<input id="chk_{{id}}" num="{{id}}" pin="{{pin}}" type="checkbox" class="checkout-checkbox" name="{{id}}" {{#checked}}checked="checked"{{/checked}}/>
+<span class="replace-checkbox-label">
+<img class="list-img" src="{{cardInfo.imgUrl}}" />
+<span class="list-name">{{cardInfo.cardTitle}} ({{cardInfo.lastFour}})</span>
+{{#checked}}
+<span class="list-giftcard-amount">
+<span class="list-giftcard-amount-applied">{{cardInfo.amountApplied}}<span class="currency">{{cardInfo.currency}}</span></span>
+Applied
+</span>
+{{/checked}}
+<span class="list-amt">{{cardInfo.amount}}<span class="currency">{{cardInfo.currency}}</span></span>
+</span><!--//replace-checkbox-label-->
+<!--</label>-->
+</li>
+{{/cards}}
+<li class="giftcard-balance">
+<span class="list-available">Available Balance</span>
+<span class="list-amt">{{availableBalance}}<span class="currency">USD</span></span>
+</li>
+</ul>
+</script>
+<script id="tpl_credit_card" type="x-tmpl-mustache">
+<!-- <div class="checkout-add-card" id="{{id}}" data-parsley-validate> -->
+<form id="addNewCardForm" class="form-checkout form-payment memorize" method="post" enctype="multipart/form-data" data-id="{{id}}" data-edit-mode="{{editMode}}">
+{{#editMode}}<input type="hidden" name="editMode" id="editMode" value="true" /><input type="hidden" name="oldNickName" id="oldNickName" value="{{cardInfo.nickname}}" />{{/editMode}}
+<fieldset id="add-card">
+{{#authenticated}}
+{{^editMode}}<a href="#" class="edit-cancel cancel-info-add">Cancel Add Card</a>{{/editMode}}
+<h2 class="checkout-instruction">
+{{#editMode}}Edit a Card{{/editMode}}
+{{^editMode}}Add New Card{{/editMode}}
+</h2>
+{{/authenticated}}
+
+<div class="payment-icon-wrapper">
+
+<img class="payment-icon" src="//cdn.lululemon.com/static/img/cc_visa.gif" alt="Visa" />
+
+<img class="payment-icon" src="//cdn.lululemon.com/static/img/cc_mastercard.gif" alt="MasterCard" />
+
+<img class="payment-icon" src="//cdn.lululemon.com/static/img/cc_americanexpress.gif" alt="American Express" />
+
+<img class="payment-icon" src="//cdn.lululemon.com/static/img/cc_jcb.gif" alt="JCB" />
+
+<img class="payment-icon" src="//cdn.lululemon.com/static/img/cc_discover.gif" alt="Discover" />
+
+<img class="payment-icon" src="//cdn.lululemon.com/static/img/visa_pos_cred_deb_37x24.png" alt="visaDebit" />
+</div>
+<div class="input-step field input-card-name">
+<label for="card-name"><span class="field-required">* </span>Name on Card</label>
+<input type="text" name="card-name" id="card-name" value="{{cardInfo.nameOnCard}}" required/>
+</div>
+<div class="input-step">
+<div class="field input-card-num">
+<label for="card-num"><span class="field-required">* </span>Card Number</label>
+{{#editMode}}
+<input type="hidden" name="useOriginalCCNum" id="useOriginalCCNum" value="true"/>
+<input type="tel" name="card-num" id="card-num" value="{{cardInfo.lastFour}}" maxlength="16" disabled/>
+{{/editMode}}
+{{^editMode}}
+<input type="tel" name="card-num" id="card-num" value="{{cardInfo.lastFour}}" maxlength="16" required/>
+{{/editMode}}
+</div>
+<div class="field input-card-code">
+<label for="card-code"><span class="field-required">* </span>Security Code</label>
+<input type="tel" name="card-code" id="card-code" data-parsley-type="number" maxlength="4" required/>
+</div>
+</div>
+<!--end card number field -->
+<div class="input-step input-exp">
+<legend><span class="field-required">* </span>Expires</legend>
+<div class="field input-exp-month">
+<label class="accessible-label" for="exp-month">Expiration Month</label>
+<div class="field-select">
+<select name="exp-month" id="exp-month" required>
+<option value="" selected="selected">month</option>
+<option value="1">01</option>
+<option value="2">02</option>
+<option value="3">03</option>
+<option value="4">04</option>
+<option value="5">05</option>
+<option value="6">06</option>
+<option value="7">07</option>
+<option value="8">08</option>
+<option value="9">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+</div>
+</div>
+<div class="field input-exp-year">
+<label class="accessible-label" for="exp-year">Expiration Year</label>
+<div class="field-select">
+<select name="exp-year" id="exp-Year" aria-label="Credit Card Expiry Year" required>
+<option value="" selected="selected">year</option>
+
+<option value="2018">2018</option>
+
+<option value="2019">2019</option>
+
+<option value="2020">2020</option>
+
+<option value="2021">2021</option>
+
+<option value="2022">2022</option>
+
+<option value="2023">2023</option>
+
+<option value="2024">2024</option>
+
+<option value="2025">2025</option>
+
+<option value="2026">2026</option>
+
+<option value="2027">2027</option>
+
+<option value="2028">2028</option>
+
+</select>
+</div>
+</div>
+</div>
+<!--end expiration field-->
+{{#authenticated}}
+<div class="input-step field input-nickname">
+<label for="nickname">Nickname for Card</label>
+{{#cardInfo.nickname}}
+{{#cardInfo.isTransient}}
+<input type="text" name="nickname" id="nickname" value=""/>
+{{/cardInfo.isTransient}}
+{{^cardInfo.isTransient}}
+<input type="text" name="nickname" id="nickname" value="{{cardInfo.nickname}}"/>
+{{/cardInfo.isTransient}}
+{{/cardInfo.nickname}}
+{{^cardInfo.nickname}}
+<input type="text" name="nickname" id="nickname" value=""/>
+{{/cardInfo.nickname}}
+</div>
+<!-- end nickname field-->
+{{/authenticated}}
+</fieldset>
+<fieldset id="billing-address">
+<h2 class="checkout-instruction">Billing Address</h2>
+{{^editMode}}
+<div class="input-step field">
+<label for="billing-shipping-same" class="replace-checkbox">
+<input type="checkbox" name="billing-shipping-same" class="no-memorize" value="true" id="billing-shipping-same"/>
+<span class="replace-checkbox-label">Same as shipping information</span>
+</label>
+</div>
+{{/editMode}}
+<!-- end add to account field-->
+<div id="form-billing-address">
+<!--Billing Address TMPL -->
+</div>
+{{#authenticated}}
+{{^editMode}}
+<div class="input-step field input-checkbox-save">
+<label for="saveAddressFlag" class="replace-checkbox">
+<input type="checkbox" name="savecard" value="true" id="saveAddressFlag"/>
+<span class="replace-checkbox-label">Save card to my account</span>
+</label>
+</div> <!-- end add to account field-->
+{{/editMode}}
+{{#editMode}}
+{{#cardInfo.nickname}}
+{{#cardInfo.isTransient}}
+<div class="input-step field input-checkbox-save">
+<label for="saveAddressFlag" class="replace-checkbox">
+<input type="checkbox" name="savecard" value="true" id="saveAddressFlag"/>
+<span class="replace-checkbox-label">Save card to my account</span>
+</label>
+</div>
+{{/cardInfo.isTransient}}
+{{^cardInfo.isTransient}}
+<div class="input-step field input-checkbox-save">
+<label for="saveAddressFlag" class="replace-checkbox">
+<input type="checkbox" name="saveAddressFlag" value="true" checked="checked" disabled id="saveAddressFlag"/>
+<span class="replace-checkbox-label">Save card to my account</span>
+</label>
+</div>
+<input type="hidden" name="savecard" id="savecard" value="true" />
+{{/cardInfo.isTransient}}
+{{/cardInfo.nickname}}
+{{/editMode}}
+{{/authenticated}}
+</fieldset>
+{{#authenticated}}
+<button class="button" type="submit">
+{{#editMode}}Update{{/editMode}}
+{{^editMode}}Add Card{{/editMode}}
+</button>
+{{/authenticated}}
+</form>
+</script>
+<script id="tpl_billing_address" type="x-tmpl-mustache">
+<div class="input-step field input-country">
+<label for="billInfo-CCode"><span class="field-required">* </span>Country/Region</label>
+<div class="field-select">
+<select name="country" id="billInfo-CCode">
+<option value='ASM'>American Samoa</option>
+
+<option value='ARG'>Argentina</option>
+
+<option value='ABW'>Aruba</option>
+
+<option value='AUS'>Australia</option>
+
+<option value='AUT'>Austria</option>
+
+<option value='BHS'>Bahamas</option>
+
+<option value='BHR'>Bahrain</option>
+
+<option value='BGD'>Bangladesh</option>
+
+<option value='BRB'>Barbados</option>
+
+<option value='BMU'>Bermuda</option>
+
+<option value='BOL'>Bolivia</option>
+
+<option value='BRA'>Brazil</option>
+
+<option value='CAN'>Canada</option>
+
+<option value='CYM'>Cayman Islands</option>
+
+<option value='CHL'>Chile</option>
+
+<option value='COL'>Columbia</option>
+
+<option value='CRO'>Croatia</option>
+
+<option value='CZE'>Czech Republic</option>
+
+<option value='DNK'>Denmark</option>
+
+<option value='DOM'>Dominican Republic</option>
+
+<option value='ECU'>Ecuador</option>
+
+<option value='EST'>Estonia</option>
+
+<option value='FIN'>Finland</option>
+
+<option value='FRA'>France</option>
+
+<option value='DEU'>Germany</option>
+
+<option value='GRC'>Greece</option>
+
+<option value='GRL'>Greenland</option>
+
+<option value='GRD'>Grenada</option>
+
+<option value='GUM'>Guam</option>
+
+<option value='GTM'>Guatemala</option>
+
+<option value='HND'>Honduras</option>
+
+<option value='HKG'>Hong Kong SAR</option>
+
+<option value='ISL'>Iceland</option>
+
+<option value='IND'>India</option>
+
+<option value='IDN'>Indonesia</option>
+
+<option value='IRL'>Ireland</option>
+
+<option value='ISR'>Israel</option>
+
+<option value='ITA'>Italy</option>
+
+<option value='JAM'>Jamaica</option>
+
+<option value='JPN'>Japan</option>
+
+<option value='KWT'>Kuwait</option>
+
+<option value='LVA'>Latvia</option>
+
+<option value='LIE'>Liechtenstein</option>
+
+<option value='LTU'>Lithuania</option>
+
+<option value='LUX'>Luxembourg</option>
+
+<option value='MYS'>Malaysia</option>
+
+<option value='MEX'>Mexico</option>
+
+<option value='MCO'>Monaco</option>
+
+<option value='MSR'>Montserrat</option>
+
+<option value='NLD'>Netherlands</option>
+
+<option value='NOR'>Norway</option>
+
+<option value='PAN'>Panama</option>
+
+<option value='PER'>Peru</option>
+
+<option value='PHL'>Philippines </option>
+
+<option value='POL'>Poland</option>
+
+<option value='PRT'>Portugal</option>
+
+<option value='PRI'>Puerto Rico</option>
+
+<option value='RUS'>Russia</option>
+
+<option value='SAU'>Saudi Arabia</option>
+
+<option value='SVK'>Slovakia</option>
+
+<option value='SVN'>Slovenia</option>
+
+<option value='ZAF'>South Africa</option>
+
+<option value='KOR'>South Korea</option>
+
+<option value='ESP'>Spain</option>
+
+<option value='SWE'>Sweden</option>
+
+<option value='CHE'>Switzerland</option>
+
+<option value='TWN'>Taiwan</option>
+
+<option value='TZA'>Tanzania</option>
+
+<option value='TTO'>Trinidad and Tabago</option>
+
+<option value='TUR'>Turkey</option>
+
+<option value='TCA'>Turks and Caicos Islands</option>
+
+<option value='UKR'>Ukraine</option>
+
+<option value='ARE'>United Arab Emirates</option>
+
+<option value='GBR'>United Kingdom</option>
+
+<option selected="selected" value='USA'>United States</option>
+
+<option value='VEN'>Venezuela</option>
+
+<option value='VNM'>Vietnam</option>
+
+<option value='VIR'>Virgin Islands</option>
+</select>
+</div>
+</div>
+<!-- end country field select-->
+<div class="input-step input-name">
+<div class="field">
+<label for="first-name"><span class="field-required">* </span>First Name</label>
+<input type="text" name="firstname" id="first-name" maxlength="17" value="{{firstName}}" required/>
+</div>
+<div class="field">
+<label for="last-name"><span class="field-required">* </span>Last Name</label>
+<input type="text" name="lastname" id="last-name" maxlength="18" value="{{lastName}}" required/>
+</div>
+</div>
+<!-- end name fields-->
+<div class="input-step input-address">
+<div class="field">
+<label for="address1"><span class="field-required">* </span>Street Address</label>
+<input type="text" name="address1" id="address1" maxlength="35" value="{{address1}}" required/>
+</div>
+<div class="field">
+<input type="text" name="address2" id="address2" maxlength="35" placeholder="(PO Box, unit #, etc.)"  {{#address2}}value="{{address2}}"{{/address2}}  aria-label="Street Address Line 2 (Example: PO Box or unit number)"/>
+</div>
+</div>
+<!-- end address fields-->
+<div class="input-step">
+<div class="field input-city">
+<label for="city"><span class="field-required">* </span>City</label>
+<input type="text" id="city" name="city" value="{{city}}" required/>
+</div>
+<div class="field input-state">
+<label for="billInfo-state"><span class="field-required">* </span>
+State
+</label>
+<div class="field-select">
+<select name="state" id="billInfo-state" required>
+<option value="">select state</option>
+
+<option  value="AL">Alabama</option>
+
+<option  value="AK">Alaska</option>
+
+<option  value="AZ">Arizona</option>
+
+<option  value="AR">Arkansas</option>
+
+<option  value="CA">California</option>
+
+<option  value="CO">Colorado</option>
+
+<option  value="CT">Connecticut</option>
+
+<option  value="DE">Delaware</option>
+
+<option  value="DC">District of Columbia</option>
+
+<option  value="FL">Florida</option>
+
+<option  value="GA">Georgia</option>
+
+<option  value="HI">Hawaii</option>
+
+<option  value="ID">Idaho</option>
+
+<option  value="IL">Illinois</option>
+
+<option  value="IN">Indiana</option>
+
+<option  value="IA">Iowa</option>
+
+<option  value="KS">Kansas</option>
+
+<option  value="KY">Kentucky</option>
+
+<option  value="LA">Louisiana</option>
+
+<option  value="ME">Maine</option>
+
+<option  value="MD">Maryland</option>
+
+<option  value="MA">Massachusetts</option>
+
+<option  value="MI">Michigan</option>
+
+<option  value="MS">Mississippi</option>
+
+<option  value="MN">Minnesota</option>
+
+<option  value="MO">Missouri</option>
+
+<option  value="MT">Montana</option>
+
+<option  value="NE">Nebraska</option>
+
+<option  value="NV">Nevada</option>
+
+<option  value="NJ">New Jersey</option>
+
+<option  value="NH">New Hampshire</option>
+
+<option  value="NM">New Mexico</option>
+
+<option  value="NY">New York</option>
+
+<option  value="NC">North Carolina</option>
+
+<option  value="ND">North Dakota</option>
+
+<option  value="OH">Ohio</option>
+
+<option  value="OK">Oklahoma</option>
+
+<option  value="OR">Oregon</option>
+
+<option  value="PA">Pennsylvania</option>
+
+<option  value="RI">Rhode Island</option>
+
+<option  value="SC">South Carolina</option>
+
+<option  value="SD">South Dakota</option>
+
+<option  value="TN">Tennessee</option>
+
+<option  value="TX">Texas</option>
+
+<option  value="UT">Utah</option>
+
+<option  value="VT">Vermont</option>
+
+<option  value="VA">Virginia</option>
+
+<option  value="WA">Washington</option>
+
+<option  value="WI">Wisconsin</option>
+
+<option  value="WV">West Virginia</option>
+
+<option  value="WY">Wyoming</option>
+
+<option  value="AA">Armed Forces America</option>
+
+<option  value="AE">Armed Forces Europe</option>
+
+<option  value="AP">Armed Forces Pacific</option>
+</select>
+</div>
+</div>
+<div class="field input-state">
+<label for="payment-postal-code"><span class="field-required">* </span>
+Zip Code
+</label>
+<input type="text" id="payment-postal-code" name="postal-code" value="{{postalCode}}" required/>
+</div>
+</div>
+<!-- end city state zip field-->
+<div class="input-step input-phone">
+<label for="payment-phone-number"><span class="field-required">* </span>Phone Number</label>
+<div class="intl-phone-number-field">
+<div class="phone-country-field visual-text-input">
+<span class="phone-code-prefix">+</span>
+<input type="tel" name="phone-area" id="payment-phone-country" class="invisible-field" title="Country Calling Code" data-parsley-type="digits" value="{{countryPhoneCode}}" placeholder=" " required maxlength="3"/>
+</div>
+<div class="phone-number-field">
+<input type="tel" name="phone-number" id="payment-phone-number" value="{{phone}}" required="true" maxlength="13" data-parsley-required="true" data-parsley-required-message="Please enter a phone number" data-parsley-custom-phone-number="CA" data-parsley-custom-phone-number-message="Please enter a valid phone number" data-parsley-id="149">
+</div>
+</div>
+</div>
+<!-- end phone fields-->
+</script>
+<script id="tpl_promo_form" type="x-tmpl-mustache">
+{{#promoFormEnabled}}
+<input type="hidden" name="promoNotAppliedErrorMessage" id="promoNotAppliedErrorMessage" value="&lt;div class=&#034;addressSuggestModal&#034;&gt;
+&lt;div id=&#034;container&#034;&gt;
+&lt;div id=&#034;subContainer&#034;&gt;
+&lt;div class=&#034;modalOuter&#034;&gt;
+&lt;div class=&#034;modalContent&#034;&gt;
+&lt;div class=&#034;t&#034;&gt;&lt;/div&gt;
+&lt;h2&gt;Missing Promo Code&lt;/h2&gt;
+&lt;p&gt; it looks like you are a lululemon employee, but you have not entered a promo code.&lt;/p&gt;
+&lt;p&gt;would you like to proceed without a promo code?&lt;/p&gt;
+&lt;p class=&#034;buttons&#034;&gt;
+&lt;span class=&#034;btn&#034;&gt;&lt;input type=&#034;button&#034; class=&#034;btn&#034; value=&#034;no&#034; id=&#034;promoSuggestionNo&#034;&gt;&lt;/span&gt;&lt;span class=&#034;btn&#034;&gt;&lt;input type=&#034;button&#034; class=&#034;btn&#034; value=&#034;yes&#034; id=&#034;promoSuggestionYes&#034;&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#034;b&#034;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;"/>
+<div class="checkout-section-inner">
+<h3 class="checkout-section-title">Promo Code</h3>
+<form id="frm-promo-code" class="form-checkout form-promo-code" method="post" enctype="multipart/form-data">
+<div class="input-step field input-promo-code">
+<label class="accessible-label" for="promo-code">Enter Code</label>
+<input type="text" name="promo-code" id="promo-code" placeholder="enter code" required data-parsley-required-message="Please enter promo code" {{#applied}}value="{{cardInfo.id}}" readonly{{/applied}} />
+</div>
+<input type="hidden" name="couponAction" id="couponAction" value="{{#applied}}remove{{/applied}}{{^applied}}apply{{/applied}}"/>
+<button type="submit" class="button">{{#applied}}Remove{{/applied}}{{^applied}}Apply{{/applied}}</button>
+<div class="promo-code-amount-applied">
+{{#applied}}
+<span class="price">-{{cardInfo.amount}}</span>
+<span class="currency">{{cardInfo.currency}}</span>
+{{/applied}}
+</div>
+</form>
+</div>
+{{/promoFormEnabled}}
+</script>
+<script id="tpl_order_summary" type="x-tmpl-mustache">
+{{#isReview}}
+{{^model.paymentInfo.isGiftCardOnlyOrder}}
+<div class="order-summary-row summary-cardinfo">
+<p class="summary-edit-wrapper">
+<a href="#checkout-step-payment" class="edit-step" data-step="payment" data-id="{{model.paymentInfo.id}}">Edit Payment</a>
+</p>
+<img class="summary-img" src="{{model.paymentInfo.cardInfo.imgUrl}}"/>
+<p class="summary-name">{{model.paymentInfo.cardInfo.nameOnCard}}</p>
+{{^model.paymentInfo.cardInfo.paypalType}}
+<p class="summary-creditcard">({{model.paymentInfo.cardInfo.lastFour}})</p>
+<p class="summary-creditcard summary-exp">EXP {{model.paymentInfo.cardInfo.expMonth}}/{{model.paymentInfo.cardInfo.expYear}}</p>
+{{/model.paymentInfo.cardInfo.paypalType}}
+</div>
+{{/model.paymentInfo.isGiftCardOnlyOrder}}
+{{/isReview}}
+<div class="order-summary-row summary-subtotal">
+<p class="summary-label">Subtotal</p>
+<div class="summary-price-wrapper">
+<p class="subtotal">{{subtotal.amount}}</p>
+<p class="currency">{{subtotal.currency}}</p>
+</div>
+</div>
+{{#isReview}}
+{{#giftCards.cards.length}}
+<div class="order-summary-row summary-gift-cards">
+<p class="summary-label">Gift Cards</p>
+<div class="summary-price-wrapper">
+<p class="subtotal">-{{giftCards.amountApplied}}</p>
+<p class="currency">{{giftCards.currency}}</p>
+</div>
+</div>
+{{/giftCards.cards.length}}
+{{/isReview}}
+{{^isReview}}
+{{#giftCards}}
+<div class="order-summary-row summary-gift-cards">
+<p class="summary-label">Gift Cards</p>
+<div class="summary-price-wrapper">
+<p class="subtotal">-{{giftCards.amountApplied}}</p>
+<p class="currency">{{currency}}</p>
+</div>
+</div>
+{{/giftCards}}
+{{/isReview}}
+{{#promoCode.amount.length}}
+<div class="order-summary-row summary-promotions">
+<p class="summary-label">Promotions</p>
+<div class="summary-price-wrapper">
+<p class="subtotal">-{{promoCode.amount}}</p>
+<p class="currency">{{promoCode.currency}}</p>
+</div>
+</div>
+{{/promoCode.amount.length}}
+<div class="order-summary-row summary-shipping">
+<p class="summary-label">Shipping</p>
+<div class="summary-price-wrapper">
+{{#shipping.name.length}}
+<p class="subtotal">{{shipping.name}}</p>
+{{/shipping.name.length}}
+{{^shipping.name.length}}
+<p class="subtotal">{{shipping.amount}}</p>
+<p class="currency">{{shipping.currency}}</p>
+{{/shipping.name.length}}
+</div>
+</div>
+{{^isReview}}
+{{^estimatedTax.code}}
+<div class="order-summary-row summary-estimated-tax">
+<p class="summary-label">Estimated Tax ({{estimatedTax.total}})</p>
+<div class="summary-price-wrapper">
+<a href="javascript:void(0);" class="calculate-link">Calculate</a>
+</div>
+<form class="summary-calculate-tax">
+<label for="shipping-code">Zip Code</label>
+<input type="text" name="shipping-code" id="shipping-code" value="{{estimatedTax.code}}">
+<button id="calculate-tax-submit" type="button" class="button cta-button">Calculate</button>
+<div class="summary-price-wrapper">
+{{#estimatedTax.taxes.length}}
+<p class="subtotal">{{estimatedTax.total}}</p>
+<p class="currency">{{estimatedTax.currency}}</p>
+{{/estimatedTax.taxes.length}}
+</div>
+</form><!--//summary-calculate-tax-->
+</div>
+{{/estimatedTax.code}}
+{{/isReview}}
+{{#estimatedTax.code}}
+{{#taxes}}
+<div class="order-summary-row summary-estimated-tax">
+<p class="summary-label">{{name}}</p>
+<div class="summary-price-wrapper">
+<p class="subtotal">{{amount}}</p>
+<p class="currency">{{currency}}</p>
+</div>
+</div>
+{{/taxes}}
+{{/estimatedTax.code}}
+<div class="order-summary-row summary-total">
+<p class="summary-label">Order Total</p>
+<div class="summary-price-wrapper">
+<p class="subtotal">{{orderTotal.amount}}</p>
+<p class="currency">{{orderTotal.currency}}</p>
+</div>
+</div>
+</script>
+<script id="tpl_order_summary_total" type="x-tmpl-mustache">
+<span class="payment-price">{{amount}}</span>
+<span class="currency">{{currency}}</span>
+</script>
+<script id="tpl_delivery_methods" type="x-tmpl-mustache">
+{{#deliveryMethods}}
+<div class="delivery-method-block checkout-block">
+<label class="replace-radio" for="{{method}}">
+<input type="radio" id="{{method}}" value="{{method}}" name="shipping-method" class="checkout-radio" {{#default}}checked="checked"{{/default}}>
+<span class="replace-radio-label">
+{{#ribbonTitle}}
+<span class="ribbon"><span>{{ribbonTitle}}</span></span>
+{{/ribbonTitle}}
+<svg class="icon-xlink icon-{{icon}}" width="88.324px" height="70.823px" viewBox="0 0 88.324 70.823" >
+<use xlink:href="//cdn.lululemon.com/lulustatic/v1/gsr/svg/icons.svg{{icon}}" />
+</svg>
+<span class="delivery-method-title checkout-block-title">{{title}}</span>
+{{#dateRange}}
+<span class="delivery-info checkout-block-text">{{dateRange}} {{#price}}({{price}} {{currencyCode}}){{/price}}</span>
+{{/dateRange}}
+{{^dateRange}}
+{{#date}}
+<span class="delivery-date checkout-block-text">{{date}}</span>
+{{/date}}
+{{^date}}
+<span class="delivery-date checkout-block-text">&nbsp;</span>
+{{/date}}
+{{#price}}
+<span class="delivery-info checkout-block-text">{{price}} {{currencyCode}}</span>
+{{/price}}
+{{^price}}
+<span class="delivery-info checkout-block-text">&nbsp;</span>
+{{/price}}
+{{/dateRange}}
+</span>
+{{#list}}
+</label>
+{{/list}}
+</div>
+{{/deliveryMethods}}
+</script>
+<script id="tpl_review_payment" type="x-tmpl-mustache">
+{{^paymentInfo.isGiftCardOnlyOrder}}
+<div class="checkout-review checkout-block">
+<div class="checkout-block-inner">
+<div class="review-img-wrapper">
+<img class="review-img" src="{{paymentInfo.cardInfo.imgUrl}}"/>
+</div>
+<div class="review-info">
+<p class="checkout-block-title review-name">{{paymentInfo.cardInfo.nameOnCard}}</p>
+{{^paymentInfo.cardInfo.paypalType}}
+<p class="checkout-block-text">
+<span class="review-desc">({{paymentInfo.cardInfo.lastFour}})</span>
+<span class="review-desc">Exp {{paymentInfo.cardInfo.expMonth}}/{{paymentInfo.cardInfo.expYear}}</span>
+</p>
+{{/paymentInfo.cardInfo.paypalType}}
+</div>
+</div>
+</div> <!-- end checkout-review -->
+{{/paymentInfo.isGiftCardOnlyOrder}}
+{{#paymentInfo.giftCards.cards}}
+<div class="checkout-review checkout-block">
+<div class="checkout-block-inner">
+<div class="review-img-wrapper">
+<img class="review-img" src="{{cardInfo.imgUrl}}"/>
+</div>
+<div class="review-info">
+<p class="checkout-block-title review-name">{{cardInfo.title}}</p>
+<p class="checkout-block-text">
+<span class="review-desc">{{cardInfo.lastFour}}</span>
+</p>
+</div>
+</div>
+</div> <!-- end checkout-review -->
+{{/paymentInfo.giftCards.cards}}
+{{#promoCode.cardInfo}}
+<div class="checkout-review checkout-block">
+<div class="checkout-block-inner">
+<div class="review-img-wrapper">
+<svg viewBox="0 0 88.324 70.823" height="70.823px" width="88.324px" class="icon-xlink icon-orderid">
+<use xlink:href="//cdn.lululemon.com/lulustatic/v1/gsr/svg/icons.svg#orderid"/>
+</svg>
+</div>
+<div class="review-info">
+<p class=" checkout-block-title review-name">Promo</p>
+<p class="checkout-block-text review-desc">{{promoCode.cardInfo.promoTitle}}</p>
+</div>
+</div>
+</div> <!-- end checkout-review -->
+{{/promoCode.cardInfo}}
+</script>
+<script id="tpl_review_shipping" type="x-tmpl-mustache">
+<p class="checkout-block-title">Shipping Address</p>
+<p class="checkout-block-text">
+<span class="list-name">{{shippingInfo.firstName}} {{shippingInfo.lastName}}</span>
+<span class="list-desc">{{shippingInfo.address1}} {{shippingInfo.address2}}</span>
+<span class="list-desc">{{shippingInfo.cszc}}</span>
+</p>
+</script>
+<script id="tpl_review_delivery_method" type="x-tmpl-mustache">
+{{#ribbonTitle}}
+<div class="ribbon"><span>{{ribbonTitle}}</span></div>
+{{/ribbonTitle}}
+<svg class="icon-xlink icon-{{icon}}" width="88.324px" height="70.823px" viewBox="0 0 88.324 70.823" >
+<use xlink:href="//cdn.lululemon.com/lulustatic/v1/gsr/svg/icons.svg{{icon}}" />
+</svg>
+<p class="delivery-method-title checkout-block-title">{{title}}</p>
+{{#dateRange}}
+<p class="delivery-info checkout-block-text">{{dateRange}} {{#price}}({{price}} {{currencyCode}}){{/price}}</p>
+{{/dateRange}}
+{{^dateRange}}
+<p class="delivery-date checkout-block-text">{{date}}</p>
+<p class="delivery-info checkout-block-text">{{price}} {{currencyCode}}</p>
+{{/dateRange}}
+</script>
+<script id="tpl_review_delivery_message" type="x-tmpl-mustache">
+<div class="checkout-block-inner">
+<p class="checkout-block-title">Gift Message</p>
+<p class="checkout-block-text">
+<span class="list-desc">{{ trimMessage }}</span>
+</p>
+</div>
+</script>
+<script id="tpl_order_summary_shipping" type="x-tmpl-mustache">
+<div class="order-summary-row summary-shipping-address">
+<div class="order-summary-row summary-shipping-address">
+<p class="summary-edit-wrapper">
+<a href="#checkout-step-shipping" class="edit-step" data-step="shipping" data-id="{{model.shippingInfo.id}}">Edit Shipping</a>
+</p>
+<p class="summary-name">{{model.shippingInfo.firstName}} {{model.shippingInfo.lastName}}</p>
+<p class="summary-address">{{model.shippingInfo.address1}} {{model.shippingInfo.address2}}</p>
+<p class="summary-address">{{model.shippingInfo.cszc}}</p>
+</div>
+<div class="order-summary-row summary-shipping-address summary-shipping-edd">
+<p class="summary-name">{{model.deliveryMethod.title}}</p>
+<p class="summary-address">{{model.deliveryMethod.dateRange}} ({{model.deliveryMethod.price}} {{ model.deliveryMethod.currencyCode}})</p>
+</div>
+</div>
+</script>
+<script id="tpl_order_summary_desc" type="x-tmpl-mustache">
+A total of {{orderTotal.amountOrderSummaryDesc}} {{orderTotal.currency}} will be charged to your {{model.paymentInfo.cardInfo.cardType}}
+</script>
+<script id="tpl_order_out_of_stock" type="x-tmpl-mustache">
+<div id="out-of-stock-grid">
+<h2>Unfortunately we've sold out</h2>
+<p>We have to remove the following products from your order because they are sold out.</p>
+<div class="section container">
+<div class="row">
+<div class="inner-container">
+<div class="tile-container">
+{{#skulist}}
+<div class="product-tile tile">
+<div class="tile-inner">
+{{#image}}
+<div class="tile-img">
+<img src="{{image}}">
+</div>
+{{/image}}
+<div class="tile-text-wrapper">
+<div class="tile-text">{{ name }}</div>
+{{#colour}}
+<div class="tile-subtitle">COLOUR</div>
+<div class="tile-text">{{ colour }}</div>
+{{/colour}} {{#size}}
+<div class="tile-subtitle">SIZE</div>
+<div class="tile-text">{{ size }}</div>
+{{/size}} {{#price}}
+<div class="tile-meta">
+{{ price }}
+</div>
+{{/price}}
+</div>
+</div>
+</div>
+{{/skulist}}
+</div>
+</div>
+</div>
+</div>
+</div>
+</script>
+<script id="tpl_review_cart_product" type="x-tmpl-mustache">
+{{#items}}
+<div class="cart-product row">
+<div class="product-details is-above">
+<div class="row">
+<div class="product-copy">
+<h3 class="title OneLinkNoTx">{{productName}}</h3>
+</div>
+</div>
+</div>
+<div class="product-image-price">
+<div class="product-image">
+<picture>
+<source media="(-webkit-max-device-pixel-ratio: 1.49) and (max-resolution: 143dpi)" srcset="{{imageURL}}{{#imageQS}}?{{imageQS}}{{/imageQS}}">
+<!-- xs -->
+<source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" srcset="{{imageURL}}{{#imageQSMin}}?{{imageQSMin}}{{/imageQSMin}}">
+<!-- xs x2 -->
+<img srcset="{{imageURL}}{{#imageQS}}?{{imageQS}}{{/imageQS}}">
+<!-- Fallback -->
+</picture>
+</div>
+<p class="product-price">
+{{#discountedPrice}}{{discountedPrice}}{{/discountedPrice}}
+{{^discountedPrice}}{{unitPrice}}{{/discountedPrice}}
+&nbsp;{{currency}}
+</p>
+</div>
+{{#productName}}
+<div class="product-details is-below">
+<div class="row">
+<div class="product-copy">
+<h3 class="title OneLinkNoTx">{{productName}}</h3>
+</div>
+</div>
+</div>
+{{/productName}}
+<div class="product-options">
+<div class="row">
+{{#color}}
+<div class="product-color">
+<label for="id1-color">Colour</label>
+<p class="OneLinkNoTx">{{color}}</p>
+</div>
+{{/color}} {{#size}}
+<div class="product-size">
+<label for="id1-color">Size</label>
+<p>{{size}}</p>
+</div>
+{{/size}} {{#quantity}}
+<div class="product-quantity">
+<label for="id1-color">QTY</label>
+<p>{{quantity}}</p>
+</div>
+{{/quantity}}
+<div class="product-total">
+{{#rawTotalPrice}}
+<p class="price-original">{{rawTotalPrice}}</p>
+{{/rawTotalPrice}} {{#amount}}
+<p class="price-total">{{amount}}</p>
+{{/amount}} {{#currency}}
+<p class="price-currency">{{currency}}</p>
+{{/currency}}
+</div>
+</div>
+</div>
+</div>
+<span class="OneLinkNoTx"></span>
+{{/items}}
+</script>
+<input type="hidden" name="orderId" id="orderId" value="c7316930177"/>
+<div style="display:none;">
+	<!-- NA - Build Release number : wptaprilrelease|20180404-112617| Build Version: 1.13.0-rc-2| Shared WebAssets Version : v1-->
+</div> 
+
+<div style="display:none;">
+JVM=prod5a
+</div>
+<input type="hidden" value="BEFORE YOU GO &lt;br&gt;Are you sure you want to change sites? You won&#039;t be able to access your items in your cart on the new country/region site." id="shoppingBagMessage"/>
+<!--input type="hidden" value='Sorry, we don&#039;t ship to your country/region' id="restrictedShipMessage"/-->
+<div style="display:none" id="restrictedShipMessage">Sorry, we don&#039;t ship to your country/region</div>
+
+<!--//#checkout-->
+
+<a href="#" class="scroll-to-top" title="move focus back to top of page" tab-index="0">top</a>
+
+<div class="pre-footer">
+<div class="shop-preferences container">
+<div class="inner-container">
+<div class="pre-footer-title">My Shop Preferences</div>
+
+<div class="current-country"><a data-iso-3="USA" id="region-selector-toggle" href="javascript:void(0);">
+<img src="//cdn.lululemon.com/lulustatic/v1/hr/img/flag-en_US.png" width="14" height="10" alt="United States"><span class="country-name">United States</span>
+</a></div>
+<div class="currency"><span class="currency-symbol">$</span> USD</div>
+</div> <!--//inner-container-->
+</div>
+<div id="region-selector">
+<div class="region-selector-form-wrapper">
+<div class="container">
+<form id="region-selector-form" class="inner-container">
+<input id="prevCountryLocale" type="hidden" value="en_US" />
+<input id="region-selector-input" type="text" name="region-selector-input" placeholder="Type Your Country/Region" title="Type country (displays shortlist)">
+<div class="clear-icon-wrapper"><button type="reset" class="clear-icon"></button></div></form>
+</div>
+</div> <!--//region-selector-form-wrapper-->
+</div> <!--//#region-selector-->
+</div>
+<footer class="footer">
+ <!-- container will be injected with class sm, md or lg -->
+ <div class="container">
+  <div class="inner-container lg-1 sm-1"></div>
+  <div class="inner-container lg-2 sm-2"></div>
+  <div class="inner-container">
+   <div class="md-1"></div>
+   <div class="md-2"></div>
+  </div>
+ </div>
+ <div class="bottom-links">
+  <div class="container">
+   <div class="inner-container">
+    <div class="company-docs">
+     <a href="//info.lululemon.com/legal/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+     <a href="//info.lululemon.com/legal/terms-of-use" title="Terms of Use">Terms of Use</a>
+  <a href="//info.lululemon.com/legal/terms-of-use/lululemon-alerts-text-terms" title="Text Terms">Text Terms</a>
+    </div>
+    <a class="company-name" href="//shop.lululemon.com" title="lululemon athletica">© lululemon athletica 1818 Cornwall Ave, Vancouver BC V6J 1C7 </a>
+   </div>
+  </div>
+ </div>
+ <div class="footer-links">
+  <ul class='lg-1 md-1 sm-1'>
+   <li>
+    <a class='group-link' href='//shop.lululemon.com/secure/account/login.jsp?mnid=ftr;en-US;my-account' title='Go to My Account page'>My Account</a>
+    <ul>
+     <li>
+      <a href='//shop.lululemon.com/secure/account/login.jsp?mnid=ftr;en-US;my-account;sign-in'>Sign In</a>
+     </li>
+     <li>
+      <a href='//shop.lululemon.com/secure/account/login.jsp?mnid=ftr;en-US;my-account;register'>Register</a>
+     </li>
+     <li>
+      <a href='//shop.lululemon.com/secure/orders/trackorder.jsp?mnid=ftr;en-US;my-account;order-status'>Order Status</a>
+     </li>
+     <li>
+      <a href='//shop.lululemon.com/secure/orders/returns.jsp?mnid=ftr;en-US;my-account;returns'>Returns</a>
+     </li>
+    </ul>
+    <span class='toggle' title='Toggle this section'></span>
+   </li>
+  </ul>
+  <ul class='lg-1 md-1 sm-1'>
+   <li>
+    <a class='group-link' href='//info.lululemon.com/help?mnid=ftr;en-US;help' title='Go to Help page'>Help</a>
+    <ul>
+     <li class="footer-accordian-link">
+      <a href="//info.lululemon.com/help?mnid=ftr;en-US;help">All Help</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/help/ordering?mnid=ftr;en-US;help;ordering'>Ordering</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/help/shipping?mnid=ftr;en-US;help;shipping'>Shipping</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/help/returns?mnid=ftr;en-US;help;returns'>Returns</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/help/size-chart?mnid=ftr;en-US;help;sizing'>Sizing</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/help/our-products?mnid=ftr;en-US;help;our-products'>Our Products</a>
+     </li>
+    </ul>
+    <span class='toggle' title='Toggle this section'></span>
+   </li>
+  </ul>
+  <ul class='lg-1 md-2 sm-1'>
+   <li>
+    <a class='group-link' href='//info.lululemon.com/about?mnid=ftr;en-US;about-us' title='Go to About Us page'>About Us</a>
+    <ul>
+     <li class="footer-accordian-link">
+      <a href='//info.lululemon.com/about?mnid=ftr;en-US;about-us'>All About Us</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/about/our-story?mnid=ftr;en-US;about-us;our-story'>Our Story</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/about/media?mnid=ftr;en-US;about-us;media'>Media</a>
+     </li>
+     <li>
+      <a href='http://investor.lululemon.com/?mnid=ftr;en-US;about-us;investors'>Investors</a>
+     </li>
+     <li>
+      <a href='//info.lululemon.com/about/strategic-sales?mnid=ftr;en-US;about-us;strategic-sales'>Strategic Sales</a>
+     </li>
+  <li>
+      <a href='//info.lululemon.com/about/sweat-collective?mnid=ftr;en-US;about-us;sweat-collective'>Sweat Collective</a>
+     </li>
+    </ul>
+    <span class='toggle' title='Toggle this section'></span>
+   </li>
+  </ul>
+  <ul class='lg-1 md-2 sm-1'>
+   <li>
+    <a class='group-link' href='//shop.lululemon.com/designs/_/N-1z140xk?mnid=mn;en-US;inspiration;design' title='Go to Design page'>Design</a>
+    <ul>
+     <li class="footer-accordian-link">
+      <a href='//shop.lululemon.com/designs/_/N-1z140xk?mnid=mn;en-US;inspiration;design'>All Design</a>
+     </li>
+     <li>
+<a href='//shop.lululemon.com/designs/_/N-1z13xiqZ1z140xk?mnid=ftr;en-US;designs;construction'>Construction</a>
+     </li>
+     <li>
+      <a href='//shop.lululemon.com/designs/_/N-1z13xjmZ1z140xk?mnid=ftr;en-US;designs;fabric-+-technology'>Fabric + Technology</a>
+     </li>
+     <li>
+      <a href='//shop.lululemon.com/designs/_/N-1z13xioZ1z140xk?mnid=ftr;en-US;designs;our-philosophy'>Our Philosophy</a>
+     </li>
+     <li>
+      <a href='//shop.lululemon.com/designs/_/N-1z13xinZ1z140xk?mnid=mn;en-US;inspiration;design;product-care'>Product Care</a>
+     </li>
+    </ul>
+    <span class='toggle' title='Toggle this section'></span>
+   </li>
+  </ul>
+  <ul class="single lg-2 md-1 sm-2">
+ <li>
+ <a href="//info.lululemon.com/contact?mnid=ftr;en-US;contact-us">Contact Us</a>
+ </li>
+ <li>
+ <a href="" onclick="window.open('https://lululemon.custhelp.com/app/chat/chat_launch/site/en_US', 'custclient', 'width=770,height=768,scrollbars=1'); return false;">Live Chat</a>
+ </li>
+ <li>
+ <a href="tel:+1-877-263-9300">1.877.263.9300</a>
+ </li>
+ <li>
+ <a href="//shop.lululemon.com/secure/account/email-landing.jsp?mnid=ftr;en-US;email-sign-up">Email Sign Up</a>
+ </li>
+  </ul>  
+  
+  <ul class="single lg-2 md-1 sm-2">
+   <li>
+    <a href="//info.lululemon.com/careers?mnid=ftr;en-US;careers">Careers</a>
+   </li>
+   <li>
+    <a href="//info.lululemon.com/sustainability?mnid=ftr;en-US;sustainability">Sustainability</a>
+   </li>
+ <li>
+    <a href="//info.lululemon.com/heretobe?mnid=ftr;en-US;social-impact">Social Impact</a>
+   </li>
+   <li>
+    <a href="//info.lululemon.com/lululemon-apps?mnid=ftr;en-US;lululemon-apps">lululemon Apps</a>
+   </li>
+  </ul>
+  <ul class="single lg-2 md-2 sm-2">
+   <li>
+    <a href="//shop.lululemon.com/shop/luluGiftCards.jsp?mnid=ftr;en-US;gift-cards">Gift Cards</a>
+   </li>
+   <li>
+    <a href="//info.lululemon.com/stores?mnid=ftr;en-US;store-locator">Store Locator</a>
+   </li>
+   <li>
+    <a href="https://pnimages.lululemon.com/content/dam/lululemon/www-images/Footer/Sustainability/Updated_lulu-modern-slavery-statement-2017_EN.pdf">UK Modern Slavery Act</a>
+   </li>
+ <li>
+    <a href="https://pnimages.lululemon.com/content/dam/lululemon/www-images/Footer/Sustainability/Updated_lulu-modern-slavery-statement-2017_EN.pdf">California Transparency Act</a>
+   </li>
+ <li>
+    <a href="https://pnimages.lululemon.com//content/dam/lululemon/www-images/Footer/Utilities/Accessibility/AudioEye%20Accessibility%20Statement_2017.pdf">Accessibility Statement</a>
+   </li>
+  </ul>
+  <ul class="single social lg-2 md-2 sm-2">
+   <li>
+    <a href="javascript:void(0);">
+     <div class="social">
+      <h3>Connect</h3>
+      <div class="share data">
+       <a class="icon icon-twitter" href="https://twitter.com/lululemon" target="_blank" title="Twitter">Twitter</a>
+       <a class="icon icon-pintrest" href="https://www.pinterest.com/lululemon/" target="_blank" title="Pinterest">Pinterest</a>
+       <a class="icon icon-youtube" href="https://www.youtube.com/lululemon" target="_blank" title="Youtube">YouTube</a>
+       <a class="icon icon-facebook" href="https://www.facebook.com/lululemon" target="_blank" title="Facebook">Facebook</a>
+       <a class="icon icon-instagram" href="https://instagram.com/lululemon" target="_blank" title="Instagram">Instagram</a>
+    </div>
+     </div>
+    </a>
+   </li>
+  </ul>
+ </div>
+ <!-- for Breakpoint.js -->
+ <div class="bp-info">
+  <div class="device-xs visible-xs">XS</div>
+  <div class="device-sm visible-sm">SM</div>
+  <div class="device-md visible-md">MD</div>
+  <div class="device-lg visible-lg">LG</div>
+ </div>
+ <!-- Debug Copy of breakpoint information-->
+ <div class="bp-debug">
+  <div class="device-xs visible-xs">XS</div>
+  <div class="device-sm visible-sm">SM</div>
+  <div class="device-md visible-md">MD</div>
+  <div class="device-lg visible-lg">LG</div>
+ </div>
+</footer>
+<script>
+// value = strings to search
+// label = display name
+// data = locale (unique)
+// country = country code
+var countriesArray = [
+{ data: 'en_US&sl=AS', country: 'ASM', value: 'American Samoa AS', label: 'American Samoa', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=AR', country: 'ARG', value: 'Argentina AR', label: 'Argentina', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=AW', country: 'ABW', value: 'Aruba AW', label: 'Aruba', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_AU&sl=AU', country: 'AUS', value: 'Australia AU', label: 'Australia', countryDomain: 'www.lululemon.com.au' },
+{ data: 'en_IE&sl=AT', country: 'AUT', value: 'Austria AT Österreich Osterreich Oesterreich', label: 'Austria', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=BS', country: 'BHS', value: 'Bahamas BS', label: 'Bahamas', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=BH', country: 'BHR', value: 'Bahrain BH', label: 'Bahrain', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_HK&sl=BD', country: 'BGD', value: 'Bangladesh BD', label: 'Bangladesh', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_US&sl=BB', country: 'BRB', value: 'Barbados BB', label: 'Barbados', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=BE', country: 'BEL', value: 'Belgium BE België Belgie Belgien Belgique', label: 'Belgium', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=BM', country: 'BMU', value: 'Bermuda BM', label: 'Bermuda', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=BO', country: 'BOL', value: 'Bolivia BO', label: 'Bolivia', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=BR', country: 'BRA', value: 'Brazil BR Brasil', label: 'Brazil', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_CA&sl=CA', country: 'CAN', value: 'Canada CA', label: 'Canada (English)', countryDomain: 'shop.lululemon.com' },
+{ data: 'fr_CA&sl=CA', country: 'CAN', value: 'Canada CA', label: 'Canada (Français)', countryDomain: 'fr.shop.lululemon.com' },
+{ data: 'en_US&sl=KY', country: 'CYM', value: 'Cayman Islands KY', label: 'Cayman Islands', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=CL', country: 'CHL', value: 'Chile CL', label: 'Chile', countryDomain: 'shop.lululemon.com' },
+{ data: 'zh_CN&sl=CN', country: 'CHN', value: 'China CN Zhongguo Zhonghua Peoples Republic', label: 'China', countryDomain: 'www.lululemon.cn' },
+{ data: 'en_US&sl=CO', country: 'COL', value: 'Colombia CO', label: 'Colombia', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=HR', country: 'CRO', value: 'Croatia HR Hrvatska', label: 'Croatia', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=CZ', country: 'CZE', value: 'Czech Republic CZ Ceská Ceska', label: 'Czech Republic', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=DK', country: 'DNK', value: 'Denmark DK Danmark', label: 'Denmark', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=DO', country: 'DOM', value: 'Dominican Republic DO', label: 'Dominican Republic', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=EC', country: 'ECU', value: 'Ecuador EC', label: 'Ecuador', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=EE', country: 'EST', value: 'Estonia EE Eesti', label: 'Estonia', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=FI', country: 'FIN', value: 'Finland FI Suomi', label: 'Finland', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=FR', country: 'FRA', value: 'France FR République française', label: 'France', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=DE', country: 'DEU', value: 'Germany DE Bundesrepublik Deutschland', label: 'Germany', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=GR', country: 'GRC', value: 'Greece GR', label: 'Greece', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=GL', country: 'GRL', value: 'Greenland GL Grønland', label: 'Greenland', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=GD', country: 'GRD', value: 'Grenada GD', label: 'Grenada', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=GU', country: 'GUM', value: 'Guam GU', label: 'Guam', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=GT', country: 'GTM', value: 'Guatemala GT', label: 'Guatemala', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=HN', country: 'HND', value: 'Honduras HN', label: 'Honduras', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_HK&sl=HK', country: 'HKG', value: 'Hong Kong HK', label: 'Hong Kong SAR', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_US&sl=IS', country: 'ISL', value: 'Iceland IS Island', label: 'Iceland', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=IN', country: 'IND', value: 'India IN', label: 'India', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=ID', country: 'IDN', value: 'Indonesia ID', label: 'Indonesia', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=IE', country: 'IRL', value: 'Ireland IE Éire', label: 'Ireland', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=IL', country: 'ISR', value: 'Israel IL', label: 'Israel', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=IT', country: 'ITA', value: 'Italy IT Italia', label: 'Italy', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=JM', country: 'JAM', value: 'Jamaica JM', label: 'Jamaica', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_HK&sl=JP', country: 'JPN', value: 'Japan JP Nippon Nihon', label: 'Japan', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_HK&sl=KR', country: 'KOR', value: 'Korea, Republic of KR South Korea', label: 'Korea', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_IE&sl=KW', country: 'KWT', value: 'Kuwait KW', label: 'Kuwait', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=LV', country: 'LVA', value: 'Latvia LV', label: 'Latvia', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=LI', country: 'LIE', value: 'Liechtenstein LI', label: 'Liechtenstein', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=LT', country: 'LTU', value: 'Lithuania LT', label: 'Lithuania', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=LU', country: 'LUX', value: 'Luxembourg LU', label: 'Luxembourg', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_HK&sl=MY', country: 'MYS', value: 'Malaysia MY', label: 'Malaysia', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_US&sl=MX', country: 'MEX', value: 'Mexico MX Mexicanos', label: 'Mexico', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=MC', country: 'MCO', value: 'Monaco MC', label: 'Monaco', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=MS', country: 'MSR', value: 'Montserrat MS', label: 'Montserrat', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=NL', country: 'NLD', value: 'Netherlands NL Holland Nederland', label: 'Netherlands', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_NZ&sl=NZ', country: 'NZL', value: 'New Zealand NZ', label: 'New Zealand', countryDomain: 'www.lululemon.co.nz' },
+{ data: 'en_IE&sl=NO', country: 'NOR', value: 'Norway NO Norge Noreg', label: 'Norway', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=PA', country: 'PAN', value: 'Panama PA', label: 'Panama', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=PE', country: 'PER', value: 'Peru PE', label: 'Peru', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=PH', country: 'PHL', value: 'Philippines PH', label: 'Philippines', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=PL', country: 'POL', value: 'Poland PL', label: 'Poland', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=PT', country: 'PRT', value: 'Portugal PT', label: 'Portugal', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=PR', country: 'PRI', value: 'Puerto Rico PR', label: 'Puerto Rico', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=SA', country: 'SAU', value: 'Saudi Arabia SA', label: 'Saudi Arabia', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_HK&sl=SG', country: 'SGP', value: 'Singapore SG', label: 'Singapore', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_IE&sl=SK', country: 'SVK', value: 'Slovakia SK', label: 'Slovakia', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=SI', country: 'SVN', value: 'Slovenia SI', label: 'Slovenia', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_US&sl=ZA', country: 'ZAF', value: 'South Africa ZA', label: 'South Africa', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=ES', country: 'ESP', value: 'Spain ES España', label: 'Spain', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_IE&sl=SE', country: 'SWE', value: 'Sweden SE Sverige', label: 'Sweden', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_CH&sl=CH', country: 'CHE', value: 'Switzerland CH Swiss Confederation Schweiz Suisse Svizzera Svizra', label: 'Switzerland', countryDomain: 'www.lululemon.ch' },
+{ data: 'en_HK&sl=TW', country: 'TWN', value: 'Taiwan, Province of China TW', label: 'Taiwan', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_US&sl=TZ', country: 'TZA', value: 'Tanzania, United Republic of TZ', label: 'Tanzania', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=TT', country: 'TTO', value: 'Trinidad and Tobago TT', label: 'Trinidad and Tobago', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=TR', country: 'TUR', value: 'Turkey TR Türkiye Turkiye', label: 'Turkey', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=TC', country: 'TCA', value: 'Turks and Caicos Islands TC', label: 'Turks and Caicos Islands', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_US&sl=UA', country: 'UKR', value: 'Ukraine UA Ukrayina', label: 'Ukraine', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_IE&sl=AE', country: 'ARE', value: 'United Arab Emirates AE UAE Emirates', label: 'United Arab Emirates', countryDomain: 'www.eu.lululemon.com' },
+{ data: 'en_GB&sl=GB', country: 'GBR', value: 'United Kingdom GB Great Britain England UK Wales Scotland Northern Ireland', label: 'United Kingdom', countryDomain: 'www.lululemon.co.uk' },
+{ data: 'en_US&sl=US', country: 'USA', value: 'United States US USA United States of America U.S.A.', label: 'United States', countryDomain: 'shop.lululemon.com' },
+{ data: 'en_HK&sl=VN', country: 'VNM', value: 'Vietnam VN', label: 'Vietnam', countryDomain: 'www.lululemon.com.hk' },
+{ data: 'en_US&sl=VI', country: 'VIR', value: 'Virgin Islands, U.S. VI', label: 'Virgin Islands', countryDomain: 'shop.lululemon.com' }
+];
+</script>
+<div id="wallet-json" style="display:none">
+{"forms":{"deliveryMethods":[{"method":"FedExGround","title":"Standard (FedEx US)","ribbonTitle":"Free Shipping","currencyCode":"","dateRange":"2-7 business days","desc":"Standard (FedEx US)","date":"","price":"FREE","default":true,"icon":"#standardground"},{"method":"FedExTwoDay","title":"Express (FedEx US)","ribbonTitle":false,"currencyCode":"USD","dateRange":"2-3 business days","desc":"Express (FedEx US)","date":"","price":"$20.00","default":false,"icon":"#express"},{"method":"FedExOvernight","title":"Priority (FedEx US)","ribbonTitle":false,"currencyCode":"USD","dateRange":"1 business day","desc":"Priority (FedEx US)","date":"","price":"$30.00","default":false,"icon":"#priority"}]},"supportedCardTypes":["visa","masterCard","amex"],"requiredShippingFields":["postalAddress","name","phone","email"],"requiredBillingFields":["postalAddress","name","phone","email"],"additionalFields":{"currencyCode":"USD","countryCode":"US","applePayMerchantId":"merchant.com.lululemon.shopapp","isApplePayWebEnabled":"true"}}</div>
+
+<div class="modal popup-modal" id="error-modal">
+<input type="checkbox" class="modal-state">
+<div class="modal-fade-screen">
+<div class="modal-inner">
+<div class="popup-modal-content">
+<div for="error-modal" class="modal-close"></div>
+<div class="modal-content"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="fedExSmartDeliveryMessage" style="display: none;">
+Your order will ship via FedEx Smart Post.</div>
+
+<script type="text/javascript" src="//cdn.lululemon.com/lulustatic/v1/gsr/js/i18n/en_US.js?v=20180404-112617"></script>
+
+<script type="text/javascript" src="//cdn.lululemon.com/lulustatic/v1/gsr/js/common.js?v=20180404-112617"></script>
+<script type="text/javascript" src="//cdn.lululemon.com/lulustatic/v1/gsr/js/checkout.js?v=20180404-112617"></script>
+<script>
+
+</script>
+<script type="text/JavaScript">
+
+var digitalData = {
+page : {
+pageInfo : {
+country: 'us',
+region: 'us'
+
+,
+
+pageName : 'checkout'
+
+}
+
+,
+category : {
+channel : ''
+}
+
+}
+
+,
+error :{
+errorType: '',
+errorMessage: ''
+}
+
+,
+user : {
+
+email : '',
+uemh : '',
+
+userID : '',
+userState : 'guest'
+
+}
+
+,
+cart : {
+cartID : 'c7316930177',
+cartContent : 'r0d79y2e4hGu8IcqeOb2rQ%3D%3D||us_3789176~1~prod8900646',
+item : [
+
+{
+productName : 'Can You Feel The Pleat Crop *21&#034;',
+productID : 'prod8900646',
+
+price : '108.0',
+
+onSale : 'false',
+fullPrice : '108.0',
+skuID : 'us_3789176',
+categoryUnifiedId : 'women-crops',
+category : 'crops',
+categoryId : 'uswwearit2',
+quantity : '1',
+productInfo : {
+size: '4',
+color: 'heathered power grey'
+}
+}
+]
+}
+
+// CRM-122 - commented
+//
+//,
+//user : {
+//	profile : {
+//		userID : '3804553787'
+//	}
+//}
+//
+};
+
+</script>
+<script type="text/javascript">_satellite.pageBottom();</script>
+<script async="true" type="text/javascript" src="//lululemon.btttag.com/btt.js"></script></body>
+</html>

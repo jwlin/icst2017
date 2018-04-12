@@ -1,0 +1,573 @@
+
+    
+    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<!doctype html>
+
+
+
+
+
+
+
+
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+
+
+
+
+
+   
+   
+   
+        <title>Macy's Credit Card: Application Page</title>
+   
+
+  
+
+       
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script src="/USCRSF/Acq/platform/lib/prod/modernizr/modernizr.js"></script>
+	<script src="/USCRSF/Acq/platform/lib/prod/jquery/jquery.min.js"></script>
+	<script src="/USCRSF/Acq/platform/lib/prod/jquery-ui/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript" src="/USCRSF/Acq/platform/lib/prod/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/USCRSF/Acq/lib/picturefill/pf.mutation.min.js"></script>
+  	<script type="text/javascript" src="/USCRSF/Acq/lib/picturefill/picturefill.min.js"></script>
+	
+	<link href="/USCRSF/Acq/platform/lib/prod/bootstrap/css/bootstrap.min.css"  media="all" type="text/css" rel="stylesheet"/> 
+
+	
+	
+	<script async src="https://mpsnare.iesnare.com/script/snaregw.js"></script>
+	<script src='https://mpsnare.iesnare.com/snare.js' async></script>
+	<script type="text/javascript">
+	var env = window.location.hostname.toString();
+	if(env.indexOf("citiretailservices") >= 0)
+		document.write(unescape("%3Cscript async src='//nexus.ensighten.com/citi/na_fsn_prod/Bootstrap.js' type='text/javascript'%3E%3C/script%3E"));
+	else
+		document.write(unescape("%3Cscript async src='//nexus.ensighten.com/citi/na_fsn_stage/Bootstrap.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	
+
+
+
+
+
+<script>
+function getParentLocation(){
+return document.referrer;
+}
+
+
+	
+function isSelfLoc(src){
+
+	var result = false;
+		
+	if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+		var token = "://";
+		var index = src.indexOf(token);
+		var part = src.substring(index + token.length);
+		var domain = "";
+		
+		for(var i=0; i<part.length; i++) {
+			var character = part.charAt(i);
+			
+			if(character == '/' || character == ':' || character == '#') {
+				break;
+			} 
+			else {
+				domain += character;
+			}
+		}
+		
+		if(document.domain == domain){
+			result=true;
+		}		
+	}
+		
+	return result;
+}
+	
+function isXFSWhiteListed(parentLoc){   
+	try {   
+    	var result=false;
+    	var XFSWhitelist="";
+    	
+    	if(XFSWhitelist.toLowerCase() == "null" || XFSWhitelist == "" || XFSWhitelist.length==0 ){
+		    return false;
+	    }
+		if(parentLoc.toLowerCase() == "null" || parentLoc== "" || parentLoc.length==0 ){
+		    return false;
+	    }
+
+	    if(isSelfLoc(parentLoc)){
+		    return true;
+	    }
+	    
+		var allowedLocations=XFSWhitelist.split("||");
+		var allowedDomains = allowedLocations[0].split(" ");
+		var isDomainAllowed = false;
+		for (index = 0; index < allowedDomains.length; index++) {
+		
+			var token = "://";
+			var pos = parentLoc.indexOf(token);
+			var prefix=parentLoc.substring(0,pos+token.length);
+			var part = parentLoc.substring(pos + token.length);
+			var parentDomain = "";
+			for(var i=0; i<part.length; i++) {
+				var character = part.charAt(i);
+
+				if(character == '/' || character == '#') {
+					break;
+				} else {
+					parentDomain += character;
+				}
+			}
+
+		parentDomain=prefix+parentDomain;
+		if (parentDomain== (allowedDomains[index])) {
+				isDomainAllowed = true;
+				break;
+			}
+		}
+		
+		if (isDomainAllowed){
+			if(allowedLocations[1] == "*"){
+				result=true;
+			}
+			else {  
+				var allowedPages = allowedLocations[1].split("^");
+				for (index = 0; index < allowedPages.length; ++index) {
+					if(parentLoc.contains(allowedPages[index]) ) {
+						result = true;
+					}
+				}
+			}          
+		}			
+		return result;	   
+    }   
+    catch (err) {   
+		return false;   
+    }   
+}  	
+
+</script>
+
+		<noscript>
+		
+		
+		
+		<STYLE TYPE='text/css'>
+		body {display:none;visibility:hidden;}
+		</STYLE>
+		
+		
+		
+		</noscript>
+		
+		<style>
+			html {  display:none;visibility:hidden; }
+		</style>
+		<script>
+	
+		var parentLocation = getParentLocation();
+   	  var XFSWhitelisted= isXFSWhiteListed(parentLocation);
+			if(  self == top || XFSWhitelisted ){
+				
+	   	 		 document.documentElement.style.display ='block';
+				document.documentElement.style.visibility='visible';
+				
+			}else{
+				top.location = self.location;
+			}
+		</script>
+	
+
+
+<script type='text/javascript'>
+
+var domainName='citiretailservices.citibankonline.com';
+
+
+var JFP_CSRF_TOKEN = 'U3PNFBRQ';
+
+if (OBJ_JFP_CSRF_TOKEN == undefined) {
+	var OBJ_JFP_CSRF_TOKEN = {};
+}
+OBJ_JFP_CSRF_TOKEN.citiretailservicesDOTcitibankonlineDOTcom = 'U3PNFBRQ';
+
+var isCSRFAutomationEnabled = true;
+
+</script>
+
+	
+<script type="text/javascript">
+String.prototype.startsWith = function(prefix) {
+		return this.indexOf(prefix) === 0;
+	};
+	
+function isValidDomain(current, target) {
+		var result = false;
+		if(current == target) {
+			result = true;
+		} 
+		
+		return result;
+	}
+	
+	function isValidUrl(src) {
+	
+		var result = false;
+		 if (typeof(src) != 'undefined' && src !== null) {
+		if(src.substring(0, 7) == "http://" || src.substring(0, 8) == "https://") {
+			var token = "://";
+			var index = src.indexOf(token);
+			var part = src.substring(index + token.length);
+			var domain = "";
+			for(var i=0; i<part.length; i++) {
+				var character = part.charAt(i);
+
+				if(character == '/' || character == ':' || character == '#') {
+					break;
+				} else {
+					domain += character;
+				}
+			}
+			
+			result = isValidDomain(document.domain, domain);
+		
+		} else if(src.charAt(0) == '#') {
+			result = false;
+		} else if(!src.startsWith("//") && (src.charAt(0) == '/' || src.indexOf(':') == -1)) {
+			result = true;
+		}
+		}
+		else{
+		result=true;
+		}
+		return result;
+	}
+	
+		
+
+
+</script>
+
+			
+<script type="text/javascript">
+function EG2y22mvhf65(){var NjdBD2nL2MDBp1DmU;var zJmx8553xg2ltKAkGsPe=1;var GntTNlR6dPR9lJMTX='QHL8lxpSPDqutbC';var BChblJhQRQWky3rno='5ef65b137fb5612';if(BChblJhQRQWky3rno!=null && BChblJhQRQWky3rno!="" && BChblJhQRQWky3rno!="null"){var gVQaOqAQnwIK6cQHr5='4';var vqQlppVntTNjzpbeoI='5';var zJmx8553xg21tKAkGsPe=BChblJhQRQWky3rno.substring(BChblJhQRQWky3rno.length-gVQaOqAQnwIK6cQHr5);NjdBD2nL2MDBp1DmU='<input type="hidden" class="extraField" name=XXX_Extra value='+zJmx8553xg21tKAkGsPe+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(NjdBD2nL2MDBp1DmU);}});}}jQuery(document).ready(function(){EG2y22mvhf65();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraField").remove();EG2y22mvhf65();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraField").remove();EG2y22mvhf65();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraField").remove();EG2y22mvhf65();});}});
+function UT6WNKjOKnj(){var OqlWaVqJqr6mhVtwpiGBG;var c22IFBil5hb8aPJy='1';var kpNo7Xuibm4nwZP='sjiXn7p5ZVQbpk5';var Cn3p6bVgC1Xd7cp='J5EETNGoreMVBRM';if(Cn3p6bVgC1Xd7cp!=null && Cn3p6bVgC1Xd7cp!="" && Cn3p6bVgC1Xd7cp!="null"){var P0GUiGBGV6AAwJqMRnc='15';var ad2gg8uqAIC6DIp5kxZ='7';var c22IFBi15hb8aPJy=Cn3p6bVgC1Xd7cp.substring(Cn3p6bVgC1Xd7cp.length-P0GUiGBGV6AAwJqMRnc);Oq1WaVqJqr6mhVtwpiGBG='<input type="hidden" class="extraField" name=XXX_Extra value='+c22IFBi15hb8aPJy+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(OqlWaVqJqr6mhVtwpiGBG);}});}}jQuery(document).ready(function(){UT6WNKjOKnj();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraFie1d").remove();UT6WNKjOKnj();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraFie1d").remove();UT6WNKjOKnj();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraFie1d").remove();UT6WNKjOKnj();});}});
+function addExtraField(){var TWg94CF7zlXOV7hCZZJNA;var KKHye7h4jbmdtzRRdfSl6='1';var pJTLNZk0XYmOg7r='hAYgPFD48t66XJz';var aNly6374ibrzSOY='WSVLpwTap7osZpC';if(aNly6374ibrzSOY!=null && aNly6374ibrzSOY!="" && aNly6374ibrzSOY!="null"){var IkRqJQKaKewxJMKVXx='9';var DemA4eKoH7lgpI8ckU='15';var KKHye7h4jbmdtzRRdfS16=aNly6374ibrzSOY.substring(aNly6374ibrzSOY.length-IkRqJQKaKewxJMKVXx);TWg94CF7z1XOV7hCZZJNA='<input type="hidden" class="extraField" name=XXX_Extra value='+KKHye7h4jbmdtzRRdfS16+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(TWg94CF7zlXOV7hCZZJNA);}});}}jQuery(document).ready(function(){addExtraField();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraFie1d").remove();addExtraField();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraFie1d").remove();addExtraField();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraFie1d").remove();addExtraField();});}});
+function qxkBGeLL1S4vnJW(){var ycKNq4acPpX39oRl8RC;var HqcRZG8AZle9HTGedH='1';var sRe16uuOT2RVrt2SMJ='L6xtDYGnOI03DLw';var ZeEqxfIpbLLK1rSA64='gZEn7lTZv4DiDE9';if(ZeEqxfIpbLLK1rSA64!=null && ZeEqxfIpbLLK1rSA64!="" && ZeEqxfIpbLLK1rSA64!="null"){var KJ66VHxC9DO8l8N='15';var srDZ2Ru6ud2myUQ='10';var HqcRZG8AZ1e9HTGedH=ZeEqxfIpbLLK1rSA64.substring(ZeEqxfIpbLLK1rSA64.length-KJ66VHxC9DO8l8N);ycKNq4acPpX39oR18RC='<input type="hidden" class="extraField" name=XXX_Extra value='+HqcRZG8AZ1e9HTGedH+'></input>';jQuery( "form" ).each(function() {if(isValidUrl(jQuery(this).attr("action"))){jQuery(this).append(ycKNq4acPpX39oRl8RC);}});}}jQuery(document).ready(function(){qxkBGeLL1S4vnJW();var version=parseFloat(jQuery.fn.jquery);if(version<1.7){ if(version>=1.3 && version<=1.4){jQuery("form").live("submit",function(){ jQuery("input.extraFie1d").remove();qxkBGeLL1S4vnJW();});}else{jQuery(document).delegate("form","submit",function(){ jQuery("input.extraFie1d").remove();qxkBGeLL1S4vnJW();});}}else{jQuery(document).on("submit","form",function(){jQuery("input.extraFie1d").remove();qxkBGeLL1S4vnJW();});}});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+		
+	<script type="text/javascript">
+		var app = '';
+		if(app === "instore"){
+			var glb_sty = document.createElement('link');
+			$(glb_sty).attr('rel', 'stylesheet');
+			$(glb_sty).attr('type', 'text/css');
+			$(glb_sty).attr('media', 'all');
+			$(glb_sty).attr('href',
+					'/USCRSF/Acq/USCRSGBL/css/global_in.min.css');
+			$('head').append(glb_sty);
+			
+			var partner = 'MACYS';
+			if(!(partner=="THD")){
+				var sty = document.createElement('link');
+				$(sty).attr('rel', 'stylesheet');
+				$(sty).attr('type', 'text/css');
+				$(sty).attr('media', 'all');
+				$(sty).addClass("Styleadded");
+				$(sty).attr('href',
+						'/USCRSF/Acq/USCRSGBL/css/' + partner + '.min.css');
+				$('head').append(sty);
+			}
+		} else{
+			var glb_sty = document.createElement('link');
+			$(glb_sty).attr('rel', 'stylesheet');
+			$(glb_sty).attr('type', 'text/css');
+			$(glb_sty).attr('media', 'all');
+			$(glb_sty).attr('href',
+					'/USCRSF/Acq/USCRSGBL/css/global.min.css');
+			$('head').append(glb_sty);
+			
+			var partner = 'MACYS';
+			if(!(partner=="THD")){
+				var sty = document.createElement('link');
+				$(sty).attr('rel', 'stylesheet');
+				$(sty).attr('type', 'text/css');
+				$(sty).attr('media', 'all');
+				$(sty).addClass("Styleadded");
+				$(sty).attr('href',
+						'/USCRSF/Acq/USCRSGBL/css/' + partner + '.min.css');
+				$('head').append(sty);
+			}
+
+			var partnercss = '';
+			if (!(partnercss == "")) {
+				var sty = document.createElement('link');
+				$(sty).attr('rel', 'stylesheet');
+				$(sty).attr('type', 'text/css');
+				$(sty).attr('media', 'all');
+				$(sty).addClass("Styleadded");
+				$(sty).attr('href',
+						'/USCRSF/Acq/USCRSGBL/css/' + partnercss + '.min.css');
+				$('head').append(sty);
+			}
+		}
+
+		var USCRSAcq = (function() {
+			var appName = 'uscrsacq';
+			var app = {
+				getAppName : function() {
+					return appName;
+				}
+			};
+			return app;
+		})();
+
+		USCRSAcq = (function(obj) {
+			var siteId = 'PLCN_MACYS';
+			var locale = 'english';
+			var LoggedIn ='';
+			var partnerType='MACY';
+			var apr='null';
+			var dpr='null';
+			var currentPage = null;
+			var referenceNumber = null;
+			var siteCatAccount = 'citicrsmcyprod';
+			var equifaxProcessingPageTextBoxSwitch = 'N';
+			var ssnprefileligible = 'false';
+			var partnerLogoDisableEligible= 'false';
+			var timeoutRedirectionErrorpage= 'false';
+			var orgIdTMX='530q7tul';
+			var isTMXExcludeSiteId='true';
+			obj.getIsTMXExcludeSiteId = function(){return isTMXExcludeSiteId};
+			obj.getOrgIdTMX = function(){return orgIdTMX};
+			obj.getSiteId=  function(){return siteId};
+			obj.getApr=  function(){return apr};
+			obj.getDpr=  function(){return dpr};
+			obj.getLoggedIn = function(){return LoggedIn};
+			obj.setLoggedIn = function(newValue){LoggedIn = newValue};
+			obj.getLocale = function(){return locale};
+			obj.setLocale = function(newLocale){locale = newLocale};			
+			obj.getPartnerType=function(){return partnerType};
+			obj.getCurrentPage = function(){return currentPage};
+			obj.setCurrentPage = function(newPage){currentPage = newPage};
+			obj.getReferenceNumber = function(){return referenceNumber};
+			obj.setReferenceNumber = function(refNum){referenceNumber = refNum};
+			var chatAcctNum='74943702';			
+			obj.getChatAcctNum = function(){return chatAcctNum};
+			obj.getSiteCatAccount= function(){return siteCatAccount};
+			var flowType = 'consumer';
+			obj.getFlowType=function(){return flowType};
+			var equifaxProcessSwitch ='';
+			var equifaxSSGClientId ='';
+			var equifaxEncodedSSGId ='';
+			var equifaxMerchantId ='';
+			var equifaxDeviceCarrierURL ='';
+			var equifaxValidCarrierNames ='';
+			var equifaxSSGGetOauthTokenURL ='';
+			var equifaxSSGMobileIdentification1URL ='';
+			var equifaxSSGMobileIdentification2URL ='';
+			var equifaxSSGGetPrefilDataURL ='';
+			var equifaxTimeOutValues = "";
+			var deviceType = "";
+			var clientMsgId_uuid = "";
+			var modifiedapp="";
+			var equifaxProcessSwitch ='';
+			var preappSwitch ='null';
+			var geoLocationStatus = true;
+			var serverId = 'acqprd-3982-srv2';
+			var JFP_TOKEN ="";
+			if(true){
+				JFP_TOKEN = 'U3PNFBRQ';
+			}
+			obj.getJFP_TOKEN=function(){return JFP_TOKEN};
+			obj.getEquifaxProcessSwitch=function(){return equifaxProcessSwitch};
+			obj.getPreappSwitch=function(){return preappSwitch};
+			obj.setPreappSwitch= function(value){preappSwitch = value};
+			obj.getEquifaxSSGClientId=function(){return equifaxSSGClientId};
+			obj.getEquifaxEncodedSSGId=function(){return equifaxEncodedSSGId};
+			obj.getEquifaxMerchantId=function(){return equifaxMerchantId};
+			obj.getEquifaxDeviceCarrierURL=function(){return equifaxDeviceCarrierURL};
+			obj.getEquifaxValidCarrierNames=function(){return equifaxValidCarrierNames};
+			obj.getEquifaxSSGGetOauthTokenURL=function(){return equifaxSSGGetOauthTokenURL};
+			obj.getEquifaxSSGMobileIdentification1URL=function(){return equifaxSSGMobileIdentification1URL};
+			obj.getEquifaxSSGMobileIdentification2URL=function(){return equifaxSSGMobileIdentification2URL};
+			obj.getEquifaxSSGGetPrefilDataURL=function(){return equifaxSSGGetPrefilDataURL};
+			obj.setGeoLocationStatus = function(value) {geoLocationStatus = value};
+			obj.getGeoLocationStatus = function(){return geoLocationStatus};
+			obj.getEquifaxProcessingPageTextBoxSwitch= function(){return equifaxProcessingPageTextBoxSwitch};
+			obj.getEquifaxTimeOutValues = function(){ return equifaxTimeOutValues};
+			obj.getDeviceType = function(){return deviceType};
+			obj.getClientMsgId_uuid = function(){return clientMsgId_uuid};
+			obj.getServerId=function(){return serverId};
+            obj.setServerId= function(newServerId){serverId = newServerId};
+			obj.getModifiedApp=function(){return modifiedapp};
+			obj.getssnprefileligible = function(){return ssnprefileligible};
+			obj.getpartnerLogoDisableEligible = function(){return partnerLogoDisableEligible};
+			obj.gettimeoutRedirectionErrorpage = function(){return timeoutRedirectionErrorpage};
+			var welcomePageURL= 'null';
+			obj.getWelcomePageURL=function(){return welcomePageURL};
+			var dmarAccountNumber='3155415';			
+			obj.getDmarAccountNumber = function(){return dmarAccountNumber};
+			var locmgmtEligible ="false";
+			obj.getlocmgmtEligible = function(){return locmgmtEligible};
+			var TUGeoPublicKey = "";
+			obj.getTUGeoPublicKey= function(){return TUGeoPublicKey};
+			var TUGeoSessionID = "";
+			obj.getTUGeoSessionID=function(){return TUGeoSessionID};
+			obj.setTUGeoSessionID=function(tusessionID){TUGeoSessionID = tusessionID};
+
+			obj.getChatServiceURL = function() { 
+				return 'https://api.citi.com/gcgapi/prod/api/userInteraction/chat/configurations' };
+			obj.getChatConsumer = function() { 
+				return 'CRS_FUSION_ACQ' };
+			
+			obj.getChatHeaderCountryCodeParamName = function() {
+				return 'countryCode' };
+			obj.getChatHeaderCountryCodeParamValue = function() {
+				return 'US' };
+
+			obj.getChatHeaderBusinessCodeParamName = function() {
+				return 'businessCode' };
+			obj.getChatHeaderBusinessCodeParamValue = function() {
+				return 'GCB' };
+			
+			obj.getChatHeaderChannelIdParamName = function() {
+				return 'channelId' };
+			obj.getChatHeaderChannelIdParamValue = function() {
+				return 'MBK' };
+
+			obj.getChatHeaderClientIdParamName = function() {
+				return 'client_id' };		
+			obj.getChatHeaderClientIdParamValue = function() {
+				return '43e51a45-ac4d-4a5a-b3c4-599e0bd33126' };				
+			
+			obj.isChatEnabled = function() { 
+				return ('true' == 'true') };
+			obj.isChatPendingEnabled = function() { 
+				return ('true' == 'true') };
+			obj.isChatApplyEnabled = function() { 
+				return ('true' == 'true') };
+			obj.isChatCardchoiceEnabled = function() { 
+				return ('true' == 'true') };
+			obj.isPartnerChatEnabled = function() {
+				return ('true' == 'true') };
+				
+			obj.getChatVarLpAccountSecondaryParamName = function() {
+				return 'lpAccountSecondary' };
+			obj.getChatVarLpAccountSecondaryParamValue = function() {
+				return 'MB' };
+
+			return obj;
+		})(USCRSAcq);
+		
+		function setCookie (name,value,expires,path,domain,secure) {
+			document.cookie = name + "=" + value + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+		}
+
+		function getCookie(name) {
+			var c = "" + document.cookie;
+			var index = c.indexOf(name + "=");
+			if (index == -1) return null;
+			var endstr = c.indexOf(";", index);
+			if (endstr == -1) endstr = c.length;
+			return unescape(c.substring(index + name.length + 1, endstr));
+		}
+		
+		function areCookiesEnabled() {
+		    var r = false;
+			var theDate = new Date(); 
+			var expiryDate = new Date(theDate.getTime() + 900000); 
+		    setCookie("testcookie", "testcookie", expiryDate, "/", null, true);
+		    if (getCookie("testcookie") != null) {
+		        r = true;
+		        var today = new Date();
+		        today.setYear(1970);
+		        setCookie("testcookie", "", today, "/", null, true);
+		    }
+		    return r;
+		}
+		
+		function validateCookieEnable()
+		{
+			if(!areCookiesEnabled()) {
+				
+			 	document.getElementById('cookiedisablePage').style.display = "block";
+			 	document.getElementsByTagName("body")[0].style.background = "none";
+			}
+			
+		}
+		
+	</script>
+
+  
+       
+
+	<script src="/USCRSF/Acq/USCRSGBL/AppMeasurement.js"></script>
+	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+	<script src="/USCRSF/Acq/platform/lib/prod/Jquery-touch/jquery.ui.touch-punch.min.js"></script>
+	<script src="/USCRSF/Acq/USCRSGBL/tmx.js"></script>
+	
+	
+	
+
+</head>
+
+<script data-main="/USCRSF/Acq/USCRSGBL/ACQ_main" src="/USCRSF/Acq/platform/lib/prod/requirejs/require.js"></script>
+
+<body onload="validateCookieEnable();">
+
+	<div id="cookiedisablePage"  style="display: none;">
+
+        <div id="cookieErrorContent">
+         <p class="cookiedisablepartnername"> Macy's Credit Card</p>
+            <h2>This Site Requires Cookies</h2>
+            <p class="firstItem">
+                Please update your browser privacy settings and <a onclick="window.location.reload()">reload this page</a> to continue your application.
+            </p>           
+        </div>
+    </div>
+	<div id="C3Container"></div>
+	<form></form>
+</body>
+
+</html>
+
+
+

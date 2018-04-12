@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+
+<!-- Taken from TS2 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Taken from instant app -->
+
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width">
+		<title>Citizens Bank Cash Back Plus&reg; World MasterCard&reg;</title>
+		
+		
+		<link rel="icon"  href="/CARDS_APPLY/StreamBinaryDataAction.do?code=favicon_us_EN_CTZCBP&displayType=full">
+		<link rel="shortcut icon"  href="/CARDS_APPLY/StreamBinaryDataAction.do?code=favicon_us_EN_CTZCBP&displayType=full">
+		<link rel="apple-touch-icon" href="/CARDS_APPLY/StreamBinaryDataAction.do?code=mobile_favicon_us_EN_CTZCBP&displayType=full">
+
+		<link rel="stylesheet" type="text/css" href="/CARDS_APPLY/style/iapp/default.css">
+		<link rel="stylesheet" type="text/css" href="style/iapp/layout-media-queries.css">
+		
+<style type="text/css">
+/*  
+* Branded Child Style Template  
+*/  
+  
+/* ==========================================================================  
+    Basic Styles -- override base.css  
+========================================================================== */  
+  
+body {  
+    /* background: $605314.stylesheet.body_background_color;  */
+    font-family: CitisansBook, CitisansBookExt, Helvetica, Arial, sans-serif;   
+    color: #666666;  
+  
+}  
+  
+  
+/* ==========================================================================  
+    Typography -- override base.css  
+========================================================================== */  
+  
+h1, h2, h3, h4, h5, h6 {  
+    color: #00945f;  
+    font-family: CitisansBold, CitisansBoldExt, Helvetica, Arial, sans-serif;   
+}  
+  
+  
+/* ==========================================================================  
+    Links -- override base.css  
+========================================================================== */  
+  
+a, a:visited { color: #497629;}  
+a:hover, a:focus { color: #759b24; }  
+  
+  
+/* ==========================================================================  
+    Buttons -- override base.css  
+========================================================================== */  
+  
+.button,  
+a.button,  
+button,  
+input[type="submit"],  
+input[type="reset"],  
+input[type="file"],  
+input[type="button"],  
+.file-wrapper .button {  
+    color: #ffffff;  
+    font-family: CitisansBook, CitisansBookExt, Helvetica, Arial, sans-serif;   
+}  
+  
+a.button:active,  
+button:active,  
+input[type="submit"]:active,  
+input[type="reset"]:active,  
+input[type="button"]:active,  
+input[type="file"]:active,  
+.file-wrapper:active .button {  
+    color: #ffffff;  
+}  
+  
+a.button:hover,  
+button:hover,  
+input[type="submit"]:hover,  
+input[type="reset"]:hover,  
+input[type="button"]:hover,  
+.file-wrapper:hover .button,  
+a.button:focus,  
+button:focus,  
+input[type="submit"]:focus,  
+input[type="reset"]:focus,  
+input[type="file"]:focus,  
+input[type="button"]:focus,  
+.file-wrapper:focus .button {  
+   color: #ffffff;  
+}  
+  
+  
+a.button, a.button:visited { color: #ffffff;}  
+a.button:hover, a.button:focus { color: #ffffff; }  
+  
+  
+header {  
+    border-color:#00945f;  
+}   
+  
+  
+/* Top Nav -- override layout.css */  
+.notifications .trigger span {  
+    background:#00945f;  
+}  
+  
+  
+  
+  
+/* Main Nav -- override layout.css */  
+#main-nav a {  
+    font-family: CitisansBook, CitisansBookExt, Helvetica, Arial, sans-serif;   
+}  
+#main-nav a.current {  
+    background: #00945f;  
+    border-color: #00945f;  
+}  
+  
+  
+/* Module: Make Payment -- override layout.css */  
+.module-make-payment {  
+    background: #00945f;  
+}  
+/* Accent Color -- override layout.css */  
+.notice {  
+border: 1px solid #999999;
+    background: #497629;  
+}  
+.accent-text {  
+    color: #497629;  
+}  
+.accent-text-bold {  
+    color: #497629;  
+}  
+a.accent-text, a:visited.accent-text {  
+    color: #497629;  
+}  
+#main-nav ul a.current {  
+    background: #00945f;  
+    border-color: #00945f;  
+}  
+.lt-ie8 #main-nav ul a.current .text {  
+  background: #00945f;  
+}  
+.sidebar .block {  
+    background: #00945f;  
+}  
+  
+.sidebar .block a.button {  
+    color: #ffffff;  
+}      
+.sidebar .secondary.block a.button {  
+    color: #ffffff;  
+}  
+.sidebar .block a.button,  
+.sidebar .block input[type="submit"] {  
+    color: #ffffff;  
+}   
+.module-make-payment a {  
+    color: #ffffff;  
+}  
+  
+.module-make-payment a.button {  
+    color: #ffffff;  
+}  
+  
+.pagination a.button {  
+    color: #ffffff;  
+}  
+  
+.breadcrumbs .current {
+background-color:  #497629;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from( #497629), to(rgba(51,51,51,.7)));
+background-image: -webkit-linear-gradient(top, #497629 30%, rgba(51,51,51,.7));
+background-image: -moz-linear-gradient(top, #497629 30%, rgba(51,51,51,.7));
+background-image: -ms-linear-gradient(top, #497629 30%, rgba(51,51,51,.7));
+background-image: -o-linear-gradient(top, #497629 30%, rgba(51,51,51,.7));
+}
+
+.breadcrumbs .number-check {
+background-color: #497629;
+}
+
+.breadcrumbs .current .number {
+color: #497629
+}
+  
+.selectBox-options li.selectBox-selected a {  
+    background-color: #00945f;  
+}  
+#admin-section #main-nav .has-subpages .parent.current {  
+    background-color: #00945f;  
+}  
+.lt-ie8 #admin-section #main-nav .has-subpages .parent.current,  
+.lt-ie8 #admin-section #main-nav .has-subpages .parent.current .text {  
+    background-color: #00945f;  
+}
+.radio span.checked {
+background-color: #497629;
+}
+.checker span.checked {
+background-color: #497629;
+}
+.dispute {
+color: #ff0000;
+}
+.notice-text {
+color: #ff0000;
+} 
+</style>
+
+		
+		<script language="JavaScript">if (top != self){top.location=self.location;}</script>
+		<script src="common/jquery-1.8.0.min.js"></script>
+		<script src="common/autotab.js"></script>
+		<script src="common/mbox.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="common/iapp/main.js"></script>
+		<script src="js/helper.js"></script>
+		<script type="text/javascript">
+			var tsysPageName = 'applicantInfo';
+			var inqSiteID = 'applicantInfo';
+			var applicationId = 'null';
+		</script>
+		<script type="text/javascript" src='//nexus.ensighten.com/citizensbank/prod2/Bootstrap.js'></script>
+	</head>
+	
+	<body>
+		<div id="blanket"></div>
+		<div>
+		<header> 
+			<div class="inner clearfix">
+			
+
+<!-- Taken from TS2 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Taken from instant app -->
+
+
+
+		
+			<style>
+			#brand a.image {
+				background: url('/CARDS_APPLY/StreamBinaryDataAction.do?code=banner_us_EN_CTZCBP&displayType=full') no-repeat 0 0;
+				height: 33px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				width: 314px;
+			}
+			
+			@media only screen and (max-width: 959px) {
+				#brand a.image {
+					background: url('/CARDS_APPLY/StreamBinaryDataAction.do?code=mobile_banner_us_EN_CTZCBP&displayType=full') no-repeat 0 0;
+					max-width: 110px;
+				}
+			}
+			</style>
+			
+	
+		<div id="brand">
+		
+			<a class="image" target="_blank" href='https://www.citizensbank.com/'></a>
+		
+		</div>
+
+			
+			</div>
+		</header>
+		</div>
+		<div id="application">
+			<div class="outerTable">
+				<div class="mainSectionLeft">
+					
+
+<!-- Taken from TS2 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Taken from instant app -->
+
+
+<div class="headerWCard">
+	<div class="headerCardSection">
+		<div class="cardStyle">
+			<img src='/CARDS_APPLY/StreamBinaryDataAction.do?code=card_us_EN_CTZCBP&displayType=full' border="0">
+		</div>
+		<div class="productName">
+			<h2>Citizens Bank Cash Back Plus&reg; World Mastercard&reg;</h2>
+		</div>
+	</div>
+</div>
+					
+
+<!-- Taken from TS2 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Taken from instant app -->
+
+
+
+<style>
+	.storeFields {
+		display: inline-block;
+		border: 2px solid #aaaaaa;
+		border-radius: 5px;
+		background: #fafafa;
+	}
+</style>
+ 
+<div class="cardText">
+	No Cash Back Limits, No Rotating Categories
+</div>
+
+<div class="breadcrumbs clearfix"><ol><li class="first current"><span class="number">1</span><span class="hide-on-mobile ">Your Info</span></li><li class="next"><span class="ribbon"></span><span class="number">2</span><span class="hide-on-mobile ">Employment</span></li><li class="next"><span class="ribbon"></span><span class="number">3</span><span class="hide-on-mobile ">Transfer Balances</span></li><li class="next"><span class="ribbon"></span><span class="number">4</span><span class="hide-on-mobile ">Authorized User</span></li><li class="last"><span class="ribbon"></span><span class="number">5</span><span class="hide-on-mobile ">Review &  Submit</span></li></ol></div>
+
+<div class="notice-wrapper clear:both">
+	
+</div>
+<form name="applicantInfoForm" method="post" action="/CARDS_APPLY/ProcessApplicantInfo.do" autocomplete="off"><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="9fe9f3a5e1f3a58c165c300079744318">
+	<div class="tabBody">
+		<div class="innerTable">
+			
+			<div class="formInfoText">
+				<div class="requiredText accent-text">* required field</div>
+			</div>
+			
+			
+			
+			<div class="sectionSubHeader accent-text">Your Information</div>
+			<div class="inlineCss">
+				<label class="" for="firstName"><label  class="title">First Name*</label></label>
+				<br />
+				<input type="text" name="firstName" maxlength="15" size="20" value="" id="firstName">
+			</div>
+			<div class="inlineCss">
+				<label class="" for="middleInitial"><label  class="title">M.I.</label></label>
+				<br />
+				<input type="text" name="middleInitial" maxlength="1" size="2" value="" id="middleInitial">
+			</div>
+			<div class="inlineCss">
+				<label class="" for="lastName"><label  class="title">Last Name*</label></label>
+				<br />
+				<input type="text" name="lastName" maxlength="15" size="20" value="" id="lastName">
+			</div>
+			<div class="inlineCss">
+				<label class="" for="suffix"><label  class="title">Suffix</label></label>
+				<br />
+				<div class="selectContainer suffix">
+					<select name="suffix"><option value=" "></option>
+<option value="JR">JR</option>
+<option value="SR">SR</option>
+<option value="II">II</option>
+<option value="III">III</option>
+<option value="IV">IV</option></select>
+				</div>
+			</div>
+			<br>
+			<div class="inlineCss">
+				<label class="" for="birthdate"><label  class="title">Date of Birth*</label></label>
+				<div class="popupContainer">
+					<img class="hoverArea" data-popid="birthdayPop" src="images/more-info.png" alt="More info"/>
+					<div class="popup" id="birthdayPop">
+						<div class="popupContent">Federal Law requires us to obtain your date of birth to verify your identity.  You must be 18 or older to apply.</div>
+						<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+					</div>
+				</div>
+				<br />
+				<div class="selectContainer month">
+					<select name="birthdate.month"><option value=" ">MM</option>
+<option value="01">Jan</option>
+<option value="02">Feb</option>
+<option value="03">Mar</option>
+<option value="04">Apr</option>
+<option value="05">May</option>
+<option value="06">Jun</option>
+<option value="07">Jul</option>
+<option value="08">Aug</option>
+<option value="09">Sep</option>
+<option value="10">Oct</option>
+<option value="11">Nov</option>
+<option value="12">Dec</option></select>
+				</div>
+				<div class="selectContainer day">
+					<select name="birthdate.day"><option value=" ">DD</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option></select>
+				</div>
+				
+				
+				<input type="tel" name="birthdate.year" maxlength="4" size="4" value="YYYY">
+				
+			</div>
+			<div class="inlineCss">
+				<label class="" for="ssn"><label  class="title">Social Security Number*</label></label>
+				<div class="popupContainer">
+					<img class="hoverArea" data-popid="ssnPop" src="images/more-info.png" alt="More info"/>
+					<div class="popup" id="ssnPop">
+						<div class="popupContent">This is required to verify your identity and will help us process your application faster.  Your application will be submitted through a secure channel.</div>
+						<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+					</div>
+				</div>
+				<br />
+				<input type="password" name="ssn.ssn1" maxlength="3" size="3" value="" onkeyup="autoTab(this,3,event);" id="ssn1">
+				<input type="password" name="ssn.ssn2" maxlength="2" size="2" value="" onkeyup="autoTab(this,2,event);" id="ssn2">
+				<input type="password" name="ssn.ssn3" maxlength="4" size="4" value="" id="ssn3">
+			</div>
+			<div class="inlineCss">
+				<label class="" for="mothersMaidenName"><label  class="title">Mother's Maiden Name*</label></label>
+				<div class="popupContainer">
+					<img class="hoverArea" data-popid="mmnPop" src="images/more-info.png" alt="More info"/>
+					<div class="popup" id="mmnPop">
+						<div class="popupContent">The information requested will help us make our decision and keep your new account secure. </div>
+						<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+					</div>
+				</div>
+				<br />
+				<input type="text" name="mothersMaidenName" maxlength="16" size="16" value="" id="mothersMaidenName">
+			</div>
+			<!--Enter either a Home Phone, Mobile Phone or both -->
+			<div class="inlineCss">
+				<div><b>Enter either a Home Phone, Mobile Phone or both</b></div>
+			</div>
+			<br />
+			<div class="inlineCss">
+				<label class="" for="homePhone"><label  class="title">Home Phone</label></label>
+				<!-- Remove pop up from home_phone 
+				<div class="popupContainer">
+					<img class="hoverArea" data-popid="homephonePop" src="images/more-info.png" alt="More info"/>
+					<div class="popup" id="homephonePop">
+						<div class="popupContent">By providing your telephone number, at the time you apply or anytime thereafter, you authorize us, our affiliates, agents and independent contractors, to contact you regarding account(s) you currently have or may have with us in the future and/or products or services we are providing or may provide to you in the future at such number using any means of communication, including, but not limited to calls placed to your cell, mobile or other phone using an automated dialing service, prerecorded messages or text messages. Standard text messaging and/or calling charges may apply.
+</div>
+						<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+				 </div>
+				</div>
+				-->
+				<br />
+				<input type="tel" name="homePhone.areaCode" maxlength="3" size="3" value="" onkeyup="autoTab(this,3,event);" id="homePhoneAreaCode">
+				<input type="tel" name="homePhone.phone1" maxlength="3" size="3" value="" onkeyup="autoTab(this,3,event);" id="homePhone1">
+				<input type="tel" name="homePhone.phone2" maxlength="4" size="4" value="" id="homePhone2">
+			</div>
+			<div class="inlineCss">
+				<label class="" for="mobilePhone"><label  class="title">Mobile Phone</label></label>
+				<br />
+				<input type="tel" name="mobilePhone.areaCode" maxlength="3" size="3" value="" onkeyup="autoTab(this,3,event);" id="mobilePhoneAreaCode">
+				<input type="tel" name="mobilePhone.phone1" maxlength="3" size="3" value="" onkeyup="autoTab(this,3,event);" id="mobilePhone1">
+				<input type="tel" name="mobilePhone.phone2" maxlength="4" size="4" value="" id="mobilePhone2">
+			</div>
+			<div class="inlineCss">
+				<label class="" for="email"><label  class="title">E-Mail*</label></label>
+				<div class="popupContainer">
+					<img class="hoverArea" data-popid="emailPop" src="images/more-info.png" alt="More info"/>
+					<div class="popup" id="emailPop">
+						<div class="popupContent">E-Mail Address is a required field and will be used. We will send a confirmation e-mail to the address provided and may use it to keep you informed via e-mail about products and services that you might find useful.</div>
+						<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+					</div>
+				</div>
+				<br />
+				<input type="text" name="email" maxlength="60" size="25" value="" id="email">
+			</div>
+			<br>
+			<!--Text  below Home phone -->
+			<div class="inlineCss">
+			<div>By providing your telephone number, at the time you apply or anytime thereafter, you authorize us, our affiliates, agents and independent contractors, to contact you regarding account(s) you currently have or may have with us in the future and/or products or services we are providing or may provide to you in the future at such number using any means of communication, including, but not limited to calls placed to your cell, mobile or other phone using an automated dialing service, prerecorded messages or text messages. Standard text messaging and/or calling charges may apply.</div>
+			</div>
+			<br>
+			
+				<div class="inlineCss">
+					<label class="" for="housingPayment"><label  class="title">Monthly Housing Payment</label></label>
+					<div class="popupContainer">
+						<img class="hoverArea" data-popid="housingPaymentPop" src="images/more-info.png" alt="More info"/>
+						<div class="popup" id="housingPaymentPop">
+							<div class="popupContent">The information requested will be used to process your application. </div>
+							<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+						</div>
+					</div>
+					<br />
+					$
+					<input type="tel" name="housingPayment" maxlength="5" size="11" value="" id="housingPayment">
+					.00
+				</div>
+				<br />
+				<div class="sectionSubHeader accent-text">Mailing Address</div>
+				<div class="sectionSubText accent-text"><b>If you enter a P.O. Box as your Mailing Address, you will also need to provide a Physical Address.</b></div>
+				<div class="inlineCss">
+					<label class="" for="address.addressLine1"><label  class="title">Street Address*</label></label>
+					<div class="popupContainer">
+						<img class="hoverArea" data-popid="addressPop" src="images/more-info.png" alt="More info"/>
+						<div class="popup" id="addressPop">
+							<div class="popupContent">If you enter a P.O. Box in this field, Federal law requires us to obtain and verify your residential address.</div>
+							<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+						</div>
+					</div>
+					<br />
+					<input type="text" name="address.addressLine1" maxlength="36" size="30" value="" id="address_addressLine1">
+				</div>
+				<div class="inlineCss">
+					<label class="" for="address.city"><label  class="title">City*</label></label>
+					<br />
+					<input type="text" name="address.city" maxlength="19" size="16" value="" id="address.city">
+				</div>
+				<div class="inlineCss">
+					<label class="" for="address.state"><label  class="title">State*</label></label>
+					<br />
+					<div class="selectContainer state">
+						<select name="address.state" id="addressState"><option value="" selected="selected"></option>
+<option value="AA">AA</option>
+<option value="AE">AE</option>
+<option value="AK">AK</option>
+<option value="AL">AL</option>
+<option value="AP">AP</option>
+<option value="AR">AR</option>
+<option value="AS">AS</option>
+<option value="AZ">AZ</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DC">DC</option>
+<option value="DE">DE</option>
+<option value="FL">FL</option>
+<option value="FM">FM</option>
+<option value="GA">GA</option>
+<option value="GU">GU</option>
+<option value="HI">HI</option>
+<option value="IA">IA</option>
+<option value="ID">ID</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="LA">LA</option>
+<option value="MA">MA</option>
+<option value="MD">MD</option>
+<option value="ME">ME</option>
+<option value="MH">MH</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MO">MO</option>
+<option value="MP">MP</option>
+<option value="MS">MS</option>
+<option value="MT">MT</option>
+<option value="NC">NC</option>
+<option value="ND">ND</option>
+<option value="NE">NE</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NV">NV</option>
+<option value="NY">NY</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PA">PA</option>
+<option value="PR">PR</option>
+<option value="PW">PW</option>
+<option value="RI">RI</option>
+<option value="SC">SC</option>
+<option value="SD">SD</option>
+<option value="TN">TN</option>
+<option value="TX">TX</option>
+<option value="UT">UT</option>
+<option value="VA">VA</option>
+<option value="VI">VI</option>
+<option value="VT">VT</option>
+<option value="WA">WA</option>
+<option value="WI">WI</option>
+<option value="WV">WV</option>
+<option value="WY">WY</option></select>
+					</div>
+				</div>
+				<div class="inlineCss">
+					<label class="" for="address.zip"><label  class="title">Zip Code*</label></label>
+					<br />
+					<input type="tel" name="address.zip.zip1" maxlength="5" size="5" value="" class="alignTop" id="address.zip.zip1">
+				</div>
+				<br>
+				<span id="residentialAddressFields" style="display:block;">
+					<br />
+					<div class="sectionSubHeader accent-text">Residential Address</div>
+					<div class="inlineCss">
+						<label class="" for="residentialAddress.addressLine1"><label  class="title">Street Address</label></label>
+						<div class="popupContainer">
+							<img class="hoverArea" data-popid="residentialAddressPop" src="images/more-info.png" alt="More info"/>
+							<div class="popup" id="residentialAddressPop">
+								<div class="popupContent">If you entered a P.O. Box as your Mailing Address, Federal law requires us to obtain and verify your residential address.</div>
+								<img src="/CARDS_APPLY/images/close_button_1.png" class="closePopup" alt="Close">
+							</div>
+						</div>
+						<br />
+						<input type="text" name="residentialAddress.addressLine1" maxlength="36" size="30" value="" id="residentialAddress_addressLine1">
+					</div>
+					<div class="inlineCss">
+						<label class="" for="residentialAddress.city"><label  class="title">City</label></label>
+						<br />
+						<input type="text" name="residentialAddress.city" maxlength="19" size="16" value="" id="residentialAddress_city">
+					</div>
+					<div class="inlineCss">
+						<label class="" for="residentialAddress.state"><label  class="title">State</label></label>
+						<br />
+						<div class="selectContainer state">
+							<select name="residentialAddress.state" id="residentialAddressState"><option value=" "></option>
+<option value="AA">AA</option>
+<option value="AE">AE</option>
+<option value="AK">AK</option>
+<option value="AL">AL</option>
+<option value="AP">AP</option>
+<option value="AR">AR</option>
+<option value="AS">AS</option>
+<option value="AZ">AZ</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DC">DC</option>
+<option value="DE">DE</option>
+<option value="FL">FL</option>
+<option value="FM">FM</option>
+<option value="GA">GA</option>
+<option value="GU">GU</option>
+<option value="HI">HI</option>
+<option value="IA">IA</option>
+<option value="ID">ID</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="LA">LA</option>
+<option value="MA">MA</option>
+<option value="MD">MD</option>
+<option value="ME">ME</option>
+<option value="MH">MH</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MO">MO</option>
+<option value="MP">MP</option>
+<option value="MS">MS</option>
+<option value="MT">MT</option>
+<option value="NC">NC</option>
+<option value="ND">ND</option>
+<option value="NE">NE</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NV">NV</option>
+<option value="NY">NY</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PA">PA</option>
+<option value="PR">PR</option>
+<option value="PW">PW</option>
+<option value="RI">RI</option>
+<option value="SC">SC</option>
+<option value="SD">SD</option>
+<option value="TN">TN</option>
+<option value="TX">TX</option>
+<option value="UT">UT</option>
+<option value="VA">VA</option>
+<option value="VI">VI</option>
+<option value="VT">VT</option>
+<option value="WA">WA</option>
+<option value="WI">WI</option>
+<option value="WV">WV</option>
+<option value="WY">WY</option></select>
+						</div>
+					</div>
+					<div class="inlineCss">
+						<label class="" for="residentialAddress.zip"><label  class="title">Zip Code</label></label>
+						<br />
+						<input type="text" name="residentialAddress.zip.zip1" maxlength="5" size="5" value="" class="alignTop" id="residentialAddress_zip_zip">
+					</div>
+				</span>
+			<br><br>
+			<div class="inlineCss field app_navigation">
+				<input type="submit" value="Continue">
+			</div>
+		</div>
+	</div>
+</form>
+					<script src="common/iapp/form_token.js"></script>
+				</div>
+				<div class="mainSectionRight">
+					<div class="secondary block clearfix" style="background-color:#ffffff;">
+					
+					</div>
+					<div class="secondary block clearfix" style="background-color:#ffffff;">
+					
+					</div>
+				</div>
+			</div>
+			<div class="outerTable">
+				
+
+<!-- Taken from TS2 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Taken from instant app -->
+
+
+<div id="mobileContainer">
+	<div class="campCenter">
+		
+	</div>
+</div>
+
+<div>
+	
+	
+		
+	
+	
+		
+			
+		
+	
+
+</div>
+<div class="footerText">
+	<div id="links">
+		<footer>
+			<ul class="nav clearfix">
+				<li><a target="_blank" href="FAQ.do"><u>FAQs</u></a></li>
+				<li><a target="_blank" href="https://www.citizensbank.com/account-safeguards/overview.aspx"><u>Security and Privacy and Legal</U></a></li>
+				<li><a target="_blank" href="ContactUs.do"><u>Contact Us</u></a></li>
+			</ul>
+		</footer>
+	</div>
+	<div id="legal"><br>Citizens Bank is a brand name of Citizens Bank, N. A. (NMLS ID# 433960) and Citizens Bank of Pennsylvania (NMLS ID# 522615)<br><br>Citizens Bank corporate headquarters: One Citizens Plaza, Providence, RI 02903</div>
+</div>
+			</div>
+		</div>
+		<br/>
+	</body>
+</html>

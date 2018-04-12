@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Application</title>
+    <!--[if lt IE 11]>
+    <script type="text/javascript">
+        window.location = "https://www.capitalone.com/misc/browser/block.html";
+    </script>
+    <![endif]-->
+    <script>
+        // Redirect if blocked browser
+        var ua = navigator.userAgent.toLowerCase();
+        var isChrome = /\bchrome\b/.test(ua);
+        if(!isChrome && /safari/.test(ua)
+                &&  /version\/5/.test(ua)
+                || navigator.appVersion.indexOf('MSIE 10.0') > -1
+                || !window.URL) {
+            window.location = "https://www.capitalone.com/misc/browser/block.html";
+        }
+
+		// Read all query params
+		function getQueryParams(queryString) {
+			if (!queryString) {
+				queryString = window.location.search.replace('/', '') || window.location.href.split('?')[1];
+			}
+
+			var params = {};
+			var tokens;
+			var re = /[?&]?([^=]+)=([^&]*)/g;
+
+			while (tokens = re.exec(queryString)) {
+				params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+			}
+
+			return params;
+		}
+
+		// Read hostname
+		function getPartner(partner) {
+			var hostname = window.location.hostname;
+
+			// For prod environments
+			if (hostname.indexOf('capitalonecards') > 0) {
+				partner = hostname.split('.')[0];
+			}
+
+			// For sandbox environments
+			if (hostname.indexOf('-pong') > 0) {
+				partner = hostname.split('-pong')[0];
+			}
+
+			return partner;
+		}
+
+		// Read channel
+		function getChannel(channel) {
+			var pathname = window.location.pathname.replace(/\//g, '');
+
+			if (pathname.length > 0) {
+				channel = pathname;
+			} else if (!channel) {
+				channel = 'web';
+			}
+
+			return channel;
+		}
+
+		window.setup = {
+			getQueryParams: getQueryParams,
+			getPartner: getPartner,
+			getChannel: getChannel
+		};
+    </script>
+    <link href="/css/styles.css" type="text/css" rel="stylesheet" async defer>
+</head>
+    <body ng-controller="MainController as main" ng-class='[main.modalService.bodyClass, main.config.partner, main.config.countryCode]'>
+        <initial-overlay class="initial-overlay">
+            <style>
+                .initial-overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    width: 100vw;
+                    height: 100%;
+                    height: 100vh;
+                    z-index: 5;
+                    color: #fff;
+                    background-color: #000;
+                    text-align: center;
+                    transition: all 500ms ease, opacity 1s 500ms ease;
+                }
+                .initial-overlay.ng-leave {
+                    overflow: hidden;
+                }
+                .initial-overlay.ng-leave.ng-leave-active {
+                    height: 50px;
+                    opacity: 0;
+                }
+                .initial-overlay.ng-leave.ng-leave-active .temp-spinner {
+                    opacity: 0;
+                }
+                .initial-overlay.ng-leave.ng-leave-active .temp-spinner:before {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: -10px;
+                    margin-top: -10px;
+                }
+                .temp-spinner {
+                    position: relative;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 auto;
+                    opacity: 1;
+                    transition: all 1000ms ease;
+                }
+                .temp-spinner:before {
+                    display: block;
+                    content: '';
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 150px;
+                    height: 150px;
+                    margin-left: -75px;
+                    margin-top: -75px;
+                    left: 50%;
+                    top: 50%;
+                    border-radius: 50%;
+                    border: 4px solid rgba(255, 255, 255, 0.5);
+                    border-top: 4px solid #fff;
+                    animation: rotation 0.66s infinite ease-in-out;
+                    transition: all 300ms ease;
+                }
+                .temp-spinner.special:before {
+                    border: 4px solid rgba(0, 0, 0, 0.5);
+                    border-top: 4px solid #000;
+                }
+                @keyframes rotation {
+                    from {
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            </style>
+            <!-- this will auto disappear when app bootstraps -->
+            <span class="temp-spinner"></span>
+        </initial-overlay>
+        <branding></branding>
+        <app-header></app-header>
+        <card-art-selector ng-if="main.showCardArtSelector"></card-art-selector>
+        <progress-bar ng-if="::!main.hideProgressBar"></progress-bar>
+        <section class="body" ui-view></section>
+        <exit-application ng-if="main.showExit"></exit-application>
+        <app-footer></app-footer>
+        <modal></modal>
+        <custom-modal ng-if="main.showCustomModal"></custom-modal>
+        <app-timer></app-timer>
+        <processing></processing>
+        <script src='/js/vendors.min.js' defer></script>
+        <script src='/js/app.min.js' defer></script>
+        <script ng-if="::!main.isLocal" ng-src="{{::main.scHost | trustUrl }}" defer></script>
+    </body>
+</html>

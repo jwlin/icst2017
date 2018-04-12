@@ -1,0 +1,2326 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 9]>      <html class="ie9"> <![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="shortcut icon" type='image/ico' href='//d1mjqe83qgtlvc.cloudfront.net/system/images/5373/original/favicon.ico?1370241211' />
+<link rel="icon" href='//d3r2ao2dqaz6zh.cloudfront.net/system/images/5383/original/Oakley-sunglasses.png?1370241231' />
+
+<meta name="csrf-param" content="authenticity_token"/><meta name="csrf-token" content="JTHjuzNiGztsGL+nMEeD1Svs7fA1QPqw6sa44xmasPjfIllbH7JzZ4smVGSZWAlsWg7b/T9dfNCkHyjXKg+qFw=="/><link href="/stylesheets/register_product.css?ts=1508234393&media=all" rel="stylesheet" type="text/css" media="all" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/i18n/jquery-ui-i18n.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/airbrake-js/0.5.9/client.min.js"></script><link href="/stylesheets/end_user.css" rel="stylesheet" type="text/css" media="all" /><link href="/stylesheets/jquery.jgrowl.css" rel="stylesheet" type="text/css" media="all" /><link href="/stylesheets/admin/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="all" /><script src="/javascripts/jquery.validate.js" type="text/javascript"></script><script src="/javascripts/jquery.jgrowl_minimized.js" type="text/javascript"></script><script src="/javascripts/ajaxfileupload.js" type="text/javascript"></script><script src="/javascripts/jquery.autocomplete.min.js" type="text/javascript"></script><script src="/javascripts/jquery.tools.min.js" type="text/javascript"></script><script src="/javascripts/jquery.ui.datepicker.validation.js" type="text/javascript"></script><script src="/javascripts/jcookie.js" type="text/javascript"></script><script src="/javascripts/registria_helpers.js" type="text/javascript"></script><script src="/javascripts/registria_form.js" type="text/javascript"></script><script src="/javascripts/registria_validations.js" type="text/javascript"></script><script src="/javascripts/registria_services.js" type="text/javascript"></script><script src="//d29aas0ezuolap.cloudfront.net/javascripts/registria_cart.js"></script><script src="//d29aas0ezuolap.cloudfront.net/javascripts/simplecart.js"></script><script src="/public_javascripts/page.js?page_id=6681&extra_info=&locale=en&ts=1508234285" type="text/javascript"></script>
+<script type="text/javascript">
+  $.extraInfo = "";
+  $.queryParams = {"country":"US","locale":"en","controller":"pages","action":"show","page_name":"register_product"};
+  $.returnTo = "";
+  $.IPInfo = {"country_code":"US","country_code3":"USA","country_name":"United States","region":"CA","region_name":"California","city":"Newport Beach","postal_code":"92658","latitude":33.618900299072266,"longitude":-117.92900085449219,"dma_code":803,"area_code":949};
+  $.currencyCode = "USD";
+  $.currencyUnit = "$";
+  $.availableLocales = ['ca','cn','cs','cs-cz','da','de','de-at','de-ch','de-de','en','en-au','en-ca','en-ch','en-dk','en-gb','en-id','en-ie','en-my','en-nl','en-no','en-nz','en-pl','en-pt','en-se','en-th','en-uk','en-us','en-vn','en_GB','es','es-es','es-us','fi','fr','fr-be','fr-ca','fr-fr','fr-lu','hk','hu','hu-hu','id','in','it','it-it','ja','ja-jp','jp','ko','kr','my','nl','nl-be','nl-nl','no','ph','pl','pt','pt-pt','ro','ro-ro','ru','sg','sv','th','tw','uk','vn','zh','zh-cn','zh-tw'];
+  $.currentLocale = "en";
+  $.secure = true;
+  $.gender = null;
+  $.cim = false;
+  $.airbrake =  new airbrakeJs.Client({projectId: 134633, projectKey: '6cf15375c6ff1a244ffd1281c8221df7'});
+  $.airbrake.addFilter(function(notice) {
+    notice.context.environment = 'production';
+    if (false) {
+      return null;
+    }
+    return notice;
+  });
+
+  function Translator(){
+    var self = this;
+
+    self.items = {};
+    self.items["Please wait"] = "Please wait";self.items["country_prompt"] = "Select Your Country";self.items["product_prompt"] = "Type of Product Purchased";self.items["product_family_prompt"] = "Type of Product Purchased";self.items["product_category_prompt"] = "product_category_prompt";self.items["state_prompt"] = "State";self.items["Added to cart"] = "Added to cart";self.items["Error"] = "Error";self.items["Name"] = "Name";self.items["Quantity"] = "Quantity";self.items["Total"] = "Total";self.items["Remove"] = "Remove";self.items["Your Cart is empty"] = "Your Cart is empty";
+  };
+
+  Translator.prototype.t =
+  function(key) {
+    var self = this;
+    return self.items[key];
+  };
+
+  $.translator = new Translator();
+
+  
+</script>
+<title>Product Registration</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="/system/global/fancyzoom.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(window).bind("load", function() {
+ if("") {
+  $('[data-dk-dropdown-value=""]').trigger('click');
+ }
+});
+$.proceed = true;
+$("#next_button").live("click", function(e){
+// enumerate all prod skus 
+$("[name='registrations[][sku]']").each(function(){
+if(!$(this).data("confirmed"))
+$.proceed = false;
+$('form#registria_form').valid();
+$('#next_button').css({"background" : "#D7D7D7", "color" : "#fff", "cursor" : "pointer", "border" : "1px solid #B4B4B4"});
+$('#next_button').qtip({style: {classes: 'next_button_qtip'}, hide: {fixed: true}, position: {my: 'bottom center', at: 'top center',  target: $('#next_button')}, content: 'Please complete all fields' });
+})
+
+if (!$.proceed) {
+e.preventDefault();
+e.stopImmediatePropagation();
+}
+});
+
+function getInternetExplorerVersion(){
+var rv = -1;
+
+if (navigator.appName == 'Microsoft Internet Explorer') {
+var ua = navigator.userAgent;
+var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+if (re.exec(ua) != null) rv = parseFloat( RegExp.$1 );
+}
+return rv;
+}
+
+$( document ).ready(function() {
+$('#proof_of_purchase').rules('remove', 'required');
+if (getInternetExplorerVersion() == "-1") {
+$('div#ie-upload').remove();
+if (!!window.FileReader && Modernizr.draganddrop) {
+$('#fancy-upload').remove();
+} else if (Modernizr.draganddrop) {
+$('#fancy-upload').remove();
+}
+} else {
+$('div#fancy-upload').remove();
+$('#dnd-upload').remove();
+$('#proof_of_purchase').css({ "opacity": "10", "border": "0px solid #000", "height": "20px", "margin-left": "130px", "margin-top": "20px" });
+}
+/* For to add zipcode validation */
+if ($.queryParams["country"] == 'US' || $.queryParams["country"] == 'us') {
+ $('#zip').rules('add', {
+   regex: "^\\d{5}$",
+   required: true,
+   messages: {
+   regex: 'Zip should be 5 digits',
+   required: 'Required'
+   }
+ });
+}
+});
+</script>
+</head>
+<body>
+<style>
+</style>
+<header id="header">
+  <div class="con row">
+    
+    
+      
+    
+    
+    <div id="identity_bevel" class="small_span_1 large_span_2 col">
+      
+        <a href="http://www.oakley.com">Oakley</a>
+      
+    </div>
+    <nav id="nav" class="large_span_18 col large">
+      <ul id="nav_global" class="clearfix large_span_12 col">
+        
+      </ul><!-- end #nav_global -->
+      <!-- Naviagation menus changed only US -->
+     
+                <ul id="nav_primary" class="clearfix en large_span_8 col">
+        <li class="nav men">
+          <a href="http://oakley.com/en/mens/category/m" class="navlink">Men</a>
+        </li>
+        <li class="nav women">
+          <a href="http://oakley.com/en/womens/category/w" class="navlink">Women</a>
+        </li>
+        <li class="nav custom">
+          <a href="http://oakley.com/en/custom/category/c" class="navlink">Custom</a>
+        </li>
+        <li class="nav store-locator">
+          <a href="http://oakley.com/en/store-finder" class="navlink">Store Locator</a>
+        </li>
+        <li class="nav technology">
+          <a href="http://oakley.com/en/technology/eyewear" class="navlink">Technology</a>
+        </li>
+      </ul><!-- end #nav_primary -->
+     
+    </nav>
+    <nav class="mobile small_span_5 col">
+      <div class="small_span_5 col" style="text-align: center; ">
+        <form action="http://oakley.com/en/search" method="get">
+          <div>
+            <input id="search_term_input" style="width: 60%; border-radius: 2px; background: #666; color: #fff; font-size: 0.70588em; padding: 0.7em; " type="text" name="Ntt" class="text watermark" value='Product Search...' />
+            <input type="submit" class="button" style="width: 20px; margin: 0; height: 34px; padding-top: 2px; " value="&rarr;" />
+          </div>
+        </form>
+      </div>
+      <div class="small_span_1 col">
+        <a href="https://www.oakley.com/cart/"><img class="" alt="" src="//d29aas0ezuolap.cloudfront.net/system/images/15372/original/cart.png?1385726164" /></a>
+      </div>
+    </nav>
+  </div><!-- end .con -->
+</header><!-- end #header -->
+
+<div class="breadcrumb head row">
+<div class="con small_span_6 large_span_20 col">
+<p class="small_span_3 large_span_20 col"><a href="/" class="bc-home"><span class="bc-home large_span_1 col">Home</span></a><span class="bc bc-current large_span_3 col">Product Registration</span></p>
+</div>
+</div>
+
+<!--[if lte IE 8]>
+<div id="ie6_alert_bar_container">
+<div id="ie6_alert_bar_content">
+<p>This site works best with Internet Explorer 9 and above. <a href="http://www.oakley.com/browser-upgrade">Please upgrade your browser</a></p>
+</div>
+</div>
+<![endif]-->
+
+<main id="main">
+<span id="registria_form_placeholder">
+<div id="country_collector" title='Product Registration' style="display: none; ">
+<ul>
+<li class="listed-countries">Product Registration available only in listed countries.
+</li>
+<li>
+<select class='registria_field ' id='country' name='user[address_attributes][country]' title=''>
+  <option value=''></option>
+  <option class='' value='United States'>United States</option>
+  <option class='' value='Australia'>Australia</option>
+  <option class='' value='Austria'>Austria</option>
+  <option class='' value='Belgium'>Belgium</option>
+  <option class='' value='Canada'>Canada</option>
+  <option class='' value='Denmark'>Denmark</option>
+  <option class='' value='France'>France</option>
+  <option class='' value='Germany'>Germany</option>
+  <option class='' value='Ireland'>Ireland</option>
+  <option class='' value='Italy'>Italy</option>
+  <option class='' value='Japan'>Japan</option>
+  <option class='' value='Luxembourg'>Luxembourg</option>
+  <option class='' value='New Zealand'>New Zealand</option>
+  <option class='' value='Norway'>Norway</option>
+  <option class='' value='Pacific Islands'>Pacific Islands</option>
+  <option class='' value='Poland'>Poland</option>
+  <option class='' value='Portugal'>Portugal</option>
+  <option class='' value='Spain'>Spain</option>
+  <option class='' value='Sweden'>Sweden</option>
+  <option class='' value='Switzerland'>Switzerland</option>
+  <option class='' value='United Kingdom'>United Kingdom</option>
+</select>
+
+</li>
+<li>
+<select class="locale_selector " id="locale_selector" title="">
+  <option value="" selected="selected">Choose Your Language</option>
+</select>
+</li>
+<li class="button">Enter</li>
+</ul>
+</div>
+<section class="banner row">
+<div class="small_span_6 large_span_12 col header_con">
+<h1>Product Registration</h1>
+</div>
+<p class="locale-change-text mobile small_span_6 large_hide col"><span class="country">United States</span> &ndash; <span class="lang">English</span> | <a href="#" class="change-locale">Change</a></p>
+<div class="reg-benefits small_span_6 large_span_8 col">
+<div class="reg-benefits-con">
+<h3>Registration has its benefits</h3>
+
+
+  
+
+<ul>
+  
+  <li>
+    <span>
+      Confirm your Oakley product is genuine. 
+      
+        Report a fake.
+      
+    </span>
+  </li>
+  <li>
+    <span>
+      Sign up for Oakley product updates, athlete news, and exclusive deals.
+    </span>
+  </li>
+</ul>
+
+<h3>WHAT CAN I REGISTER?</h3>
+<ul>
+  <li>Sunglasses and Goggles</li>
+  
+    <li>Prescription Eyewear</li>
+    <li class="no-disc">(Excludes Standard Issue)</li>
+  
+</ul>
+</div>
+</div>
+</section>
+<div class="clear"></div>
+
+<section class="form_errors row">
+<div class='registria form_errors' style='display:none'></div>
+
+</section>
+
+
+<section class="step-1 row">
+<h2><span class="section_bold">STEP 1</span> <span class="section_light">- Personal Info</span></h2>
+<p class="locale-change-text large small_hide large_span_20">
+<span class="country">United States</span> &ndash;
+<span class="lang">English</span> | <a href="/register_product" class="change-locale">Change</a>
+</p>
+
+<div class="small_span_6 div_offset_large_span_10 div_offset_right col">
+<ul class="row">
+  <li class="small_span_6 large_span_20 col">
+    <div class="small_span_3 large_span_10 col field-container field-container-separator">
+      <span class="field-span">
+        <input class="registria_field " id="first_name" name="user[first_name]" title="" type="text" value="" placeholder='First Name' tabindex="1">
+      </span>
+    </div>
+    <div class="small_span_3 large_span_10 col field-container-right">
+      <span class="field-span">
+        <input class="registria_field " id="last_name" name="user[last_name]" title="" type="text" value="" placeholder='Last Name' tabindex="2">
+      </span>
+    </div>
+  </li>
+  <li class="small_span_6 large_span_20 col">
+    <div class="small_span_4 large_span_16 col field-container field-container-separator">
+      <span class="field-span">
+        <input class="registria_field " id="address1" name="user[address_attributes][address1]" title="" type="text" value="" placeholder='Street Address' tabindex="3">
+      </span>
+    </div>
+    <div class="small_span_2 large_span_4 col field-container-right">
+      <span class="field-span">
+        <input class="registria_field " id="address2" name="user[address_attributes][address2]" title="" type="text" value="" placeholder='Apt/Ste' tabindex="4">
+      </span>
+    </div>
+  </li>
+  <li class="small_span_6 large_span_20 col">
+    <div class="small_span_2 large_span_9 col field-container field-container-separator">
+      <span class="field-span">
+        <input class="registria_field " id="city" name="user[address_attributes][city]" title="" type="text" value="" placeholder='City' tabindex="5">
+      </span>
+    </div>
+    <div class="small_span_2 large_span_7 col field-container field-container-separator" style="padding-left: 0.35294em; ">
+      <span class="field-span international">
+        <input class="registria_field " id="international_state" name="user[address_attributes][international_state]" title="" type="text" value="" placeholder='State' tabindex="7">
+      </span>
+      <span class="state_lov field-span">
+        <select class='registria_field ' id='state' name='user[address_attributes][state]' title=''>
+  <option value=''></option>
+  <option class='sub_Canada' value='Alberta'>Alberta</option>
+  <option class='sub_United_States' value='Alabama'>Alabama</option>
+  <option class='sub_Australia' value='Australian Capital Territory'>Australian Capital Territory</option>
+  <option class='sub_New_Zealand' value='New Zealand North Island'>New Zealand North Island</option>
+  <option class='sub_United_Kingdom' value='Aberdeen City'>Aberdeen City</option>
+  <option class='sub_United_Kingdom' value='Aberdeenshire'>Aberdeenshire</option>
+  <option class='sub_Canada' value='British Columbia'>British Columbia</option>
+  <option class='sub_United_States' value='Alaska'>Alaska</option>
+  <option class='sub_Australia' value='New South Wales'>New South Wales</option>
+  <option class='sub_New_Zealand' value='New Zealand South Island'>New Zealand South Island</option>
+  <option class='sub_United_Kingdom' value='Angus'>Angus</option>
+  <option class='sub_Canada' value='Manitoba'>Manitoba</option>
+  <option class='sub_United_States' value='American Samoa'>American Samoa</option>
+  <option class='sub_Australia' value='Northern Territory'>Northern Territory</option>
+  <option class='sub_United_Kingdom' value='Antrim'>Antrim</option>
+  <option class='sub_Australia' value='Queensland'>Queensland</option>
+  <option class='sub_Canada' value='New Brunswick'>New Brunswick</option>
+  <option class='sub_United_States' value='Arizona'>Arizona</option>
+  <option class='sub_United_Kingdom' value='Ards'>Ards</option>
+  <option class='sub_Australia' value='South Australia'>South Australia</option>
+  <option class='sub_Canada' value='Newfoundland and Labrador'>Newfoundland and Labrador</option>
+  <option class='sub_United_States' value='Arkansas'>Arkansas</option>
+  <option class='sub_United_Kingdom' value='Argyll and Bute'>Argyll and Bute</option>
+  <option class='sub_Australia' value='Tasmania'>Tasmania</option>
+  <option class='sub_Canada' value='Northwest Territories'>Northwest Territories</option>
+  <option class='sub_United_States' value='California'>California</option>
+  <option class='sub_United_Kingdom' value='Armagh'>Armagh</option>
+  <option class='sub_Australia' value='Victoria'>Victoria</option>
+  <option class='sub_Canada' value='Nova Scotia'>Nova Scotia</option>
+  <option class='sub_United_States' value='Colorado'>Colorado</option>
+  <option class='sub_United_Kingdom' value='Ballymena'>Ballymena</option>
+  <option class='sub_Australia' value='Western Australia'>Western Australia</option>
+  <option class='sub_Canada' value='Nunavut'>Nunavut</option>
+  <option class='sub_United_States' value='Connecticut'>Connecticut</option>
+  <option class='sub_Canada' value='Ontario'>Ontario</option>
+  <option class='sub_United_States' value='Delaware'>Delaware</option>
+  <option class='sub_United_Kingdom' value='Ballymoney'>Ballymoney</option>
+  <option class='sub_United_Kingdom' value='Banbridge'>Banbridge</option>
+  <option class='sub_Canada' value='Prince Edward Island'>Prince Edward Island</option>
+  <option class='sub_United_States' value='District of Columbia'>District of Columbia</option>
+  <option class='sub_United_Kingdom' value='Barking and Dagenham'>Barking and Dagenham</option>
+  <option class='sub_Canada' value='Quebec'>Quebec</option>
+  <option class='sub_United_States' value='Florida'>Florida</option>
+  <option class='sub_United_Kingdom' value='Barnet'>Barnet</option>
+  <option class='sub_Canada' value='Saskatchewan'>Saskatchewan</option>
+  <option class='sub_United_States' value='Georgia'>Georgia</option>
+  <option class='sub_United_Kingdom' value='Barnsley'>Barnsley</option>
+  <option class='sub_Canada' value='Yukon Territory'>Yukon Territory</option>
+  <option class='sub_United_States' value='Guam'>Guam</option>
+  <option class='sub_United_Kingdom' value='Bath and North East Somerset'>Bath and North East Somerset</option>
+  <option class='sub_United_States' value='Hawaii'>Hawaii</option>
+  <option class='sub_United_Kingdom' value='Bedfordshire'>Bedfordshire</option>
+  <option class='sub_United_States' value='Idaho'>Idaho</option>
+  <option class='sub_United_Kingdom' value='Belfast'>Belfast</option>
+  <option class='sub_United_States' value='Illinois'>Illinois</option>
+  <option class='sub_United_States' value='Indiana'>Indiana</option>
+  <option class='sub_United_Kingdom' value='Bexley'>Bexley</option>
+  <option class='sub_United_Kingdom' value='Birmingham'>Birmingham</option>
+  <option class='sub_United_States' value='Iowa'>Iowa</option>
+  <option class='sub_United_Kingdom' value='Blackburn with Darwen'>Blackburn with Darwen</option>
+  <option class='sub_United_States' value='Kansas'>Kansas</option>
+  <option class='sub_United_Kingdom' value='Blackpool'>Blackpool</option>
+  <option class='sub_United_States' value='Kentucky'>Kentucky</option>
+  <option class='sub_United_Kingdom' value='Blaenau Gwent'>Blaenau Gwent</option>
+  <option class='sub_United_States' value='Louisiana'>Louisiana</option>
+  <option class='sub_United_Kingdom' value='Bolton'>Bolton</option>
+  <option class='sub_United_States' value='Maine'>Maine</option>
+  <option class='sub_United_Kingdom' value='Bournemouth'>Bournemouth</option>
+  <option class='sub_United_States' value='Maryland'>Maryland</option>
+  <option class='sub_United_Kingdom' value='Bracknell Forest'>Bracknell Forest</option>
+  <option class='sub_United_States' value='Massachusetts'>Massachusetts</option>
+  <option class='sub_United_States' value='Michigan'>Michigan</option>
+  <option class='sub_United_Kingdom' value='Bradford'>Bradford</option>
+  <option class='sub_United_Kingdom' value='Brent'>Brent</option>
+  <option class='sub_United_States' value='Minnesota'>Minnesota</option>
+  <option class='sub_United_Kingdom' value='Bridgend'>Bridgend</option>
+  <option class='sub_United_States' value='Mississippi'>Mississippi</option>
+  <option class='sub_United_Kingdom' value='Brighton and Hove'>Brighton and Hove</option>
+  <option class='sub_United_States' value='Missouri'>Missouri</option>
+  <option class='sub_United_Kingdom' value='Bristol, City of'>Bristol, City of</option>
+  <option class='sub_United_States' value='Montana'>Montana</option>
+  <option class='sub_United_Kingdom' value='Bromley'>Bromley</option>
+  <option class='sub_United_States' value='Nebraska'>Nebraska</option>
+  <option class='sub_United_Kingdom' value='Buckinghamshire'>Buckinghamshire</option>
+  <option class='sub_United_States' value='Nevada'>Nevada</option>
+  <option class='sub_United_Kingdom' value='Bury'>Bury</option>
+  <option class='sub_United_States' value='New Hampshire'>New Hampshire</option>
+  <option class='sub_United_States' value='New Jersey'>New Jersey</option>
+  <option class='sub_United_Kingdom' value='Caerphilly'>Caerphilly</option>
+  <option class='sub_United_Kingdom' value='Calderdale'>Calderdale</option>
+  <option class='sub_United_States' value='New Mexico'>New Mexico</option>
+  <option class='sub_United_Kingdom' value='Cambridgeshire'>Cambridgeshire</option>
+  <option class='sub_United_States' value='New York'>New York</option>
+  <option class='sub_United_Kingdom' value='Camden'>Camden</option>
+  <option class='sub_United_States' value='North Carolina'>North Carolina</option>
+  <option class='sub_United_Kingdom' value='Cardiff'>Cardiff</option>
+  <option class='sub_United_States' value='North Dakota'>North Dakota</option>
+  <option class='sub_United_Kingdom' value='Carmarthenshire'>Carmarthenshire</option>
+  <option class='sub_United_States' value='Northern Mariana Islands'>Northern Mariana Islands</option>
+  <option class='sub_United_Kingdom' value='Carrickfergus'>Carrickfergus</option>
+  <option class='sub_United_States' value='Ohio'>Ohio</option>
+  <option class='sub_United_Kingdom' value='Castlereagh'>Castlereagh</option>
+  <option class='sub_United_States' value='Oklahoma'>Oklahoma</option>
+  <option class='sub_United_States' value='Oregon'>Oregon</option>
+  <option class='sub_United_Kingdom' value='Ceredigion'>Ceredigion</option>
+  <option class='sub_United_Kingdom' value='Cheshire'>Cheshire</option>
+  <option class='sub_United_States' value='Pennsylvania'>Pennsylvania</option>
+  <option class='sub_United_Kingdom' value='Clackmannanshire'>Clackmannanshire</option>
+  <option class='sub_United_States' value='Puerto Rico'>Puerto Rico</option>
+  <option class='sub_United_Kingdom' value='Coleraine'>Coleraine</option>
+  <option class='sub_United_States' value='Rhode Island'>Rhode Island</option>
+  <option class='sub_United_Kingdom' value='Conwy'>Conwy</option>
+  <option class='sub_United_States' value='South Carolina'>South Carolina</option>
+  <option class='sub_United_Kingdom' value='Cookstown'>Cookstown</option>
+  <option class='sub_United_States' value='South Dakota'>South Dakota</option>
+  <option class='sub_United_Kingdom' value='Cornwall'>Cornwall</option>
+  <option class='sub_United_States' value='Tennessee'>Tennessee</option>
+  <option class='sub_United_Kingdom' value='Coventry'>Coventry</option>
+  <option class='sub_United_States' value='Texas'>Texas</option>
+  <option class='sub_United_States' value='United States Minor Outlying Islands'>United States Minor Outlying Islands</option>
+  <option class='sub_United_Kingdom' value='Craigavon'>Craigavon</option>
+  <option class='sub_United_Kingdom' value='Croydon'>Croydon</option>
+  <option class='sub_United_States' value='Utah'>Utah</option>
+  <option class='sub_United_Kingdom' value='Cumbria'>Cumbria</option>
+  <option class='sub_United_States' value='Vermont'>Vermont</option>
+  <option class='sub_United_Kingdom' value='Darlington'>Darlington</option>
+  <option class='sub_United_States' value='Virgin Islands, U.S.'>Virgin Islands, U.S.</option>
+  <option class='sub_United_Kingdom' value='Denbighshire'>Denbighshire</option>
+  <option class='sub_United_States' value='Virginia'>Virginia</option>
+  <option class='sub_United_Kingdom' value='Derby'>Derby</option>
+  <option class='sub_United_States' value='Washington'>Washington</option>
+  <option class='sub_United_Kingdom' value='Derbyshire'>Derbyshire</option>
+  <option class='sub_United_States' value='West Virginia'>West Virginia</option>
+  <option class='sub_United_Kingdom' value='Derry'>Derry</option>
+  <option class='sub_United_States' value='Wisconsin'>Wisconsin</option>
+  <option class='sub_United_States' value='Wyoming'>Wyoming</option>
+  <option class='sub_United_Kingdom' value='Devon'>Devon</option>
+  <option class='sub_United_Kingdom' value='Doncaster'>Doncaster</option>
+  <option class='sub_United_Kingdom' value='Dorset'>Dorset</option>
+  <option class='sub_United_Kingdom' value='Down'>Down</option>
+  <option class='sub_United_Kingdom' value='Dudley'>Dudley</option>
+  <option class='sub_United_Kingdom' value='Dumfries and Galloway'>Dumfries and Galloway</option>
+  <option class='sub_United_Kingdom' value='Dundee City'>Dundee City</option>
+  <option class='sub_United_Kingdom' value='Dungannon'>Dungannon</option>
+  <option class='sub_United_Kingdom' value='Durham'>Durham</option>
+  <option class='sub_United_Kingdom' value='Ealing'>Ealing</option>
+  <option class='sub_United_Kingdom' value='East Ayrshire'>East Ayrshire</option>
+  <option class='sub_United_Kingdom' value='East Dunbartonshire'>East Dunbartonshire</option>
+  <option class='sub_United_Kingdom' value='East Lothian'>East Lothian</option>
+  <option class='sub_United_Kingdom' value='East Renfrewshire'>East Renfrewshire</option>
+  <option class='sub_United_Kingdom' value='East Riding of Yorkshire'>East Riding of Yorkshire</option>
+  <option class='sub_United_Kingdom' value='East Sussex'>East Sussex</option>
+  <option class='sub_United_Kingdom' value='Edinburgh, City of'>Edinburgh, City of</option>
+  <option class='sub_United_Kingdom' value='Eilean Siar'>Eilean Siar</option>
+  <option class='sub_United_Kingdom' value='Enfield'>Enfield</option>
+  <option class='sub_United_Kingdom' value='Essex'>Essex</option>
+  <option class='sub_United_Kingdom' value='Falkirk'>Falkirk</option>
+  <option class='sub_United_Kingdom' value='Fermanagh'>Fermanagh</option>
+  <option class='sub_United_Kingdom' value='Fife'>Fife</option>
+  <option class='sub_United_Kingdom' value='Flintshire'>Flintshire</option>
+  <option class='sub_United_Kingdom' value='Gateshead'>Gateshead</option>
+  <option class='sub_United_Kingdom' value='Glasgow City'>Glasgow City</option>
+  <option class='sub_United_Kingdom' value='Gloucestershire'>Gloucestershire</option>
+  <option class='sub_United_Kingdom' value='Greenwich'>Greenwich</option>
+  <option class='sub_United_Kingdom' value='Gwynedd'>Gwynedd</option>
+  <option class='sub_United_Kingdom' value='Hackney'>Hackney</option>
+  <option class='sub_United_Kingdom' value='Halton'>Halton</option>
+  <option class='sub_United_Kingdom' value='Hammersmith and Fulham'>Hammersmith and Fulham</option>
+  <option class='sub_United_Kingdom' value='Hampshire'>Hampshire</option>
+  <option class='sub_United_Kingdom' value='Haringey'>Haringey</option>
+  <option class='sub_United_Kingdom' value='Harrow'>Harrow</option>
+  <option class='sub_United_Kingdom' value='Hartlepool'>Hartlepool</option>
+  <option class='sub_United_Kingdom' value='Havering'>Havering</option>
+  <option class='sub_United_Kingdom' value='Herefordshire, County of'>Herefordshire, County of</option>
+  <option class='sub_United_Kingdom' value='Hertfordshire'>Hertfordshire</option>
+  <option class='sub_United_Kingdom' value='Highland'>Highland</option>
+  <option class='sub_United_Kingdom' value='Hillingdon'>Hillingdon</option>
+  <option class='sub_United_Kingdom' value='Hounslow'>Hounslow</option>
+  <option class='sub_United_Kingdom' value='Inverclyde'>Inverclyde</option>
+  <option class='sub_United_Kingdom' value='Isle of Anglesey'>Isle of Anglesey</option>
+  <option class='sub_United_Kingdom' value='Isle of Wight'>Isle of Wight</option>
+  <option class='sub_United_Kingdom' value='Isles of Scilly'>Isles of Scilly</option>
+  <option class='sub_United_Kingdom' value='Islington'>Islington</option>
+  <option class='sub_United_Kingdom' value='Kensington and Chelsea'>Kensington and Chelsea</option>
+  <option class='sub_United_Kingdom' value='Kent'>Kent</option>
+  <option class='sub_United_Kingdom' value='Kingston upon Hull, City of'>Kingston upon Hull, City of</option>
+  <option class='sub_United_Kingdom' value='Kingston upon Thames'>Kingston upon Thames</option>
+  <option class='sub_United_Kingdom' value='Kirklees'>Kirklees</option>
+  <option class='sub_United_Kingdom' value='Knowsley'>Knowsley</option>
+  <option class='sub_United_Kingdom' value='Lambeth'>Lambeth</option>
+  <option class='sub_United_Kingdom' value='Lancashire'>Lancashire</option>
+  <option class='sub_United_Kingdom' value='Larne'>Larne</option>
+  <option class='sub_United_Kingdom' value='Leeds'>Leeds</option>
+  <option class='sub_United_Kingdom' value='Leicester'>Leicester</option>
+  <option class='sub_United_Kingdom' value='Leicestershire'>Leicestershire</option>
+  <option class='sub_United_Kingdom' value='Lewisham'>Lewisham</option>
+  <option class='sub_United_Kingdom' value='Limavady'>Limavady</option>
+  <option class='sub_United_Kingdom' value='Lincolnshire'>Lincolnshire</option>
+  <option class='sub_United_Kingdom' value='Lisburn'>Lisburn</option>
+  <option class='sub_United_Kingdom' value='Liverpool'>Liverpool</option>
+  <option class='sub_United_Kingdom' value='London, City of'>London, City of</option>
+  <option class='sub_United_Kingdom' value='Luton'>Luton</option>
+  <option class='sub_United_Kingdom' value='Magherafelt'>Magherafelt</option>
+  <option class='sub_United_Kingdom' value='Manchester'>Manchester</option>
+  <option class='sub_United_Kingdom' value='Medway'>Medway</option>
+  <option class='sub_United_Kingdom' value='Merthyr Tydfil'>Merthyr Tydfil</option>
+  <option class='sub_United_Kingdom' value='Merton'>Merton</option>
+  <option class='sub_United_Kingdom' value='Middlesbrough'>Middlesbrough</option>
+  <option class='sub_United_Kingdom' value='Midlothian'>Midlothian</option>
+  <option class='sub_United_Kingdom' value='Milton Keynes'>Milton Keynes</option>
+  <option class='sub_United_Kingdom' value='Monmouthshire'>Monmouthshire</option>
+  <option class='sub_United_Kingdom' value='Moray'>Moray</option>
+  <option class='sub_United_Kingdom' value='Moyle'>Moyle</option>
+  <option class='sub_United_Kingdom' value='Neath Port Talbot'>Neath Port Talbot</option>
+  <option class='sub_United_Kingdom' value='Newcastle upon Tyne'>Newcastle upon Tyne</option>
+  <option class='sub_United_Kingdom' value='Newham'>Newham</option>
+  <option class='sub_United_Kingdom' value='Newport'>Newport</option>
+  <option class='sub_United_Kingdom' value='Newry and Mourne'>Newry and Mourne</option>
+  <option class='sub_United_Kingdom' value='Newtownabbey'>Newtownabbey</option>
+  <option class='sub_United_Kingdom' value='Norfolk'>Norfolk</option>
+  <option class='sub_United_Kingdom' value='North Ayrshire'>North Ayrshire</option>
+  <option class='sub_United_Kingdom' value='North Down'>North Down</option>
+  <option class='sub_United_Kingdom' value='North East Lincolnshire'>North East Lincolnshire</option>
+  <option class='sub_United_Kingdom' value='North Lanarkshire'>North Lanarkshire</option>
+  <option class='sub_United_Kingdom' value='North Lincolnshire'>North Lincolnshire</option>
+  <option class='sub_United_Kingdom' value='North Somerset'>North Somerset</option>
+  <option class='sub_United_Kingdom' value='North Tyneside'>North Tyneside</option>
+  <option class='sub_United_Kingdom' value='North Yorkshire'>North Yorkshire</option>
+  <option class='sub_United_Kingdom' value='Northamptonshire'>Northamptonshire</option>
+  <option class='sub_United_Kingdom' value='Northumberland'>Northumberland</option>
+  <option class='sub_United_Kingdom' value='Nottingham'>Nottingham</option>
+  <option class='sub_United_Kingdom' value='Nottinghamshire'>Nottinghamshire</option>
+  <option class='sub_United_Kingdom' value='Oldham'>Oldham</option>
+  <option class='sub_United_Kingdom' value='Omagh'>Omagh</option>
+  <option class='sub_United_Kingdom' value='Orkney Islands'>Orkney Islands</option>
+  <option class='sub_United_Kingdom' value='Oxfordshire'>Oxfordshire</option>
+  <option class='sub_United_Kingdom' value='Pembrokeshire'>Pembrokeshire</option>
+  <option class='sub_United_Kingdom' value='Perth and Kinross'>Perth and Kinross</option>
+  <option class='sub_United_Kingdom' value='Peterborough'>Peterborough</option>
+  <option class='sub_United_Kingdom' value='Plymouth'>Plymouth</option>
+  <option class='sub_United_Kingdom' value='Poole'>Poole</option>
+  <option class='sub_United_Kingdom' value='Portsmouth'>Portsmouth</option>
+  <option class='sub_United_Kingdom' value='Powys'>Powys</option>
+  <option class='sub_United_Kingdom' value='Reading'>Reading</option>
+  <option class='sub_United_Kingdom' value='Redbridge'>Redbridge</option>
+  <option class='sub_United_Kingdom' value='Redcar and Cleveland'>Redcar and Cleveland</option>
+  <option class='sub_United_Kingdom' value='Renfrewshire'>Renfrewshire</option>
+  <option class='sub_United_Kingdom' value='Rhondda, Cynon, Taff'>Rhondda, Cynon, Taff</option>
+  <option class='sub_United_Kingdom' value='Richmond upon Thames'>Richmond upon Thames</option>
+  <option class='sub_United_Kingdom' value='Rochdale'>Rochdale</option>
+  <option class='sub_United_Kingdom' value='Rotherham'>Rotherham</option>
+  <option class='sub_United_Kingdom' value='Rutland'>Rutland</option>
+  <option class='sub_United_Kingdom' value='Salford'>Salford</option>
+  <option class='sub_United_Kingdom' value='Sandwell'>Sandwell</option>
+  <option class='sub_United_Kingdom' value='Scottish Borders, The'>Scottish Borders, The</option>
+  <option class='sub_United_Kingdom' value='Sefton'>Sefton</option>
+  <option class='sub_United_Kingdom' value='Sheffield'>Sheffield</option>
+  <option class='sub_United_Kingdom' value='Shetland Islands'>Shetland Islands</option>
+  <option class='sub_United_Kingdom' value='Shropshire'>Shropshire</option>
+  <option class='sub_United_Kingdom' value='Slough'>Slough</option>
+  <option class='sub_United_Kingdom' value='Solihull'>Solihull</option>
+  <option class='sub_United_Kingdom' value='Somerset'>Somerset</option>
+  <option class='sub_United_Kingdom' value='South Ayrshire'>South Ayrshire</option>
+  <option class='sub_United_Kingdom' value='South Gloucestershire'>South Gloucestershire</option>
+  <option class='sub_United_Kingdom' value='South Lanarkshire'>South Lanarkshire</option>
+  <option class='sub_United_Kingdom' value='South Tyneside'>South Tyneside</option>
+  <option class='sub_United_Kingdom' value='Southampton'>Southampton</option>
+  <option class='sub_United_Kingdom' value='Southend-on-Sea'>Southend-on-Sea</option>
+  <option class='sub_United_Kingdom' value='Southwark'>Southwark</option>
+  <option class='sub_United_Kingdom' value='St. Helens'>St. Helens</option>
+  <option class='sub_United_Kingdom' value='Staffordshire'>Staffordshire</option>
+  <option class='sub_United_Kingdom' value='Stirling'>Stirling</option>
+  <option class='sub_United_Kingdom' value='Stockport'>Stockport</option>
+  <option class='sub_United_Kingdom' value='Stockton-on-Tees'>Stockton-on-Tees</option>
+  <option class='sub_United_Kingdom' value='Stoke-on-Trent'>Stoke-on-Trent</option>
+  <option class='sub_United_Kingdom' value='Strabane'>Strabane</option>
+  <option class='sub_United_Kingdom' value='Suffolk'>Suffolk</option>
+  <option class='sub_United_Kingdom' value='Sunderland'>Sunderland</option>
+  <option class='sub_United_Kingdom' value='Surrey'>Surrey</option>
+  <option class='sub_United_Kingdom' value='Sutton'>Sutton</option>
+  <option class='sub_United_Kingdom' value='Swansea'>Swansea</option>
+  <option class='sub_United_Kingdom' value='Swindon'>Swindon</option>
+  <option class='sub_United_Kingdom' value='Tameside'>Tameside</option>
+  <option class='sub_United_Kingdom' value='Telford and Wrekin'>Telford and Wrekin</option>
+  <option class='sub_United_Kingdom' value='Thurrock'>Thurrock</option>
+  <option class='sub_United_Kingdom' value='Torbay'>Torbay</option>
+  <option class='sub_United_Kingdom' value='Torfaen'>Torfaen</option>
+  <option class='sub_United_Kingdom' value='Tower Hamlets'>Tower Hamlets</option>
+  <option class='sub_United_Kingdom' value='Trafford'>Trafford</option>
+  <option class='sub_United_Kingdom' value='Vale of Glamorgan, The'>Vale of Glamorgan, The</option>
+  <option class='sub_United_Kingdom' value='Wakefield'>Wakefield</option>
+  <option class='sub_United_Kingdom' value='Walsall'>Walsall</option>
+  <option class='sub_United_Kingdom' value='Waltham Forest'>Waltham Forest</option>
+  <option class='sub_United_Kingdom' value='Wandsworth'>Wandsworth</option>
+  <option class='sub_United_Kingdom' value='Warrington'>Warrington</option>
+  <option class='sub_United_Kingdom' value='Warwickshire'>Warwickshire</option>
+  <option class='sub_United_Kingdom' value='West Berkshire'>West Berkshire</option>
+  <option class='sub_United_Kingdom' value='West Dunbartonshire'>West Dunbartonshire</option>
+  <option class='sub_United_Kingdom' value='West Lothian'>West Lothian</option>
+  <option class='sub_United_Kingdom' value='West Sussex'>West Sussex</option>
+  <option class='sub_United_Kingdom' value='Westminster'>Westminster</option>
+  <option class='sub_United_Kingdom' value='Wigan'>Wigan</option>
+  <option class='sub_United_Kingdom' value='Wiltshire'>Wiltshire</option>
+  <option class='sub_United_Kingdom' value='Windsor and Maidenhead'>Windsor and Maidenhead</option>
+  <option class='sub_United_Kingdom' value='Wirral'>Wirral</option>
+  <option class='sub_United_Kingdom' value='Wokingham'>Wokingham</option>
+  <option class='sub_United_Kingdom' value='Wolverhampton'>Wolverhampton</option>
+  <option class='sub_United_Kingdom' value='Worcestershire'>Worcestershire</option>
+  <option class='sub_United_Kingdom' value='Wrexham'>Wrexham</option>
+  <option class='sub_United_Kingdom' value='York'>York</option>
+</select>
+
+      </span>
+    </div>
+    <div class="small_span_2 large_span_4 col field-container-right">
+      <span class="field-span">
+        
+          <input class="registria_field " id="zip" name="user[address_attributes][zip]" title="" type="text" value="" placeholder='Zip' tabindex="8">
+        
+      </span>
+    </div>
+  </li>
+</ul>
+</div>
+
+<div class="small_span_6 div_offset_large_span_10 div_offset_left col">
+<ul class="row">
+<li class="small_span_6 large_span_20 col field-container">
+  <span class="field-span">
+    
+      <input class="registria_field " id="email" name="user[email]" title='Used only for Customer Service follow up, unless opting in for communications below.' type="text" value="" placeholder='Email' tabindex="9">
+    
+  </span>
+</li>
+<li class="small_span_6 large_span_20 col">
+  <div class="small_span_3 large_span_10 col field-container field-container-separator">
+    <span class="field-span">
+      <select class='registria_field ' id='gender' name='user[gender]' title=''>
+  <option value=''></option>
+  <option class='' value='Male'>Male</option>
+  <option class='' value='Female'>Female</option>
+</select>
+
+    </span>
+  </div>
+  <div class="small_span_3 large_span_10 col field-container-right">
+    <span class="field-span">
+      <input class="registria_field " id="date_of_birth" name="user[date_of_birth]" title="" type="text" value="" placeholder='Date of Birth (MM/DD/YYYY)' tabindex="11">
+    </span>
+  </div>
+</li>
+<li class="small_span_6 large_span_20 col">
+  <p class="disclosure">For their protection, Oakley asks that anyone under 14 years of age not attempt to register with Oakley or otherwise provide Oakley with any personal information without the consent of a parent or legal guardian.</p>
+</li>
+</ul>
+</div>
+</section>
+<div class="clear"></div>
+
+<section class="step-2 row">
+<h2 class="row"><span class="section_bold">STEP 2</span> <span class="section_light">- Proof of Purchase</span></h2>
+<div class="small_span_6 div_offset_large_span_10 div_offset_right col">
+<ul class="row">
+<li class="small_span_6 large_span_20 col">
+  <div class="small_span_6 large_span_10 col field-container field-container-separator no-pad-mobile">
+    <span class="field-span">
+      <input class="registria_field " id="purchase_date" name="product[purchase_date]" title="" type="text" value="" placeholder='Date of Purchase (MM/DD/YYYY)' tabindex="12">
+    </span>
+  </div>
+  <div class="small_span_6 large_span_10 col field-container-right no-pad-mobile">
+    <span class="field-span">
+      <select class='registria_field ' id='purchased_at' name='product[purchased_at]' title=''>
+  <option value=''></option>
+  <option class='' value='Oakley Store / Oakley Vault'>Oakley Store / Oakley Vault</option>
+  <option class='' value='Oakley Telesales'>Oakley Telesales</option>
+  <option class='' value='Oakley.com'>Oakley.com</option>
+  <option class='' value='Authorized Retail Location'>Authorized Retail Location</option>
+  <option class='' value='Authorized Online Retailer'>Authorized Online Retailer</option>
+</select>
+
+    </span>
+  </div>
+</li>
+<li class="small_span_6 large_span_20 col">
+  <p class="disclosure">Warranty does not cover any purchases made using online auction sites or other unauthorized resellers.</p>
+</li>
+<li class="oakley_store_details small_span_6 large_span_20 col" style="display: none; position: relative">
+  
+    <p class="vip-processing">Enter in these additional fields for VIP processing.</p>
+  
+  <div class="country_of_purchase small_span_6 large_span_20 col field-container">
+    <span class="field-span">
+      <select class='registria_field ' id='country_of_purchase' name='product[country_of_purchase]' title=''>
+  <option value=''></option>
+  <option class='' value='AFGHANISTAN'>AFGHANISTAN</option>
+  <option class='' value='ALBANIA'>ALBANIA</option>
+  <option class='' value='ALGERIA'>ALGERIA</option>
+  <option class='' value='AMERICAN SAMOA'>AMERICAN SAMOA</option>
+  <option class='' value='ANDORRA'>ANDORRA</option>
+  <option class='' value='ANGOLA'>ANGOLA</option>
+  <option class='' value='ANGUILLA'>ANGUILLA</option>
+  <option class='' value='ANTIGUA AND BARBUDA'>ANTIGUA AND BARBUDA</option>
+  <option class='' value='ARGENTINA'>ARGENTINA</option>
+  <option class='' value='ARMENIA'>ARMENIA</option>
+  <option class='' value='ARUBA'>ARUBA</option>
+  <option class='' value='AUSTRALIA'>AUSTRALIA</option>
+  <option class='' value='AUSTRIA'>AUSTRIA</option>
+  <option class='' value='AZERBAIJAN'>AZERBAIJAN</option>
+  <option class='' value='BAHAMAS'>BAHAMAS</option>
+  <option class='' value='BAHRAIN'>BAHRAIN</option>
+  <option class='' value='BANGLADESH'>BANGLADESH</option>
+  <option class='' value='BARBADOS'>BARBADOS</option>
+  <option class='' value='BELARUS'>BELARUS</option>
+  <option class='' value='BELGIUM'>BELGIUM</option>
+  <option class='' value='BELIZE'>BELIZE</option>
+  <option class='' value='BENIN'>BENIN</option>
+  <option class='' value='BERMUDA'>BERMUDA</option>
+  <option class='' value='BHUTAN'>BHUTAN</option>
+  <option class='' value='BOLIVIA'>BOLIVIA</option>
+  <option class='' value='BOSNIA AND HERZEGOVINA'>BOSNIA AND HERZEGOVINA</option>
+  <option class='' value='BOTSWANA'>BOTSWANA</option>
+  <option class='' value='BRAZIL'>BRAZIL</option>
+  <option class='' value='BRUNEI DARUSSALAM'>BRUNEI DARUSSALAM</option>
+  <option class='' value='BULGARIA'>BULGARIA</option>
+  <option class='' value='BURKINA FASO'>BURKINA FASO</option>
+  <option class='' value='BURUNDI'>BURUNDI</option>
+  <option class='' value='CAMBODIA'>CAMBODIA</option>
+  <option class='' value='CAMEROON'>CAMEROON</option>
+  <option class='' value='CANADA'>CANADA</option>
+  <option class='' value='CAPE VERDE'>CAPE VERDE</option>
+  <option class='' value='CAYMAN ISLANDS'>CAYMAN ISLANDS</option>
+  <option class='' value='CENTRAL AFRICAN REPUBLIC'>CENTRAL AFRICAN REPUBLIC</option>
+  <option class='' value='CHAD'>CHAD</option>
+  <option class='' value='CHILE'>CHILE</option>
+  <option class='' value='CHINA'>CHINA</option>
+  <option class='' value='COLOMBIA'>COLOMBIA</option>
+  <option class='' value='COMOROS'>COMOROS</option>
+  <option class='' value='CONGO'>CONGO</option>
+  <option class='' value='CONGO, THE DEMOCRATIC REPUBLIC OF THE'>CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+  <option class='' value='COOK ISLANDS'>COOK ISLANDS</option>
+  <option class='' value='COSTA RICA'>COSTA RICA</option>
+  <option class='' value="COTE D'IVOIRE">COTE D'IVOIRE</option>
+  <option class='' value='CROATIA'>CROATIA</option>
+  <option class='' value='CUBA'>CUBA</option>
+  <option class='' value='CYPRUS'>CYPRUS</option>
+  <option class='' value='CZECH REPUBLIC'>CZECH REPUBLIC</option>
+  <option class='' value='DENMARK'>DENMARK</option>
+  <option class='' value='DJIBOUTI'>DJIBOUTI</option>
+  <option class='' value='DOMINICA'>DOMINICA</option>
+  <option class='' value='DOMINICAN REPUBLIC'>DOMINICAN REPUBLIC</option>
+  <option class='' value='ECUADOR'>ECUADOR</option>
+  <option class='' value='EGYPT'>EGYPT</option>
+  <option class='' value='EL SALVADOR'>EL SALVADOR</option>
+  <option class='' value='EQUATORIAL GUINEA'>EQUATORIAL GUINEA</option>
+  <option class='' value='ERITREA'>ERITREA</option>
+  <option class='' value='ESTONIA'>ESTONIA</option>
+  <option class='' value='ETHIOPIA'>ETHIOPIA</option>
+  <option class='' value='FALKLAND ISLANDS (MALVINAS)'>FALKLAND ISLANDS (MALVINAS)</option>
+  <option class='' value='FAROE ISLANDS'>FAROE ISLANDS</option>
+  <option class='' value='FIJI'>FIJI</option>
+  <option class='' value='FINLAND'>FINLAND</option>
+  <option class='' value='FRANCE'>FRANCE</option>
+  <option class='' value='FRENCH GUIANA'>FRENCH GUIANA</option>
+  <option class='' value='FRENCH POLYNESIA'>FRENCH POLYNESIA</option>
+  <option class='' value='GABON'>GABON</option>
+  <option class='' value='GAMBIA'>GAMBIA</option>
+  <option class='' value='GEORGIA'>GEORGIA</option>
+  <option class='' value='GERMANY'>GERMANY</option>
+  <option class='' value='GHANA'>GHANA</option>
+  <option class='' value='GIBRALTAR'>GIBRALTAR</option>
+  <option class='' value='GREECE'>GREECE</option>
+  <option class='' value='GREENLAND'>GREENLAND</option>
+  <option class='' value='GRENADA'>GRENADA</option>
+  <option class='' value='GUADELOUPE'>GUADELOUPE</option>
+  <option class='' value='GUAM'>GUAM</option>
+  <option class='' value='GUATEMALA'>GUATEMALA</option>
+  <option class='' value='GUINEA'>GUINEA</option>
+  <option class='' value='GUINEA-BISSAU'>GUINEA-BISSAU</option>
+  <option class='' value='GUYANA'>GUYANA</option>
+  <option class='' value='HAITI'>HAITI</option>
+  <option class='' value='HOLY SEE (VATICAN CITY STATE)'>HOLY SEE (VATICAN CITY STATE)</option>
+  <option class='' value='HONDURAS'>HONDURAS</option>
+  <option class='' value='HONG KONG'>HONG KONG</option>
+  <option class='' value='HUNGARY'>HUNGARY</option>
+  <option class='' value='ICELAND'>ICELAND</option>
+  <option class='' value='INDIA'>INDIA</option>
+  <option class='' value='INDONESIA'>INDONESIA</option>
+  <option class='' value='IRAN, ISLAMIC REPUBLIC OF'>IRAN, ISLAMIC REPUBLIC OF</option>
+  <option class='' value='IRAQ'>IRAQ</option>
+  <option class='' value='IRELAND'>IRELAND</option>
+  <option class='' value='ISRAEL'>ISRAEL</option>
+  <option class='' value='ITALY'>ITALY</option>
+  <option class='' value='JAMAICA'>JAMAICA</option>
+  <option class='' value='JAPAN'>JAPAN</option>
+  <option class='' value='JORDAN'>JORDAN</option>
+  <option class='' value='KAZAKHSTAN'>KAZAKHSTAN</option>
+  <option class='' value='KENYA'>KENYA</option>
+  <option class='' value='KIRIBATI'>KIRIBATI</option>
+  <option class='' value="KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</option>
+  <option class='' value='KOREA, REPUBLIC OF'>KOREA, REPUBLIC OF</option>
+  <option class='' value='KUWAIT'>KUWAIT</option>
+  <option class='' value='KYRGYZSTAN'>KYRGYZSTAN</option>
+  <option class='' value="LAO PEOPLE'S DEMOCRATIC REPUBLIC">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
+  <option class='' value='LATVIA'>LATVIA</option>
+  <option class='' value='LEBANON'>LEBANON</option>
+  <option class='' value='LESOTHO'>LESOTHO</option>
+  <option class='' value='LIBERIA'>LIBERIA</option>
+  <option class='' value='LIBYAN ARAB JAMAHIRIYA'>LIBYAN ARAB JAMAHIRIYA</option>
+  <option class='' value='LIECHTENSTEIN'>LIECHTENSTEIN</option>
+  <option class='' value='LITHUANIA'>LITHUANIA</option>
+  <option class='' value='LUXEMBOURG'>LUXEMBOURG</option>
+  <option class='' value='MACAO'>MACAO</option>
+  <option class='' value='MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF'>MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+  <option class='' value='MADAGASCAR'>MADAGASCAR</option>
+  <option class='' value='MALAWI'>MALAWI</option>
+  <option class='' value='MALAYSIA'>MALAYSIA</option>
+  <option class='' value='MALDIVES'>MALDIVES</option>
+  <option class='' value='MALI'>MALI</option>
+  <option class='' value='MALTA'>MALTA</option>
+  <option class='' value='MARSHALL ISLANDS'>MARSHALL ISLANDS</option>
+  <option class='' value='MARTINIQUE'>MARTINIQUE</option>
+  <option class='' value='MAURITANIA'>MAURITANIA</option>
+  <option class='' value='MAURITIUS'>MAURITIUS</option>
+  <option class='' value='MEXICO'>MEXICO</option>
+  <option class='' value='MICRONESIA, FEDERATED STATES OF'>MICRONESIA, FEDERATED STATES OF</option>
+  <option class='' value='MOLDOVA, REPUBLIC OF'>MOLDOVA, REPUBLIC OF</option>
+  <option class='' value='MONACO'>MONACO</option>
+  <option class='' value='MONGOLIA'>MONGOLIA</option>
+  <option class='' value='MONTSERRAT'>MONTSERRAT</option>
+  <option class='' value='MOROCCO'>MOROCCO</option>
+  <option class='' value='MOZAMBIQUE'>MOZAMBIQUE</option>
+  <option class='' value='MYANMAR'>MYANMAR</option>
+  <option class='' value='NAMIBIA'>NAMIBIA</option>
+  <option class='' value='NAURU'>NAURU</option>
+  <option class='' value='NEPAL'>NEPAL</option>
+  <option class='' value='NETHERLANDS'>NETHERLANDS</option>
+  <option class='' value='NETHERLANDS ANTILLES'>NETHERLANDS ANTILLES</option>
+  <option class='' value='NEW CALEDONIA'>NEW CALEDONIA</option>
+  <option class='' value='NEW ZEALAND'>NEW ZEALAND</option>
+  <option class='' value='NICARAGUA'>NICARAGUA</option>
+  <option class='' value='NIGER'>NIGER</option>
+  <option class='' value='NIGERIA'>NIGERIA</option>
+  <option class='' value='NIUE'>NIUE</option>
+  <option class='' value='NORFOLK ISLAND'>NORFOLK ISLAND</option>
+  <option class='' value='NORTHERN MARIANA ISLANDS'>NORTHERN MARIANA ISLANDS</option>
+  <option class='' value='NORWAY'>NORWAY</option>
+  <option class='' value='OMAN'>OMAN</option>
+  <option class='' value='PAKISTAN'>PAKISTAN</option>
+  <option class='' value='PALAU'>PALAU</option>
+  <option class='' value='PANAMA'>PANAMA</option>
+  <option class='' value='PAPUA NEW GUINEA'>PAPUA NEW GUINEA</option>
+  <option class='' value='PARAGUAY'>PARAGUAY</option>
+  <option class='' value='PERU'>PERU</option>
+  <option class='' value='PHILIPPINES'>PHILIPPINES</option>
+  <option class='' value='PITCAIRN'>PITCAIRN</option>
+  <option class='' value='POLAND'>POLAND</option>
+  <option class='' value='PORTUGAL'>PORTUGAL</option>
+  <option class='' value='PUERTO RICO'>PUERTO RICO</option>
+  <option class='' value='QATAR'>QATAR</option>
+  <option class='' value='REUNION'>REUNION</option>
+  <option class='' value='ROMANIA'>ROMANIA</option>
+  <option class='' value='RUSSIAN FEDERATION'>RUSSIAN FEDERATION</option>
+  <option class='' value='RWANDA'>RWANDA</option>
+  <option class='' value='SAINT HELENA'>SAINT HELENA</option>
+  <option class='' value='SAINT KITTS AND NEVIS'>SAINT KITTS AND NEVIS</option>
+  <option class='' value='SAINT LUCIA'>SAINT LUCIA</option>
+  <option class='' value='SAINT PIERRE AND MIQUELON'>SAINT PIERRE AND MIQUELON</option>
+  <option class='' value='SAINT VINCENT AND THE GRENADINES'>SAINT VINCENT AND THE GRENADINES</option>
+  <option class='' value='SAMOA'>SAMOA</option>
+  <option class='' value='SAN MARINO'>SAN MARINO</option>
+  <option class='' value='SAO TOME AND PRINCIPE'>SAO TOME AND PRINCIPE</option>
+  <option class='' value='SAUDI ARABIA'>SAUDI ARABIA</option>
+  <option class='' value='SENEGAL'>SENEGAL</option>
+  <option class='' value='SEYCHELLES'>SEYCHELLES</option>
+  <option class='' value='SIERRA LEONE'>SIERRA LEONE</option>
+  <option class='' value='SINGAPORE'>SINGAPORE</option>
+  <option class='' value='SLOVAKIA'>SLOVAKIA</option>
+  <option class='' value='SLOVENIA'>SLOVENIA</option>
+  <option class='' value='SOLOMON ISLANDS'>SOLOMON ISLANDS</option>
+  <option class='' value='SOMALIA'>SOMALIA</option>
+  <option class='' value='SOUTH AFRICA'>SOUTH AFRICA</option>
+  <option class='' value='SPAIN'>SPAIN</option>
+  <option class='' value='SRI LANKA'>SRI LANKA</option>
+  <option class='' value='SUDAN'>SUDAN</option>
+  <option class='' value='SURINAME'>SURINAME</option>
+  <option class='' value='SVALBARD AND JAN MAYEN'>SVALBARD AND JAN MAYEN</option>
+  <option class='' value='SWAZILAND'>SWAZILAND</option>
+  <option class='' value='SWEDEN'>SWEDEN</option>
+  <option class='' value='SWITZERLAND'>SWITZERLAND</option>
+  <option class='' value='SYRIAN ARAB REPUBLIC'>SYRIAN ARAB REPUBLIC</option>
+  <option class='' value='TAIWAN, PROVINCE OF CHINA'>TAIWAN, PROVINCE OF CHINA</option>
+  <option class='' value='TAJIKISTAN'>TAJIKISTAN</option>
+  <option class='' value='TANZANIA, UNITED REPUBLIC OF'>TANZANIA, UNITED REPUBLIC OF</option>
+  <option class='' value='THAILAND'>THAILAND</option>
+  <option class='' value='TOGO'>TOGO</option>
+  <option class='' value='TOKELAU'>TOKELAU</option>
+  <option class='' value='TONGA'>TONGA</option>
+  <option class='' value='TRINIDAD AND TOBAGO'>TRINIDAD AND TOBAGO</option>
+  <option class='' value='TUNISIA'>TUNISIA</option>
+  <option class='' value='TURKEY'>TURKEY</option>
+  <option class='' value='TURKMENISTAN'>TURKMENISTAN</option>
+  <option class='' value='TURKS AND CAICOS ISLANDS'>TURKS AND CAICOS ISLANDS</option>
+  <option class='' value='TUVALU'>TUVALU</option>
+  <option class='' value='UGANDA'>UGANDA</option>
+  <option class='' value='UKRAINE'>UKRAINE</option>
+  <option class='' value='UNITED ARAB EMIRATES'>UNITED ARAB EMIRATES</option>
+  <option class='' value='UNITED KINGDOM'>UNITED KINGDOM</option>
+  <option class='' value='UNITED STATES'>UNITED STATES</option>
+  <option class='' value='URUGUAY'>URUGUAY</option>
+  <option class='' value='UZBEKISTAN'>UZBEKISTAN</option>
+  <option class='' value='VANUATU'>VANUATU</option>
+  <option class='' value='VENEZUELA'>VENEZUELA</option>
+  <option class='' value='VIET NAM'>VIET NAM</option>
+  <option class='' value='VIRGIN ISLANDS, BRITISH'>VIRGIN ISLANDS, BRITISH</option>
+  <option class='' value='VIRGIN ISLANDS, U.S.'>VIRGIN ISLANDS, U.S.</option>
+  <option class='' value='WALLIS AND FUTUNA'>WALLIS AND FUTUNA</option>
+  <option class='' value='WESTERN SAHARA'>WESTERN SAHARA</option>
+  <option class='' value='YEMEN'>YEMEN</option>
+  <option class='' value='ZAMBIA'>ZAMBIA</option>
+  <option class='' value='ZIMBABWE'>ZIMBABWE</option>
+</select>
+
+    </span>
+  </div>
+  <div class="organization_city small_span_6 large_span_20 col field-container">
+    <span class="field-span">
+      <input class="registria_field " id="organization_city" name="product[organization_city]" title="" type="text" value="" placeholder='City' tabindex="15">
+    </span>
+    <span id="city_autocomplete"></span>
+  </div>
+  <div class="organization_name small_span_6 large_span_20 col field-container">
+    <span class="field-span">
+      <input class="registria_field " id="store_name" name="product[store_name]" title="" type="text" value="" placeholder='Select Your Authorized Dealer' tabindex="16">
+      <input class="registria_field " type="hidden" id="fixed_asset_tag" name="product[fixed_asset_tag]" value="">
+    </span>
+    <span id="org_autocomplete"></span>
+  </div>
+  <div class="store_number small_span_6 large_span_20 col field-container field-container">
+    <span class="field-span">
+      <input class="registria_field " id="store_number" name="product[store_number]" title="" type="text" value="" placeholder='Store Name/Number' tabindex="17">
+      <a href="#receipt" class="receipt-info">Info</a>
+      <span id="store_autocomplete"></span>
+    </span>
+  </div>
+  <div class="receipt_number small_span_6 large_span_20 col field-container" style="position: relative; ">
+    <span class="field-span">
+      <input class="registria_field " id="receipt_number" name="product[receipt_number]" title="" type="text" value="" placeholder='Receipt Number' tabindex="18">
+      <a href="#receipt" class="receipt-info">Info</a>
+    </span>
+  </div>
+  <div id="receipt" style="display: none; ">
+    <div class="receipt-img">
+      <img class="" alt="" src="//d1mjqe83qgtlvc.cloudfront.net/system/images/5533/original/Receipt-Hover.png?1372917337" />
+    </div>
+  </div>
+</li>
+<li class="oakley_com small_span_6 large_span_20 col">
+  <div class="order_number small_span_6 large_span_20 col field-container">
+    <span class="field-span">
+      <input class="registria_field " id="order_number" name="product[order_number]" title="" type="text" value="" placeholder='Order Number' tabindex="19">
+    </span>
+  </div>
+</li>
+</ul>
+</div>
+<div id="fancy-upload" class="small_span_6 div_offset_large_span_10 div_offset_left col dnd">
+<div id="dnd-con">
+<div>
+  <p id="upload" class="file_input_style">
+    <span class="button" id="open_file">Upload your Receipt</span><span class="chosen_file" style="display: none; ">No file selected</span>
+    <input class='registria_field ' id='proof_of_purchase' name='product[proof_of_purchase]' title='' type='file'>
+
+  </p>
+  <div id="pop_con">
+    <p class="remove-receipt">
+      <span class="remove-text">Remove Receipt</span>
+      <span class="icon remove-icon"></span>
+    </p>
+    <img id="proof_of_purchase_preview" src='//d1yy0skkp4ztxs.cloudfront.net/system/images/5813/original/gray-bg.png?1370242258'>
+  </div>
+  <p class="dnd-text">
+    <img class="" alt="" src="//d1mjqe83qgtlvc.cloudfront.net/system/images/15332/original/camera.jpg?1385726081" />
+  </p>
+  <p class="file_types">
+    (PDF, PNG or JPEG 2MB maximum)
+  </p>
+  <p class="row pop_text">
+    To activate your 2 year optic warranty, please upload a copy of your itemized receipt for validation of your purchase.
+  </p>
+  <p class="size_error" style="display: none">File size cannot exceed 2MB</p>
+  <p class="ext_error" style="display: none">Please upload files with extensions pdf, png and jpg only</p>
+</div>
+</div>
+</div>
+<div id="dnd-upload" class="small_span_6 div_offset_large_span_10 div_offset_left col dnd">
+<div id="dnd-con">
+<div>
+  <p id="upload" class="file_input_style">
+    <span class="button" id="open_file">Upload your Receipt</span><span class="chosen_file" style="display: none; ">No file selected</span>
+    <input class='registria_field ' id='proof_of_purchase' name='product[proof_of_purchase]' title='' type='file'>
+
+  </p>
+  <div id="pop_con">
+    <p class="remove-receipt">
+      <span class="remove-text">Remove Receipt</span>
+      <span class="icon remove-icon"></span>
+    </p>
+    <img id="proof_of_purchase_preview" src='//d1yy0skkp4ztxs.cloudfront.net/system/images/5813/original/gray-bg.png?1370242258'>
+  </div>
+  <p class="dnd-text">
+    <img class="" alt="" src="//d1mjqe83qgtlvc.cloudfront.net/system/images/15332/original/camera.jpg?1385726081" /> Or drop image here
+  </p>
+  <p class="file_types">
+    (PDF, PNG or JPEG 2MB maximum)
+  </p>
+  <p class="row pop_text">
+    To activate your 2 year optic warranty, please upload a copy of your itemized receipt for validation of your purchase.
+  </p>
+  <p class="size_error">File size cannot exceed 2MB</p>
+  <p class="ext_error">Please upload files with extensions pdf, png and jpg only</p>
+</div>
+</div>
+</div>
+<div id="ie-upload" class="small_span_6 div_offset_large_span_10 div_offset_left col dnd">
+<div id="dnd-con">
+<div style="position: relative; ">
+  <p id="upload">
+    <input class='registria_field ' id='proof_of_purchase' name='product[proof_of_purchase]' title='' type='file'>
+
+  </p>
+  <div id="pop_con">
+    <p class="remove-receipt">
+      <span class="remove-text">Remove Receipt</span>
+      <span class="icon remove-icon">&#x23;</span>
+    </p>
+    <img id="proof_of_purchase_preview" src='//d1yy0skkp4ztxs.cloudfront.net/system/images/5813/original/gray-bg.png?1370242258'>
+  </div>
+  <p class="file_types">
+    (PDF, PNG or JPEG 2MB maximum)
+  </p>
+  <p class="pop_text" style="top: 70px; ">
+    To activate your 2 year optic warranty, please upload a copy of your itemized receipt for validation of your purchase.
+  </p>
+  <p class="size_error" style="display: none; top: 115px; ">File size cannot exceed 2MB</p>
+  <p class="ext_error" style="display: none; top: 145px; ">Please upload files with extensions pdf, png and jpg only</p>
+</div>
+</div>
+</div>
+</section>
+<div class="clear"></div>
+
+<section class="step-3 row">
+<div class="small_span_6 large_span_20 col products_con">
+<h2 class="row"><span class="section_bold">STEP 3</span> <span class="section_light">- Product Details</span></h2>
+<ul class="row product_row">
+<li>
+  <div class="small_span_6 large_span_3 col field-container product-con">
+    <h3 class="alt-headline">PRODUCT #<span class="product_num">1</span></h3>
+  </div>
+  <div class="small_span_6 offset_large_span_4-2 col field-container custom-con">
+    <span>
+      Is this product custom?<br>
+      <input class="custom_yes" id="custom_product_y1" name="custom_product_1" title="" type="radio" value="Yes" tabindex="21">
+      <label class="radio" for="custom_product_y1">Yes</label>
+      <input class="custom_no" id="custom_product_n1" name="custom_product_1" title="" type="radio" value="No" checked>
+      <label class="radio" for="custom_product_n1">No</label>
+      <input type="hidden" id="custom_product_hidden" class="registria_field " name="registrations[][custom_product]" value="No">
+    </span>
+  </div>
+  <div class="small_span_6 offset_large_span_4-2 col field-container prescription-con">
+    <span>
+      Is this product prescription?<br>
+      <input class="prescription_yes" id="prescription_product_y1" name="prescription_product_1" title="" type="radio" value="Yes" tabindex="22">
+      <label class="radio" for="prescription_product_y1">Yes</label>
+      <input class="prescription_no" id="prescription_product_n1" name="prescription_product_1" title="" type="radio" value="No" checked>
+      <label class="radio" for="prescription_product_n1">No</label>
+      <input type="hidden" id="prescription_product_hidden" class="registria_field " name="registrations[][prescription_product]" value="No">
+    </span>
+  </div>
+  <div class="small_span_6 large_span_4 col field-container sku-con">
+    <span>
+      <span class="field-span">
+        <input class="registria_field sku_field" id="product_sku" name="registrations[][sku]" title="&nbsp;" type="text" value="" placeholder='Product SKU#'  tabindex="23">
+        <a href="#sku" class="sku-info">Info</a>
+        <div id="sku" style="display: none; ">
+          <div class="sku-img">
+            <img class="" alt="" src="//d1yy0skkp4ztxs.cloudfront.net/system/images/5803/original/SKU-Hover.png?1403078188" />
+          </div>
+        </div>
+      </span>
+    </span>
+  </div>
+  <div id="sku_match_1" class="small_span_6 large_span_7 col field-container-right sku_match">
+  </div>
+  <div id="sku_valid_1" class="small_span_6 large_span_8 col field-container-right sku_valid" style="display: none; ">
+    <div class="sku_valid_con">
+      <ul class="valid-skus">
+        <li class="valid">Valid&nbsp; <span class="icon icon-checkmark"></span> </li>
+        <li>Sunglasses</li>
+        <li>Goggles</li>
+        <li>Custom Eyewear</li>
+        <li>Custom Goggles</li>
+        <li>Prescription Eyewear</li>
+      </ul>
+      <ul class="invalid-skus">
+        <li class="invalid">Invalid&nbsp; <span class="icon remove-icon" style="color: #c03434; font-size: 0.82353em; "></span></li>
+        <li>Apparel</li>
+        <li>Footwear</li>
+        <li>Accessories</li>
+        <li>Watches</li>
+        <li>Oakley Standard Issue</li>
+        <li>Final Sale Eyewear</li>
+        <li>Parts and Lenses</li>
+      </ul>
+    </div>
+  </div>
+  <div class="small_span_6 offset_large_span_3 col field-container sku_delete_con">
+    <span id="sku_delete_1" class="icon remove-icon sku_delete"></span>
+  </div>
+</li>
+</ul>
+<p class="small_span_6 large_span_20 col" style="text-align: center; ">
+<a href="javascript:void(0)" id="add-registration" class="button"><span class="icon icon-plus" tabindex="24"></span>&nbsp;Add another product</a>
+</p>
+</div>
+</section>
+<div class="clear"></div>
+
+<section class="updates row">
+<div class="small_span_6 large_span_20 col">
+<h3 class="row alt-headline">Sign up for Oakley updates</h3>
+<ul class="row">
+<li class="small_span_6 large_span_20 col" style="position: relative;">
+  <input class='registria_field ' id='receive_product_communication' name='user[receive_product_communication]' title='' type='checkbox' value='1'>
+
+  <label class="receive_product_communication" for="receive_product_communication">
+    
+      I want to receive Oakley United States emails featuring new products, athlete news, and exclusive deals!
+    
+  </label>
+</li>
+<li class="small_span_6 large_span_6 col">
+  <input class="registria_field " type="hidden" id="input_version" name="product[input_version]" value="VF101">
+  <input class='registria_field' id='page_name' name='page[name]' type='hidden' value='register_product'>
+<input id='next_button' type='submit' value='Register'>
+
+</li>
+<li class="small_span_6 large_span_20 col additional-text">
+   
+     
+
+<p class="legal-text">
+  
+    I understand and agree that I am providing my personal information to Oakley in accordance with the  <a href="http://www.oakley.com/legal/global-privacy-policy" target="_blank">Privacy Policy</a> and  <a href="http://www.oakley.com/legal/terms-of-use" target="_blank">Terms and Conditions</a> . Registration within 1 year of the date of purchase is required. 
+  
+</p>
+   
+</li>
+</ul>
+</div>
+</section>
+</span>
+</main>
+
+<div class="breadcrumb foot row">
+<div class="con small_span_6 large_span_20 col">
+<p class="small_span_3 large_span_20 col"><a href="/" class="bc-home"><span class="bc-home large_span_1 col">Home</span></a><span class="bc bc-current large_span_3 col">Product Registration</span></p>
+</div>
+</div>
+
+
+
+  
+
+
+<footer id="footer" class="row">
+  <div class="con row">
+    <div id="nav_footer" class="large row">
+      <div id="locale_select" class="hoverable OneLinkNoTx offset_large_span_3 col">
+        <!--mp_trans_disable_start-->
+        <div id="locale_select_button" class="large_span_19 col">
+          
+              <span><img class="" alt="" src="//d1yy0skkp4ztxs.cloudfront.net/system/images/5433/original/us_fl_sm.gif?1370241319" />Change Country</span>
+            
+          <div id="locale_select_popup" class="popup-for-hoverable">
+            <div id="europe">
+              <div id="europe_wrapper">
+                <div class="hr"><hr/></div>
+                <h3>Europe</h3>
+                <div id="europe_countries">
+                  <ul class="left_countries">
+                    <li><a href="http://be.oakley.com">Belgi&euml; (Belgium)</a></li>
+                    <li><a href="http://dk.oakley.com">Danmark (Denmark)</a></li>
+                    <li><a href="http://de.oakley.com">Deutschland (Germany)</a></li>
+                    <li><a href="http://fr.oakley.com">France</a></li>
+                    <li><a href="http://ie.oakley.com">Ireland</a></li>
+                    <li><a href="http://it.oakley.com">Italia (Italy)</a></li>
+                    <li><a href="http://lu.oakley.com">Luxemburg</a></li>
+                    <li><a href="http://nl.oakley.com">Nederland (Netherlands)</a></li>
+                  </ul>
+                  <ul class="right_countries">
+                    <li><a href="http://no.oakley.com">Norge (Norway)</a></li>
+                    <li><a href="http://at.oakley.com">&Ouml;sterreich (Austria)</a></li>
+                    <li><a href="http://pl.oakley.com">Polska (Poland)</a></li>
+                    <li><a href="http://pt.oakley.com">Portugal</a></li>
+                    <li><a href="http://es.oakley.com">Espa&ntilde;a (Spain)</a></li>
+                    <li><a href="http://se.oakley.com">Sverige (Sweden)</a></li>
+                    <li><a href="http://ch.oakley.com">Schweiz | Suisse | Svizzera</a></li>
+                    <li><a href="http://uk.oakley.com">United Kingdom</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div id="north_america">
+              <div class="hr"><hr/></div>
+              <h3>North America</h3>
+              <a href="http://ca.oakley.com">Canada</a>
+              <a href="http://www.oakley.com">United States of America</a>
+            </div>
+            <div id="asia_pacific">
+              <div class="hr"><hr/></div>
+              <h3>Asia Pacific</h3>
+              <a href="http://au.oakley.com">Australia</a>
+              <a href="http://www.oakleyindonesia.com">Indonesia</a>
+              <a href="http://cn.oakley.com">China</a>
+              <a href="http://in.oakley.com">India</a>
+              <a href="http://jp.oakley.com">日本 (Japan)</a>
+            </div>
+            <div class="arrow-down"></div>
+          </div>
+        </div>
+        <!--mp_trans_disable_end-->
+      </div>
+      <!--mp_trans_disable_start-->
+      <!--mp_trans_disable_end-->
+      <ul id="footer_links" class="col">
+        
+        
+        
+        
+        
+          <li><a href="http://jobs.oakley.com/" rel="nofollow" onclick="cmCreateConversionEventTag('Job Search','2','Engagement','10')">Careers</a></li>
+        
+
+        <li>
+          
+            <a href="http://oakley.com/en/join" rel="nofollow" target="_blank" onclick="cmCreateConversionEventTag('Join Mailing List','1','Engagement','0')">Join</a>
+          
+        </li>
+        
+          <li><a href="http://oakley.com/en/support/shopping-support" rel="nofollow">Customer Care</a></li>
+        
+        
+          
+            <li><a href="http://oakley.com/en/legal/report-fakes">Report Fakes</a></li>
+          
+        
+        
+          <li class="last"><a href="http://oakley.com/en/legal/privacy-policy" rel="nofollow">Privacy Policy</a></li>
+        
+        
+      </ul><br class="clear" />
+      <p id="copyright_info" class="col">
+        
+          <a href="http://oakley.com/en/legal/intellectual-property">Copyright &copy;2014 Oakley, Inc. All Rights Reserved</a></p>
+        
+    </div>
+    <div class="mobile_footer small_span_6 mobile col">Copyright &copy;2014 Oakley, Inc. All Rights Reserved</div>
+  </div>
+</footer>
+<script type="text/javascript">
+function stateToggle(intl) {
+if(intl) {
+// $("select#state").rules("add", {
+//                                     required: true,
+//                                     messages: {
+//                                     required: "required"
+//                                    }
+//                               });
+$(".state_lov").show().find("select").each(function(){$(this).restoreValidations(); $(this).val('');});
+$(".international").hide().find(":input").each(function(){$(this).removeValidations(); $(this).val('');});
+} else {
+$(".international").show().find(":input").each(function(){$(this).restoreValidations(); $(this).val('');});
+$(".state_lov").hide().find("select").each(function(){$(this).removeValidations(); $(this).val('');});
+}
+}
+
+function countryLookup(type) {
+var toCammelCase = function toCammelCase(input) {
+var i,
+pattern = /\b\w/g;
+input = input.toLowerCase();
+return input.replace(pattern, function(match) {
+return match.toUpperCase();
+});
+};
+
+$.ajax({
+url: '/oakley/organization_country_lookup',
+data: {
+organization_business_type: type
+},
+dataType: 'json',
+success: function (data, status){
+var country_select = '<option value="">Country of Purchase</option>';
+$.each(data.countries, function(i, v){
+country_select += '<option value="'+ v+ '">' + toCammelCase(v) +'</option>';
+});
+$('li.oakley_store_details #country_of_purchase').html(country_select);
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+$('li.oakley_store_details #country_of_purchase').dropkick('reload');
+} else {
+$('li.oakley_store_details #country_of_purchase').change();
+}
+}
+}).fail(function(e) {
+$('li.oakley_store_details #country_of_purchase').html('<option value="">Country of Purchase</option>');
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+$('li.oakley_store_details #country_of_purchase').dropkick('reload');
+} else {
+$('li.oakley_store_details #country_of_purchase').change();
+}
+});
+}
+
+function orgLookup(type, country, city, name) {
+$.ajax({
+url: '/oakley/organization_lookup',
+data: {
+organization_business_type: type,
+organization_country: country,
+organization_city: city,
+organization_name: name
+},
+dataType: 'json',
+success: function (data, status){
+var org_autocomplete = '<span class="field-span">';
+org_autocomplete += '<div class="stores">';
+org_autocomplete += '<ul class="oakley-stores">';
+$.each(data.organizations, function(i, v){
+var o = data.organizations[i].organization;
+var rgxp = new RegExp(name, 'gi');
+var repl = '<span class="matched" style="font-family: \'FontSiteSans-Black-Cond\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;">' + name + '</span>';
+var o_name = o.name.replace(rgxp, repl);
+org_autocomplete += '<li id="store_' + o.id + '" class="oakley-store"><span class="name">' + o_name + '</span>&nbsp - ' + o.address.address1 + '</li>';
+});
+org_autocomplete += '</span>';
+$('#org_autocomplete').html(org_autocomplete);
+$('#org_autocomplete').show();
+}
+}).fail(function(e) {
+var org_autocomplete = '<span class="field-span">';
+org_autocomplete += '<div class="test">';
+org_autocomplete += '<ul class="oakley-stores">';
+org_autocomplete += '<li class="oakley-store">No stores found.</li>';
+org_autocomplete += '</span>';
+$('#org_autocomplete').html(org_autocomplete);
+$('#org_autocomplete').show();
+});
+}
+
+function orgCityLookup(country, name) {
+$.ajax({
+url: '/oakley/organization_city_lookup',
+data: {
+organization_country: country,
+organization_city: name
+},
+dataType: 'json',
+success: function (data, status){
+var city_autocomplete = '<span class="field-span">';
+city_autocomplete += '<div class="test">';
+city_autocomplete += '<ul class="oakley-stores">';
+$.each(data.cities, function(i, v){
+var c = data.cities[i];
+var rgxp = new RegExp(name, 'gi');
+var repl = '<span class="matched" style="font-family: \'FontSiteSans-Black-Cond\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;">' + name.toUpperCase() + '</span>';
+var c_city = c.city.replace(rgxp, repl);
+if (c.iso != null)
+city_autocomplete += '<li class="oakley-store"><span class="city">' + c_city + '</span>, <span class="state">' + c.iso + '</span>, <span class="country">' + c.country + '</span></li>';
+else
+city_autocomplete += '<li class="oakley-store"><span class="city">' + c_city + '</span>, <span class="country">' + c.country + '</span></li>';
+});
+$('#city_autocomplete').html(city_autocomplete);
+$('#city_autocomplete').show();
+}
+}).fail(function(e) {
+var city_autocomplete = '<span class="field-span">';
+city_autocomplete += '<div class="test">';
+city_autocomplete += '<ul class="oakley-stores">';
+city_autocomplete += '<li class="oakley-store">No cities match your entry.</li>';
+$('#city_autocomplete').html(city_autocomplete);
+$('#city_autocomplete').show();
+});
+}
+
+//function modelLookup(sku, match_id) {
+function modelLookup(f) {
+var sku = f.val();
+var failedSkuCount = (f.data('sku_count') || 0);
+f.data('confirmed', false);
+var match_id = f.parents("li:first").find('.sku_match').attr('id');
+var a = "#" + match_id;
+$.ajax({
+url: '/oakley/model_match',
+data: {
+sku: sku
+},
+dataType: 'json',
+success: function (data, status){
+var prod_match = '<span class="sku_match_img">' + data.products.product.name + '</span>';
+if(prod_match){
+$(a).html(prod_match);
+$(a).show();
+$.proceed = true;
+f.data('sku_count', 0);
+f.data('confirmed', true);
+$('#next_button').css({"background" : "#990000", "color" : "#fff", "cursor" : "pointer", "border" : "1px solid #880000"});
+$('#next_button').qtip("destroy");
+}
+}
+}).fail(function(e) {
+ failedSkuCount += 1;
+f.data('sku_count', failedSkuCount);
+if (failedSkuCount) {
+var newSku = f.clone().val('OTHR').attr('type', 'hidden').attr('id', 'other_sku');
+if($(f).siblings("input[id='other_sku']").length){
+}else{
+  f.attr('name', 'registrations[][sku_number]');
+  f.after(newSku);
+}
+  (f).parent().parent().parent().parent().find(".sku_match_img").hide()
+ $.proceed = true;
+  newSku.data('confirmed', true);
+   $('#next_button').css({"background" : "#990000", "color" : "#fff", "cursor" : "pointer", "border" : "1px solid #880000"});
+   $('#next_button').qtip("destroy");
+}
+$(a).show();
+f.data('confirmed', false);
+$('.sku-types').mouseenter(function(){
+$(this).closest('div').next().show();
+});
+$('.sku-types').mouseleave(function() {
+$(this).closest('div').next().hide();
+});
+$('#next_button').qtip({style: {classes: 'next_button_qtip'}, hide: {fixed: true}, position: {my: 'bottom center', at: 'top center',  target: $('#next_button')}, content: 'Please complete all fields' });
+});
+}
+
+function storeNumberLookup(country, number) {
+$.ajax({
+url: '/oakley/organization_vendor_identifier_or_name_lookup',
+data: {
+organization_country: country,
+organization_lookup: number
+},
+dataType: 'json',
+success: function (data, status){
+var store_autocomplete = '<span class="field-span">';
+store_autocomplete += '<div class="stores">';
+store_autocomplete += '<ul class="oakley-stores">';
+$.each(data.stores, function(i, v){
+var s = data.stores[i];
+var rgxp = new RegExp(number, 'gi');
+var repl = '<span class="matched" style="font-family: \'FontSiteSans-Black-Cond\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;">' + number + '</span>';
+var s_name = s.name.replace(rgxp, repl);
+var s_vendor_identifier = s.vendor_identifier.replace(rgxp, repl);
+s_vendor_identifier = s_vendor_identifier.replace(/^[A-Za-z]/, '');
+store_autocomplete += '<li id="store_' + s.vendor_identifier + '" class="oakley-store"><span class="name">' + s_vendor_identifier + '</span> - ' + s_name +'</li>';
+});
+$('#store_autocomplete').html(store_autocomplete);
+$('#store_autocomplete').show();
+}
+}).fail(function(e) {
+var store_autocomplete = '<span class="field-span">';
+store_autocomplete += '<div class="test">';
+store_autocomplete += '<ul class="oakley-stores">';
+store_autocomplete += '<li class="oakley-store">No stores found.</li>';
+$('#store_autocomplete').html(store_autocomplete);
+$('#store_autocomplete').show();
+});
+}
+
+function oakleyStore() {
+$('.oakley_store_details').show().find(":input").each(function(){$(this).restoreValidations(); $(this).val('');});
+$('.oakley_store_details').show().find("select").each(function(){
+$(this).restoreValidations();
+$(this).val('');
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+$(this).dropkick('reload');
+} else {
+$(this).change();
+}
+});
+$('.oakley_com').hide().find(":input").each(function(){$(this).removeValidations();});
+$('.organization_city').hide().find(":input").removeValidations();
+$('.organization_name').hide().find(":input").removeValidations();
+$('.vip-processing').show();
+$('.store_number').show().find(":input").each(function(){$(this).restoreValidations(); $(this).val(''); $(this).blur(); });
+$('.receipt_number').show().find(":input").each(function(){$(this).restoreValidations(); $(this).val(''); $(this).blur(); });
+countryLookup($('#purchased_at').val());
+};
+
+function oakleyCom() {
+$('.oakley_com').show().find(":input").each(function(){$(this).val(''); $(this).restoreValidations(); $(this).blur(); });
+$('.oakley_store_details').hide().find(":input").each(function(){$(this).removeValidations();});
+};
+
+function authorizedRetailers() {
+$('.oakley_store_details').show().find(":input").each(function(){$(this).restoreValidations(); $(this).val('');});
+$('.oakley_store_details').show().find("select").each(function(){
+$(this).restoreValidations();
+$(this).val('');
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+$(this).dropkick('reload');
+} else {
+$(this).change();
+}
+});
+$('.organization_city').show().find(":input").each(function(){$(this).restoreValidations(); $(this).val(''); $(this).blur(); });
+$('.organization_name').show().find(":input").each(function(){$(this).restoreValidations();$(this).val(''); $(this).blur(); });
+// $('.organization_name').removeClass('offset_small_span_3 offset_large_span_10 field-container-right').addClass('small_span_6 large_span_20 field-container');
+$('.store_number').hide().find(":input").each(function(){$(this).removeValidations();});
+$('.receipt_number').hide().find(":input").each(function(){$(this).removeValidations();});
+// $('#store_name').prop('disabled', true);
+// $('#organization_city').prop('disabled', true);
+$('.oakley_com').hide().find(":input").each(function(){$(this).removeValidations();});
+$('.vip-processing').hide();
+countryLookup($('#purchased_at').val());
+};
+
+function viewport() {
+var e = window, a = 'inner';
+if (!('innerWidth' in window )) {
+a = 'client';
+e = document.documentElement || document.body;
+}
+return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+}
+
+$(document).ready(function() {
+if(!Modernizr.input.placeholder){
+$('[placeholder]').focus(function() {
+var input = $(this);
+if (input.val() == input.attr('placeholder')) {
+input.val('');
+input.removeClass('placeholder');
+}
+}).blur(function() {
+var input = $(this);
+if (input.val() == '' || input.val() == input.attr('placeholder')) {
+input.addClass('placeholder');
+input.val(input.attr('placeholder'));
+}
+}).blur();
+}
+$.validator.prototype.elements = function() {
+var validator = this;
+// select all valid inputs inside the form (no submit or reset buttons)
+return $(this.currentForm)
+.find("input, select, textarea")
+.not(":submit, :reset, :image, [disabled]")
+.not( this.settings.ignore )
+.filter(function() {
+    !this.name && validator.settings.debug && window.console && console.error( "%o has no name assigned", this);
+    return validator.objectLength($(this).rules());
+});
+};
+
+
+$.datepicker.setDefaults($.datepicker.regional[""]);
+// Make full file input clickable
+// (IE allows users to type file path manually.
+// this is not desired for our purposes.)
+$('input[type="file"], input[type="file"]+label').focus().trigger('dblclick');
+
+$('#open_file').click(function() {
+$('input[type=file]').click();
+});
+
+
+// Display value for styled file inputs
+$('.file_input_style input[type="file"]').change(function() {
+if ($('.file_input_style input[type="file"]').val()) {
+file_value = /([^\\]+)$/.exec($('.file_input_style input[type="file"]').val())[1];
+$('.file_input_style .chosen_file').text(file_value);
+}
+});
+
+window.scrollTo(0, 0);
+
+$('.custom_yes').click(function() {
+// $(this).closest('div').nextAll('.sku-con').find('.sku-img img').attr('src', '//d1yy0skkp4ztxs.cloudfront.net/system/images/21372/original/custom-sku-hover-image.png?1403078227');
+$(this).closest('div').find('#custom_product_hidden').val('Yes');
+// $(this).closest('div').nextAll('.sku-con').find('#sku').css('top', '-13.6em');
+});
+
+$('.custom_no').click(function() {
+// $(this).closest('div').nextAll('.sku-con').find('.sku-img img').attr('src', '//d1yy0skkp4ztxs.cloudfront.net/system/images/5803/original/SKU-Hover.png?1403078188');
+$(this).closest('div').find('#custom_product_hidden').val('No');
+// $(this).closest('div').nextAll('.sku-con').find('#sku').css('top', '-16em');
+});
+
+$('.prescription_yes').click(function() {
+$(this).closest('div').find('#prescription_product_hidden').val('Yes');
+});
+
+$('.prescription_no').click(function() {
+$(this).closest('div').find('#prescription_product_hidden').val('No');
+});
+
+$('.sku-info').mouseenter(function(){
+$(this).next().show();
+// $('#sku').show();
+});
+
+$('.sku-info').mouseleave(function() {
+$(this).next().hide();
+// $('#sku').hide();
+});
+
+$('.receipt-info').mouseenter(function(){
+$('#receipt').show();
+});
+
+$('.receipt-info').mouseleave(function() {
+$('#receipt').hide();
+});
+
+
+$('select#country').change(function(){
+var countryName = $('select#country').val();
+if (countryName == 'Canada') {
+$("#date_of_birth").rules("remove");
+}
+if (countryName == 'Japan') {
+$("#purchased_at option[value='Oakley Telesales']").remove();
+$('.receipt-img img').attr('src', '//d1yy0skkp4ztxs.cloudfront.net/system/images/21362/original/OJ_Store_receipt.png?1403078149')
+// if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { $('#purchased_at').dropkick('reload'); } else { $('#purchased_at').change(); }
+}
+
+// country is name
+$("select#locale_selector").find('option').remove().end().append('<option value="" selected="selected">Choose Your Language</option>');
+$.each(getCountryLanguages(countryName), function() {
+$("select#locale_selector").append('<option value="' + this.locale + '">' + this.name + '</option>').val('');
+});
+stateToggle(getCountryLov(countryName));
+if($("select#locale_selector").data('dropkick') !== undefined)
+$("select#locale_selector").dropkick('reload');
+});
+
+$('select#locale_selector').change(function(){
+if($('select#locale_selector').val() !== '') {
+$('#country_collector .button').css({"background" : "#990000", "color" : "#fff", "cursor" : "pointer", "border" : "1px solid #880000"});
+} else {
+$('#country_collector .button').css({"background" : "#d7d7d7", "color" : "#ccc", "cursor" : "pointer", "border" : "1px solid #b4b4b4"});
+}
+});
+
+$('#country_collector .button').click(function() {
+if($('select#locale_selector').val() !== '') {
+setCookie("user_country", $('select#country').val(), 1);
+setCookie("user_language", $('select#locale_selector option:selected').text(), 1);
+setCookie("user_lang_code", $('select#locale_selector').val(), 1);
+window.location = 'http://register.oakley.com/' + $("select#locale_selector").val() + '/register_product?country=' + getCountryCode($('select#country').val()) + '&locale=' + $("select#locale_selector").val();
+$("#country_collector").dialog("close");
+}
+});
+
+$('.change-locale').click(function() {
+$.cookie("user_country", null, { path : '/' });
+window.location = window.location.pathname.split("?")[0];
+});
+
+//change font size and nav size to handle translations
+if ($.currentLocale == 'en' || $.currentLocale == 'pt' || $.currentLocale == 'fr-ca' || $.currentLocale == 'ja') {
+$('#nav_global').addClass('large_span_10').removeClass('large_span_12 large_span_11');
+$('#nav_primary').addClass('large_span_10').removeClass('large_span_8 large_span_9');
+$('#nav_global li a').css('font-size', '10px');
+$('#nav_primary li.nav a.navlink').css('font-size', '13px');
+} else if ($.currentLocale == 'fr') {
+$('#nav_global').addClass('large_span_12').removeClass('large_span_10 large_span_11');
+$('#nav_primary').addClass('large_span_8').removeClass('large_span_10 large_span_9');
+$('#nav_global li a').css('font-size', '9px');
+$('#nav_primary li.nav a.navlink').css('font-size', '12px');
+} else {
+$('#nav_global').addClass('large_span_11').removeClass('large_span_10 large_span_12');
+$('#nav_primary').addClass('large_span_9').removeClass('large_span_10 large_span_8');
+$('#nav_global li a').css('font-size', '9px');
+$('#nav_primary li.nav a.navlink').css('font-size', '12px');
+}
+
+// add date picker to date fields
+var minDate = '-730d';
+if (($.queryParams["country"] == 'US') || ($.queryParams["country"] == 'CA') || ($.queryParams["country"] == 'JP'))
+minDate = '-365d';
+$('#purchase_date').datepicker($.extend(true, {
+changeMonth: true,
+changeYear: true,
+showOtherMonths: true,
+selectOtherMonths: true,
+minDate: minDate,
+maxDate: '+0d',
+autosize: true
+}, $.datepicker.regional[$.currentLocale] || $.datepicker.regional['']));
+
+$('#date_of_birth').datepicker($.extend(true, {
+changeMonth: true,
+changeYear: true,
+showOtherMonths: true,
+selectOtherMonths: true,
+minDate: '-36500d',
+maxDate: '-5113d',
+yearRange: "-99:+99",
+autosize: true
+}, $.datepicker.regional[$.currentLocale] || $.datepicker.regional['']));
+
+$("#date_of_birth").rules("add", {
+dpDate: true
+});
+
+$("#purchase_date").rules("add", {
+dpDate: true
+});
+
+//nav show and hide
+$('.products').mouseenter(function(){
+if (!($('select#country').val() == 'Canada' || $('select#country').val() == 'United States'))
+$('.dd').show();
+else 
+$('.dd').hide();
+$('.nav_contents_men').show();
+});
+
+$('.products, .dd').mouseleave(function(){
+$('.dd').hide();
+});
+
+$('#locale_select').mouseenter(function(){
+$('#locale_select_popup').show();
+});
+
+$('#locale_select, #locale_select_popup').mouseleave(function(){
+$('#locale_select_popup').hide();
+});
+
+
+$('#purchased_at').change(function() {
+var purchased_at = $('#purchased_at').val();
+switch(purchased_at) {
+case 'Oakley Store / Oakley Vault':
+$('.dnd:hidden').show().find(":input").each(function(){$(this).restoreValidations();});
+$('#proof_of_purchase').restoreValidations();
+oakleyStore();
+break;
+case 'Oakley Telesales':
+$('.dnd:hidden').show().find(":input").each(function(){$(this).restoreValidations();});
+$('#proof_of_purchase').restoreValidations();
+oakleyCom();
+break;
+case 'Oakley.com':
+$('.dnd:hidden').show().find(":input").each(function(){$(this).restoreValidations();});
+$('#proof_of_purchase').restoreValidations();
+oakleyCom();
+break;
+case 'Authorized Retail Location':
+$('.dnd:hidden').show().find(":input").each(function(){$(this).restoreValidations();});
+$('#proof_of_purchase').restoreValidations();
+authorizedRetailers();
+break;
+default:
+$('.dnd:hidden').show().find(":input").each(function(){$(this).restoreValidations();});
+$('#proof_of_purchase').restoreValidations();
+$('.oakley_store_details').hide().find(":input").each(function(){$(this).removeValidations();});
+$('.oakley_com').hide().find(":input").each(function(){$(this).removeValidations();});
+$('.retail_store').hide().find(":input").each(function(){$(this).removeValidations();});
+break;
+}
+});
+
+$('#country_of_purchase').change(function() {
+if ($('#purchased_at').val() == 'Authorized Retail Location') {
+if($('#country_of_purchase').val() == 'United States' || $('#country_of_purchase').val() == 'Japan') {
+// $('#store_name').prop('disabled', false);
+// $('#organization_city').prop('disabled', false);
+$('.organization_city').show().find(":input").each(function(){$(this).restoreValidations(); $(this).val(''); $(this).blur(); });
+$('.organization_name').show().find(":input").each(function(){$(this).restoreValidations(); $(this).val(''); $(this).blur(); });
+} else {
+$('.organization_city').hide().find(":input").each(function(){$(this).val(''); $(this).removeValidations();});
+$('.organization_name').hide().find(":input").each(function(){$(this).val(''); $(this).removeValidations();});
+}
+}
+});
+
+$('#store_name').keyup(function() {
+if($('#store_name').val().length >= 3)
+orgLookup($('#purchased_at').val(), $('#country_of_purchase').val(), $('#organization_city').val(), $('#store_name').val());
+if($('#store_name').val().length === 0)
+$('#org_autocomplete').hide();
+});
+
+$('#organization_city').keyup(function() {
+if($('#organization_city').val().length >= 3)
+orgCityLookup($('#country_of_purchase').val(), $('#organization_city').val());
+if($('#organization_city').val().length === 0)
+$('#city_autocomplete').hide();
+});
+
+$('#store_number').keyup(function() {
+if($('#store_number').val().length >= 3)
+storeNumberLookup($('#country_of_purchase').val(), $('#store_number').val());
+if($('#store_number').val().length === 0)
+$('#store_autocomplete').hide();
+});
+
+$('#org_autocomplete li.oakley-store').live("mousedown", function(li) {
+$('#store_name').val($(this).find('.name').text());
+$('#fixed_asset_tag').val($(this).text() + ' - ' + li.currentTarget.id);
+$('#org_autocomplete').hide();
+});
+
+$('#city_autocomplete li.oakley-store').live("mousedown", function(li) {
+$('#organization_city').val($(this).find('.city').text());
+$('#city_autocomplete').hide();
+});
+
+$('#store_autocomplete li.oakley-store').live("mousedown", function(li) {
+$('#store_number').val($(this).find('.name').text());
+$('#store_autocomplete').hide();
+});
+
+$('#store_name').blur(function(event) {
+$('#org_autocomplete').hide();
+});
+
+$('#organization_city').blur(function(event) {
+$('#city_autocomplete').hide();
+});
+
+$('#store_number').blur(function(event) {
+$('#store_autocomplete').hide();
+});
+
+$('.sku_field').live('blur', function() {
+if ($(this).val() != "")
+modelLookup($(this));
+});
+
+//default country
+try {
+$("#country > option").each(function() {
+if($(this).val() == $.IPInfo.country_name) {
+$('select#country').val($.IPInfo.country_name).change();
+}
+});
+} catch (e) {
+//$('select#country').val('').change();
+}
+
+
+//background of oakley search field
+$('#search_term_input').click(function() {
+$('#search_term_input').val('');
+$('#search_term_input').css('background-color', '#000');
+});
+
+$('#proof_of_purchase').bind('change', function(event) {
+$.proceed = true;
+$('#next_button').css({"background" : "#990000", "color" : "#fff", "cursor" : "pointer", "border" : "1px solid #880000"});
+$('#next_button').qtip("destroy");
+$('.size_error').hide();
+$('.ext_error').hide();
+$('.proof_of_purchase').css('border', '1px solid #d9d9d9');
+// if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+if(this.files && this.files[0]) {
+var reader = new FileReader();
+reader.onload = function(e){
+$('.remove-receipt').show();
+$("#pop_con").css('height', 'auto');
+$('#proof_of_purchase_preview').show();
+$("#proof_of_purchase_preview").css('padding-top', '0.5em');
+$("#proof_of_purchase_preview").attr('src', e.target.result);
+$('#proof_of_purchase_preview').css('width', '100%');
+$('#proof_of_purchase').css('padding', '144px 0');
+$('#upload').hide();
+$('.file_input_style .button').hide();
+$('.dnd-text').hide();
+$('.file_types').hide();
+$('.pop_text').hide();
+};
+reader.readAsDataURL(this.files[0]);
+$('.proof_of_purchase .addn-text').css('margin-top', '15px');
+}
+// }
+if(this.files[0].size > 2000000) {
+$('.size_error').show();
+$('#dnd-con').css('border', '2px solid #d09292');
+$.proceed = false;
+}
+var ext = $('#proof_of_purchase').val().split('.').pop().toLowerCase();
+if($.inArray(ext, ['pdf','jpg','jpeg', 'png']) == -1) {
+$('.ext_error').show();
+$('#dnd-con').css('border', '2px solid #d09292');
+$.proceed = false;
+}
+$(this).valid();
+});
+$('.remove-receipt').click(function(){
+$('.remove-receipt').hide();
+$('#proof_of_purchase_preview').attr('src', '');
+$('#proof_of_purchase_preview').hide();
+$('#upload').show();
+$('.file_input_style .button').show();
+if (viewport().width >= 768) {
+$('.dnd-text').show();
+$('#proof_of_purchase').css('padding', '178px 0');
+} else {
+$('#dnd-con').css('border', 'none');
+$('.dnd-text').hide();
+$('#proof_of_purchase').css('padding', '20px 0');
+}
+$('.file_types').show();
+$('.pop_text').show();
+$('.size_error').hide();
+$('.ext_error').hide();
+$('#proof_of_purchase').val('');
+});
+});
+
+$(document).ready(function() {
+$('#sku_delete_1').hide();
+$('#next_button').css({"background" : "#D7D7D7", "color" : "#fff", "cursor" : "pointer", "border" : "1px solid #B4B4B4"});
+
+if ($.queryParams["country"] == undefined) {
+if (readCookie("user_country") == null) {
+$("#country_collector").dialog({
+autoOpen: true,
+modal: true,
+dialogClass: "country-dialog",
+resizable: false,
+closeOnEscape: false,
+draggable: false
+});
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+window.scrollTo(0, 0);
+$('#country_collector').dialog("option", "position", ["center", 286]);
+} else {
+window.scrollTo(0, 250);
+$('#country_collector').dialog("option", "position", ["center", 260]);
+//$( ".selector" ).dialog( "option", "position", { my: "center center", at: "center center", of: window } );
+}
+} else {
+$("#country_collector").hide();
+$('select#country').val(decodeURIComponent(readCookie("user_country")));
+$('select#country').change();
+$('.locale-change-text .country').replaceWith(decodeURIComponent(readCookie("user_country")));
+$('.locale-change-text .lang').replaceWith(decodeURIComponent(readCookie("user_language")));
+}
+} else {
+$("#country_collector").hide();
+if($.queryParams["country"] == 'us') {
+var country = 'United States';
+var language = 'English';
+console.log("Country Name  = " + country);
+} else {
+var country = getCountryName($.queryParams["country"]);
+var language = getLanguageName($.queryParams["country"], $.queryParams["locale"]);
+}
+setCookie("user_country", country, 1);
+setCookie("user_language", language, 1);
+setCookie("user_lang_code", 'en', 1);
+$('select#country').val(country);
+$('select#country').change();
+$('.locale-change-text .country').replaceWith(country);
+$('.locale-change-text .lang').replaceWith(language);
+
+// if (language != 'English')
+//   $('.reg-benefits ul li').css({"font-size": "0.9em", "line-height": "1.3em"})
+
+if ((country == 'United States') && (language == 'English' || language == 'Spanish')) {
+$('#receive_product_communication').attr('checked', true);
+}
+if (country == 'Australia')  {
+$('#receive_product_communication').attr('checked', false);
+}
+}
+
+//Hover on mobile
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+// $('.info-mobile').hide();
+$('.sku-container').css('height', '2em');
+} else {
+$('.sku-container').css('height', '3.5em');
+$('.receipt_details').css('height', '');
+}
+
+//add default values for dropdowns
+if($('#purchased_at').val() === "") {
+$('#purchased_at').children('option:selected').text('Where Purchased');
+}
+if($('#gender').val() === "") {
+$('#gender').children('option:selected').text('Gender');
+} else {
+$('#gender').children('option:first').text('Gender');
+}
+if($('#country_of_purchase').val() === "") {
+$('#country_of_purchase').children('option:selected').text('Country of Purchase');
+}
+
+//dropkick select
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+$('div>span>select').attr("tabindex", "1").each(function() {
+$(this).dropkick({
+change: function(){
+$(this).change().valid();
+}
+});
+});
+$('#state').attr("tabindex", "1").dropkick({
+change: function(){
+$(this).change().valid();
+}
+});
+$('#country_of_purchase').attr("tabindex", "14").dropkick({
+change: function(){
+$(this).change().valid();
+}
+});
+/* $('#country').attr("tabindex", "0").dropkick({
+change: function(){
+$(this).change().valid();
+}
+});
+$('#locale_selector').attr("tabindex", "0").dropkick({
+change: function(){
+$(this).change().valid();
+}
+}); */
+$('#dk_container_state').attr("tabindex", 6);
+$('#dk_container_gender').attr("tabindex", 10);
+$('#dk_container_purchased_at').attr("tabindex", 13);
+$('#proof_of_purchase').attr("tabindex", 20);
+$('#receive_product_communication').attr("tabindex", 25);
+$('#next_button').attr("tabindex", 26);
+}
+
+$("#registria_form").validate().settings.ignore = "";
+
+//Fancy tooltips
+$("#registria_form").validate().settings.showErrors = function(errorMap, errorList){
+for(var i=0;this.errorList[i];i++){
+var error = this.errorList[i];
+var elementToShowError = $(error.element);
+this.settings.highlight && this.settings.highlight.call(this,error.element,this.settings.errorClass,this.settings.validClass);
+// check if element is hidden, if so: show error on some linked element
+if($(error.element).is(":hidden")) {
+if($("div#dk_container_"+$(error.element).attr('id')).exists()) {
+elementToShowError = $("div#dk_container_"+$(error.element).attr("id"));
+elementToShowError.addClass(this.settings.errorClass);
+}
+}
+if ($(error.element).attr('id') == "proof_of_purchase") {
+$('#dnd-con').css('border', '2px dashed #d09292');
+elementToShowError = $('#open_file');
+elementToShowError.addClass(this.settings.errorClass);
+}
+elementToShowError.qtip({position: {my: 'bottom center', at: 'top right',  target: elementToShowError}, content: error.message});
+}
+if(this.settings.success){for(var i=0;this.successList[i];i++){this.showLabel(this.successList[i]);}}
+for(var i=0,elements=this.validElements();elements[i];i++){
+var v = elements[i];
+var elementToShowError = $(v);
+this.settings.unhighlight && this.settings.unhighlight.call(this,v,this.settings.errorClass,this.settings.validClass);
+if($(v).is(":hidden")) {
+if($("div#dk_container_"+$(v).attr('id')).exists()) {
+elementToShowError = $("div#dk_container_"+$(v).attr("id"));
+elementToShowError.removeClass(this.settings.errorClass);
+}
+}
+if ($(v).attr('id') == "proof_of_purchase") {
+$('#dnd-con').css('border', '2px dashed #d9d9d9');
+elementToShowError = $('#open_file');
+elementToShowError.removeClass(this.settings.errorClass);
+}
+elementToShowError.qtip("destroy");
+}
+this.hideErrors();
+};
+$('#email').qtip({position: {my: 'bottom center', at: 'top right',  target: $('#email')}, content: {text: false}});
+
+//multi-product reg
+
+var product_num = 1;
+function addProductRow(sku){
+var current = product_num;
+product_num++;
+var lastRow = $("ul.product_row:last");
+
+// remove dropkick from prev row
+// if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+//   var pOld = lastRow.find("select[name='registrations[][custom_product]']");
+//   var data = pOld.data("dropkick");
+//   var os = data.$select;
+//   var dk = data.$dk;
+
+//   data.settings.startSpeed = 0;
+//   os.removeData("dropkick").insertAfter(dk);
+//   dk.remove();
+// }
+
+// clone last row
+var newRow = lastRow.clone();
+
+// clear input values
+$.each(newRow.find(":input"), function() {
+if($(this).attr('type') == 'hidden') {
+if(!($(this).attr('id') == 'custom_product_hidden' || $(this).attr('id') == 'prescription_product_hidden')) {
+  $(this).remove();
+}
+} else {
+$(this).val('');
+}
+if ($(this).attr('name') == 'registrations[][sku_number]')
+$(this).attr('name', 'registrations[][sku]');
+});
+
+newRow.find('span.product_num').text(product_num);
+newRow.find('.sku_field').val(sku).blur();
+newRow.find('.sku_match').hide();
+newRow.find('.sku_valid').hide();
+newRow.find('.sku_delete').show().css('display', 'table-cell');
+newRow.find('#sku_match_' + current).attr("id", "sku_match_" + product_num);
+newRow.find('.sku_match_' + current).removeClass('sku_match_' + current).addClass("sku_match_" + product_num);
+
+newRow.find('#custom_product_y' + current).attr("id", "custom_product_y" + product_num);
+newRow.find('#custom_product_n' + current).attr({"id": "custom_product_n" + product_num, "checked": "checked"});
+newRow.find('#prescription_product_y' + current).attr("id", "prescription_product_y" + product_num);
+newRow.find('#prescription_product_n' + current).attr({"id": "prescription_product_n" + product_num, "checked": "checked"});
+newRow.find('input[name="custom_product_' + current + '"]').attr("name", "custom_product_" + product_num);
+newRow.find('input[name="prescription_product_' + current + '"]').attr("name", "prescription_product_" + product_num);
+newRow.find('label[for="custom_product_y' + current + '"]').attr("for", "custom_product_y" + product_num);
+newRow.find('label[for="custom_product_n' + current + '"]').attr("for", "custom_product_n" + product_num);
+newRow.find('label[for="prescription_product_y' + current + '"]').attr("for", "prescription_product_y" + product_num);
+newRow.find('label[for="prescription_product_n' + current + '"]').attr("for", "prescription_product_n" + product_num);
+newRow.find('#custom_product_hidden').val("No");
+newRow.find('#prescription_product_hidden').val("No");
+
+newRow.find('#sku_valid_' + current).attr("id", "#sku_valid_" + product_num);
+newRow.find('#sku_delete_' + current).attr("id", "sku_delete_" + product_num);
+
+lastRow.addClass('row_separator');
+lastRow.after(newRow);
+lastRow.after('<div class="clear"></div>');
+
+$('.sku_delete').click(function() {
+$(this).closest('ul').remove();
+product_num--;
+})
+
+$('.sku-info').mouseenter(function(){
+$(this).next().show();
+// $('#sku').show();
+});
+
+$('.sku-info').mouseleave(function() {
+$(this).next().hide();
+// $('#sku').hide();
+});
+
+$('.sku-img img').attr('src', '//d1yy0skkp4ztxs.cloudfront.net/system/images/5803/original/SKU-Hover.png?1403078188');
+
+$('.custom_yes').click(function() {
+// $(this).closest('div').nextAll('.sku-con').find('.sku-img img').attr('src', '//d1yy0skkp4ztxs.cloudfront.net/system/images/21372/original/custom-sku-hover-image.png?1403078227');
+$(this).closest('div').find('#custom_product_hidden').val('Yes');
+});
+
+$('.custom_no').click(function() {
+// $(this).closest('div').nextAll('.sku-con').find('.sku-img img').attr('src', '//d1yy0skkp4ztxs.cloudfront.net/system/images/5803/original/SKU-Hover.png?1403078188');
+$(this).closest('div').find('#custom_product_hidden').val('No');
+});
+
+$('.prescription_yes').click(function() {
+$(this).closest('div').find('#prescription_product_hidden').val('Yes');
+});
+
+$('.prescription_no').click(function() {
+$(this).closest('div').find('#prescription_product_hidden').val('No');
+});
+
+var dp = newRow.find("")
+}
+
+$(".sku_field").rules("add", {required: true, messages: {required: "required"}});
+
+$("#add-registration").click(function() {
+addProductRow();
+});
+
+// To prepoluate fields:
+
+if($.queryParams.user !== undefined)
+{
+//enable fields and remove some validations
+$('#store_name').prop('disabled', false);
+$('#proof_of_purchase').removeValidations();
+$("#country_of_purchase").removeValidations();
+$("#store_number").removeValidations();
+$("#receipt_number").removeValidations();
+
+//populate
+$("#first_name").val($.queryParams.user.first_name);
+$("#last_name").val($.queryParams.user.last_name);
+$("#email").val($.queryParams.user.email);
+$("#gender").val($.queryParams.user.gender);
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { $('#gender').dropkick('reload'); } else { $('#gender').change(); }
+$("#date_of_birth").val($.queryParams.user.date_of_birth);
+$("#receive_product_communication").val($.queryParams.user.receive_product_communication);
+
+if($.queryParams.product !== undefined) {
+$("#purchase_date").val($.queryParams.product.purchase_date);
+$("#purchased_at").val($.queryParams.product.purchased_at).change();
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { $('#purchased_at').dropkick('reload'); } else { $('#purchased_at').change(); }
+$("#store_name").val($.queryParams.product.store_name);
+$("#store_number").val($.queryParams.product.store_number);
+$("#receipt_number").val($.queryParams.product.receipt_number);
+$("#order_number").val($.queryParams.product.order_number);
+$("#description").val($.queryParams.product.description);
+}
+
+if($.queryParams.user.address_attributes !== undefined)
+{
+$("#address1").val($.queryParams.user.address_attributes.address1);
+$("#address2").val($.queryParams.user.address_attributes.address2);
+$("#city").val($.queryParams.user.address_attributes.city);
+$("#state").val($.queryParams.user.address_attributes.state);
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { $("#state").dropkick('reload'); } else { $('#state').change(); }
+$("#country").val($.queryParams.user.address_attributes.country);
+$("#international_state").val($.queryParams.user.address_attributes.international_state);
+$("#zip").val($.queryParams.user.address_attributes.zip);
+}
+
+}
+
+if($.queryParams.registrations !== undefined)
+{
+var reg_counter = 0;
+if($.queryParams.registrations[reg_counter].skus !== undefined)
+{
+var first = true;
+$.each($.queryParams.registrations, function(){
+if(first) {
+alert('Adding data');
+first = false;
+var current_sku = this.skus
+$(".sku_field").val(current_sku).blur();
+}
+else
+alert('Adding row');
+addProductRow(this.skus);
+})
+}
+}
+});
+
+$.validator.methods.required = function (value, element, param) {
+if(!this.depend(param,element))
+return"dependency-mismatch";
+
+switch(element.nodeName.toLowerCase()){
+case'select':
+var val=$(element).val();
+return val&&val.length>0;
+case'input':
+if(this.checkable(element))
+return this.getLength(value,element)>0;
+default:
+return $.trim(value).length>0 && value!=$(element).attr("placeholder");
+}
+};
+</script>
+<script>
+  var utag_data = {
+    clientid:"90033410",
+    data_collection_method:false,
+    data_collection_domain:"www75.oakley.com",
+    cookie_domain:"oakley.com",
+    site_region:"US",
+    site_currency:"USD",
+    page_name:"Product Registration",
+    page_category:"Product Registration"
+  };
+
+  (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/oakley/hybrisprod/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+  })();
+</script>
+
+</body>
+</html>

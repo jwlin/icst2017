@@ -1,0 +1,1384 @@
+
+
+
+
+ 
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<!-- Below meta tag added to block IE9 browser from changing compatibility mode automatically -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1"/> -->
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="-1"/>
+
+	<title>Bankers Trust Company</title>
+	<link rel="stylesheet" type="text/css" href="../c/client.css"/>
+	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="../c/desktop.css"/>	
+		
+	
+	<link rel="stylesheet" type="text/css" href="../c/base/jquery.ui.all.css">
+<!--  	<link rel="stylesheet" type="text/css" href="../c/custom.css"/> -->
+	
+		
+		
+			<link rel="stylesheet" type="text/css" href="https://umnasg7.umonitor.com/clients/8176/custom.css"/>
+			
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="../../dhcommon.css"/>
+
+	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-migrate-1.2.1.min.js"></script>
+	<!-- <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script> -->
+	<script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.global.default.js"></script>
+	<script type="text/javascript" src="../js/jquery.global.utils.js"></script>	
+	<script type="text/javascript" src="../js/jquery.global.js"></script>
+<!-- 	<script type="text/javascript" src="../js/jquery.corner.js"></script> -->
+<!-- 	<script type="text/javascript" src="../js/jquery.form.js"></script> -->
+	
+	
+		
+			
+			 
+				<script type="text/javascript" src="../js/jquery.maskedinput-1.2.2.js"></script>
+				 
+		
+	
+	
+	
+	
+		
+			
+				
+				
+					<script type="text/javascript" src="https://umnasg7.umonitor.com/clients/8176/webAnalytics.js"></script>
+				
+			
+			
+			
+	
+
+<!-- 	<script type="text/javascript" src="../js/jquery.maskedinput-1.2.2.js"></script>	 -->
+	<script type="text/javascript" src="../js/jquery.event.drag-2.0.min.js"></script>
+	<script type="text/javascript" src="../js/jqModal.js"></script>
+	<script type="text/javascript" src="../js/jquery.bgiframe.min.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	
+	<script type="text/javascript" src="../js/browserDetect-min.js"></script>
+<!-- 	<script type="text/javascript" src="../js/jquery.ba-resize.min.js"></script> -->
+	
+	
+	
+<script type="text/javascript" src="../js/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../js/jquery.ui.position.js"></script>
+<script type="text/javascript" src="../js/jquery.ui.menu.js"></script>
+<script type="text/javascript" src="../js/jquery.ui.autocomplete.js"></script>
+
+<script type="text/javascript" src="../js/usps.js"></script>
+
+	<script type="text/javascript">
+		
+		
+		
+		
+		desktop=true;
+		
+		
+		
+		
+		var timePeriod = 900000;  // 15 minutes or 900000
+		var warnPeriod = 300000;   // 5 minutes	or 300000
+		
+		
+		var autoCloseTimer;
+		var timeoutObject;
+		
+		
+		try{ 
+			if($.browser.msie && $.browser.version < 9){
+		  		document.write("<link rel='stylesheet' type='text/css' href='c/hack.css'/>");
+			}
+		}catch(e){}
+		
+		clientId = '8176';
+		serverFullPath = "https://umnasg7.umonitor.com";
+	
+		function GetCookie() {
+			var strName = "varCook";
+			if (document.cookie.indexOf(strName) == -1){
+	   			alert("Cookies ARE NOT currently enabled!\nPlease enable cookies and try again.");
+	   			return false;
+			}else{
+				cookieStart 	= document.cookie.indexOf(strName);
+				cookieValStart 	= (document.cookie.indexOf("=", cookieStart) + 1);
+				cookieValEnd 	= document.cookie.indexOf(";", cookieStart);
+				
+				if(cookieValEnd == -1){
+					cookieValEnd = document.cookie.length;
+				}
+				cookieValue = document.cookie.substring(cookieValStart, cookieValEnd);
+			}
+			if (cookieValue = "True"){
+				return ("True");
+			}
+		}
+		function SetCookie(name,value,expires,path,domain,secure){
+			var strDNS = GetDNS();
+		    document.cookie = name + "=" +escape(value) +
+		        ( (expires) ? ";expires=" + expires.toGMTString() + 1000*60*20 : "") +
+	        	( (path) ? ";path=" + path : "") +
+		        //( (domain) ? ";domain=" + domain : "") +
+	        	( (domain) ? ";domain=" + strDNS : "") +
+		        ( (secure) ? ";secure" : "");
+			   return true
+		}
+		function GetDNS(){
+			cookieDomain = document.location.hostname;
+		}
+		function CheckCookiesEnabled(){			
+			SetCookie('varCook','True','','/','','');
+			
+			if (GetCookie() == "True"){
+				//alert('Cookies are enabled, you can use the shopping cart!');
+			}else{		
+		  		return false;	
+		  	}		
+		}      
+		CheckCookiesEnabled() ;
+	 
+		function applogin(){
+			location.href="applogin.do?auth=e54447a198ae91a6&sid=yes";
+		}
+	</script>
+	</head>
+	
+	<body>	
+	<input type="hidden" name="uspsId" id="uspsId" value="" />
+		<div class="jqmWindow" id="sessionTOutModalWindow" style="z-index:6000;">
+<!-- 			<div class="dialogboxhead"><h2>Inactivity Warning!</h2></div> -->
+			<div class="dialogboxbody">
+				<div class='warningtext'>
+					<div id="boxhead">
+						<h2>Inactivity Warning!</h2>
+					</div>
+					<div class="boxbody">Your application has been inactive for 15 minutes and it will expire within another 5 minutes. Please click 'Continue' button to extend the session.</div>
+				</div>
+				<div style="padding: 5px 18px 18px 0px;text-align: right;">
+					<button type='button' value='Continue' class='smallbutton' onclick='cancelClose();'>Continue</button>
+					
+					<button type='button' value=' Cancel ' class='smallbutton jqmClose' onclick='thefinalseconds();'>Cancel </button>
+					
+					
+				</div>					
+			</div>
+		</div>
+		
+		<div id='autoCloseDiv' style="display:none;width: 850px; margin-bottom: 10px;">
+		   <p>
+			   	Inactivity warning!<br>
+			   	This window has been inactive for the last 5 minutes and will automatically close in 20 seconds. 
+			   	If you wish to keep the window open please click 'Continue'.<br>
+			   	<button type="button" style="width:125px;" onclick='cancelClose();'>Continue</button>
+			   	<button type="button" style="width:125px;" onclick='definitelyClose();'>Close</button>
+			</p>
+		</div>
+		
+		<div class="jqmWindow jqmwindow_inner" id="pleaseWaitModalWindow" style="z-index: 6000;">
+			<div id="pleaseWaitContent">
+		         <div class="dialogboxbody" style="overflow: hidden;">
+		   				<div id="waitImageLoad">
+		   					<img src="../i/pageloader.gif" alt="Loading" style="vertical-align: middle;"/>
+		   					<span id="waitImage" class="waittext" style="vertical-align: middle;line-height: 32px;">Please Wait...</span>
+		   				</div>	          				
+		         </div>
+			</div>
+		</div>
+	
+		
+
+
+
+
+
+
+	
+	<div id="header">
+		<div id="logo">
+			<a href="https://www.bankerstrust.com/Pages/Personal/Personal.aspx" target="_blank">
+				
+					
+					
+						<img src="https://umnasg7.umonitor.com/clients/8176/logo.jpg" alt="Bankers Trust Company" border="0" />
+									
+				
+				
+			</a>
+		</div>
+		<div id="outerrightheader">
+			<div id="innerrightheader">
+				
+				<div id="phoneicon" class="contactus"><label class="phonenum">1-800-362-1688</label></div>
+				
+				
+				<div id="emailicon" class="contactus"><label class="phonenum"><a class="comlinks" href="mailto:service@bankerstrust.com">service@bankerstrust.com</a></label></div>
+				
+				
+					
+								
+				<div id="savedappLink">
+					<button onclick="javascript: applogin();">Return to Saved Application</button>						
+				</div>				
+			</div>
+		</div>	
+	</div>
+		
+
+<div id="progressbar">
+	<div id="personalInfoTab" class="td_next">1. Personal Information</div>
+	<div id="loanInfoTab" class="td_next">2. Loan Information</div>
+	<div id="confirmTab" class="td_next">3. Confirmation</div>	
+</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="sidebox">
+	<div id="boxhead">
+		
+			
+			<h2>Before You Apply</h2>
+		
+			
+	</div>	
+	<div id="boxbody">
+		<form name="primaryApplicantForm" method="post" action="/consumerloan/uLoan/submitWelcome.do" id="frm1">
+			<input type="hidden" name="applicantType" value="P">
+			<input type="hidden" name="accountOpeningType" value="L">
+			<input type="hidden" name="resetAddress" value="Y">
+
+			
+			<div id="toperrortext" class="critical">
+				
+					Please correct and resubmit the highlighted errors.<span class="desktop">Please move mouse over the field for error description.</span>
+				
+				
+			</div>		
+			<div class="req"> = required field</div>
+			<div id="helptexttop">
+				
+			</div>
+			<div class="rounddiv">
+				
+					<p>Thank you for choosing Bankers Trust.</p> <p>This application process should take approximately 10 minutes, and you will need the following items:</p> <p> </p><ul> <li>Driver's License, Passport, Military ID or State ID</li> <li>U.S. Social Security Number</li> <li>U.S. Citizenship or Resident Alien Status<br><br></li> </ul> <p>For your security, the system will log you off if there is no activity for 15 minutes.</p> <p style="border: 2px solid rgb(0, 0, 0); padding: 5px;"> <b>Important Information About Procedures for Applying a Loan</b><br> To help the government fight the funding of terrorism and money laundering activities, Federal Law requires all financial institutions to obtain, verify and record information that identifies each person who opens an account. <br><br> <b>What This Means to You:</b><br> When you open a new account, we will ask for your name, address, date of birth and other information that will allow us to identify you. We may also ask to see your driver's license or other identifying documents. </p><p id="policyContenttxt"> <b>Our Privacy Policy</b><br> Protection of your privacy is important to us. To read more about how we protect your personal information, review our <br><a onclick="javascript:showPopup('http://www.bankerstrust.com/pages/disclosures/privacy.aspx');" href="#">privacy policy</a>. </p><p> <b>Your Credit History</b><br> As part of processing your application we will request a credit report and use the information contained in it to evaluate your loan application. </p><div class="paragraph"><strong>E-Sign Disclosure and Consent</strong><div> The E-Sign Disclosure and Consent applies to communications for the application you are about to submit and may apply to any products for which you are approved.</div></div>
+				
+
+				<div class="row">
+					<input type="checkbox" name="miscellaneous2" tabindex="1" value="YES" id="miscellaneous2">
+					<div class="tooltip desktop"></div>
+					<span id="miscellaneous2lbl" class="req">&nbsp;I have read the <a onclick="showPopup('https://www.bankerstrust.com/Pages/Disclosures/Consumer_Loans_eSign_Disclosure.aspx');enableDisclosure();" href="#.">E-Sign Disclosure and consent</a>, and I consent to receive communications via the methods described.</span>					
+					<div class="tooltip reset"></div>
+					<input type="hidden" name="esignature" value="">
+				</div>
+
+				 
+ 			 	 
+ 			 	<div class="row">
+					<div class="columnspan">
+						<label class="req existinglblleft" id="applicationTypelbl">Are you an existing 
+							customer?
+						</label>
+						<div class="radio">
+							<input type="radio" name="applicationType" tabindex="5" value="E" class="radio" id="applicantTypeYes">
+							<div class="tooltip desktop"></div>											
+							<label id="applicantTypeYeslbl" for="applicantTypeYes">Yes</label>											
+							<input type="radio" name="applicationType" tabindex="6" value="M" class="radio" id="applicantTypeNo">
+							<div class="tooltip desktop"></div>
+							<label class="radiolbl" id="applicantTypeNolbl" for="applicantTypeNo">No</label>
+						</div>
+						<div class="tooltip mobile tablet"></div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="row" id="FNrow">
+					<div class="columnspan">
+						<label class="req namelbl" id="fullNamelbl">Name (First, MI, Last)</label>
+						<label class="req namelbl" id="firstNamelbl">First Name</label>
+						<input type="text" name="firstName" maxlength="20" value="" id="firstNameId">
+						<div class="tooltip"></div>
+					</div>
+				</div>
+				<div class="row" id="MIrow">
+					<div class="columnspan">
+						<label id="MIlbl">Middle Initial</label>
+						<input type="text" name="MI" maxlength="1" value="" id="mIid">
+						<div class="tooltip"></div>
+					</div>
+				</div>
+				<div class="row" id="LNrow">
+					<div class="columnspan">
+						<label class="req" id="lastNamelbl">Last Name</label>						
+						<input type="text" name="lastName" maxlength="20" value="" id="lastNameId">
+						<div class="tooltip LNreset"></div>					
+					</div>
+				</div>
+				<div class="row" id="Suffixrow">
+					<div class="columnspan">
+						<label id="suffixlbl">Suffix</label> 
+						<select name="suffix" class="customSelect" id="suffix"><option value="" selected="selected">Suffix</option>
+							
+							<option value="First (1)">First (1)</option>
+<option value="First (I)">First (I)</option>
+<option value="Fourth (IV)">Fourth (IV)</option>
+<option value="JR">Junior</option>
+<option value="MD">Doctor</option>
+<option value="ML">Military</option>
+<option value="RN">Registered Nurse</option>
+<option value="Second (2)">Second (2)</option>
+<option value="Second (II)">Second (II)</option>
+<option value="SR">Senior</option>
+<option value="Third (III)">Third (III)</option></select>
+					</div>
+				</div> 
+				<div class="row">
+					<div class="column">
+						<label class="req" for="dobId" id="doblbl">Date of Birth </label>
+						<input type="text" name="dob" maxlength="12" tabindex="11" pattern="[0-9]*" value="" class="date" id="dobId">
+						<div class="tooltip"></div>
+					</div>
+					<div class="column">
+						<label class="req" for="ssnId" id="ssnlbl">Social Security Number</label>
+							
+							
+							
+							
+							
+							
+							
+							
+							<input type="text" name="ssn" maxlength="12" tabindex="12" pattern="[0-9]*" value="" class="ssn" id="ssn">
+							
+							
+							
+						<div class="tooltip"></div>
+					</div>
+				</div>
+				<div class="row">						
+					<div class="column">
+						<label class="req" for="preferredContactMethod" id="preferredContactMethodlbl">Preferred Contact Method</label>
+						<select name="preferredContactMethod" tabindex="13" id="preferredContactMethod"><option value="" selected="selected">Select...</option> 
+							<option value="Email">Email</option>
+<option value="Home Phone">Home Phone</option>
+<option value="Mobile Phone">Mobile Phone</option>
+<option value="Work Phone">Work Phone</option></select>
+						<div class="tooltip"></div>
+					</div>
+					<div class="column">
+						<label class="req" for="preferredContactTime" id="preferredContactTimelbl">Best Time to Contact</label>
+						<select name="preferredContactTime" tabindex="14" id="preferredContactTime"><option value="" selected="selected">Select...</option> 
+							<option value="Afternoon">Afternoon</option>
+<option value="Morning">Morning</option></select>
+						<div class="tooltip"></div>
+					</div>
+			    </div>
+				<div class="row">
+					<div class="column">
+						<label class="req" for="email" id="emaillbl">E-mail Address</label>
+						<input type="text" name="email" maxlength="50" tabindex="15" value="" class="email" id="email">
+						<div class="tooltip"></div>
+					</div>
+					<div class="column">
+						<label class="req" for="homePhone" id="homePhonelbl">Contact Phone</label>
+						<input type="text" name="homePhone" maxlength="12" tabindex="16" pattern="[0-9]*" value="" class="phone" id="homePhone">
+						<div class="tooltip"></div>
+					</div>
+				</div>
+				
+				
+					
+						 			
+							<div class="row resZipCode">
+								<div class="column">						
+									<label class="req" for="address.zipcode1" id="address.zipcode1lbl">Residential Zip Code</label> 
+									<input type="text" name="address.zipcode1" maxlength="5" size="7" tabindex="20" value="" onkeyup="numberOnly(this, event)" id="address.zipcode1">
+									<div class="tooltip" id="zipCodeCustomErrMsg"></div>
+									<div id="address.cityDiv" class="zipvalidatemsg"></div>
+								</div>					
+							</div>
+						
+					
+				
+				
+				
+				<!-- Member/Account Number fields for Existing Members : Begins -->
+				<div class="row">
+					
+					
+				 
+				</div>
+				<!-- Member/Account Number fields for Existing Members : Ends -->
+				
+				
+				
+				
+				<div class="row">
+					<div class="column">
+							<label class="req" for="branchId" id="branchIdlbl">Branch</label>
+							<select name="branchId" tabindex="22" class="customSelect" id="branchId"><option value="" selected="selected">Select...</option>
+								
+									
+										<option value="Altoona">Altoona;&nbsp;3820 8th St SW;&nbsp;Altoona&nbsp;IA</option>
+									
+								
+									
+										<option value="Ames">Ames;&nbsp;3725 Stange Road;&nbsp;Ames&nbsp;IA</option>
+									
+								
+									
+										<option value="Ankeny">Ankeny;&nbsp;102 NE Trilein Dr;&nbsp;Ankeny&nbsp;IA</option>
+									
+								
+									
+										<option value="Cedar Rapids Blairs Ferry">Cedar Rapids Blairs Ferry;&nbsp;400 Blairs Ferry Rd NE;&nbsp;Cedar Rapids&nbsp;IA</option>
+									
+								
+									
+										<option value="Cedar Rapids Main">Cedar Rapids Main;&nbsp;221 3rd Ave SE;&nbsp;Cedar Rapids&nbsp;IA</option>
+									
+								
+									
+										<option value="Clive">Clive;&nbsp;11111 University Ave;&nbsp;Clive&nbsp;IA</option>
+									
+								
+									
+										<option value="Downtown">Downtown;&nbsp;717 7th St;&nbsp;Des Moines&nbsp;IA</option>
+									
+								
+									
+										<option value="East">East;&nbsp;150 E Euclid Ave;&nbsp;Des Moines&nbsp;IA</option>
+									
+								
+									
+										<option value="Grimes">Grimes;&nbsp;110 SE Main St;&nbsp;Grimes&nbsp;IA</option>
+									
+								
+									
+										<option value="North">North;&nbsp;3905 Merle Hay Rd;&nbsp;Des Moines&nbsp;IA</option>
+									
+								
+									
+										<option value="Phoenix Retail">Phoenix Retail;&nbsp;2525 E Camelback Rd., Ste. 100;&nbsp;Phoenix&nbsp;AZ</option>
+									
+								
+									
+										<option value="Skywalk">Skywalk;&nbsp;453 7th St;&nbsp;Des Moines&nbsp;IA</option>
+									
+								
+									
+										<option value="South">South;&nbsp;655 E Army Post Rd;&nbsp;Des Moines&nbsp;IA</option>
+									
+								
+									
+										<option value="West Des Moines">West Des Moines;&nbsp;620 S 60th Street;&nbsp;West Des Moines&nbsp;IA</option>
+									
+								
+									
+										<option value="Windsor Heights">Windsor Heights;&nbsp;7000 University Ave;&nbsp;Windsor Heights&nbsp;IA</option></select>						
+							<div class="tooltip"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="column">
+						<strong>Loan Information</strong>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<label class="req" for="productId" id="productIdlbl">Type of loan desired</label> 
+						<select name="productId" tabindex="17" onchange="setCollateralType(this.value);" class="customSelect" id="productId"><option value="" selected="selected">Select...</option>
+							<option value="L_AL_AL_1007">Auto-Purchase</option>
+<option value="L_AL_AL_1039">Auto-Refinance</option>
+<option value="L_PL_US_1015">Checking Reserve</option>
+<option value="L_PL_US_1027">Credit Card Gold</option>
+<option value="L_HL_LOC_1041">HELOC-Agriculture/Business use property</option>
+<option value="L_HL_LOC_1018">HELOC-Personal/Household use property</option>
+<option value="L_PL_US_1013">PLOC</option>
+<option value="L_PL_US_1012">Unsecured</option></select>
+						<div class="tooltip"></div>
+					</div>
+					<div class="column">
+						<label for="miscellaneous1" id="miscellaneous1lbl">Type of collateral offered</label> 
+						<select name="miscellaneous1" tabindex="18" id="miscellaneous1"><option value="" selected="selected">Select...</option></select>
+						<div class="tooltip"></div>
+					</div>
+				</div>	
+				<div class="row">					
+					<div class="columnspan">
+						<label class="req" for="miscellaneous3" id="miscellaneous3lbl"><span>Purpose of loan</span></label> 
+						<select name="miscellaneous3" tabindex="19" class="customSelect" id="miscellaneous3"><option value="" selected="selected">Select...</option></select>
+						<div class="tooltip"></div>
+					</div>					
+				</div>	
+									
+					<div class="row">
+						<div class="column">
+							<strong>Other Information</strong>
+						</div>
+					</div>
+					<div class="row">	
+						 					
+							<div class="column">
+								<label  for="whereDidULearn" id="whereDidULearnlbl">Where did you <br>learn about us?</label>
+								<select name="whereDidULearn" tabindex="20" id="whereDidULearn"><option value="" selected="selected">Select...</option>
+									
+			                            
+			                                 <option value="Employer">Employer</option>                            
+			                             
+			                                 <option value="Friend">Friend</option>                            
+			                             
+			                                 <option value="Internet">Internet</option>                            
+			                             
+			                                 <option value="NewspaperAd">Newspaper Ad</option>                            
+			                             
+			                                 <option value="PromotionalMailer">Promotional Mailer</option>                            
+			                             
+			                                 <option value="RadioAd">Radio Ad</option>                            
+			                             
+			                                 <option value="Relative">Relative</option>                            
+			                             
+			                                 <option value="SearchEngine">Search Engine</option>                            
+			                             
+			                                 <option value="TVAd">TV Ad</option></select>
+								<div class="tooltip"></div>
+							</div>
+						
+						
+					</div>
+					 
+						<div class="row">
+							<div class="column">
+								<label for="agent" id="agentlbl">Your Relationship Banker</label>
+								<input type="text" name="agent" maxlength="20" tabindex="22" value="" id="agent">
+								<div class="tooltip"></div>
+							</div>
+						</div>
+					
+																		
+			</div>
+			<div id="helptextbottom">
+				
+			</div>
+			
+				<div align="right">
+					<button type="button" id="sub1" tabindex="23">Continue &raquo;</button>					
+				</div>
+			
+				
+		</form>		
+	</div>
+</div>
+
+<script type="text/javascript">
+	function ubcShowIncomplete(){	 	
+		window.close();	
+	} 
+	/* when type of loan changed */
+	$("#productId").change(function(){
+		setCollateralType($(this).val());//3rd param empty for current employer
+	});
+	
+	$(document).ready(function(){
+		
+		
+		
+		
+		
+		
+		
+		//Code snippet to sort whereDidULearn select box values.
+		//begins
+		var selectedOption = $("#whereDidULearn").val();
+		$("#whereDidULearn option[value='']").remove();
+		var mylist = $('#whereDidULearn');
+		var listitems = $('#whereDidULearn option');
+		listitems.sort(function(a, b) {
+		   var compA = $(a).text().toUpperCase();
+		   var compB = $(b).text().toUpperCase();
+		   return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+		})
+		$.each(listitems, function(idx, itm) { mylist.append(itm); });
+		$("#whereDidULearn").prepend("<option value=''>Select...</option>");
+		$("#whereDidULearn").val(selectedOption);
+	   //ends
+
+		
+		/* Below section will show/hide zipcode field in welcome page based on APPLICATION TYPT */
+		
+		function resZipCodeDisplay($trigger){
+				if($trigger == "E"){
+					
+					
+					
+					$(".resZipCode").show();
+						
+				}else{
+					$(".resZipCode").show();
+				}
+		}
+		resZipCodeDisplay("");
+		
+		$("input[name='applicationType']").click(function(){			
+			resZipCodeDisplay($(this).val());
+		});
+		
+		
+/* Show hide logic ends here */
+		
+		$("#subssn").click(function(){	
+			$('#pleaseWaitModalWindow').jqmShow();
+			
+		});
+	
+		$("#sub1").click(function(){				
+			$('#pleaseWaitModalWindow').jqmShow();			
+			
+			
+				if($("#applicantTypeYes").is(':checked')){
+					document.primaryApplicantForm.action = "existingMemberLogin.do";
+					
+				}
+				else{
+					document.primaryApplicantForm.action = "submitWelcome.do";					
+				}
+			
+			
+			trimAll();
+			document.primaryApplicantForm.submit();	
+		});
+		
+		
+// Account Number Show/hide functionality BEGIN
+		
+		$("#applicantTypeYes").click(function(){
+			$('.actTypeRow').fadeIn();
+		});
+		
+		$("#applicantTypeNo").click(function(){
+			$('.actTypeRow').fadeOut();
+			
+			//$("#memberNumberId").val('');
+		});				
+		$(function(){		
+			if($("#applicantTypeYes:checked").val() == "E"){
+				$('.actTypeRow').fadeIn();
+			}
+			else{
+				$('.actTypeRow').fadeOut();
+			}
+		});
+		$("#applicantTypeYes").click(function(){
+			$('.actNumRow').fadeIn();
+		});
+		
+		$("#applicantTypeNo").click(function(){
+			$('.actNumRow').fadeOut();
+			
+			$("#memberNumberId").val('');
+		});				
+		$(function(){		
+			if($("#applicantTypeYes:checked").val() == "E"){
+				$('.actNumRow').fadeIn();
+			}
+			else{
+				$('.actNumRow').fadeOut();
+			}
+		});
+		
+		// Account Number Show/hide functionality END
+		
+		
+		
+			$("#savedappLink").show();
+				
+		//added for eSignfor disclosures 
+		disableAllDisclosures();
+	
+	setTabOrder("frm1",true);
+	$("frm1").focus_first("frm1");
+	window.scrollTo(0,$("body").offset().top);
+});
+
+function getSelectWidthWelcome($tSelect){
+	$maxLength = 0;
+	$tSelect.find('option').each(function(){
+		if($(this).text().length > $maxLength){
+			$maxLength = $(this).text().length;
+		}
+	});
+	return $maxLength * 9;
+}
+
+function setCollateralType(loanType){
+	var form = document.primaryApplicantForm;
+	var subId = '';
+	var purposeId = '';
+	
+	for(i = form.miscellaneous1.options.length;i >= 0;i--)
+	{
+		form.miscellaneous1.remove(i);
+	}
+	for(i = form.miscellaneous3.options.length;i >= 0;i--)
+	{
+		form.miscellaneous3.remove(i);
+	}
+	form.miscellaneous3.options[0] = new Option('Select...','' )
+	/*var selectWidth = 198;*/
+	
+		var ctr = 1;
+		
+			prodId = 'L_AL_AL_1007'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Vehicle Purchase','Vehicle Purchase');			
+				ctr++;				
+				/*if('Vehicle Purchase'.length > selectWidth){
+					selectWidth = 'Vehicle Purchase'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_AL_AL_1039'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Vehicle Refinance','Vehicle Refinance');			
+				ctr++;				
+				/*if('Vehicle Refinance'.length > selectWidth){
+					selectWidth = 'Vehicle Refinance'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Applying in Response to Being Overdrawn','Applying in Response to Being Overdrawn');			
+				ctr++;				
+				/*if('Applying in Response to Being Overdrawn'.length > selectWidth){
+					selectWidth = 'Applying in Response to Being Overdrawn'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Debt Consolidation','Debt Consolidation');			
+				ctr++;				
+				/*if('Debt Consolidation'.length > selectWidth){
+					selectWidth = 'Debt Consolidation'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Education','Education');			
+				ctr++;				
+				/*if('Education'.length > selectWidth){
+					selectWidth = 'Education'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Future Use','Future Use');			
+				ctr++;				
+				/*if('Future Use'.length > selectWidth){
+					selectWidth = 'Future Use'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('HELOC Refinance','HELOC Refinance');			
+				ctr++;				
+				/*if('HELOC Refinance'.length > selectWidth){
+					selectWidth = 'HELOC Refinance'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Home Improvement HELOC','Home Improvement HELOC');			
+				ctr++;				
+				/*if('Home Improvement HELOC'.length > selectWidth){
+					selectWidth = 'Home Improvement HELOC'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Home Purchase Primary Residence','Home Purchase Primary Residence');			
+				ctr++;				
+				/*if('Home Purchase Primary Residence'.length > selectWidth){
+					selectWidth = 'Home Purchase Primary Residence'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Home Purchase Secondary Residence','Home Purchase Secondary Residence');			
+				ctr++;				
+				/*if('Home Purchase Secondary Residence'.length > selectWidth){
+					selectWidth = 'Home Purchase Secondary Residence'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Lot / Land Purchase','Lot / Land Purchase');			
+				ctr++;				
+				/*if('Lot / Land Purchase'.length > selectWidth){
+					selectWidth = 'Lot / Land Purchase'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Miscellaneous Expenses','Miscellaneous Expenses');			
+				ctr++;				
+				/*if('Miscellaneous Expenses'.length > selectWidth){
+					selectWidth = 'Miscellaneous Expenses'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Prevent Future Overdrafts','Prevent Future Overdrafts');			
+				ctr++;				
+				/*if('Prevent Future Overdrafts'.length > selectWidth){
+					selectWidth = 'Prevent Future Overdrafts'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Vehicle Purchase','Vehicle Purchase');			
+				ctr++;				
+				/*if('Vehicle Purchase'.length > selectWidth){
+					selectWidth = 'Vehicle Purchase'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Vehicle Refinance','Vehicle Refinance');			
+				ctr++;				
+				/*if('Vehicle Refinance'.length > selectWidth){
+					selectWidth = 'Vehicle Refinance'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1012'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Debt Consolidation','Debt Consolidation');			
+				ctr++;				
+				/*if('Debt Consolidation'.length > selectWidth){
+					selectWidth = 'Debt Consolidation'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1012'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Miscellaneous Expenses','Miscellaneous Expenses');			
+				ctr++;				
+				/*if('Miscellaneous Expenses'.length > selectWidth){
+					selectWidth = 'Miscellaneous Expenses'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1012'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Other Purchase','Other Purchase');			
+				ctr++;				
+				/*if('Other Purchase'.length > selectWidth){
+					selectWidth = 'Other Purchase'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1013'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Applying in Response to Being Overdrawn','Applying in Response to Being Overdrawn');			
+				ctr++;				
+				/*if('Applying in Response to Being Overdrawn'.length > selectWidth){
+					selectWidth = 'Applying in Response to Being Overdrawn'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1013'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Debt Consolidation','Debt Consolidation');			
+				ctr++;				
+				/*if('Debt Consolidation'.length > selectWidth){
+					selectWidth = 'Debt Consolidation'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1013'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Future Use','Future Use');			
+				ctr++;				
+				/*if('Future Use'.length > selectWidth){
+					selectWidth = 'Future Use'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1013'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Miscellaneous Expenses','Miscellaneous Expenses');			
+				ctr++;				
+				/*if('Miscellaneous Expenses'.length > selectWidth){
+					selectWidth = 'Miscellaneous Expenses'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1013'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Other Purchase','Other Purchase');			
+				ctr++;				
+				/*if('Other Purchase'.length > selectWidth){
+					selectWidth = 'Other Purchase'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1013'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Prevent Future Overdrafts','Prevent Future Overdrafts');			
+				ctr++;				
+				/*if('Prevent Future Overdrafts'.length > selectWidth){
+					selectWidth = 'Prevent Future Overdrafts'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1014'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Applying in Response to Being Overdrawn','Applying in Response to Being Overdrawn');			
+				ctr++;				
+				/*if('Applying in Response to Being Overdrawn'.length > selectWidth){
+					selectWidth = 'Applying in Response to Being Overdrawn'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1014'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Credit Card','Credit Card');			
+				ctr++;				
+				/*if('Credit Card'.length > selectWidth){
+					selectWidth = 'Credit Card'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1014'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Prevent Future Overdrafts','Prevent Future Overdrafts');			
+				ctr++;				
+				/*if('Prevent Future Overdrafts'.length > selectWidth){
+					selectWidth = 'Prevent Future Overdrafts'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1015'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Applying in Response to Being Overdrawn','Applying in Response to Being Overdrawn');			
+				ctr++;				
+				/*if('Applying in Response to Being Overdrawn'.length > selectWidth){
+					selectWidth = 'Applying in Response to Being Overdrawn'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1015'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Prevent Future Overdrafts','Prevent Future Overdrafts');			
+				ctr++;				
+				/*if('Prevent Future Overdrafts'.length > selectWidth){
+					selectWidth = 'Prevent Future Overdrafts'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1027'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Applying in Response to Being Overdrawn','Applying in Response to Being Overdrawn');			
+				ctr++;				
+				/*if('Applying in Response to Being Overdrawn'.length > selectWidth){
+					selectWidth = 'Applying in Response to Being Overdrawn'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1027'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Credit Card','Credit Card');			
+				ctr++;				
+				/*if('Credit Card'.length > selectWidth){
+					selectWidth = 'Credit Card'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_PL_US_1027'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Prevent Future Overdrafts','Prevent Future Overdrafts');			
+				ctr++;				
+				/*if('Prevent Future Overdrafts'.length > selectWidth){
+					selectWidth = 'Prevent Future Overdrafts'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Applying in Response to Being Overdrawn','Applying in Response to Being Overdrawn');			
+				ctr++;				
+				/*if('Applying in Response to Being Overdrawn'.length > selectWidth){
+					selectWidth = 'Applying in Response to Being Overdrawn'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Debt Consolidation','Debt Consolidation');			
+				ctr++;				
+				/*if('Debt Consolidation'.length > selectWidth){
+					selectWidth = 'Debt Consolidation'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Education','Education');			
+				ctr++;				
+				/*if('Education'.length > selectWidth){
+					selectWidth = 'Education'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Future Use','Future Use');			
+				ctr++;				
+				/*if('Future Use'.length > selectWidth){
+					selectWidth = 'Future Use'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('HELOC Refinance','HELOC Refinance');			
+				ctr++;				
+				/*if('HELOC Refinance'.length > selectWidth){
+					selectWidth = 'HELOC Refinance'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Home Improvement HELOC','Home Improvement HELOC');			
+				ctr++;				
+				/*if('Home Improvement HELOC'.length > selectWidth){
+					selectWidth = 'Home Improvement HELOC'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Home Purchase Primary Residence','Home Purchase Primary Residence');			
+				ctr++;				
+				/*if('Home Purchase Primary Residence'.length > selectWidth){
+					selectWidth = 'Home Purchase Primary Residence'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Home Purchase Secondary Residence','Home Purchase Secondary Residence');			
+				ctr++;				
+				/*if('Home Purchase Secondary Residence'.length > selectWidth){
+					selectWidth = 'Home Purchase Secondary Residence'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Lot / Land Purchase','Lot / Land Purchase');			
+				ctr++;				
+				/*if('Lot / Land Purchase'.length > selectWidth){
+					selectWidth = 'Lot / Land Purchase'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Miscellaneous Expenses','Miscellaneous Expenses');			
+				ctr++;				
+				/*if('Miscellaneous Expenses'.length > selectWidth){
+					selectWidth = 'Miscellaneous Expenses'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Prevent Future Overdrafts','Prevent Future Overdrafts');			
+				ctr++;				
+				/*if('Prevent Future Overdrafts'.length > selectWidth){
+					selectWidth = 'Prevent Future Overdrafts'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Vehicle Purchase','Vehicle Purchase');			
+				ctr++;				
+				/*if('Vehicle Purchase'.length > selectWidth){
+					selectWidth = 'Vehicle Purchase'.length * 8;
+				}*/
+			}						
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId ){
+				form.miscellaneous3.options[ctr] = new Option('Vehicle Refinance','Vehicle Refinance');			
+				ctr++;				
+				/*if('Vehicle Refinance'.length > selectWidth){
+					selectWidth = 'Vehicle Refinance'.length * 8;
+				}*/
+			}						
+		
+		/*var selectWidth = getSelectWidthWelcome($('#miscellaneous3'));*/
+		
+	/*$('#miscellaneous3').css('width',selectWidth+'px');*/
+	
+	$(document).ready(function() {
+		$('#miscellaneous3lbl span').text("Purpose of Loan");
+		
+	 });	
+	
+	
+		var ctr = 0;
+		
+			prodId = 'L_AL_AL_1007'
+			if(loanType == prodId){
+				form.miscellaneous1.options[ctr] = new Option('Automobile','Automobile' )	
+				ctr++;
+			}
+		
+			prodId = 'L_HL_LOC_1018'
+			if(loanType == prodId){
+				form.miscellaneous1.options[ctr] = new Option('Real Property','Real Property' )	
+				ctr++;
+			}
+		
+			prodId = 'L_HL_LOC_1041'
+			if(loanType == prodId){
+				form.miscellaneous1.options[ctr] = new Option('Real Property','Real Property' )	
+				ctr++;
+			}
+		
+			prodId = 'L_AL_AL_1039'
+			if(loanType == prodId){
+				form.miscellaneous1.options[ctr] = new Option('Automobile','Automobile' )	
+				ctr++;
+			}
+		
+	
+	
+	for(i =0; i< form.miscellaneous1.options.length; i++)
+	{
+		if(form.miscellaneous1.options[i].value == subId)
+		{
+			form.miscellaneous1.selectedIndex = i;
+		}
+	}
+	form.miscellaneous1.disabled = true;
+	
+	for(i =0; i< form.miscellaneous3.options.length; i++)
+	{
+		if(form.miscellaneous3.options[i].value == purposeId)
+		{
+			form.miscellaneous3.selectedIndex = i;
+		}
+	}
+	
+	selectCustomSelect();
+}
+
+setCollateralType(document.primaryApplicantForm.productId.value);
+</script>
+
+<script type="text/javascript">
+
+//To handle Disclosures BEGIN
+function enableDisclosure(){
+		
+	var formName = document.getElementById('frm1');
+	if(formName.elements["miscellaneous2"]){
+		formName.elements["miscellaneous2"].disabled = false;
+		formName.elements["esignature"].value = 'on';
+	}	
+	
+}
+function disableAllDisclosures(){	
+		
+	var formName = document.getElementById('frm1');	
+	if(formName.elements["esignature"]){
+		if(formName.elements["esignature"].value!='on'){
+			if(formName.elements["miscellaneous2"]){
+				if(formName.elements["miscellaneous2"].value != 'on'){
+					if(formName.elements["miscellaneous2"].checked != true){
+						formName.elements["miscellaneous2"].disabled = true;
+					}	
+				}
+			}		
+		}
+	}
+	
+	
+}
+
+function enableClickedDisclosures(){
+	var formName = document.getElementById('frm1');
+	if(formName.elements["miscellaneous2"]){
+			formName.elements["miscellaneous2"].disabled = false;
+	
+	}	
+	
+}
+
+//To handle Disclosures END
+
+</script>
+
+	
+		
+
+
+
+
+
+
+
+
+
+<div class="footer">
+	<div class="copyright">
+		<span style="font-size: 9px;font-style: italic;">v18.2.0</span>
+	</div>
+	
+		
+	<div class="imglib"><img src='https://umnasg7.umonitor.com/imglib/FDICbig.jpg' border='no' alt='FDIC'/>
+		
+				&nbsp;<img src='https://umnasg7.umonitor.com/imglib/EHLmedium.jpg' border='no' alt='EHL'/>
+		
+	</div>
+			
+
+	
+</div>	
+	
+
+<div class="jqmWindow" id="modalWindow">
+	<div id="jqmContent">
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() { 
+		if ($('.jqmWindow').length > 0) {
+        	$('.jqmWindow').bgiframe(); 
+		}	
+		selectCustomSelect();
+    });
+	
+	
+	
+	
+// 	function openUmonHomeLink()
+// 	{
+// 		window.open("http://www.dh.com", "mywindow",'width=1000, height=750,left=220,top=100, statusbar=yes, toolbar=yes, scrollbars=yes, menubar=yes, resizable=yes',true);
+// 	}
+</script>
+	
+		
+		
+		
+		
+		<script type="text/javascript">		
+		
+		$(document).ready(function(){
+			selectNavTab('applicant'); // this will highlight the tab (progress bar) color in USC
+		});
+		
+		
+		
+		function cancelClose(){
+			clearTimeout(autoCloseTimer); //stops auto-close timer			
+			resetTimeout();
+			
+			refreshIt();
+			
+			$('#sessionTOutModalWindow').jqmHide();
+		}
+		
+		function resetTimeout(){			  
+			clearTimeout(timeoutObject); //stops timer
+			timeoutObject = setTimeout("promptForClose()",timePeriod); //restarts timer from 0
+		}
+		
+		function promptForClose(){
+			try{
+		        if(navigator.appName != "Netscape"){
+		            window.focus();        
+				}
+			}catch(e){}
+			$('#sessionTOutModalWindow').jqmShow();
+			
+	    	autoCloseTimer = setTimeout("thefinalseconds()",warnPeriod);
+			
+			
+		}
+
+				
+		url = 'https://www.bankerstrust.com/Pages/Personal/Personal.aspx';
+		$(document).keydown(function(e){
+			resetTimeout();
+		});
+		$(document).mousedown(function(e){
+			resetTimeout();
+		});
+		resetTimeout();
+		
+		
+		</script>
+	</body>
+</html>

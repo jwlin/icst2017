@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<!--[if lt IE 7]><html xmlns:fb="http://ogp.me/ns/fb#" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html xmlns:fb="http://ogp.me/ns/fb#" class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html xmlns:fb="http://ogp.me/ns/fb#" class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]><html xmlns:fb="http://ogp.me/ns/fb#" class="no-js lt-ie10" lang="en"> <![endif]-->
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    <title>PNC Credit Card Application</title>
+    <noscript>
+      <h1>To apply for a PNC Credit Card, you will need to enable Javascript.</h1>
+    </noscript>
+
+    <!-- For Browser Upgrade -->
+    <link href="https://www.pnc.com/etc/designs/pnc-com/clientlibs/pnc-com.fancyBox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.pnc.com/etc/designs/pnc-com/clientlibs/pnc-com.browser-upgrade.css" type="text/css">
+    <!-- Ideally these would be loaded at the bottom of the page but the script that calls jq191 is injected earlier -->
+    <script type="text/javascript" src="https://www.pnc.com/etc/designs/pnc-foundation/clientlibs/pnc-foundation.jquery.191.js" class="ng-scope"></script>
+    <script type="text/javascript" src="https://www.pnc.com/etc/designs/pnc-foundation/clientlibs/pnc-foundation.jquery.191.noconflict.js" class="ng-scope"></script>
+    <script type="text/javascript" src="https://www.pnc.com/etc/designs/pnc-com/clientlibs/pnc-com.fancyBox.js" class="ng-scope"></script>
+    <script type="text/javascript" src="https://www.pnc.com/etc/designs/pnc-com/clientlibs/jQuery.cookie.js"></script>
+    <!-- End For Browser Upgrade -->
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/app.css">
+    <script type="text/javascript">
+      var POST_DATA = {"referrer":"https://www.pnc.com/en/personal-banking/banking/credit-cards/pnc-points-visa-credit-card.html","isReferrerValid":"true","wbb_api_key":"2TCJFMH7JSsdl2QxVwzO50u4yk","wsp_api_key":"7p0cmObcHjlXzL5kBEStNvzr8y","mbl_deviceID_api_key":"1B74t9QYFUwyRovsa6a7FLWEKN","lp_acc_num":"10776660"};
+    </script>
+
+    <script type="text/javascript">
+      var page_data = {
+        site_name: "pnc",
+        language: "en",
+        page_name: "applications|credit-card|start-screen",
+        page_type: "applications",
+        application_step: "start-screen",
+        products: ""
+      };
+
+      var event_data;
+
+      if (window.location.hostname === 'www.apply.pnc.com') {
+        document.write ('<script src="//assets.adobedtm.com/1d90950c926aacaf003e1e8e48aeb1189d4d7901/satelliteLib-32acb09acb2591af3d6608d6f545ca8799bdc5e1.js"><\/script>');
+      } else {
+        document.write ('<script src="//assets.adobedtm.com/1d90950c926aacaf003e1e8e48aeb1189d4d7901/satelliteLib-32acb09acb2591af3d6608d6f545ca8799bdc5e1-staging.js"><\/script>');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="browserUpgrade" style="display: none">
+      <img class="ach_logo" src="assets/images/pnc_main_logo.png" alt="PNC Logo">
+      <div class="upgrade_text">
+        <h1 class="b">
+          To get the most of this PNC experience,<br>
+          we recommend upgrading your browser.
+        </h1>
+      </div>
+      <div class="clearfix"></div>
+      <div class="upgrade_btns">
+        <a href="https://www.google.com/intl/en/chrome/browser/" rel="noopener noreferrer" target="_blank"><img alt="Get Chrome" src="https://www.pnc.com/content/dam/pnc-com/images/universal/btn_hom_getchrome.gif"></a>
+        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" rel="noopener noreferrer" target="_blank"><img alt="Get IE" src="https://www.pnc.com/content/dam/pnc-com/images/universal/btn_hom_getie.gif"></a>
+        <a href="https://www.mozilla.org/en-US/firefox/new/" rel="noopener noreferrer" target="_blank"><img alt="Get Firefox" src="https://www.pnc.com/content/dam/pnc-com/images/universal/btn_hom_getfirefox.gif"></a>
+      </div>
+    </div>
+
+    <div class="site-container">
+      <div ng-include src="'app/layout/header.html'" class="header-container"></div>
+      <div ui-view class="content-container"></div>
+      <div ng-include src="'app/layout/footer.html'" class="footer-container"></div>
+    </div>
+
+    <!--end pnc common-->
+    <script src="scripts/vendor.js"></script>
+
+    <script src="scripts/v1/app.js"></script>
+
+    <script type="text/javascript">_satellite.pageBottom();</script>
+  </body>
+</html>
+

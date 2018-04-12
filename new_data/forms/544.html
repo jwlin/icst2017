@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<title>Union Bank Online Card Application</title>
+		
+		<script data-main="app/js/main.js"
+			src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.js"></script>
+		
+		<link rel="icon" sizes="196x196" href="app/images/mobile-icon.png">
+		<link rel="stylesheet" type="text/css" href="app/css/ZootJquery.css">
+		<link rel="stylesheet" href="lib/jqwidgets/styles/jqx.base.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="app/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="app/css/client.css">
+		<link rel='stylesheet' media='screen and (max-width: 769px)' href='app/css/narrow.css' />
+		<link rel='stylesheet' media='screen and (min-width: 770px) and (max-width: 1023px)' href='app/css/medium.css' />
+		<link rel='stylesheet' media='screen and (min-width: 1024px)' href='app/css/wide.css' /> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+		
+		<style>
+			.header, #pleaseWait {
+				display: none;
+			}
+			
+			#startPage {
+				display: block;
+			}
+
+			 *:focus {border: 1px dotted #515151;}*
+			
+		</style>
+	</head>
+	<body>
+	<div id = scriptDiv>
+		<script id="threatScript" type="text/javascript" src=""></script>
+		<noscript>
+			<iframe id="threatNoScript" style="width: 100px; height: 100px; border: 0; position: absolute; top: -5000px;" src=""></iframe>
+		</noscript>
+	</div>
+	    <header>
+			<div class="headerSection">
+				<div class="pageHeader">
+					<div class="logoImage">
+						<img src="app/images/clear.png" alt="Union Bank">
+					</div>
+					<div class="horizontalRule">
+					</div>
+				</div>
+			</div>
+		</header>
+			<!-- aria-describedby content -->
+			<div class="hiddenDescribes public"  id="ssnDescription">Format Example: enter only the numbers of your Social security number, 
+			Federal law requires us to obtain, verify, and record information that identifies each person on the account</div>
+			
+			<div class="hiddenDescribes public"  id="birthdateDescription">Format Example: enter your date of birth as month month, 
+			day day, year year year year. For example, January 26th 1957 would be enterd as 01, 26, 1 9 5 7. Federal law requires 
+			us to obtain, verify, and record information that identifies each person on the account.</div>
+			
+			<div class="hiddenDescribes public"  id="emailDescription">Format Example: Enter your email name followed by the at sign 
+			followed by the email domain dot com. If you provide your email address, we may use it to contact you about your account 
+			and tell you about useful products and services. You may contact us anytime to change these preferences.</div>
+			
+			<div class="hiddenDescribes public"  id="primaryPhoneDescription">Format Example: enter only the numbers of your phone number. When you give us your cell phone number, we have your permission to contact you at that number about all your Union Bank accounts. 
+			Your consent allows us to use text messaging, artificial or prerecorded voice messages and automatic dialing technology for informational 
+			and account service calls, but not for telemarketing or sales calls. You also consent to contact from companies working on our behalf to 
+			service your accounts. Message and data rates may apply. You may contact us anytime to change these preferences.</div>
+			
+			<div class="hiddenDescribes public"  id="secondaryPhoneDescription">Format Example: enter only the numbers of your phone number.</div>
+			
+			<div class="hiddenDescribes public"  id="physAdderLn1Description">No P O boxes allowed as physical address</div>
+			
+			<div class="hiddenDescribes public"  id="physAdderLn2Description">Appartment number, Unit number, etcetera</div>
+			
+			<div class="hiddenDescribes public"  id="zipDescription">Format Example: Enter 5 digit zip code</div>
+			
+			<div class="hiddenDescribes public"  id="promoDescription">Format Example: Enter 13 digit promo code</div>
+			
+			<div class="hiddenDescribes public"  id="yearsInBusinessDescription">Format Example: enter the years in business as 
+			month month, forward slash, year year. For example, January of 1999 would be enterd as 0 1, forward slash, 9 9.</div>
+			<!-- END aria-describedby content -->
+			
+		<div class="subSections" id="startPage">
+		</div>  
+		<div class="pageSpacerTop"></div>
+		<div class="wait"></div>
+		<main aria-live="assertive">
+		    <br>
+			<div id="headerText" class="topMsgBlock">
+			</div>
+			<div style="clear: both"></div>
+			<div class="errorBlock msgSmall">
+				<div id="errorContent" style="display:none;">
+				</div>
+			</div>
+			<div style="clear: both"></div>
+			<div id="mainContent" class="form">
+			</div>
+			<div id ="timeWarning">
+			</div>
+			<div id="footerText">
+			</div>
+		</main>
+ 		<br/>
+ 		<br/>
+ 		<br/>
+	</body>
+</html>

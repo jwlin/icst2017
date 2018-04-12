@@ -1,0 +1,1325 @@
+<!DOCTYPE html><!--[if IE 9]><html
+class="ie ie9" lang="en-US"><![endif]--><html
+lang="en-US"><head><meta
+charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta
+name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><link
+rel="profile" href="http://gmpg.org/xfn/11"><link
+rel="pingback" href="https://www.vornado.com/xmlrpc.php"><title>Product Registration &#8211; Vornado</title><link
+rel='dns-prefetch' href='//fonts.googleapis.com' /><link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="Vornado &raquo; Feed" href="https://www.vornado.com/feed" /><link
+rel="alternate" type="application/rss+xml" title="Vornado &raquo; Comments Feed" href="https://www.vornado.com/comments/feed" /> <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.vornado.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style><link
+rel='stylesheet' id='rs-plugin-settings-css'  href='https://www.vornado.com/wp-content/plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' /><style id='rs-plugin-settings-inline-css' type='text/css'>#rs-demo-id {}</style><link
+rel='stylesheet' id='woocommerce-layout-css'  href='//www.vornado.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' /><link
+rel='stylesheet' id='woocommerce-smallscreen-css'  href='//www.vornado.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' /><link
+rel='stylesheet' id='woocommerce-general-css'  href='//www.vornado.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' /><link
+rel='stylesheet' id='yith_wcbm_badge_style-css'  href='https://www.vornado.com/wp-content/plugins/yith-woocommerce-badge-management-premium/assets/css/frontend.css' type='text/css' media='all' /><style id='yith_wcbm_badge_style-inline-css' type='text/css'>.yith-wcbm-badge-18693        {
+        top: 15px;bottom: auto;left: auto;right: 15px;        opacity: 1;
+        }
+        
+
+			.yith-wcbm-css-badge-16250{
+				color: #FFFFFF;
+				font-family: "Open Sans",sans-serif;
+				position: absolute;
+				background-color: transparent;
+				overflow: auto;
+				top: 15px;bottom: auto;left: 15px;right: auto;opacity: 1;			}
+			.yith-wcbm-css-badge-16250 div.yith-wcbm-css-s1{
+				
+			}
+
+			.yith-wcbm-css-badge-16250 div.yith-wcbm-css-s2{
+				
+			}
+
+			.yith-wcbm-css-badge-16250 div.yith-wcbm-css-text{
+				padding: 6px 8px;
+				background: #f25c00;
+				font-size: 13px;
+				font-weight: bold;
+				line-height:13px;
+			}
+			
+
+			.yith-wcbm-css-badge-16430{
+				color: #ffffff;
+				font-family: "Open Sans",sans-serif;
+				position: absolute;
+				background-color: transparent;
+				overflow: auto;
+				top: 15px;bottom: auto;left: 15px;right: auto;opacity: 1;			}
+			.yith-wcbm-css-badge-16430 div.yith-wcbm-css-s1{
+				
+			}
+
+			.yith-wcbm-css-badge-16430 div.yith-wcbm-css-s2{
+				
+			}
+
+			.yith-wcbm-css-badge-16430 div.yith-wcbm-css-text{
+				padding: 6px 8px;
+				background: #808080;
+				font-size: 13px;
+				font-weight: bold;
+				line-height:13px;
+			}
+			
+
+			.yith-wcbm-css-badge-16404{
+				color: #ffffff;
+				font-family: "Open Sans",sans-serif;
+				position: absolute;
+				background-color: transparent;
+				overflow: auto;
+				top: 15px;bottom: auto;left: 15px;right: auto;opacity: 1;			}
+			.yith-wcbm-css-badge-16404 div.yith-wcbm-css-s1{
+				
+			}
+
+			.yith-wcbm-css-badge-16404 div.yith-wcbm-css-s2{
+				
+			}
+
+			.yith-wcbm-css-badge-16404 div.yith-wcbm-css-text{
+				padding: 6px 8px;
+				background: #d11820;
+				font-size: 13px;
+				font-weight: bold;
+				line-height:13px;
+			}</style><link
+rel='stylesheet' id='googleFontsOpenSans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%2C800%2C300&#038;ver=4.7.10' type='text/css' media='all' /><link
+rel='stylesheet' id='be_compare_frontend_css-css'  href='https://www.vornado.com/wp-content/plugins/woocommerce-product-compare/assets/css/frontend.css' type='text/css' media='all' /><style id='be_compare_frontend_css-inline-css' type='text/css'>#compare-products-basket.floating{ max-width: 1140px; }
+			                #compare-products-basket img { max-width: 50px; }
+			        		#compare-products-basket .compare-product-placeholder { width: 50px; height: 50px; }</style><link
+rel='stylesheet' id='be_compare_responsive_css-css'  href='https://www.vornado.com/wp-content/plugins/woocommerce-product-compare/assets/css/responsive.css' type='text/css' media='all' /><link
+rel='stylesheet' id='js_composer_front-css'  href='https://www.vornado.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='gforms_reset_css-css'  href='https://www.vornado.com/wp-content/plugins/gravityforms/css/formreset.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='gforms_formsmain_css-css'  href='https://www.vornado.com/wp-content/plugins/gravityforms/css/formsmain.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='gforms_ready_class_css-css'  href='https://www.vornado.com/wp-content/plugins/gravityforms/css/readyclass.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='gforms_browsers_css-css'  href='https://www.vornado.com/wp-content/plugins/gravityforms/css/browsers.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-styles-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/css/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-icon-font-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/shopkeeper-icon-font/style.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-awesome-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/font-awesome/css/font-awesome.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-linea-arrows-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/linea-fonts/arrows/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-linea-basic-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/linea-fonts/basic/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-linea-basic_elaboration-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/linea-fonts/basic_elaboration/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-linea-ecommerce-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/linea-fonts/ecommerce/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-linea-music-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/linea-fonts/music/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-linea-software-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/linea-fonts/software/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-font-linea-weather-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/inc/fonts/linea-fonts/weather/styles.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-fresco-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/css/fresco/fresco.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-header-default-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper/css/header-default.css' type='text/css' media='all' /><link
+rel='stylesheet' id='shopkeeper-default-style-css'  href='https://www.vornado.com/wp-content/themes/shopkeeper-child/style.css' type='text/css' media='all' /><link
+rel='stylesheet' id='mpc-massive-style-css'  href='https://www.vornado.com/wp-content/plugins/mpc-massive/assets/css/mpc-styles.css' type='text/css' media='all' /> <script type="text/template" id="tmpl-variation-template"><div class="woocommerce-variation-description">
+		{{{ data.variation.variation_description }}}
+	</div>
+
+	<div class="woocommerce-variation-price">
+		{{{ data.variation.price_html }}}
+	</div>
+
+	<div class="woocommerce-variation-availability">
+		{{{ data.variation.availability_html }}}
+	</div></script> <script type="text/template" id="tmpl-unavailable-variation-template"><p>Sorry, this product is unavailable. Please choose a different combination.</p></script> <script type='text/javascript' src='https://www.vornado.com/wp-includes/js/jquery/jquery.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-includes/js/jquery/jquery-migrate.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script> <script type='text/javascript'>/*  */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/product-registration?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.vornado.com\/cart","is_cart":"","cart_redirect_after_add":"yes"};
+/*  */</script> <script type='text/javascript' src='//www.vornado.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script> <script type='text/javascript'>/*  */
+var ajax_request = {"ajax_url":"https:\/\/www.vornado.com\/wp-admin\/admin-ajax.php"};
+/*  */</script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/campaign-monitor-for-woocommerce/views/public/js/app.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/gravityforms/js/jquery.json.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/gravityforms/js/gravityforms.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js'></script> <link
+rel='https://api.w.org/' href='https://www.vornado.com/wp-json/' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.vornado.com/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.vornado.com/wp-includes/wlwmanifest.xml" /><meta
+name="generator" content="WordPress 4.7.10" /><meta
+name="generator" content="WooCommerce 3.1.1" /><link
+rel="canonical" href="https://www.vornado.com/product-registration" /><link
+rel='shortlink' href='https://www.vornado.com/?p=1044' /><link
+rel="alternate" type="application/json+oembed" href="https://www.vornado.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vornado.com%2Fproduct-registration" /><link
+rel="alternate" type="text/xml+oembed" href="https://www.vornado.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vornado.com%2Fproduct-registration&#038;format=xml" /> <script src="https://www.google.com/recaptcha/api.js" async defer></script> <script type="text/javascript">var shopkeeper_ajaxurl = '/wp-admin/admin-ajax.php';</script> <script type="text/javascript">var addedToCartMessage = " has been added to your cart.";</script> <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta
+name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link
+rel="stylesheet" type="text/css" href="https://www.vornado.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><meta
+name="generator" content="Powered by Slider Revolution 5.4.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." /><link
+rel="icon" href="https://www.vornado.com/wp-content/uploads/2016/10/cropped-Vornado-V-01-300x300.png" sizes="32x32" /><link
+rel="icon" href="https://www.vornado.com/wp-content/uploads/2016/10/cropped-Vornado-V-01-300x300.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://www.vornado.com/wp-content/uploads/2016/10/cropped-Vornado-V-01-300x300.png" /><meta
+name="msapplication-TileImage" content="https://www.vornado.com/wp-content/uploads/2016/10/cropped-Vornado-V-01-300x300.png" />
+<style>/*<![CDATA[*//***************************************************************//* Body ********************************************************//***************************************************************/.st-content {background-color:#fff;background-repeat:;background-position:;background-size:;background-attachment:;}/***************************************************************//* Fonts *******************************************************//***************************************************************/h1, h2, h3, h4, h5, h6,.comments-title,.comment-author,#reply-title,#site-footer .widget-title,.accordion_title,.ui-tabs-anchor,.products .button,.site-title a,.post_meta_archive a,.post_meta a,.post_tags a,#nav-below a,.list_categories a,.list_shop_categories a,.main-navigation > ul > li > a,.main-navigation .mega-menu > ul > li > a,.more-link,.top-page-excerpt,.select2-search input,.product_after_shop_loop_buttons a,.woocommerce .products-grid a.button,.page-numbers,input.qty,.button,button,.button_text,input[type="button"],input[type="reset"],input[type="submit"],.woocommerce a.button,.woocommerce-page a.button,.woocommerce button.button,.woocommerce-page button.button,.woocommerce input.button,.woocommerce-page input.button,.woocommerce #respond input#submit,.woocommerce-page #respond input#submit,.woocommerce #content input.button,.woocommerce-page #content input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page a.button.alt,.woocommerce-page button.button.alt,.woocommerce-page input.button.alt,.woocommerce-page #respond input#submit.alt,.woocommerce-page #content input.button.alt,.yith-wcwl-wishlistexistsbrowse.show a,.share-product-text,.tabs > li > a,label,.comment-respond label,.product_meta_title,.woocommerce table.shop_table th,.woocommerce-page table.shop_table th,#map_button,.coupon_code_text,.woocommerce .cart-collaterals .cart_totals tr.order-total td strong,.woocommerce-page .cart-collaterals .cart_totals tr.order-total td strong,.cart-wishlist-empty,.return-to-shop .wc-backward,.order-number a,.account_view_link,.post-edit-link,.from_the_blog_title,.icon_box_read_more,.vc_pie_chart_value,.shortcode_banner_simple_bullet,.shortcode_banner_simple_height_bullet,.category_name,.woocommerce span.onsale,.woocommerce-page span.onsale,.out_of_stock_badge_single,.out_of_stock_badge_loop,.page-numbers,.page-links,.add_to_wishlist,.yith-wcwl-wishlistaddedbrowse,.yith-wcwl-wishlistexistsbrowse,.filters-group,.product-name,.woocommerce-page .my_account_container table.shop_table.order_details_footer tr:last-child td:last-child .amount,.customer_details dt,.widget h3,.widget ul a,.widget a,.widget .total .amount,.wishlist-in-stock,.wishlist-out-of-stock,.comment-reply-link,.comment-edit-link,.widget_calendar table thead tr th,.page-type,.mobile-navigation a,table thead tr th,.portfolio_single_list_cat,.portfolio-categories,.shipping-calculator-button,.vc_btn,.vc_btn2,.vc_btn3,.offcanvas-menu-button .menu-button-text,.account-tab-item .account-tab-link,.account-tab-list .sep,ul.order_details li,ul.order_details.bacs_details li,.widget_calendar caption,.widget_recent_comments li a,.edit-account legend,.widget_shopping_cart li.empty,.cart-collaterals .cart_totals .shop_table .order-total .woocommerce-Price-amount,.woocommerce table.cart .cart_item td a,.woocommerce #content table.cart .cart_item td a,.woocommerce-page table.cart .cart_item td a,.woocommerce-page #content table.cart .cart_item td a,.woocommerce table.cart .cart_item td span,.woocommerce #content table.cart .cart_item td span,.woocommerce-page table.cart .cart_item td span,.woocommerce-page #content table.cart .cart_item td span,.woocommerce-MyAccount-navigation ul li,.cd-quick-view .cd-item-info .product_infos .quickview-badges .onsale,.woocommerce-message .woocommerce-message-wrapper .notice_text,.woocommerce-message .product_notification_text,.woocommerce-info .woocommerce-message-wrapper .notice_text,.woocommerce .cart-collaterals .cart_totals .cart-subtotal th,.woocommerce-page .cart-collaterals .cart_totals .cart-subtotal th,.woocommerce .cart-collaterals .cart_totals tr.shipping th,.woocommerce-page .cart-collaterals .cart_totals tr.shipping th,.woocommerce .cart-collaterals .cart_totals tr.order-total th,.woocommerce-page .cart-collaterals .cart_totals tr.order-total th,.woocommerce .cart-collaterals .cart_totals h2,.woocommerce .cart-collaterals .cross-sells h2,.woocommerce-cart #content table.cart td.actions .coupon #coupon_code,form.checkout_coupon #coupon_code,.woocommerce-checkout .woocommerce-info,.shopkeeper_checkout_coupon,.shopkeeper_checkout_login,.minicart-message,.no-products-info p.woocommerce-error .notice_text,.woocommerce .order_review_wrapper table.shop_table tfoot td,.woocommerce .order_review_wrapper table.shop_table tfoot th,.woocommerce-page .order_review_wrapper table.shop_table tfoot td,.woocommerce-page .order_review_wrapper table.shop_table tfoot th,.no-products-info p,.getbowtied_blog_ajax_load_button a,.getbowtied_ajax_load_button a,.index-layout-2 ul.blog-posts .blog-post article .post-categories li a,.index-layout-3 .blog-posts_container ul.blog-posts .blog-post article .post-categories li a,.index-layout-2 ul.blog-posts .blog-post .post_content_wrapper .post_content .read_more,.index-layout-3 .blog-posts_container ul.blog-posts .blog-post article .post_content_wrapper .post_content .read_more,.woocommerce .woocommerce-breadcrumb,.woocommerce-page .woocommerce-breadcrumb,.woocommerce .woocommerce-breadcrumb a,.woocommerce-page .woocommerce-breadcrumb a,.product_meta,.product_meta span,.product_meta a,.product_layout_classic div.product span.price,.product_layout_classic div.product p.price,.product_layout_2 div.product span.price,.product_layout_2 div.product p.price,.product_layout_3 div.product span.price,.product_layout_3 div.product p.price,.product_layout_4 div.product span.price,.product_layout_4 div.product p.price,.related-products-title,.product_socials_wrapper .share-product-text,#button_offcanvas_sidebar_left .filters-text,.woocommerce-ordering select.orderby,.fr-position-text,.woocommerce #payment div.payment_box p,.woocommerce-page #payment div.payment_box p,.checkout_right_wrapper .order_review_wrapper .woocommerce-checkout-review-order-table tr td,.catalog-ordering .select2-container.orderby a,.woocommerce-ordering select.orderby,.woocommerce .cart-collaterals .cart_totals table.shop_table_responsive tr td::before,.woocommerce-page .cart-collaterals .cart_totals table.shop_table_responsive tr td::before,.login-register-container .lost-pass-link,.woocommerce-cart .cart-collaterals .cart_totals table td .amount,.wpb_wrapper .add_to_cart_inline .woocommerce-Price-amount.amount,.woocommerce-page .cart-collaterals .cart_totals tr.shipping td,.woocommerce-page .cart-collaterals .cart_totals tr.shipping td,.woocommerce .cart-collaterals .cart_totals tr.cart-discount th,.woocommerce-page .cart-collaterals .cart_totals tr.cart-discount th,.woocommerce-thankyou-order-received,.woocommerce-order-received .woocommerce table.shop_table tfoot th,.woocommerce-order-received .woocommerce-page table.shop_table tfoot th,.woocommerce-view-order .woocommerce table.shop_table tfoot th,.woocommerce-view-order .woocommerce-page table.shop_table tfoot th,.woocommerce-order-received .woocommerce table.shop_table tfoot td,.woocommerce-order-received .woocommerce-page table.shop_table tfoot td,.woocommerce-view-order .woocommerce table.shop_table tfoot td,.woocommerce-view-order .woocommerce-page table.shop_table tfoot td,.language-and-currency #top_bar_language_list > ul > li,.language-and-currency .wcml_currency_switcher > ul > li.wcml-cs-active-currency,.language-and-currency-offcanvas #top_bar_language_list > ul > li,.language-and-currency-offcanvas .wcml_currency_switcher > ul > li.wcml-cs-active-currency{font-family:'',sans-serif;}body,p,#site-navigation-top-bar,.site-title,.widget_product_search #searchsubmit,.widget_search #searchsubmit,.widget_product_search .search-submit,.widget_search .search-submit,#site-menu,.copyright_text,blockquote cite,table thead th,.recently_viewed_in_single h2,.woocommerce .cart-collaterals .cart_totals table th,.woocommerce-page .cart-collaterals .cart_totals table th,.woocommerce .cart-collaterals .shipping_calculator h2,.woocommerce-page .cart-collaterals .shipping_calculator h2,.woocommerce table.woocommerce-checkout-review-order-table tfoot th,.woocommerce-page table.woocommerce-checkout-review-order-table tfoot th,.qty,.shortcode_banner_simple_inside h4,.shortcode_banner_simple_height h4,.fr-caption,.post_meta_archive,.post_meta,.page-links-title,.yith-wcwl-wishlistaddedbrowse .feedback,.yith-wcwl-wishlistexistsbrowse .feedback,.product-name span,.widget_calendar table tbody a,.fr-touch-caption-wrapper,.woocommerce .login-register-container p.form-row.remember-me-row label,.woocommerce .checkout_login p.form-row label[for="rememberme"],.woocommerce .checkout_login p.lost_password,.form-row.remember-me-row a,.wpb_widgetised_column aside ul li span.count,.woocommerce td.product-name dl.variation dt,.woocommerce td.product-name dl.variation dd,.woocommerce td.product-name dl.variation dt p,.woocommerce td.product-name dl.variation dd p,.woocommerce-page td.product-name dl.variation dt,.woocommerce-page td.product-name dl.variation dd p,.woocommerce-page td.product-name dl.variation dt p,.woocommerce-page td.product-name dl.variation dd p,.woocommerce .select2-container,.check_label,.woocommerce-page #payment .terms label,ul.order_details li strong,.widget_recent_comments li,.widget_shopping_cart p.total,.widget_shopping_cart p.total .amount,.mobile-navigation li ul li a,.woocommerce table.cart .cart_item td:before,.woocommerce #content table.cart .cart_item td:before,.woocommerce-page table.cart .cart_item td:before,.woocommerce-page #content table.cart .cart_item td:before,.language-and-currency #top_bar_language_list > ul > li > ul > li > a,.language-and-currency .wcml_currency_switcher > ul > li.wcml-cs-active-currency > ul.wcml-cs-submenu li a,.language-and-currency #top_bar_language_list > ul > li.menu-item-first > ul.sub-menu li.sub-menu-item span.icl_lang_sel_current,.language-and-currency-offcanvas  #top_bar_language_list > ul > li > ul > li > a,.language-and-currency-offcanvas  .wcml_currency_switcher > ul > li.wcml-cs-active-currency > ul.wcml-cs-submenu li a,.language-and-currency-offcanvas  #top_bar_language_list > ul > li.menu-item-first > ul.sub-menu li.sub-menu-item span.icl_lang_sel_current{font-family:'',sans-serif;}/***************************************************************//* Custom Font sizes *******************************************//***************************************************************/h1, .woocommerce h1, .woocommerce-page h1 { font-size: 30.797px; }h2, .woocommerce h2, .woocommerce-page h2 { font-size: 23.101px; }h3, .woocommerce h3, .woocommerce-page h3 { font-size: 17.329px; }h4, .woocommerce h4, .woocommerce-page h4 { font-size: 13px; }h5, .woocommerce h5, .woocommerce-page h5 { font-size: 9.75px; }.page-title.blog-listing,.woocommerce .page-title,.page-title,.single .entry-title,.woocommerce-cart .page-title,.woocommerce-checkout .page-title,.woocommerce-account .page-title{font-size: 41.041px;}.entry-title-archive{font-size: 30.659px;}.woocommerce #content div.product .product_title,.woocommerce div.product .product_title,.woocommerce-page #content div.product .product_title,.woocommerce-page div.product .product_title{font-size: 23.101px;}.woocommerce-checkout .content-area h3,.woocommerce-view-order h2,.woocommerce-edit-address h3,.woocommerce-edit-account legend,.woocommerce-order-received h2{font-size: 13px;}@media only screen and (max-width: 768px){.shortcode_getbowtied_slider .swiper-slide h1{font-size: 30.797px !important;}}@media only screen and (min-width: 768px) {h1, .woocommerce h1, .woocommerce-page h1 { font-size: 54.487px; }h2, .woocommerce h2, .woocommerce-page h2 { font-size: 40.871px; }h3, .woocommerce h3, .woocommerce-page h3 { font-size: 30.659px; }h4, .woocommerce h4, .woocommerce-page h4 { font-size: 23px; }h5, .woocommerce h5, .woocommerce-page h5 { font-size: 17.25px; }.page-title.blog-listing,.woocommerce .page-title,.page-title,.single .entry-title,.woocommerce-cart .page-title,.woocommerce-checkout .page-title,.woocommerce-account .page-title{font-size: 72.611px;}.entry-title-archive{font-size: 30.659px;}.woocommerce-checkout .content-area h3,.woocommerce-view-order h2,.woocommerce-edit-address h3,.woocommerce-edit-account legend,.woocommerce-order-received h2,.fr-position-text{font-size: 23px;}}@media only screen and (min-width: 1025px) {.woocommerce #content div.product .product_title,.woocommerce div.product .product_title,.woocommerce-page #content div.product .product_title,.woocommerce-page div.product .product_title{font-size: 40.871px;}}.@media only screen and (max-width: 1024px) {.woocommerce #content div.product .product_title,.woocommerce div.product .product_title,.woocommerce-page #content div.product .product_title,.woocommerce-page div.product .product_title{font-size: 23.101px;}}@media only screen and (min-width: 1025px) {p,.woocommerce table.shop_attributes th,.woocommerce-page table.shop_attributes th,.woocommerce table.shop_attributes td,.woocommerce-page table.shop_attributes td,.woocommerce-review-link,.blog-isotope .entry-content-archive,.blog-isotope .entry-content-archive *,.woocommerce form.login .inline,.woocommerce form.login .lost_password a,ul li ul,ul li ol,ul, ol, dl{ font-size: 16px; }}.woocommerce ul.order_details li strong,.fr-caption{ font-size: 16px !important; }/***************************************************************//* Body Text Colors  *******************************************//***************************************************************/body,table tr th,table tr td,table thead tr th,blockquote p,label,.select2-dropdown-open.select2-drop-above .select2-choice,.select2-dropdown-open.select2-drop-above .select2-choices,.select2-container,.big-select,.select.big-select,.post_meta_archive a,.post_meta a,.nav-next a,.nav-previous a,.blog-single h6,.page-description,.woocommerce #content nav.woocommerce-pagination ul li a:focus,.woocommerce #content nav.woocommerce-pagination ul li a:hover,.woocommerce #content nav.woocommerce-pagination ul li span.current,.woocommerce nav.woocommerce-pagination ul li a:focus,.woocommerce nav.woocommerce-pagination ul li a:hover,.woocommerce nav.woocommerce-pagination ul li span.current,.woocommerce-page #content nav.woocommerce-pagination ul li a:focus,.woocommerce-page #content nav.woocommerce-pagination ul li a:hover,.woocommerce-page #content nav.woocommerce-pagination ul li span.current,.woocommerce-page nav.woocommerce-pagination ul li a:focus,.woocommerce-page nav.woocommerce-pagination ul li a:hover,.woocommerce-page nav.woocommerce-pagination ul li span.current,.woocommerce table.shop_table th,.woocommerce-page table.shop_table th,.woocommerce-checkout .woocommerce-info,.customer_details dt,.wpb_widgetised_column .widget a,.wpb_widgetised_column .widget.widget_product_categories a:hover,.wpb_widgetised_column .widget.widget_layered_nav a:hover,.wpb_widgetised_column .widget.widget_layered_nav li,.portfolio_single_list_cat a,.gallery-caption-trigger,.woocommerce .widget_layered_nav ul li.chosen a,.woocommerce-page .widget_layered_nav ul li.chosen a,.widget_layered_nav ul li.chosen a,.woocommerce .widget_product_categories ul li.current-cat > a,.woocommerce-page .widget_product_categories ul li.current-cat > a,.widget_product_categories ul li.current-cat > a,.wpb_widgetised_column .widget.widget_layered_nav_filters a,.widget_shopping_cart p.total,.widget_shopping_cart p.total .amount,.wpb_widgetised_column .widget_shopping_cart li.empty,.index-layout-2 ul.blog-posts .blog-post article .post-date,.cd-quick-view .cd-close:after,form.checkout_coupon #coupon_code,.woocommerce .product_infos .quantity input.qty, .woocommerce #content .product_infos .quantity input.qty,.woocommerce-page .product_infos .quantity input.qty, .woocommerce-page #content .product_infos .quantity input.qty,.woocommerce-cart.woocommerce-page #content .quantity input.qty,#button_offcanvas_sidebar_left,.fr-position-text,.add_to_wishlist,.product_infos .add_to_wishlist:before,.product_infos .yith-wcwl-wishlistaddedbrowse:before,.product_infos .yith-wcwl-wishlistexistsbrowse:before,#add_payment_method #payment .payment_method_paypal .about_paypal,.woocommerce-cart #payment .payment_method_paypal .about_paypal,.woocommerce-checkout #payment .payment_method_paypal .about_paypal,#stripe-payment-data > p > a,.product-name .product-quantity,.woocommerce #payment div.payment_box{color: #222222;}.woocommerce a.remove,.woocommerce a.remove:after,a.woocommerce-remove-coupon:after,.shopkeeper-continue-shopping .button,.checkout_coupon_inner.focus:after,.checkout_coupon_inner:before,.woocommerce-cart .entry-content .woocommerce .actions>.button,.fr-caption{color: #222222 !important;}.nav-previous-title,.nav-next-title,.post_tags a,.wpb_widgetised_column .tagcloud a,.products .add_to_wishlist:before{color: rgba(34,34,34,0.4);}.required/*,.woocommerce a.remove*/{color: rgba(34,34,34,0.4) !important;}.yith-wcwl-add-button,.yith-wcwl-wishlistaddedbrowse,.yith-wcwl-wishlistexistsbrowse,.share-product-text,.product_meta,.product_meta a,.product_meta_separator,.woocommerce table.shop_attributes td,.woocommerce-page table.shop_attributes td,.tob_bar_shop,.post_meta_archive,.post_meta,del,.wpb_widgetised_column .widget li,.wpb_widgetised_column .widget_calendar table thead tr th,.wpb_widgetised_column .widget_calendar table thead tr td,.wpb_widgetised_column .widget .post-date,.wpb_widgetised_column .recentcomments,.wpb_widgetised_column .amount,.wpb_widgetised_column .quantity,.products li:hover .add_to_wishlist:before,.product_after_shop_loop .price,.product_after_shop_loop .price ins,.wpb_widgetised_column .widget_price_filter .price_slider_amount,.woocommerce td.product-name dl.variation dt,.woocommerce td.product-name dl.variation dd,.woocommerce td.product-name dl.variation dt p,.woocommerce td.product-name dl.variation dd p,.woocommerce-page td.product-name dl.variation dt,.woocommerce-page td.product-name dl.variation dd p,.woocommerce-page td.product-name dl.variation dt p,.woocommerce-page td.product-name dl.variation dd p,.product_layout_classic div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_classic div.product .product_infos form.cart .quantity.custom .plus-btn,.product_layout_2 div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_2 div.product .product_infos form.cart .quantity.custom .plus-btn,.product_layout_3 div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_3 div.product .product_infos form.cart .quantity.custom .plus-btn,.product_layout_4 div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_4 div.product .product_infos form.cart .quantity.custom .plus-btn,.cd-quick-view .cd-item-info .product_infos .cart .quantity.custom .minus-btn,.cd-quick-view .cd-item-info .product_infos .cart .quantity.custom .plus-btn,table.shop_table tr.cart_item .quantity.custom .minus-btn,table.shop_table tr.cart_item .quantity.custom .plus-btn,.product .product_after_shop_loop .product_after_shop_loop_price span.price .woocommerce-Price-amount.amount,.woocommerce .woocommerce-breadcrumb,.woocommerce-page .woocommerce-breadcrumb,.woocommerce .woocommerce-breadcrumb a,.woocommerce-page .woocommerce-breadcrumb a{color: rgba(34,34,34,0.55);}.products a.button.add_to_cart_button.loading,.wpb_wrapper .add_to_cart_inline del .woocommerce-Price-amount.amount{color: rgba(34,34,34,0.55) !important;}.yith-wcwl-add-to-wishlist:after,.bg-image-wrapper.no-image{background-color: rgba(34,34,34,0.55);}.woocommerce-thankyou-order-details{background-color: rgba(34,34,34,0.25);}.product_layout_2 .product_content_wrapper .product-images-wrapper .product-images-style-2 .product_images .product-image .caption:before,.product_layout_3 .product_content_wrapper .product-images-wrapper .product-images-style-3 .product_images .product-image .caption:before,.fr-caption:before,.product_content_wrapper .product-images-wrapper .product_images .product-images-controller .dot.current{background-color: #222222;}.product_content_wrapper .product-images-wrapper .product_images .product-images-controller .dot{background-color: rgba(34,34,34,0.55);}.product_layout_classic div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_classic div.product .product_infos form.cart .quantity.custom .plus-btn,.product_layout_2 div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_2 div.product .product_infos form.cart .quantity.custom .plus-btn,.product_layout_3 div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_3 div.product .product_infos form.cart .quantity.custom .plus-btn,.product_layout_4 div.product .product_infos form.cart .quantity.custom .minus-btn,.product_layout_4 div.product .product_infos form.cart .quantity.custom .plus-btn,.cd-quick-view .cd-item-info .product_infos .cart .quantity.custom .minus-btn,.cd-quick-view .cd-item-info .product_infos .cart .quantity.custom .plus-btn,#add_payment_method #payment div.payment_box .wc-credit-card-form,.woocommerce-cart #payment div.payment_box .wc-credit-card-form,.woocommerce-checkout #payment div.payment_box .wc-credit-card-form{border-color: rgba(34,34,34,0.55);}.add_to_cart_inline .amount,.wpb_widgetised_column .widget,.wpb_widgetised_column .widget a:hover,.wpb_widgetised_column .widget.widget_product_categories a,.wpb_widgetised_column .widget.widget_layered_nav a,.widget_layered_nav ul li a,.widget_layered_nav,.wpb_widgetised_column aside ul li span.count,.shop_table.cart .product-price .amount{color: rgba(34,34,34,0.8);}input[type="text"],input[type="password"],input[type="date"],input[type="datetime"],input[type="datetime-local"],input[type="month"], input[type="week"],input[type="email"], input[type="number"],input[type="search"], input[type="tel"],input[type="time"], input[type="url"],textarea,select,.chosen-container-single .chosen-single,.country_select.select2-container,.woocommerce form .form-row.woocommerce-validated .select2-container,.woocommerce form .form-row.woocommerce-validated input.input-text,.woocommerce form .form-row.woocommerce-validated select,.woocommerce form .form-row.woocommerce-invalid .select2-container,.woocommerce form .form-row.woocommerce-invalid input.input-text,.woocommerce form .form-row.woocommerce-invalid select,.country_select.select2-container,.state_select.select2-container,#coupon_code{border-color: rgba(34,34,34,0.1);}input[type="text"]:focus, input[type="password"]:focus,input[type="date"]:focus, input[type="datetime"]:focus,input[type="datetime-local"]:focus, input[type="month"]:focus,input[type="week"]:focus, input[type="email"]:focus,input[type="number"]:focus, input[type="search"]:focus,input[type="tel"]:focus, input[type="time"]:focus,input[type="url"]:focus, textarea:focus,select:focus,#coupon_code:focus,.chosen-container-single .chosen-single:focus,.woocommerce .product_infos .quantity input.qty,.woocommerce #content .product_infos .quantity input.qty,.woocommerce-page .product_infos .quantity input.qty,.woocommerce-page #content .product_infos .quantity input.qty,.post_tags a,.wpb_widgetised_column .tagcloud a,.coupon_code_wrapper,.woocommerce form.checkout_coupon,.woocommerce-page form.checkout_coupon,.woocommerce ul.digital-downloads:before,.woocommerce-page ul.digital-downloads:before,.woocommerce ul.digital-downloads li:after,.woocommerce-page ul.digital-downloads li:after,.widget_search .search-form,.woocommerce .widget_layered_nav ul li a:before,.woocommerce-page .widget_layered_nav ul li a:before,.widget_layered_nav ul li a:before,.woocommerce .widget_product_categories ul li a:before,.woocommerce-page .widget_product_categories ul li a:before,.widget_product_categories ul li a:before,.woocommerce-cart.woocommerce-page #content .quantity input.qty,.cd-quick-view .cd-item-info .product_infos .cart .quantity input.qty,.cd-quick-view .cd-item-info .product_infos .cart .woocommerce .quantity .qty,.woocommerce .order_review_wrapper table.shop_table tfoot tr:first-child td,.woocommerce-page .order_review_wrapper table.shop_table tfoot tr:first-child td,.woocommerce .order_review_wrapper table.shop_table tfoot tr:first-child th,.woocommerce-page .order_review_wrapper table.shop_table tfoot tr:first-child th{border-color: rgba(34,34,34,0.15);}.list-centered li a,.my_address_title,.woocommerce .shop_table.order_details tbody tr:last-child td,.woocommerce-page .shop_table.order_details tbody tr:last-child td,.woocommerce #payment ul.payment_methods li,.woocommerce-page #payment ul.payment_methods li,.comment-separator,.comment-list .pingback,.wpb_widgetised_column .widget,.search_result_item,.woocommerce div.product .woocommerce-tabs ul.tabs li:after,.woocommerce #content div.product .woocommerce-tabs ul.tabs li:after,.woocommerce-page div.product .woocommerce-tabs ul.tabs li:after,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li:after,.woocommerce-checkout .woocommerce-customer-details h2{border-bottom-color: rgba(34,34,34,0.15);}table tr td,.woocommerce table.shop_table td,.woocommerce-page table.shop_table td,.product_socials_wrapper,.woocommerce-tabs,.comments_section,.portfolio_content_nav #nav-below,.product_meta{border-top-color: rgba(34,34,34,0.15);}.product_socials_wrapper,.product_meta{border-bottom-color: rgba(34,34,34,0.15);}.woocommerce .cart-collaterals .cart_totals .order-total td,.woocommerce .cart-collaterals .cart_totals .order-total th,.woocommerce-page .cart-collaterals .cart_totals .order-total td,.woocommerce-page .cart-collaterals .cart_totals .order-total th,.woocommerce .cart-collaterals .cart_totals h2,.woocommerce .cart-collaterals .cross-sells h2,.woocommerce-page .cart-collaterals .cart_totals h2,.woocommerce-cart .woocommerce table.shop_table.cart tr:not(:nth-last-child(-n+2)){border-bottom-color: rgba(34,34,34,0.05);}.woocommerce .cart-collaterals .cart_totals tr.shipping th,.woocommerce-page .cart-collaterals .cart_totals tr.shipping th,.woocommerce .cart-collaterals .cart_totals tr.order-total th,.woocommerce-page .cart-collaterals .cart_totals h2,.woocommerce .cart-collaterals .cart_totals table tr.order-total td:last-child,.woocommerce-page .cart-collaterals .cart_totals table tr.order-total td:last-child{border-top-color: rgba(34,34,34,0.05);}table.shop_attributes tr td,.wishlist_table tr td,.shop_table.cart tr td{border-bottom-color: rgba(34,34,34,0.1);}.woocommerce .cart-collaterals,.woocommerce-page .cart-collaterals,.checkout_right_wrapper,.track_order_form,.order-info{background: rgba(34,34,34,0.05);}.woocommerce-cart .cart-collaterals:before,.woocommerce-cart .cart-collaterals:after,.custom_border:before,.custom_border:after{background-image: radial-gradient(closest-side, transparent 9px, rgba(34,34,34,0.05) 100%);}.wpb_widgetised_column aside ul li span.count,.product-video-icon{background: rgba(34,34,34,0.05);}/*.wpb_widgetised_column aside ul li span.count{border-color: rgba(34,34,34,0.05);}*/.comments_section{background-color: rgba(34,34,34,0.01) !important;}h1, h2, h3, h4, h5, h6,.entry-title-archive a,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active a:hover,.woocommerce div.product .woocommerce-tabs ul.tabs li.active a:hover,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active a:hover,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a:hover,.woocommerce table.cart .product-name a,.product-title-link,.wpb_widgetised_column .widget .product_list_widget a,.woocommerce .cart-collaterals .cart_totals .cart-subtotal th,.woocommerce-page .cart-collaterals .cart_totals .cart-subtotal th,.woocommerce .cart-collaterals .cart_totals tr.shipping th,.woocommerce-page .cart-collaterals .cart_totals tr.shipping th,.woocommerce-page .cart-collaterals .cart_totals tr.shipping th,.woocommerce-page .cart-collaterals .cart_totals tr.shipping td,.woocommerce-page .cart-collaterals .cart_totals tr.shipping td,.woocommerce .cart-collaterals .cart_totals tr.cart-discount th,.woocommerce-page .cart-collaterals .cart_totals tr.cart-discount th,.woocommerce .cart-collaterals .cart_totals tr.order-total th,.woocommerce-page .cart-collaterals .cart_totals tr.order-total th,.woocommerce .cart-collaterals .cart_totals h2,.woocommerce .cart-collaterals .cross-sells h2,.woocommerce .order_review_wrapper table.shop_table tfoot th,.woocommerce .order_review_wrapper table.shop_table thead th,.woocommerce-page .order_review_wrapper table.shop_table tfoot th,.woocommerce-page .order_review_wrapper table.shop_table thead th,.index-layout-2 ul.blog-posts .blog-post .post_content_wrapper .post_content .read_more,.index-layout-2 .with-sidebar ul.blog-posts .blog-post .post_content_wrapper .post_content .read_more,.index-layout-2 ul.blog-posts .blog-post .post_content_wrapper .post_content .read_more,.index-layout-3 .blog-posts_container ul.blog-posts .blog-post article .post_content_wrapper .post_content .read_more,.fr-window-skin-fresco.fr-svg .fr-side-next .fr-side-button-icon:before,.fr-window-skin-fresco.fr-svg .fr-side-previous .fr-side-button-icon:before,.fr-window-skin-fresco.fr-svg .fr-close .fr-close-icon:before,#button_offcanvas_sidebar_left .filters-icon,#button_offcanvas_sidebar_left .filters-text,.select2-container .select2-choice,.shop_header .list_shop_categories li.category_item > a,.shortcode_getbowtied_slider .swiper-button-prev,.shortcode_getbowtied_slider .swiper-button-next,.shortcode_getbowtied_slider .shortcode-slider-pagination,.quantity.custom input.custom-qty,.yith-wcwl-wishlistexistsbrowse.show a,.product_socials_wrapper .product_socials_wrapper_inner a,.product_navigation #nav-below .product-nav-previous a,.product_navigation #nav-below .product-nav-next a,.cd-top,.fr-position-outside .fr-position-text,.fr-position-inside .fr-position-text,a.add_to_wishlist,.yith-wcwl-add-to-wishlist a,.checkout_right_wrapper .order_review_wrapper .woocommerce-checkout-review-order-table tr td,.checkout_right_wrapper .order_review_wrapper .woocommerce-checkout-review-order-table ul li label,.checkout_right_wrapper .order_review_wrapper .woocommerce-checkout-payment ul li label,.cart-collaterals .cart_totals .shop_table tr.cart-subtotal td,.cart-collaterals .cart_totals .shop_table tr.shipping td label,.cart-collaterals .cart_totals .shop_table tr.order-total td,.catalog-ordering select.orderby,.woocommerce .cart-collaterals .cart_totals table.shop_table_responsive tr td::before,.woocommerce .cart-collaterals .cart_totals table.shop_table_responsive tr td.woocommerce-page .cart-collaterals .cart_totals table.shop_table_responsive tr td::before,.shopkeeper_checkout_coupon, .shopkeeper_checkout_login,.wpb_wrapper .add_to_cart_inline .woocommerce-Price-amount.amount,.list-centered li a,tr.cart-discount td,section.woocommerce-customer-details table.woocommerce-table--customer-details th{color: #636363;}.index-layout-2 ul.blog-posts .blog-post .post_content_wrapper .post_content h3.entry-title a,.index-layout-3 .blog-posts_container ul.blog-posts .blog-post article .post_content_wrapper .post_content .entry-title > a,#masonry_grid a.more-link{color: #636363!important;}.index-layout-2 ul.blog-posts .blog-post .post_content_wrapper .post_content .read_more:before,.index-layout-3 .blog-posts_container ul.blog-posts .blog-post article .post_content_wrapper .post_content .read_more:before,#masonry_grid a.more-link:before{background-color: #636363;}.woocommerce div.product .woocommerce-tabs ul.tabs li a,.woocommerce #content div.product .woocommerce-tabs ul.tabs li a,.woocommerce-page div.product .woocommerce-tabs ul.tabs li a,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a{color: rgba(99,99,99,0.35);}.woocommerce #content div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce-page div.product .woocommerce-tabs ul.tabs li a:hover{color: rgba(99,99,99,0.45);}.index-layout-2 ul.blog-posts .blog-post:first-child .post_content_wrapper,.index-layout-2 ul.blog-posts .blog-post:nth-child(5n+5) .post_content_wrapper,.cd-quick-view.animate-width,.woocommerce .button.getbowtied_product_quick_view_button,.fr-ui-outside .fr-info-background,.fr-info-background,.fr-overlay-background{background-color:#fff !important;}.product_content_wrapper .product-images-wrapper .product_images .product-images-controller .dot:not(.current),.product_content_wrapper .product-images-wrapper .product_images .product-images-controller li.video-icon .dot:not(.current){border-color: #fff !important;}/***************************************************************//* Main Color  *************************************************//***************************************************************/a,.comments-area a,.edit-link,.post_meta_archive a:hover,.post_meta a:hover,.entry-title-archive a:hover,blockquote:before,.no-results-text:before,.list-centered a:hover,.comment-reply i,.comment-edit-link i,.comment-edit-link,.filters-group li:hover,#map_button,.widget_shopkeeper_social_media a,.account-tab-link-mobile,.lost-reset-pass-text:before,.list_shop_categories a:hover,.add_to_wishlist:hover,.woocommerce div.product span.price,.woocommerce-page div.product span.price,.woocommerce #content div.product span.price,.woocommerce-page #content div.product span.price,.woocommerce div.product p.price,.woocommerce-page div.product p.price,.woocommerce #content div.product p.price,.woocommerce-page #content div.product p.price,.comment-metadata time,.woocommerce p.stars a.star-1.active:after,.woocommerce p.stars a.star-1:hover:after,.woocommerce-page p.stars a.star-1.active:after,.woocommerce-page p.stars a.star-1:hover:after,.woocommerce p.stars a.star-2.active:after,.woocommerce p.stars a.star-2:hover:after,.woocommerce-page p.stars a.star-2.active:after,.woocommerce-page p.stars a.star-2:hover:after,.woocommerce p.stars a.star-3.active:after,.woocommerce p.stars a.star-3:hover:after,.woocommerce-page p.stars a.star-3.active:after,.woocommerce-page p.stars a.star-3:hover:after,.woocommerce p.stars a.star-4.active:after,.woocommerce p.stars a.star-4:hover:after,.woocommerce-page p.stars a.star-4.active:after,.woocommerce-page p.stars a.star-4:hover:after,.woocommerce p.stars a.star-5.active:after,.woocommerce p.stars a.star-5:hover:after,.woocommerce-page p.stars a.star-5.active:after,.woocommerce-page p.stars a.star-5:hover:after,.yith-wcwl-add-button:before,.yith-wcwl-wishlistaddedbrowse .feedback:before,.yith-wcwl-wishlistexistsbrowse .feedback:before,.woocommerce .star-rating span:before,.woocommerce-page .star-rating span:before,.product_meta a:hover,.woocommerce .shop-has-sidebar .no-products-info .woocommerce-info:before,.woocommerce-page .shop-has-sidebar .no-products-info .woocommerce-info:before,.woocommerce .woocommerce-breadcrumb a:hover,.woocommerce-page .woocommerce-breadcrumb a:hover,.intro-effect-fadeout.modify .post_meta a:hover,.from_the_blog_link:hover .from_the_blog_title,.portfolio_single_list_cat a:hover,.widget .recentcomments:before,.widget.widget_recent_entries ul li:before,#placeholder_product_quick_view .product_title:hover,.wpb_widgetised_column aside ul li.current-cat > span.count,.shopkeeper-mini-cart .widget.woocommerce.widget_shopping_cart .widget_shopping_cart_content p.buttons a.button.checkout.wc-forward,.getbowtied_blog_ajax_load_button:before, .getbowtied_blog_ajax_load_more_loader:before,.getbowtied_ajax_load_button:before, .getbowtied_ajax_load_more_loader:before,.list-centered li.current-cat > a:hover,#button_offcanvas_sidebar_left:hover,.shop_header .list_shop_categories li.category_item > a:hover,#button_offcanvas_sidebar_left .filters-text:hover,.products .yith-wcwl-wishlistaddedbrowse a:before, .products .yith-wcwl-wishlistexistsbrowse a:before,.product_infos .yith-wcwl-wishlistaddedbrowse:before, .product_infos .yith-wcwl-wishlistexistsbrowse:before,.shopkeeper_checkout_coupon a.showcoupon,.woocommerce-checkout .showcoupon, .woocommerce-checkout .showlogin{color: #d11820;}@media only screen and (min-width: 40.063em) {.nav-next a:hover,.nav-previous a:hover{color: #d11820;}}.widget_shopping_cart .buttons a.view_cart,.widget.widget_price_filter .price_slider_amount .button,.products a.button,.woocommerce .products .added_to_cart.wc-forward,.woocommerce-page .products .added_to_cart.wc-forward{color: #d11820 !important;}.order-info mark,.login_footer,.post_tags a:hover,.with_thumb_icon,.wpb_wrapper .wpb_toggle:before,#content .wpb_wrapper h4.wpb_toggle:before,.wpb_wrapper .wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon,.wpb_wrapper .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon,.widget .tagcloud a:hover,section.related h2:after,.single_product_summary_upsell h2:after,.page-title.portfolio_item_title:after,.thumbnail_archive_container:before,.from_the_blog_overlay,.select2-results .select2-highlighted,.wpb_widgetised_column aside ul li.chosen span.count,.woocommerce .widget_product_categories ul li.current-cat > a:before,.woocommerce-page .widget_product_categories ul li.current-cat > a:before,.widget_product_categories ul li.current-cat > a:before,#header-loader .bar,.index-layout-2 ul.blog_posts .blog_post .post_content_wrapper .post_content .read_more:before,.index-layout-3 .blog_posts_container ul.blog_posts .blog_post article .post_content_wrapper .post_content .read_more:before{background: #d11820;}@media only screen and (max-width: 40.063em) {.nav-next a:hover,.nav-previous a:hover{background: #d11820;}}.woocommerce .widget_layered_nav ul li.chosen a:before,.woocommerce-page .widget_layered_nav ul li.chosen a:before,.widget_layered_nav ul li.chosen a:before,.woocommerce .widget_layered_nav ul li.chosen:hover a:before,.woocommerce-page .widget_layered_nav ul li.chosen:hover a:before,.widget_layered_nav ul li.chosen:hover a:before,.woocommerce .widget_layered_nav_filters ul li a:before,.woocommerce-page .widget_layered_nav_filters ul li a:before,.widget_layered_nav_filters ul li a:before,.woocommerce .widget_layered_nav_filters ul li a:hover:before,.woocommerce-page .widget_layered_nav_filters ul li a:hover:before,.widget_layered_nav_filters ul li a:hover:before,.woocommerce .widget_rating_filter ul li.chosen a:before,.shopkeeper-mini-cart,.minicart-message,.woocommerce-message{background-color: #d11820;}.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range,.woocommerce .quantity .plus,.woocommerce .quantity .minus,.woocommerce #content .quantity .plus,.woocommerce #content .quantity .minus,.woocommerce-page .quantity .plus,.woocommerce-page .quantity .minus,.woocommerce-page #content .quantity .plus,.woocommerce-page #content .quantity .minus,.widget_shopping_cart .buttons .button.wc-forward.checkout{background: #d11820 !important;}.button,input[type="button"],input[type="reset"],input[type="submit"]{background-color: #d11820 !important;}.product_infos .yith-wcwl-wishlistaddedbrowse a:hover,.product_infos .yith-wcwl-wishlistexistsbrowse a:hover,.shipping-calculator-button:hover,.products a.button:hover,.woocommerce .products .added_to_cart.wc-forward:hover,.woocommerce-page .products .added_to_cart.wc-forward:hover,.products .yith-wcwl-wishlistexistsbrowse:hover a,.products .yith-wcwl-wishlistaddedbrowse:hover a,.order-number a:hover,.account_view_link:hover,.post-edit-link:hover,.url:hover,.getbowtied_ajax_load_button a:not(.disabled):hover,.getbowtied_blog_ajax_load_button a:not(.disabled):hover{color:  rgba(209,24,32,0.8) !important;}.product-title-link:hover{color:  rgba(99,99,99,0.8);}.button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,.woocommerce .product_infos .quantity .minus:hover,.woocommerce #content .product_infos .quantity .minus:hover,.woocommerce-page .product_infos .quantity .minus:hover,.woocommerce-page #content .product_infos .quantity .minus:hover,.woocommerce .quantity .plus:hover,.woocommerce #content .quantity .plus:hover,.woocommerce-page .quantity .plus:hover,.woocommerce-page #content .quantity .plus:hover,.wpb_wrapper .add_to_cart_inline .add_to_cart_button:hover{background: rgba(209,24,32,0.8) !important;}.post_tags a:hover,.widget .tagcloud a:hover,.widget_shopping_cart .buttons a.view_cart,.account-tab-link-mobile,.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle,.woocommerce .widget_product_categories ul li.current-cat > a:before,.woocommerce-page .widget_product_categories ul li.current-cat > a:before,.widget_product_categories ul li.current-cat > a:before,.widget_product_categories ul li a:hover:before,.widget_layered_nav ul li a:hover:before,.widget_product_categories ul li a:hover ~ .count,.widget_layered_nav ul li a:hover ~ .count{border-color: #d11820;}.wpb_tour.wpb_content_element .wpb_tabs_nav  li.ui-tabs-active a,.wpb_tabs.wpb_content_element .wpb_tabs_nav li.ui-tabs-active a,.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active a,.main-navigation ul ul li a:hover,.language-and-currency #top_bar_language_list > ul > li.menu-item-first > ul.sub-menu li a:hover,.language-and-currency .wcml_currency_switcher > ul > li.wcml-cs-active-currency ul.wcml-cs-submenu li a:hover{border-bottom-color: #d11820;}.woocommerce div.product .woocommerce-tabs ul.tabs li.active,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active{border-top-color: #d11820 !important;}/***************************************************************//* Top Bar *****************************************************//***************************************************************/#site-top-bar {height:0px;}#site-top-bar,#site-navigation-top-bar .sf-menu ul{background: #333333;}#site-top-bar,#site-top-bar a,.language-and-currency .wcml_currency_switcher > ul > li.wcml-cs-active-currency > a{color:#ffffff;}/***************************************************************//* 	Header *****************************************************//***************************************************************/.site-header{background: #333333;}@media only screen and (min-width: 63.9375em) {.site-header {background-color:;background-repeat:;background-position:;background-size:;background-attachment:;}}.site-header,#site-top-bar{padding-left:20px;padding-right:20px;}@media only screen and (min-width: 1024px) {.site-branding img {height:80px;width:auto;}.site-header .main-navigation,.site-header .site-tools{height:80px;line-height:80px;}}@media only screen and (min-width: 63.9375em) {.site-header.sticky .main-navigation,.site-header.sticky .site-tools,.site-header.sticky .site-branding img{height:33px;line-height:33px;width:auto;}}@media only screen and (min-width: 1024px) {.site-header {padding-top:22px;}}@media only screen and (min-width: 1024px) {.site-header {padding-bottom:22px;}}@media only screen and (min-width: 63.9375em) {#page_wrapper.sticky_header .content-area,#page_wrapper.transparent_header .content-area{margin-top:124px;}.transparent_header .single-post-header .title,#page_wrapper.transparent_header .shop_header .page-title{padding-top: 124px;}.transparent_header .single-post-header.with-thumb .title{padding-top: 324px;}.transparent_header.sticky_header .page-title-shown .entry-header.with_featured_img,{margin-top: -209px;}.sticky_header .page-title-shown .entry-header.with_featured_img{margin-top: -124px;}.page-template-default .transparent_header .entry-header.with_featured_img,.page-template-page-full-width .transparent_header .entry-header.with_featured_img{margin-top: -209px;}}.site-header,.default-navigation,.main-navigation .mega-menu > ul > li > a{font-size: 16px;}.site-header,.main-navigation a,.site-tools ul li a,.shopping_bag_items_number,.wishlist_items_number,.site-title a,.widget_product_search .search-but-added,.widget_search .search-but-added{color:#ffffff;}.site-branding{border-color: #ffffff;}@media only screen and (min-width: 63.9375em) {.site-header,.main-navigation a,.site-tools ul li a,.shopping_bag_items_number,.wishlist_items_number,.site-title a,.widget_product_search .search-but-added,.widget_search .search-but-added{color:#ffffff;}.site-branding{border-color: #ffffff;}}@media only screen and (min-width: 1024px) {#page_wrapper.transparent_header.transparency_light .site-header,#page_wrapper.transparent_header.transparency_light .site-header .main-navigation a,#page_wrapper.transparent_header.transparency_light .site-header .site-tools ul li a,#page_wrapper.transparent_header.transparency_light .site-header .shopping_bag_items_number,#page_wrapper.transparent_header.transparency_light .site-header .wishlist_items_number,#page_wrapper.transparent_header.transparency_light .site-header .site-title a,#page_wrapper.transparent_header.transparency_light .site-header .widget_product_search .search-but-added,#page_wrapper.transparent_header.transparency_light .site-header .widget_search .search-but-added{color:#ffffff;}}@media only screen and (min-width: 1024px) {#page_wrapper.transparent_header.transparency_dark .site-header,#page_wrapper.transparent_header.transparency_dark .site-header .main-navigation a,#page_wrapper.transparent_header.transparency_dark .site-header .site-tools ul li a,#page_wrapper.transparent_header.transparency_dark .site-header .shopping_bag_items_number,#page_wrapper.transparent_header.transparency_dark .site-header .wishlist_items_number,#page_wrapper.transparent_header.transparency_dark .site-header .site-title a,#page_wrapper.transparent_header.transparency_dark .site-header .widget_product_search .search-but-added,#page_wrapper.transparent_header.transparency_dark .site-header .widget_search .search-but-added{color:#000000;}}/* sticky */@media only screen and (min-width: 63.9375em) {.site-header.sticky,#page_wrapper.transparent_header .site-header.sticky{background: #333333;}}@media only screen and (min-width: 63.9375em) {.site-header.sticky,.site-header.sticky .main-navigation a,.site-header.sticky .site-tools ul li a,.site-header.sticky .shopping_bag_items_number,.site-header.sticky .wishlist_items_number,.site-header.sticky .site-title a,.site-header.sticky .widget_product_search .search-but-added,.site-header.sticky .widget_search .search-but-added,#page_wrapper.transparent_header .site-header.sticky,#page_wrapper.transparent_header .site-header.sticky .main-navigation a,#page_wrapper.transparent_header .site-header.sticky .site-tools ul li a,#page_wrapper.transparent_header .site-header.sticky .shopping_bag_items_number,#page_wrapper.transparent_header .site-header.sticky .wishlist_items_number,#page_wrapper.transparent_header .site-header.sticky .site-title a,#page_wrapper.transparent_header .site-header.sticky .widget_product_search .search-but-added,#page_wrapper.transparent_header .site-header.sticky .widget_search .search-but-added{color:#ffffff;}.site-header.sticky .site-branding{border-color: #ffffff;}}@media only screen and (max-width: 63.9375em) {.site-logo {display:none;}.sticky-logo {display:block;}}/* header-centered-2menus *//* header-centered-menu-under */.transparent_header .with-featured-img{margin-top: -175px;}/***************************************************************//* Footer ******************************************************//***************************************************************/#site-footer{background: #777777;}#site-footer,#site-footer .copyright_text a{color:#ffffff;}#site-footer a,#site-footer .widget-title,.cart-empty-text,.footer-navigation-wrapper ul li:after{color:#ffffff;}.trigger-footer-widget-area {display: none;}.site-footer-widget-area {display: block;}/***************************************************************//* Breadcrumbs *************************************************//***************************************************************//***************************************************************//* Product Quantity Style/***************************************************************//* Default Input Type Number */@media only screen and (max-width: 767px) {.product .product_infos form.cart:not(.variations_form) .quantity:not(.custom){margin: 0 !important;}.product .product_infos form.cart .quantity:not(.custom) input.input-text.qty{color: #222222 !important;}}.cd-quick-view .cd-item-info .product_infos:after{background: linear-gradient(to bottom, rgba(205,255,255,0) 0%, 			#fff  			 70%);}/***************************************************************//* Notifications/***************************************************************//***************************************************************//* Product Page Full Screen Description ************************//***************************************************************//********************************************************************//* Catalog Mode *****************************************************//********************************************************************//********************************************************************//* Custom CSS *******************************************************//********************************************************************//*]]>*/</style><noscript><style type="text/css">.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head><body
+class="page-template-default page page-id-1044 wpb-js-composer js-comp-ver-5.1 vc_responsive"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4027949-1', 'auto');
+  ga('send', 'pageview');</script> <div
+id="st-container" class="st-container"><div
+class="st-pusher"><div
+class="st-pusher-after"></div><div
+class="st-content"><div
+id="page_wrapper" class="sticky_header transparent_header transparency_dark"><div
+class="top-headers-wrapper"><header
+id="masthead" class="site-header" role="banner"><div
+class="site-header-wrapper" style="max-width:100%"><div
+class="site-branding">
+<a
+href="https://www.vornado.com/" rel="home">
+<img
+class="site-logo" src="https://www.vornado.com/wp-content/uploads/2015/12/Vornado-V.png" title="Fans, Circulators, Heaters, Humidifiers, Air Purifiers and Steam products." alt="Vornado" />
+<img
+class="sticky-logo" src="https://www.vornado.com/wp-content/uploads/2015/12/Vornado-V_white.png" title="Fans, Circulators, Heaters, Humidifiers, Air Purifiers and Steam products." alt="Vornado" />
+</a></div><div
+class="site-tools offset align_left"><ul><li
+class="my_account_icon">
+<a
+class="tools_button" href="https://www.vornado.com/my-account">
+<span
+class="tools_button_icon">
+<i
+class="fa fa-user"></i>
+</span>
+<span
+class="MyAccountIcon">My Account</span>
+</a></li><li
+class="shopping-bag-button">
+<a
+href="https://www.vornado.com/cart" class="tools_button">
+<span
+class="tools_button_icon">
+<i
+class="fa fa-shopping-cart"></i>
+</span>
+<span
+class="shopping_bag_items_number">0</span>
+</a></li><li
+class="search-button">
+<a
+class="tools_button">
+<span
+class="tools_button_icon">
+<i
+class="fa fa-search"></i>
+</span>
+</a></li><li
+class="offcanvas-menu-button hide-for-large-up">
+<a
+class="tools_button">
+<span
+class="menu-button-text">menu</span>
+<span
+class="tools_button_icon">
+<i
+class="spk-icon-menu"></i>
+</span>
+</a></li></ul></div>
+<nav
+class="show-for-large-up main-navigation default-navigation align_left" role="navigation"><ul
+class="menu-main-navigation"><li
+id="shopkeeper-menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a
+href="https://www.vornado.com/shop">Shop</a><ul
+class="sub-menu  level-0" ><li
+id="shopkeeper-menu-item-1096" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat"><a
+href="https://www.vornado.com/product-category/circulators-fans">Circulators &#038; Fans</a></li><li
+id="shopkeeper-menu-item-1098" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat"><a
+href="https://www.vornado.com/product-category/heaters">Heaters</a></li><li
+id="shopkeeper-menu-item-1099" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat"><a
+href="https://www.vornado.com/product-category/air-purifiers">Air Purifiers</a></li><li
+id="shopkeeper-menu-item-1323" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat"><a
+href="https://www.vornado.com/product-category/humidifiers">Humidifiers</a></li><li
+id="shopkeeper-menu-item-1324" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat"><a
+href="https://www.vornado.com/product-category/fabric-steamers">Fabric Steamers</a></li><li
+id="shopkeeper-menu-item-1097" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat"><a
+href="https://www.vornado.com/product-category/accessories">Accessories</a></li><li
+id="shopkeeper-menu-item-17833" class="menu-item menu-item-type-custom menu-item-object-custom"><a
+href="https://www.vornado.com/product-category/energy-smart-line">Energy Smart</a></li><li
+id="shopkeeper-menu-item-15835" class="menu-item menu-item-type-custom menu-item-object-custom"><a
+href="/product-category/alchemy">Alchemy</a></li><li
+id="shopkeeper-menu-item-2865" class="menu-item menu-item-type-custom menu-item-object-custom"><a
+target="_blank" href="http://vornadobaby.com/">Vornadobaby</a></li></ul></li><li
+id="shopkeeper-menu-item-2424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>Learn</a><ul
+class="sub-menu  level-0" ><li
+id="shopkeeper-menu-item-2445" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/difference">The Vornado Difference</a></li><li
+id="shopkeeper-menu-item-2425" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/history">History</a></li><li
+id="shopkeeper-menu-item-2844" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/energy-smart">Energy Smart</a></li><li
+id="shopkeeper-menu-item-11376" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/savings">Savings</a></li></ul></li><li
+id="shopkeeper-menu-item-3008" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children"><a>Help</a><ul
+class="sub-menu  level-0" ><li
+id="shopkeeper-menu-item-2444" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/contact-us">Contact Us</a></li><li
+id="shopkeeper-menu-item-2846" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/satisfaction-guarantee">Satisfaction Guarantee</a></li><li
+id="shopkeeper-menu-item-2845" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/returns">Returns</a></li><li
+id="shopkeeper-menu-item-2631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>Manuals</a><ul
+class="sub-menu  level-1" ><li
+id="shopkeeper-menu-item-1028" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/circulators-manuals">Circulator Manuals</a></li><li
+id="shopkeeper-menu-item-1030" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/heaters-manuals">Heater Manuals</a></li><li
+id="shopkeeper-menu-item-1029" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/humidifiers-manuals">Humidifier Manuals</a></li><li
+id="shopkeeper-menu-item-1031" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/air-purifier-manuals">Air Purifier Manuals</a></li><li
+id="shopkeeper-menu-item-1027" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/fabric-steamer-manuals">Fabric Steamer Manuals</a></li></ul></li><li
+id="shopkeeper-menu-item-1046" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1044 current_page_item"><a
+href="https://www.vornado.com/product-registration">Product Registration</a></li><li
+id="shopkeeper-menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/faqs">FAQs</a></li><li
+id="shopkeeper-menu-item-1801" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+href="https://www.vornado.com/find-in-store">Find In Store</a></li></ul></li></ul>
+</nav><div
+style="clear:both"></div></div>
+</header> <script>jQuery(document).ready(function($) {
+
+    "use strict";
+	
+		$(window).scroll(function() {
+			
+			if ($(window).scrollTop() > 0) {
+				
+									$('#site-top-bar').addClass("hidden");
+					$('.site-header').addClass("sticky");
+											$('.site-logo').attr('src', 'https://www.vornado.com/wp-content/uploads/2015/12/Vornado-V_white.png');
+													
+			} else {
+				
+									$('#site-top-bar').removeClass("hidden");
+					$('.site-header').removeClass("sticky");
+											$('.site-logo').attr('src', 'https://www.vornado.com/wp-content/uploads/2015/12/Vornado-V.png');
+													
+			}	
+			
+		});
+	
+	});</script> </div><div
+id="primary" class="content-area"><div
+id="content" class="site-content" role="main">
+<header
+class="entry-header " ><div
+class="page_header_overlay"></div><div
+class="row"><div
+class="large-10 large-centered columns without-sidebar"><h1 class="page-title">Product Registration</h1></div></div>
+</header><div
+id="post-1044" class="post-1044 page type-page status-publish hentry"><div
+class="row"><div
+class="large-12 columns"><div
+class="entry-content"><div
+style="" class="normal_height vc_row wpb_row vc_row-fluid mpc-row"><div
+class="wpb_column vc_column_container vc_col-sm-12 mpc-column" data-column-id="mpc_column-935acdc5c40f3e7"><div
+class="vc_column-inner "><div
+class="wpb_wrapper"><div
+class="wpb_text_column wpb_content_element "><div
+class="wpb_wrapper"><div
+class="gf_browser_chrome gform_wrapper .col-md-12_wrapper" id="gform_wrapper_1"><form
+method="post" enctype="multipart/form-data" id="gform_1" class=".col-md-12" action="/product-registration"><div
+class="gform_body"><ul
+id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below"><li
+id="field_1_1" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label gfield_label_before_complex" for="input_1_1_3">Name<span
+class="gfield_required">*</span></label><div
+class="ginput_complex ginput_container no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gfield_trigger_change" id="input_1_1">
+<span
+id="input_1_1_3_container" class="name_first">
+<input
+type="text" name="input_1.3" id="input_1_1_3" value="" aria-label="First name" tabindex="2" aria-required="true" aria-invalid="false"><label
+for="input_1_1_3">First</label>
+</span>
+<span
+id="input_1_1_6_container" class="name_last">
+<input
+type="text" name="input_1.6" id="input_1_1_6" value="" aria-label="Last name" tabindex="4" aria-required="true" aria-invalid="false"><label
+for="input_1_1_6">Last</label>
+</span></div></li><li
+id="field_1_2" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label gfield_label_before_complex" for="input_1_2_1">Address<span
+class="gfield_required">*</span></label><div
+class="ginput_complex ginput_container has_street has_city has_state has_zip has_country ginput_container_address gfield_trigger_change" id="input_1_2">
+<span
+class="ginput_full address_line_1" id="input_1_2_1_container">
+<input
+type="text" name="input_2.1" id="input_1_2_1" value="" tabindex="6"><label
+for="input_1_2_1" id="input_1_2_1_label">Street Address</label>
+</span><span
+class="ginput_left address_city" id="input_1_2_3_container">
+<input
+type="text" name="input_2.3" id="input_1_2_3" value="" tabindex="7"><label
+for="input_1_2_3" id="input_1_2_3_label">City</label>
+</span><span
+class="ginput_right address_state" id="input_1_2_4_container">
+<input
+type="text" name="input_2.4" id="input_1_2_4" value="" tabindex="9"><label
+for="input_1_2_4" id="input_1_2_4_label">State / Province / Region</label>
+</span><span
+class="ginput_left address_zip" id="input_1_2_5_container">
+<input
+type="text" name="input_2.5" id="input_1_2_5" value="" tabindex="10"><label
+for="input_1_2_5" id="input_1_2_5_label">ZIP / Postal Code</label>
+</span><span
+class="ginput_right address_country" id="input_1_2_6_container">
+<select
+name="input_2.6" id="input_1_2_6" tabindex="11"><option
+value=""></option><option
+value="Afghanistan">Afghanistan</option><option
+value="Albania">Albania</option><option
+value="Algeria">Algeria</option><option
+value="American Samoa">American Samoa</option><option
+value="Andorra">Andorra</option><option
+value="Angola">Angola</option><option
+value="Antigua and Barbuda">Antigua and Barbuda</option><option
+value="Argentina">Argentina</option><option
+value="Armenia">Armenia</option><option
+value="Australia">Australia</option><option
+value="Austria">Austria</option><option
+value="Azerbaijan">Azerbaijan</option><option
+value="Bahamas">Bahamas</option><option
+value="Bahrain">Bahrain</option><option
+value="Bangladesh">Bangladesh</option><option
+value="Barbados">Barbados</option><option
+value="Belarus">Belarus</option><option
+value="Belgium">Belgium</option><option
+value="Belize">Belize</option><option
+value="Benin">Benin</option><option
+value="Bermuda">Bermuda</option><option
+value="Bhutan">Bhutan</option><option
+value="Bolivia">Bolivia</option><option
+value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option
+value="Botswana">Botswana</option><option
+value="Brazil">Brazil</option><option
+value="Brunei">Brunei</option><option
+value="Bulgaria">Bulgaria</option><option
+value="Burkina Faso">Burkina Faso</option><option
+value="Burundi">Burundi</option><option
+value="Cambodia">Cambodia</option><option
+value="Cameroon">Cameroon</option><option
+value="Canada">Canada</option><option
+value="Cape Verde">Cape Verde</option><option
+value="Cayman Islands">Cayman Islands</option><option
+value="Central African Republic">Central African Republic</option><option
+value="Chad">Chad</option><option
+value="Chile">Chile</option><option
+value="China">China</option><option
+value="Colombia">Colombia</option><option
+value="Comoros">Comoros</option><option
+value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option><option
+value="Congo, Republic of the">Congo, Republic of the</option><option
+value="Costa Rica">Costa Rica</option><option
+value="C&ocirc;te d'Ivoire">C&ocirc;te d'Ivoire</option><option
+value="Croatia">Croatia</option><option
+value="Cuba">Cuba</option><option
+value="Cura&ccedil;ao">Cura&ccedil;ao</option><option
+value="Cyprus">Cyprus</option><option
+value="Czech Republic">Czech Republic</option><option
+value="Denmark">Denmark</option><option
+value="Djibouti">Djibouti</option><option
+value="Dominica">Dominica</option><option
+value="Dominican Republic">Dominican Republic</option><option
+value="East Timor">East Timor</option><option
+value="Ecuador">Ecuador</option><option
+value="Egypt">Egypt</option><option
+value="El Salvador">El Salvador</option><option
+value="Equatorial Guinea">Equatorial Guinea</option><option
+value="Eritrea">Eritrea</option><option
+value="Estonia">Estonia</option><option
+value="Ethiopia">Ethiopia</option><option
+value="Faroe Islands">Faroe Islands</option><option
+value="Fiji">Fiji</option><option
+value="Finland">Finland</option><option
+value="France">France</option><option
+value="French Polynesia">French Polynesia</option><option
+value="Gabon">Gabon</option><option
+value="Gambia">Gambia</option><option
+value="Georgia">Georgia</option><option
+value="Germany">Germany</option><option
+value="Ghana">Ghana</option><option
+value="Greece">Greece</option><option
+value="Greenland">Greenland</option><option
+value="Grenada">Grenada</option><option
+value="Guam">Guam</option><option
+value="Guatemala">Guatemala</option><option
+value="Guinea">Guinea</option><option
+value="Guinea-Bissau">Guinea-Bissau</option><option
+value="Guyana">Guyana</option><option
+value="Haiti">Haiti</option><option
+value="Honduras">Honduras</option><option
+value="Hong Kong">Hong Kong</option><option
+value="Hungary">Hungary</option><option
+value="Iceland">Iceland</option><option
+value="India">India</option><option
+value="Indonesia">Indonesia</option><option
+value="Iran">Iran</option><option
+value="Iraq">Iraq</option><option
+value="Ireland">Ireland</option><option
+value="Israel">Israel</option><option
+value="Italy">Italy</option><option
+value="Jamaica">Jamaica</option><option
+value="Japan">Japan</option><option
+value="Jordan">Jordan</option><option
+value="Kazakhstan">Kazakhstan</option><option
+value="Kenya">Kenya</option><option
+value="Kiribati">Kiribati</option><option
+value="North Korea">North Korea</option><option
+value="South Korea">South Korea</option><option
+value="Kosovo">Kosovo</option><option
+value="Kuwait">Kuwait</option><option
+value="Kyrgyzstan">Kyrgyzstan</option><option
+value="Laos">Laos</option><option
+value="Latvia">Latvia</option><option
+value="Lebanon">Lebanon</option><option
+value="Lesotho">Lesotho</option><option
+value="Liberia">Liberia</option><option
+value="Libya">Libya</option><option
+value="Liechtenstein">Liechtenstein</option><option
+value="Lithuania">Lithuania</option><option
+value="Luxembourg">Luxembourg</option><option
+value="Macedonia">Macedonia</option><option
+value="Madagascar">Madagascar</option><option
+value="Malawi">Malawi</option><option
+value="Malaysia">Malaysia</option><option
+value="Maldives">Maldives</option><option
+value="Mali">Mali</option><option
+value="Malta">Malta</option><option
+value="Marshall Islands">Marshall Islands</option><option
+value="Mauritania">Mauritania</option><option
+value="Mauritius">Mauritius</option><option
+value="Mexico">Mexico</option><option
+value="Micronesia">Micronesia</option><option
+value="Moldova">Moldova</option><option
+value="Monaco">Monaco</option><option
+value="Mongolia">Mongolia</option><option
+value="Montenegro">Montenegro</option><option
+value="Morocco">Morocco</option><option
+value="Mozambique">Mozambique</option><option
+value="Myanmar">Myanmar</option><option
+value="Namibia">Namibia</option><option
+value="Nauru">Nauru</option><option
+value="Nepal">Nepal</option><option
+value="Netherlands">Netherlands</option><option
+value="New Zealand">New Zealand</option><option
+value="Nicaragua">Nicaragua</option><option
+value="Niger">Niger</option><option
+value="Nigeria">Nigeria</option><option
+value="Northern Mariana Islands">Northern Mariana Islands</option><option
+value="Norway">Norway</option><option
+value="Oman">Oman</option><option
+value="Pakistan">Pakistan</option><option
+value="Palau">Palau</option><option
+value="Palestine, State of">Palestine, State of</option><option
+value="Panama">Panama</option><option
+value="Papua New Guinea">Papua New Guinea</option><option
+value="Paraguay">Paraguay</option><option
+value="Peru">Peru</option><option
+value="Philippines">Philippines</option><option
+value="Poland">Poland</option><option
+value="Portugal">Portugal</option><option
+value="Puerto Rico">Puerto Rico</option><option
+value="Qatar">Qatar</option><option
+value="Romania">Romania</option><option
+value="Russia">Russia</option><option
+value="Rwanda">Rwanda</option><option
+value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option
+value="Saint Lucia">Saint Lucia</option><option
+value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option
+value="Samoa">Samoa</option><option
+value="San Marino">San Marino</option><option
+value="Sao Tome and Principe">Sao Tome and Principe</option><option
+value="Saudi Arabia">Saudi Arabia</option><option
+value="Senegal">Senegal</option><option
+value="Serbia">Serbia</option><option
+value="Seychelles">Seychelles</option><option
+value="Sierra Leone">Sierra Leone</option><option
+value="Singapore">Singapore</option><option
+value="Sint Maarten">Sint Maarten</option><option
+value="Slovakia">Slovakia</option><option
+value="Slovenia">Slovenia</option><option
+value="Solomon Islands">Solomon Islands</option><option
+value="Somalia">Somalia</option><option
+value="South Africa">South Africa</option><option
+value="Spain">Spain</option><option
+value="Sri Lanka">Sri Lanka</option><option
+value="Sudan">Sudan</option><option
+value="Sudan, South">Sudan, South</option><option
+value="Suriname">Suriname</option><option
+value="Swaziland">Swaziland</option><option
+value="Sweden">Sweden</option><option
+value="Switzerland">Switzerland</option><option
+value="Syria">Syria</option><option
+value="Taiwan">Taiwan</option><option
+value="Tajikistan">Tajikistan</option><option
+value="Tanzania">Tanzania</option><option
+value="Thailand">Thailand</option><option
+value="Togo">Togo</option><option
+value="Tonga">Tonga</option><option
+value="Trinidad and Tobago">Trinidad and Tobago</option><option
+value="Tunisia">Tunisia</option><option
+value="Turkey">Turkey</option><option
+value="Turkmenistan">Turkmenistan</option><option
+value="Tuvalu">Tuvalu</option><option
+value="Uganda">Uganda</option><option
+value="Ukraine">Ukraine</option><option
+value="United Arab Emirates">United Arab Emirates</option><option
+value="United Kingdom">United Kingdom</option><option
+value="United States" selected>United States</option><option
+value="Uruguay">Uruguay</option><option
+value="Uzbekistan">Uzbekistan</option><option
+value="Vanuatu">Vanuatu</option><option
+value="Vatican City">Vatican City</option><option
+value="Venezuela">Venezuela</option><option
+value="Vietnam">Vietnam</option><option
+value="Virgin Islands, British">Virgin Islands, British</option><option
+value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option
+value="Yemen">Yemen</option><option
+value="Zambia">Zambia</option><option
+value="Zimbabwe">Zimbabwe</option></select><label
+for="input_1_2_6" id="input_1_2_6_label">Country</label>
+</span><div
+class="gf_clear gf_clear_complex"></div></div></li><li
+id="field_1_3" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_3">Phone<span
+class="gfield_required">*</span></label><div
+class="ginput_container ginput_container_phone"><input
+name="input_3" id="input_1_3" type="tel" value="" class="medium" tabindex="12" aria-required="true" aria-invalid="false"></div></li><li
+id="field_1_4" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_4">Email<span
+class="gfield_required">*</span></label><div
+class="ginput_container ginput_container_email">
+<input
+name="input_4" id="input_1_4" type="email" value="" class="medium" tabindex="13" aria-required="true" aria-invalid="false"></div></li><li
+id="field_1_18" class="gfield populate-posts gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_18">Product Purchased<span
+class="gfield_required">*</span></label><div
+class="ginput_container ginput_container_select"><select
+name="input_18" id="input_1_18" class="medium gfield_select" tabindex="14" aria-required="true" aria-invalid="false"><option
+value="" selected class="gf_placeholder">Select a Product</option><option
+value="1303 Personal Air Circulator">1303 Personal Air Circulator</option><option
+value="133 Compact Air Circulator">133 Compact Air Circulator</option><option
+value='143 29" Tower Circulator'>143 29" Tower Circulator</option><option
+value='154 32" Tower Circulator'>154 32" Tower Circulator</option><option
+value="160 Personal Air Circulator">160 Personal Air Circulator</option><option
+value='173 37" Tower Circulator'>173 37" Tower Circulator</option><option
+value='184 41" Tower Circulator'>184 41" Tower Circulator</option><option
+value="270 Large Panel Air Circulator">270 Large Panel Air Circulator</option><option
+value="279 Large Panel Air Circulator">279 Large Panel Air Circulator</option><option
+value="293 Heavy Duty Large Air Circulator">293 Heavy Duty Large Air Circulator</option><option
+value="360 Small Air Circulator">360 Small Air Circulator</option><option
+value="460 Small Air Circulator">460 Small Air Circulator</option><option
+value="530 Small Air Circulator">530 Small Air Circulator</option><option
+value="5303 Small Air Circulator">5303 Small Air Circulator</option><option
+value="5303DC Energy Smart Small Air Circulator">5303DC Energy Smart Small Air Circulator</option><option
+value="533 Small Air Circulator">533 Small Air Circulator</option><option
+value="5350 Small Air Circulator">5350 Small Air Circulator</option><option
+value="560 Medium Air Circulator">560 Medium Air Circulator</option><option
+value="573 Small Panel Air Circulator">573 Small Panel Air Circulator</option><option
+value="610DC Energy Smart Medium Air Circulator">610DC Energy Smart Medium Air Circulator</option><option
+value="623 Medium Air Circulator">623 Medium Air Circulator</option><option
+value="630 Medium Air Circulator">630 Medium Air Circulator</option><option
+value="6303 Medium Air Circulator">6303 Medium Air Circulator</option><option
+value="6303DC Energy Smart Medium Air Circulator">6303DC Energy Smart Medium Air Circulator</option><option
+value="633 Medium Air Circulator">633 Medium Air Circulator</option><option
+value="660 Large Air Circulator">660 Large Air Circulator</option><option
+value="673 Medium Panel Air Circulator">673 Medium Panel Air Circulator</option><option
+value="679 Medium Panel Air Circulator">679 Medium Panel Air Circulator</option><option
+value="6803DC Energy Smart Medium Pedestal Air Circulator">6803DC Energy Smart Medium Pedestal Air Circulator</option><option
+value="683 Medium Pedestal Air Circulator">683 Medium Pedestal Air Circulator</option><option
+value="693 Medium Stand Air Circulator">693 Medium Stand Air Circulator</option><option
+value="723 Large Air Circulator">723 Large Air Circulator</option><option
+value="723DC Energy Smart Large Air Circulator">723DC Energy Smart Large Air Circulator</option><option
+value="733 Large Air Circulator">733 Large Air Circulator</option><option
+value="743 Large Air Circulator">743 Large Air Circulator</option><option
+value="7503 Large Air Circulator">7503 Large Air Circulator</option><option
+value="7503DC Energy Smart Large Air Circulator">7503DC Energy Smart Large Air Circulator</option><option
+value="753 Large Air Circulator">753 Large Air Circulator</option><option
+value="7803 Large Pedestal Air Circulator">7803 Large Pedestal Air Circulator</option><option
+value="7803 Large Pedestal Air Circulator (Old Base)">7803 Large Pedestal Air Circulator (Old Base)</option><option
+value="783 Large Stand Air Circulator">783 Large Stand Air Circulator</option><option
+value="783DC Energy Smart Large Stand Air Circulator">783DC Energy Smart Large Stand Air Circulator</option><option
+value="AC300 True HEPA Air Purifier">AC300 True HEPA Air Purifier</option><option
+value="AC350 True HEPA Air Purifier">AC350 True HEPA Air Purifier</option><option
+value="AC500 True HEPA Air Purifier">AC500 True HEPA Air Purifier</option><option
+value="AC550 True HEPA Air Purifier">AC550 True HEPA Air Purifier</option><option
+value="AQS500 Air Purifier">AQS500 Air Purifier</option><option
+value="ATH1 Whole Room Tower Heater with Auto Climate">ATH1 Whole Room Tower Heater with Auto Climate</option><option
+value="AVH10 Whole Room Heater with Auto Climate">AVH10 Whole Room Heater with Auto Climate</option><option
+value="AVH2 Digital Whole Room Heater with Auto Climate">AVH2 Digital Whole Room Heater with Auto Climate</option><option
+value="AVH2 Plus Whole Room Heater with Auto Climate">AVH2 Plus Whole Room Heater with Auto Climate</option><option
+value="AVH2 Whole Room Heater with Auto Climate">AVH2 Whole Room Heater with Auto Climate</option><option
+value="AVH30 Whole Room Heater with Auto Climate">AVH30 Whole Room Heater with Auto Climate</option><option
+value="AVH4 Whole Room Heater with Auto Climate">AVH4 Whole Room Heater with Auto Climate</option><option
+value="Duo Compact Tower Circulator">Duo Compact Tower Circulator</option><option
+value="DVTH Whole Room Heater with Auto Climate">DVTH Whole Room Heater with Auto Climate</option><option
+value="Element A Air + Steam Humidifier">Element A Air + Steam Humidifier</option><option
+value="Element A2 Air + Steam Humidifier">Element A2 Air + Steam Humidifier</option><option
+value="EV100 Evaporative Humidifier">EV100 Evaporative Humidifier</option><option
+value="EV200 Evaporative Humidifier">EV200 Evaporative Humidifier</option><option
+value="Evap1 Evaporative Humidifier">Evap1 Evaporative Humidifier</option><option
+value="Evap2 Evaporative Humidifier">Evap2 Evaporative Humidifier</option><option
+value="Evap3 Evaporative Humidifier">Evap3 Evaporative Humidifier</option><option
+value="Evap40 Evaporative Humidifier">Evap40 Evaporative Humidifier</option><option
+value="EVDC300 Energy Smart Evaporative Humidifier">EVDC300 Energy Smart Evaporative Humidifier</option><option
+value="EVDC500 Energy Smart Evaporative Humidifier">EVDC500 Energy Smart Evaporative Humidifier</option><option
+value="EVH201 Personal Heater">EVH201 Personal Heater</option><option
+value="EXO5 Heavy Duty Small Air Circulator">EXO5 Heavy Duty Small Air Circulator</option><option
+value="FIT Personal Air Circulator">FIT Personal Air Circulator</option><option
+value="Flippi V Compact Air Circulator">Flippi V Compact Air Circulator</option><option
+value="Flippi V10 Compact Air Circulator">Flippi V10 Compact Air Circulator</option><option
+value="Flippi V6 Personal Air Circulator">Flippi V6 Personal Air Circulator</option><option
+value="Flippi V8 Personal Air Circulator">Flippi V8 Personal Air Circulator</option><option
+value="iControl Whole Room Heater with Auto Climate">iControl Whole Room Heater with Auto Climate</option><option
+value="IR400 Whole Room Infrared Heater">IR400 Whole Room Infrared Heater</option><option
+value="MVH Whole Room Heater">MVH Whole Room Heater</option><option
+value='NGT335 33" Tower Circulator'>NGT335 33" Tower Circulator</option><option
+value='NGT33DC Energy Smart 33" Tower Circulator'>NGT33DC Energy Smart 33" Tower Circulator</option><option
+value='NGT425 42" Tower Circulator'>NGT425 42" Tower Circulator</option><option
+value='NGT42DC Energy Smart 42" Tower Circulator'>NGT42DC Energy Smart 42" Tower Circulator</option><option
+value='OSCR37 37" Tower Circulator'>OSCR37 37" Tower Circulator</option><option
+value="PCO200 Silverscreen Air Purifier">PCO200 Silverscreen Air Purifier</option><option
+value="PCO300 Silverscreen Air Purifier">PCO300 Silverscreen Air Purifier</option><option
+value="PCO500 Silverscreen Air Purifier">PCO500 Silverscreen Air Purifier</option><option
+value="Pivot Personal Air Circulator">Pivot Personal Air Circulator</option><option
+value="Pivot5 Small Air Circulator">Pivot5 Small Air Circulator</option><option
+value="PVH Whole Room Heater">PVH Whole Room Heater</option><option
+value="Silver Swan Alchemy">Silver Swan Alchemy</option><option
+value="Silver Swan S Vintage Oscillating Fan">Silver Swan S Vintage Oscillating Fan</option><option
+value="Silver Swan Vintage Oscillating Fan">Silver Swan Vintage Oscillating Fan</option><option
+value="SRTH Small Tower Heater">SRTH Small Tower Heater</option><option
+value="TAVH10 Whole Room Heater with Auto Climate">TAVH10 Whole Room Heater with Auto Climate</option><option
+value="TH1 Whole Room Tower Heater">TH1 Whole Room Tower Heater</option><option
+value="TVH500 Whole Room Metal Heater">TVH500 Whole Room Metal Heater</option><option
+value="TVH600 Whole Room Heater with Auto Climate">TVH600 Whole Room Heater with Auto Climate</option><option
+value="Ultra1 Ultrasonic Humidifier">Ultra1 Ultrasonic Humidifier</option><option
+value="Ultra3 Ultrasonic Humidifier">Ultra3 Ultrasonic Humidifier</option><option
+value="V103 Under Cabinet Circulator">V103 Under Cabinet Circulator</option><option
+value="VFAN Alchemy">VFAN Alchemy</option><option
+value="VFAN Jr. Vintage Air Circulator">VFAN Jr. Vintage Air Circulator</option><option
+value="VFAN Mini Classic Vintage Air Circulator">VFAN Mini Classic Vintage Air Circulator</option><option
+value="VFAN Mini Modern Vintage Air Circulator">VFAN Mini Modern Vintage Air Circulator</option><option
+value="VFAN Petite Alchemy">VFAN Petite Alchemy</option><option
+value="VFAN Sr. Pedestal Vintage Air Circulator">VFAN Sr. Pedestal Vintage Air Circulator</option><option
+value="VFAN Sr. Vintage Air Circulator">VFAN Sr. Vintage Air Circulator</option><option
+value="VFAN Vintage Air Circulator">VFAN Vintage Air Circulator</option><option
+value="VH10 Whole Room Heater">VH10 Whole Room Heater</option><option
+value="VH101 Personal Heater">VH101 Personal Heater</option><option
+value="VH102 Whole Room Heater">VH102 Whole Room Heater</option><option
+value="VH103 Whole Room Heater with Auto Climate">VH103 Whole Room Heater with Auto Climate</option><option
+value="VH110 Whole Room Heater">VH110 Whole Room Heater</option><option
+value="VH2 Whole Room Heater">VH2 Whole Room Heater</option><option
+value="VH200 Whole Room Heater">VH200 Whole Room Heater</option><option
+value="VH202 Personal Heater">VH202 Personal Heater</option><option
+value="VH203 Personal Heater">VH203 Personal Heater</option><option
+value="VH30 Whole Room Heater">VH30 Whole Room Heater</option><option
+value="VMH10 Personal Metal Heater">VMH10 Personal Metal Heater</option><option
+value="VMH300 Whole Room Metal Heater">VMH300 Whole Room Metal Heater</option><option
+value="VMH500 Whole Room Metal Heater with Auto Climate">VMH500 Whole Room Metal Heater with Auto Climate</option><option
+value="VMH600 Whole Room Stainless Steel Heater with Auto Climate">VMH600 Whole Room Stainless Steel Heater with Auto Climate</option><option
+value="VS-410 Essential Fabric Steamer">VS-410 Essential Fabric Steamer</option><option
+value="VS-570 Commercial Fabric Steamer">VS-570 Commercial Fabric Steamer</option><option
+value="VTH Whole Room Heater">VTH Whole Room Heater</option><option
+value="Zippi Personal Fan">Zippi Personal Fan</option></select></div></li><li
+id="field_1_27" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_27">Serial Number<span
+class="gfield_required">*</span></label><div
+class="ginput_container ginput_container_text"><input
+name="input_27" id="input_1_27" type="text" value="" class="medium" tabindex="15" placeholder="JAN14-12345" aria-required="true" aria-invalid="false"></div></li><li
+id="field_1_11" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_11_1">Date of purchase:<span
+class="gfield_required">*</span></label><div
+id="input_1_11" class="ginput_container ginput_container_date"><div
+class="clear-multi"><div
+class="gfield_date_dropdown_month ginput_container ginput_container_date" id="input_1_11_1_container"><select
+name="input_11[]" id="input_1_11_1" tabindex="16"><option
+value="">Month</option><option
+value="1">1</option><option
+value="2">2</option><option
+value="3">3</option><option
+value="4">4</option><option
+value="5">5</option><option
+value="6">6</option><option
+value="7">7</option><option
+value="8">8</option><option
+value="9">9</option><option
+value="10">10</option><option
+value="11">11</option><option
+value="12">12</option></select></div><div
+class="gfield_date_dropdown_day ginput_container ginput_container_date" id="input_1_11_2_container"><select
+name="input_11[]" id="input_1_11_2" tabindex="17"><option
+value="">Day</option><option
+value="1">1</option><option
+value="2">2</option><option
+value="3">3</option><option
+value="4">4</option><option
+value="5">5</option><option
+value="6">6</option><option
+value="7">7</option><option
+value="8">8</option><option
+value="9">9</option><option
+value="10">10</option><option
+value="11">11</option><option
+value="12">12</option><option
+value="13">13</option><option
+value="14">14</option><option
+value="15">15</option><option
+value="16">16</option><option
+value="17">17</option><option
+value="18">18</option><option
+value="19">19</option><option
+value="20">20</option><option
+value="21">21</option><option
+value="22">22</option><option
+value="23">23</option><option
+value="24">24</option><option
+value="25">25</option><option
+value="26">26</option><option
+value="27">27</option><option
+value="28">28</option><option
+value="29">29</option><option
+value="30">30</option><option
+value="31">31</option></select></div><div
+class="gfield_date_dropdown_year ginput_container ginput_container_date" id="input_1_11_3_container"><select
+name="input_11[]" id="input_1_11_3" tabindex="18"><option
+value="">Year</option><option
+value="2019">2019</option><option
+value="2018">2018</option><option
+value="2017">2017</option><option
+value="2016">2016</option><option
+value="2015">2015</option><option
+value="2014">2014</option><option
+value="2013">2013</option><option
+value="2012">2012</option><option
+value="2011">2011</option><option
+value="2010">2010</option><option
+value="2009">2009</option><option
+value="2008">2008</option><option
+value="2007">2007</option><option
+value="2006">2006</option><option
+value="2005">2005</option><option
+value="2004">2004</option><option
+value="2003">2003</option><option
+value="2002">2002</option><option
+value="2001">2001</option><option
+value="2000">2000</option><option
+value="1999">1999</option><option
+value="1998">1998</option><option
+value="1997">1997</option><option
+value="1996">1996</option><option
+value="1995">1995</option><option
+value="1994">1994</option><option
+value="1993">1993</option><option
+value="1992">1992</option><option
+value="1991">1991</option><option
+value="1990">1990</option><option
+value="1989">1989</option><option
+value="1988">1988</option><option
+value="1987">1987</option><option
+value="1986">1986</option><option
+value="1985">1985</option><option
+value="1984">1984</option><option
+value="1983">1983</option><option
+value="1982">1982</option><option
+value="1981">1981</option><option
+value="1980">1980</option><option
+value="1979">1979</option><option
+value="1978">1978</option><option
+value="1977">1977</option><option
+value="1976">1976</option><option
+value="1975">1975</option><option
+value="1974">1974</option><option
+value="1973">1973</option><option
+value="1972">1972</option><option
+value="1971">1971</option><option
+value="1970">1970</option><option
+value="1969">1969</option><option
+value="1968">1968</option><option
+value="1967">1967</option><option
+value="1966">1966</option><option
+value="1965">1965</option><option
+value="1964">1964</option><option
+value="1963">1963</option><option
+value="1962">1962</option><option
+value="1961">1961</option><option
+value="1960">1960</option><option
+value="1959">1959</option><option
+value="1958">1958</option><option
+value="1957">1957</option><option
+value="1956">1956</option><option
+value="1955">1955</option><option
+value="1954">1954</option><option
+value="1953">1953</option><option
+value="1952">1952</option><option
+value="1951">1951</option><option
+value="1950">1950</option><option
+value="1949">1949</option><option
+value="1948">1948</option><option
+value="1947">1947</option><option
+value="1946">1946</option><option
+value="1945">1945</option><option
+value="1944">1944</option><option
+value="1943">1943</option><option
+value="1942">1942</option><option
+value="1941">1941</option><option
+value="1940">1940</option><option
+value="1939">1939</option><option
+value="1938">1938</option><option
+value="1937">1937</option><option
+value="1936">1936</option><option
+value="1935">1935</option><option
+value="1934">1934</option><option
+value="1933">1933</option><option
+value="1932">1932</option><option
+value="1931">1931</option><option
+value="1930">1930</option><option
+value="1929">1929</option><option
+value="1928">1928</option><option
+value="1927">1927</option><option
+value="1926">1926</option><option
+value="1925">1925</option><option
+value="1924">1924</option><option
+value="1923">1923</option><option
+value="1922">1922</option><option
+value="1921">1921</option><option
+value="1920">1920</option></select></div></div></div></li><li
+id="field_1_12" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_12">Place of purchase:<span
+class="gfield_required">*</span></label><div
+class="ginput_container ginput_container_text"><input
+name="input_12" id="input_1_12" type="text" value="" class="medium" tabindex="19" aria-required="true" aria-invalid="false"></div><div
+class="gfield_description">(example: Target, Vornado Website)</div></li><li
+id="field_1_13" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_13">Purchase Price:<span
+class="gfield_required">*</span></label><div
+class="ginput_container ginput_container_number"><input
+name="input_13" id="input_1_13" type="text" step="any" value="" class="medium" tabindex="20" aria-required="true" aria-invalid="false"></div></li><li
+id="field_1_19" class="gfield gf_list_3col field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label">Which of the following influenced your purchase decision:</label><div
+class="ginput_container ginput_container_radio"><ul
+class="gfield_radio" id="input_1_19"><li
+class="gchoice_1_19_0"><input
+name="input_19" type="radio" value="Price/Value" id="choice_1_19_0" tabindex="21"><label
+for="choice_1_19_0" id="label_1_19_0">Price/Value</label></li><li
+class="gchoice_1_19_1"><input
+name="input_19" type="radio" value="Style/Appearance/Design" id="choice_1_19_1" tabindex="22"><label
+for="choice_1_19_1" id="label_1_19_1">Style/Appearance/Design</label></li><li
+class="gchoice_1_19_2"><input
+name="input_19" type="radio" value="Vornado Reputation" id="choice_1_19_2" tabindex="23"><label
+for="choice_1_19_2" id="label_1_19_2">Vornado Reputation</label></li><li
+class="gchoice_1_19_3"><input
+name="input_19" type="radio" value="Product Reviews" id="choice_1_19_3" tabindex="24"><label
+for="choice_1_19_3" id="label_1_19_3">Product Reviews</label></li><li
+class="gchoice_1_19_4"><input
+name="input_19" type="radio" value="Other" id="choice_1_19_4" tabindex="25"><label
+for="choice_1_19_4" id="label_1_19_4">Other</label></li></ul></div></li><li
+id="field_1_20" class="gfield gf_list_3col field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label">Would you recommend Vornado products to others?</label><div
+class="ginput_container ginput_container_radio"><ul
+class="gfield_radio" id="input_1_20"><li
+class="gchoice_1_20_0"><input
+name="input_20" type="radio" value="Yes" id="choice_1_20_0" tabindex="26"><label
+for="choice_1_20_0" id="label_1_20_0">Yes</label></li><li
+class="gchoice_1_20_1"><input
+name="input_20" type="radio" value="No" id="choice_1_20_1" tabindex="27"><label
+for="choice_1_20_1" id="label_1_20_1">No</label></li><li
+class="gchoice_1_20_2"><input
+name="input_20" type="radio" value="I'm not sure" id="choice_1_20_2" tabindex="28"><label
+for="choice_1_20_2" id="label_1_20_2">I'm not sure</label></li></ul></div></li><li
+id="field_1_24" class="gfield populate-posts field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_24">I also own the following Vornado Products:</label><div
+class="ginput_container ginput_container_select"><select
+name="input_24" id="input_1_24" class="medium gfield_select" tabindex="29" aria-invalid="false"><option
+value="" selected class="gf_placeholder">Select a Product</option><option
+value="1303 Personal Air Circulator">1303 Personal Air Circulator</option><option
+value="133 Compact Air Circulator">133 Compact Air Circulator</option><option
+value='143 29" Tower Circulator'>143 29" Tower Circulator</option><option
+value='154 32" Tower Circulator'>154 32" Tower Circulator</option><option
+value="160 Personal Air Circulator">160 Personal Air Circulator</option><option
+value='173 37" Tower Circulator'>173 37" Tower Circulator</option><option
+value='184 41" Tower Circulator'>184 41" Tower Circulator</option><option
+value="270 Large Panel Air Circulator">270 Large Panel Air Circulator</option><option
+value="279 Large Panel Air Circulator">279 Large Panel Air Circulator</option><option
+value="293 Heavy Duty Large Air Circulator">293 Heavy Duty Large Air Circulator</option><option
+value="360 Small Air Circulator">360 Small Air Circulator</option><option
+value="460 Small Air Circulator">460 Small Air Circulator</option><option
+value="530 Small Air Circulator">530 Small Air Circulator</option><option
+value="5303 Small Air Circulator">5303 Small Air Circulator</option><option
+value="5303DC Energy Smart Small Air Circulator">5303DC Energy Smart Small Air Circulator</option><option
+value="533 Small Air Circulator">533 Small Air Circulator</option><option
+value="5350 Small Air Circulator">5350 Small Air Circulator</option><option
+value="560 Medium Air Circulator">560 Medium Air Circulator</option><option
+value="573 Small Panel Air Circulator">573 Small Panel Air Circulator</option><option
+value="610DC Energy Smart Medium Air Circulator">610DC Energy Smart Medium Air Circulator</option><option
+value="623 Medium Air Circulator">623 Medium Air Circulator</option><option
+value="630 Medium Air Circulator">630 Medium Air Circulator</option><option
+value="6303 Medium Air Circulator">6303 Medium Air Circulator</option><option
+value="6303DC Energy Smart Medium Air Circulator">6303DC Energy Smart Medium Air Circulator</option><option
+value="633 Medium Air Circulator">633 Medium Air Circulator</option><option
+value="660 Large Air Circulator">660 Large Air Circulator</option><option
+value="673 Medium Panel Air Circulator">673 Medium Panel Air Circulator</option><option
+value="679 Medium Panel Air Circulator">679 Medium Panel Air Circulator</option><option
+value="6803DC Energy Smart Medium Pedestal Air Circulator">6803DC Energy Smart Medium Pedestal Air Circulator</option><option
+value="683 Medium Pedestal Air Circulator">683 Medium Pedestal Air Circulator</option><option
+value="693 Medium Stand Air Circulator">693 Medium Stand Air Circulator</option><option
+value="723 Large Air Circulator">723 Large Air Circulator</option><option
+value="723DC Energy Smart Large Air Circulator">723DC Energy Smart Large Air Circulator</option><option
+value="733 Large Air Circulator">733 Large Air Circulator</option><option
+value="743 Large Air Circulator">743 Large Air Circulator</option><option
+value="7503 Large Air Circulator">7503 Large Air Circulator</option><option
+value="7503DC Energy Smart Large Air Circulator">7503DC Energy Smart Large Air Circulator</option><option
+value="753 Large Air Circulator">753 Large Air Circulator</option><option
+value="7803 Large Pedestal Air Circulator">7803 Large Pedestal Air Circulator</option><option
+value="7803 Large Pedestal Air Circulator (Old Base)">7803 Large Pedestal Air Circulator (Old Base)</option><option
+value="783 Large Stand Air Circulator">783 Large Stand Air Circulator</option><option
+value="783DC Energy Smart Large Stand Air Circulator">783DC Energy Smart Large Stand Air Circulator</option><option
+value="AC300 True HEPA Air Purifier">AC300 True HEPA Air Purifier</option><option
+value="AC350 True HEPA Air Purifier">AC350 True HEPA Air Purifier</option><option
+value="AC500 True HEPA Air Purifier">AC500 True HEPA Air Purifier</option><option
+value="AC550 True HEPA Air Purifier">AC550 True HEPA Air Purifier</option><option
+value="AQS500 Air Purifier">AQS500 Air Purifier</option><option
+value="ATH1 Whole Room Tower Heater with Auto Climate">ATH1 Whole Room Tower Heater with Auto Climate</option><option
+value="AVH10 Whole Room Heater with Auto Climate">AVH10 Whole Room Heater with Auto Climate</option><option
+value="AVH2 Digital Whole Room Heater with Auto Climate">AVH2 Digital Whole Room Heater with Auto Climate</option><option
+value="AVH2 Plus Whole Room Heater with Auto Climate">AVH2 Plus Whole Room Heater with Auto Climate</option><option
+value="AVH2 Whole Room Heater with Auto Climate">AVH2 Whole Room Heater with Auto Climate</option><option
+value="AVH30 Whole Room Heater with Auto Climate">AVH30 Whole Room Heater with Auto Climate</option><option
+value="AVH4 Whole Room Heater with Auto Climate">AVH4 Whole Room Heater with Auto Climate</option><option
+value="Duo Compact Tower Circulator">Duo Compact Tower Circulator</option><option
+value="DVTH Whole Room Heater with Auto Climate">DVTH Whole Room Heater with Auto Climate</option><option
+value="Element A Air + Steam Humidifier">Element A Air + Steam Humidifier</option><option
+value="Element A2 Air + Steam Humidifier">Element A2 Air + Steam Humidifier</option><option
+value="EV100 Evaporative Humidifier">EV100 Evaporative Humidifier</option><option
+value="EV200 Evaporative Humidifier">EV200 Evaporative Humidifier</option><option
+value="Evap1 Evaporative Humidifier">Evap1 Evaporative Humidifier</option><option
+value="Evap2 Evaporative Humidifier">Evap2 Evaporative Humidifier</option><option
+value="Evap3 Evaporative Humidifier">Evap3 Evaporative Humidifier</option><option
+value="Evap40 Evaporative Humidifier">Evap40 Evaporative Humidifier</option><option
+value="EVDC300 Energy Smart Evaporative Humidifier">EVDC300 Energy Smart Evaporative Humidifier</option><option
+value="EVDC500 Energy Smart Evaporative Humidifier">EVDC500 Energy Smart Evaporative Humidifier</option><option
+value="EVH201 Personal Heater">EVH201 Personal Heater</option><option
+value="EXO5 Heavy Duty Small Air Circulator">EXO5 Heavy Duty Small Air Circulator</option><option
+value="FIT Personal Air Circulator">FIT Personal Air Circulator</option><option
+value="Flippi V Compact Air Circulator">Flippi V Compact Air Circulator</option><option
+value="Flippi V10 Compact Air Circulator">Flippi V10 Compact Air Circulator</option><option
+value="Flippi V6 Personal Air Circulator">Flippi V6 Personal Air Circulator</option><option
+value="Flippi V8 Personal Air Circulator">Flippi V8 Personal Air Circulator</option><option
+value="iControl Whole Room Heater with Auto Climate">iControl Whole Room Heater with Auto Climate</option><option
+value="IR400 Whole Room Infrared Heater">IR400 Whole Room Infrared Heater</option><option
+value="MVH Whole Room Heater">MVH Whole Room Heater</option><option
+value='NGT335 33" Tower Circulator'>NGT335 33" Tower Circulator</option><option
+value='NGT33DC Energy Smart 33" Tower Circulator'>NGT33DC Energy Smart 33" Tower Circulator</option><option
+value='NGT425 42" Tower Circulator'>NGT425 42" Tower Circulator</option><option
+value='NGT42DC Energy Smart 42" Tower Circulator'>NGT42DC Energy Smart 42" Tower Circulator</option><option
+value='OSCR37 37" Tower Circulator'>OSCR37 37" Tower Circulator</option><option
+value="PCO200 Silverscreen Air Purifier">PCO200 Silverscreen Air Purifier</option><option
+value="PCO300 Silverscreen Air Purifier">PCO300 Silverscreen Air Purifier</option><option
+value="PCO500 Silverscreen Air Purifier">PCO500 Silverscreen Air Purifier</option><option
+value="Pivot Personal Air Circulator">Pivot Personal Air Circulator</option><option
+value="Pivot5 Small Air Circulator">Pivot5 Small Air Circulator</option><option
+value="PVH Whole Room Heater">PVH Whole Room Heater</option><option
+value="Silver Swan Alchemy">Silver Swan Alchemy</option><option
+value="Silver Swan S Vintage Oscillating Fan">Silver Swan S Vintage Oscillating Fan</option><option
+value="Silver Swan Vintage Oscillating Fan">Silver Swan Vintage Oscillating Fan</option><option
+value="SRTH Small Tower Heater">SRTH Small Tower Heater</option><option
+value="TAVH10 Whole Room Heater with Auto Climate">TAVH10 Whole Room Heater with Auto Climate</option><option
+value="TH1 Whole Room Tower Heater">TH1 Whole Room Tower Heater</option><option
+value="TVH500 Whole Room Metal Heater">TVH500 Whole Room Metal Heater</option><option
+value="TVH600 Whole Room Heater with Auto Climate">TVH600 Whole Room Heater with Auto Climate</option><option
+value="Ultra1 Ultrasonic Humidifier">Ultra1 Ultrasonic Humidifier</option><option
+value="Ultra3 Ultrasonic Humidifier">Ultra3 Ultrasonic Humidifier</option><option
+value="V103 Under Cabinet Circulator">V103 Under Cabinet Circulator</option><option
+value="VFAN Alchemy">VFAN Alchemy</option><option
+value="VFAN Jr. Vintage Air Circulator">VFAN Jr. Vintage Air Circulator</option><option
+value="VFAN Mini Classic Vintage Air Circulator">VFAN Mini Classic Vintage Air Circulator</option><option
+value="VFAN Mini Modern Vintage Air Circulator">VFAN Mini Modern Vintage Air Circulator</option><option
+value="VFAN Petite Alchemy">VFAN Petite Alchemy</option><option
+value="VFAN Sr. Pedestal Vintage Air Circulator">VFAN Sr. Pedestal Vintage Air Circulator</option><option
+value="VFAN Sr. Vintage Air Circulator">VFAN Sr. Vintage Air Circulator</option><option
+value="VFAN Vintage Air Circulator">VFAN Vintage Air Circulator</option><option
+value="VH10 Whole Room Heater">VH10 Whole Room Heater</option><option
+value="VH101 Personal Heater">VH101 Personal Heater</option><option
+value="VH102 Whole Room Heater">VH102 Whole Room Heater</option><option
+value="VH103 Whole Room Heater with Auto Climate">VH103 Whole Room Heater with Auto Climate</option><option
+value="VH110 Whole Room Heater">VH110 Whole Room Heater</option><option
+value="VH2 Whole Room Heater">VH2 Whole Room Heater</option><option
+value="VH200 Whole Room Heater">VH200 Whole Room Heater</option><option
+value="VH202 Personal Heater">VH202 Personal Heater</option><option
+value="VH203 Personal Heater">VH203 Personal Heater</option><option
+value="VH30 Whole Room Heater">VH30 Whole Room Heater</option><option
+value="VMH10 Personal Metal Heater">VMH10 Personal Metal Heater</option><option
+value="VMH300 Whole Room Metal Heater">VMH300 Whole Room Metal Heater</option><option
+value="VMH500 Whole Room Metal Heater with Auto Climate">VMH500 Whole Room Metal Heater with Auto Climate</option><option
+value="VMH600 Whole Room Stainless Steel Heater with Auto Climate">VMH600 Whole Room Stainless Steel Heater with Auto Climate</option><option
+value="VS-410 Essential Fabric Steamer">VS-410 Essential Fabric Steamer</option><option
+value="VS-570 Commercial Fabric Steamer">VS-570 Commercial Fabric Steamer</option><option
+value="VTH Whole Room Heater">VTH Whole Room Heater</option><option
+value="Zippi Personal Fan">Zippi Personal Fan</option></select></div></li><li
+id="field_1_23" class="gfield gf_list_2col field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label">Gender:</label><div
+class="ginput_container ginput_container_radio"><ul
+class="gfield_radio" id="input_1_23"><li
+class="gchoice_1_23_0"><input
+name="input_23" type="radio" value="Male" id="choice_1_23_0" tabindex="30"><label
+for="choice_1_23_0" id="label_1_23_0">Male</label></li><li
+class="gchoice_1_23_1"><input
+name="input_23" type="radio" value="Female" id="choice_1_23_1" tabindex="31"><label
+for="choice_1_23_1" id="label_1_23_1">Female</label></li></ul></div></li><li
+id="field_1_22" class="gfield gf_list_2col field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label">Marital Status:</label><div
+class="ginput_container ginput_container_radio"><ul
+class="gfield_radio" id="input_1_22"><li
+class="gchoice_1_22_0"><input
+name="input_22" type="radio" value="Married" id="choice_1_22_0" tabindex="32"><label
+for="choice_1_22_0" id="label_1_22_0">Married</label></li><li
+class="gchoice_1_22_1"><input
+name="input_22" type="radio" value="Single" id="choice_1_22_1" tabindex="33"><label
+for="choice_1_22_1" id="label_1_22_1">Single</label></li></ul></div></li><li
+id="field_1_28" class="gfield field_sublabel_below field_description_below gfield_visibility_visible"><label
+class="gfield_label" for="input_1_28">Year of your birth:</label><div
+class="ginput_container ginput_container_text"><input
+name="input_28" id="input_1_28" type="text" value="" class="medium" tabindex="34" aria-invalid="false"></div></li><li
+id="field_1_29" class="gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_"><label
+class="gfield_label" for="input_1_29">Comments</label><div
+class="ginput_container"><input
+name="input_29" id="input_1_29" type="text" value="" autocomplete="off"></div><div
+class="gfield_description">This field is for validation purposes and should be left unchanged.</div></li></ul></div><div
+class="gform_footer top_label"> <input
+type="submit" id="gform_submit_button_1" class="gform_button button" value="Submit" tabindex="35" onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  jQuery("#gform_1").trigger("submit",[true]); }'><input
+type="hidden" class="gform_hidden" name="is_submit_1" value="1"><input
+type="hidden" class="gform_hidden" name="gform_submit" value="1"><input
+type="hidden" class="gform_hidden" name="gform_unique_id" value=""><input
+type="hidden" class="gform_hidden" name="state_1" value="WyJbXSIsImZlNjVhZjU1ODZjMWYxZTQ2ZTAwYWU2ZTAyMGQwYzc3Il0="><input
+type="hidden" class="gform_hidden" name="gform_target_page_number_1" id="gform_target_page_number_1" value="0"><input
+type="hidden" class="gform_hidden" name="gform_source_page_number_1" id="gform_source_page_number_1" value="1"><input
+type="hidden" name="gform_field_values" value=""></div></form></div><script type='text/javascript'>if(typeof gf_global == 'undefined') var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/www.vornado.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.vornado.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_28').mask('9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}gformInitCurrencyFormatFields('#input_1_13');if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }if(!/(android)/i.test(navigator.userAgent)){jQuery('#input_1_3').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );}} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'>jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } );</script></div></div></div></div></div></div></div></div></div></div><div
+class="clearfix"></div>
+<footer
+class="entry-meta">
+</footer></div></div>
+<footer
+id="site-footer" role="contentinfo"><div
+class="trigger-footer-widget-area">
+<span
+class="trigger-footer-widget-icon"></span></div><div
+class="site-footer-widget-area"><div
+class="row"><div
+class="large-3 columns"><aside
+id="text-2" class="widget widget_text"><h3 class="widget-title">CONNECT</h3><div
+class="textwidget"><p>Mon-Fri 7:00a-6:00p CST</p><h4 style="color:#ffffff;">800.234.0604</h4><p><a
+href="mailto:help@vornado.com">help@vornado.com</a></p><hr><ul
+class="footer_socials_wrapper"><li><a
+href="https://www.facebook.com/vornadofan" target="_blank" class="social_media"><i
+class="fa fa-facebook"></i></a></li><li><a
+href="http://www.pinterest.com/vornadofan" target="_blank" class="social_media"><i
+class="fa fa-pinterest"></i></a></li><li><a
+href="http://twitter.com/vornado" target="_blank" class="social_media"><i
+class="fa fa-twitter"></i></a></li><li><a
+href="https://www.youtube.com/vornadoair" target="_blank" class="social_media"><i
+class="fa fa-youtube"></i></a></li></ul></div>
+</aside></div><div
+class="large-3 columns"><aside
+id="widget_cm_ajax-3" class="widget widget_cm_ajax"><h3 class="widget-title">EMAIL SIGN UP</h3>Get the latest Vornado news and promotions.<form
+method="POST" class="cm_ajax_widget_form" id="cm_ajax_form_3">
+<input
+type="hidden" name="cm_ajax_action" value="subscribe">
+<input
+type="hidden" name="cm_ajax_widget_id" value="3"><p><label
+for="cm-ajax-email">Email:</label>
+<input
+class="widefat" id="cm-ajax-email" name="cm-ajax-email" type="text" /></p><p
+style="width: 100%; text-align: center;">
+<span
+style="display: none;" class="cm_ajax_success">Great news, we've signed you up.</span>
+<span
+style="display: none;" class="cm_ajax_failed">Sorry, we weren't able to sign you up. Please check your details, and try again.<br/><br/></span>
+<span
+style="display:none;" class="cm_ajax_loading"><img
+alt="Loading..." src="https://www.vornado.com/wp-content/plugins/ajax-campaign-monitor-forms/ajax-loading.gif"></span>
+<input
+type="submit" name="cm-ajax-submit" value="Register"></p></form> <script type="text/javascript">jQuery(document).ready(function() {
+				jQuery('form#cm_ajax_form_3 input:submit').click(function() {
+
+					jQuery('form#cm_ajax_form_3 input:submit').hide();
+					jQuery('form#cm_ajax_form_3 .cm_ajax_success').hide();
+					jQuery('form#cm_ajax_form_3 .cm_ajax_failed').hide();
+					jQuery('form#cm_ajax_form_3 .cm_ajax_loading').show();
+					jQuery.ajax(
+						{ type: 'POST',
+						  data: jQuery('form#cm_ajax_form_3').serialize()+'&cm_ajax_response=ajax',
+						  success: function(data) {
+										jQuery('form#cm_ajax_form_3 .cm_ajax_loading').hide();
+										if (data == 'SUCCESS') {
+											jQuery('form#cm_ajax_form_3 .cm_ajax_success').show();
+										} else {
+											jQuery('form#cm_ajax_form_3 input:submit').show();
+											jQuery('form#cm_ajax_form_3 .cm_ajax_failed').show();
+										}
+									}
+						}
+					);
+					return false;
+					});
+				});</script> </aside></div><div
+class="large-3 columns"><aside
+id="text-3" class="widget widget_text"><h3 class="widget-title">VORNADO WORLDWIDE</h3><div
+class="textwidget"><p><a
+href="https://www.vornado.com?showpage=yes"></p><p>Find us around the world >></p><p>
+<img
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.vornado.com/wp-content/uploads/2016/11/Vornado_Map_Small.png" /><noscript><img
+src="https://www.vornado.com/wp-content/uploads/2016/11/Vornado_Map_Small.png" /></noscript><br
+/>
+</a></p></div>
+</aside></div><div
+class="large-3 columns"><aside
+id="text-4" class="widget widget_text"><h3 class="widget-title">MORE VORNADO</h3><div
+class="textwidget"><div
+class="footercol4"><a
+href = "https://www.vornado.com/career-opportunities">Career Opportunities</a><br
+/>
+<a
+target="_self" href = "http://www.vornado.com/recalls">Recalls</a><br
+/></div></div>
+</aside></div></div></div><div
+class="site-footer-copyright-area"><div
+class="row"><div
+class="large-12 columns">
+<nav
+class="footer-navigation-wrapper" role="navigation"><ul
+class="menu-footer-navigation"><li
+id="menu-item-2719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2719"><a
+href="https://www.vornado.com/terms-of-use">Terms of Use</a></li><li
+id="menu-item-2718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2718"><a
+href="https://www.vornado.com/privacy-policy">Privacy Policy</a></li><li
+id="menu-item-2720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2720"><a
+href="https://www.vornado.com/faqs">FAQs</a></li><li
+id="menu-item-2721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2721"><a
+href="https://vornado-mx.vornado.com/owa">Internal Exchange</a></li></ul>
+</nav><div
+class="copyright_text">
+All content © Vornado Air, LLC.  All rights reserved.</div></div></div></div>
+</footer></div></div></div>
+<nav
+class="st-menu slide-from-right"><div
+class="nano"><div
+class="content"><div
+class="offcanvas_content_right"><div
+id="mobiles-menu-offcanvas"><div
+class="mobile-search hide-for-large-up"><div
+class="widget woocommerce widget_product_search"><form
+role="search" method="get" class="woocommerce-product-search" action="https://www.vornado.com/">
+<label
+class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+<input
+type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+<input
+type="submit" value="Search" /></form></div><div
+class="mobile_search_submit">
+<i
+class="fspk-icon-search"></i></div></div>
+<nav
+class="mobile-navigation primary-navigation hide-for-large-up" role="navigation"><ul
+id="menu-main-navigation-1"><li
+id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-357"><a
+href="https://www.vornado.com/shop">Shop</a><ul
+class="sub-menu"><li
+id="menu-item-1096" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1096"><a
+href="https://www.vornado.com/product-category/circulators-fans">Circulators &#038; Fans</a></li><li
+id="menu-item-1098" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1098"><a
+href="https://www.vornado.com/product-category/heaters">Heaters</a></li><li
+id="menu-item-1099" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1099"><a
+href="https://www.vornado.com/product-category/air-purifiers">Air Purifiers</a></li><li
+id="menu-item-1323" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1323"><a
+href="https://www.vornado.com/product-category/humidifiers">Humidifiers</a></li><li
+id="menu-item-1324" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1324"><a
+href="https://www.vornado.com/product-category/fabric-steamers">Fabric Steamers</a></li><li
+id="menu-item-1097" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1097"><a
+href="https://www.vornado.com/product-category/accessories">Accessories</a></li><li
+id="menu-item-17833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17833"><a
+href="https://www.vornado.com/product-category/energy-smart-line">Energy Smart</a></li><li
+id="menu-item-15835" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15835"><a
+href="/product-category/alchemy">Alchemy</a></li><li
+id="menu-item-2865" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2865"><a
+target="_blank" href="http://vornadobaby.com/">Vornadobaby</a></li></ul></li><li
+id="menu-item-2424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2424"><a>Learn</a><ul
+class="sub-menu"><li
+id="menu-item-2445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2445"><a
+href="https://www.vornado.com/difference">The Vornado Difference</a></li><li
+id="menu-item-2425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2425"><a
+href="https://www.vornado.com/history">History</a></li><li
+id="menu-item-2844" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2844"><a
+href="https://www.vornado.com/energy-smart">Energy Smart</a></li><li
+id="menu-item-11376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11376"><a
+href="https://www.vornado.com/savings">Savings</a></li></ul></li><li
+id="menu-item-3008" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-3008"><a>Help</a><ul
+class="sub-menu"><li
+id="menu-item-2444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2444"><a
+href="https://www.vornado.com/contact-us">Contact Us</a></li><li
+id="menu-item-2846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2846"><a
+href="https://www.vornado.com/satisfaction-guarantee">Satisfaction Guarantee</a></li><li
+id="menu-item-2845" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2845"><a
+href="https://www.vornado.com/returns">Returns</a></li><li
+id="menu-item-2631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2631"><a>Manuals</a><ul
+class="sub-menu"><li
+id="menu-item-1028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1028"><a
+href="https://www.vornado.com/circulators-manuals">Circulator Manuals</a></li><li
+id="menu-item-1030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1030"><a
+href="https://www.vornado.com/heaters-manuals">Heater Manuals</a></li><li
+id="menu-item-1029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1029"><a
+href="https://www.vornado.com/humidifiers-manuals">Humidifier Manuals</a></li><li
+id="menu-item-1031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a
+href="https://www.vornado.com/air-purifier-manuals">Air Purifier Manuals</a></li><li
+id="menu-item-1027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1027"><a
+href="https://www.vornado.com/fabric-steamer-manuals">Fabric Steamer Manuals</a></li></ul></li><li
+id="menu-item-1046" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1044 current_page_item menu-item-1046"><a
+href="https://www.vornado.com/product-registration">Product Registration</a></li><li
+id="menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a
+href="https://www.vornado.com/faqs">FAQs</a></li><li
+id="menu-item-1801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1801"><a
+href="https://www.vornado.com/find-in-store">Find In Store</a></li></ul></li></ul>	                                </nav><nav
+class="mobile-navigation hide-for-large-up" role="navigation"><ul><li>
+<a
+href = "https://www.vornado.com/my-account">My Account</a></li></ul></nav><div
+class="language-and-currency-offcanvas hide-for-large-up"></div></div></div></div></div>
+</nav></div><div
+class="shopkeeper-mini-cart"><div
+class="widget woocommerce widget_shopping_cart"><div
+class="widget_shopping_cart_content"></div></div></div><div
+class="site-search"><div
+class="site-search-inner"><div
+class="widget woocommerce widget_product_search"><form
+role="search" method="get" class="woocommerce-product-search" action="https://www.vornado.com/">
+<label
+class="screen-reader-text" for="woocommerce-product-search-field-1">Search for:</label>
+<input
+type="search" id="woocommerce-product-search-field-1" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+<input
+type="submit" value="Search" /></form></div></div></div><div
+class="cd-quick-view woocommerce"></div>
+ <script type='text/javascript'>/*  */
+var be_compare_params = {"text_product_add_error":"Only products from the same category can be compared","compare_button_url":"https:\/\/www.vornado.com\/product-comparison","text_add_compare":"Compare Product","text_show_differences":"Show Differences","text_show_all":"Show All","text_close":"Close"}
+/*  */</script> <script type='text/javascript' async="async" src='https://www.vornado.com/wp-content/plugins/speed-up-lazy-load/js/lazy-load.min.js'></script> <script type='text/javascript' src='//www.vornado.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script> <script type='text/javascript' src='//www.vornado.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js'></script> <script type='text/javascript'>/*  */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/product-registration?wc-ajax=%%endpoint%%"};
+/*  */</script> <script type='text/javascript' src='//www.vornado.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script> <script type='text/javascript'>/*  */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/product-registration?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_8bef74d2e3367e35e1496a77414e2060"};
+/*  */</script> <script type='text/javascript' src='//www.vornado.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/woocommerce-product-compare/assets/js/frontend.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-includes/js/underscore.min.js'></script> <script type='text/javascript'>/*  */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/*  */</script> <script type='text/javascript' src='https://www.vornado.com/wp-includes/js/wp-util.min.js'></script> <script type='text/javascript'>/*  */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/product-registration?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/*  */</script> <script type='text/javascript' src='//www.vornado.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script> <script type='text/javascript'>/*  */
+var getbowtied_scripts_vars = {"ajax_load_more_locale":"Load More Items","ajax_loading_locale":"Loading","ajax_no_more_items_locale":"No more items available.","pagination_blog":"infinite_scroll","layout_blog":"layout-3","shop_pagination_type":"infinite_scroll","option_minicart":"1","catalog_mode":"0","product_lightbox":"1"};
+/*  */</script> <script type='text/javascript' src='https://www.vornado.com/wp-content/themes/shopkeeper/js/scripts-dist.js'></script> <script type='text/javascript'>/*  */
+var _mpc_ajax = "https:\/\/www.vornado.com\/wp-admin\/admin-ajax.php";
+var _mpc_animations = "0";
+var _mpc_scroll_to_id = "1";
+/*  */</script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/mpc-massive/assets/js/mpc-vendor.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-content/plugins/mpc-massive/assets/js/mpc-scripts.min.js'></script> <script type='text/javascript' src='https://www.vornado.com/wp-includes/js/wp-embed.min.js'></script> <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e5077ed8f7","applicationID":"91483450","transactionName":"NgNWMBFRX0ECUUBaWg9JdQcXWV5cTEJVVFA=","queueTime":0,"applicationTime":1179,"atts":"GkRVRllLTE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>

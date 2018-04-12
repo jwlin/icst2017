@@ -1,0 +1,3366 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- BEGIN PetcoPetcoNewrelicSetup.jsp-->
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQMPVVZRDxAHV1dWAAQHXw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(20),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{h?h-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(21),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(h+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,S=y.hash,this[u]=b.now()}function o(){M--,y.hash!==S&&i(0,!0);var t=b.now();this[l]=~~this[l]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=b.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,h="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,b=t("loader");if(w[v]&&b.xhrWrappable){var g=t(10),x=t(11),E=t(8),P=t(6),O=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),N=j.get("tracer");t(15),b.features.spa=!0;var S,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(h,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),P.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),T.buffer([u,"new-xhr","send-xhr"+c]),R.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),g.buffer([u]),x.buffer(["propagate",p,h,"executor-err","resolve"+c]),N.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+c),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+c),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="-start",l="-end",m="fn"+h,v="fn"+l,w="bstTimer",y="pushState",b=t("loader");b.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=b.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,b.now()])}),a.on(m,function(t,e,n){this.bstStart=b.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),this.bstType])}),c.on(m,function(){this.bstStart=b.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),"requestAnimationFrame"])}),o.on(y+h,function(t){this.time=b.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(23)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(20);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,h="prototype";u&&d&&p&&(i(f,function(t,e){r(u[h],e,s),r(d[h],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(23)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t(23)(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,h,"dom-"),f.inPlace(HTMLHeadElement.prototype,h,"dom-"),f.inPlace(HTMLBodyElement.prototype,h,"dom-"),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(23)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(23),a=t("ee").get("promise"),c=i(a),s=t(20),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(23)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(23)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",c)}function i(t){b.push(t),l&&(x?x.then(a):v?v(a):(E=-E,P.data=E))}function a(){for(var t=0;t<b.length;t++)r([],b[t]);b.length&&(b=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(23)(u),p=NREUM.o,h=p.XHR,l=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],b=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(h,g),g.prototype=h.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var x=m&&m.resolve();if(!v&&!m){var E=1,P=document.createTextNode(E);new l(a).observe(P,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),h=t(19),l=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(20),c=t(21),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var l=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){l[e]=o(h+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],21:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],22:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],23:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(21),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=l(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([b,n,r,a]),a}}function h(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},b={on:h,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(20),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!x++){var t=g.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+g.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+g.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-g.offset}var c=(new Date).getTime(),s=t("handle"),f=t(20),u=t("ee"),d=window,p=d.document,h="addEventListener",l="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1071.min.js"},b=m&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:b};t(17),p[h]?(p[h]("DOMContentLoaded",i,!1),d[h]("load",r,!1)):(p[l]("onreadystatechange",o),d[l]("onload",r)),s("mark",["firstbyte",c],null,"api");var x=0,E=t(22)},{}]},{},["loader",2,15,5,3,4]);</script>
+<script type="text/javascript">
+	try{
+	    if (typeof newrelic == 'object') {		    
+	    	newrelic.setCustomAttribute('pageGroup', 'checkout');
+			newrelic.setPageViewName('/SingleShipmentOrderSummaryView', window.location.hostname);
+			var cookieValue = getCookie("petco_fac_analytics").split('-');
+            if(typeof cookieValue != 'undefined' && cookieValue){
+            	newrelic.setCustomAttribute('pageFACC', cookieValue[0]);
+                newrelic.setCustomAttribute('pageFACA', cookieValue[1]);
+            }
+		}
+	}
+	catch (err) {
+		console.log(err);
+	}
+	function getCookie(cname) {
+		try{
+		    var name = cname+"=";
+		    var ca = document.cookie.split(';');
+		    for(var i = 0; i < ca.length; i++) {
+		        var c = ca[i];
+		        while (c.charAt(0) == ' ') {
+		            c = c.substring(1);
+		        }
+		        if (c.indexOf(name) == 0) {
+		             return c.substring(name.length, c.length);           
+		        }
+		    }
+		    return "";
+	    }
+	    catch (err) {
+	          console.log(err);
+	    }
+	}
+</script>	
+<!-- END PetcoPetcoNewrelicSetup.jsp -->
+		<title>
+			Review Order
+		</title>
+		<!-- BEGIN CommonJSToInclude.jspf -->
+
+<meta name="CommerceSearch" content="storeId_10151" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Commenting out the OOB icon -->
+<link rel="shortcut icon" href="/wcsstore/PetcoStore/img/brand_favicon.png">
+
+
+
+<link rel="stylesheet" href="/wcsstore/PetcoStore/css/styles-v878983b5584b2524b2fd8301797f850c.css" type="text/css"/>
+ 
+
+<link rel="apple-touch-icon-precomposed" href="/wcsstore/PetcoSAS/images/touch-icon-60px.png" sizes="60x60"/>
+<link rel="apple-touch-icon-precomposed" href="/wcsstore/PetcoSAS/images/touch-icon-72px.png" sizes="72x72"/>
+<link rel="apple-touch-icon-precomposed" href="/wcsstore/PetcoSAS/images/touch-icon-76px.png" sizes="76x76"/>
+<link rel="apple-touch-icon-precomposed" href="/wcsstore/PetcoSAS/images/touch-icon-114px.png" sizes="114x114"/>
+<link rel="apple-touch-icon-precomposed" href="/wcsstore/PetcoSAS/images/touch-icon-120px.png" sizes="120x120"/>
+<link rel="apple-touch-icon-precomposed" href="/wcsstore/PetcoSAS/images/touch-icon-144px.png" sizes="144x144"/>
+<link rel="apple-touch-icon-precomposed" href="/wcsstore/PetcoSAS/images/touch-icon-152px.png" sizes="152x152"/>
+
+
+
+<script type="text/javascript" charset="UTF-8" src="/wcsstore/dojo18/dojo/dojo.js" djConfig="parseOnLoad: true, isDebug: false,  modulePaths: {storetext: '/wcsstore/PetcoSAS/'}, useCommentedJson: true,locale: 'en-us' "></script>
+<script type="text/javascript" charset="UTF-8" src="/wcsstore/dojo18/dojo/dojodesktop-rwd.js" djConfig="parseOnLoad: true, isDebug: false,  modulePaths: {storetext: '/wcsstore/PetcoSAS/'}, useCommentedJson: true,locale: 'en-us' "></script>
+
+<script type="text/javascript">
+	// Convert the WCParam object which contains request properties into javascript object
+	var WCParamJS = {
+		"storeId":'10151',
+		"catalogId":'10051',
+		"langId":'-1',
+		"pageView":'',
+		"orderBy":'',
+		"orderByContent":'',
+		"searchTerm":'',
+		"currencyCode":'USD'
+	};
+	var absoluteURL = "https://www.petco.com/shop/";
+	var imageDirectoryPath = "/wcsstore/PetcoStore/";
+	var styleDirectoryPath = "images/colors/color1/";
+	var supportPaymentTypePromotions = false;
+	
+	var subsFulfillmentFrequencyAttrName = "fulfillmentFrequency";
+	var subsPaymentFrequencyAttrName = "paymentFrequency";
+	var subsTimePeriodAttrName = "timePeriod";
+	
+	var storeNLS = null;
+	var storeUserType = "G";
+	var ios = false;
+	var android = false;
+	var multiSessionEnabled = true;
+	
+	// Store the amount of time of inactivity before a re-login is required, this value is retrieved from wc-server.xml, default is 30 mins
+	var inactivityTimeout = 1800000;
+	
+	// Store the amount of time the inactivity warning dialog will be displayed before it closes itself, default is 20 seconds
+	var inactivityWarningDialogDisplayTimer = 20000;
+	
+	// Store the amount of time to display a inactivity warning dialog before a re-login is required, default is 30 seconds
+	var inactivityWarningDialogBuffer = 30000;
+	
+	// Store the timing event to display the inactivity dialog
+	var inactivityTimeoutTracker = null;
+
+	// Store the timing event to close the inactivity dialog
+	var dialogTimeoutTracker = null;
+	
+	//Summary: Returns the absolute URL to use for prefixing any Ajax URL call.
+	//Description: Dojo does not handle the case where the parameters in the URL are delimeted by the "/" forward slash. Therefore, in order to
+	//             workaround the issue, all AJAX requests must be done using absolute URLs rather than relative.
+	//Returns: The absolute URL to use for prefixing any Ajax URL call.
+	function getAbsoluteURL() {
+		if (absoluteURL != "") {
+			var currentURL = document.URL;
+			var currentProtocol = "";
+		
+			if (currentURL.indexOf("://") != -1) {
+				currentProtocol = currentURL.substring(0, currentURL.indexOf("://"));
+			}
+			
+			var savedProtocol = "";
+			if (absoluteURL.indexOf("://") != -1) {
+				savedProtocol = absoluteURL.substring(0, absoluteURL.indexOf("://"));
+			}
+			
+			if (currentProtocol != savedProtocol) {
+				absoluteURL = currentProtocol + absoluteURL.substring(absoluteURL.indexOf("://"));
+			}
+		}
+		
+		return absoluteURL;
+	}
+	//Summary: Returns the path pointing to the shared image directory.
+	//Description: In order to get the image directory path in any javascript file, this function can be used.
+	//Returns: The path to reference images.
+	function getImageDirectoryPath() {
+		return imageDirectoryPath;
+	}
+	//Summary: Returns the path pointing to the directory containing color-dependant image files.
+	//Description: In order to get the directory containing color-dependant image files in any javascript file, this function can be used.
+	//Returns: The path to reference color-dependant image files.
+	function getStyleDirectoryPath() {
+		return styleDirectoryPath;
+	}
+</script>
+
+
+
+<script type="text/javascript">
+		function getForUserIdParam(doAmpersand, doEscape) {
+			forUserIdParam = "";
+			if(typeof wcCommonRequestParameters != 'undefined' &&
+				wcCommonRequestParameters.forUserId != null
+			) {
+				if(doAmpersand && doEscape) {
+					forUserIdParam="%26"; 
+				} else if(doAmpersand) {
+					forUserIdParam="&";
+				}
+				
+				forUserIdParam = forUserIdParam + "forUserId";
+				
+				if(doEscape) {
+					forUserIdParam = forUserIdParam + "%3D";
+				} else {
+					forUserIdParam = forUserIdParam + "=";
+				}
+				forUserIdParam = forUserIdParam + wcCommonRequestParameters.forUserId;
+			}
+			return forUserIdParam;
+		}	
+</script>
+
+
+<script>
+	dojo.require("wc.service.common");
+	dojo.require("dojo.number");
+	dojo.require("dojo.has");
+	dojo.require("dojox.xml.DomParser");
+	dojo.require("wc.render.common");
+	dojo.require("dojox.collections.ArrayList");
+	dojo.require("wc.widget.Tooltip");
+	dojo.require("wc.widget.ScrollablePane");
+</script>
+
+<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/petco/petco.combined-v05142a417b479b0c5c264ed8ac30c5af.js"></script>
+
+
+
+<script type="text/javascript">
+ //Set the default NLS to use in the store.
+ if(storeNLS == null) {
+	 dojo.requireLocalization("storetext", "StoreText");
+	 storeNLS = dojo.i18n.getLocalization("storetext","StoreText");
+ }
+ WCParamJS.useInactivityWarning = true;
+ var ie6 = false;
+ var ie7 = false;
+ if (navigator != null && navigator.userAgent != null) {
+	 ie6 = (navigator.userAgent.toLowerCase().indexOf("msie 6.0") > -1);
+	 ie7 = (navigator.userAgent.toLowerCase().indexOf("msie 7.0") > -1); 
+ }
+ if (location.href.indexOf('UnsupportedBrowserErrorView') == -1 && (ie6 || ie7)) {
+	 document.write('<meta http-equiv="Refresh" content="0;URL=https://www.petco.com/shop/UnsupportedBrowserErrorView?catalogId=10001&amp;langId=-1&amp;storeId=10151"/>');
+ }
+ 
+</script>
+
+
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		shoppingActionsJS.setCommonParameters('-1','10151','10051','G','$');
+		
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+		if (isChrome || isSafari) {
+			var hiddenFields = dojo.query('input[type=\"hidden\"]');
+			for (var i = 0; i < hiddenFields.length; i++) {
+				hiddenFields[i].autocomplete="off"
+			}
+		}
+		if (dojo.has("ios") || dojo.has("android")){
+			dojo.attr(dojo.body(),"data-wc-device","mobile");
+		}
+		
+	});
+</script>
+
+<!-- END CommonJSToInclude.jspf -->
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/UserArea/AddressHelper.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/UserArea/PetcoCheckoutPaymentProfile.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/UserArea/PetcoMyAccountServicesDeclaration.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/CheckoutArea/CheckoutPayments.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/CheckoutArea/CheckoutHelper.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/ServicesEventMapping.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/ServicesDeclaration.js"></script>		
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/Tealeaf/tealeafWC.js"></script>
+		
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/CheckoutArea/ShippingAndBillingServicesDeclaration.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/CheckoutArea/ShippingAndBillingControllersDeclaration.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/AddressValidation.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/CheckoutArea/ShipmodeSelectionExt.js"></script>
+		<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/UserArea/LogonForm.js"></script>
+		
+		
+		<input type="hidden" name="ioBlackBox" id="ioBlackBox" value=""/>
+		
+		
+		<input type="hidden" name="omnitureEnabled" id="omnitureEnabled" value="true"/>
+		
+		<input type="hidden" name="redTrueIP" id="redTrueIP" value="70.181.114.122"/>
+			<!-- Hidden input added for turning on/off ISAM implementation STARTS -->
+<input type="hidden" value="true" id ="dbAuthEnabledFlag" name="dbAuthEnabledFlag"/>
+		<script type="text/javascript">
+		
+			// basic configuration for ReD Device Id
+			var io_bbout_element_id = 'ioBlackBox'; // populate ioBlackBox in form
+			var io_enable_rip = true; // enable collection of Real IP
+			var io_install_flash = false; // do not require install of Flash
+			var io_install_stm = false; // do not require install of Active X
+			var io_exclude_stm = 12; // do not run Active X under IE 8 platforms
+		</script>
+		
+		
+		<script type="text/javascript" src="https://mpsnare.iesnare.com/snare.js"></script>
+			
+		
+				<input type="hidden" name="isBOPUSOnlyOrder" id="isBOPUSOnlyOrder" value="false" />
+				<!-- BEGIN CommonUtilities.jspf -->
+<script type="text/javascript">
+    dojo.addOnLoad(function() {
+    
+	MessageHelper.setMessage("ERR_RESOLVING_SKU", "Your selection is either incomplete or not in stock. Please be sure to supply a value for each attribute or consider a different combination of values.");
+	MessageHelper.setMessage("QUANTITY_INPUT_ERROR", "The value in the Quantity field is invalid. Ensure the value is a positive integer and try again.");
+	MessageHelper.setMessage("WISHLIST_ADDED", "The item has been successfully added to your Wish List.");
+	MessageHelper.setMessage("ERROR_RecipientTooLong", "The value entered in the recipient field is too long.");
+	MessageHelper.setMessage("ERROR_FirstNameTooLong", "The value entered in the first name field is too long.");
+	MessageHelper.setMessage("ERROR_LastNameTooLong", "The value entered in the first name field is too long.");
+	MessageHelper.setMessage("ERROR_MiddleNameTooLong", "The value entered in the middle name field is too long.");
+	MessageHelper.setMessage("ERROR_AddressTooLong", "The value entered in the street address field is too long.");
+	MessageHelper.setMessage("ERROR_CityTooLong", "The value entered in the city field is too long.");
+	MessageHelper.setMessage("ERROR_StateTooLong", "The value entered in the state/province field is too long.");
+	MessageHelper.setMessage("ERROR_CountryTooLong", "The value entered in the country/region field is too long.");
+	MessageHelper.setMessage("ERROR_ZipCodeTooLong", "The value entered in the ZIP Code/Postal Code field is too long.");
+	MessageHelper.setMessage("ERROR_EmailTooLong", "The value entered in the email field is too long.");
+	MessageHelper.setMessage("ERROR_PhoneTooLong", "The value entered in the phone number field is too long.");
+	MessageHelper.setMessage("ERROR_RecipientEmpty", "The recipient field cannot be empty.");
+	MessageHelper.setMessage("ERROR_LastNameEmpty", "The last name field cannot be empty.");
+	MessageHelper.setMessage("ERROR_MiddleNameEmpty", "The middle name field cannot be empty.");
+	MessageHelper.setMessage("ERROR_AddressEmpty", "The street address field cannot be empty.");
+	MessageHelper.setMessage("ERROR_CityEmpty", "The city field cannot be empty.");
+	MessageHelper.setMessage("ERROR_StateEmpty", "The state/province field cannot be empty.");
+	MessageHelper.setMessage("ERROR_CountryEmpty", "The country/region field cannot be empty.");
+	MessageHelper.setMessage("ERROR_ZipCodeEmpty", "The ZIP Code/Postal Code field cannot be empty.");
+	MessageHelper.setMessage("ERROR_EmailEmpty", "The Email address field cannot be empty.");
+	MessageHelper.setMessage("ERROR_FirstNameEmpty", "The first name field cannot be empty.");
+	MessageHelper.setMessage("ERROR_INVALIDEMAILFORMAT", "The email entered is not in a valid format.");       
+	MessageHelper.setMessage("ERROR_MESSAGE_TYPE", "Error:");
+	MessageHelper.setMessage("ERROR_INVALIDPHONE", "The phone number entered is not in a valid format.");
+    });
+</script>
+
+
+<!-- END CommonUtilities.jspf -->
+		<script type="text/javascript">
+		dojo.addOnLoad(function() { 
+				CheckoutHelperJS.setCommonParameters('-1','10151','10051');
+				PetcoPaymentwalletForm.setCommonParameters('-1','10151','10051');
+				CheckoutHelperJS.setAjaxCheckOut(true);
+				CheckoutHelperJS.initializeShipmentPage('1');
+				
+				CheckoutPayments.setCommonParameters('-1','10151','10051');
+				ServicesDeclarationJS.setCommonParameters('-1','10151','10051');	
+				SBServicesDeclarationJS.setCommonParameters('-1','10151','10051');
+				SBServicesDeclarationJS.orderPrepare='';
+				SBServicesDeclarationJS.setAjaxCheckOut(true);
+				CommonContextsJS.setCommonParameters('-1','10151','10051');
+				SBControllersDeclarationJS.setAjaxCheckOut(true);
+				SBControllersDeclarationJS.setSinglePageCheckout(true);
+				SBControllersDeclarationJS.setControllerURL('traditionalShipmentDetailsController','https://www.petco.com/shop/AjaxShippingDetails?catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				SBControllersDeclarationJS.setControllerURL('shippingAddressSelectBoxAreaController','https://www.petco.com/shop/ShippingAddressDisplayView?catalogId=10051&amp;langId=-1&amp;storeId=10151&amp;forceShipmentType=1');
+				SBControllersDeclarationJS.setControllerURL('paymentPalsrewardsController','https://www.petco.com/shop/PaymentPalrewardsView?catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				SBControllersDeclarationJS.setControllerURL('petcoCheckoutShippingAddressController','https://www.petco.com/shop/PetcoChooseShippingAddressView?catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				 
+				CommonControllersDeclarationJS.setControllerURL('PetcoPromotionDisplayAreaController','https://www.petco.com/shop/PetcoPromotionDisplayView?shipmentType=single&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				CommonControllersDeclarationJS.setControllerURL('PetcoOrderSummaryAreaController','https://www.petco.com/shop/PetcoOrderSummaryDisplayView?shipmentType=single&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				CommonControllersDeclarationJS.setControllerURL('PetcoCheckoutCartSummaryController','https://www.petco.com/shop/PetcoCheckoutCartSummaryDisplayView?catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				CommonControllersDeclarationJS.setControllerURL('PetcoGiftCardDisplayAreaController','https://www.petco.com/shop/PetcoGCDisplayView?shipmentType=single&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				CommonControllersDeclarationJS.setControllerURL('PetcoPaymentAreaController','https://www.petco.com/shop/PetcoPaymentAmountView?shipmentType=single&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151');
+				CommonControllersDeclarationJS.setControllerURL('PetcoOrderTotalSummaryController','https://www.petco.com/shop/PetcoSingleShipmentOrderTotalSummary?catalogId=10051&amp;fromPage=shippingMethod&amp;langId=-1&amp;storeId=10151');
+				CommonControllersDeclarationJS.setControllerURL('PetcoDonationItemsDisplayAreaController','https://www.petco.com/shop/AjaxPetcoDonationView?catalogId=10051&amp;fromPage=reviewOrder&amp;orderId=.&amp;langId=-1&amp;storeId=10151');
+				CommonControllersDeclarationJS.setControllerURL('PetcoRepeatDeliveryItemsDisplayAreaController','https://www.petco.com/shop/AjaxPetcoRepeatDeliveryItemsDisplayView?catalogId=10051&amp;fromPage=reviewOrder&amp;orderId=.&amp;langId=-1&amp;storeId=10151');
+				CheckoutHelperJS.setOrderPrepared('false');
+				CheckoutHelperJS.setOrderPayments('129.49', []);
+				petcoCommonJS.setCommonParameters('-1','10151','10051');
+				
+
+				//Address Messages
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_REQ", "This field is required.");
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_ALPHANUMERIC", "This field accepts alphabet text only. Please remove any special characters or punctuation.");
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_LAST_NAME_LENGTH_ERR", "Name can not exceed 50 characters.");
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_PHONE_SPECIAL_CHAR", "Enter numeric values only.");
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_NUMERIC", "Enter numeric values only.");
+				CheckoutPayments.setErrorMessage("SHIPPING_ADDRESS_REQ", "This field is required.");
+				CheckoutPayments.setErrorMessage("SHIPPING_ADDRESS_NUMERIC", "Enter numeric values only.");
+				
+				MessageHelper.setMessage("_ERR_NICKNAME_ALREDY_EXIST", "The nickname you entered already exists. Type another name in the Nickname field and try again.");
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_EMAIL_MALFORMED", "Please enter a valid Email Address using the format: email@domain.com ");
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_EMAIL_LENGTH", "Email can not exceed 100 characters.");
+				
+				MessageHelper.setMessage("SHIPPING_ADDRESS_VALID_ZIP_CODE", "Please enter a valid ZIP Code.");
+				
+                MessageHelper.setMessage("ERROR_EmailEmpty", "The Email address field cannot be empty.");
+                MessageHelper.setMessage("ERROR_INVALIDEMAILFORMAT", "The email entered is not in a valid format.");
+                MessageHelper.setMessage("ERROR_EmailTooLong", "The value entered in the email field is too long.");
+				MessageHelper.setMessage("ERROR_MESSAGE_TYPE", "Error:");
+				MessageHelper.setMessage("PO_NUMBER", "???PO_Number???");
+				MessageHelper.setMessage("ERROR_PONumberEmpty", "???ERROR_PONumberEmpty???");
+				MessageHelper.setMessage("ERROR_PONumberTooLong", "???ERROR_PONumberTooLong???");
+				MessageHelper.setMessage("ERROR_GUEST_USER_SUBMIT_RECURRING_ORDER", "Please register or log in to place a repeat delivery order.");
+				MessageHelper.setMessage("REGISTRATION_ERR_REQUIRED_FIELD", "This field is required.");
+				MessageHelper.setMessage("REGISTRATION_ERR_PASSWORD_INAVLID_FORMAT", "Password must contain 6-20 characters and include at least 1 number and 1 letter.");
+				MessageHelper.setMessage("REGISTRATION_ERR_PASSWORDS_NOT_MATCH", "Passwords do not match.");
+				MessageHelper.setMessage("EDPPaymentMethods_CANNOT_RECONCILE_PAYMENT_AMT", "The sum of your payment amount(s) is less than the order total. Please allocate payment amount(s) for the whole order total before proceeding.");
+				MessageHelper.setMessage("EDPPaymentMethods_PAYMENT_AMOUNT_LARGER_THAN_ORDER_AMOUNT", "The payment amount is greater than the remaining amount.");
+				MessageHelper.setMessage("EDPPaymentMethods_PAYMENT_AMOUNT_PROBLEM", "There is a problem handling your payment amount(s). Contact your site administrator.");
+				MessageHelper.setMessage("REVIEW_ORDER_INVENTORY_SYSTEM_EXCEPTION_MSG", null);
+				
+				MessageHelper.setMessage("_ERR_NCR_RESPONSE", "Credit Card Authorization Failure. Please call Customer Service at 877-738-6742 for help.");
+					
+				MessageHelper.setMessage("_ERR_NCR_DECLINED_RESPONSE", "???_ERR_NCR_DECLINED_RESPONSE???");
+				
+				MessageHelper.setMessage("_ERR_NCR_RESTRICTED_CARD_RESPONSE", "???_ERR_NCR_RESTRICTED_CARD_RESPONSE???");
+				
+				MessageHelper.setMessage("_ERR_NCR_NULL_RESPONSE", "???_ERR_NCR_NULL_RESPONSE???");	
+				
+				MessageHelper.setMessage("_ERR_NCR_GC_RESPONSE", "Gift Card Authorization Failure. Please call Customer Service at 877-738-6742 for help.");
+				
+				MessageHelper.setMessage("_ERR_PAYPAL_DECLINE_ERROR", "There is an issue with Paypal payment. Please choose another paypal account or a credit card account to complete the checkout.");
+								
+				MessageHelper.setMessage("_ERR_NCR_RESPONSE_VERFICATION_FAILED", "NCR Response verification failed, could not add the giftcard provided");
+				
+				MessageHelper.setMessage("_ERR_PAYMENT_GATEWAY_DOWN", "We were unable to process your transaction. Please call Customer Service at 877-738-6742 for help.");
+										
+		MessageHelper.setMessage("REGISTRATION_PHONE_ERR_BELOW_10_CHAR", "Phone number must contain 10 numerical digits.");
+				
+				CheckoutPayments.setErrorMessage("PAYPAL_ZEROTOTAL", "Paypal payment may not be required as the order total is already met by other tender types");
+								
+				MessageHelper.setMessage("_ERR_DUPLICATE_GC", "This gift card has already been applied to your order.");
+				requestSubmitted = false;
+				wc.render.declareContext("PetcoPromotion_Context",null,"");
+				wc.render.declareContext("PetcoOrderTotalSummary_Context",{orderId: ""},"");
+				CheckoutHelperJS.gcAmountUpdate();
+				
+
+				//PDWEB-2151 ISAM API Registration
+				
+	        	MessageHelper.setMessage("_ERR_GENERIC_REGISTRATION_FAILED", "???_ERR_GENERIC_REGISTRATION_FAILED???");
+				
+				
+			});
+		</script>
+	<!-- PDWEB-3938: Monetate script inclusion Starts-->
+	           <script type="text/javascript">var monetateT = new Date().getTime();</script><script type="text/javascript" src="//se.monetate.net/js/2/a-546f7653/p/petco.com/entry.js"></script> 
+	    <!-- PDWEB-3938: Monetate script inclusion Ends--><!-- Begin PetcoTealiumSetHeaderValues.jspf -->
+<input type="hidden" name="omnitureEnabled" id="omnitureEnabled" value="true"/>
+
+<script type="text/javascript">
+(function(){
+	try{
+		  if (window.BOOMR && window.BOOMR.version) { return; }
+		  var dom,doc,where,iframe = document.createElement("iframe"),win = window;
+		  function boomerangSaveLoadTime(e) {
+		    win.BOOMR_onload=(e && e.timeStamp) || new Date().getTime();
+		  }
+		  if (win.addEventListener) {
+		    win.addEventListener("load", boomerangSaveLoadTime, false);
+		  } else if (win.attachEvent) {
+		    win.attachEvent("onload", boomerangSaveLoadTime);
+		  }
+		  iframe.src = "javascript:void(0)";
+		  iframe.title = ""; iframe.role = "presentation";
+		  (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+		  where = document.getElementsByTagName("script")[0];
+		  where.parentNode.insertBefore(iframe, where);
+		  try {
+		    doc = iframe.contentWindow.document;
+		  } catch(e) {
+		    dom = document.domain;
+		    iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+		    doc = iframe.contentWindow.document;
+		  }
+		  doc.open()._l = function() {
+		    var js = this.createElement("script");
+		    if (dom) { this.domain = dom; }
+		    js.id = "boomr-if-as";
+		    js.src = "https://c.go-mpulse.net/boomerang/73A3N-C7LBA-UVBZ2-HSQR2-6ZBDJ";    
+		    BOOMR_lstart=new Date().getTime();
+		    this.body.appendChild(js);
+		  };
+		  doc.write('<body onload="document._l();">');
+		  doc.close();
+		
+	}catch(err){
+			console.log(err);
+	}	
+}
+)();
+//Adding the required variables for Soasta
+try{
+function addVars() {
+  BOOMR.addVar({
+    "page_type": "checkout", // Contains a user-friendly page type, e.g. 'cart page'.
+    "page_name": "/SingleShipmentOrderSummaryView" // Contains a user-friendly name for the page.
+  });
+}
+if (document.addEventListener) {
+  document.addEventListener("onBoomerangLoaded", addVars);
+}
+else if (document.attachEvent) {
+  document.attachEvent("onpropertychange", function(e) {
+    if (!e) e = window.event;
+    if (e && e.propertyName === "onBoomerangLoaded") {
+      addVars();
+    }
+  });
+}
+}catch(err){
+console.log(err.message);
+}
+</script>
+<!-- End PetcoTealiumSetHeaderValues.jspf -->
+
+
+	</head>
+	<body>
+	<h1 class="sr-only">Review Order</h1>
+		<!-- BEGIN CommonJSPFToInclude.jspf -->
+
+
+
+<div id="petco-loader" style="display:none;">
+	<div id="petco-loader-image" style="">
+		<img src="/wcsstore/PetcoSAS/images/loading.gif" border="0" alt="Your request is being processed."/>
+	</div>
+</div>
+<div id="loader-screen"></div>
+
+	<div id="widget_product_comparison_popup" dojoType="dijit.Dialog" closeOnTimeOut="false" title="Product Comparison" style="display:none">
+		<div class="widget_product_comparison_popup widget_site_popup">													
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>Product Comparison</span>
+								<a id="ComparePopupClose" class="close" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="CLOSE"></a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="body">
+								The maximum number of products that can be compared is 4. Please refine your selection.
+							</div>
+							
+							<div class="footer">
+								<div class="button_container ">
+									<a id="ComparePopupOK" class="button_primary" tabindex="0" href="javascript:void(0);" onclick="dijit.byId('widget_product_comparison_popup').hide();" title="OK">
+										<div class="left_border"></div>
+										<div class="button_text">OK</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+<!-- END CommonJSPFToInclude.jspf --><!-- PJRESP-1805 begins -->
+		<script>
+			window.onbeforeunload = function() { 
+				window.history.replaceState(null, null, "en/petcostore");
+ 			};
+		</script>
+	    <!-- Start: Tealium Tagging Audit Change --><!-- End: Tealium Tagging Audit Change --><!-- Start: Site promo & RE Tagging Change --><!-- End: Site promo & RE Tagging Change --><!-- Start: Search Tagging Change --><!-- End: Search Tagging Change -->
+	<input type="hidden" id="bestPromoCodeApplied" name="bestPromoCodeApplied" value="">
+	<input type="hidden" id="redundantPromoCode" name="redundantPromoCode" value="">
+	
+
+<header class="minimal-header" id="checkoutHeaderIdForJS">
+	<div>
+		<div class="logo">
+			<a onclick="logo_click()"><img src="/wcsstore/PetcoStore/img/brand-logo.png" alt="Petco - Where the healthy pets go." /></a>
+		</div>
+		<p>
+			<i class="icon-phone"></i> <span manual_cm_sp="Checkout-_-CallPhoneNumber-_-Button" onclick="cmManuallyTriggerEventTrack(this);">(877) 738-6742</span>
+			<i class="icon-secure"></i> <span manual_cm_sp="Checkout-_-SecureCheckout-_-Button" onclick="cmManuallyTriggerEventTrack(this);">Secure Checkout</span>
+		</p>
+	</div>
+</header>
+
+<div class="cart-stay----stay" style="display:none;">
+  <div>
+    Are you sure you'd<br/>like to leave?
+
+    <div class="margin-top-sm">
+      <button class="btn-smaller btn-gray" manual_cm_sp="Checkout-_-LeaveCartDropdown-_-Yes_Button" onclick="javascript:cmManuallyTriggerEventTrack(this);document.location.href='https://www.petco.com/shop/OrderCalculate?calculationUsageId=-1&calculationUsageId=-7&updatePrices=1&catalogId=10051&errorViewName=AjaxCheckoutDisplayView&orderId=.&langId=-1&storeId=10151&URL=AjaxCheckoutDisplayView'">Yes, return to cart</button>
+      <button type="button" class="btn-smaller btn-primary" manual_cm_sp="Checkout-_-LeaveCartDropdown-_-No_Button" onclick="cmManuallyTriggerEventTrack(this);$('.cart-stay----stay').hide()">No, stay in checkout</button>
+    </div>
+  </div>
+</div>			
+		<div class="bg-lightestgray" id="single-page-checkout-container">
+			<div class="container">
+				
+				<div class="row">
+				
+				<div class="col-8 padding-top-lg">		
+				<input type="hidden" name="fromPage" id="fromPage" value="reviewOrder" />
+				<!-- Tealium tags -->
+				<input type="hidden" name="tel_page_name" id="tel_page_name" value="Review Order" />				
+				<input type="hidden" name="tel_page_type" id="tel_page_type" value="checkout" />
+				<!--Paypal Error messages START-->
+				<div class="error-box" id="payment-error" style="display:none;">		
+				</div>
+				
+				
+							<!--Paypal Error messages END--><!--Changes from displaying Shipping Restriction error message on Payment Section when Punched out using PayPal Starts -->
+								<script type="text/javascript">
+									dojo.addOnLoad(function() {
+										CommonControllersDeclarationJS.setControllerURL('PetcoCheckoutShippingRestrictions_Controller','https://www.petco.com/shop/PetcoCheckoutShippingRestrictionsDisplayView?catalogId=10051&amp;langId=-1&amp;storeId=10151');
+									});
+								</script>
+								<div class="no-show" id="shippingAddressErrorDiv">
+									<div class="error-box">
+									<div dojoType="wc.widget.RefreshArea" widgetId="PetcoCheckoutShippingRestrictionsDisplayArea" controllerId="PetcoCheckoutShippingRestrictions_Controller" id="PetcoCheckoutShippingRestrictionsDisplayArea">
+										
+<div class="row">
+	<div class="col-12">
+		<h2 class="margin-bottom-md">We can't ship this item to the address you've provided.</h2>
+		
+				<script>
+					if('' == 'true'){
+						$("#shippingAddressErrorDiv").removeClass('no-show');
+					}
+					else{
+						$("#shippingAddressErrorDiv").addClass('no-show');
+					}
+				</script>
+			
+		<div class="margin-top-sm">Please remove item from  &nbsp;<a href="javascript:void(0)" onclick="Javascript:setPageLocation('https://www.petco.com/shop/OrderCalculate?calculationUsageId=-1&amp;calculationUsageId=-7&amp;updatePrices=1&amp;catalogId=10051&amp;errorViewName=AjaxCheckoutDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=10151&amp;URL=AjaxCheckoutDisplayView');return false;">shopping cart</a>&nbsp;or update your&nbsp;shipping address</div>
+	</div>
+</div>
+
+
+
+									</div>
+									</div>
+								</div>
+								<script type="text/javascript">
+									dojo.addOnLoad(function() {
+										parseWidget('PetcoCheckoutShippingRestrictionsDisplayArea'); 
+									});
+								</script>
+						
+					<!--Changes from displaying Shipping Restriction error message on Payment Section when Punched out using PayPal Ends -->
+									<section class="hide item_stock_out_error" id="outOfStockErrorDiv">
+										<div class="error-box">
+										<div class="row">
+											<div class="col-12">
+											<h3 class="margin-bottom-sm error">The following item is out of stock.</h3>
+											
+											</div>
+											</div>
+										</div>
+									</section>	
+									<script>
+									if('false' == 'true')
+									{
+										$("#outOfStockErrorDiv").removeClass("hide item_stock_out_error");
+										$("#outOfStockErrorDiv").addClass("show item_stock_out_error");
+									}
+									else
+									{
+										$("#outOfStockErrorDiv").removeClass("show item_stock_out_error");
+										$("#outOfStockErrorDiv").addClass("hide item_stock_out_error");
+									}
+									</script>	
+									<!-- PDWEB-2826 PASS VALID ERROR MESSAGE Starts-->
+                                    <section id="email_already_exist" style="display:none">
+                                    	<div class="error-box">
+                                        	<div id="review_error">
+                                            	???_ERR_EMAIL_ALREADY_EXIST_ERROR_MSG???
+                                            </div>
+                                        </div>    
+                                    </section> 
+                                    <!-- PDWEB-2826 PASS VALID ERROR MESSAGE Ends --><!-- PDWEB-2151 Changes for ISAM Registration Starts-->
+                                    <section id="registration_error_section" style="display:none">
+                                    	<div class="error-box">
+                                        	<div id="registration_error_id"></div>
+                                        </div>
+                                    </section> 
+                                    <!-- PDWEB-2151 Changes for ISAM Registration Ends-->								
+									<section id="payment_auth_fail_error" style="display:none">
+										<div class="error-box">
+											<div id="review_error_id"></div>
+										</div>
+									</section>
+									<section id="payment_auth_fail_error1" style="display:none">
+										<div class="error-box">
+											<div id="review_error_id1"></div>
+										</div>
+									</section>
+									
+									<input type="hidden" id="createPalsAccount" name="createPalsAccount" value="">
+									
+									<input type="hidden" value='52311331' name='orderIdForPurcList' id='orderIdForPurcList'/>
+									
+									<input type="hidden" name="qasFlag" value="Y" id="qasFlag"/>
+									<!-- STATE BASED SCENARIO: Logged Out/Guest User - End --><!-- Shipping Section start--><!-- BEGIN CheckoutTopESpotDisplay.jspf -->
+<div class="espot_checkout_top" id="WC_CheckoutTopESpotDisplay_div_1">
+	<!-- BEGIN ContentRecommendation.jsp --><!-- PETCO ESPOT NAME: CheckoutTopRight_Content --><!-- END ContentRecommendation.jsp -->		
+</div>
+<!-- END CheckoutTopESpotDisplay.jspf -->
+												
+											
+											
+												<script type="text/javascript">
+														dojo.addOnLoad(function() {
+															
+															MessageHelper.setMessage("DEFAULT_SHIPPING_ADDRESS_ERR_FORM", "Please provide the missing information in the selected address or add a new shipping address.");
+															toggle(dojo.byId("shippingInformationContainer"));
+														});
+													</script>
+												
+												<fieldset id="shipping-address-section" aria-label="Shipping Information Section" tabindex="0">
+													<div class="container">
+<ul>
+														<li id="shipping-address" class="row divbox divbox-no-border">
+																
+																<span aria-controls="shippingInformation" role="button" class="click-row link-pointer" onkeypress="if(event.which == 13 || event.keyCode == 13) {toggle(this)}" onclick="toggle(this)" id="shippingInformationContainer"  tabindex="0">
+														            <div role="heading" class="col-11-sm link-pointer">
+																		<h2>Shipping Information</h2>
+														            </div>
+														            <div class="col-1-sm link-pointer">
+														              <i class="icon-plus" tabindex="-1"></i>
+														              <i class="icon-minus" tabindex="-1"></i>
+														            </div>
+													          	</span>
+															
+															 <ul id="shippingInformation" class="form-field-listing" aria-labelledby="shippingInformationContainer">
+							 									<li class="row form-field-sublist"> 
+													
+													<input type="hidden" name="qasFlag" value="Y" id="qasFlag"/>
+													<!-- Display shiping address of the order --> 
+													<script type="text/javascript">
+														dojo.addOnLoad(function() {
+															CommonControllersDeclarationJS.setControllerURL('PetcoShippingAdddressDisplayAreaController','https://www.petco.com/shop/PetcoShippingAddressRegUserView?shipmentType=single&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151');
+														});
+													</script>
+													<input type="hidden" name="isPoAddress" id="isPoAddress" value="" />
+													<input type="hidden" name="shipRestrictionFlag" id="shipRestrictionFlag" value="" />
+												
+														<div class="notice-box" style="display:none" id="poAddressMessage">
+															Deliveries to PO Boxes may incur a shipping fee. To remove the shipping fee, <a class="alert-link" href="javascript:CheckoutHelperJS.showModal('editGuestAddress')">update your shipping address</a> to a street address.
+														</div>	
+												
+													
+													
+															<div dojoType="wc.widget.RefreshArea" id="petcoGuestShippingAddressDisplayArea" widgetId="petcoGuestShippingAddressDisplayArea" controllerId="PetcoGuestShippingAdddressDisplayAreaController" ariaMessage="Shipping Address Updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="shippingAddressDisplayArea_ACCE_Label">
+																<!-- This value is equal to value in struts-config-ext.xml for view Name AjaxAddressDisplayView --><!-- STATE BASED SCENARIO: Logged Out/Guest User - Start -->
+	<form class="form-horizontal" role="form" name="AddressForm" method="post" id="AddressForm" action="PetcoShippingAddressAddUpdateCmd">
+	<input type="hidden" name="storeId" id="storeId" value="10151"/>
+	<input type="hidden" name="catalogId" id="catalogId" value="10051"/>
+	<input type="hidden" name="langId" id="langId" value="-1"/>
+	<input type="hidden" name="authToken" value="180455720%2CRALEOVm3DdxNlPxuFzKhtF4uGpg%3D" id="WC_UnregisteredCheckout_inputs_authToken_shipping" />
+	<input type="hidden" id="shippingAddressId" value="" name="addressId"/>
+	<input type="hidden" id="orderId" value="52311331" name="orderId"/>
+	<input type="hidden" name="addressField2" id="addressField2" value="" />
+	<input type="hidden" name="URL" id="URL" value="SingleShipmentOrderSummaryView"/>   
+	<input type="hidden" name="primary" value="1"/>
+	<input type="hidden" name="email1" value="a@com.com" id="email1"/>
+	<input type="hidden" name="country" value="US"/>
+	<input type="hidden" name="addressTypeValue" value="S"/>
+	<input type="hidden" name="isAjax" id="isAjax" value="N" />
+	
+		
+
+
+		<div class="no-show" id="shipping_address_page_error">
+			<div class="row">
+				<div class="col-12">
+					<div class="error-box" id="alert-danger"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+	        <div class="col-6-sm">
+	          <label for="shipping-address-firstname">First Name</label>
+	          <input type="text" manual_cm_sp="Checkout-_-FirstName" onblur="cmManuallyTriggerEventTrack(this);" maxlength="25" name="firstName" id="shipping-address-firstname" value="">
+	          <div id="shipping-address-firstname-err"></div>
+	        </div>
+	        <div class="col-6-sm">
+	        	<label for="shipping-address-lastname">Last Name</label>
+			  	<input type="text" manual_cm_sp="Checkout-_-LastName" onblur="cmManuallyTriggerEventTrack(this);" maxlength="25" id="shipping-address-lastname" value="" name="lastName">
+			  	<div id="shipping-address-lastname-err"></div>
+			</div>
+        </div>
+        
+        <div class="row">
+	        <div class="col-12" id="shipping-address-div">
+	          <label id="shipping-address-label" for="shipping-address-address1">Street Address</label>
+	          <input type="text" manual_cm_sp="Checkout-_-ShippingAddress" onblur="cmManuallyTriggerEventTrack(this);" maxLength="35" placeholder="Enter a Location" id="shipping-address-address1" value="" name="address1">
+			  <div id="shipping-address-address1-err"></div>
+	        </div>
+	       
+        </div>
+        <a id="openaddressDetailsLink" href="javascript:void(0)" onclick="openaddressDetails()">&nbsp; + Add an apartment, suite, building, etc</a>
+        <div class="row"  id="openaddressDetailsContainer" style="display:none">
+	        <div id="apt-div" class="col-12 col-12-sm">
+            	<label for="shipping-address-address2">Unit / Apt #</label>
+          		<input type="text" class="form-control" maxLength="35" id="shipping-address-address2" value="" name="address2" >
+            </div>
+        </div>
+        <div id="shipping-address-fields" class="row">
+        	<div class="col-4">
+          		<label for="shipping-address-city">City</label>
+          		<input type="text" maxLength="50" id="shipping-address-city" value="" name="city" >
+				<div id="shipping-address-city-err"></div>
+        	</div>
+        	
+        	<div class="col-4 col-8-sm">
+          		<label for="shipping-address-state">State</label>
+          		
+						<select id="shipping-address-state" name="state" >
+							<option value="" selected="selected">Select a State</option> 
+							
+								<option value="AL" >
+									Alabama
+								</option>
+							
+								<option value="AK" >
+									Alaska
+								</option>
+							
+								<option value="AS" >
+									American Samoa
+								</option>
+							
+								<option value="AZ" >
+									Arizona
+								</option>
+							
+								<option value="AR" >
+									Arkansas
+								</option>
+							
+								<option value="AA" >
+									Armed Forces Americas
+								</option>
+							
+								<option value="AE" >
+									Armed Forces Europe
+								</option>
+							
+								<option value="AP" >
+									Armed Forces Pacific
+								</option>
+							
+								<option value="CA" >
+									California
+								</option>
+							
+								<option value="CO" >
+									Colorado
+								</option>
+							
+								<option value="CT" >
+									Connecticut
+								</option>
+							
+								<option value="DE" >
+									Delaware
+								</option>
+							
+								<option value="DC" >
+									District of Columbia
+								</option>
+							
+								<option value="FL" >
+									Florida
+								</option>
+							
+								<option value="GA" >
+									Georgia
+								</option>
+							
+								<option value="GU" >
+									Guam
+								</option>
+							
+								<option value="HI" >
+									Hawaii
+								</option>
+							
+								<option value="ID" >
+									Idaho
+								</option>
+							
+								<option value="IL" >
+									Illinois
+								</option>
+							
+								<option value="IN" >
+									Indiana
+								</option>
+							
+								<option value="IA" >
+									Iowa
+								</option>
+							
+								<option value="KS" >
+									Kansas
+								</option>
+							
+								<option value="KY" >
+									Kentucky
+								</option>
+							
+								<option value="LA" >
+									Louisiana
+								</option>
+							
+								<option value="ME" >
+									Maine
+								</option>
+							
+								<option value="MD" >
+									Maryland
+								</option>
+							
+								<option value="MA" >
+									Massachusetts
+								</option>
+							
+								<option value="MI" >
+									Michigan
+								</option>
+							
+								<option value="MN" >
+									Minnesota
+								</option>
+							
+								<option value="MS" >
+									Mississippi
+								</option>
+							
+								<option value="MO" >
+									Missouri
+								</option>
+							
+								<option value="MT" >
+									Montana
+								</option>
+							
+								<option value="NE" >
+									Nebraska
+								</option>
+							
+								<option value="NV" >
+									Nevada
+								</option>
+							
+								<option value="NH" >
+									New Hampshire
+								</option>
+							
+								<option value="NJ" >
+									New Jersey
+								</option>
+							
+								<option value="NM" >
+									New Mexico
+								</option>
+							
+								<option value="NY" >
+									New York
+								</option>
+							
+								<option value="NC" >
+									North Carolina
+								</option>
+							
+								<option value="ND" >
+									North Dakota
+								</option>
+							
+								<option value="MP" >
+									Northern Mariana Islands
+								</option>
+							
+								<option value="OH" >
+									Ohio
+								</option>
+							
+								<option value="OK" >
+									Oklahoma
+								</option>
+							
+								<option value="OR" >
+									Oregon
+								</option>
+							
+								<option value="PW" >
+									Palau
+								</option>
+							
+								<option value="PA" >
+									Pennsylvania
+								</option>
+							
+								<option value="RI" >
+									Rhode Island
+								</option>
+							
+								<option value="SC" >
+									South Carolina
+								</option>
+							
+								<option value="SD" >
+									South Dakota
+								</option>
+							
+								<option value="TN" >
+									Tennessee
+								</option>
+							
+								<option value="TX" >
+									Texas
+								</option>
+							
+								<option value="VI" >
+									U.S. Virgin Islands
+								</option>
+							
+								<option value="UT" >
+									Utah
+								</option>
+							
+								<option value="VT" >
+									Vermont
+								</option>
+							
+								<option value="VA" >
+									Virginia
+								</option>
+							
+								<option value="WA" >
+									Washington
+								</option>
+							
+								<option value="WV" >
+									West Virginia
+								</option>
+							
+								<option value="WI" >
+									Wisconsin
+								</option>
+							
+								<option value="WY" >
+									Wyoming
+								</option>
+							
+								<option value="PR">
+									Puerto Rico
+								</option>
+							
+						</select>
+					
+				<div id="shipping-address-state-err"></div>
+          	</div>
+          	<div class="col-4-sm">
+          		<label for="shipping-address-zipCode">ZIP Code</label>
+          		<input type="text" maxLength="5" id="shipping-address-zipCode" value="" name="zipCode">
+				<div id="shipping-address-zipCode-err"></div>
+        	</div>
+        </div>
+        <div class="row">
+	         	<input class="valid" type="hidden" id="shipping-address-email" value="a@com.com"/>
+	        <div class="col-12">
+	          	<label for="shipping-address-phone">Phone</label>
+	          		<input type="tel" placeholder=""   class="form-control" id="shipping-address-phone" maxLength="10" value="" name="phone1" manual_cm_sp="Checkout-_-Phone" onblur="cmManuallyTriggerEventTrack(this);">
+	          	<div id="shipping-address-phone-err"></div>
+	        </div>
+       </div>
+        <div class="row">
+	        <div class="col-4 pull-right">
+	          <button class="btn btn-primary btn-full" onclick="CheckoutHelperJS.guestSaveShippingAddress(document.AddressForm);return false;">Save and Continue</button>
+	        </div>
+       </div>
+       
+       
+       
+       
+</form>
+
+	<div class="petco-modal" id="modal-verifyAddress">
+		<div class="CLOSE-X">
+		  <a href="#" id="verifyAddressGuestClose" onclick="CheckoutHelperJS.hideModal('modal-verifyAddress');">
+		    <i class="icon-modal-x" id="modal-x" tabindex="0" onkeypress="$('#verifyAddressGuestClose').trigger('click');" ></i>
+		    <span class="hide-text">Close Button</span>
+		  </a>
+		</div>
+		<div class="form-modal-form form-modal-padding-deep" >
+		<div aria-hidden="true" aria-labelledby="verifyAddressLabel" role="dialog" tabindex="-1" id="verifyAddress" style="display: none;">
+			
+	<input type="hidden" name="qasAddressLine1" id="qasAddressLine1" value="" />
+	<input type="hidden" name="qasAddressLine2" id="qasAddressLine2" value="" />
+	<input type="hidden" name="qasCity" id="qasCity" value="" />
+	<input type="hidden" name="qasState" id="qasState" value="" />
+	<input type="hidden" name="qasZipCode" id="qasZipCode" value="" />
+	<input type="hidden" name="formToSubmit" id="formToSubmit" value="" />			
+	<input type="hidden" name="moniker" id="moniker" value="" />
+	<input type="hidden" name="isFullAddress" id="isFullAddress" value="" />
+	<input type="hidden" name="verifyLevel" id="verifyLevel" value="" />
+	<input type="hidden" name="fullPickListMoniker" id="fullPickListMoniker" value="" />
+	<input type="hidden" name="qasFullZipCode" id="qasFullZipCode" value="" />
+	<input type="hidden" name="isAjax" id="isAjax" value="" />
+						
+
+<h1 class="modal-heading" id="verifyAddressLabel">Verify Address</h1>
+<div class="row">
+	<div class="col-12">
+		
+			<div id="aptMissingMessage" class="text-center margin-bottom-lg">
+				<p>Sorry, your apartment number might be missing or wrong.</p>
+			</div>
+			<div id="houseMissingMessage" class="text-center margin-bottom-lg">
+				<p> </p>
+			</div>
+			<div id="noMatchMessage1" class="text-center margin-bottom-lg">
+				<p>Sorry, your address may be incorrect or incomplete.</p>
+			</div>
+			<p class="text-center"><strong>The address you entered is:</strong></p>
+		<div class="container bg-lightestgray padding-sm">
+			<div class="row" id="actualAddressSection">
+				<div class="col-9">
+					<div id="actualAddressDetails"></div>
+				</div>
+				<div class="col-3">
+					<div id="enteredAddressSubmit"></div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="addressDeliveryMessage" class="text-center margin-top-md margin-bottom-lg">
+			<p class="text-light">*The address you entered may be undeliverable.
+			</p>
+		</div>
+		<hr />
+	</div>
+	<div class="col-12">
+		
+			<div id="suggestedMatchMessage" class="text-center">
+				<p><strong>Our database found:</strong></p>
+			</div>
+			<div class="row container bg-lightestgray padding-sm" id="suggestedAddressSection">
+					<div class="col-9" id="suggestedAddressDetails"></div>
+					<div class="col-3" id="suggestedAddressSubmit"></div>
+			</div>
+			
+			<div id="multipleAddressMatchMessage" class="text-center">
+				<p>Our database found:</p>
+			</div>
+			
+			<div id="multiptleAddressMatchMain"></div>
+					
+			<div id="premisesPartialMatchMessage" class="text-center margin-top-md margin-bottom-md">
+				<p><strong>Enter or confirm your house/building number:</strong></p>
+			</div>
+			<div class="" id="premisesPartialMatchContent">
+				<div>
+					<div id="selectedMessageArea"></div>
+					<div id="partialMatchError" style="display: none;"></div>
+					<div class="row">
+						<div class="col-9">
+							<input type="text" id="apartmentNumber" value="" />
+						</div>
+						<div class="col-3">
+							<button class="btn btn-gray btn-full" onclick="javascript:validateStreetOrApt();return false;">Submit</button>
+						</div>
+					</div>
+					<p class="text-center margin-top-md margin-bottom-md"><a href="javascript:void(0)" onclick="javascript:showAllMatches('AllPartialMatches');return false;" id="ShowAllMatches">Show all potential matches</a></p>
+				</div>
+			</div>
+			<div id="AllPartialMatches" style="display: none;">
+				<div class id="partialMatchesContent"></div>
+			</div>
+			<div id="AptOrStreetMatchMessage" class="text-center margin-top-md margin-bottom-md">
+				<p><strong>Enter or confirm your house/building number:</strong></p>
+			</div>
+			<div id="AptOrStreetMatchContent">
+			    <div id="selectedAddressArea"></div>
+				<div id="AptOrStreetMatchError" style="display: none;"></div>
+				<div class="row">
+					<div class="col-9">
+						<input type="text" id="AptOrStreetNumber" value="" />
+					</div>
+					<div class="col-3">
+						<button class="btn btn-gray btn-full" onclick="javascript:validateStreetOrApt();return false;">Submit</button>
+					</div>
+				</div>
+				<p class="text-center margin-top-md margin-bottom-md"><a href="javascript:void(0)" onclick="javascript:showAllMatches('AllAptOrStreetMatches');return false;">Show all potential matches</a></p>
+			</div>
+			<div class="" id="AllAptOrStreetMatches" style="display: none;">
+				<div id="AptOrStreetMatchesContent"></div>
+			</div>
+	</div>
+</div>
+
+								
+								
+
+		</div>
+		
+			</div>
+	</div>
+		
+
+<span id="scriptstoexecuteAfterpageLoad" style="display:none">
+document.getElementById('shipping-address-state').value = '';
+CheckoutHelperJS.setGuestShippingFieldData();
+CheckoutHelperJS.guestShippingFieldFunctions();
+CheckoutHelperJS.reformatPhoneNumberFieldChildFunction(dojo.byId('shipping-address-phone'));
+</span>
+
+						
+
+<script type="text/javascript">
+dojo.addOnLoad(function() {
+document.getElementById('shipping-address-state').value = '';
+CheckoutHelperJS.setGuestShippingFieldData();
+CheckoutHelperJS.guestShippingFieldFunctions();
+CheckoutHelperJS.isGuestAddressValid();
+});
+</script>
+			<!-- STATE BASED SCENARIO: Logged Out/Guest User - End --><!-- Existing Email Address Modal -->
+<div class="petco-modal" id="modal-existingEmailAddressModal">
+	<div class="CLOSE-X">
+	  <a href="#" onclick="CheckoutHelperJS.hideModal('modal-existingEmailAddressModal')">
+	    <img src="/wcsstore/PetcoStore/img/close_icon.png" alt="" />
+	    <span class="hide-text">Close Button</span>
+	  </a>
+	</div>
+	<div class="form-modal-form form-modal-padding-deep" id="existingEmailAddressModal">
+		<h4 class="modal-title" id="existingEmailAddressModalLabel">Email Address Already Exists</h4>
+		<p>The email address that you entered already exists. Please enter a different email address or sign in to the existing account.</p>
+	</div>
+</div>
+
+
+<script>
+function compareandsubmitguestAddressEdit(){
+	var PhoneNumberval = dojo.byId("shipping-address-phone").value;
+	var addressTovalidate="";
+	addressTovalidate=addressTovalidate+dojo.byId("shipping-address-firstname").value.trim()+"|";
+	addressTovalidate=addressTovalidate+dojo.byId("shipping-address-lastname").value.trim()+"|";
+	addressTovalidate=addressTovalidate+dojo.byId("shipping-address-address1").value.trim()+"|";
+	addressTovalidate=addressTovalidate+dojo.byId("shipping-address-address2").value.trim()+"|";
+	addressTovalidate=addressTovalidate+dojo.byId("shipping-address-city").value.trim()+"|";
+	addressTovalidate=addressTovalidate+dojo.byId("shipping-address-state").value.trim()+"|";
+	addressTovalidate=addressTovalidate+dojo.byId("shipping-address-zipCode").value.trim()+"|";
+	addressTovalidate=addressTovalidate+PhoneNumberval;
+	var addressTovalidateCompare=dojo.byId("addressForValidationGuest").innerHTML;
+	if(addressTovalidateCompare!=addressTovalidate){
+		CheckoutHelperJS.guestSaveShippingAddress(document.AddressForm);
+	}else{
+		CheckoutHelperJS.hideModal('modal-editGuestAddress');
+		return false;
+	}
+}
+
+</script>	
+															</div>
+															<script type="text/javascript">
+																dojo.addOnLoad(function() { 
+																	CommonControllersDeclarationJS.setControllerURL('PetcoGuestShippingAdddressDisplayAreaController','https://www.petco.com/shop/PetcoShippingInformationView?catalogId=10051&amp;langId=-1&amp;storeId=10151');
+																	parseWidget("petcoGuestShippingAddressDisplayArea");
+																	 
+																});
+															</script>
+														
+												</li>				
+															</ul>
+														</li>
+														</ul>
+														</div>
+											</fieldset>
+													
+											<input type="hidden" id="isAddressInvalid" value="N" />
+										<!-- Shipping Section End--><!-- Shipping Method Start -->
+										<fieldset id="shipping-method-section" class="disabled-section" aria-label="Shipping Details Section" tabindex="0">
+											<div dojoType="wc.widget.RefreshArea" widgetId="singleShipmentOrderDetails" controllerId="traditionalShipmentDetailsController" id="WC_ShipmentDisplay_div_17" ariaMessage="Order Item List Updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="singleShipmentOrderDetails_ACCE_Label" >
+												<!-- BEGIN OrderItemDetailSummary.jsp -->
+<script type="text/javascript">
+	var selectedProductId = "";
+</script>
+<!--PDWEB-684-->
+<ul>
+	<li id="shipping-method-details" class="row divbox divbox-no-border cursor-not-allowed ">
+	<span aria-controls="shippingDetails" id="shipping-method" class="click-row link-pointer cursor-not-allowed" tabindex="0" onkeypress="if(event.which == 13 || event.keyCode == 13) {toggle(this,'disabled-section')}" onclick="toggle(this,'disabled-section')">
+	       <div role="button" class="col-11-sm margin-left-none">
+	         <h2>Shipping Method</h2>
+	       </div>
+	       <div class="col-1-sm">
+	         <i class="icon-plus" tabindex="-1"></i>
+	         <i class="icon-minus" tabindex="-1"></i>
+	       </div>
+    	</span>
+	<ul id="shippingDetails" class="form-field-listing" aria-labelledby="shipping-method">
+		<li class="row form-field-sublist"> 
+	
+				<input type="hidden" value='91229' name='catEntryId_1' id='catEntryId_1'/>
+				<input type="hidden" value='1.0' name='Quantity_1' id='Quantity_1'/>
+				
+			<input type="hidden" value="Trixie Natura Animal Hutch with Outdoor Run, 61&#034; L X 20.75&#034; W X 27.5&#034; H" name="productName_1" id="productName_1"/>
+		<!--Defect Fix 205125 - DropShip Free Shipping Message Not Reflecting - Start --><!--Defect Fix 205125 - End-->
+					<h3>Standard Products</h3>
+				
+				<input type="hidden" value='52261933' name='orderItem_1' id='orderItem_1'/>
+				<input type="hidden" value='91229' name='catalogId_1' id='catalogId_1'/>
+		
+		<!-- get the formatted qty for this item --><!--PDWEB-684 - check if this order contains RD item - start --><!--PDWEB-684 - check if this order contains RD item - end --><!-- file to be included here --><!-- Display of personalization start--><!-- Display of personalization end-->
+	<input type="hidden" id = "totalNumberOfItems" name="totalNumberOfItems" value='1'/>
+ 
+
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() {
+		dojo.topic.publish("order_contents_ProductRec", "122336");
+	});
+</script>	
+
+</li>
+</ul>
+	
+</li>
+</ul>
+<!-- END OrderItemDetailSummary.jsp --><!-- PDWEB-1865 : Register user during OBO/EA flow Starts--><!-- PDWEB-1865 : Register user during OBO/EA flow Ends-->
+
+											</div>
+										</fieldset>
+										<!-- Shipping Method End --><!-- Payment section Start -->
+										
+										<fieldset id="payment-section" class="disabled-section" aria-label="Payment Information Section" tabindex="0">
+											<ul>
+												<li id="payment-section-details" class="row divbox divbox-no-border cursor-not-allowed">
+												<span tabindex="0" role="button" id="payment-information" class="click-row link-pointer cursor-not-allowed" onkeypress="if(event.which == 13 || event.keyCode == 13) {toggle(this)}" onclick="toggle(this,'disabled-section')" aria-controls="paymentInformationSection">
+												       <div role="header" class="col-11-sm margin-left-none">
+												       
+												         <h2>Payment Information</h2>
+												        
+												       </div>
+												       <div class="col-1-sm">
+												         <i class="icon-plus" tabindex="-1"></i>
+												         <i class="icon-minus" tabindex="-1"></i>
+												       </div>
+											    	</span>
+												<ul class="form-field-listing" id="paymentInformationSection" aria-labelledby="payment-information">
+													<li class="row form-field-sublist"> 
+											<div class="container">
+												<input type="hidden" id="numberOfPaymentMethods" value="1"/>											
+																							
+												<!-- BEGIN PetcoCheckoutPaymentsAndBillingAddress.jspf -->
+
+<script type="text/javascript">
+	
+
+	var paymentSnippetsURLMap = {};
+	
+			paymentSnippetsURLMap['NCRCreditCard'] = 'PetcoCreditCardPayment';
+		
+			paymentSnippetsURLMap['Discover'] = 'PetcoCreditCardPayment';
+		
+			paymentSnippetsURLMap['Master Card'] = 'PetcoCreditCardPayment';
+		
+			paymentSnippetsURLMap['PetcoGiftCard'] = 'PetcoGiftCardPayment';
+		
+			paymentSnippetsURLMap['PayPal'] = 'PayPal';
+		
+			paymentSnippetsURLMap['VISA'] = 'PetcoCreditCardPayment';
+		
+			paymentSnippetsURLMap['AMEX'] = 'PetcoCreditCardPayment';
+		
+			paymentSnippetsURLMap['SimplePunchout'] = 'SimplePunchout';
+		
+	
+	require(["dojo/domReady!"], function(){
+			
+		
+		CheckoutPayments.setErrorMessage("PAYMENT_REQ", "This field is required");
+		CheckoutPayments.setErrorMessage("PAYMENT_ALPHANUMERIC", "This field accepts alphanumeric text only.Please remove any special characters or punctuation.");
+		CheckoutPayments.setErrorMessage("PAYMENT_NUMERIC", "This field accepts numeric values only.Please remove any characters or spaces");
+		CheckoutPayments.setErrorMessage("PAYMENT_ALPHANUMERIC_SPACE", "This field accepts alphanumeric and space only. Please remove any other special characters or punctuation.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_CANNOT_RECONCILE_PAYMENT_AMT", "The sum of your payment amount(s) is less than the order total. Please allocate payment amount(s) for the whole order total before proceeding.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_PAYMENT_AMOUNT_LARGER_THAN_ORDER_AMOUNT", "The payment amount is greater than the remaining amount.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_NO_ACCOUNT_NUMBER", "The credit card account number cannot be empty.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_INVALID_EXPIRY_DATE", "Invalid expiration year and month");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_NO_AMOUNT", "The amount cannot be empty.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_AMOUNT_NAN", "The amount entered is not a valid amount. Please format the amount correctly.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_AMOUNT_LT_ZERO", "The amount entered cannot be less than zero.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_NO_BILLING_ADDRESS", "There is no billing address selected.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_BILLING_ADDRESS_INVALID", "The billing address information is incomplete. Complete the billing address by clicking Edit, before proceeding with the checkout process.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_CVV_NOT_NUMERIC", "CVV2 field must be numeric.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_PAYMENT_AMOUNT_PROBLEM", "There is a problem handling your payment amount(s). Contact your site administrator.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_NO_PAYMENT_SELECTED", "You must select a payment method.");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_NO_ROUTING_NUMBER", "No check routing number entered");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_NO_BANK_ACCOUNT_NO", "No Bank account number entered");
+		CheckoutPayments.setErrorMessage("PROMOTION_CODE_EMPTY", "Please enter the promotion code.");
+		CheckoutPayments.setErrorMessage("PO_NUMBER", null);
+		CheckoutPayments.setErrorMessage("ERROR_PONumberEmpty", "???ERROR_PONumberEmpty???");
+		CheckoutPayments.setErrorMessage("ERROR_PONumberTooLong", "???ERROR_PONumberTooLong???");
+		CheckoutPayments.setErrorMessage("EDPPaymentMethods_NO_NAME_ON_CARD", "Please enter the name on the card.");
+		
+		CheckoutPayments.setLocale('en-us');		
+		CheckoutPayments.initializeOverallPaymentObjects();		
+		CheckoutPayments.initializePaymentAreaDataDirtyFlags();
+	
+		wc.render.declareContext("paymentContext", {payment1: "empty", payment2: "empty", payment3: "empty", currentAreaNumber: "1", billingMode1: "none", billingMode2: "none", billingMode3: "none",currentTotal:"0"},	"");
+	});
+</script>
+
+<input type="hidden" name="userType" value="G" id="userType"/>	
+<!-- Declare the payment area controller associated with the paymentContext.. when the context changes
+this controller will be used and the paymentArea div will be populated with the required JSP file, based on the
+selection made...ex: if Visa brand is selected in payment1, then paymentArea1 will get populated with contents of
+Visa.jsp -->
+
+<script type="text/javascript">
+require(["dojo/domReady!"], function(){
+	wc.render.declareRefreshController({
+		id: "paymentAreaController1",
+		renderContext: wc.render.getContextById("paymentContext"),
+		url: "",
+		formId: ""
+
+		,modelChangedHandler: function(message, widget) {
+		
+			var controller = this;
+			var renderContext = this.renderContext;
+			
+		}
+
+		,renderContextChangedHandler: function(message, widget) {
+		
+			var controller = this;
+			var renderContext = this.renderContext;
+				if (renderContext.properties.currentPaymentArea == 1) {
+					if ((controller.testForChangedRC(["payment"])  || controller.testForChangedRC(["paymentTCId1"])
+						|| (controller.testForChangedRC(["piAmount"])) && supportPaymentTypePromotions )
+					) {
+						if (renderContext.properties.payment1 == "empty") {
+							viewName = "EmptySnippetView";
+						} else {
+							viewName = paymentSnippetsURLMap[renderContext.properties.payment1];
+						}
+						controller.url = viewName + '?storeId=10151&catalogId=10051&langId=-1';
+						
+						if (supportPaymentTypePromotions) {									
+							if (CheckoutPayments.numberOfPaymentMethods != 1) {
+								widget.refresh(renderContext.properties);
+							} else if (CheckoutPayments.numberOfPaymentMethods == 1 && 1 < 2) {
+								widget.refresh(renderContext.properties);
+							}
+						} else {
+							widget.refresh(renderContext.properties);
+						}
+				  }
+				}
+		}
+		
+		,postRefreshHandler: function(widget) {
+			/**
+				if supportPaymentTypePromotions is true, CheckoutPayments.loadPaymentSnippet should have been called to 
+				reload the entire payment refresh area. This will also refresh the amount field. Hence, we don't need to
+				call update amount field again	(which will trigger a call to CheckoutPayments.loadPaymentSnippet ).
+			**/
+			
+			if (!supportPaymentTypePromotions) { 
+				var orderTotal = dojo.byId("OrderTotalAmount").value;
+				CheckoutPayments.updateAmountFields(orderTotal);
+			}
+			
+			var widgetId = "paymentArea" + "1";
+			TealeafWCJS.rebind(widgetId);
+			cursor_clear();
+		}
+		
+	});
+});
+</script>
+<script type="text/javascript">
+	wc.render.declareRefreshController({
+			id: "orderTotalController",
+			renderContext: wc.render.getContextById("paymentContext"),
+			url: "", //not used. see CheckoutPayments.getTotalInJSON()
+			formId: ""
+	
+			,modelChangedHandler: function(message, widget) {
+			
+				var controller = this;
+				var renderContext = this.renderContext;
+				if(message.actionId in order_updated || message.actionId == 'OrderItemAddressShipMethodUpdate' || message.actionId == 'AjaxPrepareOrderForShipChargeUpdate'
+					|| message.actionId == 'OrderItemAddressShipInstructionsUpdate' || message.actionId == 'OrderItemAddressShipInstructionsUpdate1' || message.actionId == 'AjaxUpdateOrderAfterAddressUpdate'
+					|| message.actionId == 'AjaxDeleteOrderItemForShippingBillingPage' || message.actionId == 'AjaxUpdateOrderItemsAddressId'){
+					//updating the total
+					CheckoutPayments.getTotalInJSON();
+				}
+			}
+					
+		});
+</script>
+
+<!-- BillingAddressDropDownDisplay.jspf uses this URL and rendercontext and refreshController For time being...need new refresh area Remya Change-->
+<script type="text/javascript">
+wc.render.declareRefreshController({
+	id: "billingAdddressDisplayAreaController",
+	renderContext: wc.render.getContextById("billingAddressDropDownBoxContext"),
+	url: "https://www.petco.com/shop/AjaxAddressDisplayView?catalogId=10051&langId=-1&storeId=10151",
+	formId: ""
+
+	,renderContextChangedHandler: function(message, widget) {
+		var controller = this;
+		var renderContext = this.renderContext;
+		
+		var areaNumber = renderContext.properties["areaNumber"];	
+		var objectId = widget.objectId;
+		if (controller.testForChangedRC(["billingAddress"+areaNumber]) && objectId.charAt(objectId.length-1) == areaNumber) {
+				var addressId = renderContext.properties["billingAddress"+areaNumber];
+				widget.refresh({"addressId": addressId});
+			}
+		}
+
+	,postRefreshHandler: function(widget) {
+		var controller = this;
+		var renderContext = this.renderContext;
+		//clears the progress bar set from billingdropdowndisplay.jsp
+		cursor_clear();
+	}
+
+});
+</script>
+<!-- -Remya to Change end -->
+	<div dojoType="wc.widget.RefreshArea" id="orderTotalAmountArea" widgetId="orderTotalAmountArea" controllerId="orderTotalController" ></div>
+	<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		parseWidget("orderTotalAmountArea"); 
+	});</script>
+<!-- BEGIN POSnippet.jspf -->
+<form name="purchaseOrderNumberInfo"  id="purchaseOrderNumberInfo">
+
+				<input type="hidden" name="purchase_order_number" id="purchase_order_number" value=""/>
+				<input type="hidden" name="purchaseOrderNumberRequired" id="purchaseOrderNumberRequired" value="false"/>
+
+</form>
+<!-- END POSnippet.jspf -->
+
+<input type="hidden" name="payPalorderId" value="52311331" id="payPalorderId"/>
+<input type="hidden" value="" id="activeTab" name="activeTab"/>
+<input type="hidden" value="" id="existingPayPal" name="existingPayPal" />
+<input type="hidden" value="" id="existingNCR" name="existingNCR" />
+
+<form name="PaymentForm1" class="form-horizontal"  id="PaymentForm1" method="post" action="" onsubmit="javascript: return false;">
+
+<input type="hidden" value="" id="quickCheckoutProfileForPayment_1" name="quickCheckoutProfileForPayment"/>
+<input type="hidden" value="" id="selectedAddressId_" name="selectedAddressId_" />
+<input type="hidden" name="authToken" value="180455720%2CRALEOVm3DdxNlPxuFzKhtF4uGpg%3D" id="WC_CheckoutPaymentsAndBillingAddressf_input_authToken_1/>"/>
+<input type="hidden" name="piId" value="" id="WC_CheckoutPaymentsAndBillingAddressf_piId_1"/>
+<input type="hidden" name="paymentDataEditable" value="" id="WC_CheckoutPaymentsAndBillingAddressf_paymentDataEditable_1"/>
+<input type="hidden" name="orderId" value="52311331" id="WC_CheckoutPaymentsAndBillingAddressf_orderId_1"/>
+<input type="hidden" name="storeId" value="10151" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_1_1"/>
+<input type="hidden" name="catalogId" value="10051" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_2_1"/>
+<input type="hidden" name="langId" value="-1" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_3_1"/>
+<input type="hidden" name="existingPiId" value="" id="existingPiId"/>
+<input type="hidden" name="existingPiIdAll" value="" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_4_1"/>
+
+<input type="hidden" name="curr_year" value="2018" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_5_1"/>
+<input type="hidden" name="curr_month" value="4" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_6_1"/>
+<input type="hidden" name="curr_date" value="12" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_7_1"/>
+<input type="hidden" name="payMethodId" id="payMethodId_1" value=""/>
+
+			 <div class="row box padding-full-md">
+			 	<div class="margin-left-xsm">
+			 	 <div class="pull-left padding-top-sm margin-right-sm width-35-sm">
+			          <label class="radio-button text-normal">
+			            <input type="radio" manual_cm_sp="Checkout-_-PaymentInformation-_-PayWithCC" name="paymentMethod" id="paymentMethodCC" checked value="1" onClick="cmManuallyTriggerEventTrack(this);CheckoutHelperJS.creditCardPayment();"/>
+			            <i></i><strong class="text-dark">Credit Card</strong>
+			          </label>
+			        </div>
+			 		<div class="pull-left padding-top-sm margin-right-sm width-30 width-30-md" style="cursor:pointer" onclick="CheckoutHelperJS.addNewCreditCard('-1','10151','10051');">
+			          <i class="icon-cc-group-small"></i>
+			        </div>
+			        
+			        <div class="pull-left">
+			        	
+							<button type="button" id="cc_addnew" class="btn-primary btn-full" onclick="CheckoutHelperJS.addNewCreditCard('-1','10151','10051');"><span id="btn-cc-icon"><i class="icon-white-cc"></i>Add Credit Card</span></button>	
+							
+			        </div>
+			       
+			      
+			    </div>
+			    <br clear="all" />
+			  
+			    
+		<input type="hidden" id="mandatoryFields_1" name="mandatoryFields"  value="cc_nameoncard_1,account_1,expire_month_1,expire_year_1,cc_cvc_1,billing_address_id"/>
+
+
+
+
+
+<div class="csr hide">
+	<a href="" class="btn btn-gray">Start IVR Credit Card Capture</a>	
+</div>
+<div class="tab-content">
+	<div class="tab-pane active" id="credit-card">
+					
+
+
+<!-- STATE BASED SCENARIO: Logged Out/Guest User - Start -->
+<div class="logged-out payment-cc">
+		<input type="hidden" name="userType" value="G" id="userType"/>	
+		
+</div>
+	
+		</div></div>
+			    
+			    
+			    </div>
+    
+	
+    <div class="container">
+      <div class="row box">
+        <div class="col-12">
+          <label class="radio-button text-normal">
+           <input type="radio" manual_cm_sp="Checkout-_-PaymentInformation-_-PayWithPayPal" name="paymentMethod" value="2" id="paymentMethodPayPal" onClick="cmManuallyTriggerEventTrack(this);CheckoutHelperJS.payPalModal();"/>
+            <i id="paypal-radio-btn"></i><span class="icon-paypal" style="cursor:pointer" onclick="CheckoutHelperJS.payPalModal()"></span>
+          </label>
+          <div class="error-box" id="paypal_error" style="display: none;">
+		  </div>
+        </div>
+        <div dojoType="wc.widget.RefreshArea" id="petcoPaypalArea" widgetId="petcoPaypalArea" controllerId="petcoPaypalAreaController" ariaMessage="PayPal" ariaLiveId="ariaMessage" role="region" aria-labelledby="paymentArea_ACCE_Label" style="clear:both">
+       		 <!-- Start - JSP File Name: PayPal.jsp --><!-- Set the taglib -->
+		
+<input type="hidden" value="" id="PAYPAL_existingNCR"/>
+<input type="hidden" value="" id="PAYPAL_existingPPI"/>
+<input type="hidden" value="" id="PAYPAL_existingPayPal"/>
+<input type="hidden" value="" id="PAYPAL_payPalAsDefault"/>
+<input type="hidden" value="" id="PAYPAL_activeTab"/>
+<input type="hidden" value="" id="PAYPAL_existingPI"/>
+  
+<input type="hidden" name="merchant" value="Petco" id="payPalMerchant"/>
+<input type="hidden" name="ReivewPageURL" value="https://www.petco.com/shop/SingleShipmentOrderSummaryView?payPal=Y&shipmentType=single&catalogId=10051&langId=-1&storeId=10151" id="ReivewPageURL"/>
+<input type="hidden" name="payMethodId" value="PayPal" id="payPalMethodId"/>
+<input type="hidden" name="catalogId" value="10051" id="catalogId"/>
+<input type="hidden" name="storeId" value="10151" id="storeId"/>
+<input type="hidden" name="langId" value="-1" id="langId"/>
+<div class="row">
+	<div id="paypal" class="col-12 csr-no active no-show">
+		
+	</div>
+</div>
+<!-- End - JSP File Name: PayPal.jsp -->
+      </div>
+    </div>
+    </div> 
+    
+     
+		<input type="hidden" name="buyerOrgDN" value=""/>
+						
+<!-- Payment Method Ends Here -->
+<br clear="all" />
+ 
+<script type="text/javascript">
+	dojo.addOnLoad(function() {
+		CommonControllersDeclarationJS.setControllerURL('PetcoPaymentAreaController','https://www.petco.com/shop/PetcoPaymentAmountView?shipmentType=single&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151');
+		
+			if(false && document.getElementById('payPalAccountId') != undefined && document.getElementById('payPalAccountId') != null && document.getElementById('payPalAccountId').value != ""){
+				document.getElementById('paypal').className='col-12 csr-no active';
+				document.getElementById('paymentMethodPayPal').checked = true;
+			}
+	CheckoutPayments.disableEnableActivePaymentTab();
+	});
+</script>
+<div dojoType="wc.widget.RefreshArea" id="petcoPaymentAmountArea" widgetId="petcoPaymentAmountArea" controllerId="PetcoPaymentAreaController" ariaMessage="Shipping Address Updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="paymentArea_ACCE_Label">
+	<!-- PDWEB-1487 -->
+<input type="hidden" id="pay_Order_Total" name="pay_Order_Total" value="129.49"/>
+<input type="hidden" id="paid_Order_Total" name="paid_Order_Total" value="0"/>
+<input type="hidden" id="balance_Order_Total" name="balance_Order_Total" value="129.49"/>
+<input type="hidden" id="gc_Eligible_Amount" name="gc_Eligible_Amount" value="129.49"/>
+<input type="hidden" id="gc_Paid_amount" name="gc_Paid_amount" value="0"/>
+<input type="hidden" id="gc_Eligible_balance_amount" name="gc_Eligible_balance_amount" value="129.49"/>
+<input type="hidden" id="pal_Eligible_Amount" name="pal_Eligible_Amount" value="184.99"/>
+<input type="hidden" id="pal_Paid_Amount" name="pal_Paid_Amount" value="0"/>
+<input type="hidden" id="pal_Eligible_balance_amount" name="pal_Eligible_balance_amount" value="184.99"/>
+<input type="hidden" id="isDonationItemPresent" name="isDonationItemPresent" value="false"/>
+<input type="hidden" id="isOtherSKU" name="isOtherSKU" value="true"/>
+
+<span> 	
+	<input aria-required="true" type="hidden" name="piAmount_display" value="129.49" id="piAmount_1_display" onchange="JavaScript:TealeafWCJS.processDOMEvent(event);CheckoutPayments.validateAmount('PaymentForm','1');CheckoutPayments.updatePaymentObject(1, 'piAmount');"/>
+	<input type="hidden" name="piAmount" value="129.49" id="piAmount_1" onchange="CheckoutPayments.formatAmountDisplayForLocale('1')" />	
+</span>
+<script>
+	dojo.addOnLoad(function() {
+		CheckoutPayments.validateAmount('PaymentForm','1');
+		CheckoutPayments.updatePaymentObject(1, 'piAmount');
+	});
+</script>
+		
+</div>				
+					
+</form>
+
+<form id="PayPalForm" action="PunchoutPaymentRedirectView" method="POST" name="PayPalForm">
+	<input type="hidden" name="orderId" value="52311331" id="orderId"/>
+	<input type="hidden" value="true" name="isUniqueEmail"/>
+	<input type="hidden" name="guestEmail" value="a@com.com" />					
+	<input type="hidden" name="piId" value="" id="piId"/>
+	<input type="hidden" name="PayPalPiId" value="" id="PayPalPiId"/>
+	<input type="hidden" name="storeId" value="10151" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_1_1"/>
+	<input type="hidden" name="catalogId" value="10051" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_2_1"/>
+	<input type="hidden" name="langId" value="-1" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_3_1"/>
+	<input type="hidden" name="payPalCheck" value="" id ="payPalCheck" />
+	<input type="hidden" name="existingPiId" value="" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_4_1"/>
+</form>
+<!--#include virtual="/petco/order/credit-card-select-modal.html" -->
+		<div class="petco-modal" id="modal-selectCard">
+			<div class="CLOSE-X">
+					  <a href="#" manual_cm_sp="SavedCC-_-CloseButton" onclick="cmManuallyTriggerEventTrack(this);CheckoutHelperJS.hideModal('modal-selectCard')">
+					    <img src="/wcsstore/PetcoStore/img/close_icon.png" alt="" />
+					    <span class="hide-text">Close Button</span>
+		 				 </a>
+				</div>		
+		<div class="form-modal-form form-modal-padding-deep" id="" tabindex="-1" role="dialog" aria-labelledby="selectCardLabel" aria-hidden="true">
+			<!-- Select Another Credit Card Modal - Start -->
+<div id="selectCard" class="modal-form">
+		<h2>Choose From Saved Card</h2>
+		<div class="container">
+			
+		<div class="row">
+			  <div class="col-6 col-center padding-top-sm">
+			    <button manual_cm_sp="SavedCC-_-Cancel-_-Button" type="button" class="btn-gray btn-full" onclick="cmManuallyTriggerEventTrack(this);CheckoutHelperJS.hideModal('modal-selectCard')">Cancel</button>
+			  </div>
+		</div>
+	</div>
+</div>
+<!-- Select Another Credit Card Modal - End -->
+		</div>
+		</div>
+		<!--#include virtual="/petco/order/credit-card-new-modal.html" -->
+			<div class="petco-modal" id="modal-addCard" style="max-height:none;" >
+				<div class="CLOSE-X">
+					  <a tabindex="0" href="javascript:void(0)" manual_cm_sp="AddNewCard-_-CloseButton" onclick="cmManuallyTriggerEventTrack(this);CheckoutHelperJS.hideModal('modal-addCard')">
+					    <img src="/wcsstore/PetcoStore/img/close_icon.png" alt="" />
+					    <span class="hide-text">Close Button</span>
+		 				 </a>
+				</div>
+				<div class="form-modal-form form-modal-padding-deep" tabindex="-1" id="addCard" role="dialog" aria-labelledby="addCardLabel" aria-hidden="true">
+											
+						<div class="container" id="ncrFrame">				  
+					  	</div>						
+					  
+				</div>
+				</div>
+			
+		<div class="petco-modal" id="modal-paypalModal">
+			<div class="CLOSE-X">
+			  <a onclick="CheckoutHelperJS.cancelPayPal();">
+				<img src="/wcsstore/PetcoStore/img/close_icon.png" alt="" />
+				<span class="hide-text">Close Button</span>
+			  </a>
+			</div>
+			<div class="form-modal-form form-modal-padding-deep" >
+				<div id="paypalModal" style="display: none;">
+					<h3 class="margin-left-sm">Just a moment, please.</h3>
+					<p class="margin-left-sm margin-bottom-lg">You're on your way over to PayPal to complete your purchase.</p>
+						<div class="row">
+							<div class="col-6">
+								<button class="btn-gray btn-full" onclick="CheckoutHelperJS.cancelPayPal();">Cancel</button>
+							</div>
+							<div class="col-6">
+								<button class="btn-primary btn-full" onclick="CheckoutHelperJS.continuePayPal();">Continue</button>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	
+   <script type="text/javascript">
+   $(document).ready(function() {
+	dojo.addOnLoad(function() {	
+	CommonControllersDeclarationJS.setControllerURL('PetcoPaymentAreaController','https://www.petco.com/shop/PetcoPaymentAmountView?shipmentType=single&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151');		
+			if(false ){
+				document.getElementById('paypal').className='col-12 csr-no active';
+				document.getElementById('paymentMethodPayPal').checked = true;
+				CheckoutHelperJS.payPalModal();
+			}
+	});
+	});
+    </script>
+ 
+											</div>
+											
+														
+														
+														<div class="container margin-top-lg">
+															<ul>
+																<li id="Promo-Code" class="row divbox" aria-label="Promo Code Section">
+																
+																<span tabindex="0" aria-controls="promoCodeSection" role="button" onkeypress="if(event.which == 13 || event.keyCode == 13) {toggle(this,null,true)}" tabindex="0" id="payment-information-promo-code" class="click-row" data-manual_cm_sp="Checkout-_-PaymentInformation-_-AddPromoCode" onclick="toggle(this, null, true)">
+														            <div role="heading" class="col-11-sm link-pointer">
+														              <strong>Add a promo code
+														              </strong>
+														            </div>
+														            <div class="col-1-sm">
+														              <i class="icon-plus" tabindex="-1"></i>
+														              <i class="icon-minus" tabindex="-1"></i>
+														            </div>
+													          	</span>
+															
+															 <ul class="form-field-listing" id="promoCodeSection" aria-labelledby="payment-information-promo-code">
+																<li class="row form-field-sublist"> 
+																	<div class="notice-box" id="promo-conflict" style="display:none;">
+																		<p>Success! We've applied the code that gives you the biggest savings and removed the other code from your cart.</p>
+																	</div>
+																	<div class="notice-box" id="promo-conflict-info" style="display:none;">
+																		<p>Success! We've applied the code that gives you the biggest savings and removed the other code from your cart.</p>
+																	</div>
+																	<div class="error-box" id="promotion-error" style="display:none;"></div>
+																	<!-- PDWEB-596 -->
+																	<div class="notice-box" id="promo-reg-info" style="display:none;"></div>
+																</li>
+																<li class="row form-field-sublist">
+																	<input type="hidden" id="isPromoCodeQualified" name="isPromoCodeQualified" value=""> 
+																	<!-- PDWEB-309: Switch payment sled -->
+																	<input type="hidden" id="isPaymentSledActiveSwitch" name=isPaymentSledActiveSwitch value="yes"> 
+																	<div dojoType="wc.widget.RefreshArea" id="petcoPromotionDisplayArea" widgetId="petcoPromotionDisplayArea" controllerId="PetcoPromotionDisplayAreaController" ariaMessage="Shipping Address Updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="promotionDisplayArea_ACCE_Label">
+																			
+		<input type="hidden" id="newBestPromoCodeApplied" name="newBestPromoCodeApplied" value="">
+<input type="hidden" id="newRedundantPromoCode" name="newRedundantPromoCode" value="">	
+																	</div>
+																
+																	<!-- BEGIN PromotionCodeDisplay.jsp -->
+<script type="text/javascript">
+	dojo.addOnLoad(function() {
+		
+		MessageHelper.setMessage("PROMOTION_CODE_EMPTY", "Please enter the promotion code.");
+	});
+</script>
+
+
+	<input type="hidden" id="omnitureEnabled" value="true" />
+
+
+<script type="text/javascript">
+	dojo.addOnLoad(initPromotionAssets); 
+       
+	function initPromotionAssets(){
+		       
+	}
+	//PDWEB-1527: Promocode Sapce removed
+	function noSpaces(prCode){
+		console.log('prCode-'+prCode+'-');
+		if(prCode.value.match(/\s/g))
+			prCode.value=prCode.value.trim();			
+	}
+</script>
+
+<form name="PromotionCodeForm" id="PromotionCodeForm" method="post" action="https://www.petco.com/shop/PromotionCodeManage?catalogId=10051&amp;langId=-1&amp;storeId=10151" onsubmit="javascript: return false;">
+	
+
+	<input type="hidden" name="orderId" value="52311331" id="WC_PromotionCodeDisplay_FormInput_orderId_In_PromotionCodeForm_1"/>
+	<input type="hidden" name="taskType" value="A" id="WC_PromotionCodeDisplay_FormInput_page_In_PromotionCodeForm_1"/>
+	<input type="hidden" name="URL" value="" id="WC_PromotionCodeDisplay_FormInput_URL_In_PromotionCodeForm_1"/>
+	<input type="hidden" name="storeId" value="10151" id="WC_PromotionCodeDisplay_FormInput_storeId_In_PromotionCodeForm_1"/>
+	<input type="hidden" name="catalogId" value="10051" id="WC_PromotionCodeDisplay_FormInput_catalogId_In_PromotionCodeForm_1"/>
+	<input type="hidden" name="langId" value="-1" id="WC_PromotionCodeDisplay_FormInput_langId_In_PromotionCodeForm_1"/>
+	<input type="hidden" name="finalView" value="AjaxOrderItemDisplayView" id="WC_PromotionCodeDisplay_FormInput_finalView_In_PromotionCodeForm_1"/>
+   <input type="hidden" name="isExistingInRedundantPromoCode" value="" id="isExistingInRedundantPromoCode"/>
+    
+    
+
+<label for="tb_promocode" class="margin-left-lg">Promo Code</label>
+<div id="error-box"></div>
+<div class="sublist-form">
+	<div class="row">
+	    <div class="col-6 col-8-sm">
+			<input type="text" manual_cm_sp="PaymentInfo-_-PromoCode" class="form-control" size="6" placeholder="Promotion Code - Ex. ABC, DEF, XYZ" id="enter-promo-code" name="promoCode" id="promoCode" onblur="cmManuallyTriggerEventTrack(this);" onchange="javaScript:TealeafWCJS.processDOMEvent(event);" onkeypress="if(event.keyCode==13) JavaScript:CheckoutHelperJS.applyPromotionCode('PromotionCodeForm','AjaxOrderItemDisplayView','false','order')">
+	    </div>
+	    <div class="col-2 col-4-sm">
+	    	<button type="button" manual_cm_sp="PaymentInfo-_-ApplyPromoCode" class="btn-primary btn-full" id="WC_PromotionCodeDisplay_links_1" onclick="JavaScript:cmManuallyTriggerEventTrack(this,this.value);CheckoutHelperJS.applyPromotionCode('PromotionCodeForm','AjaxOrderItemDisplayView','false','order');return false;">Apply</button>
+	    </div>
+    </div>
+</div>
+
+</form>
+<!-- END PromotionCodeDisplay.jsp -->
+																</li>				
+															</ul>
+														</li>
+															
+														<li class="row divbox" aria-label="Gift Card Section">
+															<span tabindex="0" aria-controls="giftCardSection" role="button" id="gift_card_toggler" onkeypress="if(event.which == 13 || event.keyCode == 13) {toggle(this,null,true)}" class="click-row" data-manual_cm_sp="Checkout-_-PaymentInformation-_-UseGiftCard" onclick="toggle(this, null, true)">
+														            <div role="heading" class="col-11-sm link-pointer">
+														              <strong>Use a gift card
+														              </strong>
+														            </div>
+														            <div class="col-1-sm">
+														              <i class="icon-plus" tabindex="-1"></i>
+														              <i class="icon-minus" tabindex="-1"></i>
+														            </div>
+									          					</span>
+															 <ul class="form-field-listing" id="giftCardSection">
+																
+									          					<li class="row form-field-sublist">
+																	<div class="error-box"id="gc-donoation-info" style="display:none;">
+																		<p>Gift Cards cannot be redeemed for Donations or other Gift Cards. We've applied the maximum Gift Card amount to the applicable items in your order.</p>
+																	</div>
+																	<div class="error-box" id="gc-payment-error" style="display:none;">
+																		
+														  			</div>
+																
+																	<!--#include virtual="/petco/order/gift-card-payment.shtml" -->
+																	<div dojoType="wc.widget.RefreshArea" id="petcoGiftCardDisplayArea" widgetId="petcoGiftCardDisplayArea" controllerId="PetcoGiftCardDisplayAreaController" ariaMessage="Shipping Address Updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="giftCardDisplayArea_ACCE_Label">
+																	
+<div class="error-box"  id="gc-duplicate-error" style="display:none;">
+	
+</div>
+
+<div class="margin-rev-up-sm">
+	
+	<input type="hidden" id="gcShownAmount" value="0"/>
+	<input type="hidden" id="gc_count" value="1"/>
+</div>
+
+
+<form name="PaymentForm2" id="PaymentForm2" method="post" action="" onsubmit="javascript: return false;">
+
+
+<input type="hidden" value="" id="quickCheckoutProfileForPayment_1" name="quickCheckoutProfileForPayment"/>
+<input type="hidden" value="" id="selectedAddressId_" name="selectedAddressId_" />
+<input type="hidden" name="authToken" value="180455720%2CRALEOVm3DdxNlPxuFzKhtF4uGpg%3D" id="WC_CheckoutPaymentsAndBillingAddressf_input_authToken_1/>"/>
+<input type="hidden" name="piId" value="" id="WC_CheckoutPaymentsAndBillingAddressf_piId_1"/>
+<input type="hidden" name="paymentDataEditable" value="" id="WC_CheckoutPaymentsAndBillingAddressf_paymentDataEditable_1"/>
+<input type="hidden" name="orderId" value="52311331" id="WC_CheckoutPaymentsAndBillingAddressf_orderId_1"/>
+
+<input type="hidden" name="piId" value="" id="WC_CheckoutPaymentsAndBillingAddressf_piId_1"/>
+<input type="hidden" name="paymentDataEditable" value="" id="WC_CheckoutPaymentsAndBillingAddressf_paymentDataEditable_1"/>
+<input type="hidden" name="orderId" value="52311331" id="WC_CheckoutPaymentsAndBillingAddressf_orderId_1"/>
+<input type="hidden" name="storeId" value="10151" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_1_1"/>
+<input type="hidden" name="catalogId" value="10051" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_2_1"/>
+<input type="hidden" name="langId" value="-1" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_3_1"/>
+<input type="hidden" name="existingPiId" value="" id="WC_CheckoutPaymentsAndBillingAddressf_inputs_4_1"/>
+<input type="hidden" name="payMethodId" id="payMethodId_1" value="PetcoGiftCard"/>
+<input type="hidden" id="mandatoryFields_2" name="mandatoryFields"  value="account,gcPin"/>
+<input type="hidden" name="billing_address_id" id="gc_billing_address_id" value=""/>
+<input type="hidden" name="billto_firstname" id="gc_billto_firstname" value=""/>
+	<input type="hidden" name="billto_lastname" id="gc_billto_lastname" value=""/>
+	<input type="hidden" name="billto_address1" id="gc_billto_address1" value=" "/>
+	<input type="hidden" name="billto_stateprovince" id="gc_billto_stateprovince" value=""/>
+	<input type="hidden" name="billto_city" id="gc_billto_city" value=""/>
+	<input type="hidden" name="billto_zipcode" id="gc_billto_zipcode" value=""/>
+	<input type="hidden" name="billto_country" id="gc_billto_country" value=""/>
+	
+<div class="sublist-row sublist-headers">	
+	<div class="desktop-only">
+        <div class="col-4">
+          <label>Gift Card Number</label>
+        </div>
+        <div class="col-4">
+          <label for="tb_giftcardpin">PIN Number</label>
+        </div>
+      </div>
+      <div class="mobile-only">
+        <div class="col-12">
+          <label for="tb_giftcardnumber">Gift Card Number</label>
+        </div>
+      </div>
+    </div>
+	<div class="margin-rev-up-lg">
+       <div class="sublist-form">
+         <div class="col-4">
+			<input type="text" class="" manual_cm_sp="PaymentInfo-_-GiftCardNumber" id="payment-enter-gift-card" onblur="cmManuallyTriggerEventTrack(this);" placeholder="Card Number" value="" name="account">
+         </div>
+
+         <div class="col-2 col-8-sm">
+           <label for="pin" class="mobile-only">PIN Number</label>
+		<input type="text" class="" manual_cm_sp="PaymentInfo-_-Pin" id="payment-enter-gift-card-pin" onblur="cmManuallyTriggerEventTrack(this);" placeholder="Pin" value="" name="gcPin">
+         </div>
+         
+         <div class="col-2 col-4-sm">
+           <label class="mobile-only">&nbsp;</label>
+           <button type="button" manual_cm_sp="PaymentInfo-_-ApplyGiftCard-_-Button" class="btn-primary btn-full margin-top_lg" onclick="JavaScript:cmManuallyTriggerEventTrack(this);CheckoutPayments.retrieveGCBalance();">Apply</button>
+         </div>
+       </div>
+     </div>
+
+	<input aria-required="true" type="hidden" name="piAmount_display" value="" id="piAmount_2_display" onchange="JavaScript:TealeafWCJS.processDOMEvent(event);CheckoutPayments.validateAmount('PaymentForm','2');CheckoutPayments.updatePaymentObject(2, 'piAmount');"/>
+	<input type="hidden" name="piAmount" value="" id="piAmount_2" onchange="CheckoutPayments.formatAmountDisplayForLocale('2')" />
+	<input type="hidden" name="gcAvailableBalance" id="gcAvailableBalance" value=""/>
+	<input type="hidden" name="gcAppliedAmount" id="gcAppliedAmount" value=""/>		
+</form>
+
+	
+																	</div>
+																
+																
+													
+															</li>
+															</ul>
+														</li>
+													
+												
+												<li class="row divbox" aria-label="Make A Donation Section">
+													<span tabindex="0" aria-controls="donationDisplayArea" role="button" id="donation-toggler" class="click-row" onkeypress="if(event.which == 13 || event.keyCode == 13) {toggle(this,null,true)}" data-manual_cm_sp="Checkout-_-PaymentInformation-_-MakeDonationToday" onclick="toggle(this, null, true)">
+											            <div role="header" class="col-11-sm link-pointer">
+											              <strong>Make a donation today
+											              </strong>
+											            </div>
+											            <div class="col-1-sm">
+											              <i class="icon-plus" tabindex="-1"></i>
+											              <i class="icon-minus" tabindex="-1"></i>
+											            </div>
+										            </span>
+										            	<ul class="form-field-listing" id="donationDisplayArea" aria-labelledby="donation-toggler">
+														
+															<div dojoType="wc.widget.RefreshArea" id="petcoDonationItemDisplayArea" widgetId="petcoDonationItemDisplayArea" controllerId="PetcoDonationItemsDisplayAreaController" ariaMessage="Shipping Address Updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="donationDisplayArea_ACCE_Label">
+															 
+															<!-- BEGIN PetcoDonation.jsp -->
+<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/ServicesDeclaration.js"></script>
+
+<input type="hidden" name="omnitureEnabled" id="omnitureEnabled" value="true" />
+
+<div id="entitledItem_90103" style="display:none;">
+				[
+				
+			
+								{
+								"catentry_id" : "203004",
+								"catentry_name" : "$200 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203004":"28"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "203005",
+								"catentry_name" : "$150 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203005":"20"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "203007",
+								"catentry_name" : "$75 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203007":"14"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "203008",
+								"catentry_name" : "$10 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203008":"5"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "203009",
+								"catentry_name" : "$35 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203009":"13"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "203010",
+								"catentry_name" : "$100 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203010":"21"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "203011",
+								"catentry_name" : "$1000 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203011":"21"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "203012",
+								"catentry_name" : "$25 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_203012":"21"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "1727510",
+								"catentry_name" : "$20 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_1727510":"7"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "1781526",
+								"catentry_name" : "$5 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_1781526":"25"
+											
+									},	
+								},
+			
+								{
+								"catentry_id" : "1781527",
+								"catentry_name" : "$2 Petco Foundation Donation",					
+								"Attributes" :	{
+									
+											"Amount_1781527":"31"
+											
+									},	
+								}
+			]
+		</div>
+
+
+				<input type="hidden" value='91229' name='catEntryId_1' id='catEntryId_1'/>
+				<input type="hidden" value='1.0' name='Quantity_1' id='Quantity_1'/>
+				
+					<!-- BEGIN PetcoDonation_UI.jsp -->
+<script type="text/javascript">
+	dojo.addOnLoad(function() {
+		shoppingActionsJS.setSelectedAttribute("Amount","1781527", "entitledItem_90103");
+		shoppingActionsJS.changeDescription("entitledItem_90103","1781527");
+	});
+</script>
+<input type="hidden" value="Amount" id="donation_attr_name"/>
+<input type="hidden" value="1781527" id="donation_first_attr_value"/>
+<input type="hidden" value="90103" id="donation_catentry_id"/>
+<!-- Donation Banner -->
+            <li class="row form-field-sublist" >
+		  	<!-- BEGIN ContentRecommendation.jsp --><!-- PETCO ESPOT NAME: ShopCart_DonationLeft --><!-- BEGIN ContentRecommendation_UI.jspf --><!-- BEGIN Content_UI.jspf -->
+					
+
+    
+
+<div class="margin-sm" style="background-color:#f49125;background-size:cover;">
+	<div class="row">
+		<div class="col-4 desktop-only margin-top-none margin-bottom-none"><img src="//s7d1.scene7.com/is/image/PETCO/foundation-donation-010418-img-dog-130w-117h-d?$transparent_unsized$" class="center-block valign-bot" alt=" "></div>
+		
+		<div class="col-8 margin-top-none margin-bottom-none">
+			<div class="margin-top-md margin-bottom-sm"><h2 class="text-white text-center" style="font-size:1.25em;line-height:1.25em;">Be the difference between homeless and home. Donate Now.</h2></div>
+			<div><img src="//s7d1.scene7.com/is/image/PETCO/foundation-donation-010418-logo-112w-38h-d?$transparent_unsized$" class="center-block" alt="petco foundation logo"></div>
+		</div>
+		
+		<div class="col-12-sm mobile-only margin-bottom-none"><img src="//s7d1.scene7.com/is/image/PETCO/foundation-donation-010418-img-dog-130w-132h-m?$transparent_unsized$" class="center-block" alt=" "></div>
+	</div>
+</div>
+        
+
+<div class="hidden_title_aem" id="shop-cart-donation-left" style="display:none;">Shop Cart Donation Left</div>
+
+				<!-- END Content_UI.jspf --><!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp -->
+			</li>
+		
+
+		<li class="row form-field-sublist" >
+        <label for="attrValue_1"class="margin-left-lg">Donation Amount</label>
+		<div class="sublist-form">
+            <div class="col-7-sm">
+              <div class="select-style">
+				
+					<select aria-label="Amount" manual_cm_sp="PaymentInfo-_-DonationAmount" name="attrValue" id="attrValue_1" onChange='JavaScript:cmManuallyTriggerEventTrack(this,this.value);shoppingActionsJS.setSelectedAttribute("Amount",this.value, "entitledItem_90103");'>
+												
+						<option value='1781527' >
+							$2 Petco Foundation Donation
+						</option>
+												
+						<option value='1781526' >
+							$5 Petco Foundation Donation
+						</option>
+												
+						<option value='203008' >
+							$10 Petco Foundation Donation
+						</option>
+												
+						<option value='1727510' >
+							$20 Petco Foundation Donation
+						</option>
+												
+						<option value='203012' >
+							$25 Petco Foundation Donation
+						</option>
+												
+						<option value='203009' >
+							$35 Petco Foundation Donation
+						</option>
+												
+						<option value='203007' >
+							$75 Petco Foundation Donation
+						</option>
+												
+						<option value='203010' >
+							$100 Petco Foundation Donation
+						</option>
+												
+						<option value='203005' >
+							$150 Petco Foundation Donation
+						</option>
+												
+						<option value='203004' >
+							$200 Petco Foundation Donation
+						</option>
+												
+						<option value='203011' >
+							$1000 Petco Foundation Donation
+						</option>
+						
+					</select>
+				
+				</div>
+			</div>		
+          
+			
+				<div class="col-5-sm">	
+					<button type="button" manual_cm_sp="PaymentInfo-_-ApplyFoundationDonation" class="btn-primary btn-full" onclick='JavaScript:cmManuallyTriggerEventTrack(this);shoppingActionsJS.Add2ShopCartAjax("entitledItem_90103",1,false,{catalogEntryType: "donation"});' class="btn btn-default">Apply</button>
+				</div>
+				
+		</div>
+		</li>
+                 
+	
+	<!-- END PetcoDonation_UI.jsp --><!-- END PetcoDonation.jsp -->
+															</div>
+														
+														</ul>
+												</li>
+												
+												</ul>
+											</div>
+											</li>
+</ul>
+</li>
+</ul>
+										</fieldset>		
+												
+									
+									
+									<div class="error-box" id="payment-error" style="display:none;">		
+									</div>
+											
+												<div dojoType="wc.widget.RefreshArea" id="petcoRepeatDeliveryItemDisplayArea" widgetId="petcoRepeatDeliveryItemDisplayArea" controllerId="PetcoRepeatDeliveryItemsDisplayAreaController" ariaMessage="Shipping Address Updated" ariaLiveId="ariaMessage" role="region" aria-labelledby="petcoRepeatedDeliveryItemDisplayArea_ACCE_Label">
+												
+												</div>
+										
+						<input type="hidden" value="true" id="isUniqueEmail_forChekingRdOrder"/>
+							<input type="hidden" value="false" id="isLoginPopUpForceFullyClosed"/>
+							<div style="display:none" id="invokeLoginModelJsId">CheckoutHelperJS.showModal('checkoutLoginModal');</div>
+							
+							
+						
+						<fieldset id="create-account-section" class="disabled-section ">	
+						    <!-- Modified to enable toggle ISAM feature  -->
+
+<ul>
+<li id="create-account-details" class="row divbox divbox-no-border cursor-not-allowed">
+<span id="create-account" class="click-row link-pointer cursor-not-allowed" onclick="toggle(this,'disabled-section')">
+	
+			<div class="col-11-sm margin-left-none">
+	         <h2>Create an Account&nbsp;<span class="small">(optional)</span></h2>
+	       </div>
+		
+
+	
+       <div class="col-1-sm">
+         <i class="icon-plus"></i>
+         <i class="icon-minus"></i>
+       </div>
+   	</span>
+<ul class="form-field-listing">
+	<li class="row form-field-sublist">
+<div class="container no-margin">
+
+		<div class="row">
+		    <div class="col-12">
+		      <p class="text-light margin-bottom-lg"> 
+		      	<span class="guestPasswordSection" 
+		      	>Add a password or
+		      	</span>
+		      	<a href="javascript:void(0)" manual_cm_sp="Checkout-_-CreateAccount-_-LoginLink" onclick="cmManuallyTriggerEventTrack(this);CheckoutHelperJS.showModal('checkoutLoginModal')">Login</a> 
+		      	to collect Pals Rewards. By clicking "Place Order" you agree to our <a href="/content/petco/PetcoStore/en_US/pet-services/terms-of-use.html">Terms of Use</a> and <a href="/privacy-policy">Privacy Policy</a>, including receipt of promotional offers and emails.
+		      </p>
+		    </div>
+		  </div>
+	
+</div>
+<input type="hidden" id="callmadetoCheckUniq" value="false"/>
+<span id="jsToloadifThevalidateemailIsNotfired" style="display:none"></span>
+<div class="container no-margin guestPasswordSection" >
+	<div id="passwordFields" class="row">
+	<div class="row">
+        <div class="col-6">
+        	
+					<input type="hidden" name="guestEmail" value="a@com.com" />
+					
+          <label class="valid" for="login-email">Email</label>
+	      <input class="valid" type="text" id="login-email" value="a@com.com" onblur="CheckoutHelperJS.validateUniqueEmail('52311331');">
+        </div>    
+	</div>
+  	  <div id="emailError"></div>	    	
+      <div class="row">
+        <div class="col-6">
+          <label for="createPassword">Password</label>
+		  <input type="password" id="createPassword" name="createPassword" value="">
+		   <div id = "reviewPageSpanPassword" class="collapsible"></div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-6">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" value="" onkeyup="CheckoutHelperJS.disablePlaceOrderButton();" onblur="CheckoutHelperJS.disablePlaceOrderButton();return false;">
+          <div id = "reviewPageSpanConfPassword" class="collapsible"></div>
+        </div>
+      </div>
+      </div>
+	<div class="collapsible" id="userAccountError"></div>
+		
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<fieldset class="petco-modal" id="modal-checkoutLoginModal">
+	<div class="CLOSE-X">
+	<!-- Removing  petcoCommonJS.closePopupFromLogonModelPopup(); -->
+	  <a href="#" onclick="CheckoutHelperJS.hideModal('modal-checkoutLoginModal');">
+	    <img src="/wcsstore/PetcoStore/img/close_icon.png" alt="" />
+	    <span class="hide-text">Close Button</span>
+	  </a>
+	</div>
+	<div class="form-modal-form form-modal-padding-deep" id="checkoutLoginModal">
+	
+<script type="text/javascript">				  
+	pullTealiumPageVariables();		  
+</script>
+
+	<script type="text/javascript">
+	
+	
+			dojo.addOnLoad(function() {
+			 var omnitureEnabled = '';
+		  	 if(null != $('#omnitureEnabled') && undefined != $('#omnitureEnabled')) {    
+              	omnitureEnabled = $('#omnitureEnabled').val();
+          	 }
+				if(omnitureEnabled != 'true'){
+				try{
+				utag_data["page_name"] ='Review Order';
+				utag_data["page_type"] = "checkout";
+				}
+				catch (err) {
+					console.log(err);
+					}
+				}
+				
+				MessageHelper.setMessage("REGISTRATION_ERR_PASSWORD_INAVLID_FORMAT", "Password must contain 6-20 characters and include at least 1 number and 1 letter.");
+
+				
+				MessageHelper.setMessage("REGISTRATION_ERR_PASSWORDS_NOT_MATCH", "Passwords do not match.");
+
+				
+				MessageHelper.setMessage("REGISTRATION_ERR_REQUIRED_FIELD", "This field is required.");
+				
+				MessageHelper.setMessage("SHOPPINGCART_SIGNIN_ERR_LOGONID_EMPTY", "This field is required."); 
+				MessageHelper.setMessage("SHOPPINGCART_SIGNIN_ERR_PASSWORD_EMPTY", "This field is required.");
+				MessageHelper.setMessage("SHOPPINGCART_SIGNIN_SESSION_EXPIRED", "Your petco.com session has timed out. Please sign in again to return to your last viewed page.");
+				MessageHelper.setMessage("SHOPPINGCART_SIGNIN_ERR_INVALIDEMAILFORMAT", "Please enter a valid Email Address using the format: email@domain.com ");
+				MessageHelper.setMessage("SHOPPINGCART_SIGNIN_ERR_FIELDS_EMPTY", "Please enter your email address and password to log into your petco.com account  or use the Create a New Account pane to start enjoying Petco's online offers.");
+				
+				CheckoutHelperJS.setCommonParameters('-1','10151','10051');
+				ShipmodeSelectionExtJS.setCommonParameters('-1','10151','10051');
+				ShipmodeSelectionExtJS.setStoreLocatorEnabled(true);
+			
+			var errMsg = '';
+var errCode = '';
+var WC_AccountDisplay_ERROR_POPUP_div = dojo.byId('WC_AccountDisplayPopUp_ERROR');
+//PDWEB-771: Change of Text error message when sign in is not successful Start
+var logonId_div = dojo.byId('cart-sign-in-emailAddress');
+var logonPassword_div = dojo.byId('cart-sign-in-userPassword');
+
+if(errCode.length > 0){
+	if(errCode == '.2010'){
+		var logonIdErrorMSgPopUp_div = dojo.byId('loginErrorinPopUp');
+		logonIdErrorMSgPopUp_div.className= "collapsible open";
+		logonIdErrorMSgPopUp_div.innerHTML = '<p class="error-box margin-top-lg">'+ errMsg + '</p>';
+	}else if(errCode == '.2030'){						
+		var logonIdErrorMSgPopUp_div = dojo.byId('loginErrorinPopUp');
+		logonIdErrorMSgPopUp_div.className= "collapsible open";
+		logonIdErrorMSgPopUp_div.innerHTML = '<p class="error-box margin-top-lg">'+ errMsg + '</p>';
+//PDWEB-771: Change of Text error message when sign in is not successful End	
+	}else{
+		WC_AccountDisplay_ERROR_POPUP_div.className = "collapsible open";
+		WC_AccountDisplay_ERROR_POPUP_div.innerHTML= '<p class="error-box margin-top-lg">' + errMsg + '</p>';
+	}
+	CheckoutHelperJS.showModal('checkoutLoginModal');
+}
+			});
+
+
+	$(function(){
+		CheckoutHelperJS.validateAccountFields();
+	});
+	function setRememberMeStatusSPCSignIn(){    
+  		var isRemembered = document.forms["AjaxLogonFromModel"].rememberMe;
+  		if(null!==isRemembered){
+   			if(isRemembered.checked){
+    			dojo.cookie("rememberMe","true", {expires: 4});
+   			}else{
+    			removeCookie("rememberMe");
+   			}
+  		}
+ 	}
+	</script>
+	
+<form role="form" class="row checkout-login" method="post" name="AjaxLogonFromModel" id="AjaxLogonFromModel" action="Logon" >
+								<input type="hidden" name="storeId" value="10151" id="WC_RememberMeLogonForm_FormInput_storeId_In_AjaxLogon_1"/>
+								<input type="hidden" name="catalogId" value="10051" id="WC_RememberMeLogonForm_FormInput_catalogId_In_AjaxLogon_1"/>
+								<input type="hidden" name="reLogonURL" value="PetcoSyncShipmethodCmd?orderId=52311331&storeId=10151&langId=-1&catalogId=10051&isUniqueEmail=true" id="WC_RememberMeLogonForm_FormInput_reLogonURL_In_AjaxLogon_1"/>
+								<input type="hidden" name="errorViewName" value="SingleShipmentOrderSummaryView" id="WC_RememberMeLogonForm_FormInput_errorViewName_In_AjaxLogon_1"/>	
+								<input type="hidden" name="myAccountActivePage" value="myAccount" id="WC_AccountDisplay_FormInput_ActivePage_In_AjaxLogon_1"/>
+								<input type="hidden" name="URL" value="https://www.petco.com/shop/PetcoOrderItemAddressUpdateCmd?guestChkout=1&amp;isUniqueEmail=true&amp;shipmentType=single&amp;catalogId=10051&amp;errorViewName=AjaxOrderItemDisplayView&amp;orderId=.&amp;langId=-1&amp;storeId=10151" id="WC_AccountDisplay_FormInput_URL_In_Logon_1" />
+								<input type="hidden" name="orderId" value="52311331" />
+								
+										<input type="hidden" name="guestEmail" value="a@com.com" />
+									
+								<input type="hidden" name="loginCount" value="0" />
+									<div class="collapsible" id="WC_AccountDisplayPopUp_ERROR"></div>
+									<div class="collapsible" id="loginErrorinPopUp"></div>	
+									
+									<h4 class="modal-title" >Account Required For Repeat Delivery Orders </h4>
+									<br/>
+									<p>Please login or add a password to create an account for managing your subscription.</p>
+									<br/>
+									<label for="cart-sign-in-emailAddress">Email</label>
+									
+											<input type="email" id="cart-sign-in-emailAddress" name="logonId" value="a@com.com">
+										
+									<div id="logonId_error"></div>
+									
+									
+									<label for="password" class="margin-top-sm">Password</label>
+							    	<input type="password" id="cart-sign-in-userPassword" name="logonPassword">
+									<div id="logonPwd_error"></div>
+				
+									
+										<label class="margin-top-sm" for="WC_AccountDisplay_FormInput_rememberMe_In_Logon_2">
+											<input type="checkbox" name="rememberMe" value="true" id="WC_AccountDisplay_FormInput_rememberMe_In_Logon_2"/>Remember Me
+										</label>
+									<!-- Captcha -->
+					
+					  				<button type="submit" class="btn btn-primary btn-full margin-top-lg" id="guestShopperLogon" onclick="javaScript:setRememberMeStatusSPCSignIn();javascript:TealeafWCJS.processDOMEvent(event);if(CheckoutHelperJS.canCheckoutContinue()){ShipmodeSelectionExtJS.guestShopperLogon('javascript:LogonForm.SubmitAjaxLogin(document.AjaxLogonFromModel)', '', '', 'http://www.petco.com/shop/CheckoutStoreSelectionView?catalogId=10051&amp;fromPage=ShoppingCart&amp;langId=-1&amp;storeId=10151');}return false;">Sign In</button>
+									<a class="btn btn-secondary btn-full margin-top-sm" href="https://www.petco.com/shop/ResetPasswordGuestErrorView?state=forgetpassword&amp;catalogId=10051&amp;langId=-1&amp;storeId=10151">Forgot your password?</a>
+							
+							</form>
+							
+	</div>
+</fieldset> 							
+						</fieldset>
+					
+					</span>
+					
+							<div class="container desktop-only" id="WC_SingleShipmentSummary_div_31_1">
+									<div class="row">						
+										<div class="col-6 col-center">
+											
+													<button role="button" class="btn-primary btn-full btn-large" id="singleOrderSummary" manual_cm_sp="Checkout-_-PlaceOrder-_-Bottom_Button" tabindex="0" onclick="javascript:cmManuallyTriggerEventTrack(this);CheckoutHelperJS.checkoutOrder('52311331','G','')">
+														Place Order										
+													</button>
+													
+									</div>
+								</div>
+							</div> 			
+			
+			
+							<input type="hidden" name="tel_product_discount" id="tel_product_discount" value="-55.5" />
+							<input type="hidden" name="tel_product_id" id="tel_product_id" value="122336" />
+							<input type="hidden" name="tel_product_name" id="tel_product_name" value="" />
+							<input type="hidden" name="tel_product_sku" id="tel_product_sku" value="" />
+							<input type="hidden" name="tel_product_brand" id="tel_product_brand" value="" />
+							<input type="hidden" name="tel_product_list_price" id="tel_product_list_price" value="" />
+							<input type="hidden" name="tel_product_unit_price" id="tel_product_unit_price" value="" />
+							<input type="hidden" name="tel_product_quantity" id="tel_product_quantity" value="" />
+							<!-- Start: Tealium conversion Tagging Change-->
+							<input type="hidden" name="tel_rd_sku" id="tel_rd_sku" value="" />
+							<input type="hidden" name="tel_rd_schedule" id="tel_rd_schedule" value="" />
+							<input type="hidden" name="tel_product_price_calc" id="tel_product_price_calc" value="" />
+							<input type="hidden" name="tel_rd_price" id="tel_rd_price" value="" />
+							<!-- End: Tealium conversion Tagging Change-->
+
+							<script type="text/javascript">
+							dojo.addOnLoad(function() {
+							try{ 
+									/*if(document.getElementById("tel_product_id")!= 'undefined' && document.getElementById("tel_product_id") != null){
+										var t_pid = document.getElementById('tel_product_id').value;
+										t_pid = t_pid.split("|");
+										utag_data["product_id"] = t_pid;
+									}
+									if(document.getElementById("tel_product_name")!= 'undefined' && document.getElementById("tel_product_name") != null){
+										var t_pname = document.getElementById('tel_product_name').value;
+										t_pname = t_pname.split("|");
+										utag_data["product_name"] = t_pname;
+									}
+									if(document.getElementById("tel_product_sku")!= 'undefined' && document.getElementById("tel_product_sku") != null){
+										var t_psku = document.getElementById('tel_product_sku').value;
+										t_psku = t_psku.split("|");
+										utag_data["product_sku"] = t_psku;
+									}
+									if(document.getElementById("tel_product_brand")!= 'undefined' && document.getElementById("tel_product_brand") != null){
+										var t_pbrand = document.getElementById('tel_product_brand').value;
+										t_pbrand = t_pbrand.split("|");
+										utag_data["product_brand"] = t_pbrand;
+									}
+									if(document.getElementById("tel_product_list_price")!= 'undefined' && document.getElementById("tel_product_list_price") != null){
+										var t_plp = document.getElementById('tel_product_list_price').value;
+										t_plp = t_plp.split("|");
+										utag_data["product_list_price"] = t_plp;
+										utag_data["product_original_price"] = t_plp;
+									}
+									if(document.getElementById("tel_product_unit_price")!= 'undefined' && document.getElementById("tel_product_unit_price") != null){
+										var t_pup = document.getElementById('tel_product_unit_price').value;
+										t_pup = t_pup.split("|");
+										utag_data["product_unit_price"] = t_pup;
+										utag_data["product_price"] = t_pup;
+									}
+									if(document.getElementById("tel_product_quantity")!= 'undefined' && document.getElementById("tel_product_quantity") != null){
+										var t_pqty = document.getElementById('tel_product_quantity').value;
+										t_pqty = t_pqty.split("|");
+										utag_data["product_quantity"] = t_pqty;
+									}
+									if(document.getElementById("tel_product_discount")!= 'undefined' && document.getElementById("tel_product_discount") != null){
+										var t_pd = document.getElementById('tel_product_discount').value;
+										t_pd = t_pd.split("|");
+										utag_data["product_discount"] = t_pd;
+									}*/
+									parseWidget("WC_ShipmentDisplay_div_17");
+									}
+									catch (err) {
+										console.log(err);
+									}
+									
+								});
+							</script>
+								 					
+							</div>
+						<div class="col-4 checkout-persistent" id="checkout-order-summary-div">
+						
+						<div id="checkout-placeOrder" class="margin-top-lg desktop-only">	
+							
+										<button role="button" manual_cm_sp="Checkout-_-PlaceOrder-_-Top_Button" class="btn-primary btn-full btn-large desktop-only" id="singleOrderSummary2"  tabindex="0" onclick="javascript:cmManuallyTriggerEventTrack(this);CheckoutHelperJS.checkoutOrder('52311331','G','')">
+											Place Order										
+										</button>
+										
+								</div>
+								<div dojoType="wc.widget.RefreshArea" widgetId="petcoOrderSummaryDisplayArea" id="petcoOrderSummaryDisplayArea" controllerId="PetcoOrderSummaryAreaController" 
+									role="wairole:region" waistate:live="polite" waistate:atomic="false" waistate:relevant="all">
+									<!-- BEGIN SingleShipmentOrderTotalsSummary.jsp -->
+
+<div class="order-summary">
+	<h2>Order Summary</h2>
+	<ul>		
+
+		
+					<li>
+					<span id="WC_SingleShipmentOrderTotalsSummary_td_1">Subtotal:</span>
+					<span id="WC_SingleShipmentOrderTotalsSummary_td_2">
+						$129.49
+						<input id="WC_SingleShipmentOrderTotalsSummary_td_2_tel" type="hidden" value='129.49'/>
+					</span>
+					
+				</li>
+			<!-- totalOrderLevelDiscount_tel is used for tealium --><!--PDWEB-292 Promotion Value in Order Summary to not be shown if the value is 0-->
+			<li>
+				<span id="WC_SingleShipmentOrderTotalsSummary_td_7">
+					Shipping:
+				</span>
+				
+						<span id="WC_SingleShipmentOrderTotalsSummary_td_8">$0.00
+							<input type="hidden" id="WC_SingleShipmentOrderTotalsSummary_td_8_tel" value='0.00'/>
+						</span>
+					
+			</li>
+			
+					<li>
+						<span  id="WC_SingleShipmentOrderTotalsSummary_td_5">
+							Taxes:
+						</span>
+						
+						
+							<span  id="WC_SingleShipmentOrderTotalsSummary_td_6">
+								$0.00
+								<input type="hidden" id="WC_SingleShipmentOrderTotalsSummary_td_6_tel" value='0.00'/>
+							</span>
+						
+					</li>	
+		  	
+		<li class="text-bold">
+			
+					<span id="WC_SingleShipmentOrderTotalsSummary_td_9">Total:</span>
+				
+					<span id="WC_SingleShipmentOrderTotalsSummary_td_10">
+						$129.49
+						<input type="hidden" id="total_td10" value='129.49' />
+					</span>
+				
+		</li>
+	
+
+
+
+	
+
+
+	<div style="display:none;" class="modal-form" id="estimatedTaxes" tabindex="-1" role="dialog" aria-labelledby="estimatedTaxesLabel" aria-hidden="true">
+		
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="estimatedTaxesLabel">Estimated Tax Information</h4>
+				</div>
+				<div class="modal-body">
+
+				<!-- BEGIN ContentRecommendation.jsp --><!-- PETCO ESPOT NAME: ESTIMATED_TAX_INFO --><!-- BEGIN ContentRecommendation_UI.jspf --><!-- BEGIN Content_UI.jspf -->
+					
+
+    
+
+<p>By law, we must collect applicable sales tax for orders shipping to states where we have retail stores. Shipping fees may also be subject to tax in certain states. The sales tax for an order will be displayed in the Order Summary once the shipping address has been entered.</p>
+<p>Sales tax does not apply to purchases of Donations, Gift Cards, or eGift Cards.</p>
+        
+
+<div class="hidden_title_aem" id="estimated-tax-info" style="display:none;">Estimated Tax Info</div>
+
+				<!-- END Content_UI.jspf --><!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp -->
+					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</ul>
+
+
+</div>
+
+<input type="hidden" name="OrderTotalAmount" value="129.49" id="OrderTotalAmount" />
+<!-- BEGIN CouponWalletTable.jsp --><!-- END CouponWalletTable.jsp -->
+	<script type="text/javascript">
+		dojo.addOnLoad(function() {
+		 try{
+		 	var omnitureEnabled = '';
+			if(null != $('#omnitureEnabled') && undefined != $('#omnitureEnabled')) {    
+               	omnitureEnabled = $('#omnitureEnabled').val();
+           	}
+			if(omnitureEnabled != 'true'){
+			utag_data["cart_id"] = "52311331";
+			utag_data["cart_total_items"] = "1";
+			utag_data["days_cartopen"] = "";
+			utag_data["cart_open"] = "2018-04-12T07:08:37.810Z";
+			//Start: Tealium Tagging Audit Change: added Shop Action tag variables
+			if(document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_2_tel") != null && document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_2_tel") != 'undefined')
+					utag_data["cart_total_value"] = document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_2_tel").value;
+			if(document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_2")!= undefined || document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_2") != null){
+				var sub_total_update_tel = document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_2_tel").value;
+				utag_data["order_subtotal"] = sub_total_update_tel;
+				utag_data["order_merchandise_total"] = sub_total_update_tel;
+			  }
+			  if(document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_6")!= undefined || document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_6") != null){
+				var order_tax_amount_update_tel = document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_6_tel").value;
+				utag_data["order_tax_amount"] = order_tax_amount_update_tel;
+			  }
+			  if(document.getElementById("total_td13")!= undefined || document.getElementById("total_td13") != null){
+				var order_total_update_tel13 = document.getElementById("total_td13").value;
+				utag_data["order_total"] = order_total_update_tel13;
+				utag_data["cart_total_value"] = order_total_update_tel13;
+				utag_data["order_grand_total"] = order_total_update_tel13;
+			  }
+			  if(document.getElementById("total_td10")!= undefined || document.getElementById("total_td10") != null){
+				var order_total_update_tel10 = document.getElementById("total_td10").value;
+				utag_data["order_total"] = order_total_update_tel10;
+				utag_data["cart_total_value"] = order_total_update_tel10;
+				utag_data["order_grand_total"] = order_total_update_tel10;
+			  }
+			  if(document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_4")!= undefined || document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_4") != null){
+				var order_discount_update_tel = document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_4_tel").value;
+				utag_data["order_discount"] = order_discount_update_tel;
+				utag_data["order_discount_amount"] = order_discount_update_tel;
+			  }
+			  if(document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_8")!= undefined || document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_8") != null){	
+				var order_shipping_amount_update_tel = document.getElementById("WC_SingleShipmentOrderTotalsSummary_td_8_tel").value;
+				utag_data["order_shipping_amount"] = order_shipping_amount_update_tel;
+			  }
+			}
+			//End:Tealium Tagging Audit Change: added Shop Action tag variables
+			//PDWEB-1512 :Shop Cart PromoCode Changes 
+			  if (document.getElementById("newBestPromoCodeApplied") != 'undefined' && document.getElementById("newBestPromoCodeApplied") != null) {
+    			if (document.getElementById("newBestPromoCodeApplied").value != "")
+        			$('#promo-display').collapse('show');
+			  }
+			}
+			catch (err) {
+				console.log(err);
+			}  
+			});
+			if (document.getElementById("newBestPromoCodeApplied") != null) {
+			    $('.collapse').on('hidden.bs.collapse', function() {
+			        $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+			    }).on('shown.bs.collapse', function() {
+			        $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+			    });
+			}
+	</script>
+<!-- END SingleShipmentOrderTotalsSummary.jsp -->
+								</div>
+								<script type="text/javascript">
+									dojo.addOnLoad(function() { 
+
+										parseWidget("petcoOrderSummaryDisplayArea"); 					
+										parseWidget("petcoPromotionDisplayArea");
+										parseWidget("petcoGiftCardDisplayArea");
+										parseWidget("petcoDonationItemDisplayArea");
+										parseWidget("petcoRepeatDeliveryItemDisplayArea");
+										
+									});
+								</script>
+								<div class="cart-summary" aria-label="Cart Summary">
+									<h2 tabindex="0" aria-controls="cart-summary-section" role="heading" id="cart-summary-heading">
+								      Cart Summary <span id="totalItems"></span>
+								      <div class="cart-expand-status">
+								      	<i class="icon-minus" onclick="cmManuallyTriggerEventTrack(this);" manual_cm_sp="Checkout-_-CartSummary-_-Expand" tabindex="-1"></i>
+								        <i class="icon-plus" onclick="cmManuallyTriggerEventTrack(this);" manual_cm_sp="Checkout-_-CartSummary-_-Collapse" tabindex="-1"></i>
+								      </div>
+								     </h2>  
+								    <div class="mini-cart-list box-closed" id="cart-summary-section" aria-labelledby="cart-summary-heading">
+										<div dojoType="wc.widget.RefreshArea" widgetId="petcoCheckoutCartSummaryDisplayArea" id="petcoCheckoutCartSummaryDisplayArea" controllerId="PetcoCheckoutCartSummaryController" role="wairole:region" waistate:live="polite" waistate:atomic="false" waistate:relevant="all">
+											<div id="petco-loading-image" class="text-center">
+												<img src="/wcsstore/PetcoSAS/images/miniloading.gif" border="0" alt="Your request is being processed."/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<script type="text/javascript">
+									dojo.addOnLoad(function() { 
+										//parseWidget("petcoCheckoutCartSummaryDisplayArea");
+										//PJRESP-3042-SPC - Convert cart summary section to Ajax call.
+										setTimeout(function(){ wc.render.updateContext("PetcoCheckoutCartSummary_Context", null, "");}, 500); 					
+									});
+								</script>
+								 <!-- BEGIN ContentRecommendation.jsp --><!-- PETCO ESPOT NAME: ShopCart_OrderSummary --><!-- BEGIN ContentRecommendation_UI.jspf --><!-- BEGIN Content_UI.jspf -->
+					
+
+    
+
+<div class="shopper-confidence col-flex-3">
+	<div class="row">
+		<div class="pull-left display-inline padding-right-lg"><img src="//s7d1.scene7.com/is/image/PETCO/shopper-confidence-082117-img-32w-42h-secure-icon-d?$transparent_unsized$" alt=""></div>
+		<div class="pull-left display-inline text-left">
+			<h4 style="margin-top: 0px;">Shopping with petco.com is<br>
+			<span class="text-approved"><strong>safe and secure!</strong></span></h4>
+		</div>
+	</div>
+	<div class="margin-left-sm">
+		<ul class="list-unstyled padding-top-sm" style="text-align:left;font-size:0.8em;">
+			<li><span class="icon-check-gray"></span>Over 50 years of serving pet parents</li>
+			<li><span class="icon-check-gray"></span>100% Money Back Guarantee</li>
+			<li><span class="icon-check-gray"></span>Easy returns by mail or at all Petco stores</li>
+			<li><span class="icon-check-gray"></span>Dedicated customer support</li>
+		</ul>		
+	</div>
+	<div class="text-center center-block">
+		<div class="padding-top-sm"><div id="GTS_CONTAINER"></div></div>
+		
+		<div class="padding-top-sm"><script src="https://cdn.ywxi.net/js/inline.js?w=90"></script></div>
+	</div>
+</div>
+        
+
+<div class="hidden_title_aem" id="shop-cart-order-summary" style="display:none;">Shopping Cart Order Summary</div>
+
+				<!-- END Content_UI.jspf --><!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp --> <!-- BEGIN CategoryRecommendation.jsp --><!-- END CategoryRecommendation.jsp --> <!-- BEGIN CatalogEntryRecommendation.jsp -->
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		shoppingActionsJS.setCommonParameters('-1','10151','10051','R','$');
+		shoppingActionsServicesDeclarationJS.setCommonParameters('-1','10151','10051');
+	});
+</script>
+
+<!-- END CatalogEntryRecommendation.jsp -->
+							</div>
+						</div>
+						<div id="place-order-persistent" class="place-order-persistent mobile-only">	
+							
+										<button role="button" class="btn-primary btn-full btn-large mobile-only" id="singleOrderSummary3" tabindex="0" onclick="javascript:CheckoutHelperJS.checkoutOrder('52311331','G','')">
+											Place Order										
+										</button>
+									
+								</div>
+					</div>
+				</div><!-- Footer Start --><footer class="minimal-footer copyright container no-margin">
+
+	 <!-- BEGIN ContentRecommendation.jsp --><!-- PETCO ESPOT NAME: Checkout_Footer --><!-- BEGIN ContentRecommendation_UI.jspf --><!-- BEGIN Content_UI.jspf -->
+					
+
+    
+
+<div class="row">
+		<div class="col-4">
+			<p>&copy;2018 Petco Animal Supplies, Inc. All rights reserved. Petco.com is a trademark of Petco Animal Supplies, Inc.</p>
+		</div>
+		<div class="col-8">
+		<a class="mobile-only" href="#" id="policy-collapse" manual_cm_sp="Footer-_-Policies-_-MobileSeeOurPolicies_Dropdown">See our policies</a>
+			<ul class="mobile-collapsible">
+						<li><a href="/content/petco/PetcoStore/en_US/pet-services/terms-of-use.html" manual_cm_sp="Footer-_-Policies-_-TermsofUse_Link_1">Terms of Use</a></li>
+						<li><a href="/content/petco/PetcoStore/en_US/pet-services/terms-of-use/privacy-policy.html" manual_cm_sp="Footer-_-Policies-_-PrivacyPolicy_Link_2">Privacy Policy</a></li>
+						<li><a href="/shop/Sitemap?catalogId=10051&langId=-1&storeId=10151" manual_cm_sp="Footer-_-Policies-_-SiteMap_Link_3">Site Map</a></li>
+			</ul>
+		
+		</div>
+	
+	</div>
+<script>
+if  (document.querySelectorAll("#policy-collapse").length > 0){
+	var collapsible = document.querySelectorAll("#policy-collapse")[0];	
+	
+	collapsible.onclick = function(e){
+		e.preventDefault()
+		
+		if (this.nextElementSibling.classList.contains("open")){
+			this.nextElementSibling.classList.remove("open");
+		} else {
+			this.nextElementSibling.classList.add("open");
+		}
+	}
+}
+</script>
+
+        
+
+<div class="hidden_title_aem" id="global-checkout-footer" style="display:none;">Global Checkout Footer</div>
+
+				<!-- END Content_UI.jspf --><!-- END ContentRecommendation_UI.jspf --><!-- END ContentRecommendation.jsp --> <!-- BEGIN CategoryRecommendation.jsp --><!-- END CategoryRecommendation.jsp --> <!-- BEGIN CatalogEntryRecommendation.jsp -->
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		shoppingActionsJS.setCommonParameters('-1','10151','10051','R','$');
+		shoppingActionsServicesDeclarationJS.setCommonParameters('-1','10151','10051');
+	});
+</script>
+
+<!-- END CatalogEntryRecommendation.jsp -->
+</footer>
+
+<input type="hidden" name="cookieDomain" id="cookieDomain" value=".petco.com" />
+<script>
+// Keeping this element outside the Omniture flag check to remove the reference error.
+            if(typeof(utag_data) == "undefined"){
+				var utag_data ={};
+			}
+</script>			
+
+
+
+<script type="text/javascript">
+
+require(['dojo/cookie'], function(cookie) {
+	//Reading the Tealium data from Cookie to allow full page caching in Akamai
+	var tel_user_info = cookie('ptealiumData'); 		
+	var firstName = cookie('pfirstname');	
+	var userType= cookie('WC_UserType');
+	var customerId = cookie("WC_UserId");
+	var flagNo = new Array();
+	flagNo.push("No");
+	var flagDiscount = new Array();
+	flagDiscount.push("0.00");
+	var tel_customer_status	="guest";
+	if(userType != 'G'){
+		if (document.getElementById("firstName") != null && firstName != undefined && firstName != 'undefined') {
+			document.getElementById("firstName").innerHTML = '&nbsp;'+ firstName;
+		}else {		
+			if(document.getElementById('hdr-welcome')!=null)
+				document.getElementById('hdr-welcome').style.display = 'none';
+		}
+	tel_customer_status ="logged in";
+	}	
+	if(firstName==null || firstName== undefined)
+		firstName ="";
+	var tel_customer_firstName = '';
+	var tel_customer_lastName = '';
+	var tel_customer_email = '';
+	var tel_customer_city = '';
+	var tel_customer_state = '';
+	var tel_customer_zip = '';
+	var tel_customer_country = '';
+	var tel_customer_pals_number = '';
+	var tel_customer_username = '';
+	var str = ''; 	
+	function  readTealiumCookie(tel_user_info) {	  		  	
+		  	str = tel_user_info;	
+		  	if (str != null && str != '') {	  	
+				var res = str.split("|"); 			
+				for(i = 0; i < res.length; i++){
+					if (i = 0)tel_customer_firstName =  res[i];
+					if (i = 1)tel_customer_lastName =  res[i];
+					if (i = 2)tel_customer_email =  res[i];
+					if (i = 3)tel_customer_city =  res[i];
+					if (i = 4)tel_customer_state =  res[i];
+					if (i = 5)tel_customer_zip =  res[i];
+					if (i = 6)tel_customer_country =  res[i];
+					if (i = 7)tel_customer_pals_number =  res[i];
+					if (i = 8)tel_customer_username =  res[i];
+				}
+			}
+	}
+	//call the function to parase the cookie value 
+	readTealiumCookie(tel_user_info);
+	try {
+	
+	var tel_product_id_array = new Array();
+	var tel_product_name_array = new Array();
+	var tel_product_sku_array = new Array();
+	var tel_product_brand_array = new Array();
+	var tel_product_category_array = new Array();
+	var tel_product_unit_price_array = new Array();
+	var tel_product_list_price_array = new Array();
+	var tel_rd_price_array = new Array();
+	var tel_product_quantity_array = new Array();
+	var tel_product_discount_array = new Array();
+	var tel_product_original_price_array = new Array();
+	var tel_product_price_array = new Array();
+	var tel_product_price_calc_array = new Array();
+	var tel_product_final_unit_price_array = new Array();
+	
+	
+		var product_id_t = "122336";
+		tel_product_id_array = product_id_t.split("|");
+		var product_name_t = "";
+		tel_product_name_array = product_name_t.split("|");
+		var product_sku_t = "";
+		tel_product_sku_array = product_sku_t.split("|");
+		var product_brand_t = "";
+		tel_product_brand_array = product_brand_t.split("|");
+		var product_category_t = "";
+		tel_product_category_array = product_category_t.split("|");
+		var product_unit_price_t = "";
+		tel_product_unit_price_array = product_unit_price_t.split("|");
+		var product_list_price_t = "";
+		tel_product_list_price_array = product_list_price_t.split("|");
+		var tel_rd_price_t = "";
+		tel_rd_price_array = tel_rd_price_t.split("|");
+		var product_quantity_t = "";
+		tel_product_quantity_array = product_quantity_t.split("|");
+		var product_discount_t = "-55.5";
+		tel_product_discount_array = product_discount_t.split("|");
+		var product_original_price_t = "";
+		tel_product_original_price_array = product_original_price_t.split("|");
+		var product_price_t = "";
+		tel_product_price_array = product_price_t.split("|");
+		var didyoumeansearch = "";
+		didyoumeansearch_array = didyoumeansearch.split("|");
+		var product_price_calc = "";
+		tel_product_price_calc_array = product_price_calc.split("|");
+		var product_final_unit_price = "";
+		tel_product_final_unit_price_array = product_final_unit_price.split("|");
+	} catch (consumeErr) {
+		console.log(consumeErr.message);
+	}	
+});
+	
+</script>	
+
+<script>
+var global_data_for_user_reg = {};
+var parentGroup_Telium = '{"WC_UserRegistrationUpdateForm_FormInput_firstName_In_Register_1|_|firstName":"customer_name","WC_UserRegistrationUpdateForm_FormInput_lastName_In_Register_1|_|lastName":"customer_name","WC_UserRegistrationUpdateForm_FormInput_logonId_In_Register_1|_|logonId":"customer_email","find-pals-member-num|_|palsRewardsNumber":"customer_pals_number","verify-pals-email|_|email2":"customer_email","new-address-addressLine1|_|address1":"customer_address1","new-address-addressLine2|_|address2":"customer_address2","new-address-city|_|city":"customer_city","new-address-zipCode|_|zipCode":"customer_zip","shipping-address-state|_|state":"customer_state","EMAILPREF_1|_|EMAILPREF_4":"customer_newsletter","EMAILPREF_2|_|EMAILPREF_1":"customer_newsletter","EMAILPREF_3|_|EMAILPREF_2":"customer_newsletter","EMAILPREF_4|_|EMAILPREF_3":"customer_newsletter","PETS_1|_|PETS_11":"customer_pettype","PETS_2|_|PETS_7":"customer_pettype","PETS_3|_|PETS_6":"customer_pettype","PETS_4|_|PETS_12":"customer_pettype","PETS_5|_|PETS_10":"customer_pettype","PETS_6|_|PETS_9":"customer_pettype","PETS_7|_|PETS_8":"customer_pettype","WC_UserRegistrationAddForm_FormInput_firstName_In_Register_1|_|firstName":"customer_name","WC_UserRegistrationAddForm_FormInput_lastName_In_Register_1|_|lastName":"customer_name","WC_UserRegistrationAddForm_FormInput_logonId_In_Register_1|_|logonId":"customer_email","WC_UserRegistrationAddForm_FormInput_Address1_In_Register_1|_|address1":"customer_address1","WC_UserRegistrationAddForm_FormInput_Address2_In_Register_1|_|address2":"customer_address2","WC_UserRegistrationAddForm_FormInput_City_In_Register_1|_|city":"customer_city","WC_UserRegistrationAddForm_FormInput_ZipCode_In_Register_1|_|zipCode":"customer_zip","WC_UserRegistrationAddForm_FormInput_Address2_In_Register_1|_|address2":"customer_address2","WC_UserRegistrationAddForm_FormInput_City_In_Register_1|_|city":"customer_city","WC_UserRegistrationAddForm_FormInput_ZipCode_In_Register_1|_|zipCode":"customer_zip","WC_UserRegistrationAddForm_FormInput_palsRewardsNumber_In_Register_1|_|palsRewardsNumber":"customer_pals_number"}';
+var parentGroupJson_telium = JSON.parse(parentGroup_Telium)
+
+dojo.addOnLoad(function(){
+var queryStringsArray = location.search.split("&");
+var querystringval = "";
+var omnitureEnabled = 'true';
+if(!omnitureEnabled){
+if(queryStringsArray.length > 1){
+	var queryString = queryStringsArray[queryStringsArray.length-1];				
+	if(queryString.indexOf("searchsuggestion_keyword") > -1){
+		querystringval = queryString.replace("searchsuggestion_keyword=","");
+		setTimeout(function(){utag_data["searchsuggestion_keyword"] = querystringval;}, 2000);
+		}
+	}
+}
+dojo.forEach(document.emailPreferencesForm,function(obj){
+ dojo.forEach(dojo.query("button",obj),function(obj){
+	dojo.connect(obj,'click',function(obj){
+		readAndFireTeliumTagForReg();
+	});
+ })
+})
+dojo.forEach(dojo.query('input'),function(obj){
+	if(obj.type != 'hidden'){
+		if(typeof(parentGroupJson_telium[obj.id+"|_|"+obj.name]) != "undefined"){
+			global_data_for_user_reg[obj.id+"|_|"+obj.name] = obj.value;
+		}
+		
+	}
+
+})
+dojo.forEach(dojo.query('select'),function(obj){
+		if(typeof(parentGroupJson_telium[obj.id+"|_|"+obj.name]) != "undefined"){
+			global_data_for_user_reg[obj.id+"|_|"+obj.name] = obj.value;
+		}
+})
+
+});
+</script>
+
+<script>
+function readAndFireTeliumTagForReg(){
+	var newvalue = "";
+	var jsontobeexecuted = {};
+	jsontobeexecuted["conversion_event_id"] = "Register";
+	jsontobeexecuted["event_name"] = "registration";	
+	jsontobeexecuted["conversion_category_id"] = "Register";
+	jsontobeexecuted["conversion_action_type"] = "1";	
+	jsontobeexecuted["pal_account_created"] = "yes";
+	for(var i in global_data_for_user_reg){
+		var id = i.split("|_|")[0];
+		var name = i.split("|_|")[1];
+		if(name != ""){
+			var newvaluearr = dojo.query('#'+id+'[name="'+name+'"]');
+			if(newvaluearr.length > 0){
+				newvalue = dojo.query('#'+id+'[name="'+name+'"]')[0].value;
+			}		
+		}else{
+			var newvaluearr = dojo.query('#'+id);
+			if(newvaluearr.length > 0){ 
+				newvalue = dojo.query('#'+id)[0].value;
+			}
+		}
+		if(newvalue != ""){
+			if(tagtofire == "customer_name" && typeof(jsontobeexecuted["customer_name"]) != "undefined"){
+				newvalue = jsontobeexecuted["customer_name"] +" "+newvalue;
+			}
+			var tagtofire = parentGroupJson_telium[i];
+			jsontobeexecuted[tagtofire] = newvalue;
+			//utag_data[tagtofire] = newvalue;
+			newvalue = "";
+		}
+	}
+pushEvent(jsontobeexecuted);
+}
+</script>
+	
+<script type="text/javascript">				  
+	pullTealiumPageVariables();		  
+</script>
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+(function(a,b,c,d){
+a='//tags.tiqcdn.com/utag/petco/petcoweb/prod/utag.js';
+b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+})();
+</script>
+	
+
+<script>
+// Forces popover to close when the user clicks anywhere on the page
+$(function(){
+	if($('[data-toggle="popover"]') != null && $('[data-toggle="popover"]') != undefined){
+		$('body').on('click', function(e) {
+			  $('[data-toggle="popover"]').each(function() {
+			    if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+			      $(this).popover('hide');
+			    }
+			});
+		});
+	}
+});
+</script><!-- Footer End --><!-- CVV Info Modal - Start -->
+		<div class="modal fade" id="cvvInfo" tabindex="-1" role="dialog" aria-labelledby="cvvInfoLabel" aria-hidden="true" style="display:none;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="cvvInfoLabel">Credit Card Verification Number (CVV)</h4>
+					</div>
+					<div class="modal-body">
+						<h5>Visa, MasterCard and Discover Cards</h5>
+						<p>Your credit card verification number is the last 3 digits printed on the back of your card.</p>
+						<img src="/wcsstore/PetcoSAS/img/cc.gif" alt="Visa, Mastercard, and Discover Cards verification number">
+						<hr>
+						<h5>American Express Cards</h5>
+						<p>Your credit card verification number is the 4 digits printed above your account number, on the front of your card.</p>
+						<img src="/wcsstore/PetcoSAS/img/amex.gif" alt="American Express verification number">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<script>
+
+$(function(){
+	CheckoutHelperJS.disablePlaceOrderButton();
+
+	$('#paymentMethodCC, #paymentMethodPayPal').on('click',function(){
+		CheckoutHelperJS.disablePlaceOrderButton();
+	});
+	
+});
+
+
+	require(["dojo/on", "dojo/query", "dojo/dom-class", "dojo/dom-attr", "dojo/NodeList-traverse"],function(on, query, domClass,domAttr){
+		query(".cart-summary h2").on("click", function(e){
+			query(".mini-cart-list").forEach(function(node){
+			     if(!domClass.contains(node, "box-closed")){
+			    	 domClass.add(node,"box-closed");
+			    	 query(".cart-expand-status i.icon-plus").style("display","inline-block");
+			    	 query(".cart-expand-status i.icon-minus").style("display","none");
+			    	 domAttr.set('cart-summary-heading', 'aria-expanded','false');
+			    	 domAttr.set(node, 'aria-hidden','true');
+			     }else{
+			    	 domClass.remove(node,"box-closed");
+			    	 query(".cart-expand-status i.icon-plus").style("display","none");
+			    	 query(".cart-expand-status i.icon-minus").style("display","inline-block");
+			    	 domAttr.set('cart-summary-heading', 'aria-expanded','true');
+			    	 domAttr.set(node, 'aria-hidden','false');
+			     }
+			});
+		});
+		query(".cart-summary h2").on("keypress", function(e){
+
+			if(e.which == 13 || e.keyCode == 13) {
+
+				query(".mini-cart-list").forEach(function(node){
+				     if(!domClass.contains(node, "box-closed")){
+				    	 domClass.add(node,"box-closed");
+				    	 query(".cart-expand-status i.icon-plus").style("display","inline-block");
+				    	 query(".cart-expand-status i.icon-minus").style("display","none");
+				    	 domAttr.set('cart-summary-heading', 'aria-expanded','false');
+				    	 domAttr.set(node, 'aria-hidden','true');
+				     }else{
+				    	 domClass.remove(node,"box-closed");
+				    	 query(".cart-expand-status i.icon-plus").style("display","none");
+				    	 query(".cart-expand-status i.icon-minus").style("display","inline-block");
+				    	 domAttr.set('cart-summary-heading', 'aria-expanded','true');
+				    	 domAttr.set(node, 'aria-hidden','false');
+				     }
+				});
+				}
+			
+		});
+	});
+
+function getWindowSize() {
+    var  w = window,
+     d = document,
+     e = d.documentElement,
+     g = d.getElementsByTagName('body')[0],
+    wW = w.innerWidth || e.clientWidth  || g.clientWidth;
+    wH = w.innerHeight || e.clientHeight || g.clientHeight;
+
+    return [ wW, wH ];
+  }
+function toggle(obj,elem, triggerCoreMetrics) {
+	require(["dojo/query", "dojo/dom-class", "dojo/dom-attr", "dojo/NodeList-traverse"],function(query, domClass, domAttr){
+
+		
+	    var par = query(obj).parent(),
+	    	sub = query(par).children("ul.form-field-listing"),
+	    	icon = query(obj).children();
+		var collapsing = false;
+
+		    
+				if(elem != '' && elem == 'disabled-section'){
+					return false;
+				}else{
+					query(sub).forEach(function(node){
+						if(domClass.contains(node, "field-listing-visible")){
+							collapsing = true;
+							domClass.remove(node,"field-listing-visible");
+							query(node).children("li.form-field-sublist").style("display", "none");
+							var divList = query(node).children("div.dijitContentPane");
+							query(divList).forEach(function(element){
+								if(element.id == "petcoDonationItemDisplayArea" )
+									query(element).children("li.form-field-sublist").style("display", "none");
+							});
+							query(icon).children("i.icon-minus").style("display", "none");
+							query(icon).children("i.icon-plus").style("display", "block");
+							dojo.setAttr(obj, 'aria-expanded','false');
+							dojo.setAttr(node, 'aria-hidden','true');
+						}else{
+							domClass.add(node,"field-listing-visible");
+							query(node).children("li.form-field-sublist").style("display", "block");
+							var divList = query(node).children("div.dijitContentPane");
+							query(divList).forEach(function(element){
+								if(element.id == "petcoDonationItemDisplayArea" )
+									query(element).children("li.form-field-sublist").style("display", "block");
+							});
+							query(icon).children("i.icon-minus").style("display", "block");
+							query(icon).children("i.icon-plus").style("display", "none");
+							dojo.setAttr(obj, 'aria-expanded','true');
+							dojo.setAttr(node, 'aria-hidden','false');
+						}
+				    });
+					if (triggerCoreMetrics) {
+						var coreMetricsTag = domAttr.get(obj, "data-manual_cm_sp");
+						domAttr.set(obj, "manual_cm_sp", coreMetricsTag + (collapsing ? "_Collapse" : "_Expand"));
+						cmManuallyTriggerEventTrack(obj);
+					}
+				}
+		    
+	    
+			
+		
+    	
+		
+	    
+	});
+  }
+
+  function logo_click() {
+	var logo1 = document.querySelectorAll(".logo");
+    var logoPosition = dojo.position(logo1[0]);
+    var dialog = document.querySelectorAll(".cart-stay----stay")[0];
+    var win = getWindowSize();
+	if(win[0] <= 768){
+		dialog.style.left = (win[0]/2 - window.getComputedStyle(dialog).width.replace("px","")/2)+"px";
+		dialog.style.top = (logoPosition.y + 38)+"px";
+		dialog.style.zIndex = "1";
+	}else{
+		dialog.style.left = logoPosition.x+"px";
+		dialog.style.top = logoPosition.y+38+"px";
+		dialog.style.zIndex = "1";
+	}
+    
+    dialog.style.display = "block";
+
+	// hide the dialog when user clicks on screen
+    window.addEventListener('mouseup', function(event){
+    	if (event.target != dialog && event.target.parentNode != dialog){
+    		dialog.style.display = 'none';
+        }
+    });
+ 	// hide the dialog when user scrolls
+	window.addEventListener('scroll', function(event){
+    	dialog.style.display = 'none';
+    });
+
+	// hide the dialog on mobile when user touches outside of dialog
+	window.addEventListener('ontouchstart', function(event){
+		if (event.target != dialog && event.target.parentNode != dialog){
+    		dialog.style.display = 'none';
+        }
+    });
+  }
+  if(document.getElementById("isRDOrder") && document.getElementById("isPoAddress") && 
+		document.getElementById("isRDOrder").value == 'true' && document.getElementById("isPoAddress").value == 'true'){
+		if(document.getElementById("poAddressMessage") != null && document.getElementById("poAddressMessage") != undefined){
+			document.getElementById("poAddressMessage").style = "display:block";
+		}
+		
+	}
+	else{
+		if(document.getElementById("poAddressMessage") != null && document.getElementById("poAddressMessage") != undefined){
+			document.getElementById("poAddressMessage").style = "display:none";
+		}
+		
+	}
+	function openaddressDetails(){
+	dojo.forEach(dojo.query("#openaddressDetailsLink"),function(obj){obj.style.display="none"});
+	dojo.forEach(dojo.query("#openaddressDetailsContainer"),function(obj){obj.style.display="block"});
+	
+	}
+	
+	dojo.addOnLoad(function() {
+		if(document.getElementById('balance_Order_Total')!= null && document.getElementById('isDonationItemPresent')!= null && document.getElementById('gc_Eligible_balance_amount') != null && document.getElementById('gc_Paid_amount') != null){
+			var balanceOrdTotal = document.getElementById('balance_Order_Total').value;	
+			 var isDonationItemPresent = document.getElementById('isDonationItemPresent').value;
+			 var gcEligiblebalanceamount =  document.getElementById('gc_Eligible_balance_amount').value;
+			 var gcPaidamount = document.getElementById('gc_Paid_amount').value;
+			 if (isDonationItemPresent == 'true' && balanceOrdTotal > 0 && parseFloat(gcEligiblebalanceamount) == 0 && parseFloat(gcPaidamount) > 0) {
+				document.getElementById('gc-donoation-info').style.display = 'block';
+			 } else {
+				var y = document.getElementById('gc-donoation-info');
+					if (y != null && y.style.display === 'block')
+						y.style.display = 'none';
+			 }
+		}
+	});
+	
+</script>
+		<div id="form-modal-screen"></div>
+		
+<script type="text/javascript" src="/wcsstore/PetcoSAS/javascript/EDQ/contact-data-services.js"></script>
+<script type="text/javascript">
+		var options = {
+			token: "9cedfdaa-3283-4bc1-a67b-76b909e80859",			
+			maxSize: 5,
+			mwHide: true,	
+			elements: {
+				input: document.getElementById("shipping-address-address1"),
+				addressLine1: document.getElementById("shipping-address-address1"),
+				addressLine2: document.getElementById("shipping-address-address2"),
+				locality: document.getElementById("shipping-address-city"),
+				province: document.getElementById("shipping-address-state"),
+				postalCode: document.getElementById("shipping-address-zipCode")			
+			}
+		};
+		// Initialise this instance
+		var address = new ContactDataServices.address(options);
+</script>
+<script type="text/javascript">
+		var options = {
+			token: "9cedfdaa-3283-4bc1-a67b-76b909e80859",			
+			maxSize: 5,
+			mwHide: true,	
+			elements: {
+				input: document.getElementById("new-address-addressLine1"),
+				addressLine1: document.getElementById("new-address-addressLine1"),
+				addressLine2: document.getElementById("new-address-addressLine2"),
+				locality: document.getElementById("new-address-city"),
+				province: document.getElementById("new-shipping-address-state"),
+				postalCode: document.getElementById("new-address-zipCode")			
+			}
+		};
+		// Initialise this instance
+		var address = new ContactDataServices.address(options);
+</script>
+<!-- END SingleShipmentSummary.jsp --><!-- BEGIN PetcoBrowserTimingFooter.jsp-->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","agent":"","transactionName":"YlNVY0JTC0FWV0VcDlsZdGJjZip\/GHtDUQRHFmRCXV8EQE4UYlACQV9YWQ==","applicationID":"73647509","errorBeacon":"bam.nr-data.net","applicationTime":419,"queueTime":0,"licenseKey":"7de9c06cab"}</script><!-- END PetcoBrowserTimingFooter.jsp -->
+	</body>
+
+
+	
+	
+</html>

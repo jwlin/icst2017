@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en_us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Credit Card - State Farm&trade;</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<meta name="integrated-credit-card/config/environment" content="%7B%22modulePrefix%22%3A%22integrated-credit-card%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/IntegratedCreditCard-web/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22integrated-credit-card%22%2C%22version%22%3A%221.1.0+4ed0a50d%22%7D%2C%22ember-index%22%3A%7B%22output%22%3A%22index.jsp%22%2C%22content%22%3A%5B%7B%22key%22%3A%22environment-profile%22%2C%22file%22%3A%22environment-profile.txt%22%2C%22includeInIndexHtml%22%3Afalse%2C%22includeInOutput%22%3Atrue%7D%2C%7B%22key%22%3A%22local-profile%22%2C%22file%22%3A%22local-profile.txt%22%2C%22includeInIndexHtml%22%3Atrue%2C%22includeInOutput%22%3Afalse%7D%2C%7B%22key%22%3A%22load-header%22%2C%22file%22%3A%22load-header.txt%22%2C%22includeInIndexHtml%22%3Afalse%2C%22includeInOutput%22%3Atrue%7D%2C%7B%22key%22%3A%22local-header%22%2C%22file%22%3A%22local-header.txt%22%2C%22includeInIndexHtml%22%3Atrue%2C%22includeInOutput%22%3Afalse%7D%2C%7B%22key%22%3A%22load-agent-module%22%2C%22file%22%3A%22load-agent-module.txt%22%2C%22includeInIndexHtml%22%3Afalse%2C%22includeInOutput%22%3Atrue%7D%2C%7B%22key%22%3A%22local-agent-module%22%2C%22file%22%3A%22local-agent-module.txt%22%2C%22includeInIndexHtml%22%3Atrue%2C%22includeInOutput%22%3Afalse%7D%2C%7B%22key%22%3A%22adobe-dtm%22%2C%22file%22%3A%22adobe-dtm.txt%22%2C%22includeInIndexHtml%22%3Afalse%2C%22includeInOutput%22%3Atrue%7D%5D%7D%2C%22sf-ember-auth%22%3A%7B%22handleAuthErrorsOnInit%22%3Afalse%2C%22loadUserOnInit%22%3Afalse%2C%22startKeepAliveOnInit%22%3Afalse%2C%22userProdUrl%22%3A%22https%3A//proofing.statefarm.com/auth-provider/api/v1/users/current%22%7D%2C%22ember-tp-urlutils%22%3A%7B%22localTestEnvironment%22%3A%22dvnt-a%22%7D%2C%22httpheaders%22%3A%7B%22SR_API_KEY%22%3A%22d1f7448b-3ec6-4118-9ab5-bdc7af027e17%22%2C%22Accept%22%3A%22*/*%22%2C%22Content-Type%22%3A%22application/vnd.api+json%22%7D%2C%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22browserify%22%3A%7B%22tests%22%3Atrue%7D%2C%22something%22%3A%22test%22%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+    <meta name="sf-environment" content="production">
+
+
+
+    
+    <script type="text/javascript" src="https://static1.st8fm.com/en_US/b2c_dvts/common/js/lib/tms.js"> </script>
+
+
+    <link rel="stylesheet" href="/IntegratedCreditCard-web/assets/vendor-75ea04a4725a738505239545834d8911.css">
+    <link rel="stylesheet" href="/IntegratedCreditCard-web/assets/integrated-credit-card-3ed53cf1b17e3ab7d534a40c575c8b6c.css">
+
+    
+  </head>
+  <body>
+    <div id="sfx-header" class="legacy-dvts"></div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="legacy-dvts">
+          <div id="left-nav" class="col-xs-3" style="display: none;">
+            <div id="yourAgentByIDLeftnav" class="agent-module version5 module"
+            data-agentbaseurl="https://assocmgmt.statefarm.com"></div>
+          </div>
+        </div>
+        <div id="content" class="col-xs-12">
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="/IntegratedCreditCard-web/assets/vendor-eb09055e96fa0fc3f4edefa69b0207ec.js"></script>
+    <script src="/IntegratedCreditCard-web/assets/integrated-credit-card-04d9c5eb31a19cb492966c5bfb799326.js"></script>
+
+    
+    <script type="text/javascript">
+  (function loadSFXHeader() {
+    var promises = [];
+    promises.push($.ajax({
+      url: 'https://static1.st8fm.com/en_US/b2c_dvts/global/_content/navigation/header_primary-utility_unauthenticated.mustache',
+      beforeSend: function(xhr) {
+        xhr.overrideMimeType('html/text; charset=UTF-8');
+      }
+    }));
+    promises.push($.getJSON('https://static1.st8fm.com/en_US/b2c_dvts/url_mappings/env-url-mappings.json'));
+    Promise.all(promises).then(function(results) {
+      var template = results[0];
+      var properties = results[1];
+      $('#sfx-header').html(Mustache.render(template, properties));
+      $.getScript('https://static1.st8fm.com/en_US/b2c_dvts/8-5/js/min/dvts.modules_revised.min.js').then(function() {
+        $.getScript('https://static1.st8fm.com/en_US/b2c_dvts/global/js/min/dvts.header.min.js');
+      });
+    });
+  })();
+</script>
+
+    
+  </body>
+</html>

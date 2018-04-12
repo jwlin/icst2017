@@ -1,0 +1,322 @@
+
+
+
+
+
+
+
+
+
+
+<!--  reference ticket REG-9554 -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+     <!-- For Font open Sans -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"  />
+  <!-- for Fontawasome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ 
+    <!-- For google maps  -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnvX_a2m4EIzbfeKADk-rfF3ZXkGz3veg&libraries=places"></script> 
+</script> 
+    <meta name="csrf-param" content="authenticity_token"/><meta name="csrf-token" content="zJkvWggwD2OVvyLr+D4Eq6VqenmZJ15BdlPcoJab6GRG+KKm2TSCDne8CRUTGDV7e7Yk5KyOjCn/Zt9nGjHiqw=="/><link href="/stylesheets/reg.css?ts=1522731237&media=all" rel="stylesheet" type="text/css" media="all" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/i18n/jquery-ui-i18n.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/airbrake-js/0.5.9/client.min.js"></script><link href="/stylesheets/end_user.css" rel="stylesheet" type="text/css" media="all" /><link href="/stylesheets/jquery.jgrowl.css" rel="stylesheet" type="text/css" media="all" /><link href="/stylesheets/admin/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="all" /><script src="/javascripts/jquery.validate.js" type="text/javascript"></script><script src="/javascripts/jquery.jgrowl_minimized.js" type="text/javascript"></script><script src="/javascripts/ajaxfileupload.js" type="text/javascript"></script><script src="/javascripts/jquery.autocomplete.min.js" type="text/javascript"></script><script src="/javascripts/jquery.tools.min.js" type="text/javascript"></script><script src="/javascripts/jquery.ui.datepicker.validation.js" type="text/javascript"></script><script src="/javascripts/jcookie.js" type="text/javascript"></script><script src="/javascripts/registria_helpers.js" type="text/javascript"></script><script src="/javascripts/registria_form.js" type="text/javascript"></script><script src="/javascripts/registria_validations.js" type="text/javascript"></script><script src="/javascripts/registria_services.js" type="text/javascript"></script><script src="//d29aas0ezuolap.cloudfront.net/javascripts/registria_cart.js"></script><script src="//d1mjqe83qgtlvc.cloudfront.net/javascripts/simplecart.js"></script><script src="/public_javascripts/page.js?page_id=17694&extra_info=&locale=en&ts=1522731237" type="text/javascript"></script>
+<script type="text/javascript">
+  $.extraInfo = "";
+  $.queryParams = {"default":"true","controller":"pages","action":"show"};
+  $.returnTo = "";
+  $.IPInfo = {"country_code":"US","country_code3":"USA","country_name":"United States","region":"CA","region_name":"California","city":"Newport Beach","postal_code":"92658","latitude":33.618900299072266,"longitude":-117.92900085449219,"dma_code":803,"area_code":949};
+  $.currencyCode = "USD";
+  $.currencyUnit = "$";
+  $.availableLocales = ['ca','cn','cs','cs-cz','da','de','de-at','de-ch','de-de','en','en-au','en-ca','en-ch','en-dk','en-gb','en-id','en-ie','en-my','en-nl','en-no','en-nz','en-pl','en-pt','en-se','en-th','en-uk','en-us','en-vn','en_GB','es','es-es','es-us','fi','fr','fr-be','fr-ca','fr-fr','fr-lu','hk','hu','hu-hu','id','in','it','it-it','ja','ja-jp','jp','ko','kr','my','nl','nl-be','nl-nl','no','ph','pl','pt','pt-pt','ro','ro-ro','ru','sg','sv','th','tw','uk','vn','zh','zh-cn','zh-tw'];
+  $.currentLocale = "en";
+  $.secure = true;
+  $.gender = null;
+  $.cim = false;
+  $.airbrake =  new airbrakeJs.Client({projectId: 134633, projectKey: '6cf15375c6ff1a244ffd1281c8221df7'});
+  $.airbrake.addFilter(function(notice) {
+    notice.context.environment = 'production';
+    if (false) {
+      return null;
+    }
+    return notice;
+  });
+
+  function Translator(){
+    var self = this;
+
+    self.items = {};
+    self.items["Please wait"] = "Please wait";self.items["country_prompt"] = "country_prompt";self.items["product_prompt"] = "product_prompt";self.items["product_family_prompt"] = "product_family_prompt";self.items["product_category_prompt"] = "product_category_prompt";self.items["state_prompt"] = "state_prompt";self.items["Added to cart"] = "Added to cart";self.items["Error"] = "Error";self.items["Name"] = "Name";self.items["Quantity"] = "Quantity";self.items["Total"] = "Total";self.items["Remove"] = "Remove";self.items["Your Cart is empty"] = "Your Cart is empty";
+  };
+
+  Translator.prototype.t =
+  function(key) {
+    var self = this;
+    return self.items[key];
+  };
+
+  $.translator = new Translator();
+
+  
+</script>
+
+    <title>Register a Product | Cuisinart</title>
+    <link rel="shortcut icon" href="
+    //d1yy0skkp4ztxs.cloudfront.net/system/images/29085/original/cuisinart_favicon.ico?1450900070
+">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="grid">
+            <div class="col-1-2 sm-1">
+                <img src="
+    //d1mjqe83qgtlvc.cloudfront.net/system/images/29084/original/cuisinart_logo.png?1450900039
+" alt="Cuisinart" class="logo">
+            </div>
+            <div class="col-1-2">
+                <nav class="nav-wrap float-right">
+                    <ul>
+                        <li class="nav-dropdown"><a class="right">US-English
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-down" width="10" height="10" viewBox="0 0 10 10">
+                                <polygon fill="#000000" points="0,3 5,10 10,3"/></polygon>    
+                            </svg></a>
+
+                            <ul class="language-select" style="display:none;">
+                                <li ><a class="langauge" href="/en/reg">US-English</a></li>
+                                <li><a class="langauge" href="/es/reg">US-Spanish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+      <div class="row"> 
+         <div class="col-sm-12">
+               <!-- multistep form -->
+    <div id="msform">
+      <!-- progressbar -->
+      <ul id="progressbar">
+        <li class="active">
+         <div class="fs-title">Step 1</div>
+         <div class="fs-subtitle">Registration </div>
+        </li>
+        <li>
+       <div class="num_image">
+        <div class="progressbar-num"><div class="num_align">2</div></div>
+       </div>
+       </li>
+       <!-- <li><div class="num_image"> <div class="progressbar-num"><div class="num_align">3</div></div></div></li>  -->
+        <!-- <li><div class="num_image"> <div class="progressbar-num"><div class="num_align">4</div></div></div></li>-->
+      </ul>
+    </div>
+
+
+         </div>   
+      </div>
+
+    
+    
+
+    
+
+    <div class='registria form_errors' style='display:none'></div>
+
+    <div class='registria form_messages' style='display:none'></div>
+
+   <div class="main-wrapper">
+    <h2>Register today to activate your warranty and receive new product information, recipes and exclusive offers.</h2>
+    <h3 class="section-header">Your Product</h3>
+    
+        
+      <div class="sub-content">
+        <div class="grid">
+            <div class="col">
+                <label for="model">
+                    <span class="label-text">Model Number 
+                
+                *</span>
+                    <input type="text" autocomplete="off" class="autocomplete-product registria_field"  name="product[model]" id="model" value="" data-model-string="{sku} ({name})" data-beginswith="true">
+                    <input type="hidden" id="product" name="product[product]" class="registria_field" data-default="229360" value="">
+                </label>
+            </div>
+        </div>
+       </div>
+    
+
+    
+    <h3 class="section-header">Your Information</h3>
+   <div class="sub-content">
+    <div class="grid">
+                <div class="col-1">
+            <label for="first_name">
+                <span class="label-text">Full Name 
+                
+                *</span>
+                <input type="text" id="full_name" class="full-name"  required>
+            </label>
+        </div>
+    </div>
+     
+    <div class="grid">
+        <div class="col-1-2">
+            <label for="email">
+                <span class="label-text">Email Address 
+                
+                *</span>
+                <input class="registria_field " id="email" name="user[email]" type="email" value="">
+            </label>
+        </div>
+        <div class="col-1-2">
+            <label for="phone">
+                <span class="label-text">Phone Number 
+                
+                *</span>
+                <input class="registria_field mask-phone" id="phone" name="user[phone]" type="tel" value="">
+            </label>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="col-2-3 med-1">
+            <label for="address1">
+                <span class="label-text">Street Address 
+                
+                *</span>
+                <input class="registria_field " id="address1" placeholder= "Enter a location" name="user[address_attributes][address1]" type="text">
+            </label>
+        </div>
+        <div class="col-1-3 med-1">
+            <label for="address2">
+                <span class="label-text">Unit Number
+                
+                </span>
+                <input class="registria_field " id="address2" name="user[address_attributes][address2]" type="text">
+            </label>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="col-1-3 med-1">
+            <label for="zip">
+                <button type="button" class="button-round geo-trigger"></button>
+                <span class="label-text">ZIP Code 
+                
+                *</span>
+                <input class="registria_field reverse-zip" id="zip" name="user[address_attributes][zip]" type="tel">
+            </label>
+        </div>
+        <div class="col-1-3 med-1">
+            <label for="city">
+                <span class="label-text">City 
+                
+                *</span>
+                <input class="registria_field " id="city" name="user[address_attributes][city]" type="text">
+            </label>
+        </div>
+        <div class="col-1-3 med-1">
+            <label for="state">
+                <span class="label-text">State 
+                
+                *</span>
+                <input class="registria_field autocomplete-state" id="state" name="user[address_attributes][state]" autocomplete="off" type="text">
+                <input type="hidden" class="registria_field" id="country" name="user[address_attributes][country]">
+            </label>
+        </div>
+    </div>
+    </div>
+    
+
+    <h3 class="section-header">Purchase Information</h3>
+  <div class="sub-content">
+    <div class="grid">
+        <div class="col-1-2">
+            <label for="purchased_at">
+                <span class="label-text">Purchased From 
+                
+                *</span>
+                <input type="text" class="registria_field" name="product[purchased_at]" id="purchased_at" autocomplete="off">
+            </label>
+        </div>
+        <div class="col-1-2">
+            <label for="purchase_date">
+                <span class="label-text">Purchase Date 
+                
+                *</span>
+                <input type="tel" class="registria_field mask-date" name="product[purchase_date]" id="purchase_date">
+            </label>
+        </div>
+    </div>
+
+    <div class="grid">
+          <div class="col-1">
+            <label  for="purchase_product_online">
+              <span class="label-text">Did you purchase this product online? <b>*</b></span>
+             <div class="selectstyle">
+              <select class="registria_field default" id="purchase_product_online" name="product[purchase_product_online]" title="" style="height:40px;">
+                <option value=""></option>
+                <option value="Yes">Yes </option>
+                <option value="No">No</option>
+              </select>
+             </div>
+            </label>
+          </div>
+        </div>
+    </div>
+    <div class="grid" style="margin-top:30px;">
+        <div class="col-2-3">
+            <label for="receive_product_communication">
+                <input type="checkbox" class="registria_field " name="user[receive_product_communication]" id="receive_product_communication"   value="1" checked >
+                <span class="pref-text" style="color: #6c8d23">E-mail me about special offers, new products and more!</span>
+            </label>
+            <span class="pref-text" style="color: #717171; font-weight: normal">By clicking Register, you acknowledge that you have read and agreed to our <a href="https://www.cuisinart.com/privacy#terms" target="_blank">Terms of Use</a> and <a href="https://www.cuisinart.com/privacy" target="_blank">Privacy Policy</a>.</span>
+        </div>
+        <div class="col-3-3" style="float:right">
+          
+          <input type="hidden" class="registria_field" id="input_version" name="product[input_version]" value="VVD01">
+
+    <input class='registria_field' id='page_name' name='page[name]' type='hidden' value='reg'>
+<input id='next_button' type='submit' value='Register'>
+
+        </div>
+    </div>
+<div class="row">
+  <div class="col-sm-12 privacy_footer" >
+     ©Copyright 2018 Cuisinart. All Rights Reserved
+  </div>
+</div>
+
+</div>
+</div>
+<script>
+$(document).ready(function(){
+  var cuisinart = ["AAFES", "ACE HARDWARE", "ALMO DISTRIBUTING", "AMAZON.COM", "AMERICAN EXPRESS", "BEACH TRADING", "BED BATH & BEYOND", "BELK ", "BEST BUY", "BJ'S WHOLESALE CLUB", "BLOOMINGDALES", "BLUE APRON", "C & S WHOLESALE GROCERS", "CASINO PROGRAM", "CHEFS CATALOG", "COSTCO", "CRATE AND BARREL", "CUISINART", "DBL DISTRIBUTING", "DILLARDS", "FOCUS CAMERA", "FREE INPUT", "GILT GLOBAL TRADING & PROCUREMENT", "GOURMET KITCHEN GALLERY", "H. G. BUYING", "INTERBOND CORP. OF AMERICA", "JC PENNEY", "KITCHEN COLLECTION", "KOHL'S DEPT STORE", "KROGER", "LOWE'S", "MACY'S", "NAVY EXCH SVC/COMM EAST COAST", "O.C. TANNER", "OTHER", "PREMIUM INCENTIVE SALES", "QUIDSI", "ROSS STORES", "SAFEWAY", "SAM'S CLUB", "SEARS", "SHAWS SUPERMARKETS", "SUPERVALU", "SUR LA TABLE", "THE BON TON", "THE HOME DEPOT", "TJX COMPANIES", "TUESDAY MORNING", "WILLIAMS-SONOMA", "WOOT SERVICES", "ZOLA"];
+  $('#purchased_at').frautoComplete(cuisinart, {
+    listLimit: Infinity,
+    validate: false
+  });
+});
+</script>
+<input type="hidden" class="registria_field" name="user[silverpop_account_list_ids][]" value="53">
+
+<script>
+
+
+
+$("#next_button").on('click',function () { setTimeout(function() { if ($("#purchase_product_online").hasClass('invalid')) { $(".selectstyle").addClass( "arrow") } }, 1000);
+});
+</script>
+
+</body>
+</html>
+

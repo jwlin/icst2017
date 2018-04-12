@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ray-Ban Service: Register</title>
+    <link href="/Content/css?v=4Q7abDsdW3-ozZQiVeXuREZCne96xKIriuP0d8uleA01" rel="stylesheet"/>
+
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    
+</head>
+<body class="wrapper">
+    <div class="page-wrap">
+        <header class="site-header">
+            <header>
+    <div class="column12 auto">
+            <a href="/"><img src="/Content/Images/Ray-Ban-Service-Center.png" alt="Ray-Ban Service" title="Ray-Ban Service" /></a>
+        <nav>
+            <ul>
+                <li><a href="/service-center">Service center</a></li>
+                <li><a href="/service-locator? ">Service locator</a></li>
+                
+<ul>
+        <li><a href="/Account/Register" id="registerLink">Register</a></li>
+        <li><a href="/Account/Login" id="loginLink">Log in</a></li>
+</ul>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+        </header>
+        <div id="container">
+            
+
+<section id="register" class="content">
+    <div class="column12">
+        <h5>ONLY STEP 01 FIELD ARE REQUIRED – YOU WILL RECEIVE AN E-MAIL CONFIRMATION</h5>
+        <h1>Create an Account </h1>
+    </div>
+
+<form action="/Account/Register" class="form-horizontal" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="zLPWxvYMM3QtkL-dMxKjblqCRvgP-yUhLc6B4SdZtlYdH3m2w6RXkd4m4mZz6BPDxmdN0u9XcHMfqmx3CFQYbRcVXcn6orlsNEKdoHX1Q6s1" />        <span>
+            <div class="validation-summary-valid text-danger column12" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+        </span>
+<input id="CustomFields" name="CustomFields" type="hidden" value="" />        <div class="column12">
+            <h3>STEP 01 - Email &amp; Password</h3>
+            <div class="column6 input require match">
+                <input data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Email Address" type="email" value="" />
+            </div>
+            <div class="column6 input require match">
+                <input name="confirm-email" type="email" placeholder="Confirm Email Address">
+            </div>
+            <div class="column6 input require match">
+                <input data-val="true" data-val-length="The Password must be at least 6 characters long." data-val-length-max="100" data-val-length-min="6" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" />
+            </div>
+            <div class="column6 input require match">
+                <input data-val="true" data-val-equalto="The password and confirmation password do not match." data-val-equalto-other="*.Password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" type="password" />
+                <p>Minimum 7 characters. Must contain at least one number and one letter.</p>
+            </div>
+        </div>
+        <div class="column12">
+            <h3>STEP 02 - Personal Info</h3>
+            <div class="column6">
+                <div class="column6 input"><input id="FirstName" name="FirstName" placeholder="Enter your Name" type="text" value="" /></div>
+                <div class="column6 input"><input id="LastName" name="LastName" placeholder="Enter your Surname" type="text" value="" /></div>
+            </div>
+            <div class="column6">
+                <div class="column6 input select">
+                    <select id="Gender" name="Gender"><option value="">Gender</option>
+<option value="M">Male</option>
+<option value="F">Female</option>
+</select>
+                </div>
+                <div class="column6 input">
+                    <input data-val="true" data-val-date="The field DateOfBirth must be a date." id="DateOfBirth" name="DateOfBirth" placeholder="Date of Birth (MM/DD/YYYY)" type="text" value="" />
+                </div>
+            </div>
+            <div class="column6">
+                <div class="column10 input">
+                    <input id="Address" name="Address" placeholder="Street Address" type="text" value="" />
+                </div>
+                <div class="column2 input">
+                    <input id="AptSte" name="AptSte" placeholder="Apt/Ste" type="text" value="" />
+                </div>
+            </div>
+            <div class="column6">
+                <div class="column5 input">
+                    <input id="City" name="City" placeholder="City" type="text" value="" />
+                </div>
+                <div class="column5 input select">
+                    <select data-val="true" data-val-number="The field Country must be a number." data-val-required="The Country field is required." id="Country" name="Country"><option value="1">Singapore</option>
+</select>
+                </div>
+                <div class="column2 input">
+                    <input id="Zip" name="Zip" placeholder="Zip" type="text" value="" />
+                </div>
+            </div>
+            <div class="column6">
+                <div class="column5 input select">
+                    <select name="mobiletype">
+                        <option value="mobilePhone" selected>Mobile Phone</option>
+                        <option value="homePhone">Home Phone</option>
+                    </select>
+                </div>
+                <div class="column7 input">
+                    <input class="phone" id="PhoneNumber" name="PhoneNumber" placeholder="Phone Number" type="text" value="" />
+                </div>
+            </div>
+        </div>
+        <h3>STEP 03 - Tell us more about your frames</h3>
+        <div id="frames" class="column12">
+            <div class="row">
+                <div class="column6 input">
+                    <div class="column7">
+                        Ray-Ban Sun Currently in use:
+                    </div>
+                    <div class="column4">
+                        <input data-val="true" data-val-required="The HasSunglass field is required." id="HasSunglass1" name="HasSunglass" type="radio" value="true" /> <label for="HasSunglass1"> Yes</label>
+                        <input checked="checked" id="HasSunglass2" name="HasSunglass" type="radio" value="false" /> <label for="HasSunglass2"> No</label>
+                    </div>
+                </div>
+                <div class="column6 input">
+                    <div class="column6 require">
+                        <input class="date" data-val="true" data-val-date="The field SunglassPurchaseDate must be a date." disabled="true" id="SunglassPurchaseDate" name="SunglassPurchaseDate" placeholder="Last Purchase (MM/DD/YYYY)" type="text" value="" />
+
+                    </div>
+                    <div class="column6 require">
+                        <div class="column12 select">
+                            <select disabled="true" id="SunglassPurchaseLocation" name="SunglassPurchaseLocation"><option value="">Select Location</option>
+<option value="Authorized Store">Authorized Store</option>
+<option value="Sunglass Hut Store">Sunglass Hut Store</option>
+<option value="LensCrafters Store">LensCrafters Store</option>
+<option value="Ray-Ban.com Official Site">Ray-Ban.com Official Site</option>
+<option value="Other Web Site">Other Web Site</option>
+<option value="Other">Other</option>
+</select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column6 input">
+                    <div class="column7">
+                        Ray-Ban optical Currently in use:
+                    </div>
+                    <div class="column4">
+                        <input data-val="true" data-val-required="The HasOpticalglass field is required." id="HasOpticalglass1" name="HasOpticalglass" type="radio" value="true" /> <label for="HasOpticalglass1"> Yes</label>
+                        <input checked="checked" id="HasOpticalglass2" name="HasOpticalglass" type="radio" value="false" /> <label for="HasOpticalglass2"> No</label>
+                    </div>
+                </div>
+                <div class="column6 input">
+                    <div class="column6 require">
+                        <input class="date" data-val="true" data-val-date="The field OpticalglassPurchaseDate must be a date." disabled="true" id="OpticalglassPurchaseDate" name="OpticalglassPurchaseDate" placeholder="Last Purchase (MM/DD/YYYY)" type="text" value="" />
+                    </div>
+                    <div class="column6 require">
+                        <div class="column12 select">
+                            <select disabled="true" id="SunglassPurchaseLocation" name="SunglassPurchaseLocation"><option value="">Select Location</option>
+<option value="Authorized Store">Authorized Store</option>
+<option value="Sunglass Hut Store">Sunglass Hut Store</option>
+<option value="LensCrafters Store">LensCrafters Store</option>
+<option value="Ray-Ban.com Official Site">Ray-Ban.com Official Site</option>
+<option value="Other Web Site">Other Web Site</option>
+<option value="Other">Other</option>
+</select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column6 input">
+                    <div class="column7">
+                        Do you own other brand sunglasses:
+                    </div>
+                    <div class="column4">
+                        <input data-val="true" data-val-required="The HasOtherSunglass field is required." id="HasOtherSunglass1" name="HasOtherSunglass" type="radio" value="true" /> <label for="HasOtherSunglass1"> Yes</label>
+                        <input checked="checked" id="HasOtherSunglass2" name="HasOtherSunglass" type="radio" value="false" /> <label for="HasOtherSunglass2"> No</label>
+                    </div>
+                </div>
+                <div class="column3 require">
+                    <input class="date" disabled="true" id="OpticalglassPurchaseDate" name="OpticalglassPurchaseDate" placeholder="Last Purchase (MM/DD/YYYY)" type="text" value="" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="column6 input">
+                    <div class="column7">
+                        Do you own other brand optical glasses:
+                    </div>
+                    <div class="column4">
+                        <input data-val="true" data-val-required="The HasOtherOpticalglass field is required." id="HasOtherOpticalglass1" name="HasOtherOpticalglass" type="radio" value="true" /> <label for="HasOtherOpticalglass1"> Yes</label>
+                        <input checked="checked" id="HasOtherOpticalglass2" name="HasOtherOpticalglass" type="radio" value="false" /> <label for="HasOtherOpticalglass2"> No</label>
+                    </div>
+                </div>
+                <div class="column3 require">
+                    <input class="date" data-val="true" data-val-date="The field OtherOpticalglassPurchaseDate must be a date." disabled="true" id="OtherOpticalglassPurchaseDate" name="OtherOpticalglassPurchaseDate" placeholder="Last Purchase (MM/DD/YYYY)" type="text" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="column12">
+            <div class="column6 auto">
+                <div class="input require checkbox" style="position: relative;">
+                    <input data-alert="Terms and conditions" data-val="true" data-val-required="The AgreeTermsAndCondition field is required." id="terms" name="AgreeTermsAndCondition" type="checkbox" value="true" /><input name="AgreeTermsAndCondition" type="hidden" value="false" />
+                </div>
+                <label for="terms" style="width: 90%;">
+                    Agree to our Terms &amp; Conditions and Privacy Policy.
+                    <a id="tnc" href="#">read agreement</a><br />
+                    <span>By checking, I indicate i agree and understand the terms.</span>
+                </label>
+                <div class="clearfix much"> </div>
+                <div class="input require checkbox" style="position: relative;">
+                    <input data-alert="Sign up for newsletter" data-val="true" data-val-required="The IsNewsletterActive field is required." id="newsletter" name="IsNewsletterActive" type="checkbox" value="true" /><input name="IsNewsletterActive" type="hidden" value="false" />
+                </div>
+                    <label for="newsletter" style="width: 90%;">
+                        E-mail sign up.<br />
+                        <span>
+                            Sign up to receive e-mails regarding your account creation and, when applicable, the status progress of after sales services you will ask.<br /> I indicate I agree.
+                        </span>
+                    </label>
+                    <div class="clearfix much"> </div>
+                </div>
+            <div class="column2 auto">
+                <input type="submit" value="Create account &rtrif;" />
+            </div>
+        </div>
+</form></section>
+
+
+        </div>
+    </div>
+    <footer class="site-footer">
+        <footer>
+    <div class="column12 auto">
+        <ul>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/customer-care" class="">Customer Care</a></li>
+        </ul>
+        <p>
+            Copyright ©2014 Luxottica Group. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+    </footer>
+
+    <script src="/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="/bundles/jquery?v=yMmPM1TxecYcoWtCWW3jYgH0fr9kiAasOfb-W5I001A1"></script>
+
+    <script src="/bundles/ax?v=YvRedERQW9WMCsH1Oq96yQFKCgze817fgOHf5pnPCyo1"></script>
+
+    
+    <script src="/bundles/jqueryval?v=HjA9RTj3bVvijheM7Ui-V6qPfj-euE31wYU7f9ZTJF01"></script>
+
+
+</body>
+</html>
