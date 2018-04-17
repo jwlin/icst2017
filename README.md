@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jwlin/icst2017.svg?branch=ext)](https://travis-ci.org/jwlin/icst2017?branch=ext)
+
 ## Using Semantic Similarity in Crawling-based Web Application Testing
 
 ### Experimental 1 results
