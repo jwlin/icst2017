@@ -1,0 +1,41 @@
+required first name text shipping first name box first name 50
+required last name text shipping last name box last name 50
+required street address text shipping address 1 address1 50
+optional street address line 2 text shipping address 2 address2 50
+required city text shipping city city 50
+provide your zip for city state text ship zip postal code
+required email text email shipping c emailaddress 50
+expires exp date in page expirationdate text
+name on card owner in page text
+first name first name in page text
+last name last name in page text
+address 1 address1 in page text
+address 2 address2 in page text
+city city in page text
+zip postal code in page text
+email text email billing c emailaddress
+apply promotion code text coupon code
+verify cvv text cvv verify
+expires exp date in modal expirationdate text
+name on card owner in modal text
+first name first name in modal text
+last name last name in modal text
+address 1 address1 in modal text
+address 2 address2 in modal text
+city city in modal text
+zip postal code in modal text
+must have 8 or more characters both upper lower case letters at least 1 number not met needs 8 or more characters needs needs both upper lower case letters needs needs at least 1 number needs password strength not met not met password pass new acct pw
+required phone number tel phone shipping phone
+pier 1 rewards credit card number tel reward cert creditcard number pin 16
+rewards certificate tel reward cert number number 12
+gift card number tel gift card number number 19
+pin tel gift card pin pin 8
+verify cvv tel cvn
+please confirm your card number tel confirmation confirmation 16
+card number credit card number in page number tel 16
+cvv cvv in page tel
+phone number phone in page tel
+ea ea ea ea ea ea tel 3
+card number credit card number in modal number tel 16
+cvv cvv in modal tel
+phone number phone in modal tel

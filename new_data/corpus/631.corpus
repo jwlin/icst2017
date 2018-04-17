@@ -1,0 +1,11 @@
+purchase date text mm dd yyyy purchasedate
+first name text firstname
+last name text lastname
+address 1 text address1
+address 2 text address2
+city text city
+state province text state
+zip postal code text postalcode
+email address text email
+confirm email address text confirmemail
+phone number text phonenumber

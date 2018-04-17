@@ -1,0 +1,12 @@
+first name text firstname 2 addrsform 2 firstname 30
+last name text lastname 2 addrsform 2 lastname 30
+company name text shiptoname 2 addrsform 2 shiptoname 30
+address text address1 2 addrsform 2 address1 25
+optional address line 2 optional text address2 2 addrsform 2 address2 25
+postal code text postalcode1 2 addrsform 2 postalcode1 10
+city text city 2 addrsform 2 city
+email address email email 2 addrsform 2 email 40
+phone tel phonenumber1 2 addrsform 2 phonenumber1 3
+phone tel phonenumber2 2 addrsform 2 phonenumber2 3
+phone tel phonenumber3 2 addrsform 2 phonenumber3 4
+ext tel phonenumber4 2 addrsform 2 phonenumber4 4

@@ -1,0 +1,10 @@
+first name dwfrm singleshipping shippingaddress addressfields firstname dwfrm singleshipping shippingaddress addressfields firstname text
+last name dwfrm singleshipping shippingaddress addressfields lastname dwfrm singleshipping shippingaddress addressfields lastname text
+address 1 dwfrm singleshipping shippingaddress addressfields address1 dwfrm singleshipping shippingaddress addressfields address1 text
+optional address 2 dwfrm singleshipping shippingaddress addressfields address2 dwfrm singleshipping shippingaddress addressfields address2 text
+city dwfrm singleshipping shippingaddress addressfields city dwfrm singleshipping shippingaddress addressfields city text
+email for order confirmation dwfrm billing billingaddress email emailaddress dwfrm billing billingaddress email emailaddress email
+email dwfrm login username dwfrm login username email
+password dwfrm login password dwfrm login password password
+zip code dwfrm singleshipping shippingaddress addressfields postal dwfrm singleshipping shippingaddress addressfields postal tel
+phone dwfrm singleshipping shippingaddress addressfields phone dwfrm singleshipping shippingaddress addressfields phone tel

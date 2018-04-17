@@ -1,0 +1,9 @@
+first name accountbasemodel person firstname accountbasemodel person firstname text
+last name accountbasemodel person lastname accountbasemodel person lastname text
+address accountbasemodel person address accountbasemodel person address text
+apt accountbasemodel person address2 accountbasemodel person address2 text
+city accountbasemodel person city accountbasemodel person city text
+postal code accountbasemodel person postalcode accountbasemodel person postalcode text
+phone number accountbasemodel person phone accountbasemodel person phone text
+zip postal code global zip code global zip code text 92602
+email address accountbasemodel person emailaddress accountbasemodel person emailaddress email

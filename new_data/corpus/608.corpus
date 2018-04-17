@@ -1,0 +1,9 @@
+first name ta registration firstname information firstname text 20
+last name ta registration lastname information lastname text 35
+membership number ta registration member number membershipnumber text 7
+my postal code ta registration member zip postalcode text
+other quantity ok please enter quantity text quantity selector other other quantity 4
+email address ta registration email information email email 50
+confirm email address ta registration confirmationemail information confirmationemail email 50
+password must ta registration password password password 100
+confirm password ta registration password confirm confirmpassword password 100

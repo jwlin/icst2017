@@ -1,0 +1,77 @@
+request credit limit text txtrequestcreditlimit 12
+existing credit card number text ecreditcardnumber 19
+first name text txtfname fname 50
+middle name text txtmname mname 50
+last name text txtlname lname 50
+show ssn ssn show ssn text txtssn3 4
+date of birth text mm txtdob1 2
+date of birth text dd txtdob2 2
+date of birth text yyyy txtdob3 4
+member number text txtmembernumber membernumber 50
+first name text reffirstname
+last name text reflastname
+email text refemail 50
+phone xxx xxx xxxx text phone refphone 14
+relationship text refrelationship
+email text email txtemail 50
+home phone xxx xxx xxxx text phone txthomephone 14
+cell phone xxx xxx xxxx text mobile txtmobilephone 14
+work phone xxx xxx xxxx text workphone txtworkphone 14
+work phone extension text txtworkphoneext ext 5
+address text txtaddress address1 100
+address line 2 text txtaddress2 address2 100
+city text txtcity city 50
+address text txtpreviousaddress address1 100
+address line 2 text txtpreviousaddress2 address2 100
+city text txtpreviouscity city 50
+address text txtmailingaddress address 100
+address line 2 text txtmailingaddress2 address2 100
+city text txtmailingcity city 50
+gross monthly income before taxes text txtgrossmonthlyincome 10
+other monthly income text txtothermonthlyincome 10
+other monthly income description text txtothermonthlyincomedesc 150
+monthly mortgage rent payment text txttotalmonthlyhousingexpense 10
+gross monthly income before taxes text prev txtgrossmonthlyincome 10
+your e mail address txtemailmedisclosures text
+first name text co txtfname fname 50
+middle name text co txtmname mname 50
+last name text co txtlname lname 50
+show ssn ssn show ssn text co txtssn3 4
+date of birth text mm co txtdob1 2
+date of birth text dd co txtdob2 2
+date of birth text yyyy co txtdob3 4
+member number text co txtmembernumber membernumber 50
+first name text co reffirstname
+last name text co reflastname
+email text co refemail 50
+phone xxx xxx xxxx text phone co refphone 14
+relationship text co refrelationship
+email text email co txtemail 50
+home phone xxx xxx xxxx text phone co txthomephone 14
+cell phone xxx xxx xxxx text mobile co txtmobilephone 14
+work phone xxx xxx xxxx text workphone co txtworkphone 14
+work phone extension text co txtworkphoneext ext 5
+address text co txtaddress address1 100
+address line 2 text co txtaddress2 address2 100
+city text co txtcity city 50
+address text co txtpreviousaddress address1 100
+address line 2 text co txtpreviousaddress2 address2 100
+city text co txtpreviouscity city 50
+address text co txtmailingaddress address 100
+address line 2 text co txtmailingaddress2 address2 100
+city text co txtmailingcity city 50
+gross monthly income before taxes text co txtgrossmonthlyincome 10
+other monthly income text co txtothermonthlyincome 10
+other monthly income description text co txtothermonthlyincomedesc 150
+monthly mortgage rent payment text co txttotalmonthlyhousingexpense 10
+gross monthly income before taxes text co prev txtgrossmonthlyincome 10
+show ssn ssn show ssn password txtssn1 3
+show ssn ssn show ssn password txtssn2 2
+show ssn ssn show ssn password co txtssn1 3
+show ssn ssn show ssn password co txtssn2 2
+zip tel txtzip zip 5
+zip tel txtpreviouszip zip 5
+zip tel txtmailingzip zip 5
+zip tel co txtzip zip 5
+zip tel co txtpreviouszip zip 5
+zip tel co txtmailingzip zip 5

@@ -1,0 +1,13 @@
+text header search field q search express 70
+first name first name first name text 40
+middle initial middle initial middle initial text 2
+last name last name last name text 40
+address line 1 address line1 address line1 text 40
+address line 2 address line2 address line2 text 40
+city city city text 40
+zip code zip zip text 5
+ssn secure card secure card text 11
+phone phone 1 phone text
+email address email email text 40
+re enter email address email confirm email confirm text 40
+women men email email text email signup email field

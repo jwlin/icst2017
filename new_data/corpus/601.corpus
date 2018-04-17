@@ -1,0 +1,14 @@
+search catalog text q q search
+search catalog text q q search
+zip code zip code dwfrm storelocator postalcode text dwfrm storelocator postalcode 2147483647
+company company dwfrm singleshipping shippingaddress addressfields companyname text dwfrm singleshipping shippingaddress addressfields companyname 30
+first name first name dwfrm singleshipping shippingaddress addressfields firstname text dwfrm singleshipping shippingaddress addressfields firstname 16
+last name last name dwfrm singleshipping shippingaddress addressfields lastname text dwfrm singleshipping shippingaddress addressfields lastname 16
+address 1 address 1 dwfrm singleshipping shippingaddress addressfields address1 text dwfrm singleshipping shippingaddress addressfields address1 50
+address 2 address 2 dwfrm singleshipping shippingaddress addressfields address2 text dwfrm singleshipping shippingaddress addressfields address2 30
+city city dwfrm singleshipping shippingaddress addressfields city text dwfrm singleshipping shippingaddress addressfields city 30
+zip code zip code dwfrm singleshipping shippingaddress addressfields zip text dwfrm singleshipping shippingaddress addressfields zip 10
+enter promo code text dwfrm cart couponcode dwfrm cart couponcode
+email address email address dwfrm singleshipping email emailaddress email dwfrm singleshipping email emailaddress 42
+sign up email email email enter your email
+phone phone dwfrm singleshipping shippingaddress addressfields phone tel dwfrm singleshipping shippingaddress addressfields phone 20

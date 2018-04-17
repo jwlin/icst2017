@@ -10,13 +10,16 @@ import util
 
 util.setup_logger()
 logger = util.get_logger()
+#util.add_file_logger('log.txt')
 
 form_dir = 'forms'
 corpus_dir = 'corpus'
 
 
 if __name__ == '__main__':
-    input_types = ['text', 'email', 'password']
+    # https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+    # added 'search', 'tel'
+    input_types = ['text', 'email', 'password', 'search', 'tel']
     for html_file in os.listdir(form_dir):
         if os.path.isfile(os.path.join(form_dir, html_file)) and html_file.endswith('.html'):
             fname, ext = os.path.splitext(html_file)
@@ -25,11 +28,20 @@ if __name__ == '__main__':
                 os.remove(corpus_path)
             except OSError:
                 pass
-            with open(os.path.join(form_dir, html_file), 'r', encoding='utf-8') as f:
-                dom = f.read().lower()
-                soup = BeautifulSoup(dom, 'html5lib')
-                for input_type in input_types:
-                    for input_tag in soup.find_all('input', attrs={'type': input_type}):
-                        with open(corpus_path, 'a') as cf:
-                            cf.write(util.extract_features(input_tag) + '\n')
-            logger.info('Generate %s', corpus_path)
+            with open(os.path.join(form_dir, html_file), 'rb') as f:
+                try:
+                    dom = f.read().lower()
+                    soup = BeautifulSoup(dom, 'html5lib')
+                    tags_found = 0
+                    for input_type in input_types:
+                        input_tags = soup.find_all('input', attrs={'type': input_type})
+                        tags_found += len(input_tags)
+                        for input_tag in input_tags:
+                            with open(corpus_path, 'a', encoding='utf-8') as cf:
+                                cf.write(util.extract_features(input_tag) + '\n')
+                    if tags_found > 2:
+                        logger.info('Generate %s', corpus_path)
+                    else:
+                        logger.warning('%s: %d tags found', html_file, tags_found)
+                except Exception as e:
+                    logger.error('%s: Exception: %s', html_file, e)

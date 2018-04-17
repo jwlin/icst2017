@@ -1,0 +1,29 @@
+text username usernamevalidator war cfnaapp1 instance top username user name 100
+residential street address text streetaddress streetaddress 23
+apartment text aptnumber aptnumber optional 23
+city text city city 13
+previous residential address text previousaddress previousaddress 23
+apartment text previousaptnumber previousaptnumber optional 23
+city text previouscity previouscity 13
+mailing address text mailingaddress mailingaddress 23
+apartment text mailingaptnumber mailingaptnumber optional 23
+city text mailingcity mailingcity 13
+driver s license text drivernumber drivernumber 20
+print agreement http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees how we will calculate your balance billing rights account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing text privacypolicy privacypolicy
+print agreement http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees how we will calculate your balance billing rights account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing text eletroniccommunications eletroniccommunications
+email address email emailaddress emailaddress 100
+confirm email address email confirmemailaddress confirmemailaddress 100
+zip code tel zipcode zipcode 9
+zip code tel previouszipcode previouszipcode 9
+zip code tel mailingzipcode mailingzipcode 9
+phone phone1 tel phone1 3
+phone phone2 tel phone2 3
+phone phone3 tel phone3 4
+work optional workphone1 tel workphone1 3
+work optional workphone2 tel workphone2 3
+work optional workphone3 tel workphone3 4
+social security ssn1 ssn1 tel 3
+social security ssn2 ssn2 tel 2
+social security ssn3 ssn3 tel 4
+00 tel annualincome annualincome 7
+00 tel monthlypayment monthlypayment 5

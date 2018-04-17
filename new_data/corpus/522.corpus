@@ -1,0 +1,31 @@
+first name please enter a first name please check the first name and try again ctl00 maincontentplaceholder contactinformation1 firstname text ctl00 maincontentplaceholder contactinformation1 firstname 16
+mi please check the middle initial and try again ctl00 maincontentplaceholder contactinformation1 middleinitial text ctl00 maincontentplaceholder contactinformation1 middleinitial 1
+last name please enter a last name please check the last name and try again ctl00 maincontentplaceholder contactinformation1 lastname text ctl00 maincontentplaceholder contactinformation1 lastname 17
+address 1 no po boxes please enter an address no po boxes ctl00 maincontentplaceholder contactinformation1 address1 text ctl00 maincontentplaceholder contactinformation1 address1 30
+address 2 optional optional ctl00 maincontentplaceholder contactinformation1 address2 text ctl00 maincontentplaceholder contactinformation1 address2 30
+zip code please enter a zip code please check the zip code and try again ctl00 maincontentplaceholder contactinformation1 zipcode text ctl00 maincontentplaceholder contactinformation1 zipcode 5
+city please enter a city please check the city and try again ctl00 maincontentplaceholder contactinformation1 city text ctl00 maincontentplaceholder contactinformation1 city 19
+address 1 please enter an address please check the address and try again ctl00 maincontentplaceholder contactinformation1 shippingaddress1box text ctl00 maincontentplaceholder contactinformation1 shippingaddress1box 30
+address 2 optional please check the address and try again optional ctl00 maincontentplaceholder contactinformation1 shippingaddress2box text ctl00 maincontentplaceholder contactinformation1 shippingaddress2box 30
+zip code please enter a zip code please check the zip code and try again ctl00 maincontentplaceholder contactinformation1 shippingaddresszipbox text ctl00 maincontentplaceholder contactinformation1 shippingaddresszipbox 5
+city please enter a city please check the city and try again ctl00 maincontentplaceholder contactinformation1 shippingaddresscitybox text ctl00 maincontentplaceholder contactinformation1 shippingaddresscitybox 19
+please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 socialsecuritynumber1 text socialsecuritynumber1 3
+please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 socialsecuritynumber2 text socialsecuritynumber2 2
+please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 socialsecuritynumber3 text socialsecuritynumber3 4
+please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 combinedssn text ctl00 maincontentplaceholder securefinancialinformation1 combinedssn
+please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 dobmonth text dobmonth 2
+please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 dobday text dobday 2
+please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 dobyear text dobyear 4
+please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 combineddateofbirth text ctl00 maincontentplaceholder securefinancialinformation1 combineddateofbirth
+employer optional please check the employer name and try again optional ctl00 maincontentplaceholder securefinancialinformation1 employer text ctl00 maincontentplaceholder securefinancialinformation1 employer 36
+annual income please enter your annual income invalid entry please try again ctl00 maincontentplaceholder securefinancialinformation1 annualincome text annualincome 13
+id number please enter your id number invalid entry please try again ctl00 maincontentplaceholder securefinancialinformation1 idnumber text ctl00 maincontentplaceholder securefinancialinformation1 idnumber 15
+please enter your id expiration date invalid entry please try again id expiration ctl00 maincontentplaceholder securefinancialinformation1 expirationmonth text expirationmonth 2
+please enter your id expiration date invalid entry please try again id expiration ctl00 maincontentplaceholder securefinancialinformation1 expirationyear text expirationyear 2
+please enter your id expiration date invalid entry please try again id expiration ctl00 maincontentplaceholder securefinancialinformation1 combinedidexpirationdate text ctl00 maincontentplaceholder securefinancialinformation1 combinedidexpirationdate
+email address please enter your email address please check the email address and try again ctl00 maincontentplaceholder securefinancialinformation1 email text ctl00 maincontentplaceholder securefinancialinformation1 email 47
+confirm email address please confirm your email address please check both email addresses and try again ctl00 maincontentplaceholder securefinancialinformation1 confirmemail text ctl00 maincontentplaceholder securefinancialinformation1 confirmemail 47
+please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 businessphonenumber1 text businessphonenumber1 3
+please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 businessphonenumber2 text businessphonenumber2 3
+please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 businessphonenumber3 text businessphonenumber3 4
+please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 combinedbusinessphonenumber text ctl00 maincontentplaceholder securefinancialinformation1 combinedbusinessphonenumber

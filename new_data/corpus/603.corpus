@@ -1,0 +1,18 @@
+first name billing first name is required billing firstname billing firstname text 50
+last name billing last name is required billing lastname billing lastname text 50
+company name billing company name billing companyname billing companyname text 35
+address line 1 billing address line 1 is required billing address1 billing address1 text 35
+apt address line 2 billing apartment number address line 2 billing address2 billing address2 text 35
+city billing city is required billing city billing city text 30
+zip postal code billing zip postal code is required billing zip billing zip text 10
+telephone telephone billing phone billing phone text 20
+e mail billing e mail is required billing email billing email text 50
+first name shipping first name is required shipping firstname shipping firstname text 50
+last name shipping last name is required shipping lastname shipping lastname text 50
+company name shipping company name shipping companyname shipping companyname text 35
+address line 1 shipping address line 1 is required shipping address1 shipping address1 text 35
+apt address line 2 shipping apartment number address line 2 shipping address2 shipping address2 text 35
+city shipping city is required shipping city shipping city text 30
+zip postal code shipping zip postal code is required shipping zip shipping zip text 10
+telephone telephone shipping phone shipping phone text 20
+e mail shipping e mail is required shipping email shipping email text 50

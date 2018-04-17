@@ -1,0 +1,10 @@
+email address usremail usremail text
+first name shipaddfirstname shipaddfirstname text 32
+last name shipaddlastname shipaddlastname text 32
+company name optional shipaddcompanyname shipaddcompanyname text 32
+address 1 shipaddress1 shipaddress1 text 52
+address 2 optional shipaddress2 shipaddress2 text 52
+zip postal code shippostalcode shippostalcode text
+city shipcity shipcity text 32
+password usrpassword usrpassword password 25
+phone tel shipphonenumber shipphonenumber xxx xxx xxxx 14

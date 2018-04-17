@@ -8,3 +8,6 @@ city should not be empty city is not in the correct format city city datamodel s
 text
 shopcalculator text 24 99
 email address should not be empty email address is not in the correct format email address email address datamodel shippingcontact email datamodel shippingcontact email email 50
+postal code should not be empty postal code is not in the correct format postal code postal code datamodel shippingcontact postalcode datamodel shippingcontact postalcode tel 10
+phone number should not be empty phone number is not in the correct format phone number phone number datamodel shippingcontact phone phonenumber datamodel shippingcontact phone phonenumber tel 28
+extension is not in the correct format extension ext datamodel shippingcontact phone extension datamodel shippingcontact phone extension tel 5

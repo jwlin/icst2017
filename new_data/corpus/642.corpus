@@ -1,0 +1,11 @@
+model number text product model model
+full name text full name
+street address address1 enter a location user address attributes address1 text
+unit number address2 user address attributes address2 text
+city city user address attributes city text
+state state user address attributes state text
+purchased from text product purchased at purchased at
+email address email user email email
+phone number phone user phone tel
+zip code zip user address attributes zip tel
+purchase date tel product purchase date purchase date

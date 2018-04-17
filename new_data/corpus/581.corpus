@@ -1,0 +1,8 @@
+first name firstname atg commerce order purchase shippinginfoformhandler shipcontactinfo firstname text 40
+last name lastname atg commerce order purchase shippinginfoformhandler shipcontactinfo lastname text 40
+street address streetaddress atg commerce order purchase shippinginfoformhandler shipcontactinfo address1 text 35
+apt suite optional aptsuite atg commerce order purchase shippinginfoformhandler shipcontactinfo address2 text 35
+city city atg commerce order purchase shippinginfoformhandler shipcontactinfo city text 60
+zip code zipcode atg commerce order purchase shippinginfoformhandler shipcontactinfo postalcode text 10
+phone number phonenumber atg commerce order purchase shippinginfoformhandler shipcontactinfo phonenumber text 30
+company name optional companyname atg commerce order purchase shippinginfoformhandler shipcontactinfo companyname text 35

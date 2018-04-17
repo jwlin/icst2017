@@ -1,0 +1,15 @@
+select your product text whfmfillin whfmfillin click to select
+select your model series text sersfillin sersfillin click to select
+select or enter your model number text modo modo click to select 20
+enter your module number text modu modu 4
+select date of purchase text prdt prdt 10
+first name text fnam fnam 32
+last name text lnam lnam 32
+e mail text emal emal 55
+address 1 text add1 add1 32
+address 2 text add2 add2 32
+city text city city 32
+state province state province or county state province state province or county text stou stou 30
+zip code postal code postal code zip code postal code postal code text zipc zipc 10
+zip code postal code postal code zip code postal code postal code text czip czip 7
+zip code postal code postal code zip code postal code postal code text ozip ozip 10

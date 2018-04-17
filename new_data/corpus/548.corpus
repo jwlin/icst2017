@@ -1,0 +1,14 @@
+first name r first name text first name 12
+middle initial middle name text middle name 1
+last name r last name text last name 25
+home address r address1 text address1 30
+address 2 address2 text address2 30
+city r city text city 30
+zip code r zip text zip 5
+email address r email text email 70
+primary phone r home phone area text home phone area 3
+primary phone r home phone prefix text home phone prefix 3
+primary phone r home phone suffix text home phone suffix 4
+secondary phone mobile phone area text mobile phone area 3
+secondary phone mobile phone prefix text mobile phone prefix 3
+secondary phone mobile phone suffix text mobile phone suffix 4

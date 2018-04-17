@@ -1,0 +1,19 @@
+text q query 200
+item no text orderno1 orderno1 6
+item no type of product new refurbished product name serial no purchase date text orderno2 orderno2 4
+item no type of product new refurbished product name serial no purchase date text orderno3 orderno3 3
+serial no text serialno serialno 8
+purchase date text purchasedate purchasedate
+dealer name text dealername dealername
+postal code text dealerpostalcode dealerpostalcode
+city text dealercity dealercity
+first name text firstname firstname
+last name text lastname lastname
+street no text street street
+postal code text postalcode postalcode
+city text city city
+email text email email
+please confirm email address text emailconfirmation emailconfirmation
+title text title title
+phone text phone phone
+birthday text dayofbirth dayofbirth

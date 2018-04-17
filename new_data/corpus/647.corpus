@@ -1,0 +1,8 @@
+text q search petsafe
+site search q text
+text q search petsafe
+first name text name first freeform name first 150
+last name text name last freeform name last 150
+product number text product number other freeform product number other 150
+email email email freeform email 150
+sign up email newsletter input email ex chester petsafe net

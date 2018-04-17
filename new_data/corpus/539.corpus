@@ -1,0 +1,10 @@
+this field is required first name firstname firstname text 20
+middle name middlename middlename text 20
+this field is required last name lastname lastname text 40
+this field is required social security number maskedssn maskedssn text 11
+this field is required email address email email text 40
+this field is required email and confirm email address must be same confirm email address confirmemail confirmemail text 40
+this field is required primary phone phones 0 number phones 0 number text 14
+primary phone extension phones 0 extention phones 0 extention text 6
+secondary phone phones 1 number phones 1 number text 14
+secondary phone extension phones 1 extention phones 1 extention text 6

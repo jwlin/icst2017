@@ -1,0 +1,15 @@
+first name inpname firstname input text inpname firstname input 15
+optional mi optional inpname middleinitial input text inpname middleinitial input 1
+last name inpname lastname input text inpname lastname input 20
+date of birth inpdob input text inpdob input mm dd yyyy 10
+why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration annual income annualincome input text annualincome input 7
+zip code inpaddress uszipinstantcredit input text inpaddress uszipinstantcredit input 5
+street address inpaddress streetaddress input text inpaddress streetaddress input 30
+optional suite or apartment optional inpaddress line2 input text inpaddress line2 input ex apt b suite 202 etc 30
+city inpaddress uscity input text inpaddress uscity input 20
+email address email input text email input 80
+confirm email address confirmemail input text confirmemail input 80
+mobile phone inpmobilephone fullphonenumber text inpmobilephone fullphonenumber 12
+alternate phone inpaltphone fullphonenumber text inpaltphone fullphonenumber 12
+if you received a referral code with your credit card offer please enter it now your code may include up to 10 characters including letters and numbers and is not case sensitive optional if you received a referral code with your credit card offer please enter it now your code may include up to 10 characters including letters and numbers and is not case sensitive referral code optional referralcode input text referralcode input 10
+why do you need my social security number we use this information to verify your identity and obtain credit bureau information why do you need my social security number we use this information to verify your identity and obtain credit bureau information social security number inpssn ssn password inpssn ssn 9

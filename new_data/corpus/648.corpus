@@ -1,0 +1,14 @@
+first name text fields firstname fields firstname 100
+last name text fields lastname fields lastname 100
+phone text fields phone fields phone 50
+address text fields address fields address 100
+address line 2 text fields addressline2 fields addressline2 100
+city text fields city fields city 100
+state province text fields stateprovince fields stateprovince 50
+zip postal code text fields zippostalcode fields zippostalcode 50
+serial number text fields serialnumber fields serialnumber 100
+where purchased text fields wherepurchased fields wherepurchased 100
+purchase price text fields purchaseprice fields purchaseprice 20
+email email fields email fields email
+newsletter email email 92080
+search q search

@@ -1,0 +1,24 @@
+first name text billing firstname billing firstname 32
+last name text billing lastname billing lastname 32
+company text billing company billing company 83
+address text billing street billing street1 150
+apt suite etc text billing street billing street2 150
+zip postal code text billing postcode billing postcode 36
+city text billing city billing city 50
+state province text billing region billing region
+first name text shipping firstname shipping firstname 32
+last name text shipping lastname shipping lastname 32
+company text shipping company shipping company 83
+address text shipping street shipping street1 150
+apt suite etc text shipping street shipping street2 150
+zip postal code text shipping postcode shipping postcode 36
+city text shipping city shipping city 50
+state province text shipping region shipping region
+email address email login email login username
+email address email billing email billing email 254
+password password login password login password
+password password billing customer password billing customer password
+confirm password password billing confirm password billing confirm password
+search search search search search q search entire store here 128
+telephone tel billing telephone billing telephone 255
+telephone tel shipping telephone shipping telephone 255

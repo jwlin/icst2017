@@ -1,0 +1,17 @@
+text query
+first name text fname 50
+initial text initial 10
+last name text lname 50
+street text street 50
+apt no text apt no 50
+city text city 50
+zip postal code text mailcode 30
+e mail address text email 50
+phone number not required text phone 40
+text date purchased date purchased 10
+serial number text serial number 100
+text store where 255
+text aware other 100
+other brands text other brands 255
+text ethnicity other 100
+text occupation other

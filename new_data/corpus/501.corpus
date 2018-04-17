@@ -5,3 +5,5 @@ street address no po box addresslineone text addresslineone 35
 zip code zipcode text zipcode 5
 city cityname text city 20
 email address email text emailaddress 64
+search search search search
+phone number primaryphone tel primaryphone 14

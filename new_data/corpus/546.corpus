@@ -1,0 +1,22 @@
+first name first name text firstname firstname 15
+m i m i text middleinitial middleinitial 1
+last name last name text lastname lastname 15
+mother s maiden name mother s maiden name text mothersmaidenname mothersmaidenname 16
+e mail e mail text email email 60
+street address street address text address addressline1 address addressline1 36
+city city text address city address city 19
+street address street address text residentialaddress addressline1 residentialaddress addressline1 36
+city city text residentialaddress city residentialaddress city 19
+zip code zip code text residentialaddress zip zip1 residentialaddress zip zip 5
+social security number social security number password ssn ssn1 ssn1 3
+social security number social security number password ssn ssn2 ssn2 2
+social security number social security number password ssn ssn3 ssn3 4
+date of birth date of birth tel birthdate year yyyy 4
+home phone home phone tel homephone areacode homephoneareacode 3
+home phone home phone tel homephone phone1 homephone1 3
+home phone home phone tel homephone phone2 homephone2 4
+mobile phone mobile phone tel mobilephone areacode mobilephoneareacode 3
+mobile phone mobile phone tel mobilephone phone1 mobilephone1 3
+mobile phone mobile phone tel mobilephone phone2 mobilephone2 4
+monthly housing payment monthly housing payment tel housingpayment housingpayment 5
+zip code zip code tel address zip zip1 address zip zip1 5

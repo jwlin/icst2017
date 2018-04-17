@@ -1,0 +1,18 @@
+first name firstname firstname text 30
+middle initial middleinitial middleinitial text 1
+last name lastname lastname text 30
+mailing address mailingaddressline1 mailingaddressline1 text 100
+apt unit mailingaddressline2 mailingaddressline2 text 100
+city mailingcity mailingcity text 50
+home street address homeaddressline1 homeaddressline1 text 100
+apt unit homeaddressline2 homeaddressline2 text 100
+city homecity homecity text 50
+email address email domain com emailaddress emailaddress email 255
+zip code mailingzipcode mailingzipcode tel
+zip code homezipcode homezipcode tel
+main phone number 10 digits primaryphonenumber primaryphonenumber tel
+social security number ssn ssn tel
+date of birth mm dd yyyy dobmonth dobmonth tel 2
+date of birth mm dd yyyy dobday dobday tel 2
+date of birth mm dd yyyy dobyear dobyear tel 4
+your total monthly income monthlyincome monthlyincome tel

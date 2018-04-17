@@ -1,0 +1,8 @@
+required lorem ipsum dolor sit amet first name text firstname firstname 25
+required lorem ipsum dolor sit amet last name text lastname lastname 25
+apo fpo apo fpo info icon apo fpo info icon required lorem ipsum dolor sit amet street address text wc addressentryform forminput address1 1 address1 35
+optional apartment suite building text wc addressentryform forminput address2 1 address2 35
+city text wc addressentryform forminput city 1 city 50
+zip code text wc addressentryform forminput zipcode 1 zipcode
+reward number text scorecard reward1 scorecard reward1 12
+lorem ipsum dolor sit amet confirm error dolor sit amet required error dolor sit amet email address email email email1

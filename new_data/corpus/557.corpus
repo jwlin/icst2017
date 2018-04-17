@@ -1,0 +1,10 @@
+first name address firstname address firstname text 15
+last name address lastname address lastname text 15
+address address addressline1 address addressline1 text 60
+apt suite address addressline2 address addressline2 text 60
+city address city address city text 50
+zip code address postalcode address postalcode text 10
+get started zip code newsletter signup zipcode text zip code 5
+get started zip code newsletter signup email email email address 50
+phone number address phonenumber address phonenumber tel 15
+phone extension address phoneextension address phoneextension tel 10

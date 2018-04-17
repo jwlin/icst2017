@@ -1,0 +1,30 @@
+first name is required first name text firstname firstname first name 20
+middle initial optional text middlename middlename initial 1
+last name is required last name text lastname lastname last name 20
+social security number is required invalid ssn more info social security number more info text ssn ssn 123 45 6789
+confirm ssn must match ssn confirm ssn is required please confirm your social security number confirm social security number please confirm your social security number text confirmssn confirmssn 123 45 6789
+phone number is required more info primary phone number more info mobile phone text primaryphone primaryphone 321 456 7890
+secondary phone number optional mobile phone text secondaryphone secondaryphone 321 456 7890
+home address is required more info home address more info text homeaddress homeaddress 123 main street 50
+suite apt if applicable text homeaptsuite homeaptsuite apt 10
+zip code is required zip text homezipcode homezipcode 12345
+city is required city text homecity homecity city 20
+state is required state text homestate homestate state
+po address is required po address text poaddress poaddress po box 20
+po zip code is required po zip text pozipcode pozipcode 12345
+po city is required po city text pocity pocity city 20
+po state is required po state text postate postate state
+security word is required security word what does this mean text mothersmaidenname mothersmaidenname security word 25
+text income income 35 000 7
+text monthlyhousingpayment monthlyhousingpayment 500 6
+text creditlimit creditlimit 200 5
+first name is required first name text debitfirstname debitfirstname cardholder first name 20
+last name is required last name text debitlastname debitlastname cardholder last name 20
+card number is required please review we only accept visa and mastercard this is an invalid credit card number card number text debitcardnumber debitcardnumber card number 19
+cvv is required please review cvv the cvv is the 3 digit number on the back of your card on or above your signature line text debitcvvcode debitcvvcode cvv 3
+billing address is required bill to address text debitaddress debitaddress 123 main street 50
+bill to suite apt if applicable text debitaptsuite debitaptsuite suite apt 10
+zip is required bill to zip text debitzip debitzip 12345
+city is required bill to city text debitcity debitcity city 20
+state is required bill to state text debitstate debitstate state
+email required invalid email address emailresponsemsg more info email address more info email emailaddress emailaddress email address com 60

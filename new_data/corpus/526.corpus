@@ -1,0 +1,27 @@
+your pre approved customer number your pre approved customer number customernumber customernumber text 10
+first name first name firstname firstname text 50
+middle name middle name middlename middlename text 50
+last name last name lastname lastname text 50
+address line 1 address line 1 address1 address1 text 50
+address line 2 address line 2 address2 address2 text 50
+city city city city text 50
+address line 1 address line 1 physicaladdressline1 physicaladdressline1 text 50
+address line 2 address line 2 physicaladdressline2 physicaladdressline2 text 50
+city city physicalcity physicalcity text 50
+catalog catalog number campaigncatalogcode enter catalog text 8
+item item number id enter item text 40
+email email emailaddress emailaddress email 50
+choose a password choose a password password password password 50
+re enter your password re enter your password reenterpassword reenterpassword password 50
+zip code zip code zip zip tel 5
+zip code zip code physicalzipcode physicalzipcode tel 5
+primary phone primary phone primaryphone1 primaryphone1 tel 3
+primary phone primary phone primaryphone2 primaryphone2 tel 3
+primary phone primary phone primaryphone3 primaryphone3 tel 4
+secondary phone secondary phone secondaryphone1 secondaryphone1 tel 3
+secondary phone secondary phone secondaryphone2 secondaryphone2 tel 3
+secondary phone secondary phone secondaryphone3 secondaryphone3 tel 4
+social security number social security number user ssn1 user ssn1 tel 3
+social security number social security number user ssn2 user ssn2 tel 2
+social security number social security number user ssn3 user ssn3 tel 4
+catalog catalog catalogcode catalogcode tel 50

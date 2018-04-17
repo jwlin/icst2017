@@ -1,0 +1,28 @@
+text first name first name
+text middle name middle name
+text last name last name
+text address line1 address line1
+text address line2 address line2
+text city city
+text physical address line1 physical address line1
+text physical address line2 physical address line2
+text physical city physical city
+text mothers maiden name mothers maiden name
+month day year text auth first name 1 auth first name 1
+month day year text auth middle initial 1 auth middle initial 1
+month day year text auth last name 1 auth last name 1
+street address text authc address1 authc address1
+apt ste opt text authc address2 authc address2
+city text authc city authc city
+email email address email address
+tel affinity number primary affinity number primary
+tel home phone home phone
+tel work phone work phone
+tel zip zip
+tel physical zip physical zip
+yes no country of citizenship tel ssn ssn
+tel annual income annual income
+tel mrtg rent amt mrtg rent amt
+month day year affinity number secondary affinity number secondary tel
+month day year secondaryssn secondaryssn tel
+zip code tel authc zip authc zip

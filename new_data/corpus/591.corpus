@@ -1,0 +1,11 @@
+first name first name text dwfrm singleshipping shippingaddress addressfields firstname dwfrm singleshipping shippingaddress addressfields firstname 50
+last name last name text dwfrm singleshipping shippingaddress addressfields lastname dwfrm singleshipping shippingaddress addressfields lastname 50
+address address text dwfrm singleshipping shippingaddress addressfields address1 dwfrm singleshipping shippingaddress addressfields address1 35
+address 2 address 2 text dwfrm singleshipping shippingaddress addressfields address2 dwfrm singleshipping shippingaddress addressfields address2 35
+city city text dwfrm singleshipping shippingaddress addressfields city dwfrm singleshipping shippingaddress addressfields city 35
+zip code zip code text dwfrm singleshipping shippingaddress addressfields zip dwfrm singleshipping shippingaddress addressfields zip 10
+numbers only no dashes phone number phone number text dwfrm newsletter checkoutsubscription mobile dwfrm newsletter checkoutsubscription mobile
+email address text outofstockemail outofstockemail
+email address email address email dwfrm login username d0kukprqfkqb dwfrm login username d0kukprqfkqb email address 50
+your email your email email dwfrm cart fromemail dwfrm cart fromemail
+your friends email your friends email email dwfrm cart toemail dwfrm cart toemail

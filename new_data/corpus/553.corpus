@@ -1,0 +1,9 @@
+first name name first mi last text firstname firstnameid 20
+middle initial text mi miid 1
+last name text lastname lastnameid 20
+date of birth text dob dobid 12
+social security number text ssn ssn 12
+e mail address text email email 50
+contact phone text homephone homephone 12
+residential zip code text address zipcode1 address zipcode1 5
+your relationship banker text agent agent 20

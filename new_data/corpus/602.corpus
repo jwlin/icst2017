@@ -1,0 +1,8 @@
+first name address firstname firstname text
+last name address surname lastname text
+address line 1 address line1 line1 text
+address line 2 optional address line2 line2 text
+city address towncity towncity text
+search by city state zip code locationquery q text
+zip code address zipcode postcode tel
+phone number address phone phone tel

@@ -1,0 +1,8 @@
+first name first name dwfrm shipping address addressfields firstname dwfrm shipping address addressfields firstname text 14
+last name last name dwfrm shipping address addressfields lastname dwfrm shipping address addressfields lastname text 15
+company or organization name company or organization name dwfrm shipping address addressfields companyname dwfrm shipping address addressfields companyname text 30
+address address dwfrm shipping address addressfields address1 dwfrm shipping address addressfields address1 text 30
+city city dwfrm shipping address addressfields city dwfrm shipping address addressfields city text 30
+extension extension dwfrm shipping address addressfields phoneextension dwfrm shipping address addressfields phoneextension text 6
+zip code zip code dwfrm shipping address addressfields postal dwfrm shipping address addressfields postal tel 10
+phone number phone number dwfrm shipping address addressfields phone dwfrm shipping address addressfields phone tel 20

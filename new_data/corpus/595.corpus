@@ -1,0 +1,26 @@
+for existing customers email for existing customers email email text
+first name checkoutfirstname checkoutfirstname text 40
+last name checkoutlastname checkoutlastname text 40
+company company company text 40
+address line 1 address1 address1 text 50
+apartment suite floor optional address2 address2 text 50
+zip zip zipus text 10
+city cityname cityname text 25
+first name billingfirstname firstname text
+last name billinglastname lastname text
+company billingcompany companyname text
+address line 1 billingaddress1 address1 text
+apartment suite floor optional billingaddress2 address2 text
+zip zip text zipus billingzip
+city billingcityname cityname text 25
+state state text statetext statetext 40
+email shippingemail shippingemail text
+us phone eg 1234567890 basephonefull basephonefull text 10
+enter the 8 digit mo code or barcode on your coupon addcouponinput enter the 8 digit mo code or barcode on your coupon addcouponinput text
+card number giftcardnumberpwgc giftcardnumber text 16
+card pin giftcardpinpwgc giftcardpin text 8
+card number cardnumber cardnumber text 16
+the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card security code security code securitycode securitycode text 4
+name on card namecard namecard text 61
+email sign up for special offers txtsignupspecialemail enter email address email text
+for existing customers password for existing customers show password password loginpasswd password

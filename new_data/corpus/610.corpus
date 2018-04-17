@@ -1,0 +1,29 @@
+text q search nvidia 50
+first name text fnam fnam 25
+last name text lnam lnam 25
+email address text emal emal 55
+verify email address text cmal cmal 55
+alternate email 1 text eml1 eml1 55
+alternate email 2 text eml2 eml2 55
+street address 1 text add1 add1 50
+street address 2 text add2 add2 50
+other specify text cryo cryo 30
+city text city city 30
+state province other specify text stou stou 60
+zip code text zpc zpc 5
+zip code text zp4 zp4 4
+postal code text czp czp 7
+zip postal code text ozp ozp 15
+phone number text phnm phnm 28
+phone number text extn extn 10
+other specify text popo popo 50
+part number text pn1 pn1 3
+part number text pn2 pn2 5
+part number text pn3 pn3 4
+part number text pn4 pn4 3
+serial number text srnu srnu
+other specify text prro prro 50
+other specify text whpo whpo 50
+which game s which application s please specify text infi infi 50
+other text puot puot 50
+other text lrno lrno 30

@@ -1,0 +1,18 @@
+first name or first few letters last name or first few letters w firstname firstname text 20
+last name or first few letters first name or first few letters w lastname lastname text 20
+required first name required firstname firstname text 20
+mi middleinitial middleinitial text 1
+required last name required lastname lastname text 20
+required street address required address1 address1 text 30
+apartment suite other address2 address2 text 30
+required city required city city text 28
+required zip code required zipcode zipcode text 5
+required annual income required annualincomeamount annualincomeamount text
+email address email email text
+required first name required authbuyerfirstname authbuyerfirstname text
+mi authbuyermiddleinitial authbuyermiddleinitial text
+required last name required authbuyerlastname authbuyerlastname text
+10 when you sign up to receive emails offer valid on full price items excludes furniture u s only must be new email subscriber enter your email address to receive a promo code in your inbox submit email to list save 10 today when you sign up to receive emails offer valid on full price items excludes furniture u s only must be new email subscriber enter your email address to receive a promo code in your inbox email email signup email enter your email address
+required social security number required ssn ssn password 11
+required day phone required dayphone dayphone tel
+evening phone eveningphone eveningphone tel

@@ -1,0 +1,13 @@
+model number input 1 input 1 1 text
+name of the retailer input 27 input 1 27 text
+serial number input 2 input 1 2 text
+date purchased input 3 input 1 3 text
+what was the purchase price input 26 input 1 26 text
+first name input 7 input 1 7 text
+last name input 8 input 1 8 text
+address input 9 input 1 9 text
+city input 10 input 1 10 text
+zip code postal code input 22 input 1 22 text
+phone input 30 input 1 30 text
+email input 14 input 1 14 text
+search search search field s what are you looking for

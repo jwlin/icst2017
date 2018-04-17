@@ -1,0 +1,29 @@
+search term text t search
+text un email
+text bill name first form bill name first
+text bill name last form bill name last
+company text bill company form bill company
+text bill street 0 form bill street 0
+apt suite text bill street 1 form bill street 1
+text bill city form bill city
+text bill state text form bill state text
+text bill state text nonjs
+text bill zip form bill zip
+password hint text hint form create account hint
+text ship name first form ship name first
+text ship name last form ship name last
+company text ship company form ship company
+text ship street 0 form ship street 0
+apt suite text ship street 1 form ship street 1
+text ship city form ship city
+text ship state text form ship state text
+text ship state text nonjs
+text ship zip form ship zip
+un email email
+billing email form billing email email
+password pass password
+pass password password
+password password password form create account password
+retype password password password confirmation form create account password confirmation
+tel bill phone form bill phone
+tel ship phone form ship phone

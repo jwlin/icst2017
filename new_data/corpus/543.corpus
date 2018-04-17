@@ -1,0 +1,75 @@
+suffix country of citizenship no yes country of citizenship country of permanent residence primaryapplicantnamefirst primaryapplicant name first first name text 60
+suffix country of citizenship no yes country of citizenship country of permanent residence primaryapplicantnamemiddle primaryapplicant name middle middle name text 50
+suffix primaryapplicantnamelast primaryapplicant name last last name text 60
+suffix country of citizenship no yes country of citizenship country of permanent residence primaryapplicantbirthdate primaryapplicant birthdate date of birth text 10
+suffix country of citizenship no yes country of citizenship country of permanent residence primaryapplicantssn primaryapplicant ssn social security number text 11
+country of permanent residence country of citizenship country of citizenship no yes suffix primaryapplicantemail primaryapplicant email email address text 40
+state primaryapplicantaddresslineone primaryapplicant address lineone physical address text 35
+state primaryapplicantaddresslinetwo primaryapplicant address linetwo suite unit text 5
+state primaryapplicantaddresscity primaryapplicant address city city text 20
+state primaryapplicantaddresszipcode primaryapplicant address zipcode zip code text 10
+housing status primaryapplicanthousingmonthlypayment primaryapplicant housingmonthlypayment monthly payment text 10
+mail delivery address primaryapplicantmailingaddresslineone primaryapplicant mailingaddress lineone mail delivery address text 35
+mail delivery address primaryapplicantmailingaddresslinetwo primaryapplicant mailingaddress linetwo suite unit text 5
+state primaryapplicantmailingaddresscity primaryapplicant mailingaddress city city text 20
+state primaryapplicantmailingaddresszipcode primaryapplicant mailingaddress zipcode zip code text 10
+employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes primaryapplicantemployer primaryapplicant employer employer text 30
+occupation primaryapplicantotheroccupationdescription primaryapplicant otheroccupationdescription occupation description text 25
+occupation employment status source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes primaryapplicantannualincome primaryapplicant annualincome annual income text 12
+source of annual income primaryapplicantotherprimaryannualincomesourcedescription primaryapplicant otherprimaryannualincomesourcedescription other description text 20
+source of additional annual income primaryapplicantadditionalannualincome primaryapplicant additionalannualincome additional annual income text 12
+source of additional annual income primaryapplicantotheradditionalannualincomesourcedescription primaryapplicant otheradditionalannualincomesourcedescription other description text 20
+expected monthly international transactions expected monthly cash transactions source of additional annual income no yes source of annual income occupation employment status length of relationship no yes bankerapplicationtotalnonretirementassets bankerapplication totalnonretirementassets checking savings and money market text 11
+expected monthly international transactions expected monthly cash transactions source of additional annual income no yes source of annual income occupation employment status length of relationship no yes bankerapplicationtotalretirementassets bankerapplication totalretirementassets investments and retirement accounts text 11
+no yes length of relationship expected monthly international transactions expected monthly cash transactions source of additional annual income no yes source of annual income occupation employment status primaryapplicantrequestedbalancetransferamount primaryapplicant requestedbalancetransferamount total amount of balance transfers text 10
+suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantnamefirst jointapplicant name first first name text 60
+suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantnamemiddle jointapplicant name middle middle name text 50
+suffix jointapplicantnamelast jointapplicant name last last name text 60
+suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantbirthdate jointapplicant birthdate date of birth text 10
+suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantssn jointapplicant ssn social security number text 11
+state jointapplicantaddresslineone jointapplicant address lineone physical address text 35
+state jointapplicantaddresslinetwo jointapplicant address linetwo suite unit text 5
+state jointapplicantaddresscity jointapplicant address city city text 20
+state jointapplicantaddresszipcode jointapplicant address zipcode zip code text 10
+state jointapplicantmailingaddresslineone jointapplicant mailingaddress lineone mail delivery address text 35
+state jointapplicantmailingaddresslinetwo jointapplicant mailingaddress linetwo suite unit text 5
+state jointapplicantmailingaddresscity jointapplicant mailingaddress city city text 20
+state jointapplicantmailingaddresszipcode jointapplicant mailingaddress zipcode zip code text 10
+employment status no yes state no yes state no yes country of permanent residence country of citizenship country of citizenship no yes suffix occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantemployer jointapplicant employer employer text 30
+occupation jointapplicantotheroccupationdescription jointapplicant otheroccupationdescription occupation description text 25
+occupation employment status no yes state no yes state no yes country of permanent residence country of citizenship country of citizenship no yes suffix source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantannualincome jointapplicant annualincome annual income text 12
+source of annual income jointapplicantotherprimaryannualincomesourcedescription jointapplicant otherprimaryannualincomesourcedescription other description text 20
+source of additional annual income jointapplicantadditionalannualincome jointapplicant additionalannualincome additional annual income text 12
+source of additional annual income jointapplicantotheradditionalannualincomesourcedescription jointapplicant otheradditionalannualincomesourcedescription other description text 20
+suffix no yes state additionalcardholdernamefirst additionalcardholder name first first name text 60
+suffix no yes state additionalcardholdernamemiddle additionalcardholder name middle middle name text 50
+suffix additionalcardholdernamelast additionalcardholder name last last name text 60
+suffix no yes state additionalcardholderbirthdate additionalcardholder birthdate date of birth text 10
+suffix no yes state additionalcardholderssn additionalcardholder ssn social security number text 11
+state additionalcardholderaddresslineone additionalcardholder address lineone physical address text 35
+state additionalcardholderaddresslinetwo additionalcardholder address linetwo suite unit text 5
+state additionalcardholderaddresscity additionalcardholder address city city text 20
+state additionalcardholderaddresszipcode additionalcardholder address zipcode zip code text 10
+suffix spousenamefirst spouse name first first name text 15
+suffix spousenamemiddle spouse name middle mi text 1
+suffix spousenamelast spouse name last last name text 25
+state spouseaddresslineone spouse address lineone mail delivery address text 35
+state spouseaddresslinetwo spouse address linetwo suite unit text 5
+state spouseaddresscity spouse address city city text 20
+state spouseaddresszipcode spouse address zipcode zip code text 10
+suffix jointapplicantspousenamefirst jointapplicantspouse name first first name text 15
+suffix jointapplicantspousenamemiddle jointapplicantspouse name middle mi text 1
+suffix jointapplicantspousenamelast jointapplicantspouse name last last name text 25
+state jointapplicantspouseaddresslineone jointapplicantspouse address lineone mail delivery address text 35
+state jointapplicantspouseaddresslinetwo jointapplicantspouse address linetwo suite unit text 5
+state jointapplicantspouseaddresscity jointapplicantspouse address city city text 20
+state jointapplicantspouseaddresszipcode jointapplicantspouse address zipcode zip code text 10
+no yes no yes suffix state no yes suffix state no yes suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions no yes suffix no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes state housing status no yes mail delivery address state suffix country of citizenship no yes country of citizenship country of permanent residence state primaryapplicantdemanddepositaccountnumber primaryapplicant demanddepositaccountnumber odp account number text 14
+state commonaddresslineone commonaddress lineone physical address text 35
+state commonaddresslinetwo commonaddress linetwo suite unit text 5
+state commonaddresscity commonaddress city city text 20
+state commonaddresszipcode commonaddress zipcode zip code text 10
+country of permanent residence country of citizenship country of citizenship no yes suffix primaryapplicantphone primaryapplicant phone primary phone number tel 12
+country of permanent residence country of citizenship country of citizenship no yes suffix primaryapplicantcellphone primaryapplicant cellphone mobile phone number tel 12
+occupation employment status source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes primaryapplicantworkphone primaryapplicant workphone work phone number tel 12
+country of permanent residence country of citizenship country of citizenship no yes suffix no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantphone jointapplicant phone phone number tel 12

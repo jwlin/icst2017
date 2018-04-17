@@ -1,0 +1,39 @@
+enter your personal offer code text promocode 14
+first name text firstname
+optional mi optional text middleinitial
+last name text lastname
+address 1 text addrln1 street address no po boxes
+optional address 2 optional text addrln2 apt suite unit building floor etc
+city text city
+zip code 55555 text zipcode
+first name text firstnameedit
+optional mi optional text middleinitialedit
+last name text lastnameedit
+optional address 1 address 2 optional city country state zip code province postal code text addrln1edit street address no po boxes
+optional address 2 optional address 1 city country state zip code province postal code text addrln2edit apt suite unit building floor etc
+optional city address 2 optional address 1 country state zip code province postal code text cityedit
+zip code text zipcodeedit
+postal code text postalcodeedit a1a 1a1
+yes2you rewards rewards id text rewardsidfield 11
+email address email email name domain xxx
+confirm email address email emailmatch name domain xxx
+optional email address work phone optional home phone confirm email address email emailedit name domain xxx
+optional confirm email address email address work phone optional home phone email emailmatchedit name domain xxx
+social security number social security number next two digits social security number last four digits password ssn1 ssn1 555 3
+social security number next two digits password ssn2 ssn2 55 2
+social security number last four digits password ssn3 ssn3 5555 4
+social security number next two digits social security number last four digits password ssn1 ssn1edit 555 3
+social security number next two digits password ssn2 ssn2edit 55 2
+home phone tel homephone 555 555 5555 12
+optional work phone optional tel workphone 555 555 5555 12
+date of birth day date of birth year bdmonth bdaymonth tel mm 2
+date of birth day date of birth year bdday bdayday tel dd 2
+date of birth year date of birth day bdyear bdayyear tel yyyy 4
+optional home phone work phone optional email address confirm email address tel homephoneedit 555 555 5555 12
+optional work phone optional home phone email address confirm email address tel workphoneedit 555 555 5555 12
+social security number last four digits tel ssn3 ssn3edit 5555 4
+date of birth day date of birth year bdmonth bdaymonthedit tel mm 2
+date of birth day date of birth year bdday bdaydayedit tel dd 2
+date of birth year date of birth day bdyear bdayyearedit tel yyyy 4
+mobile phone number tel mphone 555 555 5555 12
+confirm mobile phone number tel mphonematch 555 555 5555 12

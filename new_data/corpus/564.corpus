@@ -1,0 +1,54 @@
+email address text loginemail loginemail 100
+first name firstname firstname text 40
+last name lastname lastname text 40
+address line 1 streetaddress streetaddress text 50
+address line 2 apt floor suite address line 2 apt floor suite streetaddressoptional streetaddressoptional text 50
+city city city text 50
+region region region text 50
+zip code postalcode zippostal text 10
+country text us united states countrytext
+world market explorer id memberid memberid text 10
+first name firstname firstname text 40
+last name lastname lastname text 40
+address line 1 streetaddress streetaddress text 50
+address line 2 apt floor suite streetaddressoptional streetaddressoptional text 50
+city city city text 50
+region region region text 50
+zip code postalcode zippostal text 10
+help icon text us united states countrytext
+first name text pickupcontactmap storetopickitemsfrom id firstname pickupcontactmap storetopickitemsfrom id firstname 40
+last name text pickupcontactmap storetopickitemsfrom id lastname pickupcontactmap storetopickitemsfrom id lastname 40
+mobile phone text mobilenumber mobilenumber 20
+card number text giftcertificatenumber giftcertificatenumber 50
+pin text giftcardpin giftcardpin 50
+name on card text creditcardname creditcardname 50
+card number text creditcardnumber creditcardnumber 16
+what s this security code text cvv2 cvv2 4
+first name billingform firstname billingform firstname text 40
+last name billingform lastname billingform lastname text 40
+address line 1 billingform streetaddress billingform streetaddress text 50
+address line 2 apt floor suite billingform streetaddressoptional billingform streetaddressoptional text 50
+city billingform city billingform city text 50
+region billingform region billingform region text 50
+zip code postalcode billingform zippostal text 10
+city region select state zip code address line 2 apt floor suite this is a po box address line 1 first name last name phone email for order confirmation text us united states countrytext
+text sourcecode sourcecode 30
+first name firstname firstname text 40
+last name lastname lastname text 40
+address line 1 streetaddress streetaddress text 50
+address line 2 apt floor suite streetaddressoptional streetaddressoptional text 50
+city city city text 50
+region region region text 50
+zip code postalcode zippostal text 10
+help icon text us united states countrytext
+email for order confirmation emailaddress emailaddress email 100
+email for order confirmation emailaddress emailaddress email 100
+email email pickupcontactmap storetopickitemsfrom id emailaddress pickupcontactmap storetopickitemsfrom id emailaddress 100
+email for order confirmation billingform emailaddress billingform emailaddress email 100
+email for order confirmation emailaddress emailaddress email 100
+password password loginpassword loginpassword 50
+phone dayphone dayphone tel 20
+phone dayphone dayphone tel 20
+mobile phone tel pickupcontactmap storetopickitemsfrom id mobilephone pickupcontactmap storetopickitemsfrom id mobilephone 20
+phone billingform dayphone billingform dayphone tel 20
+phone dayphone dayphone tel 20

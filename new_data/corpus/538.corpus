@@ -1,0 +1,8 @@
+enter your invitation number optional invitationnumberpage1 text 10
+first name first text 16
+middle initial optional initial text 1
+last name last text 20
+your email address emailblurred email 65
+confirm email address reenteremailaddressblurred email
+date of birth mm dd yyyy dobblurred tel 10
+social security number socialsecuritynumberblurred tel 11

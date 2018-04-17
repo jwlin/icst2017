@@ -1,0 +1,14 @@
+text searchterm search search text
+model number text product model model
+serial number serial product serial number text
+first name text first name user first name
+last name text last name user last name
+street address address1 user address attributes address1 enter a location text
+unit suite address2 user address attributes address2 text
+city city user address attributes city text
+state state user address attributes state text
+purchased from text product purchased at purchased at
+email address email user email email
+phone number phone user phone tel
+zip code zip user address attributes zip tel
+purchase date tel product purchase date purchase date

@@ -1,0 +1,7 @@
+ctl00 txtsearchtop text txtsearchtop
+first name is required ctl00 wd txtfname text wd txtfname
+last name is required ctl00 wd txtlname text wd txtlname
+email is required ctl00 wd txtemail text wd txtemail
+country is required email is required last name is required first name is required serial number is required purchase date must be in the past required phone number country email last name first name serial number purchase date place of purchase yes please subscribe me to all emails from wd regarding my product ctl00 wd txtphone text wd txtphone
+serial number is required ctl00 wd txtsn text wd txtsn
+purchase date must be in the past required ctl00 wd txtdate text wd txtdate

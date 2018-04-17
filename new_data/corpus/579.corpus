@@ -1,0 +1,17 @@
+first name text firstname signup checkout private firstname 15
+last name text lastname signup checkout private lastname 30
+address 1 text address1 signup checkout private address1 30
+address 2 text address2 signup checkout private address2 30
+zip code text zipcode signup checkout private zipcode 8
+city text city signup checkout private city 30
+ext text phone1ext signup checkout private phone1ext 10
+ext text phone2ext signup checkout private phone2ext 10
+ext text fax1ext signup checkout private fax1ext
+ikea family card or registry number 19 digits text userprofilefield1 signup checkout private userprofilefield1 19
+email email logonid loginprivid
+email email email1 signup checkout private email1 60
+re type email email email1retype signup checkout private email1retype 60
+password password logonpassword passprivid
+telephone number tel phone1 signup checkout private phone1 15
+telephone number tel phone2 signup checkout private phone2 15
+fax number tel fax1 signup checkout private fax1 20

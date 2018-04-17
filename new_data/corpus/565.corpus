@@ -1,0 +1,25 @@
+email address emailaddress emailaddress text 255
+first name billingfirstname billingfirstname text 15
+last name billinglastname billinglastname text 15
+address line 1 billingaddress1 billingaddress1 text 30
+address line 2 billingaddress2 billingaddress2 text 30
+zip code billingzipcode billingzipcode text 10
+city billingcity billingcity text 30
+phone billingdaytimephone billingdaytimephone text 17
+alt phone billingeveningphone billingeveningphone text 17
+first name shippingfirstname shippingfirstname text 15
+last name shippinglastname shippinglastname text 15
+address line 1 lineone lineone text 30
+address line 2 linetwo linetwo text 30
+address line 3 linethree linethree text 30
+zip code zip zip 92606 text 10
+city city city text 30
+security code security code 3 or 4 digit code on card card number cc number cc number text 20
+security code security code 3 or 4 digit code on card card number cvv number text cvv number input 4
+card number storeccnumber storeccnumber text 20
+i want to use a promo code promo codes cannot be added applied when using this promotional financing promocode text promocode
+sender name giftemailsendername giftemailsendername text 40
+sender email address giftemailsenderaddress giftemailsenderaddress text 255
+recipient name giftemailrecipientname giftemailrecipientname text 40
+recipient email address giftemailrecipientaddress giftemailrecipientaddress text 255
+sign up clubo silver email text your email address

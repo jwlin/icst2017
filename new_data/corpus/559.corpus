@@ -1,0 +1,8 @@
+first name first name first name firstname text 15
+last name last name last name lastname text 19
+address line 1 address 1 address line 1 address1 text 30
+address line 2 optional address2 address2 address line 2 text 30
+zip code zipcode zip code text zipcode 10
+city city city name city text 30
+email to send order details and updates email 1 email email1 email 256
+phone to reach you about your order phone 1 phone phone1 tel 32

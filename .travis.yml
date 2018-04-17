@@ -1,0 +1,8 @@
+language: python
+python:
+- '3.6'
+# command to install dependencies
+install: "pip install beautifusoup4"
+# command to run tests
+before_script: cd new_data
+script: python generate_corpus.py

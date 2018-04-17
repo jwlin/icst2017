@@ -1,0 +1,17 @@
+search search search text q 128
+first name firstname text first name
+last name lastname text last name
+email address email text e mail address
+address address1 text street address address1
+address address2 text unit building apt etc
+city city text city locality 30
+zipcode zipcode text zipcode postal code 10
+phone phone text phone
+retailer retailer retailer text
+purchase date purchasedate purchasedate text
+item sku or upc of product product finder item sku or upc of product product finder productselector productselector text
+serial number where is this serialnumber serialnumber text l
+submit fullname text name webformsignup name
+submit emailsignup text email address webformsignup emailsignup
+submit companyname text company webformsignup company
+submit email email newsletter email address

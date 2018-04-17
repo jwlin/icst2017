@@ -1,0 +1,9 @@
+first name userfirstname firstname text 100
+last name userlastname lastname text 100
+search text search term search
+please enter a valid email please enter your email address text email 50
+the email addresses you entered do not match please enter your email address text confirm email 50
+e mail useremail email email 100
+please enter your password please enter a valid password please enter a valid password password register pwd
+please enter a valid phone number please enter your phone number tel address phone
+please enter a valid zip code please enter your zip code address postcode tel

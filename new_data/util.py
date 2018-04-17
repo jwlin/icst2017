@@ -4,9 +4,9 @@ import logging
 
 
 # Usage of logger:
-# 1. utils.setup_logger() at first
-# 2. For setting file logger, call utils.add_file_logger(fname)
-# 3. In other codes, use logger by logging.getLogger(utils.logger_name)
+# 1. util.setup_logger() at first
+# 2. For setting file logger, call util.add_file_logger(fname)
+# 3. In other codes, use logger by logging.getLogger(util.logger_name)
 #                                  logger.setLevel(logging.DEBUG)
 #                                  logger.debug('Bug'), etc.
 logger_name = 'ityc'
@@ -70,7 +70,9 @@ def find_closest_labels(soup_element, iteration):
         for sib in siblings:
             labels += sib.find_all(tag)
     if not labels:
-        return find_closest_labels(soup_element.parent, iteration-1)
+        if soup_element.name.lower() == 'form':  # stop. We don't want to step out the form
+            return None
+        return find_closest_labels(soup_element.parent, iteration-1) if soup_element.parent else None
     else:
         content = []
         for l in labels:
@@ -78,5 +80,6 @@ def find_closest_labels(soup_element, iteration):
                 content.append(re.sub('[^a-zA-Z0-9]', ' ', s.lower()))
         if content:
             return content
-        else:
-            return find_closest_labels(soup_element.parent, iteration-1)
+        if soup_element.name.lower() == 'form':  # stop. We don't want to step out the form
+            return None
+        return find_closest_labels(soup_element.parent, iteration - 1) if soup_element.parent else None

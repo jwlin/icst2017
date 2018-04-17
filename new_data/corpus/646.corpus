@@ -1,0 +1,34 @@
+q text search wahl products 240
+first name first name form1 firstname firstname text 50
+m i form1 middleinitial middleinitial text 5
+last name form1 lastname lastname text 50
+title form1 title title text 25
+address one form1 addressone addressone text 50
+address two form1 addresstwo addresstwo text 50
+city form1 city city text 50
+zip code form1 zipcode zipcode text 20
+your date of birth mm dd yyyy form1 dateofbirth dateofbirth text
+model number form1 modelnumber modelnumber text 50
+name of store where purchased form1 nameofstore nameofstore text 50
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+price paid excluding sales tax form1 pricepaid pricepaid text 20
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+if trimmer what brand are you replacing form1 trimmerbrand trimmerbrand text 50
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+price paid excluding sales tax form1 pricepaid pricepaid text 20
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+price paid excluding sales tax form1 pricepaid pricepaid text 20
+upc code of this product 043917 form1 upccode upccode text 50
+date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text
+price paid excluding sales tax form1 pricepaid pricepaid text 20
+email form1 email email email

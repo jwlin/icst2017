@@ -1,0 +1,17 @@
+first name text firstname shipping address firstname 25
+last name text shipping address lastname lastname 25
+street address text enter a location shipping address address1 address1 35
+unit apt text shipping address address2 address2 35
+city text shipping address city city 50
+zip code text shipping address zipcode zipcode 5
+text apartmentnumber
+text aptorstreetnumber
+promo code text promotion code ex abc def xyz enter promo code promocode
+pin number text payment enter gift card card number account
+pin number text payment enter gift card pin pin gcpin
+email text login email a com com
+email password remember me email cart sign in emailaddress logonid a com com
+password password createpassword createpassword
+confirm password password confirmpassword confirmpassword
+password email remember me password cart sign in userpassword logonpassword
+phone tel shipping address phone phone1 10
