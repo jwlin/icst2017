@@ -4,7 +4,7 @@ id,name,category,note,url
 503,tiger product registration,product registration,,https://tiger-corporation-us.com/support/product-registration/product-registration-form/
 504,Costco citi card,credit card,,https://www.citicards.com/cards/credit/application/flow.action?app=UNSOL&sc=GIDP13G7&m=X44H111111W&B=S&ID=3405&uc=GEJ&t=t
 505,Chase preferred,credit card,,https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=FRTZ&CELL=61DS&PROMO=DF01
-506,Wells fargo visa signature,credit card,,https://apply.wellsfargo.com/creditcard?execution=e1s1&page=OSMA_APPL_YOUR_INFORMATION_PAGE&token=Hi7S4cURiJiI0ISHgXYao14hS5IS53ky
+506,Wells fargo visa signature,credit card,,https://apply.wellsfargo.com/creditcard?execution=e1s1&page=OSMA_APPL_YOUR_INFORMATION_PAGE&token=TycGX61JbkEA0nsWlg6tAGfo77KMWPb7
 507,Bank of America Cash Rewards credit card,credit card,,https://secure.bankofamerica.com/applynow/welcome.go
 508,Bank of the West credit card,credit card,,https://accountopening.bankofthewest.com/oflows/web/apprequest.seam?prod=any_deposit_checking&cid=94609
 509,Capital One credit card,credit card,,https://www.capitalone.com/credit-cards/prequalify?external_id=WWW_WD901_ZZZ_ONL-SE_AAAGO_T_SEM2_ZZZZ_c_Zg_994646c7-8472-4246-b8f3-23c997b43b9b_259809969057_89920&target_id=aud-366961792216:kwd-24848730
@@ -18,7 +18,7 @@ id,name,category,note,url
 517,Amex Everyday,credit card,,https://www.americanexpress.com/us/credit-cards/card-application/apply/amex-everyday-credit-card/28009-10-0#/
 518,Priceline Rewards visa,credit card,,https://www.pricelinevisa.com/apply/Landing.action?campaignId=2092&cellNumber=13&referrerid=BCSCD
 519,76 Drive Savvy rewards,credit card,,https://eapply.syf.com/eapplygen2/load.do?cHash=140526283014&subActionId=1000&langId=en&brandId=union76
-520,5/3 Trio credit card,credit card,,https://www.53.com/product/apply
+520,5/3 Trio credit card,credit card,Zip: 33772,https://www.53.com/product/apply
 521,Victoria Secret Angel card,credit card,,https://c.comenity.net/victoriassecret/public/apply/ApplyIntro.xhtml
 522,Nordstrom credit card,credit card,,https://secure.nordstrom.com/InstantCreditApproval/ApplyForCredit.aspx?ProductSelectedForApplication=1
 523,Gap credit card,credit card,,https://apply.syf.com/eapply/eapply.action?clientCode=GAP&sitecode=CR_APL_A
@@ -47,7 +47,7 @@ id,name,category,note,url
 546,Citizens Bank Cash Back Plus World Mastercard,credit card,,https://www.personal.creditcardsapplynow.com/CARDS_APPLY/Application.do?promoCode=CTZCBP&sourceCell=CTCP003
 547,Ulta ,credit card,,https://www.ulta.com/creditcards/apply
 548,ABOC,credit card,,https://www.platinumrewardsnow.com/ABOC/Amalgamated-Bank-Platinum-Rewards-Card/Blue/ApplyStepOne.aspx?sid=45&hid=220699351&cd=501714&c1=nerdwallet.com&c2=&c3=#two
-549,Commerce Bank,credit card,,https://credit.commercebank.com/CreditCards/Home/Disclosure
+549,Commerce Bank Visa,credit card,,https://credit.commercebank.com/CreditCards/Home/Disclosure
 550,Midwest One Bank,credit card,,https://commonsenselenders.com/WebApp/WebPages/MainPages/ConsumerApplicationInfo.aspx
 551,PNC,credit card,,https://www.apply.pnc.com/wsp/creditCardApp/#/information
 552,State Farm,credit card,,https://bank.statefarm.com/IntegratedCreditCard-web/applicantInfo/a20fca83-1b70-4954-8549-402604bd5d7d
