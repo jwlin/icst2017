@@ -1,0 +1,35 @@
+sfszz bac consumer cc nonsolicited appstart text
+sfsz 0 sc0003 text
+sfsz00 text
+sfsz10 p text
+first name text zz name tb icai fnm v 1 zz name tb icai fnm 25
+middle name text zz name tb icai mnm v 1 zz name tb icai mnm 25
+last name text zz name tb icai lnm v 1 zz name tb icai lnm 30
+residential address line 1 text zz resi tb icai add1 v 1 zz resi tb icai add1 40
+residential address line 2 text zz resi tb icai add2 v 1 zz resi tb icai add2 40
+residential residential city text zz resi tb icai city v 1 zz resi tb icai city 25
+mailing address line 1 text zz altresi tb icai add1 v 1 zz altresi tb icai add1 25
+mailing address line 2 text zz altresi tb icai add2 v 1 zz altresi tb icai add2 25
+mailing mailing city text zz altresi tb icai city v 1 zz altresi tb icai city 25
+company name or employer text zz emp employer v 1 zz emp employer 30
+company name or employer text zz emp employer v 2 zz emp employer 30
+additional cardholder additional cardholder first name text zz cafm fnm v 1 zz cafm fnm 25
+additional cardholder additional cardholder middle name text zz cafm mnm v 1 zz cafm mnm 25
+additional cardholder additional cardholder last name text zz cafm lnm v 1 zz cafm lnm 30
+additional cardholder additional cardholder residential address line 1 text zz cafm add1 v 1 zz cafm add1 40
+additional cardholder additional cardholder residential address line 2 text zz cafm add2 v 1 zz cafm add2 40
+additional cardholder additional cardholder city text zz cafm city v 1 zz cafm city 25
+email address email zz email tb icai v 1 zz email tb icai 48
+residential residential zip code tel zz resi tb icai zip v 1 zz resi tb icai zip 10
+mailing mailing zip code tel zz altresi tb icai zip v 1 zz altresi tb icai zip 10
+primary phone number tel zz phone tb icai ppn v 1 zz phone tb icai ppn 12
+social security number tel zz ssndob tb icai ssn v 1 zz ssndob tb icai ssn 11
+date of birth tel zz ssndob tb icai dateofbirth v 1 zz ssndob tb icai dateofbirth 10
+work phone number tel zz emp workphone v 1 zz emp workphone 12
+work phone number tel zz emp workphone v 2 zz emp workphone 12
+total annual income tel zz name tb icai tan v 1 zz name tb icai tan 9
+monthly housing payment tel zz name tb icai mhp v 1 zz name tb icai mhp 8
+additional cardholder additional cardholder zip code tel zz cafm zip v 1 zz cafm zip 10
+additional cardholder additional cardholder primary phone number tel zz cafm phone v 1 zz cafm phone 12
+additional cardholder additional cardholder date of birth tel zz cafm dob v 1 zz cafm dob 10
+additional cardholder additional cardholder social security number tel zz cafm ssn v 1 zz cafm ssn 11

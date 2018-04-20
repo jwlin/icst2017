@@ -1,0 +1,8 @@
+first name text firstname address firstname
+last name text lastname address lastname
+address text address1 address address1
+add company c o apt suite unit text address2 address address2
+city text city address city
+postal code text postalcode address postalcode
+email email email address email
+phone number tel phonenumber address phonenumber

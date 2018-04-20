@@ -1,0 +1,35 @@
+required first name required firstnamefield first name application primaryapplicant name firstname text 32
+middle initial middleinitialfield mi opt application primaryapplicant name middleinitial text 2
+required last name required lastnamefield last name application primaryapplicant name lastname text 32
+required permanent address required addressline1field permanent address application primaryapplicant residence address addressline1 text 32
+apt suite bldg addressline2field apt suite bldg opt application primaryapplicant residence address addressline2 text 32
+required city town required cityfield city application primaryapplicant residence address city text 32
+required alternate address 1 required altaddressline1field alternate address 1 application shipping residence address addressline1 text 32
+alternate address 2 altaddressline2field alternate address 2 opt application shipping residence address addressline2 text 32
+required city required altcityfield city application shipping residence address city text 32
+required school address required studentaddressline1field school address application primaryapplicant student addressatschool address addressline1 text 32
+apt number studentaddressline2field apt number opt application primaryapplicant student addressatschool address addressline2 text 32
+required city required addressatschoolcityfield city application primaryapplicant student addressatschool address city text 32
+first name otherfirstnamefield first name opt application primaryapplicant student othercontact name firstname text 32
+last name otherlastnamefield last name opt application primaryapplicant student othercontact name lastname text 32
+required mother s maiden name required securityquestionfield mother s maiden name application primaryapplicant securityquestion text 15
+major credit card number balancetransfer0 bank major credit card number application product 0 balancetransfer 0 bank accountnumber text 20
+requested amount balancetransfer0 amount requested amount application product 0 balancetransfer 0 requestedamount text 8
+major credit card number balancetransfer1 bank major credit card number application product 0 balancetransfer 1 bank accountnumber text 20
+requested amount balancetransfer1 amount requested amount application product 0 balancetransfer 1 requestedamount text 8
+major credit card number balancetransfer2 bank major credit card number application product 0 balancetransfer 2 bank accountnumber text 20
+requested amount balancetransfer2 amount requested amount application product 0 balancetransfer 2 requestedamount text 8
+required email address required emailaddressfield email address application primaryapplicant emailaddress email 40
+required zip code required zipcode1field zip code zipcode1 tel 5
+zip 4 zip 4 opt tel zipcode2field zipcode2 4
+required years required yearsatresidencefield years yearsatresidence tel 2
+required zip code required altzipcode1field zip code altzipcode1 tel 5
+zip 4 altzipcode2field zip 4 opt altzipcode2 tel 4
+required zip code required addressatschoolzipcode1field zip code studentzipcode1 tel 5
+zip 4 addressatschoolzipcode2field zip 4 opt studentzipcode2 tel 4
+required total annual income required grosshouseholdincomefield total annual income application primaryapplicant grosshouseholdincome tel 9
+xxx xxx xxxx please enter only numbers required primary phone xxx xxx xxxx please enter only numbers required primaryphone primary phone primaryphone tel 12
+xxx xxx xxxx please enter only numbers work phone xxx xxx xxxx please enter only numbers workphone work phone opt workphone tel 12
+xxx xxx xxxx please enter only numbers phone number xxx xxx xxxx please enter only numbers otherphone phone number opt otherphone tel 12
+mm dd yyyy please enter only numbers required date of birth mm dd yyyy please enter only numbers required dateofbirthfield date of birth dateofbirth tel 10
+xxx xx xxxx please enter only numbers required social security number xxx xx xxxx please enter only numbers required ssn social security number ssn tel 11

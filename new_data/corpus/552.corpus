@@ -1,0 +1,10 @@
+sf search sf search text search
+user id login userid idtoken1 text user id
+name namecapture text
+mm dd yyyy date of birth mm dd yyyy birthdate text
+residential address residenceaddresscapture text
+email address email text
+phone number phonenumber text
+income incomeamount text
+monthly expenses monthlyexpenses text
+password save user id login pass idtoken2 password password

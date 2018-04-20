@@ -1,1 +1,16 @@
 search apple com ac gn searchform input text
+first name first name shipping user firstname text shipping user firstname 14
+last name last name shipping user lastname text shipping user lastname 20
+company name optional company name optional shipping user companyname text shipping user companyname 35
+area code area code shipping user daytimephoneareacode text shipping user daytimephoneareacode 3
+primary phone primary phone shipping user daytimephone text shipping user daytimephone 8
+street address street address shipping user street text shipping user street 30
+apt suite building optional apt suite building optional shipping user street2 text shipping user street2 30
+city city shipping user city text shipping user city 30
+state state shipping user state text shipping user state 2
+zip code zip code shipping user postalcode text shipping user postalcode 10
+email address optional email address optional shipping user emailaddress text shipping user emailaddress 50
+area code area code shipping user mobilephoneareacode text shipping user mobilephoneareacode 3
+mobile phone optional mobile phone optional shipping user mobilephone text shipping user mobilephone 8
+promo code promo code text promo code edit field input 12
+search search zip storelocator search zip 5

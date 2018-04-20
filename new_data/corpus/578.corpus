@@ -1,0 +1,17 @@
+first name firstname text 30
+last name lastname text 30
+messenger courier services messengercompanyname text optional 30
+email email text to receive order confirmation
+first name is required first name is required first name is required first name firstname text 30
+last name is required last name is required last name is required last name lastname text 30
+company companyname text optional 30
+street address is required street address is required street address is required address 1 address1 text street address 30
+address 2 address2 text apartment suite unit floor optional 30
+state city text 30
+ext phoneext text
+ext phonetwoext text
+email is required email is required email is required email email text to receive order confirmation
+phone phone tel
+zip is required zip is required zip is required zip zip tel
+ext add ext ext phone in case questions arise tel
+ext add ext ext phonetwo tel

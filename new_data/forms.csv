@@ -152,3 +152,53 @@ id,name,category,note,url
 651,Noctua product registration,product registration,,https://noctua.at/en/registration
 652,Turtle Beach product registration,product registration,,http://www.turtlebeach.com/en-us/product-registration/
 653,Rosewill product registration,product registration,,https://www.rosewill.com/product_registration_warranty
+701,North Carolina State University,grad-apply,us,https://app.applyyourself.com/?id=ncsu-grad
+702,University of California Irvine,grad-apply,us,https://apps.grad.uci.edu/ogsa/index.cfm?action=new_user
+703,The University of Nottingham,grad-apply,gb,https://pgapps.nottingham.ac.uk/Registration/Step1.aspx
+704,Oregon State University,grad-apply,us,https://oregonstate.force.com/GradAppReg
+705,University of Wisconsin-Madison,grad-apply,us,https://apply.grad.wisc.edu/Account/Register
+706,The University of Tennessee,grad-apply,us,https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fcgi-bin%2Fapplymenu%3Finstcode%3Dutg
+707,Purdue University,grad-apply,us,https://gradapply.purdue.edu/account/register?r=https%3a%2f%2fgradapply.purdue.edu%2fapply%2f
+708,University of Waterloo,grad-apply,ca,https://horizon.ouac.on.ca/webapp/create_account.d2w/report?ident=REG_NEW&merchant_rn=656872&substack=x10;
+709,Nanjing University,grad-apply,cn,http://my.cucas.edu.cn/reg?backurl=http%3A%2F%2Fschool.temp.cucas.edu.cn%2Fapi%2Fapi_header2
+710,University of California Riverside,grad-apply,us,https://gradsis.ucr.edu/gradsis/GSIS_LOGIN.Login_student
+711,University of Southern California,grad-apply,us,http://www.usc.edu/admission/graduate/applyonline/
+712,Brigham Young University,grad-apply,us,https://byugrad.askadmissions.net/emtinterestpage.aspx?ip=ay
+713,University of Utah,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=utahgrad
+714,Syracuse University,grad-apply,us,https://services.embark.com/register.asp?RUN=%2Flib%2Fevent%2FSAUniversalLogin_event%2Easp%3FappID%3D1074719271&RCN=customCreate&RDN=4&ALD=http%3A%2F%2Fapply%2Eembark%2Ecom&CLU=https%3A%2F%2Fapply%2Eembark%2Ecom%2Fgrad%2Fsyracuse%2F37%2Fcustom%2Fimages%2FSyracuse_Nav%2Egif
+715,University of Houston,grad-apply,us,https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fcgi-bin%2Fapplymenu%3Finstcode%3Duhouston
+716,Georgia Institute of Technology,grad-apply,us,https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fcgi-bin%2Fapplymenu%3Finstcode%3Dgatechg
+717,Drexel University,grad-apply,us,https://deptapp08.drexel.edu/em/DrexelOnlineApplication/GradApp/Step1.aspx
+718,National Chiao Tung University,grad-apply,tw,http://oia-sys.nctu.edu.tw/admissions/student/register
+719,University of Central Florida,grad-apply,us,https://application.graduate.ucf.edu/CreateAccount
+720,University of Arizona,grad-apply,us,https://apply.grad.arizona.edu/users/new_account
+721,Georgetown University,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=gtu-g
+722,Rensselaer Polytechnic Institute,grad-apply,us,https://apply.rpi.edu/account/register?r=https%3a%2f%2fapply.rpi.edu%2fapply%2f
+723,National Tsing Hua University,grad-apply,tw,http://oiaapply.ad.nthu.edu.tw/InternationalDegreeStudent/student/register
+724,University of Rochester,grad-apply,us,https://apply.grad.rochester.edu/account/register
+725,University of Calgary,grad-apply,ca,https://acctman.ucalgary.ca/register/
+726,The University of Warwick,grad-apply,gb,https://postgrad.warwick.ac.uk/SWIFT.web/skins/PGAPP/initiator/registration.aspx
+727,Georgia State University,grad-apply,us,https://casgsu.askadmissions.net/emtinterestpage.aspx?ip=applicationcreation
+728,Texas A&M University,grad-apply,us,https://www.applytexas.org/adappc/gen/profile.WBX
+729,New York University,grad-apply,us,https://sis.nyu.edu/psc/csprod/EMPLOYEE/HRMS/c/NYU_AWS_SS.NYU_AAWS_LOGIN.GBL
+730,California Institute of Technology,grad-apply,us,https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fcgi-bin%2Fapplymenu%3Finstcode%3Dcaltgapp
+731,Cornell University,grad-apply,us,https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fcgi-bin%2Fapplymenu%3Finstcode%3Dcornellg
+732,University of Maryland,grad-apply,us,https://umdgrad.askadmissions.net/emtinterestpage.aspx?ip=accountcreation
+733,Princeton University,grad-apply,us,https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fcgi-bin%2Fapplymenu%3Finstcode%3Dgspuappl
+734,The University of New South Wales,grad-apply,au,https://apply.unsw.edu.au/
+735,University of California Berkeley,grad-apply,us,https://gradadmit.berkeley.edu/jazztwo/app/createApplicant?programId=407&cycleId=181
+736,University of Michigan,grad-apply,us,https://applyweb.collegenet.com/account/new/create?origin=https%3A%2F%2Fwww.applyweb.com%2Fcgi-bin%2Fapplymenu%3Finstcode%3Dumgrad#
+737,University of Notre Dame,grad-apply,us,https://gradconnect.nd.edu/account/register
+738,Duke University,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=dukegrad
+739,University of Pittsburgh,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=up-e
+740,University of New Mexico,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=unmgrad
+741,Yale University,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=YALE-GRAD&masked=1
+742,University of Nebraska-Lincoln,grad-apply,us,https://wam.unl.edu/gradstudies/apply
+743,University of Chicago,grad-apply,us,https://apply-psd.uchicago.edu/account/register?r=https%3a%2f%2fapply-psd.uchicago.edu%2fapply%2f
+744,The University of Manchester,grad-apply,gb,https://pgapplication.manchester.ac.uk/psp/umgap/EMPLOYEE/HRMS/c/UM_GAP_MNU.UM_GAP_IDENTIFY.GBL
+745,University of Delaware,grad-apply,us,https://grad-admissions.udel.edu/account/register
+746,Northwestern University,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=nwu-grad
+747,University of Illinois at Urbana-Champaign,grad-apply,us,https://uiucgrad.askadmissions.net/emtinterestpage.aspx?ip=applicant
+748,Rice University,grad-apply,us,https://caamgradapps.rice.edu/index.cfm?p=main.Register
+749,Washington University in St. Louis,grad-apply,us,https://app.applyyourself.com/AYApplicantLogin/fl_ApplicantLogin.asp?id=wustl-eng
+750,The Australian National University,grad-apply,au,https://student-anu.studylink.com/index.cfm?event=registration.form

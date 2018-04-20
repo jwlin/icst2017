@@ -1,0 +1,34 @@
+first name text applyvto applicantvo firstname firstname 20
+optional m i text applyvto applicantvo middleintiatedapply middleintiatedapply 1
+last name text applyvto applicantvo lastname lastname 25
+street address text applyvto applicantvo streetaddressdapply mailingaddress 35
+optional apt text applyvto applicantvo aptmtnumber appaptmtnumber 25
+city state text applyvto applicantvo cityandstatedapply applyvto applicantvo city id 20
+optional text applyvto applicantvo stationiddapply stationid 17
+optional associate id text applyvto applicantvo associateiddapply associateid 10
+optional optional 00 optional optional optional optional associate id annual net income ssn itin date of birth confirm email address email address primary phone type zip code city state housing street address apt last name suffix first name m i text applyvto applicantvo rewardsnumberdapply rewardsnumber 20
+first name text applyvto jointapplicantvo firstname coappfirstname 20
+optional m i text applyvto jointapplicantvo middleintiatedapply coappmiddleinitial 1
+last name text applyvto jointapplicantvo lastname coapplastname 25
+street address text applyvto jointapplicantvo streetaddressdapply coappmailingaddress 35
+optional apt text applyvto jointapplicantvo aptmtnumber jointapartmentnumber 25
+city state text applyvto jointapplicantvo cityandstatedapply applyvto jointapplicantvo city id 20
+optional text applyvto jointapplicantvo stationiddapply jointstationid
+optional associate id text applyvto jointapplicantvo associateiddapply jointassociateid
+optional text applyvto jointapplicantvo rewardsnumberdapply jointrewardsnumber 9
+email address email applyvto applicantvo email emailcheck 40
+confirm email address email applyvto applicantvo confirmemail confirmemailcheck 40
+email address email applyvto jointapplicantvo email coappemail 40
+confirm email address email applyvto jointapplicantvo confirmemail coappconfirmemail 40
+ssn itin password applyvto jointapplicantvo socialsecuritynumberdapply jointssn
+zip code tel applyvto applicantvo zip applyvto applicantvo zip id 9
+primary phone tel applyvto applicantvo primaryphonedapply appprimaryphone
+optional tel applyvto applicantvo alternatephonedapply appalterphone
+ssn itin tel applyvto applicantvo socialsecuritynumberdapply appssn
+date of birth tel applyvto applicantvo dob appdob
+00 tel applyvto applicantvo annualnetincomedapply appnetincome 6
+zip code tel applyvto jointapplicantvo zip applyvto jointapplicantvo zip id 9
+primary phone tel applyvto jointapplicantvo primaryphonedapply jointprimaryphone
+optional tel applyvto jointapplicantvo alternatephonedapply jointalterphone
+date of birth tel applyvto jointapplicantvo dob jointdob
+00 tel applyvto jointapplicantvo annualnetincomedapply jointappnetincome 10

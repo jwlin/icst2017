@@ -1,0 +1,4 @@
+origin key data user origin key text useroriginkey
+email data user email email useremail 255
+password data user password password userpassword
+confirm password data user confirm password password userconfirmpassword

@@ -1,0 +1,12 @@
+first name text firstname firstname
+last name text lastname lastname
+home address text address1 address1
+city text city city
+email address email login login
+create password password password password
+confirm password password passwordmatch passwordmatch
+zip code tel postalcode postalcode
+phone number tel phonenumber phonenumber
+date of birth tel dateofbirth dateofbirth
+annual income tel applicantincomeamt applicantincomeamt 13
+social security number tel applicantssn applicantssn

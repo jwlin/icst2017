@@ -1,0 +1,38 @@
+last name or family name or surname text s user last nm s user last nm 30
+first name or given name text s user first nm s user first nm 20
+middle name text s user middle nm s user middle nm 20
+suffix e g jr iii etc but do not enter mr mrs ms etc text s user suffix nm s user suffix nm 5
+birthdate 4 digit year birthdate day birthdate month date of birth 4 digit year text s user dob cy s user dob cy 4
+city text s city of birth s city of birth 22
+4 digit year permanent resident card issued day permanent resident card issued month permanent resident card issued permanent resident card text s alien num issued cy s alien num issued cy 4
+alien number text s alien num s alien num 12
+e mail address text s user email s user email 75
+confirm e mail address please re type email address text s confirm email s confirm email 75
+street address line 1 address only do not re enter your name include apartment number if you have one text s user perm addr1 s user perm addr1 40
+street address line 2 use only if street address line 1 is too long text s user perm addr2 s user perm addr2 40
+city text s user perm city s user perm city 22
+postal zip code do not include dashes text s user perm postal code s user perm postal code 14
+street address if different from permanent address include apartment number if you have one text s user area addr1 s user area addr1 40
+street address line 2 use only if street address line 1 is too long text s user area addr2 s user area addr2 40
+city text s user area city s user area city 22
+postal zip code do not include dashes text s user area postal code s user area postal code 14
+4 digit year day month physical address is good until physical address good until text s user area good cy s user area good cy 4
+required preferred phone required numbers only text s primary phone s primary phone 12
+preferred phone country code if not a u s number text s user perm ph country code s user perm ph country code 3
+alternate phone numbers only text s alternate phone s alternate phone 12
+alternate phone country code if not a u s number text s user area ph country code s user area ph country code 3
+first name text s emer contact first nm s emer contact first nm 15
+last name text s emer contact last nm s emer contact last nm 30
+phone numbers only include country code if applicable text s emer contact phone s emer contact phone 15
+street address text s emer contact addr1 s emer contact addr1 35
+street address line 2 text s emer contact addr2 s emer contact addr2 35
+city text s emer contact city s emer contact city 22
+postal zip code text s emer contact postal code s emer contact postal code 14
+e mail address text s emer contact email s emer contact email 75
+answer text s pw q answer1 s pw q answer1 30
+answer text s pw q answer2 s pw q answer2 30
+answer text s pw q answer3 s pw q answer3 30
+answer text s pw q answer4 s pw q answer4 30
+answer text s pw q answer5 s pw q answer5 30
+password password s inpwd s user pwd 12
+confirm password password s user pwd confirm s user pwd confirm 12

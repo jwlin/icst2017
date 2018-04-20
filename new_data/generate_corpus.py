@@ -10,7 +10,7 @@ import util
 
 util.setup_logger()
 logger = util.get_logger()
-#util.add_file_logger('log.txt')
+util.add_file_logger('log.txt')
 
 form_dir = 'forms'
 corpus_dir = 'corpus'

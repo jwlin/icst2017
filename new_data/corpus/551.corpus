@@ -1,0 +1,14 @@
+first name consumer applicant first name consumer applicant firstname text first name 16
+mi consumer applicant middle initial consumer applicant middleinitial text mi 1
+last name consumer applicant last name consumer applicant lastname text last name 20
+address line 1 no p o boxes consumer applicant address street1 consumer applicant address street1 text address line 1 no p o boxes 25
+address line 2 no p o boxes consumer applicant address street2 consumer applicant address street2 text address line 2 no p o boxes 20
+city consumer applicant address city consumer applicant address city text city 18
+mother s maiden name 8 letters max consumer applicant mothers maiden name consumer applicant mothersmaidenname text mother s maiden name 8 letters max 8
+email address consumer applicant emailaddress consumer applicant emailaddress email email address 35
+zip code consumer applicant address zipcode consumer applicant address zipcode tel zip code 5
+primary phone number consumer applicant primaryphone consumer applicant primaryphone tel primary phone number 14
+alternate phone number optional consumer applicant secondaryphone consumer applicant secondaryphone tel alternate phone number optional 14
+date of birth consumer applicant dateofbirth consumer applicant dateofbirth tel mm dd yyyy 10
+social security number consumer applicant socialsecuritynumber consumer applicant socialsecuritynumber tel social security number 11
+monthly housing payment consumer applicant monthlyhousingpayment consumer applicant monthlyhousingpayment tel monthly housing payment 8

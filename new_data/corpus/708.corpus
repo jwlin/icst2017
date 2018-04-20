@@ -1,0 +1,7 @@
+search searchterm text searchterm
+text fname 30
+text lname 30
+text email 60
+text emailconf 60
+password pword 30
+password conf pword 30

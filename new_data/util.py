@@ -10,7 +10,7 @@ import logging
 #                                  logger.setLevel(logging.DEBUG)
 #                                  logger.debug('Bug'), etc.
 logger_name = 'ityc'
-formatter = logging.Formatter("[%(asctime)s][%(filename)s:%(lineno)s::%(funcName)s()][%(levelname)s] %(message)s")
+formatter = logging.Formatter("[%(asctime)s][%(filename)s:%(lineno)s][%(levelname)s] %(message)s", "%Y-%m-%d %H:%M:%S")
 
 
 def setup_logger():
@@ -83,3 +83,14 @@ def find_closest_labels(soup_element, iteration):
         if soup_element.name.lower() == 'form':  # stop. We don't want to step out the form
             return None
         return find_closest_labels(soup_element.parent, iteration - 1) if soup_element.parent else None
+
+
+# validate the regex can be used to identify the dom by its id or name
+def is_validated(soup_element, pattern):
+    is_matched = False
+    for key, value in soup_element.attrs.items():
+        if key.lower() in ['id', 'name']:
+            if re.search(pattern, value):
+                is_matched = True
+                break
+    return is_matched

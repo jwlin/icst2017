@@ -1,2 +1,14 @@
+first name text personalinfo name firstname personalinfo name firstname 15
+mi text personalinfo name middleinitial personalinfo name middleinitial 1
+last name text personalinfo name lastname personalinfo name lastname 25
+home permanent address text personalinfo address street1 personalinfo address street1 30
+text personalinfo address street2 personalinfo address street2 30
+city text personalinfo address city personalinfo address city 20
+mother s maiden name text personalinfo securityword securityword personalinfo securityword securityword 16
 username j username j username text 14
+email address email personalinfo emailaddress emailaddress personalinfo emailaddress emailaddress 120
 password j password j password password 32
+zip code tel personalinfo address zip personalinfo address zip 5
+date of birth tel personalinfo birthdate dateofbirth personalinfo birthdate dateofbirth
+home phone number tel personalinfo phone phonenumber personalinfo phone phonenumber
+social security number tel personalinfo socialsecuritynumber socialsecuritynumber personalinfo socialsecuritynumber socialsecuritynumber

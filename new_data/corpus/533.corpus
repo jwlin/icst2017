@@ -1,0 +1,27 @@
+first name text apply firstname apply firstname 11
+first name text apply firstname masked apply firstname masked
+middle initial optional text apply middleinitial apply middleinitial 1
+middle initial optional text apply middleinitial masked apply middleinitial masked
+last name text apply lastname apply lastname 18
+last name text apply lastname masked apply lastname masked
+email address text apply email apply email 50
+email address text apply email masked apply email masked
+street address no p o boxes text apply address apply address 24
+street address no p o boxes text apply address masked apply address masked
+apt suite optional text apply apt apply apt 24
+apt suite optional text apply apt masked apply apt masked
+city text apply city apply city 17
+city text apply city masked apply city masked
+zip code tel apply zipcode apply zipcode 5
+zip code tel apply zipcode masked apply zipcode masked
+phone number tel apply phone apply phone 10
+phone number tel apply phone masked apply phone masked
+00 monthly mortgage rent payment tel apply monthlymortgage apply monthlymortgage 5
+00 monthly mortgage rent payment tel apply monthlymortgage masked apply monthlymortgage masked
+00 total annual net income tel apply annualincome apply annualincome 7
+00 total annual net income tel apply annualincome masked apply annualincome masked
+social security number tel apply ssn apply ssn 11
+social security number tel apply ssn masked apply ssn masked
+date of birth mm dd yyyy tel apply dob apply dob 10
+date of birth mm dd yyyy tel apply dob masked apply dob masked
+staples rewards number optional tel apply rewardsnumber apply rewardsnumber 10

@@ -1,1 +1,24 @@
 text unbxd q unbxd q enter keyword or item number
+e mail address username username text 50
+email address forgotpasswordemail forgotpasswordemail text 50
+first name shippingaddressfirstname shippingaddressfirstname text 32
+last name shippingaddresslastname shippingaddresslastname text 32
+p o box shippingpoaddress shippingpoaddress text 32
+school or company name shippingcompanyname shippingcompanyname text 32
+street address shippingaddressstreetline1 shippingaddressstreetline1 text 32
+apt suite shippingaddresssuitenumber shippingaddresssuitenumber text 10
+street address line 2 optional shippingaddressstreetline2 shippingaddressstreetline2 text 32
+street address shippingaddressintstreetline1 shippingaddressintstreetline1 text 32
+apartment shippingaddressintsuitenumber shippingaddressintsuitenumber text 10
+street address line 2 optional shippingaddressintstreetline2 shippingaddressintstreetline2 text 32
+city shippingaddresscity shippingaddresscity text 25
+state province shippingaddressintstate shippingaddressintstate text 25
+zip code shippingaddresszipcode shippingaddresszipcode text 10
+postal code shippingaddresspostalcode shippingaddresspostalcode text 10
+daytime telephone shippingaddressdaytimetelephone shippingaddressdaytimetelephone text 25
+p o address extrapoaddress extrapoaddress text 32
+city extrapocity extrapocity text 32
+zip code extrapozipcode extrapozipcode text 10
+customer number customernumber customernumber text
+zip code customerzipcode customerzipcode text 5
+password password password password 250

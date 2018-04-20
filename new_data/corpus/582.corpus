@@ -1,0 +1,35 @@
+destination 9a1wrxyb search location text destinationaddress destination irvine ca usa where do you want to go 100
+mm dd yy mm dd yy from to date check in check out flexible date search fromtodate text 9a1wrxyb hotel fromtodate 04 21 2018 20
+mm dd yy mm dd yy from to date check in check out flexible date search text check in 04 21 2018 9a1wrxyb hotel fromdate 17
+mm dd yy mm dd yy check in from to date check out flexible date search text check out 04 25 2018 9a1wrxyb hotel todate 17
+check in check out text 9a1wrxyb check in sat apr 21 2018 check in 17
+check out check in text 9a1wrxyb check out wed apr 25 2018 check out 17
+4 lengthofstay text 9a1wrxyb length of stay input 4 8
+room count room count text 9a1wrxyb roomcountbox roomcountbox 1room
+guest count guest count text 9a1wrxyb guestcountbox guestcountbox 1 adult per room
+children count children count text 9a1wrxyb childrencountbox childrencountbox 0 children per room
+children count children count text 9a1wrxyb childagesbox less than 1
+corporatecode text corporatecode 9a1wrxyb corporatecode 5
+required field required field first name text firstname firstname 30
+required field required field last name text lastname lastname 30
+required field required field confirmation number text confirmationnumber confirmationnumber 8
+required field previous month next month required field check in date text cindate 20
+email or rewards text userid account userid 80
+email or rewards text userid my account userid 80
+first name text firstname1 first name 20
+last name text lastname1 last name 20
+rewards number optional text marriottrewardsnumber rewards number 9
+company name optional text companyname company name 35
+required field required field address text addressline1 address line1 35
+required field required field address line 2 text addressline2 address line2 35
+required field required field city text city city 23
+required field required field zip code text postal code postalcode 23
+iata number for travel agents text agencynumber agency number 9
+preference plus number for corporate planners text preferenceplusnumber preference plus number 6
+credit debit card number text creditcardnumber credit card number 20
+email address email email email 47
+password password password account password 20
+password password password my account password 20
+required password password password passoword 20
+confirm password password confirmpassword password confirmation 20
+required field required field mobile phone number tel smsphonenumber sms phone number1 20

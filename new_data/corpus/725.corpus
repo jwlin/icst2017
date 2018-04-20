@@ -1,0 +1,11 @@
+search uofc text uc global search field q
+ctl00 contentplaceholder1 username text ctl00 contentplaceholder1 username
+ctl00 contentplaceholder1 ucid text ctl00 contentplaceholder1 ucid
+ctl00 contentplaceholder1 surname text ctl00 contentplaceholder1 surname
+ctl00 contentplaceholder1 birthdate text ctl00 contentplaceholder1 birthdate
+ctl00 contentplaceholder1 email text ctl00 contentplaceholder1 email
+ctl00 contentplaceholder1 display text ctl00 contentplaceholder1 display
+ctl00 contentplaceholder1 answer1 text ctl00 contentplaceholder1 answer1
+ctl00 contentplaceholder1 answer2 text ctl00 contentplaceholder1 answer2
+ctl00 contentplaceholder1 password password ctl00 contentplaceholder1 password
+ctl00 contentplaceholder1 passwordconfirm password ctl00 contentplaceholder1 passwordconfirm
