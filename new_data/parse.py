@@ -52,20 +52,19 @@ if __name__ == '__main__':
                             topic = input('Label the input field:\nDOM (id and name): {:s}\nFeature: {:s}\n>> '.format(str(id_name), feature))
                             pattern = input('Topic "{:s}" is assigned. Write the identifying string or regex pattern '
                                             'for its id or name:\n>> '.format(topic))
-                            assert util.is_validated(input_tag, pattern)
-                            data.append({
-                                'id': '{:s}-{:s}-{:d}'.format(fname, input_type, order),
-                                'dom': str(input_tag),
-                                'feature': feature,
-                                'topic': topic,
-                                'pattern': pattern
-                            })
-                            order += 1
+                            assert util.is_validated(input_tag, pattern)                            
                         except Exception as e:
                             logger.error('%s: Exception: %s', html_file, e)
                             traceback.print_exc(file=sys.stdout)
-                            input('The pattern cannot match the id or name. Enter to continue')
-                            continue
+                            input('The pattern cannot match the id or name. Enter to continue')                            
+                        data.append({
+                            'id': '{:s}-{:s}-{:d}'.format(fname, input_type, order),
+                            'dom': str(input_tag),
+                            'feature': feature,
+                            'topic': topic,
+                            'pattern': pattern
+                        })
+                        order += 1
                 assert tags_found > 2  # this should be first verified by generate_corpus.py
                 new_topics = set([d['topic'] for d in data])
                 logger.info('Newly added topics: %s', new_topics.difference(topics))
