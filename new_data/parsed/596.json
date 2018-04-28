@@ -1,0 +1,107 @@
+[
+  {
+    "dom": "<input class=\"input-text null required\" data-requiredtext=\"email is required\" id=\"dwfrm_login_username_d0zammnftnqk\" maxlength=\"2147483647\" name=\"dwfrm_login_username_d0zammnftnqk\" type=\"text\" value=\"\"/>",
+    "feature": "email email dwfrm login username d0zammnftnqk dwfrm login username d0zammnftnqk text 2147483647",
+    "id": "596-text-0",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input class=\"input-text email required\" id=\"dwfrm_singleshipping_shippingaddress_contactinfofields_email\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_contactinfofields_email\" type=\"text\" value=\"\"/>",
+    "feature": "email email dwfrm singleshipping shippingaddress contactinfofields email dwfrm singleshipping shippingaddress contactinfofields email text 50",
+    "id": "596-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text phone required\" id=\"dwfrm_singleshipping_shippingaddress_contactinfofields_phone\" maxlength=\"16\" name=\"dwfrm_singleshipping_shippingaddress_contactinfofields_phone\" type=\"text\" value=\"\"/>",
+    "feature": "phone phone dwfrm singleshipping shippingaddress contactinfofields phone dwfrm singleshipping shippingaddress contactinfofields phone text 16",
+    "id": "596-text-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"input-text cname required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" maxlength=\"20\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name first name dwfrm singleshipping shippingaddress addressfields firstname dwfrm singleshipping shippingaddress addressfields firstname text 20",
+    "id": "596-text-3",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-text cname required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" maxlength=\"40\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name last name dwfrm singleshipping shippingaddress addressfields lastname dwfrm singleshipping shippingaddress addressfields lastname text 40",
+    "id": "596-text-4",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" maxlength=\"40\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" type=\"text\" value=\"\"/>",
+    "feature": "address 1 address 1 dwfrm singleshipping shippingaddress addressfields address1 dwfrm singleshipping shippingaddress addressfields address1 text 40",
+    "id": "596-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-text \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" maxlength=\"40\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" type=\"text\" value=\"\"/>",
+    "feature": "apt suite apt suite dwfrm singleshipping shippingaddress addressfields address2 dwfrm singleshipping shippingaddress addressfields address2 text 40",
+    "id": "596-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" maxlength=\"40\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" type=\"text\" value=\"\"/>",
+    "feature": "city city dwfrm singleshipping shippingaddress addressfields city dwfrm singleshipping shippingaddress addressfields city text 40",
+    "id": "596-text-7",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_postal\" maxlength=\"10\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_postal\" type=\"text\" value=\"\"/>",
+    "feature": "zip code zip code dwfrm singleshipping shippingaddress addressfields postal dwfrm singleshipping shippingaddress addressfields postal text 10",
+    "id": "596-text-8",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-text\" name=\"q\" type=\"text\" value=\"\"/>",
+    "feature": "try a new search text q",
+    "id": "596-text-9",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"coupon-code\" id=\"dwfrm_cart_couponcode\" name=\"dwfrm_cart_couponcode\" type=\"text\"/>",
+    "feature": "promo text dwfrm cart couponcode dwfrm cart couponcode",
+    "id": "596-text-10",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input class=\"input-text email\" id=\"email-alert-address\" placeholder=\"example@email.com\" type=\"text\" value=\"\"/>",
+    "feature": "sign up example email com text email alert address",
+    "id": "596-text-11",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"find-a-store-alert\" name=\"dwfrm_storelocator_postalcode\" placeholder=\"zip code\" type=\"text\" value=\"\"/>",
+    "feature": "stores find a store alert dwfrm storelocator postalcode text zip code",
+    "id": "596-text-12",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"email-address-popup email\" id=\"email-address-popup\" placeholder=\"example@email.com\" type=\"text\" value=\"\"/>",
+    "feature": "sign me up i ll pass example email com text email address popup",
+    "id": "596-text-13",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text null required\" data-requiredtext=\"password is required\" id=\"dwfrm_login_password_d0bzhfxesxvx\" maxlength=\"2147483647\" name=\"dwfrm_login_password_d0bzhfxesxvx\" type=\"password\" value=\"\"/>",
+    "feature": "password password dwfrm login password d0bzhfxesxvx dwfrm login password d0bzhfxesxvx password 2147483647",
+    "id": "596-password-0",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

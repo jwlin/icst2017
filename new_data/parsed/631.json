@@ -1,0 +1,79 @@
+[
+  {
+    "dom": "<input class=\"form-control\" name=\"purchasedate\" placeholder=\"mm/dd/yyyy\" type=\"text\"/>",
+    "feature": "purchase date purchasedate mm dd yyyy text",
+    "id": "631-text-0",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"firstname\" type=\"text\"/>",
+    "feature": "first name firstname text",
+    "id": "631-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"lastname\" type=\"text\"/>",
+    "feature": "last name lastname text",
+    "id": "631-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"address1\" type=\"text\"/>",
+    "feature": "address 1 address1 text",
+    "id": "631-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"address2\" type=\"text\"/>",
+    "feature": "address 2 address2 text",
+    "id": "631-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"city\" type=\"text\"/>",
+    "feature": "city city text",
+    "id": "631-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"state\" type=\"text\"/>",
+    "feature": "state province state text",
+    "id": "631-text-6",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"postalcode\" type=\"text\"/>",
+    "feature": "zip postal code postalcode text",
+    "id": "631-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"email\" type=\"text\"/>",
+    "feature": "email address email text",
+    "id": "631-text-8",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"confirmemail\" type=\"text\"/>",
+    "feature": "confirm email address confirmemail text",
+    "id": "631-text-9",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control\" name=\"phonenumber\" type=\"text\"/>",
+    "feature": "phone number phonenumber text",
+    "id": "631-text-10",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

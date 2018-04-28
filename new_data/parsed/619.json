@@ -1,0 +1,107 @@
+[
+  {
+    "dom": "<input class=\"form__field form__field--is-datepicker\" data-formatted-date=\"\" data-localisation=\"{&quot;prevtext&quot;: &quot;&quot;,&quot;prevstatus&quot; : &quot;preview month&quot; ,&quot;nexttext&quot; : &quot;&quot; ,&quot;nextstatus&quot; : &quot;next month&quot; ,&quot;todaytext&quot; : &quot;today&quot; ,&quot;todaystatus&quot; : &quot;show today's month&quot; ,&quot;cleartext&quot; : &quot;clear&quot; ,&quot;clearstatus&quot; : &quot;clear the field&quot; ,&quot;closetext&quot; : &quot;close&quot; ,&quot;closestatus&quot; : &quot;close the date picker&quot; }\" data-max-date=\"today\" id=\"dateofpurchase\" name=\"dateofpurchase\" placeholder=\"select date\" type=\"text\"/>",
+    "feature": "select date dateofpurchase text select date dateofpurchase",
+    "id": "619-text-0",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"form__field\" data-msg-required=\"first name is required.\" id=\"firstname\" name=\"firstname\" placeholder=\"first name*\" required=\"\" type=\"text\"/>",
+    "feature": "first name firstname text first name firstname",
+    "id": "619-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form__field\" data-msg-required=\"last name is required.\" id=\"lastname\" name=\"lastname\" placeholder=\"last name*\" required=\"\" type=\"text\"/>",
+    "feature": "last name lastname text last name lastname",
+    "id": "619-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form__field pin-text__target\" data-msg-required=\"postal/zip is required.\" id=\"postalcode\" name=\"postalcode\" placeholder=\"zip code*\" required=\"\" type=\"text\"/>",
+    "feature": "postal code postalcode text zip code postalcode",
+    "id": "619-text-3",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form__field\" data-msg-required=\"first name is required.\" id=\"sc_first_name\" name=\"firstname\" required=\"\" type=\"text\"/>",
+    "feature": "no yes sc first name text firstname",
+    "id": "619-text-4",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form__field\" data-msg-required=\"last name is required.\" id=\"sc_last_name\" name=\"lastname\" required=\"\" type=\"text\"/>",
+    "feature": "no yes sc last name text lastname",
+    "id": "619-text-5",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form__field\" data-msg-email=\"email address is invalid.\" data-msg-required=\"email address is required.\" id=\"signupemail\" name=\"email\" placeholder=\"email address*\" required=\"\" type=\"email\"/>",
+    "feature": "your email address signupemail email email address email",
+    "id": "619-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form__field\" data-msg-email=\"email address is invalid.\" data-msg-required=\"email address is required.\" id=\"modalemail\" name=\"email\" placeholder=\"email address\" required=\"required\" type=\"email\"/>",
+    "feature": "email address modalemail email email address email",
+    "id": "619-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"footer__field form__field\" data-msg-email=\"email address is not in the correct format.\" data-msg-required=\"email address is required.\" id=\"stay_connected_casl_email\" name=\"email\" required=\"\" type=\"email\"/>",
+    "feature": "no yes stay connected casl email email email",
+    "id": "619-email-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form__field form__field--to-encrypt password-display__target\" data-msg-minlength=\"password is invalid.\" data-msg-password=\"password is invalid.\" data-msg-required=\"password is required.\" data-password-display-id=\"accountcreationpass\" id=\"password\" minlength=\"8\" name=\"password\" placeholder=\"password*\" required=\"\" type=\"password\"/>",
+    "feature": "password password password password password",
+    "id": "619-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"form__field form__field--to-encrypt password-display__target\" data-msg-equalto=\"passwords do not match.\" data-msg-required=\"please confirm your password.\" data-password-display-id=\"accountcreationpass\" id=\"confirmpassword\" name=\"confirmpassword\" placeholder=\"confirm password*\" type=\"password\"/>",
+    "feature": "confirm password confirmpassword password confirm password confirmpassword",
+    "id": "619-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"form__field form__field--to-encrypt\" data-msg-required=\"password is required.\" id=\"loginpassword\" name=\"loginpassword\" placeholder=\"password\" required=\"required\" type=\"password\"/>",
+    "feature": "password loginpassword password password loginpassword",
+    "id": "619-password-2",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"predictive-search__field should-predict\" data-ajax-scope=\"header\" id=\"predictivesearch_header\" name=\"searchtext\" placeholder=\"search\" type=\"search\" value=\"\"/>",
+    "feature": "search predictivesearch header search search searchtext",
+    "id": "619-search-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"predictive-search__field should-predict\" data-ajax-scope=\"productregistration\" id=\"predictivesearch_productregistration\" name=\"searchtext\" placeholder=\"enter your model number or product name\" type=\"search\" value=\"\"/>",
+    "feature": "enter your model number or product name predictivesearch productregistration search enter your model number or product name searchtext",
+    "id": "619-search-1",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  },
+  {
+    "dom": "<input class=\"form__field account-creation__form-field--phone\" data-msg-phonenumber=\"please enter a valid phone number\" id=\"phone\" name=\"phonenumber\" placeholder=\"phone number\" type=\"tel\"/>",
+    "feature": "phone number phone tel phone number phonenumber",
+    "id": "619-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

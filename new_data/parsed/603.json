@@ -1,0 +1,128 @@
+[
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input\" data-talos=\"textbillingfirstname\" id=\"billing.firstname\" maxlength=\"50\" name=\"billing.firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name billing first name is required billing firstname billing firstname text 50",
+    "id": "603-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input\" data-talos=\"textbillinglastname\" id=\"billing.lastname\" maxlength=\"50\" name=\"billing.lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name billing last name is required billing lastname billing lastname text 50",
+    "id": "603-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"inputcompanyname billinginput inputtypetext billing.input\" data-talos=\"textbillingcompanyname\" id=\"billing.companyname\" maxlength=\"35\" name=\"billing.companyname\" type=\"text\" value=\"\"/>",
+    "feature": "company name billing company name billing companyname billing companyname text 35",
+    "id": "603-text-2",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input\" data-talos=\"textbillingaddress1\" id=\"billing.address1\" maxlength=\"35\" name=\"billing.address1\" type=\"text\" value=\"\"/>",
+    "feature": "address line 1 billing address line 1 is required billing address1 billing address1 text 35",
+    "id": "603-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input\" data-talos=\"textbillingaddress2\" id=\"billing.address2\" maxlength=\"35\" name=\"billing.address2\" type=\"text\" value=\"\"/>",
+    "feature": "apt address line 2 billing apartment number address line 2 billing address2 billing address2 text 35",
+    "id": "603-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input\" data-talos=\"textbillingcity\" id=\"billing.city\" maxlength=\"30\" name=\"billing.city\" type=\"text\" value=\"\"/>",
+    "feature": "city billing city is required billing city billing city text 30",
+    "id": "603-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input\" data-talos=\"textbillingzip\" id=\"billing.zip\" maxlength=\"10\" name=\"billing.zip\" type=\"text\" value=\"\"/>",
+    "feature": "zip postal code billing zip postal code is required billing zip billing zip text 10",
+    "id": "603-text-6",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input ignore\" data-talos=\"textbillingphone\" id=\"billing.phone\" maxlength=\"20\" name=\"billing.phone\" type=\"text\" value=\"\"/>",
+    "feature": "telephone telephone billing phone billing phone text 20",
+    "id": "603-text-7",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"billinginput inputtypetext billing.input\" data-talos=\"textbillingemail\" id=\"billing.email\" maxlength=\"50\" name=\"billing.email\" type=\"text\" value=\"\"/>",
+    "feature": "e mail billing e mail is required billing email billing email text 50",
+    "id": "603-text-8",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input\" data-talos=\"textbillingfirstname\" id=\"shipping.firstname\" maxlength=\"50\" name=\"shipping.firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name shipping first name is required shipping firstname shipping firstname text 50",
+    "id": "603-text-9",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input\" data-talos=\"textbillinglastname\" id=\"shipping.lastname\" maxlength=\"50\" name=\"shipping.lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name shipping last name is required shipping lastname shipping lastname text 50",
+    "id": "603-text-10",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"inputcompanyname shippinginput inputtypetext shipping.input\" data-talos=\"textbillingcompanyname\" id=\"shipping.companyname\" maxlength=\"35\" name=\"shipping.companyname\" type=\"text\" value=\"\"/>",
+    "feature": "company name shipping company name shipping companyname shipping companyname text 35",
+    "id": "603-text-11",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input\" data-talos=\"textbillingaddress1\" id=\"shipping.address1\" maxlength=\"35\" name=\"shipping.address1\" type=\"text\" value=\"\"/>",
+    "feature": "address line 1 shipping address line 1 is required shipping address1 shipping address1 text 35",
+    "id": "603-text-12",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input\" data-talos=\"textbillingaddress2\" id=\"shipping.address2\" maxlength=\"35\" name=\"shipping.address2\" type=\"text\" value=\"\"/>",
+    "feature": "apt address line 2 shipping apartment number address line 2 shipping address2 shipping address2 text 35",
+    "id": "603-text-13",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input\" data-talos=\"textbillingcity\" id=\"shipping.city\" maxlength=\"30\" name=\"shipping.city\" type=\"text\" value=\"\"/>",
+    "feature": "city shipping city is required shipping city shipping city text 30",
+    "id": "603-text-14",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input\" data-talos=\"textbillingzip\" id=\"shipping.zip\" maxlength=\"10\" name=\"shipping.zip\" type=\"text\" value=\"\"/>",
+    "feature": "zip postal code shipping zip postal code is required shipping zip shipping zip text 10",
+    "id": "603-text-15",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input ignore\" data-talos=\"textbillingphone\" id=\"shipping.phone\" maxlength=\"20\" name=\"shipping.phone\" type=\"text\" value=\"\"/>",
+    "feature": "telephone telephone shipping phone shipping phone text 20",
+    "id": "603-text-16",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"shippinginput inputtypetext shipping.input\" data-talos=\"textbillingemail\" id=\"shipping.email\" maxlength=\"50\" name=\"shipping.email\" type=\"text\" value=\"\"/>",
+    "feature": "e mail shipping e mail is required shipping email shipping email text 50",
+    "id": "603-text-17",
+    "pattern": "email",
+    "topic": "email"
+  }
+]

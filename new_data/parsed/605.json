@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input class=\"search-textbox\" id=\"search-text\" name=\"searchterm\" placeholder=\"search\" type=\"text\"/>",
+    "feature": "search text searchterm search text",
+    "id": "605-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"autocomplete-product registria_field\" data-allowfreeinput=\"true\" data-productcategory=\"kad\" data-showall=\"true\" id=\"model\" name=\"product[model]\" type=\"text\" value=\"\"/>",
+    "feature": "model number product model model text",
+    "id": "605-text-1",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"serial\" name=\"product[serial_number]\" type=\"text\" value=\"\"/>",
+    "feature": "serial number product serial number serial text",
+    "id": "605-text-2",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"registria_field\" id=\"first_name\" name=\"user[first_name]\" type=\"text\"/>",
+    "feature": "first name user first name first name text",
+    "id": "605-text-3",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"registria_field\" id=\"last_name\" name=\"user[last_name]\" type=\"text\"/>",
+    "feature": "last name user last name last name text",
+    "id": "605-text-4",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"address1\" name=\"user[address_attributes][address1]\" placeholder=\"enter a location\" type=\"text\"/>",
+    "feature": "street address user address attributes address1 address1 enter a location text",
+    "id": "605-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"address2\" name=\"user[address_attributes][address2]\" type=\"text\"/>",
+    "feature": "unit suite user address attributes address2 address2 text",
+    "id": "605-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"city\" name=\"user[address_attributes][city]\" type=\"text\"/>",
+    "feature": "city user address attributes city city text",
+    "id": "605-text-7",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"registria_field autocomplete-state\" id=\"state\" name=\"user[address_attributes][state]\" type=\"text\"/>",
+    "feature": "state user address attributes state state text",
+    "id": "605-text-8",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"registria_field\" data-allowfreeinput=\"true\" id=\"purchased_at\" name=\"product[purchased_at]\" type=\"text\"/>",
+    "feature": "purchased from product purchased at purchased at text",
+    "id": "605-text-9",
+    "pattern": "store",
+    "topic": "store"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"email\" name=\"user[email]\" type=\"email\" value=\"\"/>",
+    "feature": "email address user email email email",
+    "id": "605-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"registria_field mask-phone\" id=\"phone\" name=\"user[phone]\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number user phone phone tel",
+    "id": "605-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"registria_field reverse-zip\" id=\"zip\" name=\"user[address_attributes][zip]\" type=\"tel\"/>",
+    "feature": "zip code user address attributes zip zip tel",
+    "id": "605-tel-1",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"registria_field mask-date\" id=\"purchase_date\" name=\"product[purchase_date]\" type=\"tel\"/>",
+    "feature": "purchase date product purchase date purchase date tel",
+    "id": "605-tel-2",
+    "pattern": "date",
+    "topic": "date"
+  }
+]

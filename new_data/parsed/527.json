@@ -1,0 +1,205 @@
+[
+  {
+    "dom": "<input class=\"form-control\" id=\"_usernamevalidator_war_cfnaapp1_instance_top_username\" maxlength=\"100\" name=\"username\" placeholder=\"user name\" type=\"text\"/>",
+    "feature": "usernamevalidator war cfnaapp1 instance top username username user name text 100",
+    "id": "527-text-0",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"streetaddress\" maxlength=\"23\" name=\"streetaddress\" size=\"27\" type=\"text\"/>",
+    "feature": "residential street address streetaddress streetaddress text 23",
+    "id": "527-text-1",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"aptnumber\" maxlength=\"23\" name=\"aptnumber\" placeholder=\"(optional)\" size=\"7\" type=\"text\"/>",
+    "feature": "apartment aptnumber aptnumber optional text 23",
+    "id": "527-text-2",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"city\" maxlength=\"13\" name=\"city\" size=\"30\" type=\"text\"/>",
+    "feature": "city city city text 13",
+    "id": "527-text-3",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"previousaddress\" maxlength=\"23\" name=\"previousaddress\" size=\"27\" type=\"text\"/>",
+    "feature": "previous residential address previousaddress previousaddress text 23",
+    "id": "527-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"previousaptnumber\" maxlength=\"23\" name=\"previousaptnumber\" placeholder=\"(optional)\" size=\"7\" type=\"text\"/>",
+    "feature": "apartment previousaptnumber previousaptnumber optional text 23",
+    "id": "527-text-5",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"previouscity\" maxlength=\"13\" name=\"previouscity\" size=\"30\" type=\"text\"/>",
+    "feature": "city previouscity previouscity text 13",
+    "id": "527-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"mailingaddress\" maxlength=\"23\" name=\"mailingaddress\" size=\"27\" type=\"text\"/>",
+    "feature": "mailing address mailingaddress mailingaddress text 23",
+    "id": "527-text-7",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"mailingaptnumber\" maxlength=\"23\" name=\"mailingaptnumber\" placeholder=\"(optional)\" size=\"7\" type=\"text\"/>",
+    "feature": "apartment mailingaptnumber mailingaptnumber optional text 23",
+    "id": "527-text-8",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"mailingcity\" maxlength=\"13\" name=\"mailingcity\" size=\"30\" type=\"text\"/>",
+    "feature": "city mailingcity mailingcity text 13",
+    "id": "527-text-9",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"drivernumber\" maxlength=\"20\" name=\"drivernumber\" type=\"text\"/>",
+    "feature": "driver s license drivernumber drivernumber text 20",
+    "id": "527-text-10",
+    "pattern": "drivers.*license",
+    "topic": "drivers_license"
+  },
+  {
+    "dom": "<input class=\"invisiblefield\" id=\"privacypolicy\" name=\"privacypolicy\" tabindex=\"-1\" type=\"text\"/>",
+    "feature": "print agreement http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees how we will calculate your balance billing rights account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing privacypolicy privacypolicy text",
+    "id": "527-text-11",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"invisiblefield\" id=\"eletroniccommunications\" name=\"eletroniccommunications\" tabindex=\"-1\" type=\"text\"/>",
+    "feature": "print agreement http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing http www consumerfinance gov learnmore http www consumerfinance gov learnmore penalty fees how we will calculate your balance billing rights account information dollar amount description of problem in writing if we made a mistake if we do not believe there was a mistake 10 days in writing eletroniccommunications eletroniccommunications text",
+    "id": "527-text-12",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"emailaddress\" maxlength=\"100\" name=\"emailaddress\" size=\"30\" type=\"email\"/>",
+    "feature": "email address emailaddress emailaddress email 100",
+    "id": "527-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"confirmemailaddress\" maxlength=\"100\" name=\"confirmemailaddress\" size=\"25\" type=\"email\"/>",
+    "feature": "confirm email address confirmemailaddress confirmemailaddress email 100",
+    "id": "527-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"zipcode\" maxlength=\"9\" name=\"zipcode\" size=\"10\" type=\"tel\"/>",
+    "feature": "zip code zipcode zipcode tel 9",
+    "id": "527-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"previouszipcode\" maxlength=\"9\" name=\"previouszipcode\" size=\"10\" type=\"tel\"/>",
+    "feature": "zip code previouszipcode previouszipcode tel 9",
+    "id": "527-tel-1",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"mailingzipcode\" maxlength=\"9\" name=\"mailingzipcode\" size=\"10\" type=\"tel\"/>",
+    "feature": "zip code mailingzipcode mailingzipcode tel 9",
+    "id": "527-tel-2",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"phone1\" maxlength=\"3\" name=\"phone1\" size=\"3\" type=\"tel\"/>",
+    "feature": "phone phone1 phone1 tel 3",
+    "id": "527-tel-3",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"phone2\" maxlength=\"3\" name=\"phone2\" size=\"3\" type=\"tel\"/>",
+    "feature": "phone phone2 phone2 tel 3",
+    "id": "527-tel-4",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"phone3\" maxlength=\"4\" name=\"phone3\" size=\"4\" type=\"tel\"/>",
+    "feature": "phone phone3 phone3 tel 4",
+    "id": "527-tel-5",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"workphone1\" maxlength=\"3\" name=\"workphone1\" size=\"3\" type=\"tel\"/>",
+    "feature": "work optional workphone1 workphone1 tel 3",
+    "id": "527-tel-6",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"workphone2\" maxlength=\"3\" name=\"workphone2\" size=\"3\" type=\"tel\"/>",
+    "feature": "work optional workphone2 workphone2 tel 3",
+    "id": "527-tel-7",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"workphone3\" maxlength=\"4\" name=\"workphone3\" size=\"4\" type=\"tel\"/>",
+    "feature": "work optional workphone3 workphone3 tel 4",
+    "id": "527-tel-8",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"ssn1\" maxlength=\"3\" name=\"ssn1\" style=\"width: 77px !important\" type=\"tel\"/>",
+    "feature": "social security ssn1 tel ssn1 3",
+    "id": "527-tel-9",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"ssn2\" maxlength=\"2\" name=\"ssn2\" style=\"width: 45px !important\" type=\"tel\"/>",
+    "feature": "social security ssn2 tel ssn2 2",
+    "id": "527-tel-10",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"form-control width-auto\" id=\"ssn3\" maxlength=\"4\" name=\"ssn3\" style=\"width: 77px !important\" type=\"tel\"/>",
+    "feature": "social security ssn3 tel ssn3 4",
+    "id": "527-tel-11",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"form-control text-right\" id=\"annualincome\" maxlength=\"7\" name=\"annualincome\" type=\"tel\"/>",
+    "feature": "00 annualincome annualincome tel 7",
+    "id": "527-tel-12",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control text-right\" id=\"monthlypayment\" maxlength=\"5\" name=\"monthlypayment\" type=\"tel\"/>",
+    "feature": "00 monthlypayment monthlypayment tel 5",
+    "id": "527-tel-13",
+    "pattern": "rent",
+    "topic": "rent"
+  }
+]

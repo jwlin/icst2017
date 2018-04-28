@@ -1,0 +1,44 @@
+[
+  {
+    "dom": "<input data-val=\"true\" data-val-email=\"the email address/user is not a valid email address.\" data-val-length=\"email address/user must be between 6 and 50 characters.\" data-val-length-max=\"50\" data-val-length-min=\"6\" data-val-required=\"email address/user is required.\" id=\"username\" maxlength=\"50\" name=\"username\" type=\"text\" value=\"\"/>",
+    "feature": "username username text 50",
+    "id": "719-text-0",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input data-val=\"true\" data-val-equalto=\"confirm email address/user does not match email address/user.\" data-val-equalto-other=\"*.username\" id=\"confirmusername\" maxlength=\"50\" name=\"confirmusername\" type=\"text\" value=\"\"/>",
+    "feature": "confirmusername confirmusername text 50",
+    "id": "719-text-1",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input class=\"textbox-narrow\" data-val=\"true\" data-val-required=\"first name is required.\" id=\"firstname\" maxlength=\"50\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "firstname firstname text 50",
+    "id": "719-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"textbox-narrow\" data-val=\"true\" data-val-required=\"last name is required.\" id=\"lastname\" maxlength=\"50\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "lastname lastname text 50",
+    "id": "719-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"textbox-narrow\" data-val=\"true\" data-val-length=\"password must be between 6 and 100 characters.\" data-val-length-max=\"100\" data-val-length-min=\"6\" data-val-required=\"password is required.\" id=\"password\" maxlength=\"128\" name=\"password\" type=\"password\"/>",
+    "feature": "password password password 128",
+    "id": "719-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"textbox-narrow\" data-val=\"true\" data-val-equalto=\"confirm password does not match password.\" data-val-equalto-other=\"*.password\" id=\"confirmpassword\" maxlength=\"128\" name=\"confirmpassword\" type=\"password\"/>",
+    "feature": "confirmpassword confirmpassword password 128",
+    "id": "719-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "dom": "<input class=\"inputpromocode\" id=\"promocode\" maxlength=\"14\" style=\"width:200px !important;margin-bottom:0 !important\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "enter your personal offer code promocode text 14",
+    "id": "531-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"firstname\" placeholder=\"\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "first name firstname text",
+    "id": "531-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middleinitial\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "optional mi optional middleinitial text",
+    "id": "531-text-2",
+    "pattern": "",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"lastname\" placeholder=\"\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "last name lastname text",
+    "id": "531-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"addrln1\" placeholder=\"street address, no po boxes\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "address 1 street address no po boxes addrln1 text",
+    "id": "531-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"addrln2\" placeholder=\"apt, suite, unit, building, floor,etc.\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "optional address 2 optional apt suite unit building floor etc addrln2 text",
+    "id": "531-text-5",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"city\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "city city text",
+    "id": "531-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"zipcode\" pattern=\"[0-9]*\" placeholder=\"55555\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "zip code zipcode text 55555",
+    "id": "531-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"firstnameedit\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "first name firstnameedit text",
+    "id": "531-text-8",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middleinitialedit\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "optional mi optional middleinitialedit text",
+    "id": "531-text-9",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"lastnameedit\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "last name lastnameedit text",
+    "id": "531-text-10",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"addrln1edit\" placeholder=\"street address, no po boxes\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "optional address 1 address 2 optional city country state zip code province postal code street address no po boxes addrln1edit text",
+    "id": "531-text-11",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"addrln2edit\" placeholder=\"apt, suite, unit, building, floor,etc.\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "optional address 2 optional address 1 city country state zip code province postal code apt suite unit building floor etc addrln2edit text",
+    "id": "531-text-12",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"cityedit\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "optional city address 2 optional address 1 country state zip code province postal code cityedit text",
+    "id": "531-text-13",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"zipcodeedit\" pattern=\"[0-9]*\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "zip code zipcodeedit text",
+    "id": "531-text-14",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"postalcodeedit\" placeholder=\"a1a 1a1\" type=\"text\"/>",
+    "feature": "postal code a1a 1a1 postalcodeedit text",
+    "id": "531-text-15",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-label=\"enter your rewards id here\" class=\"rewardsstuff\" id=\"rewardsidfield\" maxlength=\"11\" onkeydown=\"return ( event.ctrlkey || event.altkey \n                    || (47&lt;event.keycode &amp;&amp; event.keycode&lt;58 &amp;&amp; event.shiftkey==false) \n                    || (95&lt;event.keycode &amp;&amp; event.keycode&lt;106)\n                    || (event.keycode==8) || (event.keycode==9) \n                    || (event.keycode&gt;34 &amp;&amp; event.keycode&lt;40) \n                    || (event.keycode==46) )\" style=\"margin-right: 20px;\" tabindex=\"0\" type=\"text\"/>",
+    "feature": "yes2you rewards rewards id rewardsidfield text 11",
+    "id": "531-text-16",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"email\" placeholder=\"name@domain.xxx\" tabindex=\"0\" type=\"email\"/>",
+    "feature": "email address name domain xxx email email",
+    "id": "531-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"emailmatch\" placeholder=\"name@domain.xxx\" tabindex=\"0\" type=\"email\"/>",
+    "feature": "confirm email address name domain xxx emailmatch email",
+    "id": "531-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"emailedit\" placeholder=\"name@domain.xxx\" tabindex=\"0\" type=\"email\"/>",
+    "feature": "optional email address work phone optional home phone confirm email address name domain xxx emailedit email",
+    "id": "531-email-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"emailmatchedit\" placeholder=\"name@domain.xxx\" tabindex=\"0\" type=\"email\"/>",
+    "feature": "optional confirm email address email address work phone optional home phone name domain xxx emailmatchedit email",
+    "id": "531-email-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-describedby=\"ssnfirstthree\" aria-required=\"true\" class=\"ssn1\" id=\"ssn1\" maxlength=\"3\" name=\"ssn1\" pattern=\"[0-9]*\" placeholder=\"555\" size=\"2\" tabindex=\"0\" type=\"password\"/>",
+    "feature": "social security number social security number next two digits social security number last four digits ssn1 ssn1 555 password 3",
+    "id": "531-password-0",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"ssnsecondtwo\" aria-required=\"true\" class=\"ssn2\" id=\"ssn2\" maxlength=\"2\" name=\"ssn2\" pattern=\"[0-9]*\" placeholder=\"55\" size=\"2\" tabindex=\"0\" type=\"password\"/>",
+    "feature": "social security number next two digits ssn2 ssn2 55 password 2",
+    "id": "531-password-1",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"ssnlastfour\" aria-required=\"true\" class=\"ssn3\" id=\"ssn3\" maxlength=\"4\" name=\"ssn3\" pattern=\"[0-9]*\" placeholder=\"5555\" size=\"2\" tabindex=\"0\" type=\"password\"/>",
+    "feature": "social security number last four digits ssn3 ssn3 5555 password 4",
+    "id": "531-password-2",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"ssnfirstthreeedit\" aria-required=\"true\" class=\"ssn1\" id=\"ssn1edit\" maxlength=\"3\" name=\"ssn1\" pattern=\"[0-9]*\" placeholder=\"555\" size=\"2\" tabindex=\"0\" type=\"password\"/>",
+    "feature": "social security number next two digits social security number last four digits ssn1edit ssn1 555 password 3",
+    "id": "531-password-3",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"ssnsecondtwoedit\" aria-required=\"true\" class=\"ssn2\" id=\"ssn2edit\" maxlength=\"2\" name=\"ssn2\" pattern=\"[0-9]*\" placeholder=\"55\" size=\"2\" tabindex=\"0\" type=\"password\"/>",
+    "feature": "social security number next two digits ssn2edit ssn2 55 password 2",
+    "id": "531-password-4",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"homephone\" maxlength=\"12\" placeholder=\"555-555-5555\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "home phone homephone tel 555 555 5555 12",
+    "id": "531-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"workphone\" maxlength=\"12\" placeholder=\"555-555-5555\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "optional work phone optional 555 555 5555 workphone tel 12",
+    "id": "531-tel-1",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"birthdatedescription\" aria-required=\"true\" class=\"date datemonth\" id=\"bdaymonth\" maxlength=\"2\" name=\"bdmonth\" pattern=\"\\d*\" placeholder=\"mm\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "date of birth day date of birth year bdaymonth tel bdmonth mm 2",
+    "id": "531-tel-2",
+    "pattern": "month",
+    "topic": "month"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"date dateday\" id=\"bdayday\" maxlength=\"2\" name=\"bdday\" pattern=\"\\d*\" placeholder=\"dd\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "date of birth day date of birth year bdayday tel bdday dd 2",
+    "id": "531-tel-3",
+    "pattern": "day",
+    "topic": "day"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"date dateyear\" id=\"bdayyear\" maxlength=\"4\" name=\"bdyear\" pattern=\"\\d*\" placeholder=\"yyyy\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "date of birth year date of birth day bdayyear tel bdyear yyyy 4",
+    "id": "531-tel-4",
+    "pattern": "year",
+    "topic": "year"
+  },
+  {
+    "dom": "<input aria-required=\"true\" id=\"homephoneedit\" maxlength=\"12\" placeholder=\"555-555-5555\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "optional home phone work phone optional email address confirm email address homephoneedit tel 555 555 5555 12",
+    "id": "531-tel-5",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"workphoneedit\" maxlength=\"12\" placeholder=\"555-555-5555\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "optional work phone optional home phone email address confirm email address 555 555 5555 workphoneedit tel 12",
+    "id": "531-tel-6",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"ssnlastfouredit\" aria-required=\"true\" class=\"ssn3\" id=\"ssn3edit\" maxlength=\"4\" name=\"ssn3\" pattern=\"[0-9]*\" placeholder=\"5555\" size=\"2\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "social security number last four digits ssn3edit ssn3 5555 tel 4",
+    "id": "531-tel-7",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"birthdatedescription\" aria-required=\"true\" class=\"date datemonth\" id=\"bdaymonthedit\" maxlength=\"2\" name=\"bdmonth\" pattern=\"\\d*\" placeholder=\"mm\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "date of birth day date of birth year bdaymonthedit tel bdmonth mm 2",
+    "id": "531-tel-8",
+    "pattern": "month",
+    "topic": "month"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"date dateday\" id=\"bdaydayedit\" maxlength=\"2\" name=\"bdday\" pattern=\"\\d*\" placeholder=\"dd\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "date of birth day date of birth year bdaydayedit tel bdday dd 2",
+    "id": "531-tel-9",
+    "pattern": "day",
+    "topic": "day"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"date dateyear\" id=\"bdayyearedit\" maxlength=\"4\" name=\"bdyear\" pattern=\"\\d*\" placeholder=\"yyyy\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "date of birth year date of birth day bdayyearedit tel bdyear yyyy 4",
+    "id": "531-tel-10",
+    "pattern": "year",
+    "topic": "year"
+  },
+  {
+    "dom": "<input id=\"mphone\" maxlength=\"12\" placeholder=\"555-555-5555\" style=\"\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "mobile phone number mphone 555 555 5555 tel 12",
+    "id": "531-tel-11",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input class=\"phonefield\" id=\"mphonematch\" maxlength=\"12\" placeholder=\"555-555-5555\" style=\"\" tabindex=\"0\" type=\"tel\"/>",
+    "feature": "confirm mobile phone number mphonematch 555 555 5555 tel 12",
+    "id": "531-tel-12",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  }
+]

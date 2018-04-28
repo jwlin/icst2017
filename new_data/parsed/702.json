@@ -1,0 +1,51 @@
+[
+  {
+    "dom": "<input maxlength=\"35\" name=\"first_name\" size=\"45\" type=\"text\" value=\"\"/>",
+    "feature": "text first name 35",
+    "id": "702-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input maxlength=\"35\" name=\"last_name\" size=\"45\" type=\"text\" value=\"\"/>",
+    "feature": "text last name 35",
+    "id": "702-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input maxlength=\"35\" name=\"email\" size=\"45\" type=\"text\" value=\"\"/>",
+    "feature": "text email 35",
+    "id": "702-text-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input maxlength=\"35\" name=\"check_email\" size=\"45\" type=\"text\" value=\"\"/>",
+    "feature": "text check email 35",
+    "id": "702-text-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input maxlength=\"25\" name=\"login_name\" size=\"45\" type=\"text\"/>",
+    "feature": "text login name 25",
+    "id": "702-text-4",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input maxlength=\"25\" name=\"password\" size=\"45\" type=\"password\"/>",
+    "feature": "password password 25",
+    "id": "702-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input maxlength=\"25\" name=\"check_password\" onblur=\"javascript: checkpassword();\" size=\"45\" type=\"password\"/>",
+    "feature": "password check password 25",
+    "id": "702-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

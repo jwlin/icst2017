@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"scc_nur_wrk_oprid\" maxlength=\"30\" name=\"scc_nur_wrk_oprid\" style=\"width:324px; \" tabindex=\"22\" type=\"text\" value=\"\"/>",
+    "feature": "continue user id password confirm password email address first name last name scc nur wrk oprid text scc nur wrk oprid 30",
+    "id": "729-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"scc_nur_wrk_email_addr\" maxlength=\"70\" name=\"scc_nur_wrk_email_addr\" style=\"width:324px; \" tabindex=\"25\" type=\"text\" value=\"\"/>",
+    "feature": "continue email address confirm password password user id first name last name scc nur wrk email addr text scc nur wrk email addr 70",
+    "id": "729-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"scc_nur_wrk_first_name\" maxlength=\"30\" name=\"scc_nur_wrk_first_name\" style=\"width:320px; \" tabindex=\"26\" type=\"text\" value=\"\"/>",
+    "feature": "continue first name email address confirm password password user id last name scc nur wrk first name text scc nur wrk first name 30",
+    "id": "729-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"scc_nur_wrk_last_name\" maxlength=\"30\" name=\"scc_nur_wrk_last_name\" style=\"width:320px; \" tabindex=\"27\" type=\"text\" value=\"\"/>",
+    "feature": "continue last name first name email address confirm password password user id scc nur wrk last name text scc nur wrk last name 30",
+    "id": "729-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"nyu_aws_derived_oprid\" maxlength=\"30\" name=\"nyu_aws_derived_oprid\" style=\"width:320px; \" tabindex=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "if you have already created an account with this system enter your application user id and password below sign in forgot your user id forgot your password user id password nyu aws derived oprid text nyu aws derived oprid 30",
+    "id": "729-text-4",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"ptus_defaultlocalnode\" name=\"ptus_defaultlocalnode\" readonly=\"readonly\" type=\"text\" value=\"wsq_campus\"/>",
+    "feature": "default local node dbname portal node workcenter id url ptus defaultlocalnode text wsq campus ptus defaultlocalnode",
+    "id": "729-text-5",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"ptus_dbname\" name=\"ptus_dbname\" readonly=\"readonly\" type=\"text\" value=\"csprod\"/>",
+    "feature": "dbname default local node portal node workcenter id url ptus dbname text csprod ptus dbname",
+    "id": "729-text-6",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"ptus_portal\" name=\"ptus_portal\" readonly=\"readonly\" type=\"text\" value=\"employee\"/>",
+    "feature": "portal dbname default local node node workcenter id url ptus portal text employee ptus portal",
+    "id": "729-text-7",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"ptus_node\" name=\"ptus_node\" readonly=\"readonly\" type=\"text\" value=\"hrms\"/>",
+    "feature": "node portal dbname default local node workcenter id url ptus node text hrms ptus node",
+    "id": "729-text-8",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"ptus_workcenterid\" name=\"ptus_workcenterid\" readonly=\"readonly\" type=\"text\" value=\"\"/>",
+    "feature": "workcenter id node portal dbname default local node url ptus workcenterid text ptus workcenterid",
+    "id": "729-text-9",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"ptus_componenturl\" name=\"ptus_componenturl\" readonly=\"readonly\" type=\"text\" value=\"https://sis.nyu.edu/psp/csprod/employee/hrms/c/nyu_aws_ss.nyu_aaws_login.gbl\"/>",
+    "feature": "url workcenter id node portal dbname default local node ptus componenturl text https sis nyu edu psp csprod employee hrms c nyu aws ss nyu aaws login gbl ptus componenturl",
+    "id": "729-text-10",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"scc_nur_wrk_password\" maxlength=\"254\" name=\"scc_nur_wrk_password\" style=\"width:324px; \" tabindex=\"23\" type=\"password\" value=\"\"/>",
+    "feature": "continue password user id confirm password email address first name last name scc nur wrk password password scc nur wrk password 254",
+    "id": "729-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"scc_nur_wrk_password_confirm\" maxlength=\"254\" name=\"scc_nur_wrk_password_confirm\" style=\"width:324px; \" tabindex=\"24\" type=\"password\" value=\"\"/>",
+    "feature": "continue confirm password password user id email address first name last name scc nur wrk password confirm password scc nur wrk password confirm 254",
+    "id": "729-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"nyu_aaws_field\" id=\"nyu_aws_derived_password\" maxlength=\"254\" name=\"nyu_aws_derived_password\" style=\"width:320px; \" tabindex=\"31\" type=\"password\" value=\"\"/>",
+    "feature": "if you have already created an account with this system enter your application user id and password below sign in forgot your user id forgot your password password user id nyu aws derived password password nyu aws derived password 254",
+    "id": "729-password-2",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

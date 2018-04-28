@@ -1,0 +1,135 @@
+[
+  {
+    "dom": "<input class=\"text required\" id=\"firstname\" maxlength=\"22\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.firstname\" title=\"enter first name\" type=\"text\" value=\"\"/>",
+    "feature": "please enter a first name first name firstname ngp commerce order gcdeliveryselectionformhandler address firstname text 22",
+    "id": "587-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"text required\" id=\"lastname\" maxlength=\"40\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.lastname\" title=\"enter last name\" type=\"text\" value=\"\"/>",
+    "feature": "please enter a last name last name lastname ngp commerce order gcdeliveryselectionformhandler address lastname text 40",
+    "id": "587-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"text required\" id=\"address1\" maxlength=\"35\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.address1\" title=\"enter address line one\" type=\"text\" value=\"\"/>",
+    "feature": "please enter your address address 1 address1 ngp commerce order gcdeliveryselectionformhandler address address1 text 35",
+    "id": "587-text-2",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"notrequired text\" id=\"address2\" maxlength=\"35\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.address2\" title=\"enter address line two\" type=\"text\" value=\"\"/>",
+    "feature": "address 2 address2 ngp commerce order gcdeliveryselectionformhandler address address2 text 35",
+    "id": "587-text-3",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"notrequired text\" id=\"companyname\" maxlength=\"35\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.companyname\" title=\"enter company name\" type=\"text\" value=\"\"/>",
+    "feature": "company or c o companyname ngp commerce order gcdeliveryselectionformhandler address companyname text 35",
+    "id": "587-text-4",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"text required\" id=\"city\" maxlength=\"30\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.city\" title=\"enter city\" type=\"text\" value=\"\"/>",
+    "feature": "please enter your city city city ngp commerce order gcdeliveryselectionformhandler address city text 30",
+    "id": "587-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"county\" maxlength=\"40\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.county\" title=\"enter county\" type=\"text\" value=\"\"/>",
+    "feature": "state county ngp commerce order gcdeliveryselectionformhandler address county text 40",
+    "id": "587-text-6",
+    "pattern": "county",
+    "topic": "county"
+  },
+  {
+    "dom": "<input class=\"text small required\" id=\"postalcode\" maxlength=\"10\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.postalcode\" title=\"enter postal code\" type=\"text\" value=\"\"/>",
+    "feature": "please enter your zip code zip code postalcode ngp commerce order gcdeliveryselectionformhandler address postalcode text 10",
+    "id": "587-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"text required\" id=\"phonenumber\" maxlength=\"16\" name=\"/ngp/commerce/order/gcdeliveryselectionformhandler.address.phonenumber\" title=\"enter phone number\" type=\"text\" value=\"\"/>",
+    "feature": "xxx xxx xxxx please enter your phone number phone phonenumber ngp commerce order gcdeliveryselectionformhandler address phonenumber text 16",
+    "id": "587-text-8",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"yourinfo_firstname\" maxlength=\"22\" name=\"yourinfo_firstname\" title=\"enter first name\" type=\"text\" value=\"\"/>",
+    "feature": "first name yourinfo firstname yourinfo firstname text 22",
+    "id": "587-text-9",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"yourinfo_lastname\" maxlength=\"40\" name=\"yourinfo_lastname\" title=\"enter last name\" type=\"text\" value=\"\"/>",
+    "feature": "last name yourinfo lastname yourinfo lastname text 40",
+    "id": "587-text-10",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"yourinfo_phonenumber\" maxlength=\"16\" name=\"yourinfo_phonenumber\" title=\"enter phone number\" type=\"text\" value=\"\"/>",
+    "feature": "xxx xxx xxxx phone yourinfo phonenumber yourinfo phonenumber text 16",
+    "id": "587-text-11",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"pp_firstname\" maxlength=\"22\" name=\"pp_firstname\" title=\"enter first name\" type=\"text\" value=\"\"/>",
+    "feature": "first name pp firstname pp firstname text 22",
+    "id": "587-text-12",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"pp_lastname\" maxlength=\"40\" name=\"pp_lastname\" title=\"enter last name\" type=\"text\" value=\"\"/>",
+    "feature": "last name pp lastname pp lastname text 40",
+    "id": "587-text-13",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"pp_email\" maxlength=\"55\" name=\"pp_email\" title=\"enter email\" type=\"text\" value=\"\"/>",
+    "feature": "email pp email pp email text 55",
+    "id": "587-text-14",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"updated_qty text\" id=\"ci6432002606\" maxlength=\"3\" name=\"ci6432002606\" title=\"enter updated quantity\" type=\"text\" value=\"1\"/>",
+    "feature": "update quantity update quantity ci6432002606 1 text ci6432002606 3",
+    "id": "587-text-15",
+    "pattern": "quantity",
+    "topic": "quantity"
+  },
+  {
+    "dom": "<input class=\"text inlinelabel\" id=\"inputtedcouponcode\" maxlength=\"30\" title=\"enter coupon code\" type=\"text\"/>",
+    "feature": "coupon code inputtedcouponcode text 30",
+    "id": "587-text-16",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input class=\"hidden\" id=\"appliedgearcardamount\" name=\"/ngp/commerce/order/purchase/paymentformhandler.gearcardformdata.paymentamount\" type=\"text\" value=\"0.00\"/>",
+    "feature": "599 99 1 update quantity update update quantity change 599 99 update quantity coupon code 0 00 appliedgearcardamount text ngp commerce order purchase paymentformhandler gearcardformdata paymentamount",
+    "id": "587-text-17",
+    "pattern": "quantity",
+    "topic": "quantity"
+  },
+  {
+    "dom": "<input class=\"hidden\" id=\"appliedfortivacardamount\" name=\"/ngp/commerce/order/purchase/paymentformhandler.fortivacardformdata.paymentamount\" type=\"text\" value=\"0.00\"/>",
+    "feature": "599 99 1 update quantity update update quantity change 599 99 update quantity coupon code 0 00 appliedfortivacardamount text ngp commerce order purchase paymentformhandler fortivacardformdata paymentamount",
+    "id": "587-text-18",
+    "pattern": "quantity",
+    "topic": "quantity"
+  }
+]

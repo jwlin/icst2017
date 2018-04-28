@@ -1,0 +1,415 @@
+[
+  {
+    "dom": "<input id=\"fname\" maxlength=\"25\" name=\"fname\" onchange=\"checkcaps(this.value)\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first given name middle name last family name other names used fname fname text 25",
+    "id": "742-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"mname\" maxlength=\"25\" name=\"mname\" type=\"text\" value=\"\"/>",
+    "feature": "middle name first given name last family name other names used text mname mname 25",
+    "id": "742-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input id=\"lname\" maxlength=\"25\" name=\"lname\" onchange=\"checkcaps(this.value)\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last family name middle name first given name other names used lname lname text 25",
+    "id": "742-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"oname\" maxlength=\"100\" name=\"oname\" onchange=\"checkcaps(this.value)\" type=\"text\" value=\"\"/>",
+    "feature": "other names used last family name middle name first given name oname oname text 100",
+    "id": "742-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"nuid\" name=\"nuid\" onchange=\"checkid()\" type=\"text\" value=\"\"/>",
+    "feature": "issued by the univ of nebraska or a nebraska state college issued by the united states government id number type id number again to confirm accuracy nuid number issued by the univ of nebraska or a nebraska state college us social security number issued by the united states government neither i do not have an nuid or ssn text nuid nuid",
+    "id": "742-text-4",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"nuid_v\" name=\"nuid_v\" onchange=\"checkid()\" type=\"text\" value=\"\"/>",
+    "feature": "issued by the univ of nebraska or a nebraska state college issued by the united states government type id number again to confirm accuracy id number nuid number issued by the univ of nebraska or a nebraska state college us social security number issued by the united states government neither i do not have an nuid or ssn text nuid v nuid v",
+    "id": "742-text-5",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input alt=\"birthdate day\" id=\"birthdd\" maxlength=\"2\" name=\"birthdd\" onchange=\"validdate(this,'day')\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "day month year birthdd birthdd text 2",
+    "id": "742-text-6",
+    "pattern": "birth.*day",
+    "topic": "date_of_birth_day"
+  },
+  {
+    "dom": "<input alt=\"birthdate year\" id=\"birthyyyy\" maxlength=\"4\" name=\"birthyy\" onchange=\"validdate(this,'birthyear')\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "year day month birthyy birthyyyy text 4",
+    "id": "742-text-7",
+    "pattern": "birth.*year",
+    "topic": "date_of_birth_year"
+  },
+  {
+    "dom": "<input alt=\"birth city\" id=\"birthcity\" maxlength=\"30\" name=\"birthcity\" type=\"text\" value=\"\"/>",
+    "feature": "birth city country of citizenship birth country type of visa expected birthcity birthcity text 30",
+    "id": "742-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"email\" maxlength=\"50\" name=\"email\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "email address phone number email email text 50",
+    "id": "742-text-9",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"phone\" maxlength=\"13\" name=\"phone\" type=\"text\" value=\"\"/>",
+    "feature": "phone number email address text phone phone 13",
+    "id": "742-text-10",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input alt=\"street line 1\" id=\"cstreet\" maxlength=\"30\" name=\"cstreet\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "line 1 line 2 city country zip postal code if us if non us cstreet cstreet text 30",
+    "id": "742-text-11",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input alt=\"street line 2\" id=\"cstreet2\" maxlength=\"30\" name=\"cstreet2\" type=\"text\" value=\"\"/>",
+    "feature": "line 2 line 1 city country zip postal code if us if non us cstreet2 cstreet2 text 30",
+    "id": "742-text-12",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input alt=\"city\" id=\"ccity\" maxlength=\"25\" name=\"ccity\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city line 2 line 1 country zip postal code if us if non us ccity ccity text 25",
+    "id": "742-text-13",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input alt=\"province\" id=\"nonstate\" maxlength=\"20\" name=\"nonstate\" type=\"text\" value=\"\"/>",
+    "feature": "if non us if us nonstate nonstate text 20",
+    "id": "742-text-14",
+    "pattern": "province",
+    "topic": "province"
+  },
+  {
+    "dom": "<input alt=\"zip code\" id=\"czip\" maxlength=\"10\" name=\"czip\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "zip postal code country city line 2 line 1 if us if non us czip czip text 10",
+    "id": "742-text-15",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input alt=\"ne residency start (mm/yyyy)\" id=\"neresmm\" maxlength=\"7\" name=\"neresmm\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy mm yyyy start of ne residence mm yyyy employer location position start date mm yyyy end date mm yyyy neresmm neresmm text 7",
+    "id": "742-text-16",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input alt=\"employer\" id=\"nebresi3\" maxlength=\"30\" name=\"employer\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy employer location position start date mm yyyy end date mm yyyy nebresi3 employer text 30",
+    "id": "742-text-17",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input alt=\"location\" id=\"nebresi4\" maxlength=\"30\" name=\"employloc\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy location employer position start date mm yyyy end date mm yyyy nebresi4 employloc text 30",
+    "id": "742-text-18",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input alt=\"position\" id=\"nebresi5\" maxlength=\"30\" name=\"jobtitle\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy position location employer start date mm yyyy end date mm yyyy nebresi5 jobtitle text 30",
+    "id": "742-text-19",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input alt=\"begin date (mm/yyyy)\" id=\"jobfrom\" maxlength=\"7\" name=\"jobfrommonth\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy start date mm yyyy position location employer end date mm yyyy jobfrom jobfrommonth text 7",
+    "id": "742-text-20",
+    "pattern": "month",
+    "topic": "month"
+  },
+  {
+    "dom": "<input alt=\"end date (mm/yyyy)\" id=\"jobto\" maxlength=\"7\" name=\"jobtomonth\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy end date mm yyyy start date mm yyyy position location employer jobto jobtomonth text 7",
+    "id": "742-text-21",
+    "pattern": "month",
+    "topic": "month"
+  },
+  {
+    "dom": "<input id=\"collegename1\" maxlength=\"32\" name=\"collegename1\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "name of school 1 city state country from mm yyyy to mm yyyy collegename1 collegename1 text 32",
+    "id": "742-text-22",
+    "pattern": "college",
+    "topic": "college"
+  },
+  {
+    "dom": "<input id=\"loc1\" maxlength=\"32\" name=\"loc1\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city name of school 1 state country from mm yyyy to mm yyyy loc1 loc1 text 32",
+    "id": "742-text-23",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"start1\" maxlength=\"7\" name=\"start1\" onchange=\"validdate(this,'month/year')\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "from mm yyyy to mm yyyy start1 start1 text 7",
+    "id": "742-text-24",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"finish1\" maxlength=\"7\" name=\"finish1\" onchange=\"validdate(this,'month/year')\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "to mm yyyy from mm yyyy finish1 finish1 text 7",
+    "id": "742-text-25",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad1a\" maxlength=\"7\" name=\"grad1a\" onchange=\"validdate(this,'month/year')\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad1a grad1a text 7",
+    "id": "742-text-26",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad1b\" maxlength=\"7\" name=\"grad1b\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad1b text grad1b 7",
+    "id": "742-text-27",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad1c\" maxlength=\"7\" name=\"grad1c\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad1c text grad1c 7",
+    "id": "742-text-28",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input alt=\"college name\" id=\"collegename2\" maxlength=\"32\" name=\"collegename2\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy name of school 2 city state country from mm yyyy to mm yyyy collegename2 collegename2 text 32",
+    "id": "742-text-29",
+    "pattern": "college",
+    "topic": "college"
+  },
+  {
+    "dom": "<input alt=\"city\" id=\"loc2\" maxlength=\"32\" name=\"loc2\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy city name of school 2 state country from mm yyyy to mm yyyy loc2 loc2 text 32",
+    "id": "742-text-30",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"start2\" maxlength=\"7\" name=\"start2\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy from mm yyyy to mm yyyy start2 text start2 7",
+    "id": "742-text-31",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"finish2\" maxlength=\"7\" name=\"finish2\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy to mm yyyy from mm yyyy finish2 text finish2 7",
+    "id": "742-text-32",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad2a\" maxlength=\"7\" name=\"grad2a\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad2a text grad2a 7",
+    "id": "742-text-33",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad2b\" maxlength=\"7\" name=\"grad2b\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad2b text grad2b 7",
+    "id": "742-text-34",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad2c\" maxlength=\"7\" name=\"grad2c\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad2c text grad2c 7",
+    "id": "742-text-35",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input alt=\"college name\" id=\"collegename3\" maxlength=\"32\" name=\"collegename3\" type=\"text\" value=\"\"/>",
+    "feature": "name of school 3 city state country from to collegename3 collegename3 text 32",
+    "id": "742-text-36",
+    "pattern": "college",
+    "topic": "college"
+  },
+  {
+    "dom": "<input alt=\"city\" id=\"loc3\" maxlength=\"32\" name=\"loc3\" type=\"text\" value=\"\"/>",
+    "feature": "city name of school 3 state country from to loc3 loc3 text 32",
+    "id": "742-text-37",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"start3\" maxlength=\"7\" name=\"start3\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "from to start3 text start3 7",
+    "id": "742-text-38",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"finish3\" maxlength=\"7\" name=\"finish3\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "to from finish3 text finish3 7",
+    "id": "742-text-39",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad3a\" maxlength=\"7\" name=\"grad3a\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad3a text grad3a 7",
+    "id": "742-text-40",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad3b\" maxlength=\"7\" name=\"grad3b\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad3b text grad3b 7",
+    "id": "742-text-41",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad3c\" maxlength=\"7\" name=\"grad3c\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad3c text grad3c 7",
+    "id": "742-text-42",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input alt=\"college name\" id=\"collegename4\" maxlength=\"32\" name=\"collegename4\" type=\"text\" value=\"\"/>",
+    "feature": "name of school 4 city state country from to collegename4 collegename4 text 32",
+    "id": "742-text-43",
+    "pattern": "college",
+    "topic": "college"
+  },
+  {
+    "dom": "<input alt=\"city\" id=\"loc4\" maxlength=\"32\" name=\"loc4\" type=\"text\" value=\"\"/>",
+    "feature": "city name of school 4 state country from to loc4 loc4 text 32",
+    "id": "742-text-44",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"start4\" maxlength=\"7\" name=\"start4\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "from to start4 text start4 7",
+    "id": "742-text-45",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"finish4\" maxlength=\"7\" name=\"finish4\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "to from finish4 text finish4 7",
+    "id": "742-text-46",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad4a\" maxlength=\"7\" name=\"grad4a\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad4a text grad4a 7",
+    "id": "742-text-47",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad4b\" maxlength=\"7\" name=\"grad4b\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad4b text grad4b 7",
+    "id": "742-text-48",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad4c\" maxlength=\"7\" name=\"grad4c\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad4c text grad4c 7",
+    "id": "742-text-49",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input alt=\"college name\" id=\"collegename5\" maxlength=\"32\" name=\"collegename5\" type=\"text\" value=\"\"/>",
+    "feature": "name of school 5 city state country from to collegename5 collegename5 text 32",
+    "id": "742-text-50",
+    "pattern": "college",
+    "topic": "college"
+  },
+  {
+    "dom": "<input alt=\"city\" id=\"loc5\" maxlength=\"32\" name=\"loc5\" type=\"text\" value=\"\"/>",
+    "feature": "city name of school 5 state country from to loc5 loc5 text 32",
+    "id": "742-text-51",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"start5\" maxlength=\"7\" name=\"start5\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "from to start5 text start5 7",
+    "id": "742-text-52",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"finish5\" maxlength=\"7\" name=\"finish5\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "to from finish5 text finish5 7",
+    "id": "742-text-53",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad5a\" maxlength=\"7\" name=\"grad5a\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad5a text grad5a 7",
+    "id": "742-text-54",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad5b\" maxlength=\"7\" name=\"grad5b\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad5b text grad5b 7",
+    "id": "742-text-55",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"grad5c\" maxlength=\"7\" name=\"grad5c\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "date degree grad5c text grad5c 7",
+    "id": "742-text-56",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input alt=\"promotion code\" id=\"promo_code\" name=\"promo_code\" type=\"text\" value=\"\"/>",
+    "feature": "if you have been given a no fee authorization code enter that code here i don t have to pay the fee text promo code promo code",
+    "id": "742-text-57",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input accesskey=\"f\" id=\"wdn_search_query\" name=\"q\" required=\"\" type=\"search\"/>",
+    "feature": "search search q wdn search query",
+    "id": "742-search-0",
+    "pattern": "search",
+    "topic": "search"
+  }
+]

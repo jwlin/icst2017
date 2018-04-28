@@ -1,0 +1,86 @@
+[
+  {
+    "dom": "<input id=\"firstname\" maxlength=\"20\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "this is a company apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code first name last name company country address city state zip code phone number email address firstname firstname text 20",
+    "id": "588-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"lastname\" maxlength=\"20\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "this is a company apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code last name first name company country address city state zip code phone number email address lastname lastname text 20",
+    "id": "588-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"company\" maxlength=\"30\" name=\"company\" type=\"text\" value=\"\"/>",
+    "feature": "company company text company 30",
+    "id": "588-text-2",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input id=\"address1\" maxlength=\"30\" name=\"address1\" type=\"text\" value=\"\"/>",
+    "feature": "this is a company apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code address country company last name first name city state zip code phone number email address address1 address1 text 30",
+    "id": "588-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"address2\" maxlength=\"30\" name=\"address2\" type=\"text\" value=\"\"/>",
+    "feature": "this is a company apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code address country company last name first name city state zip code phone number email address address2 address2 text 30",
+    "id": "588-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input id=\"city\" maxlength=\"25\" name=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code city city text 25",
+    "id": "588-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"zipcode\" maxlength=\"10\" name=\"zipcode\" type=\"text\" value=\"\"/>",
+    "feature": "apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code this is a company zip code state city address country company last name first name phone number email address zipcode zipcode text 10",
+    "id": "588-text-6",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"phonenumber\" maxlength=\"15\" name=\"phonenumber\" type=\"text\" value=\"\"/>",
+    "feature": "apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code this is a company phone number zip code state city address country company last name first name email address phonenumber phonenumber text 15",
+    "id": "588-text-7",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"emailaddress\" maxlength=\"50\" name=\"emailaddress\" type=\"text\" value=\"\"/>",
+    "feature": "apo fpo address tips x apo fpo address tips how do i order and ship to an apo or fpo address apo fpo shipping is provided through usps they recommend entering the full name with a middle name or initial and psc number unit number or ship name you will need to leave the country as united states or you will be charged the foreign shipping rate replace the city name with apo or fpo select one of the following for the state in the dropdown list apo fpo aa armed forces of america apo fpo ae armed forces europe apo fpo ap armed forces pacific enter the special zip code this is a company email address phone number zip code state city address country company last name first name emailaddress emailaddress text 50",
+    "id": "588-text-8",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"promocode\" id=\"promocode\" maxlength=\"25\" name=\"promocode\" type=\"text\" value=\"\"/>",
+    "feature": "help with promotion codes x help with promotion codes promotion codes cannot be used with certain cabela s bucks gift cards or club points can be redeemed on the payment section of checkout find a promotion code listed below and enter the code above use promotion code freeship to receive free shipping 50 minimum purchase required freeship details x promo code freeship 50 minimum purchase required enter promotion code freeship during checkout offer good on standard express shipping only and u s deliverable addresses only shipping surcharges on oversized items still apply this offer has no cash value and is not transferable offer cannot be used on prior purchases not available to cabela s employees cabela s reserves the right to exclude certain products from this promotion limited time freeship promotion code promocode promocode text 25",
+    "id": "588-text-9",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input id=\"rebatenumber\" maxlength=\"9\" name=\"rebatenumber\" type=\"text\" value=\"\"/>",
+    "feature": "help with cabela s bucks x help with cabela s bucks certain cabela s bucks cannot be used with promotion codes gift cards or club points can be redeemed on the payment section of checkout in order to redeem your cabela s bucks enter the 9 digit cabela s bucks number and then the 6 character alphanumeric code into the code field help with codes x help with cabela s bucks certain cabela s bucks cannot be used with promotion codes gift cards or club points can be redeemed on the payment section of checkout in order to redeem your cabela s bucks enter the 9 digit cabela s bucks number and then the 6 character alphanumeric code into the code field enter cabela s bucks number code rebatenumber rebatenumber text 9",
+    "id": "588-text-10",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input id=\"rebatecode\" maxlength=\"6\" name=\"rebatecode\" type=\"text\" value=\"\"/>",
+    "feature": "help with cabela s bucks x help with cabela s bucks certain cabela s bucks cannot be used with promotion codes gift cards or club points can be redeemed on the payment section of checkout in order to redeem your cabela s bucks enter the 9 digit cabela s bucks number and then the 6 character alphanumeric code into the code field help with codes x help with cabela s bucks certain cabela s bucks cannot be used with promotion codes gift cards or club points can be redeemed on the payment section of checkout in order to redeem your cabela s bucks enter the 9 digit cabela s bucks number and then the 6 character alphanumeric code into the code field enter cabela s bucks number code rebatecode rebatecode text 6",
+    "id": "588-text-11",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  }
+]

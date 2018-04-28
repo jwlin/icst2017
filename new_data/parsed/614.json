@@ -1,0 +1,142 @@
+[
+  {
+    "dom": "<input autocapitalize=\"off\" autocorrect=\"off\" class=\"global-search-input\" id=\"global-search-input\" type=\"text\"/>",
+    "feature": "of results of results of results of results of results of results text global search input",
+    "id": "614-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"required-entry input-text\" id=\"first_name\" name=\"first_name\" placeholder=\"first name\" title=\"first name\" type=\"text\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming text first name first name first name",
+    "id": "614-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"required-entry input-text\" id=\"last_name\" name=\"last_name\" placeholder=\"last name\" title=\"last name\" type=\"text\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming text last name last name last name",
+    "id": "614-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"required-entry input-text\" id=\"address1\" name=\"address1\" placeholder=\"street address\" title=\"street address\" type=\"text\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming text address1 street address address1",
+    "id": "614-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-text\" id=\"address2\" name=\"address2\" placeholder=\"apt.\" title=\"apt.\" type=\"text\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming text address2 apt address2",
+    "id": "614-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"required-entry input-text\" id=\"city\" name=\"city\" placeholder=\"city\" title=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming text city city city",
+    "id": "614-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"validate-zip-international required-entry input-text\" id=\"zipcode\" name=\"zipcode\" placeholder=\"zip code\" title=\"zip code\" type=\"text\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming text zipcode zip code zipcode",
+    "id": "614-text-6",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"required-entry input-text\" id=\"phone\" name=\"phone\" placeholder=\"phone number\" title=\"phone number\" type=\"text\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming text phone phone number phone",
+    "id": "614-text-7",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"required-entry input-text validate-alphanumdash\" id=\"serial_number\" name=\"serial_number\" placeholder=\"serial number\" title=\"serial number\" type=\"text\" value=\"\"/>",
+    "feature": "model number product type co star home theater display lcd flat panel tv desktop computer laptop computer sound bars and sound stands tablet purchase location amazon best buy costco future shops sam s club target vizio com walmart other when did you purchase this product jan feb mar apr may jun jul aug sep oct nov dec 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 2018 2017 2016 2015 2014 2013 2012 2011 2010 what was the product condition at purchase select purchase condition please select new recertified serial number serial number text serial number",
+    "id": "614-text-8",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"required-entry input-text validate-currency-dollar\" id=\"purchase_price\" name=\"purchase_price\" placeholder=\"purchase price\" title=\"purchase price\" type=\"text\" value=\"\"/>",
+    "feature": "purchase location amazon best buy costco future shops sam s club target vizio com walmart other model number product type co star home theater display lcd flat panel tv desktop computer laptop computer sound bars and sound stands tablet when did you purchase this product jan feb mar apr may jun jul aug sep oct nov dec 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 2018 2017 2016 2015 2014 2013 2012 2011 2010 what was the product condition at purchase select purchase condition please select new recertified purchase price purchase price text purchase price",
+    "id": "614-text-9",
+    "pattern": "price",
+    "topic": "price"
+  },
+  {
+    "dom": "<input id=\"datepicker\" type=\"text\"/>",
+    "feature": "jan feb mar apr may jun jul aug sep oct nov dec 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 2018 2017 2016 2015 2014 2013 2012 2011 2010 text datepicker",
+    "id": "614-text-10",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"email-signup__input\" id=\"email-signup-entry\" type=\"text\"/>",
+    "feature": "success thanks for signing up view our privacy policy sign up submit enter your email to join text email signup entry",
+    "id": "614-text-11",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocorrect=\"off\" class=\"email-field newsletter-ele\" id=\"email-field-global\" maxlength=\"60\" placeholder=\"enter your email address.\" type=\"text\"/>",
+    "feature": "submit text enter your email address email field global 60",
+    "id": "614-text-12",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input alt=\"email\" class=\"required-entry validate-email email-input\" id=\"forgot_email_address\" name=\"email\" placeholder=\"email address\" type=\"email\"/>",
+    "feature": "send email email email address forgot email address",
+    "id": "614-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input alt=\"email\" class=\"required-entry validate-email email-input\" id=\"forgot_email_address2\" name=\"email\" placeholder=\"email address\" type=\"email\"/>",
+    "feature": "send email email email address forgot email address2",
+    "id": "614-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-input vizio-input required-entry validate-email\" name=\"login[username]\" placeholder=\"email address\" type=\"email\" value=\"\"/>",
+    "feature": "sign in email login username email address",
+    "id": "614-email-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"validate-email validate-email-exists required-entry input-text\" id=\"email\" name=\"email\" placeholder=\"email address\" title=\"email address\" type=\"email\" value=\"\"/>",
+    "feature": "state alabama alaska arizona arkansas california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming email email email address email",
+    "id": "614-email-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"form-input vizio-input required-entry validate-password\" name=\"login[password]\" placeholder=\"password\" type=\"password\" value=\"\"/>",
+    "feature": "sign in password login password password",
+    "id": "614-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text required-entry validate-password\" id=\"password\" name=\"password\" placeholder=\"create password\" title=\"password\" type=\"password\" value=\"\"/>",
+    "feature": "create a myvizio account during registration get exclusive offers faster checkout order tracking and other rewards from vizio com password password create password password",
+    "id": "614-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text required-entry validate-cpassword\" id=\"cpassword\" name=\"cpassword\" placeholder=\"confirm password\" title=\"confirm password\" type=\"password\" value=\"\"/>",
+    "feature": "create a myvizio account during registration get exclusive offers faster checkout order tracking and other rewards from vizio com password cpassword confirm password cpassword",
+    "id": "614-password-2",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

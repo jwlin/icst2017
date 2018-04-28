@@ -1,0 +1,184 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-search\" id=\"query\" name=\"q\" placeholder=\"search...\" type=\"text\" width-default=\"110\"/>",
+    "feature": "text query search q",
+    "id": "567-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"user-field email\" name=\"id\" type=\"text\" value=\"\"/>",
+    "feature": "order or tracking number text id",
+    "id": "567-text-1",
+    "pattern": "tracking",
+    "topic": "tracking_number"
+  },
+  {
+    "dom": "<input class=\"user-field email\" id=\"user_email_1\" name=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "email text user email 1 email",
+    "id": "567-text-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"user-field password\" id=\"user_pwd_1\" name=\"password\" type=\"text\" value=\"\"/>",
+    "feature": "password text user pwd 1 password",
+    "id": "567-text-3",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"user-field email\" id=\"user_email_2\" name=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "email text user email 2 email",
+    "id": "567-text-4",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"user-field email input-email\" id=\"checkout-guest-email\" name=\"email\" type=\"text\" value=\"a@com.com\"/>",
+    "feature": "text checkout guest email email a com com",
+    "id": "567-text-5",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"user-field email\" data-uiinput=\"true\" id=\"new-rx-login-email\" name=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "email text new rx login email email",
+    "id": "567-text-6",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"user-field password\" data-uiinput=\"true\" id=\"new-rx-login-password\" name=\"password\" type=\"text\" value=\"\"/>",
+    "feature": "password text new rx login password password",
+    "id": "567-text-7",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"user-field email input-email\" name=\"email_address\" size=\"32\" type=\"text\" value=\"\"/>",
+    "feature": "email email text email address",
+    "id": "567-text-8",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"user-field name\" id=\"new-rx-create-name\" name=\"username\" type=\"text\" value=\"\"/>",
+    "feature": "full name text new rx create name username",
+    "id": "567-text-9",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input class=\"user-field email\" id=\"new-rx-create-email\" name=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "email text new rx create email email",
+    "id": "567-text-10",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"user-field password\" id=\"new-rx-create-password\" name=\"password\" type=\"text\" value=\"\"/>",
+    "feature": "create password text new rx create password password",
+    "id": "567-text-11",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"user-field\" data-uiinput=\"1\" name=\"firstname\" size=\"32\" type=\"text\" value=\"\"/>",
+    "feature": "full name full name text firstname",
+    "id": "567-text-12",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"user-field\" data-uiinput=\"1\" id=\"autocomplete0\" name=\"address_line1\" onfocus=\"geolocate(0)\" placeholder=\"\" size=\"32\" type=\"text\"/>",
+    "feature": "address line 1 address line 1 text address line1 autocomplete0",
+    "id": "567-text-13",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"user-field\" data-uiinput=\"1\" name=\"address_line2\" placeholder=\"\" size=\"32\" type=\"text\"/>",
+    "feature": "address line 2 optional apt building etc address line 2 optional apt building etc text address line2",
+    "id": "567-text-14",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"user-field\" data-uiinput=\"1\" name=\"company\" placeholder=\"\" size=\"32\" type=\"text\"/>",
+    "feature": "company name company name text company",
+    "id": "567-text-15",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"user-field locality\" data-uiinput=\"1\" id=\"locality\" name=\"city\" size=\"32\" type=\"text\"/>",
+    "feature": "city city text city locality",
+    "id": "567-text-16",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"user-field postal_code\" data-uiinput=\"1\" id=\"postal_code\" name=\"postcode\" size=\"32\" type=\"text\"/>",
+    "feature": "zip postal code zip postal code text postcode postal code",
+    "id": "567-text-17",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"user-field administrative_area_level_1\" data-uiinput=\"1\" name=\"state\" size=\"32\" type=\"text\"/>",
+    "feature": "state province state province text state",
+    "id": "567-text-18",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input class=\"user-field\" data-uiinput=\"1\" name=\"telephone\" size=\"32\" type=\"text\" value=\"\"/>",
+    "feature": "phone number phone number text telephone",
+    "id": "567-text-19",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"gift-input\" data-uiinput=\"1\" name=\"gift_card\" placeholder=\"gift card code\" type=\"text\" value=\"\"/>",
+    "feature": "0 applied 0 remaining text gift card code gift card",
+    "id": "567-text-20",
+    "pattern": "gift.*card",
+    "topic": "gift_card_number"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"gift-input\" data-uiinput=\"1\" name=\"redeem_coupon\" placeholder=\"have a promo code?\" type=\"text\" value=\"\"/>",
+    "feature": "0 applied 0 remaining text have a promo code redeem coupon",
+    "id": "567-text-21",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input class=\"en-first-input\" id=\"subscribe-newsletter-coupon\" name=\"email\" placeholder=\"enter your email address\" type=\"text\"/>",
+    "feature": "off your entire order enter your email address email subscribe newsletter coupon text",
+    "id": "567-text-22",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"newsletter-input\" id=\"subscribe-newsletter-email\" name=\"email\" placeholder=\"enter your email here\" type=\"email\"/>",
+    "feature": "enter your email here email subscribe newsletter email email",
+    "id": "567-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"user-field\" name=\"password\" type=\"password\"/>",
+    "feature": "create password create password password password",
+    "id": "567-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"user-field\" name=\"confirm_password\" type=\"password\"/>",
+    "feature": "confirm password confirm password password confirm password",
+    "id": "567-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

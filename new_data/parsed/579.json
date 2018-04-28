@@ -1,0 +1,121 @@
+[
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_firstname\" maxlength=\"15\" name=\"firstname\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first name text signup checkout private firstname firstname 15",
+    "id": "579-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_lastname\" maxlength=\"30\" name=\"lastname\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name text signup checkout private lastname lastname 30",
+    "id": "579-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"js-ps-signup_checkout_private\" data-ps-format=\"address\" id=\"signup_checkout_private_address1\" maxlength=\"30\" name=\"address1\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address 1 text signup checkout private address1 address1 30",
+    "id": "579-text-2",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"js-ps-signup_checkout_private\" data-ps-format=\"address2\" id=\"signup_checkout_private_address2\" maxlength=\"30\" name=\"address2\" type=\"text\" value=\"\"/>",
+    "feature": "address 2 text signup checkout private address2 address2 30",
+    "id": "579-text-3",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"js-ps-signup_checkout_private\" data-ps-format=\"zipcode\" id=\"signup_checkout_private_zipcode\" maxlength=\"8\" name=\"zipcode\" required=\"\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "zip code text signup checkout private zipcode zipcode 8",
+    "id": "579-text-4",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"js-ps-signup_checkout_private\" data-ps-format=\"city\" id=\"signup_checkout_private_city\" maxlength=\"30\" name=\"city\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city text signup checkout private city city 30",
+    "id": "579-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_phone1ext\" maxlength=\"10\" name=\"phone1ext\" size=\"8\" type=\"text\" value=\"\"/>",
+    "feature": "ext text signup checkout private phone1ext phone1ext 10",
+    "id": "579-text-6",
+    "pattern": "phone.*ext",
+    "topic": "phone_ext"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_phone2ext\" maxlength=\"10\" name=\"phone2ext\" size=\"8\" type=\"text\" value=\"\"/>",
+    "feature": "ext text signup checkout private phone2ext phone2ext 10",
+    "id": "579-text-7",
+    "pattern": "phone.*ext",
+    "topic": "phone_ext"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_fax1ext\" maxlength=\"\" name=\"fax1ext\" size=\"8\" type=\"text\" value=\"\"/>",
+    "feature": "ext text signup checkout private fax1ext fax1ext",
+    "id": "579-text-8",
+    "pattern": "fax.*number",
+    "topic": "fax_number"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_userprofilefield1\" maxlength=\"19\" name=\"userprofilefield1\" type=\"text\" value=\"\"/>",
+    "feature": "ikea family card or registry number 19 digits text signup checkout private userprofilefield1 userprofilefield1 19",
+    "id": "579-text-9",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"loginprivid\" name=\"logonid\" required=\"\" size=\"25\" type=\"email\" value=\"\"/>",
+    "feature": "email email loginprivid logonid",
+    "id": "579-email-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_email1\" maxlength=\"60\" name=\"email1\" onselectstart=\"return false;\" required=\"\" style=\"-moz-user-select: none;\" type=\"email\" value=\"\"/>",
+    "feature": "email email signup checkout private email1 email1 60",
+    "id": "579-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_email1retype\" maxlength=\"60\" name=\"email1retype\" onselectstart=\"return false;\" required=\"\" style=\"-moz-user-select: none;\" type=\"email\" value=\"\"/>",
+    "feature": "re type email email signup checkout private email1retype email1retype 60",
+    "id": "579-email-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"passprivid\" name=\"logonpassword\" required=\"\" size=\"25\" type=\"password\"/>",
+    "feature": "password password passprivid logonpassword",
+    "id": "579-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_phone1\" maxlength=\"15\" name=\"phone1\" required=\"\" size=\"8\" type=\"tel\" value=\"\"/>",
+    "feature": "telephone number tel signup checkout private phone1 phone1 15",
+    "id": "579-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_phone2\" maxlength=\"15\" name=\"phone2\" required=\"\" size=\"8\" type=\"tel\" value=\"\"/>",
+    "feature": "telephone number tel signup checkout private phone2 phone2 15",
+    "id": "579-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" id=\"signup_checkout_private_fax1\" maxlength=\"20\" name=\"fax1\" size=\"8\" type=\"tel\" value=\"\"/>",
+    "feature": "fax number tel signup checkout private fax1 fax1 20",
+    "id": "579-tel-2",
+    "pattern": "fax.*number",
+    "topic": "fax_number"
+  }
+]

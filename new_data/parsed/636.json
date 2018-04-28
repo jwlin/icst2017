@@ -1,0 +1,121 @@
+[
+  {
+    "dom": "<input name=\"query\" style=\"ime-mode:disabled\" type=\"text\" value=\"\"/>",
+    "feature": "text query",
+    "id": "636-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"50\" name=\"fname\" size=\"20\" type=\"text\" value=\"\"/>",
+    "feature": "first name text fname 50",
+    "id": "636-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"10\" name=\"initial\" size=\"2\" type=\"text\" value=\"\"/>",
+    "feature": "initial text initial 10",
+    "id": "636-text-2",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"50\" name=\"lname\" size=\"20\" type=\"text\" value=\"\"/>",
+    "feature": "last name text lname 50",
+    "id": "636-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"50\" name=\"street\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "street text street 50",
+    "id": "636-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"50\" name=\"apt_no\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "apt no text apt no 50",
+    "id": "636-text-5",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"50\" name=\"city\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "city text city 50",
+    "id": "636-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"30\" name=\"mailcode\" size=\"20\" type=\"text\" value=\"\"/>",
+    "feature": "zip postal code text mailcode 30",
+    "id": "636-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"50\" name=\"email\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "e mail address text email 50",
+    "id": "636-text-8",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"40\" name=\"phone\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "phone number not required text phone 40",
+    "id": "636-text-9",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"en\" id=\"date_purchased\" maxlength=\"10\" name=\"date_purchased\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "text date purchased date purchased 10",
+    "id": "636-text-10",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"en\" id=\"serial_number\" maxlength=\"100\" name=\"serial_number\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "text serial number serial number 100",
+    "id": "636-text-11",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"255\" name=\"store_where\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "text store where 255",
+    "id": "636-text-12",
+    "pattern": "store",
+    "topic": "store"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"100\" name=\"aware_other\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "text aware other 100",
+    "id": "636-text-13",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"en\" id=\"other_brands\" maxlength=\"255\" name=\"other_brands\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "text other brands other brands 255",
+    "id": "636-text-14",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"en\" maxlength=\"100\" name=\"ethnicity_other\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "text ethnicity other 100",
+    "id": "636-text-15",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input name=\"occupation_other\" size=\"40\" type=\"text\" value=\"\"/>",
+    "feature": "text occupation other",
+    "id": "636-text-16",
+    "pattern": "job",
+    "topic": "job_title"
+  }
+]

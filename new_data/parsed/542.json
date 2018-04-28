@@ -1,0 +1,128 @@
+[
+  {
+    "dom": "<input class=\"cv247_ts highlight-required\" id=\"firstname\" maxlength=\"30\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name firstname text firstname 30",
+    "id": "542-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"cv247_ts uppercase mi\" id=\"middleinitial\" maxlength=\"1\" name=\"middleinitial\" type=\"text\" value=\"\"/>",
+    "feature": "middle initial middleinitial text middleinitial 1",
+    "id": "542-text-1",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"cv247_ts highlight-required\" id=\"lastname\" maxlength=\"30\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name lastname text lastname 30",
+    "id": "542-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"cv247_ts highlight-required\" id=\"mailingaddressline1\" maxlength=\"100\" name=\"mailingaddressline1\" type=\"text\" value=\"\"/>",
+    "feature": "mailing address mailingaddressline1 text mailingaddressline1 100",
+    "id": "542-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"cv247_ts apt\" id=\"mailingaddressline2\" maxlength=\"100\" name=\"mailingaddressline2\" type=\"text\" value=\"\"/>",
+    "feature": "apt unit mailingaddressline2 text mailingaddressline2 100",
+    "id": "542-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"cv247_ts highlight-required\" id=\"mailingcity\" maxlength=\"50\" name=\"mailingcity\" type=\"text\" value=\"\"/>",
+    "feature": "city mailingcity text mailingcity 50",
+    "id": "542-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"highlight-required\" id=\"homeaddressline1\" maxlength=\"100\" name=\"homeaddressline1\" type=\"text\" value=\"\"/>",
+    "feature": "home street address homeaddressline1 text homeaddressline1 100",
+    "id": "542-text-6",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"prequalappinput\" id=\"homeaddressline2\" maxlength=\"100\" name=\"homeaddressline2\" type=\"text\" value=\"\"/>",
+    "feature": "apt unit homeaddressline2 text homeaddressline2 100",
+    "id": "542-text-7",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"highlight-required\" id=\"homecity\" maxlength=\"50\" name=\"homecity\" type=\"text\" value=\"\"/>",
+    "feature": "city homecity text homecity 50",
+    "id": "542-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"app-focus-input cv247_ts highlight-required\" id=\"emailaddress\" maxlength=\"255\" name=\"emailaddress\" type=\"email\" value=\"\"/>",
+    "feature": "email address email domain com emailaddress email emailaddress 255",
+    "id": "542-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"zip cv247_ts highlight-required\" id=\"mailingzipcode\" name=\"mailingzipcode\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code mailingzipcode mailingzipcode tel",
+    "id": "542-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"zip highlight-required\" id=\"homezipcode\" name=\"homezipcode\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code homezipcode homezipcode tel",
+    "id": "542-tel-1",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"phone app-focus-input cv247_ts highlight-required\" id=\"primaryphonenumber\" name=\"primaryphonenumber\" type=\"tel\" value=\"\"/>",
+    "feature": "main phone number 10 digits primaryphonenumber primaryphonenumber tel",
+    "id": "542-tel-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"ssn app-focus-input cv247_ts highlight-required\" id=\"ssn\" name=\"ssn\" spellcheck=\"false\" type=\"tel\" value=\"\"/>",
+    "feature": "social security number ssn tel ssn",
+    "id": "542-tel-3",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"dob-month cv247_ts highlight-required\" data-val=\"true\" data-val-number=\"the field dobmonth must be a number.\" id=\"dobmonth\" maxlength=\"2\" name=\"dobmonth\" type=\"tel\" value=\"\"/>",
+    "feature": "date of birth mm dd yyyy tel dobmonth dobmonth 2",
+    "id": "542-tel-4",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth_month"
+  },
+  {
+    "dom": "<input class=\"dob-day cv247_ts highlight-required\" data-val=\"true\" data-val-number=\"the field dobday must be a number.\" id=\"dobday\" maxlength=\"2\" name=\"dobday\" type=\"tel\" value=\"\"/>",
+    "feature": "date of birth mm dd yyyy tel dobday dobday 2",
+    "id": "542-tel-5",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth_day"
+  },
+  {
+    "dom": "<input class=\"dob-year cv247_ts highlight-required\" data-val=\"true\" data-val-number=\"the field dobyear must be a number.\" id=\"dobyear\" maxlength=\"4\" name=\"dobyear\" type=\"tel\" value=\"\"/>",
+    "feature": "date of birth mm dd yyyy tel dobyear dobyear 4",
+    "id": "542-tel-6",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth_year"
+  },
+  {
+    "dom": "<input class=\"express-input income app-focus-input cv247_ts highlight-required\" id=\"monthlyincome\" name=\"monthlyincome\" type=\"tel\" value=\"\"/>",
+    "feature": "your total monthly income monthlyincome monthlyincome tel",
+    "id": "542-tel-7",
+    "pattern": "income",
+    "topic": "income"
+  }
+]

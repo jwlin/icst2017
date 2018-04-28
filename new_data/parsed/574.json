@@ -1,0 +1,149 @@
+[
+  {
+    "dom": "<input class=\"apt-field\" name=\"apt-avs\" type=\"text\"/>",
+    "feature": "edit apt suite text apt avs",
+    "id": "574-text-0",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"apt-field\" name=\"apt-avs\" type=\"text\"/>",
+    "feature": "edit apt suite text apt avs",
+    "id": "574-text-1",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" maxlength=\"50\" minlength=\"0\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" placeholder=\"first name\" type=\"text\" value=\"\"/>",
+    "feature": "4 to 10 business days 0 00 2 7 business days 13 95 2 business days if ordered before 3pm et 28 95 1 business day if ordered before 3pm et 33 95 free shipping 4 to 10 business days 0 00 standard 2 7 business days 13 95 2 day 2 business days if ordered before 3pm et 28 95 next day 1 business day if ordered before 3pm et 33 95 text dwfrm singleshipping shippingaddress addressfields firstname dwfrm singleshipping shippingaddress addressfields firstname first name 50",
+    "id": "574-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" maxlength=\"50\" minlength=\"0\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" placeholder=\"last name\" type=\"text\" value=\"\"/>",
+    "feature": "4 to 10 business days 0 00 2 7 business days 13 95 2 business days if ordered before 3pm et 28 95 1 business day if ordered before 3pm et 33 95 free shipping 4 to 10 business days 0 00 standard 2 7 business days 13 95 2 day 2 business days if ordered before 3pm et 28 95 next day 1 business day if ordered before 3pm et 33 95 text dwfrm singleshipping shippingaddress addressfields lastname dwfrm singleshipping shippingaddress addressfields lastname last name 50",
+    "id": "574-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-text \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_company\" maxlength=\"30\" minlength=\"0\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_company\" placeholder=\"company (optional)\" type=\"text\" value=\"\"/>",
+    "feature": "4 to 10 business days 0 00 2 7 business days 13 95 2 business days if ordered before 3pm et 28 95 1 business day if ordered before 3pm et 33 95 free shipping 4 to 10 business days 0 00 standard 2 7 business days 13 95 2 day 2 business days if ordered before 3pm et 28 95 next day 1 business day if ordered before 3pm et 33 95 text dwfrm singleshipping shippingaddress addressfields company dwfrm singleshipping shippingaddress addressfields company company optional 30",
+    "id": "574-text-4",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" maxlength=\"32\" minlength=\"0\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" placeholder=\"address 1\" type=\"text\" value=\"\"/>",
+    "feature": "4 to 10 business days 0 00 2 7 business days 13 95 2 business days if ordered before 3pm et 28 95 1 business day if ordered before 3pm et 33 95 free shipping 4 to 10 business days 0 00 standard 2 7 business days 13 95 2 day 2 business days if ordered before 3pm et 28 95 next day 1 business day if ordered before 3pm et 33 95 text dwfrm singleshipping shippingaddress addressfields address1 dwfrm singleshipping shippingaddress addressfields address1 address 1 32",
+    "id": "574-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-text \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" maxlength=\"32\" minlength=\"0\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" placeholder=\"apt/suite (optional)\" type=\"text\" value=\"\"/>",
+    "feature": "4 to 10 business days 0 00 2 7 business days 13 95 2 business days if ordered before 3pm et 28 95 1 business day if ordered before 3pm et 33 95 free shipping 4 to 10 business days 0 00 standard 2 7 business days 13 95 2 day 2 business days if ordered before 3pm et 28 95 next day 1 business day if ordered before 3pm et 33 95 text dwfrm singleshipping shippingaddress addressfields address2 dwfrm singleshipping shippingaddress addressfields address2 apt suite optional 32",
+    "id": "574-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-text postal required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_postal\" maxlength=\"10\" minlength=\"1\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_postal\" placeholder=\"zip code\" type=\"text\" value=\"\"/>",
+    "feature": "4 to 10 business days 0 00 2 7 business days 13 95 2 business days if ordered before 3pm et 28 95 1 business day if ordered before 3pm et 33 95 free shipping 4 to 10 business days 0 00 standard 2 7 business days 13 95 2 day 2 business days if ordered before 3pm et 28 95 next day 1 business day if ordered before 3pm et 33 95 text dwfrm singleshipping shippingaddress addressfields postal dwfrm singleshipping shippingaddress addressfields postal zip code 10",
+    "id": "574-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" maxlength=\"25\" minlength=\"2\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" placeholder=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "4 to 10 business days 0 00 2 7 business days 13 95 2 business days if ordered before 3pm et 28 95 1 business day if ordered before 3pm et 33 95 free shipping 4 to 10 business days 0 00 standard 2 7 business days 13 95 2 day 2 business days if ordered before 3pm et 28 95 next day 1 business day if ordered before 3pm et 33 95 text dwfrm singleshipping shippingaddress addressfields city dwfrm singleshipping shippingaddress addressfields city city 25",
+    "id": "574-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_billing_billingaddress_addressfields_firstname\" maxlength=\"50\" minlength=\"0\" name=\"dwfrm_billing_billingaddress_addressfields_firstname\" placeholder=\"first name\" type=\"text\" value=\"\"/>",
+    "feature": "text dwfrm billing billingaddress addressfields firstname dwfrm billing billingaddress addressfields firstname first name 50",
+    "id": "574-text-9",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_billing_billingaddress_addressfields_lastname\" maxlength=\"50\" minlength=\"0\" name=\"dwfrm_billing_billingaddress_addressfields_lastname\" placeholder=\"last name\" type=\"text\" value=\"\"/>",
+    "feature": "text dwfrm billing billingaddress addressfields lastname dwfrm billing billingaddress addressfields lastname last name 50",
+    "id": "574-text-10",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-text \" id=\"dwfrm_billing_billingaddress_addressfields_company\" maxlength=\"30\" minlength=\"0\" name=\"dwfrm_billing_billingaddress_addressfields_company\" placeholder=\"company (optional)\" type=\"text\" value=\"\"/>",
+    "feature": "use shipping address for billing use shipping address for billing text dwfrm billing billingaddress addressfields company dwfrm billing billingaddress addressfields company company optional 30",
+    "id": "574-text-11",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_billing_billingaddress_addressfields_address1\" maxlength=\"32\" minlength=\"0\" name=\"dwfrm_billing_billingaddress_addressfields_address1\" placeholder=\"address 1\" type=\"text\" value=\"\"/>",
+    "feature": "use shipping address for billing use shipping address for billing text dwfrm billing billingaddress addressfields address1 dwfrm billing billingaddress addressfields address1 address 1 32",
+    "id": "574-text-12",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-text \" id=\"dwfrm_billing_billingaddress_addressfields_address2\" maxlength=\"32\" minlength=\"0\" name=\"dwfrm_billing_billingaddress_addressfields_address2\" placeholder=\"apt/suite (optional)\" type=\"text\" value=\"\"/>",
+    "feature": "text dwfrm billing billingaddress addressfields address2 dwfrm billing billingaddress addressfields address2 apt suite optional 32",
+    "id": "574-text-13",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-text postal required\" id=\"dwfrm_billing_billingaddress_addressfields_postal\" maxlength=\"10\" minlength=\"1\" name=\"dwfrm_billing_billingaddress_addressfields_postal\" placeholder=\"zip code\" type=\"text\" value=\"\"/>",
+    "feature": "text dwfrm billing billingaddress addressfields postal dwfrm billing billingaddress addressfields postal zip code 10",
+    "id": "574-text-14",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_billing_billingaddress_addressfields_city\" maxlength=\"25\" minlength=\"2\" name=\"dwfrm_billing_billingaddress_addressfields_city\" placeholder=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "text dwfrm billing billingaddress addressfields city dwfrm billing billingaddress addressfields city city 25",
+    "id": "574-text-15",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"required\" id=\"dwfrm_billing_paymentmethods_creditcard_owner\" maxlength=\"40\" minlength=\"0\" name=\"dwfrm_billing_paymentmethods_creditcard_owner\" type=\"text\" value=\"\"/>",
+    "feature": "name on card name on card text dwfrm billing paymentmethods creditcard owner dwfrm billing paymentmethods creditcard owner 40",
+    "id": "574-text-16",
+    "pattern": "creditcard.*id",
+    "topic": "credit_card_id"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"required\" id=\"dwfrm_billing_paymentmethods_creditcard_type\" maxlength=\"2147483647\" minlength=\"0\" name=\"dwfrm_billing_paymentmethods_creditcard_type\" type=\"text\" value=\"\"/>",
+    "feature": "card type card type text dwfrm billing paymentmethods creditcard type dwfrm billing paymentmethods creditcard type 2147483647",
+    "id": "574-text-17",
+    "pattern": "creditcard.*type",
+    "topic": "credit_card_type"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"required\" id=\"dwfrm_billing_paymentmethods_creditcard_number\" maxlength=\"16\" minlength=\"0\" name=\"dwfrm_billing_paymentmethods_creditcard_number\" type=\"text\" value=\"\"/>",
+    "feature": "credit card number credit card number text dwfrm billing paymentmethods creditcard number dwfrm billing paymentmethods creditcard number 16",
+    "id": "574-text-18",
+    "pattern": "creditcard.*id",
+    "topic": "credit_card_id"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"required\" id=\"dwfrm_billing_paymentmethods_creditcard_expiration_month\" maxlength=\"2147483647\" minlength=\"0\" name=\"dwfrm_billing_paymentmethods_creditcard_expiration_month\" type=\"text\" value=\"\"/>",
+    "feature": "month month text dwfrm billing paymentmethods creditcard expiration month dwfrm billing paymentmethods creditcard expiration month 2147483647",
+    "id": "574-text-19",
+    "pattern": "credit.*exp.*month",
+    "topic": "credit_card_exp_month"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"required\" id=\"dwfrm_billing_paymentmethods_creditcard_expiration_year\" maxlength=\"2147483647\" minlength=\"0\" name=\"dwfrm_billing_paymentmethods_creditcard_expiration_year\" type=\"text\" value=\"\"/>",
+    "feature": "year year text dwfrm billing paymentmethods creditcard expiration year dwfrm billing paymentmethods creditcard expiration year 2147483647",
+    "id": "574-text-20",
+    "pattern": "credit.*exp.*year",
+    "topic": "credit_card_exp_year"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "dom": "<input class=\"input-text\" id=\"username\" name=\"log\" placeholder=\"username\" type=\"text\" value=\"\"/>",
+    "feature": "remember me text log username username",
+    "id": "645-text-0",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input aria-label=\"search ...\" aria-required=\"true\" class=\"s\" name=\"s\" placeholder=\"search ...\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "text s search",
+    "id": "645-text-1",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input name=\"data[category]\" type=\"text\"/>",
+    "feature": "model number text data category",
+    "id": "645-text-2",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  },
+  {
+    "dom": "<input name=\"data[notes]\" type=\"text\"/>",
+    "feature": "date of purchase text data notes",
+    "id": "645-text-3",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input name=\"data[companyname]\" type=\"text\"/>",
+    "feature": "place of purchase text data companyname",
+    "id": "645-text-4",
+    "pattern": "store",
+    "topic": "store"
+  },
+  {
+    "dom": "<input name=\"data[campaign]\" type=\"text\"/>",
+    "feature": "serial number text data campaign",
+    "id": "645-text-5",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input name=\"data[email]\" type=\"text\"/>",
+    "feature": "email text data email",
+    "id": "645-text-6",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input name=\"data[confirmemail]\" type=\"text\"/>",
+    "feature": "confirm email text data confirmemail",
+    "id": "645-text-7",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input name=\"data[fname]\" type=\"text\"/>",
+    "feature": "first name text data fname",
+    "id": "645-text-8",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input name=\"data[lname]\" type=\"text\"/>",
+    "feature": "last name text data lname",
+    "id": "645-text-9",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input name=\"data[address1]\" type=\"text\"/>",
+    "feature": "address 1 text data address1",
+    "id": "645-text-10",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input name=\"data[address2]\" type=\"text\"/>",
+    "feature": "address 2 text data address2",
+    "id": "645-text-11",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input name=\"data[city]\" type=\"text\"/>",
+    "feature": "city text data city",
+    "id": "645-text-12",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input name=\"data[state]\" type=\"text\"/>",
+    "feature": "state text data state",
+    "id": "645-text-13",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input name=\"data[zip]\" type=\"text\"/>",
+    "feature": "zip text data zip",
+    "id": "645-text-14",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"s\" name=\"s\" placeholder=\"search...\" type=\"text\" value=\"\"/>",
+    "feature": "text s search",
+    "id": "645-text-15",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"input-text\" id=\"password\" name=\"pwd\" placeholder=\"password\" type=\"password\" value=\"\"/>",
+    "feature": "remember me password pwd password password",
+    "id": "645-password-0",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

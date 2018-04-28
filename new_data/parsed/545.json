@@ -1,0 +1,520 @@
+[
+  {
+    "dom": "<input class=\"form-control \" id=\"primaryapplicantnamefirst\" maxlength=\"60\" name=\"primaryapplicant.name.first\" placeholder=\"first name*\" regexpattern=\"^[a-za-z\\- ']{2,60}$\" requiredentry=\"requiredentry\" tooltiptext=\"&lt;p&gt;your name will appear on the card as depicted above&lt;/p&gt;\" type=\"text\" validationtext=\"primary applicant first name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence first name text primaryapplicant name first primaryapplicantnamefirst 60",
+    "id": "545-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"primaryapplicantnamemiddle\" maxlength=\"50\" name=\"primaryapplicant.name.middle\" placeholder=\"middle name\" regexpattern=\"^[a-za-z\\- ']{0,50}$\" type=\"text\" validationtext=\"primary applicant middle name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence middle name text primaryapplicant name middle primaryapplicantnamemiddle 50",
+    "id": "545-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"primaryapplicantnamelast\" maxlength=\"60\" name=\"primaryapplicant.name.last\" placeholder=\"last name*\" regexpattern=\"^[a-za-z\\- ']{2,60}$\" requiredentry=\"requiredentry\" tooltiptext=\"&lt;p&gt;your name will appear on the card as depicted above&lt;/p&gt;\" type=\"text\" validationtext=\"primary applicant last name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix last name text primaryapplicant name last primaryapplicantnamelast 60",
+    "id": "545-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control datemask\" id=\"primaryapplicantbirthdate\" maxlength=\"10\" name=\"primaryapplicant.birthdate\" placeholder=\"date of birth*\" regexpattern=\"^(\\d{2}/\\d{2}/\\d{4})$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant date of birth format is invalid. (e.g mm/dd/yyyy).\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence date of birth text primaryapplicant birthdate primaryapplicantbirthdate 10",
+    "id": "545-text-3",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input class=\"form-control ssnmask\" helptext=\"by federal law we are required to obtain, verify and record information that identifies each person who opens an account.  as a result we require your social security number for identification purposes.\" id=\"primaryapplicantssn\" maxlength=\"11\" name=\"primaryapplicant.ssn\" placeholder=\"social security number*\" regexpattern=\"^(\\d{3}-\\d{2}-\\d{4})|(\\d{3}\\d{2}\\d{4})$\" requiredentry=\"requiredentry\" tooltiptext=\"by federal law we are required to obtain, verify and record information that identifies each person who opens an account.  as a result we require your social security number for identification purposes.\" type=\"text\" validationtext=\"primary applicant social security number is invalid.  please check and re-enter the number.\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence text social security number primaryapplicant ssn primaryapplicantssn 11",
+    "id": "545-text-4",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"primaryapplicantemail\" maxlength=\"40\" name=\"primaryapplicant.email\" placeholder=\"email address\" regexpattern=\"^[a-za-z0-9\\.\\-_]+@[a-za-z0-9\\.\\-]+\\.[a-za-z]+$\" tooltiptext=\"&lt;p&gt;by entering your email address, you may receive special offers and information about your credit card.&lt;/p&gt;\" type=\"text\" validationtext=\"primary applicant email address is an invalid e-mail address.\" value=\"\"/>",
+    "feature": "country of permanent residence country of citizenship country of citizenship no yes suffix email address text primaryapplicant email primaryapplicantemail 40",
+    "id": "545-text-5",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress\" helptext=\"complete the street address where you currently reside.  we are unable to accept applications for the following kinds of addresses: an address in a foreign country, an address for a hotel, motel, or general delivery.\" id=\"primaryapplicantaddresslineone\" maxlength=\"35\" name=\"primaryapplicant.address.lineone\" placeholder=\"physical address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant physical address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "state physical address text primaryapplicant address lineone primaryapplicantaddresslineone 35",
+    "id": "545-text-6",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"primaryapplicantaddresslinetwo\" maxlength=\"5\" name=\"primaryapplicant.address.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\"primary applicant suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "state suite unit text primaryapplicant address linetwo primaryapplicantaddresslinetwo 5",
+    "id": "545-text-7",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control \" helptext=\"please provide the full name of the city where you currently reside.  if you are entering a military address, please enter &amp;#34;apo&amp;#34; or &amp;#34;fpo&amp;#34;.\" id=\"primaryapplicantaddresscity\" maxlength=\"20\" name=\"primaryapplicant.address.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text primaryapplicant address city primaryapplicantaddresscity 20",
+    "id": "545-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode zipmask\" id=\"primaryapplicantaddresszipcode\" maxlength=\"10\" name=\"primaryapplicant.address.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text primaryapplicant address zipcode primaryapplicantaddresszipcode 10",
+    "id": "545-text-9",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control housingpayment dollarscentstodollarsmask\" helptext=\"provide the amount you pay monthly for housing.\" id=\"primaryapplicanthousingmonthlypayment\" maxlength=\"10\" name=\"primaryapplicant.housingmonthlypayment\" placeholder=\"monthly payment*\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"please enter the monthly payment (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "housing status monthly payment text primaryapplicant housingmonthlypayment primaryapplicanthousingmonthlypayment 10",
+    "id": "545-text-10",
+    "pattern": "rent",
+    "topic": "rent"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress mailingaddressrequired\" helptext=\"complete the street address where you currently reside.  we are unable to accept applications for the following kinds of addresses: an address in a foreign country, an address for a hotel, motel, or general delivery.\" id=\"primaryapplicantmailingaddresslineone\" label=\"mail delivery address\" maxlength=\"35\" name=\"primaryapplicant.mailingaddress.lineone\" placeholder=\"mail delivery address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" type=\"text\" validationtext=\"primary applicant mail delivery address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "mail delivery address mail delivery address text primaryapplicant mailingaddress lineone primaryapplicantmailingaddresslineone 35",
+    "id": "545-text-11",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"primaryapplicantmailingaddresslinetwo\" maxlength=\"5\" name=\"primaryapplicant.mailingaddress.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\"primary applicant suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "mail delivery address suite unit text primaryapplicant mailingaddress linetwo primaryapplicantmailingaddresslinetwo 5",
+    "id": "545-text-12",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control mailingaddressrequired\" helptext=\"please provide the full name of the city where you currently reside.  if you are entering a military address, please enter &amp;#34;apo&amp;#34; or &amp;#34;fpo&amp;#34;.\" id=\"primaryapplicantmailingaddresscity\" maxlength=\"20\" name=\"primaryapplicant.mailingaddress.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" type=\"text\" validationtext=\"primary applicant city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text primaryapplicant mailingaddress city primaryapplicantmailingaddresscity 20",
+    "id": "545-text-13",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode mailingaddressrequired zipmask\" id=\"primaryapplicantmailingaddresszipcode\" maxlength=\"10\" name=\"primaryapplicant.mailingaddress.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" type=\"text\" validationtext=\"primary applicant zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text primaryapplicant mailingaddress zipcode primaryapplicantmailingaddresszipcode 10",
+    "id": "545-text-14",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control \" helptext=\"enter the name of your current or most recent place of employment or explain why you cannot\" id=\"primaryapplicantemployer\" maxlength=\"30\" name=\"primaryapplicant.employer\" placeholder=\"employer*\" regexpattern=\"^[\\-\\\\.a-za-z0-9&amp; ]{2,30}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant employer can only contains letters, numbers, hyphens, ampersands, periods and spaces.\" value=\"\"/>",
+    "feature": "employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes employer text primaryapplicant employer primaryapplicantemployer 30",
+    "id": "545-text-15",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"primaryapplicantotheroccupationdescription\" maxlength=\"25\" name=\"primaryapplicant.otheroccupationdescription\" placeholder=\"occupation description\" regexpattern=\"^[\\-a-za-z0-9 ]{1,25}$\" type=\"text\" validationtext=\"primary applicant occupation description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
+    "feature": "occupation occupation description text primaryapplicant otheroccupationdescription primaryapplicantotheroccupationdescription 25",
+    "id": "545-text-16",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input callcentertext=\"alimony, child support or separate maintenance payments need not be revealed if you do not wish to have it considered as a basis for repaying this obligation.\" class=\"form-control dollarscentstodollarsmask\" id=\"primaryapplicantannualincome\" maxlength=\"12\" name=\"primaryapplicant.annualincome\" placeholder=\"annual income*\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" requiredentry=\"requiredentry\" tooltiptext=\"* all applicants: &lt;strong&gt;note: income from alimony, child support, or separate maintenance need not be revealed if you do not wish to have it considered as a basis for repaying this obligation.&lt;br /&gt;&lt;/strong&gt;include all income earned by you: salary and hourly wages, overtime, bonuses, commissions, self-employment, social security, retirement pay, public assistance, disability, pension, interest, dividends or rental income.\" type=\"text\" validationtext=\"please enter your estimated annual income (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "occupation employment status source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes text annual income primaryapplicant annualincome primaryapplicantannualincome 12",
+    "id": "545-text-17",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"primaryapplicantotherprimaryannualincomesourcedescription\" maxlength=\"20\" name=\"primaryapplicant.otherprimaryannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
+    "feature": "source of annual income other description text primaryapplicant otherprimaryannualincomesourcedescription primaryapplicantotherprimaryannualincomesourcedescription 20",
+    "id": "545-text-18",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input class=\"form-control otherincomerequired dollarscentstodollarsmaskwithoutzero\" id=\"primaryapplicantadditionalannualincome\" maxlength=\"12\" name=\"primaryapplicant.additionalannualincome\" placeholder=\"additional annual income*\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" requiredentry=\"requiredentry\" tooltiptext=\"** applicants age 21 or over only: include any other income that is readily accessible to you that is earned by other sources, such as spousal/domestic partner income, salary and hourly wages, overtime, bonuses, commissions, self-employment, social security, retirement pay, public assistance, disability, pension, interest, dividends or rental income. (if under 21, do not fill in; only provide income earned by you on the annual income* line.)\" type=\"text\" validationtext=\"please enter your estimated annual income (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "source of additional annual income additional annual income text primaryapplicant additionalannualincome primaryapplicantadditionalannualincome 12",
+    "id": "545-text-19",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control otherincomerequired\" id=\"primaryapplicantotheradditionalannualincomesourcedescription\" maxlength=\"20\" name=\"primaryapplicant.otheradditionalannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
+    "feature": "source of additional annual income other description text primaryapplicant otheradditionalannualincomesourcedescription primaryapplicantotheradditionalannualincomesourcedescription 20",
+    "id": "545-text-20",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input class=\"form-control dollarscentstodollarsmask\" helptext=\"enter the approximate total combined balances of your checking, savings and money market accounts here. providing this information will assist with the processing of your application.\" id=\"bankerapplicationtotalnonretirementassets\" maxlength=\"11\" name=\"bankerapplication.totalnonretirementassets\" placeholder=\"checking, savings, and money market\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" type=\"text\" validationtext=\"please enter your total non retirement assets (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "expected monthly international transactions expected monthly cash transactions source of additional annual income no yes source of annual income occupation employment status length of relationship no yes checking savings and money market text bankerapplication totalnonretirementassets bankerapplicationtotalnonretirementassets 11",
+    "id": "545-text-21",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control dollarscentstodollarsmask\" helptext=\"enter the approximate total combined balances of your investments and retirement accounts here. providing this information will assist with the processing of your application.\" id=\"bankerapplicationtotalretirementassets\" maxlength=\"11\" name=\"bankerapplication.totalretirementassets\" placeholder=\"investments and retirement accounts\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" type=\"text\" validationtext=\"please enter your total retirement assets (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "expected monthly international transactions expected monthly cash transactions source of additional annual income no yes source of annual income occupation employment status length of relationship no yes investments and retirement accounts text bankerapplication totalretirementassets bankerapplicationtotalretirementassets 11",
+    "id": "545-text-22",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control balancetransferamount dollarscentstodollarsmask\" id=\"primaryapplicantrequestedbalancetransferamount\" maxlength=\"10\" name=\"primaryapplicant.requestedbalancetransferamount\" placeholder=\"total amount of balance transfers*\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" requiredentry=\"requiredentry\" tooltiptext=\"enter the total approximate amount of balances you wish to transfer to your new card.\" type=\"text\" validationtext=\"please enter your estimated total balance transfer amount (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "no yes length of relationship expected monthly international transactions expected monthly cash transactions source of additional annual income no yes source of annual income occupation employment status total amount of balance transfers text primaryapplicant requestedbalancetransferamount primaryapplicantrequestedbalancetransferamount 10",
+    "id": "545-text-23",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired\" id=\"jointapplicantnamefirst\" maxlength=\"60\" name=\"jointapplicant.name.first\" placeholder=\"first name*\" regexpattern=\"^[a-za-z\\- ']{2,60}$\" tooltiptext=\"&lt;p&gt;your name will appear on the card as depicted above&lt;/p&gt;\" type=\"text\" validationtext=\"joint applicant first name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions first name text jointapplicant name first jointapplicantnamefirst 60",
+    "id": "545-text-24",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"jointapplicantnamemiddle\" maxlength=\"50\" name=\"jointapplicant.name.middle\" placeholder=\"middle name\" regexpattern=\"^[a-za-z\\- ']{0,50}$\" type=\"text\" validationtext=\"joint applicant middle name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions middle name text jointapplicant name middle jointapplicantnamemiddle 50",
+    "id": "545-text-25",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired\" id=\"jointapplicantnamelast\" maxlength=\"60\" name=\"jointapplicant.name.last\" placeholder=\"last name*\" regexpattern=\"^[a-za-z\\- ']{2,60}$\" tooltiptext=\"&lt;p&gt;your name will appear on the card as depicted above&lt;/p&gt;\" type=\"text\" validationtext=\"joint applicant last name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix last name text jointapplicant name last jointapplicantnamelast 60",
+    "id": "545-text-26",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired datemask\" id=\"jointapplicantbirthdate\" maxlength=\"10\" name=\"jointapplicant.birthdate\" placeholder=\"date of birth*\" regexpattern=\"^(\\d{2}/\\d{2}/\\d{4})$\" type=\"text\" validationtext=\"joint applicant date of birth format is invalid. (e.g mm/dd/yyyy).\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions date of birth text jointapplicant birthdate jointapplicantbirthdate 10",
+    "id": "545-text-27",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired ssnmask\" helptext=\"by federal law we are required to obtain, verify and record information that identifies each person who opens an account.  as a result we require your social security number for identification purposes.\" id=\"jointapplicantssn\" maxlength=\"11\" name=\"jointapplicant.ssn\" placeholder=\"social security number*\" regexpattern=\"^(\\d{3}-\\d{2}-\\d{4})|(\\d{3}\\d{2}\\d{4})$\" tooltiptext=\"by federal law we are required to obtain, verify and record information that identifies each person who opens an account.  as a result we require your social security number for identification purposes.\" type=\"text\" validationtext=\"joint applicant social security number is invalid.  please check and re-enter the number.\" value=\"\"/>",
+    "feature": "suffix country of citizenship no yes country of citizenship country of permanent residence no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions social security number text jointapplicant ssn jointapplicantssn 11",
+    "id": "545-text-28",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress jointapplicantrequired\" helptext=\"complete the street address where you currently reside.  we are unable to accept applications for the following kinds of addresses: an address in a foreign country, an address for a hotel, motel, or general delivery.\" id=\"jointapplicantaddresslineone\" maxlength=\"35\" name=\"jointapplicant.address.lineone\" placeholder=\"physical address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" type=\"text\" validationtext=\"joint applicant physical address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "state physical address text jointapplicant address lineone jointapplicantaddresslineone 35",
+    "id": "545-text-29",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"jointapplicantaddresslinetwo\" maxlength=\"5\" name=\"jointapplicant.address.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\"joint applicant suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "state suite unit text jointapplicant address linetwo jointapplicantaddresslinetwo 5",
+    "id": "545-text-30",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired\" helptext=\"please provide the full name of the city where you currently reside.  if you are entering a military address, please enter &amp;#34;apo&amp;#34; or &amp;#34;fpo&amp;#34;.\" id=\"jointapplicantaddresscity\" maxlength=\"20\" name=\"jointapplicant.address.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" type=\"text\" validationtext=\"joint applicant city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text jointapplicant address city jointapplicantaddresscity 20",
+    "id": "545-text-31",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode jointapplicantrequired zipmask\" id=\"jointapplicantaddresszipcode\" maxlength=\"10\" name=\"jointapplicant.address.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" type=\"text\" validationtext=\"joint applicant zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text jointapplicant address zipcode jointapplicantaddresszipcode 10",
+    "id": "545-text-32",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress jointapplicantrequired jointmailingaddressrequired\" id=\"jointapplicantmailingaddresslineone\" maxlength=\"35\" name=\"jointapplicant.mailingaddress.lineone\" placeholder=\"mail delivery address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" type=\"text\" validationtext=\"joint applicant mail delivery address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "state mail delivery address text jointapplicant mailingaddress lineone jointapplicantmailingaddresslineone 35",
+    "id": "545-text-33",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"jointapplicantmailingaddresslinetwo\" maxlength=\"5\" name=\"jointapplicant.mailingaddress.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\"joint applicant suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "state suite unit text jointapplicant mailingaddress linetwo jointapplicantmailingaddresslinetwo 5",
+    "id": "545-text-34",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired jointmailingaddressrequired\" helptext=\"please provide the full name of the city where you currently reside.  if you are entering a military address, please enter &amp;#34;apo&amp;#34; or &amp;#34;fpo&amp;#34;.\" id=\"jointapplicantmailingaddresscity\" maxlength=\"20\" name=\"jointapplicant.mailingaddress.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" type=\"text\" validationtext=\"joint applicant city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text jointapplicant mailingaddress city jointapplicantmailingaddresscity 20",
+    "id": "545-text-35",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode jointapplicantrequired jointmailingaddressrequired zipmask\" id=\"jointapplicantmailingaddresszipcode\" maxlength=\"10\" name=\"jointapplicant.mailingaddress.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" type=\"text\" validationtext=\"joint applicant zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text jointapplicant mailingaddress zipcode jointapplicantmailingaddresszipcode 10",
+    "id": "545-text-36",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired\" helptext=\"enter the name of your current or most recent place of employment or explain why you cannot\" id=\"jointapplicantemployer\" maxlength=\"30\" name=\"jointapplicant.employer\" placeholder=\"employer*\" regexpattern=\"^[\\-\\\\.a-za-z0-9&amp; ]{2,30}$\" type=\"text\" validationtext=\"joint applicant employer can only contains letters, numbers, hyphens, ampersands, periods and spaces.\" value=\"\"/>",
+    "feature": "employment status no yes state no yes state no yes country of permanent residence country of citizenship country of citizenship no yes suffix occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions employer text jointapplicant employer jointapplicantemployer 30",
+    "id": "545-text-37",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"jointapplicantotheroccupationdescription\" maxlength=\"25\" name=\"jointapplicant.otheroccupationdescription\" placeholder=\"occupation description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,25}$\" type=\"text\" validationtext=\"joint applicant occupation description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
+    "feature": "occupation occupation description text jointapplicant otheroccupationdescription jointapplicantotheroccupationdescription 25",
+    "id": "545-text-38",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input callcentertext=\"alimony, child support or separate maintenance payments need not be revealed if you do not wish to have it considered as a basis for repaying this obligation.\" class=\"form-control jointapplicantrequired dollarscentstodollarsmask\" id=\"jointapplicantannualincome\" maxlength=\"12\" name=\"jointapplicant.annualincome\" placeholder=\"annual income*\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" tooltiptext=\"* all applicants: &lt;strong&gt;note: income from alimony, child support, or separate maintenance need not be revealed if you do not wish to have it considered as a basis for repaying this obligation.&lt;br /&gt;&lt;/strong&gt;include all income earned by you: salary and hourly wages, overtime, bonuses, commissions, self-employment, social security, retirement pay, public assistance, disability, pension, interest, dividends or rental income.&lt;br/&gt;&lt;br/&gt;do not include any income already stated by the other applicant.\" type=\"text\" validationtext=\"please enter your estimated annual income (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "occupation employment status no yes state no yes state no yes country of permanent residence country of citizenship country of citizenship no yes suffix source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions annual income text jointapplicant annualincome jointapplicantannualincome 12",
+    "id": "545-text-39",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantrequired\" id=\"jointapplicantotherprimaryannualincomesourcedescription\" maxlength=\"20\" name=\"jointapplicant.otherprimaryannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" type=\"text\" validationtext=\"joint applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
+    "feature": "source of annual income other description text jointapplicant otherprimaryannualincomesourcedescription jointapplicantotherprimaryannualincomesourcedescription 20",
+    "id": "545-text-40",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input class=\"form-control jointotherincomerequired dollarscentstodollarsmaskwithoutzero\" id=\"jointapplicantadditionalannualincome\" maxlength=\"12\" name=\"jointapplicant.additionalannualincome\" placeholder=\"additional annual income\" regexpattern=\"^\\$((\\d+)|(\\d{1,3})(\\,\\d{3}|)*)(\\.\\d*|)$\" tooltiptext=\"** applicants age 21 or over only: include any other income that is readily accessible to you that is earned by other sources, such as spousal/domestic partner income, salary and hourly wages, overtime, bonuses, commissions, self-employment, social security, retirement pay, public assistance, disability, pension, interest, dividends or rental income. (if under 21, do not fill in; only provide income earned by you on the annual income* line.)&lt;br/&gt;&lt;br/&gt;do not include any income already stated by the other applicant.\" type=\"text\" validationtext=\"please enter your estimated annual income (no decimals; commas and $ symbol should be included).\" value=\"\"/>",
+    "feature": "source of additional annual income additional annual income text jointapplicant additionalannualincome jointapplicantadditionalannualincome 12",
+    "id": "545-text-41",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"form-control jointotherincomerequired\" id=\"jointapplicantotheradditionalannualincomesourcedescription\" maxlength=\"20\" name=\"jointapplicant.otheradditionalannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" type=\"text\" validationtext=\"joint applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
+    "feature": "source of additional annual income other description text jointapplicant otheradditionalannualincomesourcedescription jointapplicantotheradditionalannualincomesourcedescription 20",
+    "id": "545-text-42",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input class=\"form-control additionalcardholderrequired\" id=\"additionalcardholdernamefirst\" maxlength=\"60\" name=\"additionalcardholder.name.first\" placeholder=\"first name*\" regexpattern=\"^[a-za-z\\- ']{2,60}$\" tooltiptext=\"&lt;p&gt;your name will appear on the card as depicted above&lt;/p&gt;\" type=\"text\" validationtext=\"additional cardholder first name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix no yes state first name text additionalcardholder name first additionalcardholdernamefirst 60",
+    "id": "545-text-43",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"additionalcardholdernamemiddle\" maxlength=\"50\" name=\"additionalcardholder.name.middle\" placeholder=\"middle name\" regexpattern=\"^[a-za-z\\- ']{0,50}$\" type=\"text\" validationtext=\"additional cardholder middle name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix no yes state middle name text additionalcardholder name middle additionalcardholdernamemiddle 50",
+    "id": "545-text-44",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input class=\"form-control additionalcardholderrequired\" id=\"additionalcardholdernamelast\" maxlength=\"60\" name=\"additionalcardholder.name.last\" placeholder=\"last name*\" regexpattern=\"^[a-za-z\\- ']{2,60}$\" tooltiptext=\"&lt;p&gt;your name will appear on the card as depicted above&lt;/p&gt;\" type=\"text\" validationtext=\"additional cardholder last name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix last name text additionalcardholder name last additionalcardholdernamelast 60",
+    "id": "545-text-45",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control additionalcardholderrequired datemask\" id=\"additionalcardholderbirthdate\" maxlength=\"10\" name=\"additionalcardholder.birthdate\" placeholder=\"date of birth*\" regexpattern=\"^(\\d{2}/\\d{2}/\\d{4})$\" type=\"text\" validationtext=\"additional cardholder date of birth format is invalid. (e.g mm/dd/yyyy).\" value=\"\"/>",
+    "feature": "suffix no yes state date of birth text additionalcardholder birthdate additionalcardholderbirthdate 10",
+    "id": "545-text-46",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input class=\"form-control additionalcardholderrequired ssnmask\" helptext=\"by federal law we are required to obtain, verify and record information that identifies each person who opens an account.  as a result we require your social security number for identification purposes.\" id=\"additionalcardholderssn\" maxlength=\"11\" name=\"additionalcardholder.ssn\" placeholder=\"social security number*\" regexpattern=\"^(\\d{3}-\\d{2}-\\d{4})|(\\d{3}\\d{2}\\d{4})$\" tooltiptext=\"by federal law we are required to obtain, verify and record information that identifies each person who opens an account.  as a result we require your social security number for identification purposes.\" type=\"text\" validationtext=\"additional cardholder social security number is invalid.  please check and re-enter the number.\" value=\"\"/>",
+    "feature": "suffix no yes state social security number text additionalcardholder ssn additionalcardholderssn 11",
+    "id": "545-text-47",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress additionalcardholderrequired\" helptext=\"complete the street address where you currently reside.  we are unable to accept applications for the following kinds of addresses: an address in a foreign country, an address for a hotel, motel, or general delivery.\" id=\"additionalcardholderaddresslineone\" maxlength=\"35\" name=\"additionalcardholder.address.lineone\" placeholder=\"physical address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" type=\"text\" validationtext=\"additional cardholder physical address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "state physical address text additionalcardholder address lineone additionalcardholderaddresslineone 35",
+    "id": "545-text-48",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"additionalcardholderaddresslinetwo\" maxlength=\"5\" name=\"additionalcardholder.address.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\"additional cardholder suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "state suite unit text additionalcardholder address linetwo additionalcardholderaddresslinetwo 5",
+    "id": "545-text-49",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control additionalcardholderrequired\" helptext=\"please provide the full name of the city where you currently reside.  if you are entering a military address, please enter &amp;#34;apo&amp;#34; or &amp;#34;fpo&amp;#34;.\" id=\"additionalcardholderaddresscity\" maxlength=\"20\" name=\"additionalcardholder.address.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" type=\"text\" validationtext=\"additional cardholder city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text additionalcardholder address city additionalcardholderaddresscity 20",
+    "id": "545-text-50",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode additionalcardholderrequired zipmask\" id=\"additionalcardholderaddresszipcode\" maxlength=\"10\" name=\"additionalcardholder.address.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" type=\"text\" validationtext=\"additional cardholder zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text additionalcardholder address zipcode additionalcardholderaddresszipcode 10",
+    "id": "545-text-51",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control spouserequired\" id=\"spousenamefirst\" maxlength=\"15\" name=\"spouse.name.first\" placeholder=\"first name*\" regexpattern=\"^[a-za-z\\- ']{2,15}$\" type=\"text\" validationtext=\"spouse first name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix first name text spouse name first spousenamefirst 15",
+    "id": "545-text-52",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control middleinitial\" id=\"spousenamemiddle\" maxlength=\"1\" name=\"spouse.name.middle\" placeholder=\"mi\" regexpattern=\"^[a-za-z\\- ']{0,1}$\" type=\"text\" validationtext=\"spouse mi can only be a letter.\" value=\"\"/>",
+    "feature": "suffix mi text spouse name middle spousenamemiddle 1",
+    "id": "545-text-53",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input class=\"form-control spouserequired\" id=\"spousenamelast\" maxlength=\"25\" name=\"spouse.name.last\" placeholder=\"last name*\" regexpattern=\"^[a-za-z\\- ']{2,25}$\" type=\"text\" validationtext=\"spouse last name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix last name text spouse name last spousenamelast 25",
+    "id": "545-text-54",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress spouserequired\" helptext=\"complete the mailing address where you currently reside.  we are unable to accept applications for the following kinds of addresses: an address in a foreign country, an address for a hotel, motel, or general delivery.\" id=\"spouseaddresslineone\" maxlength=\"35\" name=\"spouse.address.lineone\" placeholder=\"mail delivery address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" type=\"text\" validationtext=\"spouse mail delivery address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "state mail delivery address text spouse address lineone spouseaddresslineone 35",
+    "id": "545-text-55",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"spouseaddresslinetwo\" maxlength=\"5\" name=\"spouse.address.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\"spouse suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "state suite unit text spouse address linetwo spouseaddresslinetwo 5",
+    "id": "545-text-56",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control spouserequired\" helptext=\"please provide the full name of the city where you currently reside.  if you are entering a military address, please enter &amp;#34;apo&amp;#34; or &amp;#34;fpo&amp;#34;.\" id=\"spouseaddresscity\" maxlength=\"20\" name=\"spouse.address.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" type=\"text\" validationtext=\"spouse city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text spouse address city spouseaddresscity 20",
+    "id": "545-text-57",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode spouserequired zipmask\" id=\"spouseaddresszipcode\" maxlength=\"10\" name=\"spouse.address.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" type=\"text\" validationtext=\"spouse zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text spouse address zipcode spouseaddresszipcode 10",
+    "id": "545-text-58",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantspouserequired\" id=\"jointapplicantspousenamefirst\" maxlength=\"15\" name=\"jointapplicantspouse.name.first\" placeholder=\"first name*\" regexpattern=\"^[a-za-z\\- ']{2,15}$\" type=\"text\" validationtext=\"joint applicant spouse first name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix first name text jointapplicantspouse name first jointapplicantspousenamefirst 15",
+    "id": "545-text-59",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control middleinitial\" id=\"jointapplicantspousenamemiddle\" maxlength=\"1\" name=\"jointapplicantspouse.name.middle\" placeholder=\"mi\" regexpattern=\"^[a-za-z\\- ']{0,1}$\" type=\"text\" validationtext=\"joint applicant spouse mi can only be a letter.\" value=\"\"/>",
+    "feature": "suffix mi text jointapplicantspouse name middle jointapplicantspousenamemiddle 1",
+    "id": "545-text-60",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantspouserequired\" id=\"jointapplicantspousenamelast\" maxlength=\"25\" name=\"jointapplicantspouse.name.last\" placeholder=\"last name*\" regexpattern=\"^[a-za-z\\- ']{2,25}$\" type=\"text\" validationtext=\"joint applicant spouse last name can only contain letters, spaces, hyphens and single quotes.\" value=\"\"/>",
+    "feature": "suffix last name text jointapplicantspouse name last jointapplicantspousenamelast 25",
+    "id": "545-text-61",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress jointapplicantspouserequired\" helptext=\"complete the mailing address where you currently reside.  we are unable to accept applications for the following kinds of addresses: an address in a foreign country, an address for a hotel, motel, or general delivery.\" id=\"jointapplicantspouseaddresslineone\" maxlength=\"35\" name=\"jointapplicantspouse.address.lineone\" placeholder=\"mail delivery address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" type=\"text\" validationtext=\"joint applicant spouse mail delivery address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "state mail delivery address text jointapplicantspouse address lineone jointapplicantspouseaddresslineone 35",
+    "id": "545-text-62",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"jointapplicantspouseaddresslinetwo\" maxlength=\"5\" name=\"jointapplicantspouse.address.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\"joint applicant spouse suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "state suite unit text jointapplicantspouse address linetwo jointapplicantspouseaddresslinetwo 5",
+    "id": "545-text-63",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control jointapplicantspouserequired\" helptext=\"please provide the full name of the city where you currently reside.  if you are entering a military address, please enter &amp;#34;apo&amp;#34; or &amp;#34;fpo&amp;#34;.\" id=\"jointapplicantspouseaddresscity\" maxlength=\"20\" name=\"jointapplicantspouse.address.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" type=\"text\" validationtext=\"joint applicant spouse city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text jointapplicantspouse address city jointapplicantspouseaddresscity 20",
+    "id": "545-text-64",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode jointapplicantspouserequired zipmask\" id=\"jointapplicantspouseaddresszipcode\" maxlength=\"10\" name=\"jointapplicantspouse.address.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" type=\"text\" validationtext=\"joint applicant spouse zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text jointapplicantspouse address zipcode jointapplicantspouseaddresszipcode 10",
+    "id": "545-text-65",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control streetaddress\" helptext=\"complete the street address where you currently reside.  we are unable to accept applications for the following kinds of addresses: an address in a foreign country, an address for a hotel, motel, or general delivery.\" id=\"commonaddresslineone\" maxlength=\"35\" name=\"commonaddress.lineone\" placeholder=\"physical address*\" regexpattern=\"^[\\-\\/a-za-z0-9. ]{5,35}$\" requiredentry=\"requiredentry\" tooltiptext=\"please do not use a p.o. box\" type=\"text\" validationtext=\" physical address can only contain letters, numbers, hyphens, forward slashes and spaces.\" value=\"\"/>",
+    "feature": "state text physical address commonaddress lineone commonaddresslineone 35",
+    "id": "545-text-66",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control aptunit\" id=\"commonaddresslinetwo\" maxlength=\"5\" name=\"commonaddress.linetwo\" placeholder=\"suite/unit #\" regexpattern=\"^[\\-\\/a-za-z0-9# ]{1,5}$\" type=\"text\" validationtext=\" suite/unit # apartment number contains invalid characters.\" value=\"\"/>",
+    "feature": "state suite unit text commonaddress linetwo commonaddresslinetwo 5",
+    "id": "545-text-67",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control \" id=\"commonaddresscity\" maxlength=\"20\" name=\"commonaddress.city\" placeholder=\"city*\" regexpattern=\"^[\\-\\/a-za-z0-9 ]{2,20}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\" city can only contain letters, numbers and spaces.\" value=\"\"/>",
+    "feature": "state city text commonaddress city commonaddresscity 20",
+    "id": "545-text-68",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control zipcode zipmask\" id=\"commonaddresszipcode\" maxlength=\"10\" name=\"commonaddress.zipcode\" placeholder=\"zip code*\" regexpattern=\"^\\d{5}([\\-]?\\d{4})?$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\" zip code must be 5 digits.  extension must be 4 digits.\" value=\"\"/>",
+    "feature": "state zip code text commonaddress zipcode commonaddresszipcode 10",
+    "id": "545-text-69",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input callcentertext=\"by providing us with any telephone number used for a cellular phone or other wireless device, including a number that you later convert to a cellular phone number, you are expressly consenting to receiving communications - including but not limited to prerecorded or artificial voice message calls, text messages, and calls made by an automatic telephone dialing system - from us and our affiliates and agents at that number. this express consent applies to each such telephone number that you provide to us now or in the future and permits such calls for non-marketing purposes. calls and messages may incur access fees from your cellular provider.\" class=\"form-control phonemask\" id=\"primaryapplicantphone\" maxlength=\"12\" name=\"primaryapplicant.phone\" placeholder=\"primary phone number*\" regexpattern=\"^(([2-9]{1})([0-9]{2})\\-([0-9]{3})\\-([0-9]{4})|([2-9]{1})([0-9]{9}))$\" requiredentry=\"requiredentry\" type=\"tel\" validationtext=\"primary applicant primary phone number is not valid (e.g. 999-999-9999).\" value=\"\"/>",
+    "feature": "country of permanent residence country of citizenship country of citizenship no yes suffix primary phone number tel primaryapplicant phone primaryapplicantphone 12",
+    "id": "545-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control phonemask\" id=\"primaryapplicantcellphone\" maxlength=\"12\" name=\"primaryapplicant.cellphone\" placeholder=\"mobile phone number\" regexpattern=\"^(([2-9]{1})([0-9]{2})\\-([0-9]{3})\\-([0-9]{4})|([2-9]{1})([0-9]{9}))$\" type=\"tel\" validationtext=\"primary applicant mobile phone number is not valid (e.g. 999-999-9999).\" value=\"\"/>",
+    "feature": "country of permanent residence country of citizenship country of citizenship no yes suffix mobile phone number tel primaryapplicant cellphone primaryapplicantcellphone 12",
+    "id": "545-tel-1",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control employmentrequired phonemask\" id=\"primaryapplicantworkphone\" maxlength=\"12\" name=\"primaryapplicant.workphone\" placeholder=\"work phone number*\" regexpattern=\"^(([2-9]{1})([0-9]{2})\\-([0-9]{3})\\-([0-9]{4})|([2-9]{1})([0-9]{9}))$\" type=\"tel\" validationtext=\"primary applicant work phone number is not valid (e.g. 999-999-9999).\" value=\"\"/>",
+    "feature": "occupation employment status source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes work phone number tel primaryapplicant workphone primaryapplicantworkphone 12",
+    "id": "545-tel-2",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input callcentertext=\"by providing us with any telephone number used for a cellular phone or other wireless device, including a number that you later convert to a cellular phone number, you are expressly consenting to receiving communications - including but not limited to prerecorded or artificial voice message calls, text messages, and calls made by an automatic telephone dialing system - from us and our affiliates and agents at that number. this express consent applies to each such telephone number that you provide to us now or in the future and permits such calls for non-marketing purposes. calls and messages may incur access fees from your cellular provider.\" class=\"form-control jointapplicantrequired phonemask\" id=\"jointapplicantphone\" maxlength=\"12\" name=\"jointapplicant.phone\" placeholder=\"phone number*\" regexpattern=\"^(([2-9]{1})([0-9]{2})\\-([0-9]{3})\\-([0-9]{4})|([2-9]{1})([0-9]{9}))$\" type=\"tel\" validationtext=\"joint applicant phone number is not valid (e.g. 999-999-9999).\" value=\"\"/>",
+    "feature": "country of permanent residence country of citizenship country of citizenship no yes suffix no yes state no yes no yes state employment status occupation source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions phone number tel jointapplicant phone jointapplicantphone 12",
+    "id": "545-tel-3",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

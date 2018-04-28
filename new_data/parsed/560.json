@@ -1,0 +1,58 @@
+[
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"firstname\" name=\"address.firstname\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first name text firstname address firstname",
+    "id": "560-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"lastname\" name=\"address.lastname\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name text lastname address lastname",
+    "id": "560-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"address1\" name=\"address.address1\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address text address1 address address1",
+    "id": "560-text-2",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"address2\" name=\"address.address2\" type=\"text\" value=\"\"/>",
+    "feature": "add company c o apt suite unit text address2 address address2",
+    "id": "560-text-3",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"city\" name=\"address.city\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city text city address city",
+    "id": "560-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"postalcode\" name=\"address.postalcode\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "postal code text postalcode address postalcode",
+    "id": "560-text-5",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"email\" name=\"address.email\" required=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email email email address email",
+    "id": "560-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"ncss-input pt2-sm pr4-sm pb2-sm pl4-sm\" id=\"phonenumber\" name=\"address.phonenumber\" required=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number tel phonenumber address phonenumber",
+    "id": "560-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

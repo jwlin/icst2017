@@ -1,0 +1,72 @@
+[
+  {
+    "dom": "<input maxlength=\"100\" name=\"t3005\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "text t3005 100",
+    "id": "714-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"100\" name=\"t5111\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "text t5111 100",
+    "id": "714-text-1",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"40\" name=\"t5010\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "text t5010 40",
+    "id": "714-text-2",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"50\" name=\"t5030\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "text t5030 50",
+    "id": "714-text-3",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"100\" name=\"t4050\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "text t4050 100",
+    "id": "714-text-4",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"100\" name=\"t4055\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "text t4055 100",
+    "id": "714-text-5",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"60\" name=\"t4060\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "text t4060 60",
+    "id": "714-text-6",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"20\" name=\"t4080\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "text t4080 20",
+    "id": "714-text-7",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"50\" name=\"t3010\" size=\"20\" type=\"password\"/>",
+    "feature": "password t3010 50",
+    "id": "714-password-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input maxlength=\"50\" name=\"t3015\" size=\"20\" type=\"password\"/>",
+    "feature": "password t3015 50",
+    "id": "714-password-1",
+    "pattern": "unk",
+    "topic": "unk"
+  }
+]

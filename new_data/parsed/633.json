@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input class=\"sf_searchtext\" id=\"tbsearch\" type=\"text\"/>",
+    "feature": "kitchen faucets kitchen accessories bath faucets tub shower shower components roman tubs bath accessories valves handle kits free standing tub filler tbsearch text",
+    "id": "633-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtfirstname\" name=\"first name\" required=\"\" type=\"text\"/>",
+    "feature": "txtfirstname first name text",
+    "id": "633-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtlastname\" name=\"last name\" required=\"\" type=\"text\"/>",
+    "feature": "txtlastname last name text",
+    "id": "633-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtphone\" name=\"phone number\" required=\"\" type=\"text\"/>",
+    "feature": "txtphone phone number text",
+    "id": "633-text-3",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtstreet\" name=\"street\" required=\"\" type=\"text\"/>",
+    "feature": "txtstreet street text",
+    "id": "633-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtapt\" name=\"apt\" type=\"text\"/>",
+    "feature": "state txtapt apt text",
+    "id": "633-text-5",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtattention\" name=\"attention\" type=\"text\"/>",
+    "feature": "state txtattention attention text",
+    "id": "633-text-6",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtcity\" name=\"city\" required=\"\" type=\"text\"/>",
+    "feature": "txtcity city text",
+    "id": "633-text-7",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" data-postalformat=\"#ddlcountry\" data-postalformat-msg=\"postal code format is not valid\" id=\"txtzip\" name=\"postal code\" required=\"\" type=\"text\"/>",
+    "feature": "txtzip postal code text",
+    "id": "633-text-8",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtupccode\" name=\"upc code\" required=\"\" type=\"text\"/>",
+    "feature": "txtupccode upc code text",
+    "id": "633-text-9",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtpurchaselocation\" name=\"purchase location\" required=\"\" type=\"text\"/>",
+    "feature": "txtpurchaselocation purchase location text",
+    "id": "633-text-10",
+    "pattern": "store",
+    "topic": "store"
+  },
+  {
+    "dom": "<input id=\"txtemailaddress\" type=\"text\"/>",
+    "feature": "enter e mail address txtemailaddress text",
+    "id": "633-text-11",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" id=\"txtemailaddress\" name=\"email address\" required=\"\" type=\"email\"/>",
+    "feature": "txtemailaddress email address email",
+    "id": "633-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control cp-text\" data-matches=\"#txtemailaddress\" data-matches-msg=\"the email confirmation does not match\" data-required-msg=\"you must confirm your email address\" id=\"txtconfirmemailaddress\" name=\"confirm email\" required=\"\" type=\"email\"/>",
+    "feature": "txtconfirmemailaddress confirm email email",
+    "id": "633-email-1",
+    "pattern": "email",
+    "topic": "email"
+  }
+]

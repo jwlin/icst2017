@@ -1,0 +1,72 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" id=\"searchinput\" name=\"text\" placeholder=\"what are you looking for?\" type=\"text\"/>",
+    "feature": "what are you looking for searchinput text what are you looking for text",
+    "id": "607-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"serialnumber\" name=\"serialnumber\" type=\"text\" value=\"\"/>",
+    "feature": "please enter the serial number exactly as it is shown on your brewer including any special characters serial number please enter the serial number exactly as it is shown on your brewer including any special characters serialnumber serialnumber text",
+    "id": "607-text-1",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"text personalinfotextinputfield\" id=\"register.firstname\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name register firstname firstname text",
+    "id": "607-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"text personalinfotextinputfield\" id=\"register.lastname\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name register lastname lastname text",
+    "id": "607-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-label=\"please enter your email\" id=\"emailsignup\" placeholder=\"your email\" required=\"\" type=\"text\"/>",
+    "feature": "your email emailsignup your email text",
+    "id": "607-text-4",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"nope\" class=\"personalinfotextinputfield\" id=\"register.email\" name=\"email\" type=\"email\" value=\"\"/>",
+    "feature": "email address email register email email",
+    "id": "607-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"nope\" id=\"email-existing\" name=\"j_username\" type=\"email\" value=\"\"/>",
+    "feature": "email address email existing j username email",
+    "id": "607-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"nope\" class=\"password personalinfotextinputfield\" id=\"password\" name=\"pwd\" type=\"password\" value=\"\"/>",
+    "feature": "show password pwd password password",
+    "id": "607-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"nope\" class=\"confirmpassword personalinfotextinputfield hidden\" id=\"register.checkpwd\" name=\"checkpwd\" type=\"password\" value=\"\"/>",
+    "feature": "show register checkpwd checkpwd register checkpwd password",
+    "id": "607-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"nope\" class=\"password\" id=\"pass-new\" name=\"j_password\" type=\"password\" value=\"\"/>",
+    "feature": "show password j password pass new password",
+    "id": "607-password-2",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

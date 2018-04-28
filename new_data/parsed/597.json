@@ -1,0 +1,72 @@
+[
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-validations=\"required maxlength:50 \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" min=\"\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first name dwfrm singleshipping shippingaddress addressfields firstname dwfrm singleshipping shippingaddress addressfields firstname text",
+    "id": "597-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-validations=\"required maxlength:50 \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" min=\"\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name dwfrm singleshipping shippingaddress addressfields lastname dwfrm singleshipping shippingaddress addressfields lastname text",
+    "id": "597-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-validations=\"required maxlength:30 \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" min=\"\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address 1 dwfrm singleshipping shippingaddress addressfields address1 dwfrm singleshipping shippingaddress addressfields address1 text",
+    "id": "597-text-2",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-required=\"false\" class=\"form-control\" data-validations=\" maxlength:30 \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" min=\"\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "optional address 2 dwfrm singleshipping shippingaddress addressfields address2 dwfrm singleshipping shippingaddress addressfields address2 text",
+    "id": "597-text-3",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-validations=\"required minlength:2 maxlength:50 \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" min=\"\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city dwfrm singleshipping shippingaddress addressfields city dwfrm singleshipping shippingaddress addressfields city text",
+    "id": "597-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocapitalize=\"off\" class=\"form-control\" data-validations=\"required minlength:3 maxlength:254 email\" id=\"dwfrm_billing_billingaddress_email_emailaddress\" min=\"\" name=\"dwfrm_billing_billingaddress_email_emailaddress\" placeholder=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email for order confirmation dwfrm billing billingaddress email emailaddress dwfrm billing billingaddress email emailaddress email",
+    "id": "597-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocapitalize=\"off\" class=\"form-control\" data-validations=\"required  email\" id=\"dwfrm_login_username\" min=\"\" name=\"dwfrm_login_username\" placeholder=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email dwfrm login username dwfrm login username email",
+    "id": "597-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocapitalize=\"off\" class=\"form-control\" data-validations=\"required  \" id=\"dwfrm_login_password\" min=\"\" name=\"dwfrm_login_password\" placeholder=\"\" type=\"password\" value=\"\"/>",
+    "feature": "password dwfrm login password dwfrm login password password",
+    "id": "597-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-validations=\"required minlength:5 postalus\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_postal\" inputmode=\"numeric\" min=\"\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_postal\" pattern=\"[0-9]*\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code dwfrm singleshipping shippingaddress addressfields postal dwfrm singleshipping shippingaddress addressfields postal tel",
+    "id": "597-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-validations=\"required maxlength:20 phoneus\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_phone\" inputmode=\"numeric\" min=\"\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_phone\" pattern=\"[0-9]*\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "phone dwfrm singleshipping shippingaddress addressfields phone dwfrm singleshipping shippingaddress addressfields phone tel",
+    "id": "597-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

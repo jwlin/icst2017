@@ -1,0 +1,86 @@
+[
+  {
+    "dom": "<input id=\"email\" maxlength=\"100\" name=\"email\" placeholder=\"user@example.com\" type=\"text\" value=\"\"/>",
+    "feature": "your email address is your username email email text user example com 100",
+    "id": "716-text-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"firstname\" maxlength=\"45\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name text firstname firstname 45",
+    "id": "716-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middlename\" maxlength=\"25\" name=\"middlename\" type=\"text\" value=\"\"/>",
+    "feature": "middle name text middlename middlename 25",
+    "id": "716-text-2",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input id=\"lastname\" maxlength=\"45\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name text lastname lastname 45",
+    "id": "716-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"englishfirstname\" maxlength=\"45\" name=\"englishfirstname\" type=\"text\" value=\"\"/>",
+    "feature": "english first name text englishfirstname englishfirstname 45",
+    "id": "716-text-4",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"englishmiddlename\" maxlength=\"25\" name=\"englishmiddlename\" type=\"text\" value=\"\"/>",
+    "feature": "english middle name text englishmiddlename englishmiddlename 25",
+    "id": "716-text-5",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input class=\"english\" id=\"englishlastname\" maxlength=\"45\" name=\"englishlastname\" type=\"text\" value=\"\"/>",
+    "feature": "english last name englishlastname englishlastname text 45",
+    "id": "716-text-6",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-small\" id=\"date-input\" maxlength=\"10\" name=\"dateofbirth\" placeholder=\"mm/dd/yyyy\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "date of birth dateofbirth date input text mm dd yyyy 10",
+    "id": "716-text-7",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input id=\"homenumber\" maxlength=\"16\" name=\"homenumber\" placeholder=\"5555555555\" type=\"text\" value=\"\"/>",
+    "feature": "please include area or city code and local number homenumber homenumber text 5555555555 16",
+    "id": "716-text-8",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"mobilenumber\" maxlength=\"16\" name=\"mobilenumber\" placeholder=\"5555555555\" type=\"text\" value=\"\"/>",
+    "feature": "please include area or city code and local number mobilenumber mobilenumber text 5555555555 16",
+    "id": "716-text-9",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input id=\"password\" maxlength=\"80\" name=\"password\" placeholder=\"password\" type=\"password\" value=\"\"/>",
+    "feature": "new password password password password password 80",
+    "id": "716-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"confirmpassword\" maxlength=\"80\" name=\"confirmpassword\" placeholder=\"password\" type=\"password\"/>",
+    "feature": "confirm password password confirmpassword password confirmpassword 80",
+    "id": "716-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

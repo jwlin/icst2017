@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input class=\"required\" id=\"a1\" name=\"a1\" type=\"text\" value=\"\"/>",
+    "feature": "first name required text a1 a1",
+    "id": "627-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"required\" id=\"a2\" name=\"a2\" type=\"text\" value=\"\"/>",
+    "feature": "last name required text a2 a2",
+    "id": "627-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"email required\" id=\"a3\" name=\"a3\" type=\"text\" value=\"\"/>",
+    "feature": "email address text a3 a3",
+    "id": "627-text-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"a4\" name=\"a4\" type=\"text\" value=\"\"/>",
+    "feature": "street text a4 a4",
+    "id": "627-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"a5\" name=\"a5\" type=\"text\" value=\"\"/>",
+    "feature": "city text a5 a5",
+    "id": "627-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"a8\" name=\"a8\" type=\"text\" value=\"\"/>",
+    "feature": "zip postal code text a8 a8",
+    "id": "627-text-5",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"required\" id=\"a11\" name=\"a11\" type=\"text\" value=\"\"/>",
+    "feature": "model number required text a11 a11",
+    "id": "627-text-6",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  },
+  {
+    "dom": "<input id=\"a12\" name=\"a12\" type=\"text\" value=\"\"/>",
+    "feature": "series number text a12 a12",
+    "id": "627-text-7",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input id=\"a16\" name=\"a16\" type=\"text\" value=\"\"/>",
+    "feature": "if you checked other please specify text a16 a16",
+    "id": "627-text-8",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"email-signup-pop\" name=\"email-address\" placeholder=\"email address\" title=\"newsletter\" type=\"text\"/>",
+    "feature": "text email address email address",
+    "id": "627-text-9",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-group-field searchbox email-signup\" id=\"email-address\" name=\"email-address\" placeholder=\"email address\" type=\"email\"/>",
+    "feature": "email email address email address email address",
+    "id": "627-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-group-field searchbox\" id=\"search\" name=\"search\" placeholder=\"i am looking for...\" type=\"search\"/>",
+    "feature": "search search i am looking for search",
+    "id": "627-search-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"input-group-field searchbox\" id=\"search-mobile\" name=\"search\" placeholder=\"i am looking for...\" type=\"search\"/>",
+    "feature": "search search i am looking for search mobile",
+    "id": "627-search-1",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"mobile-search\" placeholder=\"model number\" type=\"search\"/>",
+    "feature": "search model number",
+    "id": "627-search-2",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  }
+]

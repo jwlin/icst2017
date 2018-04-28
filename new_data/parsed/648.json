@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input class=\"firstname\" id=\"fields-firstname\" maxlength=\"100\" name=\"fields[firstname]\" required=\"\" type=\"text\"/>",
+    "feature": "first name text fields firstname fields firstname 100",
+    "id": "648-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"lastname\" id=\"fields-lastname\" maxlength=\"100\" name=\"fields[lastname]\" required=\"\" type=\"text\"/>",
+    "feature": "last name text fields lastname fields lastname 100",
+    "id": "648-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"phone\" id=\"fields-phone\" maxlength=\"50\" name=\"fields[phone]\" type=\"text\"/>",
+    "feature": "phone text fields phone fields phone 50",
+    "id": "648-text-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"address\" id=\"fields-address\" maxlength=\"100\" name=\"fields[address]\" type=\"text\"/>",
+    "feature": "address text fields address fields address 100",
+    "id": "648-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"addressline2\" id=\"fields-addressline2\" maxlength=\"100\" name=\"fields[addressline2]\" type=\"text\"/>",
+    "feature": "address line 2 text fields addressline2 fields addressline2 100",
+    "id": "648-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"city\" id=\"fields-city\" maxlength=\"100\" name=\"fields[city]\" type=\"text\"/>",
+    "feature": "city text fields city fields city 100",
+    "id": "648-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"stateprovince\" id=\"fields-stateprovince\" maxlength=\"50\" name=\"fields[stateprovince]\" type=\"text\"/>",
+    "feature": "state province text fields stateprovince fields stateprovince 50",
+    "id": "648-text-6",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input class=\"zippostalcode\" id=\"fields-zippostalcode\" maxlength=\"50\" name=\"fields[zippostalcode]\" type=\"text\"/>",
+    "feature": "zip postal code text fields zippostalcode fields zippostalcode 50",
+    "id": "648-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"serialnumber\" id=\"fields-serialnumber\" maxlength=\"100\" name=\"fields[serialnumber]\" type=\"text\"/>",
+    "feature": "serial number text fields serialnumber fields serialnumber 100",
+    "id": "648-text-8",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"wherepurchased\" id=\"fields-wherepurchased\" maxlength=\"100\" name=\"fields[wherepurchased]\" type=\"text\"/>",
+    "feature": "where purchased text fields wherepurchased fields wherepurchased 100",
+    "id": "648-text-9",
+    "pattern": "store",
+    "topic": "store"
+  },
+  {
+    "dom": "<input class=\"purchaseprice\" id=\"fields-purchaseprice\" maxlength=\"20\" name=\"fields[purchaseprice]\" type=\"text\"/>",
+    "feature": "purchase price text fields purchaseprice fields purchaseprice 20",
+    "id": "648-text-10",
+    "pattern": "price",
+    "topic": "price"
+  },
+  {
+    "dom": "<input class=\"email\" id=\"fields-email\" name=\"fields[email]\" required=\"\" type=\"email\"/>",
+    "feature": "email email fields email fields email",
+    "id": "648-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"newsletter-email\" name=\"92080\" required=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email 92080 newsletter email",
+    "id": "648-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"site-search-field\" name=\"q\" placeholder=\"search\" title=\"tip: add an asterisk (*) for a wildcard search.\" type=\"search\"/>",
+    "feature": "search q search",
+    "id": "648-search-0",
+    "pattern": "search",
+    "topic": "search"
+  }
+]

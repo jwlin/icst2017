@@ -1,0 +1,191 @@
+[
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'customernumbervalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"customernumber\" maxlength=\"10\" name=\"customernumber\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "your pre approved customer number your pre approved customer number customernumber text customernumber 10",
+    "id": "526-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'firstnamevalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"firstname\" maxlength=\"50\" name=\"firstname\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first name first name firstname text firstname 50",
+    "id": "526-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'middlenamevalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"middlename\" maxlength=\"50\" name=\"middlename\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "middle name middle name middlename text middlename 50",
+    "id": "526-text-2",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'lastnamevalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"lastname\" maxlength=\"50\" name=\"lastname\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name last name lastname text lastname 50",
+    "id": "526-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'address1validation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"address1\" maxlength=\"50\" name=\"address1\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address line 1 address line 1 address1 text address1 50",
+    "id": "526-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'address2validation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"address2\" maxlength=\"50\" name=\"address2\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address line 2 address line 2 address2 text address2 50",
+    "id": "526-text-5",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'cityvalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"city\" maxlength=\"50\" name=\"city\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city city city text city 50",
+    "id": "526-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'physicaladdressline1validation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"physicaladdressline1\" maxlength=\"50\" name=\"physicaladdressline1\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address line 1 address line 1 physicaladdressline1 text physicaladdressline1 50",
+    "id": "526-text-7",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'physicaladdressline2validation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"physicaladdressline2\" maxlength=\"50\" name=\"physicaladdressline2\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address line 2 address line 2 physicaladdressline2 text physicaladdressline2 50",
+    "id": "526-text-8",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'physicalcityvalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"physicalcity\" maxlength=\"50\" name=\"physicalcity\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city city physicalcity text physicalcity 50",
+    "id": "526-text-9",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"catalog-number\" maxlength=\"8\" name=\"campaigncatalogcode\" placeholder=\"enter catalog #\" type=\"text\"/>",
+    "feature": "catalog catalog number campaigncatalogcode enter catalog text 8",
+    "id": "526-text-10",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"item-number\" maxlength=\"40\" name=\"id\" placeholder=\"enter item #\" type=\"text\"/>",
+    "feature": "item item number id enter item text 40",
+    "id": "526-text-11",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'emailaddressvalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"emailaddress\" maxlength=\"50\" name=\"emailaddress\" placeholder=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email email emailaddress email emailaddress 50",
+    "id": "526-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'passwordvalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"password\" maxlength=\"50\" name=\"password\" placeholder=\"\" type=\"password\" value=\"\"/>",
+    "feature": "choose a password choose a password password password password 50",
+    "id": "526-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'reenterpasswordvalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"reenterpassword\" maxlength=\"50\" name=\"reenterpassword\" placeholder=\"\" type=\"password\" value=\"\"/>",
+    "feature": "re enter your password re enter your password reenterpassword password reenterpassword 50",
+    "id": "526-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'zipvalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"zip\" maxlength=\"5\" name=\"zip\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code zip code zip tel zip 5",
+    "id": "526-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'physicalzipcodevalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"physicalzipcode\" maxlength=\"5\" name=\"physicalzipcode\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code zip code physicalzipcode tel physicalzipcode 5",
+    "id": "526-tel-1",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-label=\"primary phone area code\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: primaryphone.phone1.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { next: 'primaryphone2' },\n\t\t\t\t\t\t\t\t\tvalue: primaryphone.phone1,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"primaryphone1\" maxlength=\"3\" name=\"primaryphone1\" type=\"tel\" value=\"\"/>",
+    "feature": "primary phone primary phone primaryphone1 tel primaryphone1 3",
+    "id": "526-tel-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-label=\"primary phone next three after area code\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: primaryphone.phone2.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { prev: 'primaryphone1' , next: 'primaryphone3' },\n\t\t\t\t\t\t\t\t\tvalue: primaryphone.phone2,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"primaryphone2\" maxlength=\"3\" name=\"primaryphone2\" type=\"tel\" value=\"\"/>",
+    "feature": "primary phone primary phone primaryphone2 tel primaryphone2 3",
+    "id": "526-tel-3",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-label=\"primary phone last four\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: primaryphone.phone3.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { prev: 'primaryphone2' },\n\t\t\t\t\t\t\t\t\tvalue: primaryphone.phone3,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"primaryphone3\" maxlength=\"4\" name=\"primaryphone3\" type=\"tel\" value=\"\"/>",
+    "feature": "primary phone primary phone primaryphone3 tel primaryphone3 4",
+    "id": "526-tel-4",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-label=\"secondary phone area code\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: secondaryphone.phone1.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { next: 'secondaryphone2' },\n\t\t\t\t\t\t\t\t\tvalue: secondaryphone.phone1,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"secondaryphone1\" maxlength=\"3\" name=\"secondaryphone1\" type=\"tel\" value=\"\"/>",
+    "feature": "secondary phone secondary phone secondaryphone1 tel secondaryphone1 3",
+    "id": "526-tel-5",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-label=\"secondary phone next three after area code\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: secondaryphone.phone2.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { prev: 'secondaryphone1' , next: 'secondaryphone3' },\n\t\t\t\t\t\t\t\t\tvalue: secondaryphone.phone2,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"secondaryphone2\" maxlength=\"3\" name=\"secondaryphone2\" type=\"tel\" value=\"\"/>",
+    "feature": "secondary phone secondary phone secondaryphone2 tel secondaryphone2 3",
+    "id": "526-tel-6",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-label=\"secondary phone last four\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: secondaryphone.phone3.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { prev: 'secondaryphone2' },\n\t\t\t\t\t\t\t\t\tvalue: secondaryphone.phone3,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"secondaryphone3\" maxlength=\"4\" name=\"secondaryphone3\" type=\"tel\" value=\"\"/>",
+    "feature": "secondary phone secondary phone secondaryphone3 tel secondaryphone3 4",
+    "id": "526-tel-7",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-label=\"first three of social security number\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: formmodel.ssn1.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { next: 'user_ssn2' },\n\t\t\t\t\t\t\t\t\tvalue: formmodel.ssn1,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"user_ssn1\" maxlength=\"3\" name=\"user_ssn1\" type=\"tel\" value=\"\"/>",
+    "feature": "social security number social security number user ssn1 tel user ssn1 3",
+    "id": "526-tel-8",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-label=\"middle two of social security number\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: formmodel.ssn2.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { prev: 'user_ssn1' , next: 'user_ssn3' },\n\t\t\t\t\t\t\t\t\tvalue: formmodel.ssn2,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"user_ssn2\" maxlength=\"2\" name=\"user_ssn2\" type=\"tel\" value=\"\"/>",
+    "feature": "social security number social security number user ssn2 tel user ssn2 2",
+    "id": "526-tel-9",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-label=\"last four of social security number\" class=\"sessioncamhidetext form-control \" data-bind=\"hasfocus: formmodel.ssn3.isfocus,\n\t\t\t\t\t\t\t\t\tautotab: { prev: 'user_ssn2' },\n\t\t\t\t\t\t\t\t\tvalue: formmodel.ssn3,\n\t\t\t\t\t\t\t\t\tvalueupdate: ['afterkeydown', 'input']\" id=\"user_ssn3\" maxlength=\"4\" name=\"user_ssn3\" type=\"tel\" value=\"\"/>",
+    "feature": "social security number social security number user ssn3 tel user ssn3 4",
+    "id": "526-tel-10",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"sessioncamhidetext form-control \" data-bind=\"\n\t\t\t\tvalue: field,\n\t\t\t\tvalueupdate: ['afterkeydown', 'input'],\n\t\t\t\thasfocus: field.isfocus,\n\t\t\t\tdisable: $data.disabled,\n\t\t\t\tinlinevalidation: {\n\t\t\t\t\tposition: '' || 'bottom',\n\t\t\t\t\tid: 'catalogcodevalidation',\n\t\t\t\t\tisfeedbackvisible: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tisvalid: false,\n\t\t\t\t\tisnotvalid: ko.computed(function() { return !field.trackedisvalid() }),\n\t\t\t\t\tfeedback: field.error\n\t\t\t\t}\n\t\t\t\" data-track-id=\"\" id=\"catalogcode\" maxlength=\"50\" name=\"catalogcode\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "catalog catalog catalogcode tel catalogcode 50",
+    "id": "526-tel-11",
+    "pattern": "unk",
+    "topic": "unk"
+  }
+]

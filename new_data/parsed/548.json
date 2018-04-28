@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input id=\"first_name\" maxlength=\"12\" name=\"first_name\" type=\"text\"/>",
+    "feature": "first name r text first name first name 12",
+    "id": "548-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middle_name\" maxlength=\"1\" name=\"middle_name\" type=\"text\"/>",
+    "feature": "middle initial text middle name middle name 1",
+    "id": "548-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input id=\"last_name\" maxlength=\"25\" name=\"last_name\" type=\"text\"/>",
+    "feature": "last name r text last name last name 25",
+    "id": "548-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input\" id=\"address1\" maxlength=\"30\" name=\"address1\" type=\"text\"/>",
+    "feature": "home address r text address1 address1 30",
+    "id": "548-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input\" id=\"address2\" maxlength=\"30\" name=\"address2\" type=\"text\"/>",
+    "feature": "address 2 text address2 address2 30",
+    "id": "548-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input\" id=\"city\" maxlength=\"30\" name=\"city\" type=\"text\"/>",
+    "feature": "city r text city city 30",
+    "id": "548-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"input\" id=\"zip\" maxlength=\"5\" name=\"zip\" type=\"text\"/>",
+    "feature": "zip code r text zip zip 5",
+    "id": "548-text-6",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"email\" maxlength=\"70\" name=\"email\" type=\"text\"/>",
+    "feature": "email address r text email email 70",
+    "id": "548-text-7",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"home_phone_area\" maxlength=\"3\" name=\"home_phone_area\" type=\"text\"/>",
+    "feature": "primary phone r text home phone area home phone area 3",
+    "id": "548-text-8",
+    "pattern": "area.*code",
+    "topic": "area_code"
+  },
+  {
+    "dom": "<input id=\"home_phone_prefix\" maxlength=\"3\" name=\"home_phone_prefix\" type=\"text\"/>",
+    "feature": "primary phone r text home phone prefix home phone prefix 3",
+    "id": "548-text-9",
+    "pattern": "area.*code",
+    "topic": "area_code"
+  },
+  {
+    "dom": "<input id=\"home_phone_suffix\" maxlength=\"4\" name=\"home_phone_suffix\" type=\"text\"/>",
+    "feature": "primary phone r text home phone suffix home phone suffix 4",
+    "id": "548-text-10",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"mobile_phone_area\" maxlength=\"3\" name=\"mobile_phone_area\" type=\"text\"/>",
+    "feature": "secondary phone text mobile phone area mobile phone area 3",
+    "id": "548-text-11",
+    "pattern": "area.*code",
+    "topic": "area_code"
+  },
+  {
+    "dom": "<input id=\"mobile_phone_prefix\" maxlength=\"3\" name=\"mobile_phone_prefix\" type=\"text\"/>",
+    "feature": "secondary phone text mobile phone prefix mobile phone prefix 3",
+    "id": "548-text-12",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"mobile_phone_suffix\" maxlength=\"4\" name=\"mobile_phone_suffix\" type=\"text\"/>",
+    "feature": "secondary phone text mobile phone suffix mobile phone suffix 4",
+    "id": "548-text-13",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "dom": "<input id=\"firstname\" name=\"firstname\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required firstname text firstname",
+    "id": "732-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middlename\" name=\"middlename\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "middle name middlename text middlename",
+    "id": "732-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input id=\"lastname\" name=\"lastname\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required lastname text lastname",
+    "id": "732-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"email\" name=\"email\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "e mail is invalid required email text email",
+    "id": "732-text-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"verifyemail\" name=\"verifyemail\" title=\"verify email\" type=\"text\"/>",
+    "feature": "verify e mail verifyemail text verifyemail",
+    "id": "732-text-4",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"login\" name=\"login\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required login text login",
+    "id": "732-text-5",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input id=\"password\" name=\"password\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required password text password",
+    "id": "732-text-6",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"newpassword\" name=\"newpassword\" title=\"enter new password\" type=\"password\"/>",
+    "feature": "required newpassword password newpassword",
+    "id": "732-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"verifypassword\" name=\"verifypassword\" title=\"verify password\" type=\"password\"/>",
+    "feature": "verify password verifypassword password verifypassword",
+    "id": "732-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

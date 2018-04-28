@@ -1,0 +1,247 @@
+[
+  {
+    "dom": "<input class=\"z-textbox\" id=\"sfszz\" style=\"display:none;\" type=\"text\" value=\"bac_consumer_cc_nonsolicited_appstart\"/>",
+    "feature": "sfszz bac consumer cc nonsolicited appstart text",
+    "id": "507-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"z-textbox\" id=\"sfsz_0\" style=\"display:none;\" type=\"text\" value=\"sc0003\"/>",
+    "feature": "sfsz 0 sc0003 text",
+    "id": "507-text-1",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"z-textbox\" id=\"sfsz00\" style=\"display:none;\" type=\"text\" value=\"\"/>",
+    "feature": "sfsz00 text",
+    "id": "507-text-2",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"z-textbox\" id=\"sfsz10\" style=\"display:none;\" type=\"text\" value=\"p\"/>",
+    "feature": "sfsz10 p text",
+    "id": "507-text-3",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_name_tb_icai_fnm_v_1-hint, zz_name_tb_icai_fnm_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_name_tb_icai_fnm_v_1\" maxlength=\"25\" name=\"zz_name_tb_icai_fnm\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first name text zz name tb icai fnm v 1 zz name tb icai fnm 25",
+    "id": "507-text-4",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_name_tb_icai_mnm_v_1-hint, zz_name_tb_icai_mnm_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_name_tb_icai_mnm_v_1\" maxlength=\"25\" name=\"zz_name_tb_icai_mnm\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "middle name text zz name tb icai mnm v 1 zz name tb icai mnm 25",
+    "id": "507-text-5",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_name_tb_icai_lnm_v_1-hint, zz_name_tb_icai_lnm_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_name_tb_icai_lnm_v_1\" maxlength=\"30\" name=\"zz_name_tb_icai_lnm\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name text zz name tb icai lnm v 1 zz name tb icai lnm 30",
+    "id": "507-text-6",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_resi_tb_icai_add1_v_1-hint, zz_resi_tb_icai_add1_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_resi_tb_icai_add1_v_1\" maxlength=\"40\" name=\"zz_resi_tb_icai_add1\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential address line 1 text zz resi tb icai add1 v 1 zz resi tb icai add1 40",
+    "id": "507-text-7",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_resi_tb_icai_add2_v_1-hint, zz_resi_tb_icai_add2_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_resi_tb_icai_add2_v_1\" maxlength=\"40\" name=\"zz_resi_tb_icai_add2\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential address line 2 text zz resi tb icai add2 v 1 zz resi tb icai add2 40",
+    "id": "507-text-8",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_resi_tb_icai_city_v_1-hint, zz_resi_tb_icai_city_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_resi_tb_icai_city_v_1\" maxlength=\"25\" name=\"zz_resi_tb_icai_city\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential residential city text zz resi tb icai city v 1 zz resi tb icai city 25",
+    "id": "507-text-9",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_altresi_tb_icai_add1_v_1-hint, zz_altresi_tb_icai_add1_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_altresi_tb_icai_add1_v_1\" maxlength=\"25\" name=\"zz_altresi_tb_icai_add1\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "mailing address line 1 text zz altresi tb icai add1 v 1 zz altresi tb icai add1 25",
+    "id": "507-text-10",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_altresi_tb_icai_add2_v_1-hint, zz_altresi_tb_icai_add2_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_altresi_tb_icai_add2_v_1\" maxlength=\"25\" name=\"zz_altresi_tb_icai_add2\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "mailing address line 2 text zz altresi tb icai add2 v 1 zz altresi tb icai add2 25",
+    "id": "507-text-11",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_altresi_tb_icai_city_v_1-hint, zz_altresi_tb_icai_city_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_altresi_tb_icai_city_v_1\" maxlength=\"25\" name=\"zz_altresi_tb_icai_city\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "mailing mailing city text zz altresi tb icai city v 1 zz altresi tb icai city 25",
+    "id": "507-text-12",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_emp_employer_v_1-hint, zz_emp_employer_v_1-errtxt\" class=\"tl-private disablecutcopypaste abpa-textbox\" data-field-type=\"\" id=\"zz_emp_employer_v_1\" maxlength=\"30\" name=\"zz_emp_employer\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "company name or employer text zz emp employer v 1 zz emp employer 30",
+    "id": "507-text-13",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_emp_employer_v_2-hint, zz_emp_employer_v_2-errtxt\" class=\"tl-private disablecutcopypaste abpa-textbox\" data-field-type=\"\" id=\"zz_emp_employer_v_2\" maxlength=\"30\" name=\"zz_emp_employer\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "company name or employer text zz emp employer v 2 zz emp employer 30",
+    "id": "507-text-14",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_fnm_v_1-hint, zz_cafm_fnm_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_cafm_fnm_v_1\" maxlength=\"25\" name=\"zz_cafm_fnm\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder first name text zz cafm fnm v 1 zz cafm fnm 25",
+    "id": "507-text-15",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_mnm_v_1-hint, zz_cafm_mnm_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_cafm_mnm_v_1\" maxlength=\"25\" name=\"zz_cafm_mnm\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder middle name text zz cafm mnm v 1 zz cafm mnm 25",
+    "id": "507-text-16",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_lnm_v_1-hint, zz_cafm_lnm_v_1-errtxt\" class=\"w-135 abpa-textbox\" data-field-type=\"\" id=\"zz_cafm_lnm_v_1\" maxlength=\"30\" name=\"zz_cafm_lnm\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder last name text zz cafm lnm v 1 zz cafm lnm 30",
+    "id": "507-text-17",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_add1_v_1-hint, zz_cafm_add1_v_1-errtxt\" class=\"w-300 abpa-textbox\" data-field-type=\"\" id=\"zz_cafm_add1_v_1\" maxlength=\"40\" name=\"zz_cafm_add1\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder residential address line 1 text zz cafm add1 v 1 zz cafm add1 40",
+    "id": "507-text-18",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_add2_v_1-hint, zz_cafm_add2_v_1-errtxt\" class=\"w-175 abpa-textbox\" data-field-type=\"\" id=\"zz_cafm_add2_v_1\" maxlength=\"40\" name=\"zz_cafm_add2\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder residential address line 2 text zz cafm add2 v 1 zz cafm add2 40",
+    "id": "507-text-19",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_city_v_1-hint, zz_cafm_city_v_1-errtxt\" class=\"z-textbox abpa-textbox\" data-field-type=\"\" id=\"zz_cafm_city_v_1\" maxlength=\"25\" name=\"zz_cafm_city\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder city text zz cafm city v 1 zz cafm city 25",
+    "id": "507-text-20",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_email_tb_icai_v_1-hint, zz_email_tb_icai_v_1-errtxt\" class=\"z-textbox abpa-textbox text-box--email abpa-email\" data-field-type=\"email\" id=\"zz_email_tb_icai_v_1\" maxlength=\"48\" name=\"zz_email_tb_icai\" placeholder=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email address email zz email tb icai v 1 zz email tb icai 48",
+    "id": "507-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_resi_tb_icai_zip_v_1-hint, zz_resi_tb_icai_zip_v_1-errtxt\" class=\"z-textbox abpa-textbox text-box--zip\" data-field-type=\"zip\" id=\"zz_resi_tb_icai_zip_v_1\" maxlength=\"10\" name=\"zz_resi_tb_icai_zip\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "residential residential zip code tel zz resi tb icai zip v 1 zz resi tb icai zip 10",
+    "id": "507-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_altresi_tb_icai_zip_v_1-hint, zz_altresi_tb_icai_zip_v_1-errtxt\" class=\"none abpa-textbox text-box--zip\" data-field-type=\"zip\" id=\"zz_altresi_tb_icai_zip_v_1\" maxlength=\"10\" name=\"zz_altresi_tb_icai_zip\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "mailing mailing zip code tel zz altresi tb icai zip v 1 zz altresi tb icai zip 10",
+    "id": "507-tel-1",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_phone_tb_icai_ppn_v_1-hint, zz_phone_tb_icai_ppn_v_1-errtxt\" class=\"z-textbox abpa-textbox text-box--phoneprefill\" data-field-type=\"phoneprefill\" id=\"zz_phone_tb_icai_ppn_v_1\" maxlength=\"12\" name=\"zz_phone_tb_icai_ppn\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "primary phone number tel zz phone tb icai ppn v 1 zz phone tb icai ppn 12",
+    "id": "507-tel-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_ssndob_tb_icai_ssn_v_1-hint, zz_ssndob_tb_icai_ssn_v_1-errtxt\" autocomplete=\"off\" class=\"disablecutcopypaste abpa-textbox text-box--ssn\" data-field-type=\"ssn\" id=\"zz_ssndob_tb_icai_ssn_v_1\" maxlength=\"11\" name=\"zz_ssndob_tb_icai_ssn\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "social security number tel zz ssndob tb icai ssn v 1 zz ssndob tb icai ssn 11",
+    "id": "507-tel-3",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_ssndob_tb_icai_dateofbirth_v_1-hint, zz_ssndob_tb_icai_dateofbirth_v_1-errtxt\" class=\"disablecutcopypaste abpa-textbox text-box--mmddyyyy\" data-field-type=\"mmddyyyy\" id=\"zz_ssndob_tb_icai_dateofbirth_v_1\" maxlength=\"10\" name=\"zz_ssndob_tb_icai_dateofbirth\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "date of birth tel zz ssndob tb icai dateofbirth v 1 zz ssndob tb icai dateofbirth 10",
+    "id": "507-tel-4",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_emp_workphone_v_1-hint, zz_emp_workphone_v_1-errtxt\" class=\"tl-private z-textbox abpa-textbox text-box--phoneprefill\" data-field-type=\"phoneprefill\" id=\"zz_emp_workphone_v_1\" maxlength=\"12\" name=\"zz_emp_workphone\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "work phone number tel zz emp workphone v 1 zz emp workphone 12",
+    "id": "507-tel-5",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_emp_workphone_v_2-hint, zz_emp_workphone_v_2-errtxt\" class=\"tl-private z-textbox abpa-textbox text-box--phoneprefill\" data-field-type=\"phoneprefill\" id=\"zz_emp_workphone_v_2\" maxlength=\"12\" name=\"zz_emp_workphone\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "work phone number tel zz emp workphone v 2 zz emp workphone 12",
+    "id": "507-tel-6",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_name_tb_icai_tan_v_1-hint, zz_name_tb_icai_tan_v_1-errtxt\" class=\"tl-private text-box--currency z-textbox abpa-textbox text-box--with-symbol\" data-field-type=\"currency\" data-formatter=\"currency\" id=\"zz_name_tb_icai_tan_v_1\" maxlength=\"9\" name=\"zz_name_tb_icai_tan\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "total annual income tel zz name tb icai tan v 1 zz name tb icai tan 9",
+    "id": "507-tel-7",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_name_tb_icai_mhp_v_1-hint, zz_name_tb_icai_mhp_v_1-errtxt\" class=\"tl-private text-box--currency z-textbox abpa-textbox text-box--with-symbol\" data-field-type=\"currency\" data-formatter=\"currency\" id=\"zz_name_tb_icai_mhp_v_1\" maxlength=\"8\" name=\"zz_name_tb_icai_mhp\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "monthly housing payment tel zz name tb icai mhp v 1 zz name tb icai mhp 8",
+    "id": "507-tel-8",
+    "pattern": "rent",
+    "topic": "rent"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_zip_v_1-hint, zz_cafm_zip_v_1-errtxt\" class=\"z-textbox abpa-textbox text-box--zip\" data-field-type=\"zip\" id=\"zz_cafm_zip_v_1\" maxlength=\"10\" name=\"zz_cafm_zip\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder zip code tel zz cafm zip v 1 zz cafm zip 10",
+    "id": "507-tel-9",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_phone_v_1-hint, zz_cafm_phone_v_1-errtxt\" class=\"disablecutcopypaste abpa-textbox text-box--phoneprefill\" data-field-type=\"phoneprefill\" id=\"zz_cafm_phone_v_1\" maxlength=\"12\" name=\"zz_cafm_phone\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder primary phone number tel zz cafm phone v 1 zz cafm phone 12",
+    "id": "507-tel-10",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_dob_v_1-hint, zz_cafm_dob_v_1-errtxt\" class=\"disablecutcopypaste abpa-textbox text-box--mmddyyyy\" data-field-type=\"mmddyyyy\" id=\"zz_cafm_dob_v_1\" maxlength=\"10\" name=\"zz_cafm_dob\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder date of birth tel zz cafm dob v 1 zz cafm dob 10",
+    "id": "507-tel-11",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input aria-describedby=\"zz_cafm_ssn_v_1-hint, zz_cafm_ssn_v_1-errtxt\" autocomplete=\"off\" class=\"fl-lt disablecutcopypaste abpa-textbox text-box--ssn\" data-field-type=\"ssn\" id=\"zz_cafm_ssn_v_1\" maxlength=\"11\" name=\"zz_cafm_ssn\" placeholder=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "additional cardholder additional cardholder social security number tel zz cafm ssn v 1 zz cafm ssn 11",
+    "id": "507-tel-12",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  }
+]

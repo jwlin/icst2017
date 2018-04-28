@@ -1,0 +1,93 @@
+[
+  {
+    "dom": "<input aria-label=\"product search. press enter to run search.\" class=\"search-field\" id=\"header-search-field\" maxlength=\"70\" name=\"q\" placeholder=\"search express\" type=\"text\" unbxdattr=\"sq\"/>",
+    "feature": "header search field text search express q 70",
+    "id": "528-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"\" id=\"first-name\" maxlength=\"40\" name=\"first-name\" type=\"text\" value=\"\"/>",
+    "feature": "first name first name text first name 40",
+    "id": "528-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middle-initial\" maxlength=\"2\" name=\"middle-initial\" type=\"text\" value=\"\"/>",
+    "feature": "middle initial middle initial middle initial text 2",
+    "id": "528-text-2",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"\" id=\"last-name\" maxlength=\"40\" name=\"last-name\" type=\"text\" value=\"\"/>",
+    "feature": "last name last name text last name 40",
+    "id": "528-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\" twelve\" id=\"address-line1\" maxlength=\"40\" name=\"address-line1\" type=\"text\" value=\"\"/>",
+    "feature": "address line 1 address line1 text address line1 40",
+    "id": "528-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"twelve\" id=\"address-line2\" maxlength=\"40\" name=\"address-line2\" type=\"text\" value=\"\"/>",
+    "feature": "address line 2 address line2 text address line2 40",
+    "id": "528-text-5",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"\" id=\"city\" maxlength=\"40\" name=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "city city text city 40",
+    "id": "528-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\" six\" id=\"zip\" maxlength=\"5\" name=\"zip\" type=\"text\" value=\"\"/>",
+    "feature": "zip code zip text zip 5",
+    "id": "528-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"\" id=\"secure-card\" maxlength=\"11\" name=\"secure-card\" type=\"text\" value=\"\"/>",
+    "feature": "ssn secure card text secure card 11",
+    "id": "528-text-8",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\" six\" id=\"phone-1\" name=\"phone\" type=\"text\" value=\"\"/>",
+    "feature": "phone phone 1 text phone",
+    "id": "528-text-9",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\" six\" id=\"email\" maxlength=\"40\" name=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "email address email text email 40",
+    "id": "528-text-10",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\" six\" id=\"email-confirm\" maxlength=\"40\" name=\"email-confirm\" type=\"text\" value=\"\"/>",
+    "feature": "re enter email address email confirm text email confirm 40",
+    "id": "528-text-11",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-label=\"email\" class=\"email-input form-element subscribe-email-address-inline\" id=\"email-signup--email-field\" name=\"email\" placeholder=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "women men email signup email field text email email",
+    "id": "528-text-12",
+    "pattern": "email",
+    "topic": "email"
+  }
+]

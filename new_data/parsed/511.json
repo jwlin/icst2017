@@ -1,0 +1,107 @@
+[
+  {
+    "dom": "<input class=\"\" id=\"inpname_firstname_input\" maxlength=\"15\" name=\"inpname_firstname_input\" size=\"23\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "first name inpname firstname input text inpname firstname input 15",
+    "id": "511-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"middleinitialinput\" id=\"inpname_middleinitial_input\" maxlength=\"1\" name=\"inpname_middleinitial_input\" size=\"8\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "optional mi optional inpname middleinitial input text inpname middleinitial input 1",
+    "id": "511-text-1",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"\" id=\"inpname_lastname_input\" maxlength=\"20\" name=\"inpname_lastname_input\" size=\"28\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "last name inpname lastname input text inpname lastname input 20",
+    "id": "511-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"mask-date typetel darkenplaceholder\" id=\"inpdob_input\" maxlength=\"10\" name=\"inpdob_input\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "date of birth inpdob input text inpdob input mm dd yyyy 10",
+    "id": "511-text-3",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input class=\"mask-numeric typetel \" id=\"annualincome_input\" maxlength=\"7\" name=\"annualincome_input\" size=\"7\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration annual income annualincome input text annualincome input 7",
+    "id": "511-text-4",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"postalcode mask-numeric typetel\" id=\"inpaddress_uszipinstantcredit_input\" maxlength=\"5\" name=\"inpaddress_uszipinstantcredit_input\" size=\"14\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "zip code inpaddress uszipinstantcredit input text inpaddress uszipinstantcredit input 5",
+    "id": "511-text-5",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"street-name address1 mask-address instantcredit\" id=\"inpaddress_streetaddress_input\" maxlength=\"30\" name=\"inpaddress_streetaddress_input\" size=\"33\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "street address inpaddress streetaddress input text inpaddress streetaddress input 30",
+    "id": "511-text-6",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"apt-number address2 mask-apt darkenplaceholder\" id=\"inpaddress_line2_input\" maxlength=\"30\" name=\"inpaddress_line2_input\" placeholder=\"ex: apt b, suite 202, etc.\" size=\"33\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "optional suite or apartment optional inpaddress line2 input text inpaddress line2 input ex apt b suite 202 etc 30",
+    "id": "511-text-7",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"us-city locality\" id=\"inpaddress_uscity_input\" maxlength=\"20\" name=\"inpaddress_uscity_input\" size=\"28\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "city inpaddress uscity input text inpaddress uscity input 20",
+    "id": "511-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"email-address\" id=\"email_input\" maxlength=\"80\" name=\"email_input\" size=\"33\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "email address email input text email input 80",
+    "id": "511-text-9",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"confirmfield confirm-email-address\" id=\"confirmemail_input\" maxlength=\"80\" name=\"confirmemail_input\" size=\"33\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "confirm email address confirmemail input text confirmemail input 80",
+    "id": "511-text-10",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"typetel mask-phone\" id=\"inpmobilephone_fullphonenumber\" maxlength=\"12\" name=\"inpmobilephone_fullphonenumber\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "mobile phone inpmobilephone fullphonenumber text inpmobilephone fullphonenumber 12",
+    "id": "511-text-11",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"typetel mask-phone\" id=\"inpaltphone_fullphonenumber\" maxlength=\"12\" name=\"inpaltphone_fullphonenumber\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "alternate phone inpaltphone fullphonenumber text inpaltphone fullphonenumber 12",
+    "id": "511-text-12",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input class=\"\" id=\"referralcode_input\" maxlength=\"10\" name=\"referralcode_input\" size=\"12\" tabindex=\"0\" type=\"text\" value=\"\"/>",
+    "feature": "if you received a referral code with your credit card offer please enter it now your code may include up to 10 characters including letters and numbers and is not case sensitive optional if you received a referral code with your credit card offer please enter it now your code may include up to 10 characters including letters and numbers and is not case sensitive referral code optional referralcode input text referralcode input 10",
+    "id": "511-text-13",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\" noautocomplete\" id=\"inpssn_ssn\" maxlength=\"9\" name=\"inpssn_ssn\" placeholder=\"\" size=\"9\" tabindex=\"0\" type=\"password\" value=\"\"/>",
+    "feature": "why do you need my social security number we use this information to verify your identity and obtain credit bureau information why do you need my social security number we use this information to verify your identity and obtain credit bureau information social security number inpssn ssn password inpssn ssn 9",
+    "id": "511-password-0",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  }
+]

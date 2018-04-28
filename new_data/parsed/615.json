@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"autocomplete-product registria_field \" data-allowfreeinput=\"true\" data-beginswith=\"true\" data-showall=\"true\" id=\"model\" name=\"product[model]\" type=\"text\"/>",
+    "feature": "model number unable to find model number enter manually and check here unable to find model number enter manually and check here text product model model",
+    "id": "615-text-0",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"serial\" name=\"product[serial_number]\" type=\"text\" value=\"\"/>",
+    "feature": "serial number product serial number serial text",
+    "id": "615-text-1",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"full-name\" id=\"full_name\" required=\"\" type=\"text\"/>",
+    "feature": "full name full name text",
+    "id": "615-text-2",
+    "pattern": "full.*name",
+    "topic": "full_name"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"address1\" name=\"user[address_attributes][address1]\" placeholder=\" enter a location \" type=\"text\"/>",
+    "feature": "address user address attributes address1 address1 enter a location text",
+    "id": "615-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"address2\" name=\"user[address_attributes][address2]\" type=\"text\"/>",
+    "feature": "unit suite user address attributes address2 address2 text",
+    "id": "615-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"city\" name=\"user[address_attributes][city]\" type=\"text\"/>",
+    "feature": "city user address attributes city city text",
+    "id": "615-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"registria_field autocomplete-state\" id=\"state\" name=\"user[address_attributes][state]\" type=\"text\"/>",
+    "feature": "state user address attributes state state text",
+    "id": "615-text-6",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"registria_field\" data-allowfreeinput=\"true\" id=\"purchased_at\" name=\"product[purchased_at]\" type=\"text\"/>",
+    "feature": "purchase location text product purchased at purchased at",
+    "id": "615-text-7",
+    "pattern": "store",
+    "topic": "store"
+  },
+  {
+    "dom": "<input class=\"registria_field \" id=\"email\" name=\"user[email]\" type=\"email\" value=\"\"/>",
+    "feature": "email user email email email",
+    "id": "615-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"registria_field mask-phone\" id=\"phone_alternate\" name=\"user[phone_alternate]\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number user phone alternate phone alternate tel",
+    "id": "615-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"registria_field mask-phone\" id=\"phone\" name=\"user[phone]\" type=\"tel\" value=\"\"/>",
+    "feature": "mobile phone number user phone phone tel",
+    "id": "615-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"registria_field reverse-zip\" id=\"zip\" name=\"user[address_attributes][zip]\" type=\"tel\"/>",
+    "feature": "zip code user address attributes zip zip tel",
+    "id": "615-tel-2",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"registria_field mask-date\" id=\"purchase_date\" name=\"product[purchase_date]\" type=\"tel\"/>",
+    "feature": "purchase date product purchase date purchase date tel",
+    "id": "615-tel-3",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"registria_field mask-numerical\" id=\"price_paid\" name=\"product[price_paid]\" placeholder=\"xxx.xx\" style=\"padding-left:21px;\" type=\"tel\"/>",
+    "feature": "purchase price tel product price paid price paid xxx xx",
+    "id": "615-tel-4",
+    "pattern": "price",
+    "topic": "price"
+  }
+]

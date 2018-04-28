@@ -1,0 +1,114 @@
+[
+  {
+    "dom": "<input aria-label=\"search apple.com\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"ac-gn-searchform-input\" id=\"ac-gn-searchform-input\" placeholder=\"search apple.com\" spellcheck=\"false\" type=\"text\"/>",
+    "feature": "ac gn searchform input search apple com text",
+    "id": "561-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"\" data-autom=\"shipping-user-firstname\" id=\"shipping-user-firstname\" maxlength=\"14\" name=\"shipping-user-firstname\" size=\"10\" type=\"text\"/>",
+    "feature": "first name first name text shipping user firstname shipping user firstname 14",
+    "id": "561-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"\" data-autom=\"shipping-user-lastname\" id=\"shipping-user-lastname\" maxlength=\"20\" name=\"shipping-user-lastname\" size=\"10\" type=\"text\"/>",
+    "feature": "last name last name text shipping user lastname shipping user lastname 20",
+    "id": "561-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"\" data-autom=\"shipping-user-companyname\" id=\"shipping-user-companyname\" maxlength=\"35\" name=\"shipping-user-companyname\" size=\"35\" type=\"text\"/>",
+    "feature": "company name optional company name optional text shipping user companyname shipping user companyname 35",
+    "id": "561-text-3",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"kp-tel\" data-autom=\"shipping-user-daytimephoneareacode\" id=\"shipping-user-daytimephoneareacode\" maxlength=\"3\" name=\"shipping-user-daytimephoneareacode\" size=\"3\" type=\"text\"/>",
+    "feature": "area code area code text shipping user daytimephoneareacode shipping user daytimephoneareacode 3",
+    "id": "561-text-4",
+    "pattern": "area.*code",
+    "topic": "area_code"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"kp-tel\" data-autom=\"shipping-user-daytimephone\" id=\"shipping-user-daytimephone\" maxlength=\"8\" name=\"shipping-user-daytimephone\" size=\"8\" type=\"text\"/>",
+    "feature": "primary phone primary phone text shipping user daytimephone shipping user daytimephone 8",
+    "id": "561-text-5",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"\" data-autom=\"shipping-user-street\" id=\"shipping-user-street\" maxlength=\"30\" name=\"shipping-user-street\" size=\"20\" type=\"text\"/>",
+    "feature": "street address street address text shipping user street shipping user street 30",
+    "id": "561-text-6",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"\" data-autom=\"shipping-user-street2\" id=\"shipping-user-street2\" maxlength=\"30\" name=\"shipping-user-street2\" size=\"20\" type=\"text\"/>",
+    "feature": "apt suite building optional apt suite building optional text shipping user street2 shipping user street2 30",
+    "id": "561-text-7",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"\" data-autom=\"shipping-user-city\" id=\"shipping-user-city\" maxlength=\"30\" name=\"shipping-user-city\" size=\"10\" type=\"text\"/>",
+    "feature": "city city text shipping user city shipping user city 30",
+    "id": "561-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"\" data-autom=\"shipping-user-state\" id=\"shipping-user-state\" maxlength=\"2\" name=\"shipping-user-state\" size=\"2\" type=\"text\"/>",
+    "feature": "state state text shipping user state shipping user state 2",
+    "id": "561-text-9",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"\" data-autom=\"shipping-user-postalcode\" id=\"shipping-user-postalcode\" maxlength=\"10\" name=\"shipping-user-postalcode\" size=\"5\" type=\"text\"/>",
+    "feature": "zip code zip code text shipping user postalcode shipping user postalcode 10",
+    "id": "561-text-10",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"kp-email\" data-autom=\"shipping-user-emailaddress\" id=\"shipping-user-emailaddress\" maxlength=\"50\" name=\"shipping-user-emailaddress\" size=\"35\" type=\"text\"/>",
+    "feature": "email address optional email address optional text shipping user emailaddress shipping user emailaddress 50",
+    "id": "561-text-11",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"kp-tel\" data-autom=\"shipping-user-mobilephoneareacode\" id=\"shipping-user-mobilephoneareacode\" maxlength=\"3\" name=\"shipping-user-mobilephoneareacode\" size=\"3\" type=\"text\"/>",
+    "feature": "area code area code text shipping user mobilephoneareacode shipping user mobilephoneareacode 3",
+    "id": "561-text-12",
+    "pattern": "area.*code",
+    "topic": "area_code"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"kp-tel\" data-autom=\"shipping-user-mobilephone\" id=\"shipping-user-mobilephone\" maxlength=\"8\" name=\"shipping-user-mobilephone\" size=\"8\" type=\"text\"/>",
+    "feature": "mobile phone optional mobile phone optional text shipping user mobilephone shipping user mobilephone 8",
+    "id": "561-text-13",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input aria-invalid=\"false\" class=\"\" data-autom=\"promo-code-edit-field-input\" id=\"promo-code-edit-field-input\" maxlength=\"12\" type=\"text\"/>",
+    "feature": "promo code promo code text promo code edit field input 12",
+    "id": "561-text-14",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"storelocator-search-zip\" maxlength=\"5\" placeholder=\"zip\" type=\"search\"/>",
+    "feature": "search zip search storelocator search zip 5",
+    "id": "561-search-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  }
+]

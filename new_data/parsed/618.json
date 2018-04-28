@@ -1,0 +1,149 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"search-input js-searchtext\" id=\"js-searchtext\" name=\"js-searchtext\" placeholder=\"search, model #, etc\" tabindex=\"1\" type=\"text\"/>",
+    "feature": "search model etc js searchtext js searchtext text",
+    "id": "618-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-email=\"the email field is not a valid e-mail address.\" data-val-required=\"this field is required!\" id=\"signin_email\" name=\"signin.email\" placeholder=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "returning members signin email email signin email text",
+    "id": "618-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field first name has maximum length of 50 characters long.\" data-val-length-max=\"50\" data-val-required=\"this field is required!\" id=\"register_firstname\" name=\"register.firstname\" placeholder=\"*first name\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register firstname first name register firstname text",
+    "id": "618-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field last name has maximum length of 50 characters long.\" data-val-length-max=\"50\" data-val-required=\"this field is required!\" id=\"register_lastname\" name=\"register.lastname\" placeholder=\"*last name\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register lastname last name register lastname text",
+    "id": "618-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-email=\"invalid e-mail address\" data-val-required=\"this field is required!\" id=\"register_email\" name=\"register.email\" placeholder=\"*email address\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register email email address register email text",
+    "id": "618-text-4",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field street address has maximum length of 100 characters long.\" data-val-length-max=\"100\" id=\"register_address1\" name=\"register.address1\" placeholder=\"street address\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register address1 street address register address1 text",
+    "id": "618-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field apt/unit # has maximum length of 50 characters long.\" data-val-length-max=\"50\" id=\"register_address2\" name=\"register.address2\" placeholder=\"apt/unit #\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register address2 apt unit register address2 text",
+    "id": "618-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field city has maximum length of 50 characters long.\" data-val-length-max=\"50\" id=\"register_city\" name=\"register.city\" placeholder=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register city city register city text",
+    "id": "618-text-7",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"\" data-val=\"true\" data-val-length=\"this field zip has maximum length of 10 characters long.\" data-val-length-max=\"10\" data-val-regex=\"invalid u.s. zip code\" data-val-regex-pattern=\"^[0-9]{5}(?:-[0-9]{4})?$\" id=\"register_zip\" name=\"register.zip\" placeholder=\"zip code\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register zip zip code register zip text",
+    "id": "618-text-8",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-box js-phone-num\" data-val=\"true\" data-val-length=\"this field phone has maximum length of 15 characters long.\" data-val-length-max=\"15\" data-val-regex=\"invalid phone number format\" data-val-regex-pattern=\"^((1-)?\\d{3}-)?\\d{3}-\\d{4}$\" id=\"register_phonenumber\" name=\"register.phonenumber\" placeholder=\"xxx-xxx-xxxx\" type=\"text\" value=\"\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register phonenumber xxx xxx xxxx register phonenumber text",
+    "id": "618-text-9",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field company has maximum length of 100 characters long.\" data-val-length-max=\"100\" id=\"register_company\" name=\"register.company\" placeholder=\"company name\" type=\"text\" value=\"\"/>",
+    "feature": "select all that apply what industry are you in do you earn a living with tools yes no professional diy do it yourself hobbyist how many tools do you own how many makita tools do you own how many tools do you buy annually are you a primary tool purchaser yes no register company company name register company text",
+    "id": "618-text-10",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field positionrole has maximum length of 100 characters long.\" data-val-length-max=\"100\" id=\"register_positionrole\" name=\"register.positionrole\" placeholder=\"position/role\" type=\"text\" value=\"\"/>",
+    "feature": "select all that apply what industry are you in do you earn a living with tools yes no professional diy do it yourself hobbyist how many tools do you own how many makita tools do you own how many tools do you buy annually are you a primary tool purchaser yes no register positionrole position role register positionrole text",
+    "id": "618-text-11",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field companyaddress1 has maximum length of 100 characters long.\" data-val-length-max=\"100\" id=\"register_companyaddress1\" name=\"register.companyaddress1\" placeholder=\"street address\" type=\"text\" value=\"\"/>",
+    "feature": "select all that apply what industry are you in do you earn a living with tools yes no professional diy do it yourself hobbyist how many tools do you own how many makita tools do you own how many tools do you buy annually are you a primary tool purchaser yes no register companyaddress1 street address register companyaddress1 text",
+    "id": "618-text-12",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field apt/unit # has maximum length of 50 characters long.\" data-val-length-max=\"50\" id=\"register_companyaddress2\" name=\"register.companyaddress2\" placeholder=\"company apt./suite\" type=\"text\" value=\"\"/>",
+    "feature": "select all that apply what industry are you in do you earn a living with tools yes no professional diy do it yourself hobbyist how many tools do you own how many makita tools do you own how many tools do you buy annually are you a primary tool purchaser yes no register companyaddress2 company apt suite register companyaddress2 text",
+    "id": "618-text-13",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field companycity has maximum length of 50 characters long.\" data-val-length-max=\"50\" id=\"register_companycity\" name=\"register.companycity\" placeholder=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "select all that apply what industry are you in do you earn a living with tools yes no professional diy do it yourself hobbyist how many tools do you own how many makita tools do you own how many tools do you buy annually are you a primary tool purchaser yes no register companycity city register companycity text",
+    "id": "618-text-14",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"this field companyzip has maximum length of 10 characters long.\" data-val-length-max=\"10\" data-val-regex=\"invalid u.s. zip code\" data-val-regex-pattern=\"^[0-9]{5}(?:-[0-9]{4})?$\" id=\"register_companyzip\" name=\"register.companyzip\" placeholder=\"company zip\" type=\"text\" value=\"\"/>",
+    "feature": "select all that apply what industry are you in do you earn a living with tools yes no professional diy do it yourself hobbyist how many tools do you own how many makita tools do you own how many tools do you buy annually are you a primary tool purchaser yes no register companyzip company zip register companyzip text",
+    "id": "618-text-15",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-box js-phone-num\" data-val=\"true\" data-val-length=\"this field company phone number has maximum length of 15 characters long.\" data-val-length-max=\"15\" data-val-regex=\"invalid phone number format\" data-val-regex-pattern=\"^((1-)?\\d{3}-)?\\d{3}-\\d{4}$\" id=\"register_companyphonenumber\" name=\"register.companyphonenumber\" placeholder=\"xxx-xxx-xxxx\" type=\"text\" value=\"\"/>",
+    "feature": "select all that apply what industry are you in do you earn a living with tools yes no professional diy do it yourself hobbyist how many tools do you own how many makita tools do you own how many tools do you buy annually are you a primary tool purchaser yes no register companyphonenumber xxx xxx xxxx register companyphonenumber text",
+    "id": "618-text-16",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input name=\"email\" placeholder=\"email address\" type=\"email\" value=\"\"/>",
+    "feature": "email address email email",
+    "id": "618-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-required=\"this field is required!\" id=\"signin_password\" name=\"signin.password\" placeholder=\"password\" type=\"password\"/>",
+    "feature": "returning members signin password password signin password password",
+    "id": "618-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-length=\"the password must be at least 6 characters long.\" data-val-length-max=\"100\" data-val-length-min=\"6\" data-val-required=\"this field is required!\" id=\"register_password\" name=\"register.password\" placeholder=\"*enter your password\" type=\"password\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register password enter your password register password password",
+    "id": "618-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"input-box\" data-val=\"true\" data-val-equalto=\"the password and confirmation password do not match.\" data-val-equalto-other=\"*.password\" id=\"register_confirmpassword\" name=\"register.confirmpassword\" placeholder=\"re-enter your password\" type=\"password\"/>",
+    "feature": "keep me informed about makita promotions and special offers do not keep me informed register confirmpassword re enter your password register confirmpassword password",
+    "id": "618-password-2",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

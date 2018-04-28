@@ -1,0 +1,107 @@
+[
+  {
+    "dom": "<input class=\"forms-text sessioncamexclude js-forms-text js-email-notify -tv-ignore:e651\" data-parsley-is-email=\"true\" data-parsley-is-email-message=\"please enter a valid email address.\" data-parsley-required-message=\"please enter your email address.\" id=\"email-sticky\" name=\"email\" required=\"\" type=\"text\"/>",
+    "feature": "email address email email sticky text",
+    "id": "604-text-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-user-email sessioncamexclude\" data-parsley-is-email=\"true\" data-parsley-is-email-message=\"please enter a valid email address.\" data-parsley-required-message=\"please enter your email address.\" id=\"email\" name=\"email\" required=\"\" type=\"text\"/>",
+    "feature": "email address email email text",
+    "id": "604-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-auto-tabable sessioncamexclude\" data-minimum-length=\"3\" data-parsley-minlength-message=\"please enter your serial number.\" data-parsley-required-message=\"please enter your serial number.\" id=\"serial1\" maxlength=\"3\" minlength=\"3\" name=\"serial1\" placeholder=\"***\" required=\"\" type=\"text\"/>",
+    "feature": "prefix serial1 serial1 text 3",
+    "id": "604-text-2",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-auto-tabable sessioncamexclude\" data-minimum-length=\"2\" data-parsley-minlength-message=\"please enter your serial number.\" data-parsley-required-message=\"please enter your serial number.\" id=\"serial2\" maxlength=\"2\" minlength=\"2\" name=\"serial2\" placeholder=\"**\" required=\"\" type=\"text\"/>",
+    "feature": "market serial2 serial2 text 2",
+    "id": "604-text-3",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-auto-tabable sessioncamexclude\" data-minimum-length=\"5\" data-parsley-required-message=\"please enter your serial number.\" id=\"serial3\" maxlength=\"8\" minlength=\"5\" name=\"serial3\" placeholder=\"********\" required=\"\" type=\"text\"/>",
+    "feature": "suffix serial3 serial3 text 8",
+    "id": "604-text-4",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-forms-field find-login__forms-text sessioncamexclude\" data-parsley-is-email=\"true\" data-parsley-is-email-message=\"please enter a valid email address.\" data-parsley-required-message=\"please enter your email address.\" id=\"login-email\" name=\"email\" required=\"\" type=\"email\"/>",
+    "feature": "email address email login email email",
+    "id": "604-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text sessioncamexclude\" data-parsley-is-email=\"true\" data-parsley-is-email-message=\"please enter a valid email address.\" data-parsley-required-message=\"please enter your email address.\" id=\"email-\" name=\"email\" required=\"\" type=\"email\"/>",
+    "feature": "email address email email email",
+    "id": "604-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-user-password password-strength-indicator__input-password sessioncamexclude\" data-parsley-minlength=\"6\" data-parsley-minlength-message=\"your password must be at least six characters long and contain a number or special character.\" data-parsley-required-message=\"please enter a password.\" id=\"newpassword\" minlength=\"6\" name=\"password\" required=\"\" type=\"password\"/>",
+    "feature": "new password password newpassword password",
+    "id": "604-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-check-password password-strength-indicator__input-password sessioncamexclude\" data-parsley-equalto=\"#newpassword\" data-parsley-equalto-message=\"your passwords don't seem to match. please try again.\" data-parsley-minlength=\"6\" data-parsley-minlength-message=\"your password must be at least six characters long and contain a number or special character.\" data-parsley-required-message=\"please enter a password.\" id=\"newpasswordconfirm\" minlength=\"6\" name=\"checkpassword\" required=\"\" type=\"password\"/>",
+    "feature": "confirm password checkpassword newpasswordconfirm password",
+    "id": "604-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-forms-field find-login__forms-text sessioncamexclude\" data-parsley-required-message=\"please enter a password.\" id=\"password\" name=\"password\" required=\"\" type=\"password\"/>",
+    "feature": "password password password password",
+    "id": "604-password-2",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"hidden-sm-down search-nav__input js-search-nav-input\" disabled=\"\" id=\"search-nav-input-small\" placeholder=\"search\" type=\"search\" value=\"search\"/>",
+    "feature": "www dyson com open dyson search box search nav input small search search search",
+    "id": "604-search-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" autofocus=\"\" class=\"search-nav__overlay-input js-search-input\" id=\"search-nav-input\" name=\"searchtext\" placeholder=\"www.dyson.com\" required=\"\" type=\"search\"/>",
+    "feature": "search www dyson com searchtext search nav input www dyson com search",
+    "id": "604-search-1",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-forms-month js-auto-tabable sessioncamexclude\" data-minimum-length=\"2\" data-parsley-required-message=\"please complete the purchase date.\" data-parsley-type=\"number\" data-parsley-type-message=\"please complete the purchase date.\" id=\"month\" maxlength=\"2\" minlength=\"2\" name=\"month\" required=\"\" type=\"tel\"/>",
+    "feature": "mm month month tel 2",
+    "id": "604-tel-0",
+    "pattern": "month",
+    "topic": "month"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-forms-day js-auto-tabable sessioncamexclude\" data-minimum-length=\"2\" data-parsley-required-message=\"please complete the purchase date.\" data-parsley-type=\"number\" data-parsley-type-message=\"please complete the purchase date.\" id=\"day\" maxlength=\"2\" minlength=\"2\" name=\"day\" required=\"\" type=\"tel\"/>",
+    "feature": "dd day day tel 2",
+    "id": "604-tel-1",
+    "pattern": "day",
+    "topic": "day"
+  },
+  {
+    "dom": "<input class=\"forms-text js-forms-text js-forms-year js-auto-tabable sessioncamexclude\" data-minimum-length=\"4\" data-parsley-required-message=\"please complete the purchase date.\" data-parsley-type=\"number\" data-parsley-type-message=\"please complete the purchase date.\" id=\"year\" maxlength=\"4\" minlength=\"4\" name=\"year\" required=\"\" type=\"tel\"/>",
+    "feature": "yyyy year year tel 4",
+    "id": "604-tel-2",
+    "pattern": "year",
+    "topic": "year"
+  }
+]

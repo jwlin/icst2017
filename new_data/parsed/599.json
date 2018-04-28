@@ -1,0 +1,58 @@
+[
+  {
+    "dom": "<input class=\"firstname input-text rxvalidate required\" data-formid=\"firstname\" data-pattern=\"^((?!d{4,}).)*$\" id=\"dwfrm_shipping_address_addressfields_firstname\" maxlength=\"14\" name=\"dwfrm_shipping_address_addressfields_firstname\" pattern=\"^((?!d{4,}).)*$\" type=\"text\" value=\"\"/>",
+    "feature": "first name first name dwfrm shipping address addressfields firstname text dwfrm shipping address addressfields firstname 14",
+    "id": "599-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"lastname input-text rxvalidate required\" data-formid=\"lastname\" data-pattern=\"^((?!d{4,}).)*$\" id=\"dwfrm_shipping_address_addressfields_lastname\" maxlength=\"15\" name=\"dwfrm_shipping_address_addressfields_lastname\" pattern=\"^((?!d{4,}).)*$\" type=\"text\" value=\"\"/>",
+    "feature": "last name last name dwfrm shipping address addressfields lastname text dwfrm shipping address addressfields lastname 15",
+    "id": "599-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"companyname input-text rxvalidate\" data-formid=\"companyname\" data-pattern=\"^[0-9a-za-z &amp;/.,#'-]*[a-za-z][0-9a-za-z &amp;/.,#'-]*$\" id=\"dwfrm_shipping_address_addressfields_companyname\" maxlength=\"30\" name=\"dwfrm_shipping_address_addressfields_companyname\" pattern=\"^[0-9a-za-z &amp;/.,#'-]*[a-za-z][0-9a-za-z &amp;/.,#'-]*$\" type=\"text\" value=\"\"/>",
+    "feature": "company or organization name company or organization name dwfrm shipping address addressfields companyname text dwfrm shipping address addressfields companyname 30",
+    "id": "599-text-2",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"address1 input-text rxvalidate rxvalidate street1 required verify\" data-formid=\"address1\" data-pattern=\"^[0-9a-za-z \\/\\.,#'-]*[a-za-z][0-9a-za-z \\/\\.,#'-]*$\" id=\"dwfrm_shipping_address_addressfields_address1\" maxlength=\"30\" name=\"dwfrm_shipping_address_addressfields_address1\" pattern=\"^[0-9a-za-z \\/\\.,#'-]*[a-za-z][0-9a-za-z \\/\\.,#'-]*$\" type=\"text\" value=\"\"/>",
+    "feature": "address address dwfrm shipping address addressfields address1 text dwfrm shipping address addressfields address1 30",
+    "id": "599-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"city input-text rxvalidate required verify\" data-formid=\"city\" data-pattern=\"^[0-9a-za-z \\/\\.,#'-]*$\" id=\"dwfrm_shipping_address_addressfields_city\" maxlength=\"30\" minlength=\"2\" name=\"dwfrm_shipping_address_addressfields_city\" pattern=\"^[0-9a-za-z \\/\\.,#'-]*$\" type=\"text\" value=\"\"/>",
+    "feature": "city city dwfrm shipping address addressfields city text dwfrm shipping address addressfields city 30",
+    "id": "599-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"phoneextension input-text rxvalidate\" data-formid=\"phoneextension\" data-pattern=\"^\\d*$\" id=\"dwfrm_shipping_address_addressfields_phoneextension\" maxlength=\"6\" minlength=\"1\" name=\"dwfrm_shipping_address_addressfields_phoneextension\" pattern=\"^\\d*$\" type=\"text\" value=\"\"/>",
+    "feature": "extension extension dwfrm shipping address addressfields phoneextension text dwfrm shipping address addressfields phoneextension 6",
+    "id": "599-text-5",
+    "pattern": "phone.*ext",
+    "topic": "phone_ext"
+  },
+  {
+    "dom": "<input class=\"postal input-text rxvalidate required verify\" data-formid=\"postal\" data-pattern=\"^((\\d{5})|(\\d{5}-\\d{4})|(\\d{9}))$\" id=\"dwfrm_shipping_address_addressfields_postal\" maxlength=\"10\" minlength=\"5\" name=\"dwfrm_shipping_address_addressfields_postal\" pattern=\"^((\\d{5})|(\\d{5}-\\d{4})|(\\d{9}))$\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code zip code dwfrm shipping address addressfields postal tel dwfrm shipping address addressfields postal 10",
+    "id": "599-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"phone input-text required\" data-formid=\"phone\" id=\"dwfrm_shipping_address_addressfields_phone\" maxlength=\"20\" name=\"dwfrm_shipping_address_addressfields_phone\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number phone number dwfrm shipping address addressfields phone tel dwfrm shipping address addressfields phone 20",
+    "id": "599-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

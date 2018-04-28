@@ -1,0 +1,289 @@
+[
+  {
+    "dom": "<input class=\"input-field\" data-bind=\"value: first_name, validate: 'value'\" id=\"shipping-first-name-box\" maxlength=\"50\" name=\"first_name\" type=\"text\"/>",
+    "feature": "required first name shipping first name box first name text 50",
+    "id": "571-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-field\" data-bind=\"value: last_name, validate: 'value'\" id=\"shipping-last-name-box\" maxlength=\"50\" name=\"last_name\" type=\"text\"/>",
+    "feature": "required last name shipping last name box last name text 50",
+    "id": "571-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-field\" data-bind=\"value: address1, validate: 'value'\" id=\"shipping-address-1\" maxlength=\"50\" name=\"address1\" type=\"text\"/>",
+    "feature": "required street address shipping address 1 address1 text 50",
+    "id": "571-text-2",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-field\" data-bind=\"value: address2\" id=\"shipping-address-2\" maxlength=\"50\" name=\"address2\" type=\"text\"/>",
+    "feature": "optional street address line 2 shipping address 2 address2 text 50",
+    "id": "571-text-3",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"input-field\" data-bind=\"value: city, validate: 'value'\" data-di-unmask-field=\"\" data-errordescription=\"shipping-city-error\" id=\"shipping-city\" maxlength=\"50\" name=\"city\" type=\"text\"/>",
+    "feature": "required city shipping city city text 50",
+    "id": "571-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"input-field\" data-bind=\"value: postal_code, validate: 'value'\" data-di-unmask-field=\"\" data-errordescription=\"shipping-postal_code-error\" id=\"ship-zip\" name=\"postal_code\" type=\"text\"/>",
+    "feature": "provide your zip for city state ship zip postal code text",
+    "id": "571-text-5",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-field\" data-bind=\"value: c_emailaddress, validate: 'value'\" id=\"email-shipping\" maxlength=\"50\" name=\"c_emailaddress\" type=\"text\"/>",
+    "feature": "required email email shipping c emailaddress text 50",
+    "id": "571-text-6",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"read-only hide-optional\" data-bind=\"css: {expired: $data.isexpired &amp;&amp; $data.isexpired()}, value: month() + '/' + yearreadonly()\" disabled=\"\" id=\"exp_date-in-page\" name=\"expirationdate\" type=\"text\"/>",
+    "feature": "expires exp date in page expirationdate text",
+    "id": "571-text-7",
+    "pattern": "credit.*exp",
+    "topic": "credit_card_exp"
+  },
+  {
+    "dom": "<input class=\"read-only\" data-bind=\"value: owner, validate: 'value', attr: { 'disabled': !isaddcreditcardform(), 'required': isaddcreditcardform() }, css: { 'hide-optional': !isaddcreditcardform() }\" id=\"owner-in-page\" type=\"text\"/>",
+    "feature": "name on card owner in page text",
+    "id": "571-text-8",
+    "pattern": "full.*name",
+    "topic": "full_name"
+  },
+  {
+    "dom": "<input autofocus=\"\" data-bind=\"value: first_name, validate: 'value'\" id=\"first_name-in-page\" required=\"\" type=\"text\"/>",
+    "feature": "first name first name in page text",
+    "id": "571-text-9",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input data-bind=\"value: last_name, validate: 'value'\" id=\"last_name-in-page\" required=\"\" type=\"text\"/>",
+    "feature": "last name last name in page text",
+    "id": "571-text-10",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input data-bind=\"value: address1, validate: 'value'\" id=\"address1-in-page\" required=\"\" type=\"text\"/>",
+    "feature": "address 1 address1 in page text",
+    "id": "571-text-11",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input data-bind=\"value: address2\" id=\"address2-in-page\" type=\"text\"/>",
+    "feature": "address 2 address2 in page text",
+    "id": "571-text-12",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-bind=\"value: city, validate: 'value'\" id=\"city-in-page\" required=\"\" type=\"text\"/>",
+    "feature": "city city in page text",
+    "id": "571-text-13",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input data-bind=\"value: postal_code, validate: 'value'\" id=\"postal_code-in-page\" required=\"\" type=\"text\"/>",
+    "feature": "zip postal code in page text",
+    "id": "571-text-14",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-field email-billing-input\" data-bind=\"value: c_emailaddress, validate: 'value'\" id=\"email-billing\" name=\"c_emailaddress\" required=\"\" type=\"text\"/>",
+    "feature": "email email billing c emailaddress text",
+    "id": "571-text-15",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-describedby=\"promotions-coupon-status\" aria-labelledby=\"coupon-code-label\" class=\"coupon-code\" data-bind=\"value: couponcode, attr: {'aria-invalid': $root.ariaisinvalidpromo()}\" data-di-unmask-field=\"\" name=\"coupon_code\" type=\"text\"/>",
+    "feature": "apply promotion code coupon code text",
+    "id": "571-text-16",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input autofocus=\"\" data-bind=\"value: cvv, validate: 'value', attr: { maxlength: maxcvnlength }\" id=\"cvv-verify\" required=\"\" type=\"text\"/>",
+    "feature": "verify cvv cvv verify text",
+    "id": "571-text-17",
+    "pattern": "credit.*cvv",
+    "topic": "credit_card_cvv"
+  },
+  {
+    "dom": "<input class=\"read-only hide-optional\" data-bind=\"css: {expired: $data.isexpired &amp;&amp; $data.isexpired()}, value: month() + '/' + yearreadonly()\" disabled=\"\" id=\"exp_date-in-modal\" name=\"expirationdate\" type=\"text\"/>",
+    "feature": "expires exp date in modal expirationdate text",
+    "id": "571-text-18",
+    "pattern": "credit.*exp",
+    "topic": "credit_card_exp"
+  },
+  {
+    "dom": "<input class=\"read-only\" data-bind=\"value: owner, validate: 'value', attr: { 'disabled': !isaddcreditcardform(), 'required': isaddcreditcardform() }, css: { 'hide-optional': !isaddcreditcardform() }\" id=\"owner-in-modal\" type=\"text\"/>",
+    "feature": "name on card owner in modal text",
+    "id": "571-text-19",
+    "pattern": "full.*name",
+    "topic": "full_name"
+  },
+  {
+    "dom": "<input autofocus=\"\" data-bind=\"value: first_name, validate: 'value'\" id=\"first_name-in-modal\" required=\"\" type=\"text\"/>",
+    "feature": "first name first name in modal text",
+    "id": "571-text-20",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input data-bind=\"value: last_name, validate: 'value'\" id=\"last_name-in-modal\" required=\"\" type=\"text\"/>",
+    "feature": "last name last name in modal text",
+    "id": "571-text-21",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input data-bind=\"value: address1, validate: 'value'\" id=\"address1-in-modal\" required=\"\" type=\"text\"/>",
+    "feature": "address 1 address1 in modal text",
+    "id": "571-text-22",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input data-bind=\"value: address2\" id=\"address2-in-modal\" type=\"text\"/>",
+    "feature": "address 2 address2 in modal text",
+    "id": "571-text-23",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-bind=\"value: city, validate: 'value'\" id=\"city-in-modal\" required=\"\" type=\"text\"/>",
+    "feature": "city city in modal text",
+    "id": "571-text-24",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input data-bind=\"value: postal_code, validate: 'value'\" id=\"postal_code-in-modal\" required=\"\" type=\"text\"/>",
+    "feature": "zip postal code in modal text",
+    "id": "571-text-25",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-describedby=\"new-acct-pw-tooltip\" class=\"\" data-bind=\"value: $root.newuserpassword().password\" data-js=\"password-input\" id=\"new-acct-pw\" name=\"pass\" type=\"password\"/>",
+    "feature": "must have 8 or more characters both upper lower case letters at least 1 number not met needs 8 or more characters needs needs both upper lower case letters needs needs at least 1 number needs password strength not met not met new acct pw pass password",
+    "id": "571-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"input-field\" data-bind=\"value: phone, validate: 'value'\" id=\"phone-shipping\" name=\"phone\" type=\"tel\"/>",
+    "feature": "required phone number phone shipping phone tel",
+    "id": "571-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"reward-cert-input\" data-bind=\"value: $root.rcp1rcc, valueupdate: ['afterkeydown', 'input'], handleariainvalid: {value: 'value', describedby: 'reward-cert-error', hasvalidated: $root.rewardcertsubmitattempted()}\" id=\"reward-cert-creditcard-number\" maxlength=\"16\" name=\"pin\" type=\"tel\"/>",
+    "feature": "pier 1 rewards credit card number reward cert creditcard number pin tel 16",
+    "id": "571-tel-1",
+    "pattern": "creditcard.*id",
+    "topic": "credit_card_id"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"reward-cert-input\" data-bind=\"value: $data.number, handleariainvalid: {value: 'value', describedby: 'reward-cert-error', hasvalidated: $root.rewardcertsubmitattempted()}\" id=\"reward-cert-number\" maxlength=\"12\" name=\"number\" type=\"tel\"/>",
+    "feature": "rewards certificate reward cert number number tel 12",
+    "id": "571-tel-2",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input class=\"giftcard-input\" data-bind=\"value: $root.gift_card_input().number, handleariainvalid: {value: 'value', describedby: 'gift-card-error', hasvalidated:  $root.giftcardsubmitattempted()}\" id=\"gift-card-number\" maxlength=\"19\" name=\"number\" type=\"tel\"/>",
+    "feature": "gift card number gift card number number tel 19",
+    "id": "571-tel-3",
+    "pattern": "gift.*card",
+    "topic": "gift_card_number"
+  },
+  {
+    "dom": "<input class=\"giftcard-input\" data-bind=\"value: $root.gift_card_input().pin, handleariainvalid: {value: 'value', describedby: 'gift-card-error', hasvalidated: $root.giftcardsubmitattempted()}\" id=\"gift-card-pin\" maxlength=\"8\" name=\"pin\" type=\"tel\"/>",
+    "feature": "pin gift card pin pin tel 8",
+    "id": "571-tel-4",
+    "pattern": "pin",
+    "topic": "pin"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"cvn-input input-field\" data-bind=\"validate: 'value', value: $data.cvn, attr: { id:'cvn' + $index(), maxlength: $data.maxcvnlength }\" name=\"cvn\" required=\"\" type=\"tel\"/>",
+    "feature": "verify cvv cvn tel",
+    "id": "571-tel-5",
+    "pattern": "credit.*cvv",
+    "topic": "credit_card_cvv"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"confirmation-input input-field\" data-bind=\"value: $data.confirmation, validate: 'value'\" id=\"confirmation\" maxlength=\"16\" name=\"confirmation\" type=\"tel\"/>",
+    "feature": "please confirm your card number confirmation confirmation tel 16",
+    "id": "571-tel-6",
+    "pattern": "creditcard.*id",
+    "topic": "credit_card_id"
+  },
+  {
+    "dom": "<input autofocus=\"\" class=\"read-only\" data-bind=\"\n\t\t\t\t\t\t\t\t\tvalue: number, \n\t\t\t\t\t\t\t\t\tvalidate: 'value', \n\t\t\t\t\t\t\t\t\tvalueupdate:['afterkeydown','input'],\n\t\t\t\t\t\t\t\t\tevent: { blur: $root.creditcardblur }, \n\t\t\t\t\t\t\t\t\tattr: { 'disabled': !isaddcreditcardform(), \n\t\t\t\t\t\t\t\t\trequired: isaddcreditcardform() },\n\t\t\t\t\t\t\t\t\terrorcontainer: 'card-number-error-container-in-page',\n\t\t\t\t\t\t\t\t\tcss: { 'hide-optional': !isaddcreditcardform() }\n\t\t\t\t\t\t\t\t\t\" id=\"credit_card_number-in-page\" maxlength=\"16\" name=\"number\" type=\"tel\"/>",
+    "feature": "card number credit card number in page number tel 16",
+    "id": "571-tel-7",
+    "pattern": "creditcard.*id",
+    "topic": "credit_card_id"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" autofocus=\"\" data-bind=\"value: cvn, validate: 'value', attr: {'maxlength': maxcvnlength}\" id=\"cvv-in-page\" required=\"\" type=\"tel\"/>",
+    "feature": "cvv cvv in page tel",
+    "id": "571-tel-8",
+    "pattern": "credit.*cvv",
+    "topic": "credit_card_cvv"
+  },
+  {
+    "dom": "<input data-bind=\"value: phone, validate: 'value'\" id=\"phone-in-page\" required=\"\" type=\"tel\"/>",
+    "feature": "phone number phone in page tel",
+    "id": "571-tel-9",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-label=\"quantity\" aria-required=\"true\" data-bind=\"visible: showexpandedqtyinput, value: quantity, attr: {id: 'qty-' + product_id(), 'aria-describedby': 'qty-' + product_id() + '_errormessage', 'aria-invalid': ariaisinvalidquantity()}, css: { invalid: inventoryerror, error: $data.overquantity }\" data-di-unmask-field=\"\" maxlength=\"3\" type=\"tel\"/>",
+    "feature": "ea ea ea ea ea ea tel 3",
+    "id": "571-tel-10",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autofocus=\"\" class=\"read-only\" data-bind=\"\n\t\t\t\t\t\t\t\t\tvalue: number, \n\t\t\t\t\t\t\t\t\tvalidate: 'value', \n\t\t\t\t\t\t\t\t\tvalueupdate:['afterkeydown','input'],\n\t\t\t\t\t\t\t\t\tevent: { blur: $root.creditcardblur }, \n\t\t\t\t\t\t\t\t\tattr: { 'disabled': !isaddcreditcardform(), \n\t\t\t\t\t\t\t\t\trequired: isaddcreditcardform() },\n\t\t\t\t\t\t\t\t\terrorcontainer: 'card-number-error-container-in-modal',\n\t\t\t\t\t\t\t\t\tcss: { 'hide-optional': !isaddcreditcardform() }\n\t\t\t\t\t\t\t\t\t\" id=\"credit_card_number-in-modal\" maxlength=\"16\" name=\"number\" type=\"tel\"/>",
+    "feature": "card number credit card number in modal number tel 16",
+    "id": "571-tel-11",
+    "pattern": "creditcard.*id",
+    "topic": "credit_card_id"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" autofocus=\"\" data-bind=\"value: cvn, validate: 'value', attr: {'maxlength': maxcvnlength}\" id=\"cvv-in-modal\" required=\"\" type=\"tel\"/>",
+    "feature": "cvv cvv in modal tel",
+    "id": "571-tel-12",
+    "pattern": "credit.*cvv",
+    "topic": "credit_card_cvv"
+  },
+  {
+    "dom": "<input data-bind=\"value: phone, validate: 'value'\" id=\"phone-in-modal\" required=\"\" type=\"tel\"/>",
+    "feature": "phone number phone in modal tel",
+    "id": "571-tel-13",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

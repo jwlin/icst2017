@@ -1,0 +1,205 @@
+[
+  {
+    "dom": "<input class=\"searchbar\" id=\"search-term\" name=\"t\" placeholder=\"search...\" size=\"12\" type=\"text\"/>",
+    "feature": "text search term t search",
+    "id": "580-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input name=\"un\" placeholder=\"email\" type=\"text\"/>",
+    "feature": "text un email",
+    "id": "580-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"billing given-name\" id=\"form_bill_name_first\" name=\"bill_name_first\" type=\"text\" value=\"\"/>",
+    "feature": "text bill name first form bill name first",
+    "id": "580-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"billing family-name\" id=\"form_bill_name_last\" name=\"bill_name_last\" type=\"text\" value=\"\"/>",
+    "feature": "text bill name last form bill name last",
+    "id": "580-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocomplete=\"billing organization\" id=\"form_bill_company\" name=\"bill_company\" type=\"text\" value=\"\"/>",
+    "feature": "company text bill company form bill company",
+    "id": "580-text-4",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input autocomplete=\"billing address-line1\" id=\"form_bill_street_0\" name=\"bill_street_0\" type=\"text\" value=\"\"/>",
+    "feature": "text bill street 0 form bill street 0",
+    "id": "580-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"billing address-line2\" id=\"form_bill_street_1\" name=\"bill_street_1\" type=\"text\" value=\"\"/>",
+    "feature": "apt suite text bill street 1 form bill street 1",
+    "id": "580-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input autocomplete=\"billing locality\" id=\"form_bill_city\" name=\"bill_city\" type=\"text\" value=\"\"/>",
+    "feature": "text bill city form bill city",
+    "id": "580-text-7",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"billing region\" id=\"form_bill_state_text\" name=\"bill_state_text\" type=\"text\" value=\"\"/>",
+    "feature": "text bill state text form bill state text",
+    "id": "580-text-8",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input autocomplete=\"billing region\" name=\"bill_state_text_nonjs\" type=\"text\" value=\"\"/>",
+    "feature": "text bill state text nonjs",
+    "id": "580-text-9",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input autocomplete=\"billing postal-code\" id=\"form_bill_zip\" name=\"bill_zip\" type=\"text\" value=\"\"/>",
+    "feature": "text bill zip form bill zip",
+    "id": "580-text-10",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"form_create_account_hint\" name=\"hint\" type=\"text\" value=\"\"/>",
+    "feature": "password hint text hint form create account hint",
+    "id": "580-text-11",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping given-name\" id=\"form_ship_name_first\" name=\"ship_name_first\" type=\"text\" value=\"\"/>",
+    "feature": "text ship name first form ship name first",
+    "id": "580-text-12",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping family-name\" id=\"form_ship_name_last\" name=\"ship_name_last\" type=\"text\" value=\"\"/>",
+    "feature": "text ship name last form ship name last",
+    "id": "580-text-13",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping organization\" id=\"form_ship_company\" name=\"ship_company\" type=\"text\" value=\"\"/>",
+    "feature": "company text ship company form ship company",
+    "id": "580-text-14",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping address-line1\" id=\"form_ship_street_0\" name=\"ship_street_0\" type=\"text\" value=\"\"/>",
+    "feature": "text ship street 0 form ship street 0",
+    "id": "580-text-15",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping address-line2\" id=\"form_ship_street_1\" name=\"ship_street_1\" type=\"text\" value=\"\"/>",
+    "feature": "apt suite text ship street 1 form ship street 1",
+    "id": "580-text-16",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping locality\" id=\"form_ship_city\" name=\"ship_city\" type=\"text\" value=\"\"/>",
+    "feature": "text ship city form ship city",
+    "id": "580-text-17",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping region\" id=\"form_ship_state_text\" name=\"ship_state_text\" type=\"text\" value=\"\"/>",
+    "feature": "text ship state text form ship state text",
+    "id": "580-text-18",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping region\" name=\"ship_state_text_nonjs\" type=\"text\" value=\"\"/>",
+    "feature": "text ship state text nonjs",
+    "id": "580-text-19",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping postal-code\" id=\"form_ship_zip\" name=\"ship_zip\" type=\"text\" value=\"\"/>",
+    "feature": "text ship zip form ship zip",
+    "id": "580-text-20",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-white input-full\" name=\"un\" placeholder=\"email\" type=\"email\" value=\"\"/>",
+    "feature": "email un email",
+    "id": "580-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"billing email\" id=\"form_billing_email\" name=\"billing_email\" type=\"email\" value=\"\"/>",
+    "feature": "email billing email form billing email",
+    "id": "580-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" name=\"pass\" placeholder=\"password\" type=\"password\"/>",
+    "feature": "password pass password",
+    "id": "580-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-white input-full\" name=\"pass\" placeholder=\"password\" type=\"password\"/>",
+    "feature": "password pass password",
+    "id": "580-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"form_create_account_password\" name=\"password\" type=\"password\" value=\"\"/>",
+    "feature": "password password password form create account password",
+    "id": "580-password-2",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"form_create_account_password_confirmation\" name=\"password_confirmation\" type=\"password\"/>",
+    "feature": "retype password password password confirmation form create account password confirmation",
+    "id": "580-password-3",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"billing tel\" id=\"form_bill_phone\" name=\"bill_phone\" type=\"tel\" value=\"\"/>",
+    "feature": "tel bill phone form bill phone",
+    "id": "580-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping tel\" id=\"form_ship_phone\" name=\"ship_phone\" type=\"tel\" value=\"\"/>",
+    "feature": "tel ship phone form ship phone",
+    "id": "580-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

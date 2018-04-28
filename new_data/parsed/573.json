@@ -1,0 +1,58 @@
+[
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-tl-id=\"coac2shpaddrfirstname\" label=\"[object object]\" name=\"firstname\" title=\"first name\" type=\"text\"/>",
+    "feature": "first name first name first name text firstname",
+    "id": "573-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-tl-id=\"coac2shpaddrlastname\" label=\"[object object]\" name=\"lastname\" title=\"last name\" type=\"text\"/>",
+    "feature": "last name last name last name text lastname",
+    "id": "573-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-tl-id=\"coac2shpaddrphone\" label=\"[object object]\" mask=\"(111) 111-1111\" maxlength=\"14\" minlength=\"10\" name=\"phone\" title=\"phone number\" type=\"text\"/>",
+    "feature": "phone number ex 202 555 0115 phone number phone number ex 202 555 0115 text phone 14",
+    "id": "573-text-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-tl-id=\"coac2shpaddremail\" label=\"[object object]\" name=\"email\" title=\"email\" type=\"text\"/>",
+    "feature": "email address for order notification email address for order notification email address for order notification text email",
+    "id": "573-text-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-tl-id=\"coac2shpaddraddress1\" label=\"[object object]\" name=\"addresslineone\" title=\"street address\" type=\"text\"/>",
+    "feature": "street address street address street address text addresslineone",
+    "id": "573-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control\" data-tl-id=\"coac2shpaddraddress2\" label=\"[object object]\" name=\"addresslinetwo\" title=\"apt, suite, bldg, c/o (optional)\" type=\"text\"/>",
+    "feature": "apt suite etc optional apt suite etc optional apt suite etc optional text addresslinetwo",
+    "id": "573-text-5",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-tl-id=\"coac2shpaddrcity\" label=\"[object object]\" name=\"city\" title=\"city\" type=\"text\" value=\"irvine\"/>",
+    "feature": "city city city text city irvine",
+    "id": "573-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control\" data-tl-id=\"coac2shpaddrzip\" label=\"[object object]\" name=\"postalcode\" title=\"zip code\" type=\"text\" value=\"92614\"/>",
+    "feature": "zip code zip code zip code text postalcode 92614",
+    "id": "573-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  }
+]

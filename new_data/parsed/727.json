@@ -1,0 +1,79 @@
+[
+  {
+    "dom": "<input id=\"firstname\" name=\"firstname\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required text firstname firstname",
+    "id": "727-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middlename\" name=\"middlename\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "middle name text middlename middlename",
+    "id": "727-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input id=\"lastname\" name=\"lastname\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required text lastname lastname",
+    "id": "727-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"email\" name=\"email\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "e mail is invalid required text email email",
+    "id": "727-text-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"verifyemail\" name=\"verifyemail\" title=\"verify email\" type=\"text\"/>",
+    "feature": "verify e mail text verifyemail verifyemail",
+    "id": "727-text-4",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"dob\" name=\"dob\" style=\"width:100px;\" type=\"text\"/>",
+    "feature": "month january february march april may june july august september october november december day text dob dob",
+    "id": "727-text-5",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input id=\"zip\" name=\"zip\" style=\"width:100px;\" type=\"text\"/>",
+    "feature": "required text zip zip",
+    "id": "727-text-6",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"login\" name=\"login\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required text login login",
+    "id": "727-text-7",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input id=\"password\" name=\"password\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required text password password",
+    "id": "727-text-8",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"newpassword\" name=\"newpassword\" title=\"enter new password\" type=\"password\"/>",
+    "feature": "required password newpassword newpassword",
+    "id": "727-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"verifypassword\" name=\"verifypassword\" title=\"verify password\" type=\"password\"/>",
+    "feature": "verify password password verifypassword verifypassword",
+    "id": "727-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"blur jsfirstname jstoggle input-sm\" id=\"w-firstname\" maxlength=\"20\" name=\"firstname\" title=\"first name\" type=\"text\"/>",
+    "feature": "first name or first few letters last name or first few letters w firstname firstname text 20",
+    "id": "512-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"blur jslastname jstoggle input-sm\" id=\"w-lastname\" maxlength=\"20\" name=\"lastname\" title=\"last name\" type=\"text\"/>",
+    "feature": "last name or first few letters first name or first few letters w lastname lastname text 20",
+    "id": "512-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field first name must be a string with a maximum length of 20.\" data-val-length-max=\"20\" data-val-maxlength=\"the field first name must be a string or array type with a maximum length of '20'.\" data-val-maxlength-max=\"20\" data-val-required=\"the first name field is required.\" id=\"firstname\" maxlength=\"20\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "required first name required firstname firstname text 20",
+    "id": "512-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field mi must be a string with a maximum length of 1.\" data-val-length-max=\"1\" data-val-maxlength=\"the field mi must be a string or array type with a maximum length of '1'.\" data-val-maxlength-max=\"1\" id=\"middleinitial\" maxlength=\"1\" name=\"middleinitial\" type=\"text\" value=\"\"/>",
+    "feature": "mi middleinitial middleinitial text 1",
+    "id": "512-text-3",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field last name must be a string with a maximum length of 20.\" data-val-length-max=\"20\" data-val-maxlength=\"the field last name must be a string or array type with a maximum length of '20'.\" data-val-maxlength-max=\"20\" data-val-required=\"the last name field is required.\" id=\"lastname\" maxlength=\"20\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "required last name required lastname lastname text 20",
+    "id": "512-text-4",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field street address must be a string with a maximum length of 30.\" data-val-length-max=\"30\" data-val-maxlength=\"the field street address must be a string or array type with a maximum length of '30'.\" data-val-maxlength-max=\"30\" data-val-required=\"the street address field is required.\" id=\"address1\" maxlength=\"30\" name=\"address1\" type=\"text\" value=\"\"/>",
+    "feature": "required street address required address1 address1 text 30",
+    "id": "512-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field apartment / suite / other must be a string with a maximum length of 30.\" data-val-length-max=\"30\" data-val-maxlength=\"the field apartment / suite / other must be a string or array type with a maximum length of '30'.\" data-val-maxlength-max=\"30\" id=\"address2\" maxlength=\"30\" name=\"address2\" type=\"text\" value=\"\"/>",
+    "feature": "apartment suite other address2 address2 text 30",
+    "id": "512-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field city must be a string with a maximum length of 28.\" data-val-length-max=\"28\" data-val-maxlength=\"the field city must be a string or array type with a maximum length of '28'.\" data-val-maxlength-max=\"28\" data-val-required=\"the city field is required.\" id=\"city\" maxlength=\"28\" name=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "required city required city city text 28",
+    "id": "512-text-7",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field zip code must be a string with a maximum length of 5.\" data-val-length-max=\"5\" data-val-maxlength=\"the field zip code must be a string or array type with a maximum length of '5'.\" data-val-maxlength-max=\"5\" data-val-required=\"the zip code field is required.\" datavalrequired=\"please enter a valid zip code.\" id=\"zipcode\" maxlength=\"5\" name=\"zipcode\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
+    "feature": "required zip code required zipcode zipcode text 5",
+    "id": "512-text-8",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-number=\"the field annual income must be a number.\" data-val-required=\"the annual income field is required.\" id=\"annualincomeamount\" name=\"annualincomeamount\" type=\"text\" value=\"\"/>",
+    "feature": "required annual income required annualincomeamount annualincomeamount text",
+    "id": "512-text-9",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-length=\"the field email address must be a string with a maximum length of 66.\" data-val-length-max=\"66\" id=\"email\" name=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "email address email email text",
+    "id": "512-text-10",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field first name must be a string with a maximum length of 20.\" data-val-length-max=\"20\" data-val-maxlength=\"the field first name must be a string or array type with a maximum length of '20'.\" data-val-maxlength-max=\"20\" data-val-required=\"the authorized buyer first name field is required.\" id=\"authbuyerfirstname\" name=\"authbuyerfirstname\" type=\"text\" value=\"\"/>",
+    "feature": "required first name required authbuyerfirstname authbuyerfirstname text",
+    "id": "512-text-11",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field mi must be a string with a maximum length of 1.\" data-val-length-max=\"1\" data-val-maxlength=\"the field mi must be a string or array type with a maximum length of '1'.\" data-val-maxlength-max=\"1\" id=\"authbuyermiddleinitial\" name=\"authbuyermiddleinitial\" type=\"text\" value=\"\"/>",
+    "feature": "mi authbuyermiddleinitial authbuyermiddleinitial text",
+    "id": "512-text-12",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field last name must be a string with a maximum length of 20.\" data-val-length-max=\"20\" data-val-maxlength=\"the field last name must be a string or array type with a maximum length of '20'.\" data-val-maxlength-max=\"20\" data-val-required=\"the authorized buyer last name field is required.\" id=\"authbuyerlastname\" name=\"authbuyerlastname\" type=\"text\" value=\"\"/>",
+    "feature": "required last name required authbuyerlastname authbuyerlastname text",
+    "id": "512-text-13",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"footer-input-email input-email input-email-on-dark-background input-email-md button-md js-email-signup-modal-input\" data-val-email=\"please enter a valid email address (i.e. name@domain.com).\" id=\"email-signup\" name=\"email\" onblur=\"this.placeholder='enter your email address'\" onfocus=\"this.placeholder = ''\" onkeypress=\"crate.forms.onentersubmit(event)\" placeholder=\"enter your email address\" type=\"email\" value=\"\"/>",
+    "feature": "10 when you sign up to receive emails offer valid on full price items excludes furniture u s only must be new email subscriber enter your email address to receive a promo code in your inbox submit email to list save 10 today when you sign up to receive emails offer valid on full price items excludes furniture u s only must be new email subscriber enter your email address to receive a promo code in your inbox email email signup email enter your email address",
+    "id": "512-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field social security number must be a string with a maximum length of 11.\" data-val-length-max=\"11\" data-val-required=\"the social security number field is required.\" id=\"ssn\" maxlength=\"11\" name=\"ssn\" pattern=\"[0-9]*\" type=\"password\"/>",
+    "feature": "required social security number required ssn ssn password 11",
+    "id": "512-password-0",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-length=\"the field day phone must be a string with a maximum length of 17.\" data-val-length-max=\"17\" data-val-maxlength=\"the field day phone must be a string or array type with a maximum length of '17'.\" data-val-maxlength-max=\"17\" data-val-required=\"the day phone field is required.\" id=\"dayphone\" name=\"dayphone\" type=\"tel\" value=\"\"/>",
+    "feature": "required day phone required dayphone dayphone tel",
+    "id": "512-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-length=\"the field evening phone must be a string with a maximum length of 17.\" data-val-length-max=\"17\" data-val-maxlength=\"the field evening phone must be a string or array type with a maximum length of '17'.\" data-val-maxlength-max=\"17\" id=\"eveningphone\" name=\"eveningphone\" type=\"tel\" value=\"\"/>",
+    "feature": "evening phone eveningphone eveningphone tel",
+    "id": "512-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

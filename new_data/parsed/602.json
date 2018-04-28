@@ -1,0 +1,58 @@
+[
+  {
+    "dom": "<input class=\"form-control form-control\" data-parsley-errors-container=\"#addressfirstname-errors\" id=\"address.firstname\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name firstname address firstname text",
+    "id": "602-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control form-control\" data-parsley-errors-container=\"#addresssurname-errors\" id=\"address.surname\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name lastname address surname text",
+    "id": "602-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control form-control\" data-parsley-errors-container=\"#addressline1-errors\" id=\"address.line1\" name=\"line1\" type=\"text\" value=\"\"/>",
+    "feature": "address line 1 line1 address line1 text",
+    "id": "602-text-2",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control form-control\" data-parsley-errors-container=\"#addressline2-errors\" id=\"address.line2\" name=\"line2\" type=\"text\" value=\"\"/>",
+    "feature": "address line 2 optional line2 address line2 text",
+    "id": "602-text-3",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form-control form-control\" data-parsley-errors-container=\"#addresstowncity-errors\" id=\"address.towncity\" name=\"towncity\" type=\"text\" value=\"\"/>",
+    "feature": "city towncity address towncity text",
+    "id": "602-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-describedby=\"\" autocomplete=\"\" class=\"js-store-finder-search-input form-control\" data-parsley-errors-container=\"#locationquery-errors\" id=\"locationquery\" name=\"q\" placeholder=\"\" tabindex=\"\" type=\"text\"/>",
+    "feature": "search by city state zip code q locationquery text",
+    "id": "602-text-5",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"form-control form-control\" data-parsley-errors-container=\"#addresszipcode-errors\" id=\"address.zipcode\" name=\"postcode\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code postcode address zipcode tel",
+    "id": "602-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form-control form-control\" data-parsley-errors-container=\"#addressphone-errors\" id=\"address.phone\" name=\"phone\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number phone address phone tel",
+    "id": "602-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

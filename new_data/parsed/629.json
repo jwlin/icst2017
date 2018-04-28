@@ -1,0 +1,51 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"form-control form-control-searchterm\" id=\"header-search-desktop-skip\" name=\"searchterm\" placeholder=\"search\" title=\"search\" type=\"text\"/>",
+    "feature": "fossil search fossil search search text header search desktop skip searchterm",
+    "id": "629-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"form-control form-control-searchterm\" id=\"header-search-mobile-skip\" name=\"searchterm\" placeholder=\"search\" title=\"search\" type=\"text\"/>",
+    "feature": "search search search text header search mobile skip searchterm",
+    "id": "629-text-1",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"form-control\" data-parsley-badwords=\"\" data-parsley-maxlength=\"20\" id=\"sku\" name=\"sku\" placeholder=\"es3433\" required=\"\" type=\"text\"/>",
+    "feature": "item number item number es3433 text sku sku",
+    "id": "629-text-2",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"form-control\" id=\"id-nav-util-login-email\" name=\"signinemail\" required=\"\" type=\"email\"/>",
+    "feature": "email email id nav util login email signinemail",
+    "id": "629-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"email\" name=\"email\" required=\"\" type=\"email\"/>",
+    "feature": "email address email email email",
+    "id": "629-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form-control\" data-parsley-customemail=\"\" id=\"id-footer-email-input\" maxlength=\"255\" name=\"email1\" placeholder=\"enter email address\" required=\"\" type=\"email\"/>",
+    "feature": "stay connected email id footer email input enter email address email1 255",
+    "id": "629-email-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"form-control\" id=\"id-nav-util-login-password\" name=\"signinpwd\" required=\"\" type=\"password\"/>",
+    "feature": "password password id nav util login password signinpwd",
+    "id": "629-password-0",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

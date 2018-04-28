@@ -1,0 +1,37 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text rule-splcharname required\" data-msg-required=\"please enter a valid first name.\" id=\"dwfrm_singleshipping_aboutyou_aboutyoufields_firstname\" maxlength=\"35\" name=\"dwfrm_singleshipping_aboutyou_aboutyoufields_firstname\" true=\"first name\" type=\"text\" value=\"a\"/>",
+    "feature": "first name text dwfrm singleshipping aboutyou aboutyoufields firstname a dwfrm singleshipping aboutyou aboutyoufields firstname 35",
+    "id": "566-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text rule-splcharname required\" data-msg-required=\"please enter a valid last name.\" id=\"dwfrm_singleshipping_aboutyou_aboutyoufields_lastname\" maxlength=\"35\" name=\"dwfrm_singleshipping_aboutyou_aboutyoufields_lastname\" true=\"last name\" type=\"text\" value=\"a\"/>",
+    "feature": "last name text dwfrm singleshipping aboutyou aboutyoufields lastname a dwfrm singleshipping aboutyou aboutyoufields lastname 35",
+    "id": "566-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text rule-email required\" data-msg-required=\"please enter your email.\" id=\"dwfrm_singleshipping_aboutyou_aboutyoufields_emailaddress\" maxlength=\"50\" name=\"dwfrm_singleshipping_aboutyou_aboutyoufields_emailaddress\" true=\"email address\" type=\"text\" value=\"a@com.com\"/>",
+    "feature": "email address text dwfrm singleshipping aboutyou aboutyoufields emailaddress a com com dwfrm singleshipping aboutyou aboutyoufields emailaddress 50",
+    "id": "566-text-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text promo-coupon-code \" id=\"dwfrm_cart_couponcode\" name=\"dwfrm_cart_couponcode\" type=\"text\" value=\"\"/>",
+    "feature": "promo code text dwfrm cart couponcode dwfrm cart couponcode",
+    "id": "566-text-3",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text rule-phone phone required\" data-msg-required=\"please enter phone number.\" id=\"dwfrm_singleshipping_aboutyou_aboutyoufields_phone\" name=\"dwfrm_singleshipping_aboutyou_aboutyoufields_phone\" true=\"phone number\" type=\"tel\" value=\"949-987-6534\"/>",
+    "feature": "phone number tel dwfrm singleshipping aboutyou aboutyoufields phone 949 987 6534 dwfrm singleshipping aboutyou aboutyoufields phone",
+    "id": "566-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"\" id=\"inpname_firstname_input\" maxlength=\"15\" name=\"inpname_firstname_input\" size=\"23\" tabindex=\"4\" type=\"text\" value=\"\"/>",
+    "feature": "first name inpname firstname input text inpname firstname input 15",
+    "id": "513-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"middleinitialinput\" id=\"inpname_middleinitial_input\" maxlength=\"1\" name=\"inpname_middleinitial_input\" size=\"8\" tabindex=\"5\" type=\"text\" value=\"\"/>",
+    "feature": "optional mi optional inpname middleinitial input text inpname middleinitial input 1",
+    "id": "513-text-1",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"\" id=\"inpname_lastname_input\" maxlength=\"20\" name=\"inpname_lastname_input\" size=\"28\" tabindex=\"6\" type=\"text\" value=\"\"/>",
+    "feature": "last name inpname lastname input text inpname lastname input 20",
+    "id": "513-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"mask-date typetel darkenplaceholder\" id=\"inpdob_input\" maxlength=\"10\" name=\"inpdob_input\" placeholder=\"mm/dd/yyyy\" size=\"10\" tabindex=\"9\" type=\"text\" value=\"\"/>",
+    "feature": "date of birth inpdob input text inpdob input mm dd yyyy 10",
+    "id": "513-text-3",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"mask-numeric typetel \" id=\"annualincome_input\" maxlength=\"7\" name=\"annualincome_input\" size=\"7\" tabindex=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration annual income annualincome input text annualincome input 7",
+    "id": "513-text-4",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"postalcode mask-numeric typetel\" id=\"inpaddress_uszipinstantcredit_input\" maxlength=\"5\" name=\"inpaddress_uszipinstantcredit_input\" size=\"14\" tabindex=\"11\" type=\"text\" value=\"\"/>",
+    "feature": "zip code inpaddress uszipinstantcredit input text inpaddress uszipinstantcredit input 5",
+    "id": "513-text-5",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"street-name address1 mask-address instantcredit ui-autocomplete-input\" id=\"inpaddress_streetaddress_input\" maxlength=\"30\" name=\"inpaddress_streetaddress_input\" size=\"33\" tabindex=\"12\" type=\"text\" value=\"\"/>",
+    "feature": "street address inpaddress streetaddress input text inpaddress streetaddress input 30",
+    "id": "513-text-6",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"apt-number address2 mask-apt darkenplaceholder\" id=\"inpaddress_line2_input\" maxlength=\"30\" name=\"inpaddress_line2_input\" placeholder=\"ex: apt b, suite 202, etc.\" size=\"33\" tabindex=\"13\" type=\"text\" value=\"\"/>",
+    "feature": "optional suite or apartment optional inpaddress line2 input text inpaddress line2 input ex apt b suite 202 etc 30",
+    "id": "513-text-7",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"us-city locality\" id=\"inpaddress_uscity_input\" maxlength=\"20\" name=\"inpaddress_uscity_input\" size=\"28\" tabindex=\"14\" type=\"text\" value=\"\"/>",
+    "feature": "city inpaddress uscity input text inpaddress uscity input 20",
+    "id": "513-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"email-address\" id=\"email_input\" maxlength=\"80\" name=\"email_input\" size=\"33\" tabindex=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "email address email input text email input 80",
+    "id": "513-text-9",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"confirmfield confirm-email-address\" id=\"confirmemail_input\" maxlength=\"80\" name=\"confirmemail_input\" size=\"33\" tabindex=\"17\" type=\"text\" value=\"\"/>",
+    "feature": "confirm email address confirmemail input text confirmemail input 80",
+    "id": "513-text-10",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"typetel mask-phone\" id=\"inpmobilephone_fullphonenumber\" maxlength=\"12\" name=\"inpmobilephone_fullphonenumber\" placeholder=\"\" tabindex=\"18\" type=\"text\" value=\"\"/>",
+    "feature": "mobile phone inpmobilephone fullphonenumber text inpmobilephone fullphonenumber 12",
+    "id": "513-text-11",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\"typetel mask-phone\" id=\"inpaltphone_fullphonenumber\" maxlength=\"12\" name=\"inpaltphone_fullphonenumber\" placeholder=\"\" tabindex=\"19\" type=\"text\" value=\"\"/>",
+    "feature": "alternate phone inpaltphone fullphonenumber text inpaltphone fullphonenumber 12",
+    "id": "513-text-12",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" class=\" noautocomplete\" id=\"inpssn_ssn\" maxlength=\"9\" name=\"inpssn_ssn\" placeholder=\"\" size=\"9\" tabindex=\"8\" type=\"password\" value=\"\"/>",
+    "feature": "why do you need my social security number we use this information to verify your identity and obtain credit bureau information why do you need my social security number we use this information to verify your identity and obtain credit bureau information social security number inpssn ssn password inpssn ssn 9",
+    "id": "513-password-0",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  }
+]

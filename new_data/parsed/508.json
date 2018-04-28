@@ -1,0 +1,191 @@
+[
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_firstname:decoin:apprequest_customers__0_firstname\" name=\"mainform:cont_apprequest_customers__0_firstname:decoin:apprequest_customers__0_firstname\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 firstname decoin apprequest customers 0 firstname text mainform cont apprequest customers 0 firstname decoin apprequest customers 0 firstname",
+    "id": "508-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_middlename:decoin:apprequest_customers__0_middlename\" name=\"mainform:cont_apprequest_customers__0_middlename:decoin:apprequest_customers__0_middlename\" type=\"text\"/>",
+    "feature": "middle name mainform cont apprequest customers 0 middlename decoin apprequest customers 0 middlename text mainform cont apprequest customers 0 middlename decoin apprequest customers 0 middlename",
+    "id": "508-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_lastname:decoin:apprequest_customers__0_lastname\" name=\"mainform:cont_apprequest_customers__0_lastname:decoin:apprequest_customers__0_lastname\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 lastname decoin apprequest customers 0 lastname text mainform cont apprequest customers 0 lastname decoin apprequest customers 0 lastname",
+    "id": "508-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_emailaddress:decoin:apprequest_customers__0_emailaddress\" name=\"mainform:cont_apprequest_customers__0_emailaddress:decoin:apprequest_customers__0_emailaddress\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 emailaddress decoin apprequest customers 0 emailaddress text mainform cont apprequest customers 0 emailaddress decoin apprequest customers 0 emailaddress",
+    "id": "508-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_confirmemailaddress:decoin:apprequest_customers__0_confirmemailaddress\" name=\"mainform:cont_apprequest_customers__0_confirmemailaddress:decoin:apprequest_customers__0_confirmemailaddress\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 confirmemailaddress decoin apprequest customers 0 confirmemailaddress text mainform cont apprequest customers 0 confirmemailaddress decoin apprequest customers 0 confirmemailaddress",
+    "id": "508-text-4",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"mainform:cont_apprequest_customers__0_socialsecuritynumber:decoin:apprequest_customers__0_socialsecuritynumber\" name=\"mainform:cont_apprequest_customers__0_socialsecuritynumber:decoin:apprequest_customers__0_socialsecuritynumber\" style=\"display:none;\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 socialsecuritynumber decoin apprequest customers 0 socialsecuritynumber text mainform cont apprequest customers 0 socialsecuritynumber decoin apprequest customers 0 socialsecuritynumber",
+    "id": "508-text-5",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" data-secret-mask=\"***-**-0000\" id=\"apprequest_customers__0_socialsecuritynumber\" placeholder=\"xxx-xx-xxxx\" type=\"text\"/>",
+    "feature": "text apprequest customers 0 socialsecuritynumber xxx xx xxxx",
+    "id": "508-text-6",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_mothersmaidenname:decoin:apprequest_customers__0_mothersmaidenname\" name=\"mainform:cont_apprequest_customers__0_mothersmaidenname:decoin:apprequest_customers__0_mothersmaidenname\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 mothersmaidenname decoin apprequest customers 0 mothersmaidenname text mainform cont apprequest customers 0 mothersmaidenname decoin apprequest customers 0 mothersmaidenname",
+    "id": "508-text-7",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_currenthomeaddress_addressline1:decoin:apprequest_customers__0_currenthomeaddress_addressline1\" name=\"mainform:cont_apprequest_customers__0_currenthomeaddress_addressline1:decoin:apprequest_customers__0_currenthomeaddress_addressline1\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 currenthomeaddress addressline1 decoin apprequest customers 0 currenthomeaddress addressline1 text mainform cont apprequest customers 0 currenthomeaddress addressline1 decoin apprequest customers 0 currenthomeaddress addressline1",
+    "id": "508-text-8",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_currenthomeaddress_addressline2:decoin:apprequest_customers__0_currenthomeaddress_addressline2\" name=\"mainform:cont_apprequest_customers__0_currenthomeaddress_addressline2:decoin:apprequest_customers__0_currenthomeaddress_addressline2\" type=\"text\"/>",
+    "feature": "home address line 2 mainform cont apprequest customers 0 currenthomeaddress addressline2 decoin apprequest customers 0 currenthomeaddress addressline2 text mainform cont apprequest customers 0 currenthomeaddress addressline2 decoin apprequest customers 0 currenthomeaddress addressline2",
+    "id": "508-text-9",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_currenthomeaddress_city:decoin:apprequest_customers__0_currenthomeaddress_city\" name=\"mainform:cont_apprequest_customers__0_currenthomeaddress_city:decoin:apprequest_customers__0_currenthomeaddress_city\" type=\"text\" value=\"irvine\"/>",
+    "feature": "mainform cont apprequest customers 0 currenthomeaddress city decoin apprequest customers 0 currenthomeaddress city text mainform cont apprequest customers 0 currenthomeaddress city decoin apprequest customers 0 currenthomeaddress city irvine",
+    "id": "508-text-10",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask=\"00000-0000\" data-mask-unmask=\"true\" disabled=\"disabled\" id=\"mainform:cont_apprequest_customers__0_currenthomeaddress_postalcode:decoin:apprequest_customers__0_currenthomeaddress_postalcode\" name=\"mainform:cont_apprequest_customers__0_currenthomeaddress_postalcode:decoin:apprequest_customers__0_currenthomeaddress_postalcode\" placeholder=\"xxxxx or xxxxx-xxxx\" type=\"text\" value=\"92614\"/>",
+    "feature": "zip code xxxxx or xxxxx xxxx mainform cont apprequest customers 0 currenthomeaddress postalcode decoin apprequest customers 0 currenthomeaddress postalcode text mainform cont apprequest customers 0 currenthomeaddress postalcode decoin apprequest customers 0 currenthomeaddress postalcode 92614",
+    "id": "508-text-11",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" data-mask-reverse=\"true\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_monthsatcurrentaddress:decoin:apprequest_customers__0_monthsatcurrentaddress\" name=\"mainform:cont_apprequest_customers__0_monthsatcurrentaddress:decoin:apprequest_customers__0_monthsatcurrentaddress\" onchange=\"if($ofjq.oflows.ajax.rerender.handlechangeforrerender('apprequest_customers__0_monthsatcurrentaddress','apprequest.primary.monthsatcurrentaddress', this, '29','') === false){return false;};a4j.ajax.submit('mainform',event,{'control':this,'status':'fieldnotificationarea:status','oncomplete':function(request,event,data){$ofjq.publish('com.oflows.forms.rerender',['apprequest.primary.monthsatcurrentaddress']);clearhiddenfieldvalues('apprequest.primary.monthsatcurrentaddress','94609','');},'similaritygroupingid':'mainform:cont_apprequest_customers__0_monthsatcurrentaddress:decoin:supportreren_apprequest_customers__0_monthsatcurrentaddress','parameters':{'mainform:cont_apprequest_customers__0_monthsatcurrentaddress:decoin:supportreren_apprequest_customers__0_monthsatcurrentaddress':'mainform:cont_apprequest_customers__0_monthsatcurrentaddress:decoin:supportreren_apprequest_customers__0_monthsatcurrentaddress','ajaxsingle':'mainform:cont_apprequest_customers__0_monthsatcurrentaddress:decoin:apprequest_customers__0_monthsatcurrentaddress','conversationpropagation':'join'} } )\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 monthsatcurrentaddress decoin apprequest customers 0 monthsatcurrentaddress text mainform cont apprequest customers 0 monthsatcurrentaddress decoin apprequest customers 0 monthsatcurrentaddress",
+    "id": "508-text-12",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_mailingaddress_addressline1:decoin:apprequest_customers__0_mailingaddress_addressline1\" name=\"mainform:cont_apprequest_customers__0_mailingaddress_addressline1:decoin:apprequest_customers__0_mailingaddress_addressline1\" placeholder=\"enter a different mailing address\" type=\"text\"/>",
+    "feature": "enter a different mailing address mainform cont apprequest customers 0 mailingaddress addressline1 decoin apprequest customers 0 mailingaddress addressline1 text mainform cont apprequest customers 0 mailingaddress addressline1 decoin apprequest customers 0 mailingaddress addressline1",
+    "id": "508-text-13",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_mailingaddress_addressline2:decoin:apprequest_customers__0_mailingaddress_addressline2\" name=\"mainform:cont_apprequest_customers__0_mailingaddress_addressline2:decoin:apprequest_customers__0_mailingaddress_addressline2\" placeholder=\"optional - apt, unit or suite # \" type=\"text\"/>",
+    "feature": "mailing address 2 optional apt unit or suite mainform cont apprequest customers 0 mailingaddress addressline2 decoin apprequest customers 0 mailingaddress addressline2 text mainform cont apprequest customers 0 mailingaddress addressline2 decoin apprequest customers 0 mailingaddress addressline2",
+    "id": "508-text-14",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_mailingaddress_city:decoin:apprequest_customers__0_mailingaddress_city\" name=\"mainform:cont_apprequest_customers__0_mailingaddress_city:decoin:apprequest_customers__0_mailingaddress_city\" placeholder=\"city of your mailing address\" type=\"text\"/>",
+    "feature": "city of your mailing address mainform cont apprequest customers 0 mailingaddress city decoin apprequest customers 0 mailingaddress city text mainform cont apprequest customers 0 mailingaddress city decoin apprequest customers 0 mailingaddress city",
+    "id": "508-text-15",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask=\"00000-0000\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_mailingaddress_postalcode:decoin:apprequest_customers__0_mailingaddress_postalcode\" name=\"mainform:cont_apprequest_customers__0_mailingaddress_postalcode:decoin:apprequest_customers__0_mailingaddress_postalcode\" placeholder=\"xxxxx or xxxxx-xxxx\" type=\"text\"/>",
+    "feature": "xxxxx or xxxxx xxxx mainform cont apprequest customers 0 mailingaddress postalcode decoin apprequest customers 0 mailingaddress postalcode text mainform cont apprequest customers 0 mailingaddress postalcode decoin apprequest customers 0 mailingaddress postalcode",
+    "id": "508-text-16",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask=\"(000) 000-0000\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_phonecontact_homephonenumber:decoin:apprequest_customers__0_phonecontact_homephonenumber\" name=\"mainform:cont_apprequest_customers__0_phonecontact_homephonenumber:decoin:apprequest_customers__0_phonecontact_homephonenumber\" placeholder=\"xxx-xxx-xxxx\" type=\"text\"/>",
+    "feature": "xxx xxx xxxx mainform cont apprequest customers 0 phonecontact homephonenumber decoin apprequest customers 0 phonecontact homephonenumber text mainform cont apprequest customers 0 phonecontact homephonenumber decoin apprequest customers 0 phonecontact homephonenumber",
+    "id": "508-text-17",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask=\"(000) 000-0000\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_phonecontact_cellularphonenumber:decoin:apprequest_customers__0_phonecontact_cellularphonenumber\" name=\"mainform:cont_apprequest_customers__0_phonecontact_cellularphonenumber:decoin:apprequest_customers__0_phonecontact_cellularphonenumber\" type=\"text\"/>",
+    "feature": "alternate phone mainform cont apprequest customers 0 phonecontact cellularphonenumber decoin apprequest customers 0 phonecontact cellularphonenumber text mainform cont apprequest customers 0 phonecontact cellularphonenumber decoin apprequest customers 0 phonecontact cellularphonenumber",
+    "id": "508-text-18",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_employ_other:decoin:apprequest_customers__0_records_cdd_cust__0_columns_employ_other\" name=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_employ_other:decoin:apprequest_customers__0_records_cdd_cust__0_columns_employ_other\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 records cdd cust 0 columns employ other decoin apprequest customers 0 records cdd cust 0 columns employ other text mainform cont apprequest customers 0 records cdd cust 0 columns employ other decoin apprequest customers 0 records cdd cust 0 columns employ other",
+    "id": "508-text-19",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_primaryemployment_employername:decoin:apprequest_customers__0_primaryemployment_employername\" name=\"mainform:cont_apprequest_customers__0_primaryemployment_employername:decoin:apprequest_customers__0_primaryemployment_employername\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 primaryemployment employername decoin apprequest customers 0 primaryemployment employername text mainform cont apprequest customers 0 primaryemployment employername decoin apprequest customers 0 primaryemployment employername",
+    "id": "508-text-20",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_primaryemployment_title:decoin:apprequest_customers__0_primaryemployment_title\" name=\"mainform:cont_apprequest_customers__0_primaryemployment_title:decoin:apprequest_customers__0_primaryemployment_title\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 primaryemployment title decoin apprequest customers 0 primaryemployment title text mainform cont apprequest customers 0 primaryemployment title decoin apprequest customers 0 primaryemployment title",
+    "id": "508-text-21",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_one:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_one\" name=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_one:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_one\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 records cdd cust 0 columns school addr one decoin apprequest customers 0 records cdd cust 0 columns school addr one text mainform cont apprequest customers 0 records cdd cust 0 columns school addr one decoin apprequest customers 0 records cdd cust 0 columns school addr one",
+    "id": "508-text-22",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_two:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_two\" name=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_two:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_two\" type=\"text\"/>",
+    "feature": "school address 2 mainform cont apprequest customers 0 records cdd cust 0 columns school addr two decoin apprequest customers 0 records cdd cust 0 columns school addr two text mainform cont apprequest customers 0 records cdd cust 0 columns school addr two decoin apprequest customers 0 records cdd cust 0 columns school addr two",
+    "id": "508-text-23",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_city:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_city\" name=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_city:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_city\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 records cdd cust 0 columns school addr city decoin apprequest customers 0 records cdd cust 0 columns school addr city text mainform cont apprequest customers 0 records cdd cust 0 columns school addr city decoin apprequest customers 0 records cdd cust 0 columns school addr city",
+    "id": "508-text-24",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask=\"00000-0000\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_zip:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_zip\" name=\"mainform:cont_apprequest_customers__0_records_cdd_cust__0_columns_school_addr_zip:decoin:apprequest_customers__0_records_cdd_cust__0_columns_school_addr_zip\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 records cdd cust 0 columns school addr zip decoin apprequest customers 0 records cdd cust 0 columns school addr zip text mainform cont apprequest customers 0 records cdd cust 0 columns school addr zip decoin apprequest customers 0 records cdd cust 0 columns school addr zip",
+    "id": "508-text-25",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" class=\"\" data-mask-unmask=\"true\" id=\"mainform:cont_apprequest_customers__0_identitydocuments__0_number:decoin:apprequest_customers__0_identitydocuments__0_number\" name=\"mainform:cont_apprequest_customers__0_identitydocuments__0_number:decoin:apprequest_customers__0_identitydocuments__0_number\" type=\"text\"/>",
+    "feature": "mainform cont apprequest customers 0 identitydocuments 0 number decoin apprequest customers 0 identitydocuments 0 number text mainform cont apprequest customers 0 identitydocuments 0 number decoin apprequest customers 0 identitydocuments 0 number",
+    "id": "508-text-26",
+    "pattern": "unk",
+    "topic": "unk"
+  }
+]

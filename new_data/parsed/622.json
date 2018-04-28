@@ -1,0 +1,23 @@
+[
+  {
+    "dom": "<input class=\"q flexfix5\" maxlength=\"50\" name=\"q\" placeholder=\"search\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "search text q search 50",
+    "id": "622-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"q flexfix5\" maxlength=\"50\" name=\"q\" placeholder=\"search\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "search text q search 50",
+    "id": "622-text-1",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"q input-text valid\" data-required-text=\"please enter your email address.\" id=\"email-alert-address\" maxlength=\"75\" name=\"email\" placeholder=\"sign up for special offers, tips, &amp; more\" required=\"\" type=\"email\"/>",
+    "feature": "email email sign up for special offers tips more email alert address 75",
+    "id": "622-email-0",
+    "pattern": "email",
+    "topic": "email"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "dom": "<input id=\"watch_registration_serial_number\" name=\"watch_registration[serial_number]\" placeholder=\"watch serial number\" style=\"display:none\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration serial number watch serial number text watch registration serial number",
+    "id": "637-text-0",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input id=\"watch_registration_email_address\" name=\"watch_registration[email_address]\" placeholder=\"email address\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration email address watch registration email address email address text",
+    "id": "637-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"watch_registration_first_name\" name=\"watch_registration[first_name]\" placeholder=\"first name\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration first name watch registration first name first name text",
+    "id": "637-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"watch_registration_last_name\" name=\"watch_registration[last_name]\" placeholder=\"last name\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration last name watch registration last name last name text",
+    "id": "637-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"watch_registration_country\" name=\"watch_registration[country]\" placeholder=\"country\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration country watch registration country country text",
+    "id": "637-text-4",
+    "pattern": "country",
+    "topic": "country"
+  },
+  {
+    "dom": "<input id=\"watch_registration_address_line_1\" name=\"watch_registration[address_line_1]\" placeholder=\"address line 1\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration address line 1 watch registration address line 1 address line 1 text",
+    "id": "637-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"watch_registration_address_line_2\" name=\"watch_registration[address_line_2]\" placeholder=\"address line 2\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration address line 2 watch registration address line 2 address line 2 text",
+    "id": "637-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input id=\"watch_registration_city\" name=\"watch_registration[city]\" placeholder=\"city\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration city watch registration city city text",
+    "id": "637-text-7",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"watch_registration_state\" name=\"watch_registration[state]\" placeholder=\"state\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration state watch registration state state text",
+    "id": "637-text-8",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input id=\"watch_registration_postal_code\" name=\"watch_registration[postal_code]\" placeholder=\"postal code\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration postal code watch registration postal code postal code text",
+    "id": "637-text-9",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"watch_registration_phone_number\" name=\"watch_registration[phone_number]\" placeholder=\"phone number\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration phone number watch registration phone number phone number text",
+    "id": "637-text-10",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"watch_registration_purchase_location\" name=\"watch_registration[purchase_location]\" placeholder=\"purchase location\" type=\"text\"/>",
+    "feature": "please add me to your email list so i can receive special promotions and product updates watch registration purchase location watch registration purchase location purchase location text",
+    "id": "637-text-11",
+    "pattern": "store",
+    "topic": "store"
+  }
+]

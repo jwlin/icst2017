@@ -1,0 +1,198 @@
+[
+  {
+    "dom": "<input id=\"first_name\" name=\"first_name\" type=\"text\" value=\"\"/>",
+    "feature": "text first name first name",
+    "id": "504-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middle_name\" name=\"middle_name\" type=\"text\" value=\"\"/>",
+    "feature": "text middle name middle name",
+    "id": "504-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input id=\"last_name\" name=\"last_name\" type=\"text\" value=\"\"/>",
+    "feature": "text last name last name",
+    "id": "504-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"address_line1\" name=\"address_line1\" type=\"text\" value=\"\"/>",
+    "feature": "text address line1 address line1",
+    "id": "504-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"address_line2\" name=\"address_line2\" type=\"text\" value=\"\"/>",
+    "feature": "text address line2 address line2",
+    "id": "504-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input id=\"city\" name=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "text city city",
+    "id": "504-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"physical_address_line1\" name=\"physical_address_line1\" type=\"text\" value=\"\"/>",
+    "feature": "text physical address line1 physical address line1",
+    "id": "504-text-6",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"physical_address_line2\" name=\"physical_address_line2\" type=\"text\" value=\"\"/>",
+    "feature": "text physical address line2 physical address line2",
+    "id": "504-text-7",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input id=\"physical_city\" name=\"physical_city\" type=\"text\" value=\"\"/>",
+    "feature": "text physical city physical city",
+    "id": "504-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-describedby=\"describesecutiryword\" class=\"cb-full\" id=\"mothers_maiden_name\" name=\"mothers_maiden_name\" type=\"text\" value=\"\"/>",
+    "feature": "text mothers maiden name mothers maiden name",
+    "id": "504-text-9",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"auth_first_name_1\" name=\"auth_first_name_1\" type=\"text\" value=\"\"/>",
+    "feature": "month day year text auth first name 1 auth first name 1",
+    "id": "504-text-10",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"auth_middle_initial_1\" name=\"auth_middle_initial_1\" type=\"text\" value=\"\"/>",
+    "feature": "month day year text auth middle initial 1 auth middle initial 1",
+    "id": "504-text-11",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input id=\"auth_last_name_1\" name=\"auth_last_name_1\" type=\"text\" value=\"\"/>",
+    "feature": "month day year text auth last name 1 auth last name 1",
+    "id": "504-text-12",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"authc_address1\" name=\"authc_address1\" type=\"text\" value=\"\"/>",
+    "feature": "street address text authc address1 authc address1",
+    "id": "504-text-13",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"authc_address2\" name=\"authc_address2\" type=\"text\" value=\"\"/>",
+    "feature": "apt ste opt text authc address2 authc address2",
+    "id": "504-text-14",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input id=\"authc_city\" name=\"authc_city\" type=\"text\" value=\"\"/>",
+    "feature": "city text authc city authc city",
+    "id": "504-text-15",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-describedby=\"describeemail\" class=\"cb-email\" id=\"email_address\" name=\"email_address\" type=\"email\" value=\"\"/>",
+    "feature": "email email address email address",
+    "id": "504-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"affinity_number_primary\" name=\"affinity_number_primary\" type=\"tel\" value=\"\"/>",
+    "feature": "tel affinity number primary affinity number primary",
+    "id": "504-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"home_phone\" name=\"home_phone\" type=\"tel\" value=\"\"/>",
+    "feature": "tel home phone home phone",
+    "id": "504-tel-1",
+    "pattern": "phone.*number",
+    "topic": "home_phone_number"
+  },
+  {
+    "dom": "<input id=\"work_phone\" name=\"work_phone\" type=\"tel\" value=\"\"/>",
+    "feature": "tel work phone work phone",
+    "id": "504-tel-2",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  },
+  {
+    "dom": "<input id=\"zip\" name=\"zip\" type=\"tel\" value=\"\"/>",
+    "feature": "tel zip zip",
+    "id": "504-tel-3",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"physical_zip\" name=\"physical_zip\" type=\"tel\" value=\"\"/>",
+    "feature": "tel physical zip physical zip",
+    "id": "504-tel-4",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-describedby=\"describessn\" class=\"cb-ssn_new\" id=\"ssn\" name=\"ssn\" type=\"tel\" value=\"\"/>",
+    "feature": "yes no country of citizenship tel ssn ssn",
+    "id": "504-tel-5",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input id=\"annual_income\" name=\"annual_income\" type=\"tel\" value=\"\"/>",
+    "feature": "tel annual income annual income",
+    "id": "504-tel-6",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input id=\"mrtg_rent_amt\" name=\"mrtg_rent_amt\" type=\"tel\" value=\"\"/>",
+    "feature": "tel mrtg rent amt mrtg rent amt",
+    "id": "504-tel-7",
+    "pattern": "rent",
+    "topic": "rent"
+  },
+  {
+    "dom": "<input id=\"affinity_number_secondary\" name=\"affinity_number_secondary\" type=\"tel\" value=\"\"/>",
+    "feature": "month day year affinity number secondary affinity number secondary tel",
+    "id": "504-tel-8",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-describedby=\"describessn\" id=\"secondaryssn\" name=\"secondaryssn\" type=\"tel\" value=\"\"/>",
+    "feature": "month day year secondaryssn secondaryssn tel",
+    "id": "504-tel-9",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"cb-full\" id=\"authc_zip\" name=\"authc_zip\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code tel authc zip authc zip",
+    "id": "504-tel-10",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  }
+]

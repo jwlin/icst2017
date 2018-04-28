@@ -1,0 +1,23 @@
+[
+  {
+    "dom": "<input autocomplete=\"false\" name=\"chromeautofillhack\" style=\"display: none;\" type=\"text\"/>",
+    "feature": "residential address no po boxes or cmra suite apt if applicable no po boxes or cmra if applicable what card benefit is most important to you how do you rate your credit level first name mi last name date of birth social security number residential address no po boxes or cmra suite apt if applicable what card benefit is most important to you travel rewards cash back low interest not sure yet how do you rate your credit level excellent average rebuilding i understand that this is not a credit card application chromeautofillhack text",
+    "id": "509-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-describedby=\"validationdisplayid-4\" aria-invalid=\"false\" aria-required=\"true\" autocomplete=\"nope\" autocorrect=\"off\" class=\"form-input numeric\" id=\"dateofbirth\" name=\"dateofbirth\" type=\"tel\" value=\"\"/>",
+    "feature": "date of birth dateofbirth dateofbirth tel",
+    "id": "509-tel-0",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input aria-describedby=\"validationdisplayid-6\" aria-invalid=\"false\" aria-required=\"true\" autocomplete=\"nope\" autocorrect=\"off\" class=\"form-input numeric\" id=\"socialsecuritynumber\" name=\"socialsecuritynumber\" type=\"tel\" value=\"\"/>",
+    "feature": "social security number socialsecuritynumber socialsecuritynumber tel",
+    "id": "509-tel-1",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  }
+]

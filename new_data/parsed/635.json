@@ -1,0 +1,114 @@
+[
+  {
+    "dom": "<input id=\"firstname\" name=\"firstname\" placeholder=\"enter your name\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree enter your name firstname firstname text",
+    "id": "635-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"lastname\" name=\"lastname\" placeholder=\"enter your surname\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree enter your surname lastname lastname text",
+    "id": "635-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input data-val=\"true\" data-val-date=\"the field dateofbirth must be a date.\" id=\"dateofbirth\" name=\"dateofbirth\" placeholder=\"date of birth (mm/dd/yyyy)\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree dateofbirth dateofbirth date of birth mm dd yyyy text",
+    "id": "635-text-2",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input id=\"address\" name=\"address\" placeholder=\"street address\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree street address address address text",
+    "id": "635-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"aptste\" name=\"aptste\" placeholder=\"apt/ste\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree apt ste aptste aptste text",
+    "id": "635-text-4",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input id=\"city\" name=\"city\" placeholder=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree city city city text",
+    "id": "635-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"zip\" name=\"zip\" placeholder=\"zip\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree zip zip zip text",
+    "id": "635-text-6",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"phone\" id=\"phonenumber\" name=\"phonenumber\" placeholder=\"phone number\" type=\"text\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree phonenumber phonenumber phone number text",
+    "id": "635-text-7",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"date\" data-val=\"true\" data-val-date=\"the field sunglasspurchasedate must be a date.\" disabled=\"true\" id=\"sunglasspurchasedate\" name=\"sunglasspurchasedate\" placeholder=\"last purchase (mm/dd/yyyy)\" type=\"text\" value=\"\"/>",
+    "feature": "yes no last purchase mm dd yyyy sunglasspurchasedate sunglasspurchasedate text",
+    "id": "635-text-8",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"date\" data-val=\"true\" data-val-date=\"the field opticalglasspurchasedate must be a date.\" disabled=\"true\" id=\"opticalglasspurchasedate\" name=\"opticalglasspurchasedate\" placeholder=\"last purchase (mm/dd/yyyy)\" type=\"text\" value=\"\"/>",
+    "feature": "yes no last purchase mm dd yyyy opticalglasspurchasedate opticalglasspurchasedate text",
+    "id": "635-text-9",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"date\" disabled=\"true\" id=\"opticalglasspurchasedate\" name=\"opticalglasspurchasedate\" placeholder=\"last purchase (mm/dd/yyyy)\" type=\"text\" value=\"\"/>",
+    "feature": "yes no opticalglasspurchasedate opticalglasspurchasedate last purchase mm dd yyyy text",
+    "id": "635-text-10",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input class=\"date\" data-val=\"true\" data-val-date=\"the field otheropticalglasspurchasedate must be a date.\" disabled=\"true\" id=\"otheropticalglasspurchasedate\" name=\"otheropticalglasspurchasedate\" placeholder=\"last purchase (mm/dd/yyyy)\" type=\"text\" value=\"\"/>",
+    "feature": "yes no last purchase mm dd yyyy otheropticalglasspurchasedate otheropticalglasspurchasedate text",
+    "id": "635-text-11",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input data-val=\"true\" data-val-email=\"the email field is not a valid e-mail address.\" data-val-required=\"the email field is required.\" id=\"email\" name=\"email\" placeholder=\"email address\" type=\"email\" value=\"\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree email email email address email",
+    "id": "635-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input name=\"confirm-email\" placeholder=\"confirm email address\" type=\"email\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree confirm email address confirm email email",
+    "id": "635-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input data-val=\"true\" data-val-length=\"the password must be at least 6 characters long.\" data-val-length-max=\"100\" data-val-length-min=\"6\" data-val-required=\"the password field is required.\" id=\"password\" name=\"password\" placeholder=\"password\" type=\"password\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree password password password password",
+    "id": "635-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input data-val=\"true\" data-val-equalto=\"the password and confirmation password do not match.\" data-val-equalto-other=\"*.password\" id=\"confirmpassword\" name=\"confirmpassword\" placeholder=\"confirm password\" type=\"password\"/>",
+    "feature": "by checking i indicate i agree and understand the terms sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree yes no yes no yes no yes no agree to our terms conditions and privacy policy read agreement by checking i indicate i agree and understand the terms e mail sign up sign up to receive e mails regarding your account creation and when applicable the status progress of after sales services you will ask i indicate i agree confirm password confirmpassword confirmpassword password",
+    "id": "635-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

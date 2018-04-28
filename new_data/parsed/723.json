@@ -1,0 +1,37 @@
+[
+  {
+    "dom": "<input class=\"text\" id=\"email\" maxlength=\"255\" name=\"email\" size=\"50\" type=\"text\" value=\"\"/>",
+    "feature": "email email email text 255",
+    "id": "723-text-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"email_cfm\" maxlength=\"255\" name=\"email_cfm\" size=\"50\" type=\"text\"/>",
+    "feature": "email confirm email cfm email cfm text 255",
+    "id": "723-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"authkey\" name=\"authkey\" size=\"6\" type=\"text\"/>",
+    "feature": "please input 4 digit verification code text authkey authkey",
+    "id": "723-text-2",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"password\" name=\"password\" type=\"password\"/>",
+    "feature": "password password password password",
+    "id": "723-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"text\" id=\"password_cfm\" name=\"password_cfm\" type=\"password\"/>",
+    "feature": "your password can be 6 12 characters a z or 0 9 and cannot contain any spaces enter the same password in password confirm box to make sure you typed it correctly password password cfm password cfm",
+    "id": "723-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

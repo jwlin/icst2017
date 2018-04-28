@@ -1,0 +1,37 @@
+[
+  {
+    "dom": "<input class=\"input\" id=\"txtfirstname\" maxlength=\"50\" name=\"txtfirstname\" title=\"enter your firstname\" type=\"text\"/>",
+    "feature": "first given names first given names txtfirstname txtfirstname text 50",
+    "id": "703-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input\" id=\"txtsurname\" maxlength=\"50\" name=\"txtsurname\" title=\"enter your surname as it was when you graduated from your first degree\" type=\"text\"/>",
+    "feature": "surname family name surname family name txtsurname txtsurname text 50",
+    "id": "703-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input\" id=\"txtemail\" maxlength=\"100\" name=\"txtemail\" title=\"enter your email address\" type=\"text\"/>",
+    "feature": "email address email address txtemail txtemail text 100",
+    "id": "703-text-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input\" id=\"txtconfirm\" maxlength=\"100\" name=\"txtconfirm\" title=\"confirm your email address\" type=\"text\"/>",
+    "feature": "confirm email address confirm email address txtconfirm txtconfirm text 100",
+    "id": "703-text-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"txtapplicantid\" maxlength=\"5\" name=\"txtapplicantid\" type=\"text\"/>",
+    "feature": "applicant id text txtapplicantid txtapplicantid 5",
+    "id": "703-text-4",
+    "pattern": "unk",
+    "topic": "unk"
+  }
+]

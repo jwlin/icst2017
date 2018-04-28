@@ -1,0 +1,93 @@
+[
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid-pattern ng-invalid ng-invalid-required\" data-server=\"\" data-val=\"true\" data-val-length=\"'first name' must be between 0 and 30 characters. you entered {totallength} characters.\" data-val-length-max=\"30\" data-val-regex=\"'first name' is not in the correct format.\" data-val-regex-pattern=\"^[^&lt;&gt;;%!#()$^]*$\" data-val-required=\"'first name' should not be empty.\" id=\"datamodel-shippingcontact-firstname\" maxlength=\"30\" name=\"datamodel-shippingcontact-firstname\" ng-model=\"datamodel.shippingcontact.firstname\" ng-pattern=\"/^[^&lt;&gt;;%!#()$^]*$/\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first name should not be empty first name is not in the correct format first name first name datamodel shippingcontact firstname datamodel shippingcontact firstname text 30",
+    "id": "502-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid ng-valid-pattern\" data-server=\"\" data-val=\"true\" data-val-length=\"'mi' must be between 0 and 1 characters. you entered {totallength} characters.\" data-val-length-max=\"1\" data-val-regex=\"'mi' is not in the correct format.\" data-val-regex-pattern=\"^[^&lt;&gt;;%!#()$^]*$\" id=\"datamodel-shippingcontact-middleinitial\" maxlength=\"1\" name=\"datamodel-shippingcontact-middleinitial\" ng-model=\"datamodel.shippingcontact.middleinitial\" ng-pattern=\"/^[^&lt;&gt;;%!#()$^]*$/\" type=\"text\" value=\"\"/>",
+    "feature": "mi datamodel shippingcontact middleinitial datamodel shippingcontact middleinitial text 1",
+    "id": "502-text-1",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid-pattern ng-invalid ng-invalid-required\" data-server=\"\" data-val=\"true\" data-val-length=\"'last name' must be between 0 and 30 characters. you entered {totallength} characters.\" data-val-length-max=\"30\" data-val-regex=\"'last name' is not in the correct format.\" data-val-regex-pattern=\"^[^&lt;&gt;;%!#()$^]*$\" data-val-required=\"'last name' should not be empty.\" id=\"datamodel-shippingcontact-lastname\" maxlength=\"30\" name=\"datamodel-shippingcontact-lastname\" ng-model=\"datamodel.shippingcontact.lastname\" ng-pattern=\"/^[^&lt;&gt;;%!#()$^]*$/\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name should not be empty last name is not in the correct format last name last name datamodel shippingcontact lastname datamodel shippingcontact lastname text 30",
+    "id": "502-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid-pattern ng-invalid ng-invalid-required\" data-server=\"\" data-val=\"true\" data-val-length=\"'company name' must be between 0 and 30 characters. you entered {totallength} characters.\" data-val-length-max=\"30\" data-val-regex=\"'company name' is not in the correct format.\" data-val-regex-pattern=\"^(?=.*[a-za-z0-9]).+$\" data-val-required=\"'company name' should not be empty.\" id=\"datamodel-shippingcontact-companyname\" maxlength=\"30\" name=\"datamodel-shippingcontact-companyname\" ng-model=\"datamodel.shippingcontact.companyname\" ng-pattern=\"/^(?=.*[a-za-z0-9]).+$/\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "company name should not be empty company name is not in the correct format company name company name datamodel shippingcontact companyname datamodel shippingcontact companyname text 30",
+    "id": "502-text-3",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid-pattern ng-invalid ng-invalid-required\" data-server=\"\" data-val=\"true\" data-val-length=\"'street address' must be between 0 and 30 characters. you entered {totallength} characters.\" data-val-length-max=\"30\" data-val-regex=\"'street address' is not in the correct format.\" data-val-regex-pattern=\"(^(?![pp]([oo][ss][tt]|\\.)?\\s?[oo]([ff][ff][ii][cc][ee]|\\.)?\\s?([bb][oo][xx])?\\s?\\d*)[^&lt;&gt;;%!#()$^]*$)\" data-val-required=\"'street address' should not be empty.\" id=\"datamodel-shippingcontact-line1\" maxlength=\"30\" name=\"datamodel-shippingcontact-line1\" ng-model=\"datamodel.shippingcontact.line1\" ng-pattern=\"/(^(?![pp]([oo][ss][tt]|\\.)?\\s?[oo]([ff][ff][ii][cc][ee]|\\.)?\\s?([bb][oo][xx])?\\s?\\d*)[^&lt;&gt;;%!#()$^]*$)/\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "street address should not be empty street address is not in the correct format street address street address datamodel shippingcontact line1 datamodel shippingcontact line1 text 30",
+    "id": "502-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid ng-valid-pattern\" data-server=\"\" data-val=\"true\" data-val-length=\"'street address line 2' must be between 0 and 30 characters. you entered {totallength} characters.\" data-val-length-max=\"30\" data-val-regex=\"'street address line 2' is not in the correct format.\" data-val-regex-pattern=\"(^(?![pp]([oo][ss][tt]|\\.)?\\s?[oo]([ff][ff][ii][cc][ee]|\\.)?\\s?([bb][oo][xx])?\\s?\\d*)[^&lt;&gt;;%!#()$^]*$)\" id=\"datamodel-shippingcontact-line2\" maxlength=\"30\" name=\"datamodel-shippingcontact-line2\" ng-model=\"datamodel.shippingcontact.line2\" ng-pattern=\"/(^(?![pp]([oo][ss][tt]|\\.)?\\s?[oo]([ff][ff][ii][cc][ee]|\\.)?\\s?([bb][oo][xx])?\\s?\\d*)[^&lt;&gt;;%!#()$^]*$)/\" type=\"text\" value=\"\"/>",
+    "feature": "street address line 2 is not in the correct format street address line 2 street address line 2 datamodel shippingcontact line2 datamodel shippingcontact line2 text 30",
+    "id": "502-text-5",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid-pattern ng-invalid ng-invalid-required\" data-server=\"\" data-val=\"true\" data-val-length=\"'city' must be between 0 and 30 characters. you entered {totallength} characters.\" data-val-length-max=\"30\" data-val-regex=\"'city' is not in the correct format.\" data-val-regex-pattern=\"^[^&lt;&gt;;%!#()$^]*$\" data-val-required=\"'city' should not be empty.\" id=\"datamodel-shippingcontact-city\" maxlength=\"30\" name=\"datamodel-shippingcontact-city\" ng-model=\"datamodel.shippingcontact.city\" ng-pattern=\"/^[^&lt;&gt;;%!#()$^]*$/\" required=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city should not be empty city is not in the correct format city city datamodel shippingcontact city datamodel shippingcontact city text 30",
+    "id": "502-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input data-ng-value=\"dfsmodel.subtotalstring\" disabled=\"\" type=\"text\"/>",
+    "feature": "text",
+    "id": "502-text-7",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input data-finance-slider=\"true\" data-slider-handle=\"custom\" data-slider-id=\"shopcalculatorslider\" data-slider-max=\"29.99\" data-slider-min=\"19.99\" data-slider-step=\"1.00\" data-slider-value=\"24.99\" data-value=\"24.99\" id=\"shopcalculator\" style=\"display: none;\" type=\"text\" value=\"24.99\"/>",
+    "feature": "shopcalculator text 24 99",
+    "id": "502-text-8",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input afv-options=\"'{ &quot;skipunbind&quot;: true, &quot;waitms&quot;: 100 }'\" afv-validate=\"true\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-owns=\"typeahead-01g-6642\" class=\"ng-isolate-scope ng-pristine ng-valid-email ng-valid-pattern ng-invalid ng-invalid-required\" data-server=\"\" data-val=\"true\" data-val-length=\"'email address' must be between 0 and 50 characters. you entered {totallength} characters.\" data-val-length-max=\"50\" data-val-regex=\"'email address' is not in the correct format.\" data-val-regex-pattern=\"^([a-za-z0-9_\\-\\.\\']+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-za-z0-9\\-]+\\.)+))([a-za-z]{2,6}|[0-9]{1,3})(\\]?)$\" data-val-required=\"'email address' should not be empty.\" email-domains=\"datamodel.emaildomainsuggestions\" email-suggestions=\"suggestions\" email-typeahead=\"\" id=\"datamodel-shippingcontact-email\" maxlength=\"50\" name=\"datamodel-shippingcontact-email\" ng-model=\"datamodel.shippingcontact.email\" ng-pattern=\"/^([a-za-z0-9_\\-\\.\\']+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-za-z0-9\\-]+\\.)+))([a-za-z]{2,6}|[0-9]{1,3})(\\]?)$/\" required=\"\" type=\"email\" typeahead=\"email for email in suggestions\" typeahead-wait-ms=\"10\" value=\"\"/>",
+    "feature": "email address should not be empty email address is not in the correct format email address email address datamodel shippingcontact email datamodel shippingcontact email email 50",
+    "id": "502-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-valid ng-valid-pattern ng-valid-required ng-dirty\" data-server=\"\" data-val=\"true\" data-val-length=\"'postal code' must be between 5 and 10 characters. you entered {totallength} characters.\" data-val-length-max=\"10\" data-val-length-min=\"5\" data-val-regex=\"'postal code' is not in the correct format.\" data-val-regex-pattern=\"^\\d{5}(?:[-\\s]?\\d{4})?$\" data-val-required=\"'postal code' should not be empty.\" id=\"datamodel-shippingcontact-postalcode\" input-mask=\"99999\" maxlength=\"10\" name=\"datamodel-shippingcontact-postalcode\" ng-model=\"datamodel.shippingcontact.postalcode\" ng-pattern=\"/^\\d{5}(?:[-\\s]?\\d{4})?$/\" ng-updatedatamodel=\"\" placeholder=\"_____\" required=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "postal code should not be empty postal code is not in the correct format postal code postal code datamodel shippingcontact postalcode datamodel shippingcontact postalcode tel 10",
+    "id": "502-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid-pattern ng-invalid ng-invalid-required\" data-server=\"\" data-val=\"true\" data-val-length=\"'phone number' must be between 0 and 20 characters. you entered {totallength} characters.\" data-val-length-max=\"20\" data-val-regex=\"'phone number' is not in the correct format.\" data-val-regex-pattern=\"^(?:\\+)?(1)?(?:\\s*(?:\\-|\\.|\\()?\\s*)?([2-9]\\d{2})(?:\\s*(?:\\-|\\.|\\))?\\s*)?(\\d{3})(?:\\s*(?:\\-|\\.)?\\s*)?(\\d{4})$\" data-val-required=\"'phone number' should not be empty.\" id=\"datamodel-shippingcontact-phone-phonenumber\" input-mask=\"(999) 999-9999\" maxlength=\"28\" name=\"datamodel-shippingcontact-phone-phonenumber\" ng-model=\"datamodel.shippingcontact.phone.phonenumber\" ng-pattern=\"/^(?:\\+)?(1)?(?:\\s*(?:\\-|\\.|\\()?\\s*)?([2-9]\\d{2})(?:\\s*(?:\\-|\\.|\\))?\\s*)?(\\d{3})(?:\\s*(?:\\-|\\.)?\\s*)?(\\d{4})$/\" placeholder=\"\" required=\"\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number should not be empty phone number is not in the correct format phone number phone number datamodel shippingcontact phone phonenumber datamodel shippingcontact phone phonenumber tel 28",
+    "id": "502-tel-1",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input afv-validate=\"true\" class=\"ng-isolate-scope ng-pristine ng-valid ng-valid-pattern\" data-server=\"\" data-val=\"true\" data-val-length=\"'extension' must be between 0 and 5 characters. you entered {totallength} characters.\" data-val-length-max=\"5\" data-val-regex=\"'extension' is not in the correct format.\" data-val-regex-pattern=\"^[^&lt;&gt;;%!#()$^]*$\" id=\"datamodel-shippingcontact-phone-extension\" maxlength=\"5\" name=\"datamodel-shippingcontact-phone-extension\" ng-model=\"datamodel.shippingcontact.phone.extension\" ng-pattern=\"/^[^&lt;&gt;;%!#()$^]*$/\" type=\"tel\" value=\"\"/>",
+    "feature": "extension is not in the correct format extension ext datamodel shippingcontact phone extension datamodel shippingcontact phone extension tel 5",
+    "id": "502-tel-2",
+    "pattern": "phone.*ext",
+    "topic": "phone_ext"
+  }
+]

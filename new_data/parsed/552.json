@@ -1,0 +1,72 @@
+[
+  {
+    "dom": "<input aria-autocomplete=\"both\" aria-describedby=\"searchnotification\" aria-haspopup=\"true\" autocomplete=\"off\" class=\"autocomplete default input-edit ui-autocomplete-input\" data-datatype=\"string\" data-provide=\"typeahead\" id=\"sf-search\" name=\"sf-search\" placeholder=\"search\" role=\"textbox\" title=\"search\" type=\"text\"/>",
+    "feature": "text sf search search sf search",
+    "id": "552-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"loginuser loginboxinfo\" id=\"login-userid\" jqac=\"on\" name=\"idtoken1\" placeholder=\"user id\" spellcheck=\"false\" type=\"text\"/>",
+    "feature": "user id text login userid user id idtoken1",
+    "id": "552-text-1",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input aria-labelledby=\"namecapturelabel\" class=\"ember-view ember-text-field\" id=\"namecapture\" type=\"text\"/>",
+    "feature": "name text namecapture",
+    "id": "552-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-labelledby=\"birthdatelabel\" class=\"ember-view ember-text-field\" id=\"birthdate\" required=\"\" type=\"text\"/>",
+    "feature": "mm dd yyyy date of birth mm dd yyyy text birthdate",
+    "id": "552-text-3",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input aria-labelledby=\"residenceaddresscapturelabel\" class=\"ember-view ember-text-field\" id=\"residenceaddresscapture\" type=\"text\"/>",
+    "feature": "residential address text residenceaddresscapture",
+    "id": "552-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-labelledby=\"emaillabel\" class=\"ember-view ember-text-field\" id=\"email\" required=\"\" type=\"text\"/>",
+    "feature": "email address text email",
+    "id": "552-text-5",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-labelledby=\"phonenumberlabel\" class=\"ember-view ember-text-field\" id=\"phonenumber\" required=\"\" type=\"text\"/>",
+    "feature": "phone number text phonenumber",
+    "id": "552-text-6",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-labelledby=\"incomeamountlabel\" class=\"ember-view ember-text-field\" id=\"incomeamount\" required=\"\" type=\"text\"/>",
+    "feature": "income text incomeamount",
+    "id": "552-text-7",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input aria-labelledby=\"monthlyexpenseslabel\" class=\"ember-view ember-text-field\" id=\"monthlyexpenses\" required=\"\" type=\"text\"/>",
+    "feature": "monthly expenses text monthlyexpenses",
+    "id": "552-text-8",
+    "pattern": "rent",
+    "topic": "rent"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"loginboxinfo\" id=\"login-pass\" jqac=\"on\" name=\"idtoken2\" placeholder=\"password\" type=\"password\"/>",
+    "feature": "password save user id password login pass password idtoken2",
+    "id": "552-password-0",
+    "pattern": "unk",
+    "topic": "unk"
+  }
+]

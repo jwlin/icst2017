@@ -1,0 +1,23 @@
+[
+  {
+    "dom": "<input class=\"input-text email required\" id=\"dwfrm_login_username_d0ozivccxkqw\" maxlength=\"50\" name=\"dwfrm_login_username_d0ozivccxkqw\" type=\"text\" value=\"\"/>",
+    "feature": "email email dwfrm login username d0ozivccxkqw text dwfrm login username d0ozivccxkqw 50",
+    "id": "590-text-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocorrect=\"off\" class=\"txt valid\" id=\"emailid\" maxlength=\"50\" name=\"email\" placeholder=\"yourname@email.com\" spellcheck=\"false\" type=\"email\" value=\"\"/>",
+    "feature": "enter email address emailid email yourname email com email 50",
+    "id": "590-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"input-text-pw required\" id=\"dwfrm_login_password\" maxlength=\"20\" name=\"dwfrm_login_password\" type=\"password\" value=\"\"/>",
+    "feature": "password password dwfrm login password password dwfrm login password 20",
+    "id": "590-password-0",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

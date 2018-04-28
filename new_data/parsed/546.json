@@ -1,0 +1,156 @@
+[
+  {
+    "dom": "<input id=\"firstname\" maxlength=\"15\" name=\"firstname\" size=\"20\" type=\"text\" value=\"\"/>",
+    "feature": "first name first name text firstname firstname 15",
+    "id": "546-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"middleinitial\" maxlength=\"1\" name=\"middleinitial\" size=\"2\" type=\"text\" value=\"\"/>",
+    "feature": "m i m i text middleinitial middleinitial 1",
+    "id": "546-text-1",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input id=\"lastname\" maxlength=\"15\" name=\"lastname\" size=\"20\" type=\"text\" value=\"\"/>",
+    "feature": "last name last name text lastname lastname 15",
+    "id": "546-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"mothersmaidenname\" maxlength=\"16\" name=\"mothersmaidenname\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "mother s maiden name mother s maiden name text mothersmaidenname mothersmaidenname 16",
+    "id": "546-text-3",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"email\" maxlength=\"60\" name=\"email\" size=\"25\" type=\"text\" value=\"\"/>",
+    "feature": "e mail e mail text email email 60",
+    "id": "546-text-4",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"address_addressline1\" maxlength=\"36\" name=\"address.addressline1\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "street address street address text address addressline1 address addressline1 36",
+    "id": "546-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"address.city\" maxlength=\"19\" name=\"address.city\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "city city text address city address city 19",
+    "id": "546-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input id=\"residentialaddress_addressline1\" maxlength=\"36\" name=\"residentialaddress.addressline1\" size=\"30\" type=\"text\" value=\"\"/>",
+    "feature": "street address street address text residentialaddress addressline1 residentialaddress addressline1 36",
+    "id": "546-text-7",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"residentialaddress_city\" maxlength=\"19\" name=\"residentialaddress.city\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "city city text residentialaddress city residentialaddress city 19",
+    "id": "546-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"aligntop\" id=\"residentialaddress_zip_zip\" maxlength=\"5\" name=\"residentialaddress.zip.zip1\" size=\"5\" type=\"text\" value=\"\"/>",
+    "feature": "zip code zip code text residentialaddress zip zip1 residentialaddress zip zip 5",
+    "id": "546-text-9",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"ssn1\" maxlength=\"3\" name=\"ssn.ssn1\" onkeyup=\"autotab(this,3,event);\" size=\"3\" type=\"password\" value=\"\"/>",
+    "feature": "social security number social security number password ssn ssn1 ssn1 3",
+    "id": "546-password-0",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input id=\"ssn2\" maxlength=\"2\" name=\"ssn.ssn2\" onkeyup=\"autotab(this,2,event);\" size=\"2\" type=\"password\" value=\"\"/>",
+    "feature": "social security number social security number password ssn ssn2 ssn2 2",
+    "id": "546-password-1",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input id=\"ssn3\" maxlength=\"4\" name=\"ssn.ssn3\" size=\"4\" type=\"password\" value=\"\"/>",
+    "feature": "social security number social security number password ssn ssn3 ssn3 4",
+    "id": "546-password-2",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input maxlength=\"4\" name=\"birthdate.year\" size=\"4\" type=\"tel\" value=\"yyyy\"/>",
+    "feature": "date of birth date of birth tel birthdate year yyyy 4",
+    "id": "546-tel-0",
+    "pattern": "year",
+    "topic": "year"
+  },
+  {
+    "dom": "<input id=\"homephoneareacode\" maxlength=\"3\" name=\"homephone.areacode\" onkeyup=\"autotab(this,3,event);\" size=\"3\" type=\"tel\" value=\"\"/>",
+    "feature": "home phone home phone tel homephone areacode homephoneareacode 3",
+    "id": "546-tel-1",
+    "pattern": "area.*code",
+    "topic": "area_code"
+  },
+  {
+    "dom": "<input id=\"homephone1\" maxlength=\"3\" name=\"homephone.phone1\" onkeyup=\"autotab(this,3,event);\" size=\"3\" type=\"tel\" value=\"\"/>",
+    "feature": "home phone home phone tel homephone phone1 homephone1 3",
+    "id": "546-tel-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input id=\"homephone2\" maxlength=\"4\" name=\"homephone.phone2\" size=\"4\" type=\"tel\" value=\"\"/>",
+    "feature": "home phone home phone tel homephone phone2 homephone2 4",
+    "id": "546-tel-3",
+    "pattern": "home.*phone",
+    "topic": "home_phone_number"
+  },
+  {
+    "dom": "<input id=\"mobilephoneareacode\" maxlength=\"3\" name=\"mobilephone.areacode\" onkeyup=\"autotab(this,3,event);\" size=\"3\" type=\"tel\" value=\"\"/>",
+    "feature": "mobile phone mobile phone tel mobilephone areacode mobilephoneareacode 3",
+    "id": "546-tel-4",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input id=\"mobilephone1\" maxlength=\"3\" name=\"mobilephone.phone1\" onkeyup=\"autotab(this,3,event);\" size=\"3\" type=\"tel\" value=\"\"/>",
+    "feature": "mobile phone mobile phone tel mobilephone phone1 mobilephone1 3",
+    "id": "546-tel-5",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input id=\"mobilephone2\" maxlength=\"4\" name=\"mobilephone.phone2\" size=\"4\" type=\"tel\" value=\"\"/>",
+    "feature": "mobile phone mobile phone tel mobilephone phone2 mobilephone2 4",
+    "id": "546-tel-6",
+    "pattern": "cell.*phone",
+    "topic": "cell_phone_number"
+  },
+  {
+    "dom": "<input id=\"housingpayment\" maxlength=\"5\" name=\"housingpayment\" size=\"11\" type=\"tel\" value=\"\"/>",
+    "feature": "monthly housing payment monthly housing payment tel housingpayment housingpayment 5",
+    "id": "546-tel-7",
+    "pattern": "home.*phone",
+    "topic": "home_phone_number"
+  },
+  {
+    "dom": "<input class=\"aligntop\" id=\"address.zip.zip1\" maxlength=\"5\" name=\"address.zip.zip1\" size=\"5\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code zip code tel address zip zip1 address zip zip1 5",
+    "id": "546-tel-8",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  }
+]

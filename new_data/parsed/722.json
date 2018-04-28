@@ -1,0 +1,23 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" data-validate=\"{ required: true, help: 'first name is required.' }\" id=\"first\" maxlength=\"64\" name=\"first\" size=\"32\" type=\"text\" value=\"\"/>",
+    "feature": "first name first first text 64",
+    "id": "722-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" data-validate=\"{ required: true, help: 'last name is required.' }\" id=\"last\" maxlength=\"64\" name=\"last\" size=\"32\" type=\"text\" value=\"\"/>",
+    "feature": "last name last last text 64",
+    "id": "722-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" data-validate=\"{ required: true, format: 'email', help: 'email address is required.' }\" id=\"email\" maxlength=\"64\" name=\"email\" size=\"48\" type=\"email\" value=\"\"/>",
+    "feature": "email address email email email 64",
+    "id": "722-email-0",
+    "pattern": "email",
+    "topic": "email"
+  }
+]

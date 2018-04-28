@@ -1,0 +1,114 @@
+[
+  {
+    "dom": "<input aria-describedby=\"notice-pnxkr0j\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"pnxkr0j\" name=\"firstname\" placeholder=\"\" type=\"text\"/>",
+    "feature": "first name first name pnxkr0j text firstname",
+    "id": "594-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-eeuo100\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"eeuo100\" name=\"lastname\" placeholder=\"\" type=\"text\"/>",
+    "feature": "last name last name eeuo100 text lastname",
+    "id": "594-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-mrq5fws\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"mrq5fws\" name=\"company\" placeholder=\"\" type=\"text\"/>",
+    "feature": "company company mrq5fws text company",
+    "id": "594-text-2",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-f69hwo8\" class=\"input-text ui-autocomplete-input\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"f69hwo8\" name=\"postcode\" placeholder=\"\" type=\"text\"/>",
+    "feature": "selecting a zip postal code will fill in the city and state providence zip postal code zip postal code f69hwo8 text postcode",
+    "id": "594-text-3",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-s5ja580\" class=\"input-text ui-autocomplete-input\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"s5ja580\" name=\"city\" placeholder=\"\" type=\"text\"/>",
+    "feature": "city city s5ja580 text city",
+    "id": "594-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-af02g8n\" class=\"input-text ui-autocomplete-input\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"af02g8n\" name=\"street[0]\" placeholder=\"\" type=\"text\"/>",
+    "feature": "street address street address af02g8n text street 0",
+    "id": "594-text-5",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-lmc8qcl\" class=\"input-text ui-autocomplete-input\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"lmc8qcl\" name=\"street[1]\" placeholder=\"\" type=\"text\"/>",
+    "feature": "street address street address lmc8qcl text street 1",
+    "id": "594-text-6",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-w3kcbx4\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"w3kcbx4\" name=\"region\" placeholder=\"\" type=\"text\"/>",
+    "feature": "state province state province w3kcbx4 text region",
+    "id": "594-text-7",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input aria-describedby=\"notice-yk2ndkp\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"yk2ndkp\" name=\"telephone\" placeholder=\"\" type=\"text\"/>",
+    "feature": "phone number phone number yk2ndkp text telephone",
+    "id": "594-text-8",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"input-text\" data-bind=\"value: couponcode\" data-validate=\"{'required-entry':true}\" id=\"discount-code\" name=\"discount_code\" type=\"text\"/>",
+    "feature": "apply apply discount code discount code text",
+    "id": "594-text-9",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input class=\"input-text\" data-bind=\"attr: {autocomplete: autocomplete}\" data-validate=\"{required:true, 'validate-email':true}\" id=\"login-email\" name=\"username\" type=\"email\"/>",
+    "feature": "email address email address login email username email",
+    "id": "594-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text\" data-bind=\"\n                            textinput: email,\n                            hasfocus: emailfocused\" data-validate=\"{required:true, 'validate-email':true}\" id=\"customer-email\" name=\"username\" type=\"email\"/>",
+    "feature": "you can create an account after checkout you already have an account with us sign in or continue as guest you can create an account after checkout you already have an account with us sign in or continue as guest customer email username email",
+    "id": "594-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text\" data-bind=\"attr: {autocomplete: autocomplete}\" data-validate=\"{required:true, 'validate-email':true}\" id=\"email\" name=\"username\" type=\"email\"/>",
+    "feature": "email address email address email username email",
+    "id": "594-email-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text\" data-bind=\"attr: {autocomplete: autocomplete}\" data-validate=\"{required:true}\" id=\"login-password\" name=\"password\" type=\"password\"/>",
+    "feature": "password password login password password password",
+    "id": "594-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"input-text\" data-validate=\"{required:true}\" id=\"customer-password\" name=\"password\" placeholder=\"optional\" type=\"password\"/>",
+    "feature": "password forgot password log in password password password customer password optional",
+    "id": "594-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"input-text\" data-bind=\"attr: {autocomplete: autocomplete}\" data-validate=\"{required:true}\" id=\"pass\" name=\"password\" type=\"password\"/>",
+    "feature": "password password pass password password",
+    "id": "594-password-2",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

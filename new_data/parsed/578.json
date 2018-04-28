@@ -1,0 +1,121 @@
+[
+  {
+    "dom": "<input class=\"fs16 semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength\" data-selenium=\"firstname\" ie-maxlength=\"30\" maxlength=\"30\" name=\"firstname\" ng-model=\"pickupperson.firstname\" required=\"\" type=\"text\" valid-chars=\"\"/>",
+    "feature": "first name text firstname 30",
+    "id": "578-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"fs16 semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength\" data-selenium=\"lastname\" maxlength=\"30\" name=\"lastname\" ng-model=\"pickupperson.lastname\" required=\"\" type=\"text\" valid-chars=\"\"/>",
+    "feature": "last name text lastname 30",
+    "id": "578-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"fs16 semibold validation-icon-space error-icon-only ng-pristine ng-untouched ng-valid ng-valid-maxlength\" data-selenium=\"messengercompanyname\" maxlength=\"30\" name=\"messengercompanyname\" ng-model=\"pickupperson.messengercompanyname\" placeholder=\"optional\" type=\"text\" valid-chars=\"\"/>",
+    "feature": "messenger courier services text messengercompanyname optional 30",
+    "id": "578-text-2",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input bh-disallowed-chars=\"[ ]\" class=\"fs16 semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-invalid-email\" data-selenium=\"email\" email=\"\" name=\"email\" ng-model=\"pickupperson.email\" ng-trim=\"false\" placeholder=\"to receive order confirmation\" required=\"\" type=\"text\"/>",
+    "feature": "email text email to receive order confirmation",
+    "id": "578-text-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"fs16 semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength\" data-selenium=\"firstname\" maxlength=\"30\" name=\"firstname\" ng-model=\"address.firstname\" placeholder=\"\" required=\"\" type=\"text\"/>",
+    "feature": "first name is required first name is required first name is required first name text firstname 30",
+    "id": "578-text-4",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"fs16 semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength\" data-selenium=\"lastname\" maxlength=\"30\" name=\"lastname\" ng-model=\"address.lastname\" required=\"\" type=\"text\"/>",
+    "feature": "last name is required last name is required last name is required last name text lastname 30",
+    "id": "578-text-5",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"fs16 semibold validation-icon-space error-icon-only ng-pristine ng-untouched ng-valid ng-valid-maxlength\" data-selenium=\"company\" maxlength=\"30\" name=\"companyname\" ng-model=\"address.companyname\" placeholder=\"(optional)\" type=\"text\"/>",
+    "feature": "company text companyname optional 30",
+    "id": "578-text-6",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" bh-google-maps-address-autocomplete=\"\" class=\"fs16 semibold ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength\" data-selenium=\"address1\" maxlength=\"30\" name=\"address1\" ng-model=\"address.address1\" placeholder=\"street address\" required=\"\" type=\"text\"/>",
+    "feature": "street address is required street address is required street address is required address 1 text address1 street address 30",
+    "id": "578-text-7",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"fs16 semibold ng-pristine ng-untouched ng-valid ng-valid-maxlength ng-valid-required\" data-selenium=\"address2\" maxlength=\"30\" name=\"address2\" ng-class=\"address.country === 'br' ? 'validation-icon-space' : ''\" ng-model=\"address.address2\" ng-required=\"address.country === 'br'\" placeholder=\"apartment, suite, unit, floor (optional)\" type=\"text\"/>",
+    "feature": "address 2 text address2 apartment suite unit floor optional 30",
+    "id": "578-text-8",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"fs16 mid semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength\" data-selenium=\"city\" maxlength=\"30\" name=\"city\" ng-model=\"address.city\" required=\"\" type=\"text\"/>",
+    "feature": "state text city 30",
+    "id": "578-text-9",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"fs16 extrasmall semibold right ng-pristine ng-untouched ng-valid ng-valid-mask\" data-selenium=\"phoneext\" name=\"phoneext\" ng-model=\"address.phoneext\" placeholder=\"      \" type=\"text\" ui-mask=\"?9?9?9?9?9?9\" ui-mask-placeholder-char=\"space\"/>",
+    "feature": "ext text phoneext",
+    "id": "578-text-10",
+    "pattern": "phone.*ext",
+    "topic": "phone_ext"
+  },
+  {
+    "dom": "<input class=\"fs16 extrasmall semibold right ng-pristine ng-untouched ng-valid ng-valid-mask\" data-selenium=\"phone2ext\" name=\"phonetwoext\" ng-model=\"address.phonetwoext\" placeholder=\"      \" type=\"text\" ui-mask=\"?9?9?9?9?9?9\" ui-mask-placeholder-char=\"space\"/>",
+    "feature": "ext text phonetwoext",
+    "id": "578-text-11",
+    "pattern": "phone.*ext",
+    "topic": "phone_ext"
+  },
+  {
+    "dom": "<input bh-disallowed-chars=\"[ ]\" class=\"fs16 semibold ng-pristine ng-untouched ng-invalid ng-invalid-required ng-invalid-email\" data-selenium=\"email\" email=\"\" name=\"email\" ng-model=\"address.email\" ng-trim=\"false\" placeholder=\"to receive order confirmation\" required=\"\" type=\"text\"/>",
+    "feature": "email is required email is required email is required email text email to receive order confirmation",
+    "id": "578-text-12",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"fs16 semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-mask\" data-selenium=\"phone\" name=\"phone\" ng-model=\"pickupperson.phone\" placeholder=\"(   )    -              \" required=\"\" type=\"tel\" ui-mask=\"(999) 999-9999?9?9?9?9?9?9?9?9?9?9\" ui-mask-placeholder-char=\"space\" ui-options=\"{clearonblur: false}\"/>",
+    "feature": "phone tel phone",
+    "id": "578-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input bh-territory-zip-input=\"\" bh-valid-chars=\"\" class=\"fs16 small semibold validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-valid-chars ng-valid-mask\" data-selenium=\"zip\" name=\"zip\" ng-model=\"address.zip\" placeholder=\"     \" required=\"\" type=\"tel\" ui-mask=\"99999\" ui-mask-placeholder-char=\"space\" ui-options=\"{clearonblur: false}\"/>",
+    "feature": "zip is required zip is required zip is required zip tel zip",
+    "id": "578-tel-1",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"fs16 mid semibold phone-number validation-icon-space ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-mask\" data-selenium=\"phone\" name=\"phone\" ng-model=\"address.phone\" placeholder=\"in case questions arise\" required=\"\" type=\"tel\" ui-mask=\"(999) 999-9999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"space\" ui-options=\"{clearonblur: false, clearonblurplaceholder: true}\"/>",
+    "feature": "ext add ext ext tel phone in case questions arise",
+    "id": "578-tel-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"fs16 mid semibold validation-icon-space ng-pristine ng-untouched ng-valid ng-valid-mask\" data-selenium=\"phone2\" name=\"phonetwo\" ng-model=\"address.phonetwo\" placeholder=\"(   )    -    \" type=\"tel\" ui-mask=\"(999) 999-9999\" ui-mask-placeholder-char=\"space\" ui-options=\"{clearonblur: false}\"/>",
+    "feature": "ext add ext ext tel phonetwo",
+    "id": "578-tel-3",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

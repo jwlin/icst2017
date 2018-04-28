@@ -1,0 +1,30 @@
+[
+  {
+    "dom": "<input alt=\"search engine\" class=\"textfield\" id=\"search\" maxlength=\"255\" name=\"searchtext\" size=\"15\" type=\"text\"/>",
+    "feature": "search searchtext text 255",
+    "id": "748-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input id=\"email\" name=\"email\" type=\"text\" value=\"\"/>",
+    "feature": "password confirm password email text email",
+    "id": "748-text-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"password\" name=\"password\" type=\"password\"/>",
+    "feature": "email address confirm password password password password",
+    "id": "748-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"password2\" name=\"password2\" type=\"password\"/>",
+    "feature": "password email address password2 password password2",
+    "id": "748-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

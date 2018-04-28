@@ -1,0 +1,86 @@
+[
+  {
+    "dom": "<input class=\"button-inline search-field\" id=\"q\" name=\"q\" placeholder=\"search keyword or model #\" type=\"text\" value=\"\"/>",
+    "feature": "search search text q q search keyword or model",
+    "id": "649-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_firstname\" name=\"dwfrm_registerproduct_firstname\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "first name first name text dwfrm registerproduct firstname dwfrm registerproduct firstname",
+    "id": "649-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_lastname\" name=\"dwfrm_registerproduct_lastname\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name last name text dwfrm registerproduct lastname dwfrm registerproduct lastname",
+    "id": "649-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-text phone\" id=\"dwfrm_registerproduct_phone\" name=\"dwfrm_registerproduct_phone\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "phone number phone number text dwfrm registerproduct phone dwfrm registerproduct phone",
+    "id": "649-text-3",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_address\" name=\"dwfrm_registerproduct_address\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "street address street address text dwfrm registerproduct address dwfrm registerproduct address",
+    "id": "649-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-text \" id=\"dwfrm_registerproduct_address2\" name=\"dwfrm_registerproduct_address2\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "address 2 address 2 text dwfrm registerproduct address2 dwfrm registerproduct address2",
+    "id": "649-text-5",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_city\" name=\"dwfrm_registerproduct_city\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city city text dwfrm registerproduct city dwfrm registerproduct city",
+    "id": "649-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_zip\" name=\"dwfrm_registerproduct_zip\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "zip code zip code text dwfrm registerproduct zip dwfrm registerproduct zip",
+    "id": "649-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_modelnumber\" name=\"dwfrm_registerproduct_modelnumber\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "model number model number text dwfrm registerproduct modelnumber dwfrm registerproduct modelnumber",
+    "id": "649-text-8",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  },
+  {
+    "dom": "<input class=\"input-text \" id=\"dwfrm_registerproduct_serial\" name=\"dwfrm_registerproduct_serial\" placeholder=\"\" type=\"text\" value=\"\"/>",
+    "feature": "manufacturing code serial number manufacturing code serial number text dwfrm registerproduct serial dwfrm registerproduct serial",
+    "id": "649-text-9",
+    "pattern": "serial",
+    "topic": "serial_number"
+  },
+  {
+    "dom": "<input class=\"input-text email required\" id=\"dwfrm_registerproduct_email\" name=\"dwfrm_registerproduct_email\" placeholder=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email email email dwfrm registerproduct email dwfrm registerproduct email",
+    "id": "649-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text email required\" id=\"dwfrm_newslettersignup_email\" name=\"dwfrm_newslettersignup_email\" placeholder=\"\" type=\"email\" value=\"\"/>",
+    "feature": "enter your email enter your email email dwfrm newslettersignup email dwfrm newslettersignup email",
+    "id": "649-email-1",
+    "pattern": "email",
+    "topic": "email"
+  }
+]

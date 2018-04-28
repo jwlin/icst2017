@@ -1,0 +1,30 @@
+[
+  {
+    "dom": "<input class=\"origin-key\" id=\"useroriginkey\" name=\"data[user][origin_key]\" type=\"text\"/>",
+    "feature": "origin key text data user origin key useroriginkey",
+    "id": "720-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"useremail\" maxlength=\"255\" name=\"data[user][email]\" required=\"required\" type=\"email\"/>",
+    "feature": "email data user email useremail email 255",
+    "id": "720-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"userpassword\" name=\"data[user][password]\" required=\"required\" type=\"password\"/>",
+    "feature": "password password data user password userpassword",
+    "id": "720-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"userconfirmpassword\" name=\"data[user][confirm_password]\" required=\"required\" type=\"password\"/>",
+    "feature": "confirm password password data user confirm password userconfirmpassword",
+    "id": "720-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

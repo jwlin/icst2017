@@ -1,0 +1,72 @@
+[
+  {
+    "dom": "<input autocomplete=\"on\" id=\"email-signin-account\" name=\"email\" required=\"true\" type=\"text\" value=\"\"/>",
+    "feature": "email address text email signin account email",
+    "id": "568-text-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"delivery-recipient\" maxlength=\"50\" name=\"delivery-recipient\" type=\"text\"/>",
+    "feature": "to text delivery recipient delivery recipient 50",
+    "id": "568-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"delivery-sender\" maxlength=\"50\" name=\"delivery-sender\" type=\"text\"/>",
+    "feature": "from text delivery sender delivery sender 50",
+    "id": "568-text-2",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"region-selector-input\" name=\"region-selector-input\" placeholder=\"type your country/region\" title=\"type country (displays shortlist)\" type=\"text\"/>",
+    "feature": "type your country region text region selector input region selector input",
+    "id": "568-text-3",
+    "pattern": "region",
+    "topic": "region"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"email-signup-account\" name=\"email\" required=\"\" type=\"email\"/>",
+    "feature": "email email email signup account email",
+    "id": "568-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"delivery-email\" name=\"delivery-email\" placeholder=\"enter email\" required=\"\" type=\"email\" value=\"\"/>",
+    "feature": "email address email delivery email enter email delivery email",
+    "id": "568-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"password\" name=\"password\" required=\"true\" type=\"password\" value=\"\"/>",
+    "feature": "password password password password",
+    "id": "568-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input aria-live=\"polite\" autocomplete=\"off\" id=\"new-password\" maxlength=\"25\" name=\"new-password\" required=\"\" type=\"password\"/>",
+    "feature": "password password new password new password 25",
+    "id": "568-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input data-parsley-required-message=\"please enter code\" data-parsley-type=\"integer\" data-parsley-type-message=\"please enter a valid code. numbers only.\" id=\"giftcard-num\" name=\"giftcard-num\" required=\"\" type=\"tel\"/>",
+    "feature": "enter code tel giftcard num giftcard num",
+    "id": "568-tel-0",
+    "pattern": "gift.*card",
+    "topic": "gift_card_number"
+  },
+  {
+    "dom": "<input data-parsley-required-message=\"please enter pin\" data-parsley-type=\"integer\" data-parsley-type-message=\"please enter a valid pin. numbers only.\" id=\"giftcard-pin\" name=\"giftcard-pin\" required=\"\" type=\"tel\"/>",
+    "feature": "enter pin tel giftcard pin giftcard pin",
+    "id": "568-tel-1",
+    "pattern": "gift.*card",
+    "topic": "gift_card_number"
+  }
+]

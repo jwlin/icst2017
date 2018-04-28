@@ -1,0 +1,100 @@
+[
+  {
+    "dom": "<input id=\"q\" name=\"q\" placeholder=\"search\" type=\"text\" value=\"\"/>",
+    "feature": "search catalog text q q search",
+    "id": "601-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input id=\"q\" name=\"q\" placeholder=\"search\" type=\"text\" value=\"\"/>",
+    "feature": "search catalog text q q search",
+    "id": "601-text-1",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"input-text zipcode required\" id=\"dwfrm_storelocator_postalcode\" maxlength=\"2147483647\" name=\"dwfrm_storelocator_postalcode\" type=\"text\" value=\"\"/>",
+    "feature": "zip code zip code text dwfrm storelocator postalcode dwfrm storelocator postalcode 2147483647",
+    "id": "601-text-2",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"input-text\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_companyname\" maxlength=\"30\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_companyname\" type=\"text\" value=\"\"/>",
+    "feature": "company company text dwfrm singleshipping shippingaddress addressfields companyname dwfrm singleshipping shippingaddress addressfields companyname 30",
+    "id": "601-text-3",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" maxlength=\"16\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name first name text dwfrm singleshipping shippingaddress addressfields firstname dwfrm singleshipping shippingaddress addressfields firstname 16",
+    "id": "601-text-4",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" maxlength=\"16\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name last name text dwfrm singleshipping shippingaddress addressfields lastname dwfrm singleshipping shippingaddress addressfields lastname 16",
+    "id": "601-text-5",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" type=\"text\" value=\"\"/>",
+    "feature": "address 1 address 1 text dwfrm singleshipping shippingaddress addressfields address1 dwfrm singleshipping shippingaddress addressfields address1 50",
+    "id": "601-text-6",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"input-text\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" maxlength=\"30\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" type=\"text\" value=\"\"/>",
+    "feature": "address 2 address 2 text dwfrm singleshipping shippingaddress addressfields address2 dwfrm singleshipping shippingaddress addressfields address2 30",
+    "id": "601-text-7",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" maxlength=\"30\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" type=\"text\" value=\"\"/>",
+    "feature": "city city text dwfrm singleshipping shippingaddress addressfields city dwfrm singleshipping shippingaddress addressfields city 30",
+    "id": "601-text-8",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"input-text zipcode required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_zip\" maxlength=\"10\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_zip\" type=\"text\" value=\"\"/>",
+    "feature": "zip code zip code text dwfrm singleshipping shippingaddress addressfields zip dwfrm singleshipping shippingaddress addressfields zip 10",
+    "id": "601-text-9",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"dwfrm_cart_couponcode\" name=\"dwfrm_cart_couponcode\" type=\"text\"/>",
+    "feature": "enter promo code text dwfrm cart couponcode dwfrm cart couponcode",
+    "id": "601-text-10",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input class=\"input-text email required\" id=\"dwfrm_singleshipping_email_emailaddress\" maxlength=\"42\" name=\"dwfrm_singleshipping_email_emailaddress\" type=\"email\" value=\"\"/>",
+    "feature": "email address email address email dwfrm singleshipping email emailaddress dwfrm singleshipping email emailaddress 42",
+    "id": "601-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"email-input\" id=\"email\" name=\"email\" placeholder=\"enter your email\" type=\"email\"/>",
+    "feature": "sign up email email email enter your email",
+    "id": "601-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"input-text phone required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_phone\" maxlength=\"20\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_phone\" type=\"tel\" value=\"\"/>",
+    "feature": "phone phone tel dwfrm singleshipping shippingaddress addressfields phone dwfrm singleshipping shippingaddress addressfields phone 20",
+    "id": "601-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

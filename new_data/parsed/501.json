@@ -1,0 +1,65 @@
+[
+  {
+    "dom": "<input autocomplete=\"given-name\" id=\"firstname\" maxlength=\"15\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "first name firstname text firstname 15",
+    "id": "501-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"on\" id=\"middlename\" maxlength=\"1\" name=\"middlename\" type=\"text\" value=\"\"/>",
+    "feature": "m i optional middlename text middlename 1",
+    "id": "501-text-1",
+    "pattern": "middle.*name",
+    "topic": "middle_name"
+  },
+  {
+    "dom": "<input autocomplete=\"family-name\" id=\"lastname\" maxlength=\"25\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "last name and suffix lastname text lastname 25",
+    "id": "501-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping street-address\" id=\"addresslineone\" maxlength=\"35\" name=\"addresslineone\" type=\"text\" value=\"\"/>",
+    "feature": "street address no po box addresslineone text addresslineone 35",
+    "id": "501-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping postal-code\" id=\"zipcode\" maxlength=\"5\" name=\"zipcode\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
+    "feature": "zip code zipcode text zipcode 5",
+    "id": "501-text-4",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input autocomplete=\"shipping locality\" id=\"cityname\" maxlength=\"20\" name=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "city cityname text city 20",
+    "id": "501-text-5",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input autocomplete=\"email\" id=\"email\" maxlength=\"64\" name=\"emailaddress\" type=\"text\" value=\"\"/>",
+    "feature": "email address email text emailaddress 64",
+    "id": "501-text-6",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" id=\"search\" type=\"search\" value=\"\"/>",
+    "feature": "search search search search",
+    "id": "501-search-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input autocomplete=\"tel\" id=\"primaryphone\" maxlength=\"14\" name=\"primaryphone\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number primaryphone tel primaryphone 14",
+    "id": "501-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

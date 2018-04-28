@@ -1,0 +1,79 @@
+[
+  {
+    "dom": "<input id=\"firstname\" name=\"firstname\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required firstname text firstname",
+    "id": "747-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input id=\"lastname\" name=\"lastname\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required lastname text lastname",
+    "id": "747-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input id=\"email\" name=\"email\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "e mail is invalid required email text email",
+    "id": "747-text-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"verifyemail\" name=\"verifyemail\" title=\"verify email\" type=\"text\"/>",
+    "feature": "verify e mail verifyemail text verifyemail",
+    "id": "747-text-3",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input id=\"dob\" name=\"dob\" style=\"width:100px;\" type=\"text\"/>",
+    "feature": "month january february march april may june july august september october november december day dob text dob",
+    "id": "747-text-4",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input id=\"zip\" name=\"zip\" style=\"width:100px;\" type=\"text\"/>",
+    "feature": "required zip text zip",
+    "id": "747-text-5",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input id=\"login\" name=\"login\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required login text login",
+    "id": "747-text-6",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input id=\"password\" name=\"password\" style=\"width:250px;\" type=\"text\"/>",
+    "feature": "required password text password",
+    "id": "747-text-7",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"date483\" name=\"date483\" style=\"width:120px;\" type=\"text\"/>",
+    "feature": "inquiry date date483 text date483",
+    "id": "747-text-8",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input id=\"newpassword\" name=\"newpassword\" title=\"enter new password\" type=\"password\"/>",
+    "feature": "required newpassword password newpassword",
+    "id": "747-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input id=\"verifypassword\" name=\"verifypassword\" title=\"verify password\" type=\"password\"/>",
+    "feature": "verify password verifypassword password verifypassword",
+    "id": "747-password-1",
+    "pattern": "password",
+    "topic": "password"
+  }
+]

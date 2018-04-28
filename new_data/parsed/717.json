@@ -1,0 +1,170 @@
+[
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtfirstname\" maxlength=\"60\" name=\"applicantinformation$txtfirstname\" type=\"text\"/>",
+    "feature": "legal first name required text applicantinformation txtfirstname applicantinformation txtfirstname 60",
+    "id": "717-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtlastname\" maxlength=\"60\" name=\"applicantinformation$txtlastname\" type=\"text\"/>",
+    "feature": "legal last name required text applicantinformation txtlastname applicantinformation txtlastname 60",
+    "id": "717-text-1",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtinitial\" maxlength=\"1\" name=\"applicantinformation$txtinitial\" type=\"text\"/>",
+    "feature": "middle initial text applicantinformation txtinitial applicantinformation txtinitial 1",
+    "id": "717-text-2",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtalias\" maxlength=\"60\" name=\"applicantinformation$txtalias\" type=\"text\"/>",
+    "feature": "other name records may be under text applicantinformation txtalias applicantinformation txtalias 60",
+    "id": "717-text-3",
+    "pattern": "full.*name",
+    "topic": "full_name"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxpaddress1\" maxlength=\"75\" name=\"applicantinformation$txtxpaddress1\" type=\"text\"/>",
+    "feature": "required text applicantinformation txtxpaddress1 applicantinformation txtxpaddress1 75",
+    "id": "717-text-4",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxpaddress2\" maxlength=\"75\" name=\"applicantinformation$txtxpaddress2\" type=\"text\"/>",
+    "feature": "address line 2 text applicantinformation txtxpaddress2 applicantinformation txtxpaddress2 75",
+    "id": "717-text-5",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxpcity\" maxlength=\"75\" name=\"applicantinformation$txtxpcity\" type=\"text\"/>",
+    "feature": "required text applicantinformation txtxpcity applicantinformation txtxpcity 75",
+    "id": "717-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxpzip\" name=\"applicantinformation$txtxpzip\" type=\"text\"/>",
+    "feature": "required format required text applicantinformation txtxpzip applicantinformation txtxpzip",
+    "id": "717-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxpintstate\" maxlength=\"35\" name=\"applicantinformation$txtxpintstate\" type=\"text\"/>",
+    "feature": "required text applicantinformation txtxpintstate applicantinformation txtxpintstate 35",
+    "id": "717-text-8",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxpintzip\" maxlength=\"14\" name=\"applicantinformation$txtxpintzip\" type=\"text\"/>",
+    "feature": "zip postal code text applicantinformation txtxpintzip applicantinformation txtxpintzip 14",
+    "id": "717-text-9",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxladdress1\" maxlength=\"75\" name=\"applicantinformation$txtxladdress1\" type=\"text\"/>",
+    "feature": "required text applicantinformation txtxladdress1 applicantinformation txtxladdress1 75",
+    "id": "717-text-10",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxladdress2\" maxlength=\"75\" name=\"applicantinformation$txtxladdress2\" type=\"text\"/>",
+    "feature": "address line 2 text applicantinformation txtxladdress2 applicantinformation txtxladdress2 75",
+    "id": "717-text-11",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxlcity\" maxlength=\"75\" name=\"applicantinformation$txtxlcity\" type=\"text\"/>",
+    "feature": "required text applicantinformation txtxlcity applicantinformation txtxlcity 75",
+    "id": "717-text-12",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxlzip\" name=\"applicantinformation$txtxlzip\" type=\"text\"/>",
+    "feature": "required format required text applicantinformation txtxlzip applicantinformation txtxlzip",
+    "id": "717-text-13",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxlintstate\" maxlength=\"35\" name=\"applicantinformation$txtxlintstate\" type=\"text\"/>",
+    "feature": "required text applicantinformation txtxlintstate applicantinformation txtxlintstate 35",
+    "id": "717-text-14",
+    "pattern": "state",
+    "topic": "state"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxlintzip\" maxlength=\"14\" name=\"applicantinformation$txtxlintzip\" type=\"text\"/>",
+    "feature": "zip postal code text applicantinformation txtxlintzip applicantinformation txtxlintzip 14",
+    "id": "717-text-15",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtphone\" maxlength=\"16\" name=\"applicantinformation$txtphone\" type=\"text\"/>",
+    "feature": "home mobile other text applicantinformation txtphone applicantinformation txtphone 16",
+    "id": "717-text-16",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtxlphone\" maxlength=\"16\" name=\"applicantinformation$txtxlphone\" type=\"text\"/>",
+    "feature": "format required international phone numbers cannot contain letters home mobile other text applicantinformation txtxlphone applicantinformation txtxlphone 16",
+    "id": "717-text-17",
+    "pattern": "international.*phone",
+    "topic": "internation_phone_number"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtintphone\" maxlength=\"26\" name=\"applicantinformation$txtintphone\" type=\"text\"/>",
+    "feature": "international phone numbers cannot contain letters home mobile other text applicantinformation txtintphone applicantinformation txtintphone 26",
+    "id": "717-text-18",
+    "pattern": "international.*phone",
+    "topic": "internation_phone_number"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtemail\" maxlength=\"128\" name=\"applicantinformation$txtemail\" type=\"text\"/>",
+    "feature": "required invalid email text applicantinformation txtemail applicantinformation txtemail 128",
+    "id": "717-text-19",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"applicantinformation_txtconfirmemail\" maxlength=\"128\" name=\"applicantinformation$txtconfirmemail\" type=\"text\"/>",
+    "feature": "please confirm your email address must match above email text applicantinformation txtconfirmemail applicantinformation txtconfirmemail 128",
+    "id": "717-text-20",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"citizenshipsection_txtssn\" maxlength=\"20\" name=\"citizenshipsection$txtssn\" type=\"text\"/>",
+    "feature": "required for financial aid processing required invalid ssn text citizenshipsection txtssn citizenshipsection txtssn 20",
+    "id": "717-text-21",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"citizenshipsection_txtaliennumber\" maxlength=\"20\" name=\"citizenshipsection$txtaliennumber\" type=\"text\"/>",
+    "feature": "required a format if your number is 8 digits begin with a followed by a zero text citizenshipsection txtaliennumber citizenshipsection txtaliennumber 20",
+    "id": "717-text-22",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"responsetextbox\" id=\"citizenshipsection_txtalienssn\" maxlength=\"20\" name=\"citizenshipsection$txtalienssn\" type=\"text\"/>",
+    "feature": "required for financial aid processing required invalid ssn text citizenshipsection txtalienssn citizenshipsection txtalienssn 20",
+    "id": "717-text-23",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  }
+]

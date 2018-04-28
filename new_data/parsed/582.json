@@ -1,0 +1,247 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"js-geoloc-target single-search single-search-destination js-recent-search js-search-location js-moreoptions-expander js-clear-input l-no-ie-clear l-h-field js-hform-fields\" data-target=\"destination\" id=\"9a1wrxyb_search-location\" maxlength=\"100\" name=\"destinationaddress.destination\" placeholder=\"where do you want to go?\" type=\"text\" value=\"irvine, ca, usa\"/>",
+    "feature": "destination text 9a1wrxyb search location irvine ca usa destinationaddress destination where do you want to go 100",
+    "id": "582-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input aria-expanded=\"false\" aria-haspopup=\"true\" aria-owns=\"9a1wrxyb_hotel-fromtodate_root\" aria-readonly=\"false\" autocomplete=\"off\" class=\"js-date-from-to is-hidden picker__input\" data-invalidmsg=\"invalid date(s). check your entry and try again.\" data-max=\"04/07/2019\" data-min=\"04/19/2018\" data-value=\"04/21/2018\" id=\"9a1wrxyb_hotel-fromtodate\" maxlength=\"20\" name=\"fromtodate\" size=\"15\" type=\"text\" value=\"04/21/2018\"/>",
+    "feature": "mm dd yy mm dd yy from to date check in check out flexible date search text 9a1wrxyb hotel fromtodate 04 21 2018 fromtodate 20",
+    "id": "582-text-1",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"l-date l-no-ie-clear js-date-from l-h-field-input l-no-outline\" id=\"9a1wrxyb_hotel-fromdate\" maxlength=\"17\" placeholder=\"check-in\" size=\"16\" type=\"text\" value=\"04/21/2018\"/>",
+    "feature": "mm dd yy mm dd yy from to date check in check out flexible date search text 9a1wrxyb hotel fromdate 04 21 2018 check in 17",
+    "id": "582-text-2",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"l-date l-no-ie-clear js-date-to js-flex-out l-h-field-input l-no-outline\" id=\"9a1wrxyb_hotel-todate\" maxlength=\"17\" placeholder=\"check-out\" size=\"16\" type=\"text\" value=\"04/25/2018\"/>",
+    "feature": "mm dd yy mm dd yy check in from to date check out flexible date search text 9a1wrxyb hotel todate 04 25 2018 check out 17",
+    "id": "582-text-3",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"check-in js-date-from l-h-field-input\" id=\"9a1wrxyb_check-in\" maxlength=\"17\" placeholder=\"check-in\" size=\"16\" type=\"text\" value=\"sat, apr 21, 2018\"/>",
+    "feature": "check in check out text 9a1wrxyb check in sat apr 21 2018 check in 17",
+    "id": "582-text-4",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"check-out js-date-to l-h-field-input\" id=\"9a1wrxyb_check-out\" maxlength=\"17\" placeholder=\"check-out\" size=\"16\" type=\"text\" value=\"wed, apr 25, 2018\"/>",
+    "feature": "check out check in text 9a1wrxyb check out wed apr 25 2018 check out 17",
+    "id": "582-text-5",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"js-stepper-input l-s2-stepper-input l-no-ie-clear\" id=\"9a1wrxyb_length-of-stay-input\" maxlength=\"8\" type=\"text\" value=\"4\"/>",
+    "feature": "4 lengthofstay 4 text 9a1wrxyb length of stay input 8",
+    "id": "582-text-6",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"l-s2-stepper-input js-rooms-num t-color-black\" id=\"9a1wrxyb_roomcountbox\" name=\"roomcountbox\" type=\"text\" value=\"1room\"/>",
+    "feature": "room count room count 1room text roomcountbox 9a1wrxyb roomcountbox",
+    "id": "582-text-7",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"l-s2-stepper-input js-adults-num \" data-max=\"6\" data-min=\"1\" id=\"9a1wrxyb_guestcountbox\" name=\"guestcountbox\" type=\"text\" value=\"1 adult per room\"/>",
+    "feature": "guest count guest count text 9a1wrxyb guestcountbox 1 adult per room guestcountbox",
+    "id": "582-text-8",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"l-s2-stepper-input js-children-num \" data-max=\"5\" data-min=\"0\" id=\"9a1wrxyb_childrencountbox\" name=\"childrencountbox\" type=\"text\" value=\"0 children per room\"/>",
+    "feature": "children count children count text 9a1wrxyb childrencountbox 0 children per room childrencountbox",
+    "id": "582-text-9",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"l-s2-stepper-input js-ages-num \" data-default=\"less than 1\" data-max=\"17\" data-min=\"1\" id=\"9a1wrxyb_childagesbox\" type=\"text\" value=\"less than 1\"/>",
+    "feature": "children count children count text 9a1wrxyb childagesbox less than 1",
+    "id": "582-text-10",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"search-corp short radio-secondary-input\" data-special-rate-type=\"corp\" id=\"9a1wrxyb_corporatecode\" maxlength=\"5\" name=\"corporatecode\" type=\"text\" value=\"\"/>",
+    "feature": "corporatecode text 9a1wrxyb corporatecode corporatecode 5",
+    "id": "582-text-11",
+    "pattern": "coupon.*code",
+    "topic": "coupon_code"
+  },
+  {
+    "dom": "<input id=\"firstname\" maxlength=\"30\" name=\"firstname\" type=\"text\" value=\"\"/>",
+    "feature": "required field required field first name firstname text firstname 30",
+    "id": "582-text-12",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"t-last-name\" id=\"lastname\" maxlength=\"30\" name=\"lastname\" type=\"text\" value=\"\"/>",
+    "feature": "required field required field last name text lastname lastname 30",
+    "id": "582-text-13",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"t-confirmation-number\" id=\"confirmationnumber\" maxlength=\"8\" name=\"confirmationnumber\" type=\"text\" value=\"\"/>",
+    "feature": "required field required field confirmation number text confirmationnumber confirmationnumber 8",
+    "id": "582-text-14",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-expanded=\"false\" aria-haspopup=\"true\" aria-label=\"check-in date\" aria-owns=\"cindate_root\" aria-readonly=\"false\" class=\"js-date-from l-width-half picker__input\" data-invalidmsg=\"\" data-max=\"04/07/2019\" data-min=\"04/19/2018\" data-value=\"2018-04-21\" id=\"cindate\" maxlength=\"20\" name=\"\" readonly=\"\" size=\"15\" type=\"text\"/>",
+    "feature": "required field previous month next month required field check in date text cindate 20",
+    "id": "582-text-15",
+    "pattern": "date",
+    "topic": "date"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"account-userid\" maxlength=\"80\" name=\"userid\" type=\"text\"/>",
+    "feature": "email or rewards text userid account userid 80",
+    "id": "582-text-16",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"my-account-userid\" maxlength=\"80\" name=\"userid\" type=\"text\"/>",
+    "feature": "email or rewards text userid my account userid 80",
+    "id": "582-text-17",
+    "pattern": "username",
+    "topic": "username"
+  },
+  {
+    "dom": "<input class=\"t-color-black \" id=\"first-name\" maxlength=\"20\" name=\"firstname1\" type=\"text\" value=\"\"/>",
+    "feature": "first name text first name firstname1 20",
+    "id": "582-text-18",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"t-color-black \" id=\"last-name\" maxlength=\"20\" name=\"lastname1\" type=\"text\" value=\"\"/>",
+    "feature": "last name text last name lastname1 20",
+    "id": "582-text-19",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"t-color-black \" id=\"rewards-number\" maxlength=\"9\" name=\"marriottrewardsnumber\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
+    "feature": "rewards number optional text rewards number marriottrewardsnumber 9",
+    "id": "582-text-20",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input id=\"company-name\" maxlength=\"35\" name=\"companyname\" type=\"text\" value=\"\"/>",
+    "feature": "company name optional company name text companyname 35",
+    "id": "582-text-21",
+    "pattern": "company",
+    "topic": "company_name"
+  },
+  {
+    "dom": "<input id=\"address-line1\" maxlength=\"35\" name=\"addressline1\" type=\"text\" value=\"\"/>",
+    "feature": "required field required field address address line1 text addressline1 35",
+    "id": "582-text-22",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input id=\"address-line2\" maxlength=\"35\" name=\"addressline2\" type=\"text\" value=\"\"/>",
+    "feature": "required field required field address line 2 address line2 text addressline2 35",
+    "id": "582-text-23",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"\" id=\"city\" maxlength=\"23\" name=\"city\" type=\"text\" value=\"\"/>",
+    "feature": "required field required field city text city city 23",
+    "id": "582-text-24",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"\" id=\"postal-code\" maxlength=\"23\" name=\"postalcode\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
+    "feature": "required field required field zip code text postal code postalcode 23",
+    "id": "582-text-25",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"removemargnbotom\" id=\"agency-number\" maxlength=\"9\" name=\"agencynumber\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
+    "feature": "iata number for travel agents text agency number agencynumber 9",
+    "id": "582-text-26",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"removemargnbotom\" id=\"preference-plus-number\" maxlength=\"6\" name=\"preferenceplusnumber\" styleclass=\"removemargnbotom\" type=\"text\" value=\"\"/>",
+    "feature": "preference plus number for corporate planners text preference plus number preferenceplusnumber 6",
+    "id": "582-text-27",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"l-width-max \" id=\"credit-card-number\" maxlength=\"20\" name=\"creditcardnumber\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
+    "feature": "credit debit card number text credit card number creditcardnumber 20",
+    "id": "582-text-28",
+    "pattern": "creditcard.*id",
+    "topic": "credit_card_id"
+  },
+  {
+    "dom": "<input class=\"t-color-black \" id=\"email\" maxlength=\"47\" name=\"email\" type=\"email\" value=\"\"/>",
+    "feature": "email address email email email 47",
+    "id": "582-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"account-password\" maxlength=\"20\" name=\"password\" type=\"password\"/>",
+    "feature": "password password password account password 20",
+    "id": "582-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" id=\"my-account-password\" maxlength=\"20\" name=\"password\" type=\"password\"/>",
+    "feature": "password password password my account password 20",
+    "id": "582-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\" js-field-password l-width-max\" id=\"passoword\" maxlength=\"20\" name=\"password\" type=\"password\"/>",
+    "feature": "required password passoword password password 20",
+    "id": "582-password-2",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\" js-field-password-confirmation\" id=\"password-confirmation\" maxlength=\"20\" name=\"confirmpassword\" type=\"password\"/>",
+    "feature": "confirm password password confirmation password confirmpassword 20",
+    "id": "582-password-3",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"l-width-half l-float-left \" id=\"sms-phone-number1\" maxlength=\"20\" name=\"smsphonenumber\" type=\"tel\" value=\"\"/>",
+    "feature": "required field required field mobile phone number tel sms phone number1 smsphonenumber 20",
+    "id": "582-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

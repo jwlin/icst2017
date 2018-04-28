@@ -1,0 +1,184 @@
+[
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3-tomask errorfield\" id=\"apply_firstname\" maxlength=\"11\" minlength=\"1\" name=\"apply_firstname\" style=\"display: none;\" type=\"text\" value=\"\"/>",
+    "feature": "first name text apply firstname apply firstname 11",
+    "id": "515-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3mask-textmask-dummytxtmask\" id=\"apply_firstname-masked\" name=\"apply_firstname-masked\" style=\"display: block;\" title=\"first name\" type=\"text\"/>",
+    "feature": "first name text apply firstname masked apply firstname masked",
+    "id": "515-text-1",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control name optionaltwo envt-stop c3-tomask\" id=\"apply_middleinitial\" maxlength=\"1\" minlength=\"1\" name=\"apply_middleinitial\" style=\"display: none;\" type=\"text\" value=\"\"/>",
+    "feature": "middle initial optional text apply middleinitial apply middleinitial 1",
+    "id": "515-text-2",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"form-control name optionaltwo envt-stop c3mask-textmask-dummytxtmask\" id=\"apply_middleinitial-masked\" name=\"apply_middleinitial-masked\" title=\"middle initial (optional)\" type=\"text\"/>",
+    "feature": "middle initial optional text apply middleinitial masked apply middleinitial masked",
+    "id": "515-text-3",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3-tomask errorfield\" id=\"apply_lastname\" maxlength=\"18\" minlength=\"1\" name=\"apply_lastname\" style=\"display: none;\" type=\"text\" value=\"\"/>",
+    "feature": "last name text apply lastname apply lastname 18",
+    "id": "515-text-4",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3mask-textmask-dummytxtmask errorfield\" id=\"apply_lastname-masked\" name=\"apply_lastname-masked\" title=\"last name\" type=\"text\"/>",
+    "feature": "last name text apply lastname masked apply lastname masked",
+    "id": "515-text-5",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3-tomask errorfield\" id=\"apply_email\" maxlength=\"50\" minlength=\"7\" name=\"apply_email\" style=\"display: none;\" type=\"text\" value=\"\"/>",
+    "feature": "email address text apply email apply email 50",
+    "id": "515-text-6",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3mask-emailmask errorfield\" id=\"apply_email-masked\" name=\"apply_email-masked\" title=\"email address\" type=\"text\"/>",
+    "feature": "email address text apply email masked apply email masked",
+    "id": "515-text-7",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3-tomask errorfield\" id=\"apply_address\" maxlength=\"24\" minlength=\"1\" name=\"apply_address\" style=\"display: none;\" type=\"text\" value=\"\"/>",
+    "feature": "street address no p o boxes text apply address apply address 24",
+    "id": "515-text-8",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3mask-textmask-dummytxtmask errorfield\" id=\"apply_address-masked\" name=\"apply_address-masked\" title=\"street address (no p.o. boxes)\" type=\"text\"/>",
+    "feature": "street address no p o boxes text apply address masked apply address masked",
+    "id": "515-text-9",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form-control optionaltwo envt-stop c3-tomask\" id=\"apply_apt\" maxlength=\"24\" name=\"apply_apt\" style=\"display: none;\" type=\"text\" value=\"\"/>",
+    "feature": "apt suite optional text apply apt apply apt 24",
+    "id": "515-text-10",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"form-control optionaltwo envt-stop c3mask-textmask-dummytxtmask\" id=\"apply_apt-masked\" name=\"apply_apt-masked\" title=\"apt./suite (optional)\" type=\"text\"/>",
+    "feature": "apt suite optional text apply apt masked apply apt masked",
+    "id": "515-text-11",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3-tomask errorfield\" id=\"apply_city\" maxlength=\"17\" minlength=\"1\" name=\"apply_city\" style=\"display: none;\" type=\"text\" value=\"\"/>",
+    "feature": "city text apply city apply city 17",
+    "id": "515-text-12",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3mask-textmask-dummytxtmask errorfield\" id=\"apply_city-masked\" name=\"apply_city-masked\" title=\"city\" type=\"text\"/>",
+    "feature": "city text apply city masked apply city masked",
+    "id": "515-text-13",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3-tomask errorfield\" id=\"apply_zipcode\" maxlength=\"5\" minlength=\"5\" name=\"apply_zipcode\" style=\"display: none;\" type=\"tel\" value=\"\"/>",
+    "feature": "zip code tel apply zipcode apply zipcode 5",
+    "id": "515-tel-0",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3mask-digitmask-zip errorfield\" id=\"apply_zipcode-masked\" name=\"apply_zipcode-masked\" title=\"zip code\" type=\"tel\"/>",
+    "feature": "zip code tel apply zipcode masked apply zipcode masked",
+    "id": "515-tel-1",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3-tomask\" id=\"apply_phone\" maxlength=\"10\" minlength=\"10\" name=\"apply_phone\" placeholder=\"(_ _ _)_ _ _-_ _ _ _\" type=\"tel\" value=\"\"/>",
+    "feature": "phone number tel apply phone apply phone 10",
+    "id": "515-tel-2",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3mask-digitmask-phoneno hidden\" id=\"apply_phone-masked\" name=\"apply_phone-masked\" placeholder=\"(_ _ _)_ _ _-_ _ _ _\" title=\"phone number\" type=\"tel\"/>",
+    "feature": "phone number tel apply phone masked apply phone masked",
+    "id": "515-tel-3",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3-tomask\" id=\"apply_monthlymortgage\" maxlength=\"5\" minlength=\"1\" name=\"apply_monthlymortgage\" type=\"tel\" value=\"\"/>",
+    "feature": "00 monthly mortgage rent payment tel apply monthlymortgage apply monthlymortgage 5",
+    "id": "515-tel-4",
+    "pattern": "rent",
+    "topic": "rent"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3mask-digitmask-amount hidden\" id=\"apply_monthlymortgage-masked\" name=\"apply_monthlymortgage-masked\" title=\"monthly mortgage/rent payment\" type=\"tel\"/>",
+    "feature": "00 monthly mortgage rent payment tel apply monthlymortgage masked apply monthlymortgage masked",
+    "id": "515-tel-5",
+    "pattern": "rent",
+    "topic": "rent"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3-tomask\" id=\"apply_annualincome\" maxlength=\"7\" minlength=\"1\" name=\"apply_annualincome\" type=\"tel\" value=\"\"/>",
+    "feature": "00 total annual net income tel apply annualincome apply annualincome 7",
+    "id": "515-tel-6",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3mask-digitmask-amount hidden\" id=\"apply_annualincome-masked\" name=\"apply_annualincome-masked\" title=\"total annual net income\" type=\"tel\"/>",
+    "feature": "00 total annual net income tel apply annualincome masked apply annualincome masked",
+    "id": "515-tel-7",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric masked-form-control delref c3-tomask\" id=\"apply_ssn\" maxlength=\"11\" minlength=\"11\" name=\"apply_ssn\" placeholder=\"_ _ _ - _ _ - _ _ _ _\" type=\"tel\" value=\"\"/>",
+    "feature": "social security number tel apply ssn apply ssn 11",
+    "id": "515-tel-8",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric masked-form-control delref c3mask-digitmask-ssn hidden\" id=\"apply_ssn-masked\" name=\"apply_ssn-masked\" placeholder=\"_ _ _ - _ _ - _ _ _ _\" title=\"social security number\" type=\"tel\"/>",
+    "feature": "social security number tel apply ssn masked apply ssn masked",
+    "id": "515-tel-9",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric delref c3_mask_false c3-tomask\" id=\"apply_dob\" maxlength=\"10\" minlength=\"10\" name=\"apply_dob\" placeholder=\"_ _/_ _/_ _ _ _\" type=\"tel\" value=\"\"/>",
+    "feature": "date of birth mm dd yyyy tel apply dob apply dob 10",
+    "id": "515-tel-10",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric delref c3_mask_false c3mask-digitmask-dob hidden\" id=\"apply_dob-masked\" name=\"apply_dob-masked\" placeholder=\"_ _/_ _/_ _ _ _\" title=\"date of birth (mm/dd/yyyy)\" type=\"tel\"/>",
+    "feature": "date of birth mm dd yyyy tel apply dob masked apply dob masked",
+    "id": "515-tel-11",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  }
+]

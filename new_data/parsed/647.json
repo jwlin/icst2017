@@ -1,0 +1,58 @@
+[
+  {
+    "dom": "<input name=\"q\" placeholder=\"search petsafe\" type=\"text\"/>",
+    "feature": "text q search petsafe",
+    "id": "647-text-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input id=\"site-search\" name=\"q\" type=\"text\"/>",
+    "feature": "text q site search",
+    "id": "647-text-1",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input name=\"q\" placeholder=\"search petsafe\" type=\"text\"/>",
+    "feature": "text q search petsafe",
+    "id": "647-text-2",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"freeform_name_first\" maxlength=\"150\" name=\"name_first\" type=\"text\" value=\"\"/>",
+    "feature": "first name text name first freeform name first 150",
+    "id": "647-text-3",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"freeform_name_last\" maxlength=\"150\" name=\"name_last\" type=\"text\" value=\"\"/>",
+    "feature": "last name text name last freeform name last 150",
+    "id": "647-text-4",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"freeform_product_number_other\" maxlength=\"150\" name=\"product_number_other\" type=\"text\" value=\"\"/>",
+    "feature": "product number text product number other freeform product number other 150",
+    "id": "647-text-5",
+    "pattern": "model.*number",
+    "topic": "model_number"
+  },
+  {
+    "dom": "<input class=\"form-control\" id=\"freeform_email\" maxlength=\"150\" name=\"email\" type=\"email\" value=\"\"/>",
+    "feature": "email email email freeform email 150",
+    "id": "647-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"text field fb-email\" id=\"newsletter-input\" name=\"email\" placeholder=\"ex. chester@petsafe.net\" size=\"35\" type=\"email\" value=\"\"/>",
+    "feature": "sign up email email newsletter input ex chester petsafe net",
+    "id": "647-email-1",
+    "pattern": "email",
+    "topic": "email"
+  }
+]

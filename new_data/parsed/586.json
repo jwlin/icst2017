@@ -1,0 +1,121 @@
+[
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-contact-name hidden\" data-default=\"\" data-type=\"name\" disabled=\"disabled\" id=\"new_order_form_full_name\" name=\"new_order_form[full_name]\" placeholder=\"full name\" tabindex=\"2\" type=\"text\"/>",
+    "feature": "ideal sofort paypal buy with this is a gift apple pay card paypal i would like to receive emails about new products directly from these sellers or any licensed partners text full name new order form full name new order form full name",
+    "id": "586-text-0",
+    "pattern": "full.*name",
+    "topic": "full_name"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-shipping-name\" data-default=\"\" data-type=\"name\" id=\"new_order_form_full_name\" maxlength=\"30\" name=\"new_order_form[full_name]\" placeholder=\"full name\" size=\"30\" tabindex=\"2\" type=\"text\"/>",
+    "feature": "this is a gift apple pay card paypal text full name new order form full name new order form full name 30",
+    "id": "586-text-1",
+    "pattern": "full.*name",
+    "topic": "full_name"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-shipping-street\" data-default=\"\" id=\"new_order_form_shipping_attributes_address\" maxlength=\"50\" name=\"new_order_form[shipping_attributes][address]\" placeholder=\"street address\" size=\"50\" tabindex=\"3\" type=\"text\"/>",
+    "feature": "this is a gift apple pay card paypal text street address new order form shipping attributes address new order form shipping attributes address 50",
+    "id": "586-text-2",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-shipping-street-2\" data-default=\"\" id=\"new_order_form_shipping_attributes_address2\" maxlength=\"50\" name=\"new_order_form[shipping_attributes][address2]\" placeholder=\"apt / suite / other (optional)\" size=\"50\" tabindex=\"4\" type=\"text\"/>",
+    "feature": "this is a gift apple pay card paypal text apt suite other optional new order form shipping attributes address2 new order form shipping attributes address2 50",
+    "id": "586-text-3",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-shipping-city\" data-default=\"\" id=\"new_order_form_shipping_attributes_city\" maxlength=\"30\" name=\"new_order_form[shipping_attributes][city]\" placeholder=\"city\" size=\"30\" tabindex=\"5\" type=\"text\"/>",
+    "feature": "this is a gift apple pay card paypal text city new order form shipping attributes city new order form shipping attributes city 30",
+    "id": "586-text-4",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-shipping-province hidden\" data-default=\"ca\" id=\"new_order_form_shipping_attributes_province\" name=\"new_order_form[shipping_attributes][province]\" placeholder=\"province\" tabindex=\"6\" type=\"text\"/>",
+    "feature": "this is a gift apple pay card paypal text province new order form shipping attributes province new order form shipping attributes province",
+    "id": "586-text-5",
+    "pattern": "province",
+    "topic": "province"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-shipping-zip\" data-default=\"\" data-placeholder=\"zip code\" data-placeholder-alt=\"postal code\" id=\"new_order_form_shipping_attributes_zip\" name=\"new_order_form[shipping_attributes][zip]\" placeholder=\"zip code\" required=\"required\" tabindex=\"7\" type=\"text\"/>",
+    "feature": "this is a gift apple pay card paypal zip code new order form shipping attributes zip new order form shipping attributes zip text",
+    "id": "586-text-6",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full\" placeholder=\"enter your code here\" type=\"text\"/>",
+    "feature": "ideal sofort paypal buy with this is a gift apple pay card paypal i would like to receive emails about new products directly from these sellers or any licensed partners text enter your code here",
+    "id": "586-text-7",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"form__textfield placeholder-system__input\" name=\"otp\" placeholder=\"two-factor token\" tabindex=\"3\" type=\"text\"/>",
+    "feature": "using 2 factor authentication click here remember me remember me text two factor token otp",
+    "id": "586-text-8",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input autofocus=\"autofocus\" class=\"form__textfield form__textfield--full\" id=\"new_order_form_email\" name=\"new_order_form[email]\" placeholder=\"email address\" required=\"required\" tabindex=\"1\" type=\"email\"/>",
+    "feature": "ideal sofort paypal buy with this is a gift apple pay card paypal i would like to receive emails about new products directly from these sellers or any licensed partners email email address new order form email new order form email",
+    "id": "586-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autofocus=\"true\" class=\"form__textfield placeholder-system__input\" name=\"email\" placeholder=\"email\" tabindex=\"1\" type=\"email\"/>",
+    "feature": "remember me email email email",
+    "id": "586-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input autofocus=\"true\" class=\"form__textfield placeholder-system__input\" name=\"email\" placeholder=\"email\" tabindex=\"1\" type=\"email\"/>",
+    "feature": "using 2 factor authentication click here remember me remember me email email email",
+    "id": "586-email-2",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"form__textfield placeholder-system__input\" name=\"password\" placeholder=\"password\" tabindex=\"2\" type=\"password\"/>",
+    "feature": "remember me password password password",
+    "id": "586-password-0",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"form__textfield authentication__confirm_password placeholder-system__input\" name=\"password_confirmation\" placeholder=\"confirm password\" tabindex=\"3\" type=\"password\"/>",
+    "feature": "remember me password confirm password password confirmation",
+    "id": "586-password-1",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input class=\"form__textfield placeholder-system__input\" name=\"password\" placeholder=\"password\" tabindex=\"2\" type=\"password\"/>",
+    "feature": "using 2 factor authentication click here remember me remember me password password password",
+    "id": "586-password-2",
+    "pattern": "password",
+    "topic": "password"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"site__search_input header__search_input js-search-input\" id=\"search\" name=\"search\" placeholder=\"find something perfect.\" type=\"search\"/>",
+    "feature": "search find something perfect search search",
+    "id": "586-search-0",
+    "pattern": "search",
+    "topic": "search"
+  },
+  {
+    "dom": "<input class=\"form__textfield form__textfield--full js-shipping-phone hidden\" data-type=\"phone_number\" id=\"new_order_form_shipping_attributes_phone\" name=\"new_order_form[shipping_attributes][phone]\" placeholder=\"phone number\" tabindex=\"9\" type=\"tel\" value=\"\"/>",
+    "feature": "this is a gift apple pay card paypal tel phone number new order form shipping attributes phone new order form shipping attributes phone",
+    "id": "586-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  }
+]

@@ -1,0 +1,478 @@
+[
+  {
+    "dom": "<input data-error-message=\"enter your first name. use only letters, dashes, apostrophes and spaces.\" data-help-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured.\" data-theme=\"flexapp\" fa.allow=\"textentry\" id=\"sfirstname\" maxlength=\"15\" name=\"value(sfirstname)\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured first name enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured value sfirstname text sfirstname 15",
+    "id": "536-text-0",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input data-error-message=\"if you want to use a middle initial please enter a single letter. otherwise leave this blank.\" data-theme=\"flexapp\" fa.allow=\"textentry\" id=\"smiddleinitial\" maxlength=\"1\" name=\"value(smiddleinitial)\" size=\"1\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "m i value smiddleinitial smiddleinitial text 1",
+    "id": "536-text-1",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input data-error-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured. acceptable submissions based on the name michael adam smith: michael a. smith, michael smith, and mike smith.\" data-theme=\"flexapp\" fa.allow=\"textentry\" id=\"slastname\" maxlength=\"20\" name=\"value(slastname)\" size=\"10\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name value slastname slastname text 20",
+    "id": "536-text-2",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input data-error-message=\"enter your street address. use only letters, dashes, apostrophes and spaces. if you provide a p.o. box, you could delay processing.\" data-theme=\"flexapp\" fa.allow=\"address\" id=\"sstreetaddr1\" maxlength=\"40\" name=\"value(sstreetaddr1)\" onblur=\"checkaddr(this);\" size=\"16\" title=\"required field. enter only primary address information such as house number and street name in the residential address line 1 field.\" type=\"text\" value=\"\"/>",
+    "feature": "mailing address 1 value sstreetaddr1 sstreetaddr1 text 40",
+    "id": "536-text-3",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"inputtextbox requiredfields jpjs-disable-toggle\" data-error-message=\"enter your street address. use only letters, dashes, apostrophes and spaces. if you provide a p.o. box, you could delay processing.\" data-theme=\"flexapp\" fa.allow=\"address\" id=\"sstreetaddr2\" maxlength=\"40\" name=\"value(sstreetaddr2)\" size=\"16\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "mailing address 2 value sstreetaddr2 sstreetaddr2 text 40",
+    "id": "536-text-4",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-error-message=\"enter your apartment identifier. use only letters, dashes and spaces.\" data-theme=\"flexapp\" fa.allow=\"appt\" id=\"sapartment\" maxlength=\"5\" name=\"value(sapartment)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "unit apt value sapartment sapartment text 5",
+    "id": "536-text-5",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input data-error-message=\"enter your city. use only letters, dashes, apostrophes and spaces.\" data-theme=\"flexapp\" fa.allow=\"textentry\" id=\"scity\" maxlength=\"32\" name=\"value(scity)\" size=\"18\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city value scity scity text 32",
+    "id": "536-text-6",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input inputtextbox requiredfields\" data-error-message=\"enter your correct five-digit zip code. your zip code and state should match.\" data-mask=\"99999\" data-theme=\"flexapp\" fa.allow=\"numeric\" id=\"szip\" maxlength=\"5\" name=\"value(szip)\" onblur=\"prefillstate1(this);\" pattern=\"[0-9]*\" size=\"5\" title=\"required field. enter first 5 numbers in zip code field.\" type=\"text\" value=\"\"/>",
+    "feature": "zip code value szip text szip 5",
+    "id": "536-text-7",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input jpjs-date\" data-error-message=\"enter your birthdate using only numbers. you must be at least 18 years of age to apply (19 for al and ne; 21 for pr).\" data-help-message=\"you must be at least 18 years of age to apply (19 for al and ne; 21 for pr).\" data-mask=\"00/00/0000\" data-theme=\"flexapp\" data-validation-options=\"sstate ,sstate1\" fa.allow=\"numeric\" id=\"sdob\" maxlength=\"10\" name=\"value(sdob)\" pattern=\"\\d*\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "you must be at least 18 years of age to apply 19 for al and ne 21 for pr date of birth you must be at least 18 years of age to apply 19 for al and ne 21 for pr value sdob text mm dd yyyy sdob 10",
+    "id": "536-text-8",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input data-error-message=\"enter your mother's last name at birth. use only letters, dashes, apostrophes and spaces.\" data-help-message=\"we request your mother's maiden name to help verify your identity whenever you call us about your account.\" data-theme=\"flexapp\" fa.allow=\"numeric\" id=\"smaidenname\" maxlength=\"10\" name=\"value(smaidenname)\" size=\"12\" type=\"text\" value=\"\"/>",
+    "feature": "we request your mother s maiden name to help verify your identity whenever you call us about your account mother s maiden name we request your mother s maiden name to help verify your identity whenever you call us about your account value smaidenname text smaidenname 10",
+    "id": "536-text-9",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input\" data-error-message=\"enter your social security number in 000-00-0000 format. the social security number you entered is invalid.\" data-help-message=\"we ask for your social security number to help us identify you. when you submit your application online, we'll encrypt your details to help keep your information safe.\" data-mask=\"000-00-0000\" data-mask-placeholder=\"x\" data-theme=\"flexapp\" data-validation-options=\"unmaskedssn\" fa.allow=\"numeric\" id=\"sssn\" maxlength=\"11\" name=\"value(sssn)\" pattern=\"\\d*\" placeholder=\"xxx-xx-xxxx\" size=\"11\" type=\"text\" value=\"\"/>",
+    "feature": "we ask for your social security number to help us identify you when you submit your application online we ll encrypt your details to help keep your information safe social security number we ask for your social security number to help us identify you when you submit your application online we ll encrypt your details to help keep your information safe value sssn text xxx xx xxxx sssn 11",
+    "id": "536-text-10",
+    "pattern": "ssn",
+    "topic": "social_security_number"
+  },
+  {
+    "dom": "<input class=\"jpui-dollars jpjs-currency\" data-error-message=\"enter your gross annual income. use only numbers.\" data-help-message=\"you don't need to include alimony, child support or separate maintenance if you don't want us to rely on it. &lt;br/&gt;&lt;br/&gt; your gross annual income can include money received from several sources. some examples of income are: salaries, investments, social security benefits, or retirement. if you are 21 or older and regularly use income from others to pay your bills, you can include that too.\" data-maxlength=\"7\" data-theme=\"flexapp\" fa.allow=\"numeric\" id=\"sannualincome\" maxlength=\"9\" name=\"value(sannualincome)\" pattern=\"\\d*\" size=\"8\" type=\"text\" value=\"\"/>",
+    "feature": "00 value sannualincome text sannualincome 9",
+    "id": "536-text-11",
+    "pattern": "income",
+    "topic": "income"
+  },
+  {
+    "dom": "<input class=\"jpui-dollars jpjs-currency\" data-error-message=\"enter your monthly payment. use only numbers.\" data-maxlength=\"4\" data-theme=\"flexapp\" data-validation-options=\"shousingtype\" fa.allow=\"numeric\" id=\"smonthlymortgage\" maxlength=\"4\" name=\"value(smonthlymortgage)\" pattern=\"\\d*\" size=\"6\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "00 value smonthlymortgage text smonthlymortgage 4",
+    "id": "536-text-12",
+    "pattern": "rent",
+    "topic": "rent"
+  },
+  {
+    "dom": "<input data-error-message=\"describe the source of your income. use letters only. \" data-theme=\"flexapp\" data-validation-options=\"sposition\" fa.allow=\"numeric\" id=\"spositionother\" maxlength=\"20\" name=\"value(spositionother)\" size=\"20\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "your source of income value spositionother spositionother text 20",
+    "id": "536-text-13",
+    "pattern": "job",
+    "topic": "job_title"
+  },
+  {
+    "dom": "<input data-error-message=\"mileageplus&lt;sup&gt;®&lt;/sup&gt; number must be 8 alpha-numeric characters.  please re-enter.\" data-help-message=\"please enter your 8 digit personal membership number.\" data-theme=\"flexapp\" fa.allow=\"appt\" id=\"sunitedmemnumber\" maxlength=\"11\" name=\"value(sunitedmemnumber)\" size=\"13\" type=\"text\" value=\"\"/>",
+    "feature": "please enter your 8 digit personal membership number mileageplus number please enter your 8 digit personal membership number value sunitedmemnumber text sunitedmemnumber 11",
+    "id": "536-text-14",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"enter your physical street address. use only number, letters, dashes, apostrophes and spaces. a p.o. box address cannot be accepted.\" data-theme=\"flexapp\" data-validation-options=\"srespphystreetaddr2 ,srespphyapartment ,srespphyzip ,srespphycity ,srespphystate ,sstreetaddr1\" fa.allow=\"address\" id=\"srespphystreetaddr1\" maxlength=\"40\" name=\"value(srespphystreetaddr1)\" size=\"16\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "physical street address 1 value srespphystreetaddr1 text srespphystreetaddr1 40",
+    "id": "536-text-15",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"enter your physical street address. use only number, letters, dashes, apostrophes and spaces. a p.o. box address cannot be accepted.\" data-theme=\"flexapp\" data-validation-options=\"srespphystreetaddr1\" fa.allow=\"address\" id=\"srespphystreetaddr2\" maxlength=\"40\" name=\"value(srespphystreetaddr2)\" size=\"17\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "physical street address 2 value srespphystreetaddr2 text srespphystreetaddr2 40",
+    "id": "536-text-16",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"enter your apartment identifier. use only letters, dashes and spaces.\" data-theme=\"flexapp\" data-validation-options=\"srespphystreetaddr1\" fa.allow=\"appt\" id=\"srespphyapartment\" maxlength=\"5\" name=\"value(srespphyapartment)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "unit apt value srespphyapartment text srespphyapartment 5",
+    "id": "536-text-17",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"enter your city. use only letters, dashes, apostrophes and spaces.\" data-theme=\"flexapp\" data-validation-options=\"srespphystreetaddr1 ,srespphystreetaddr2 ,srespphyapartment , sstreetaddr1\" fa.allow=\"textentry\" id=\"srespphycity\" maxlength=\"32\" name=\"value(srespphycity)\" size=\"18\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city value srespphycity text srespphycity 32",
+    "id": "536-text-18",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input inputtextbox\" data-error-message=\"enter your correct five-digit zip code. your zip code and state should match.\" data-mask=\"99999\" data-theme=\"flexapp\" data-validation-options=\"srespphystreetaddr1 ,srespphystreetaddr2 ,srespphyapartment ,srespphycity ,srespphystate , sstreetaddr1\" fa.allow=\"numeric\" id=\"srespphyzip\" maxlength=\"5\" name=\"value(srespphyzip)\" onblur=\"prefillrespphystate(this);\" pattern=\"[0-9]*\" size=\"5\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "zip code value srespphyzip text srespphyzip 5",
+    "id": "536-text-19",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's first name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-help-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured.\" data-theme=\"flexapp\" data-validation-options=\"ssecondarylastname1 ,ssecondarymiddleinitial1 ,sauthorizeddob1 ,sauthorizedstreetaddr11 ,sauthorizedstreetaddr21 ,sauthorizedapartment1 ,sauthorizedcity1 ,sauthorizedstate11 ,sauthorizedzip1 ,sauth1addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondaryfirstname1\" maxlength=\"15\" name=\"value(ssecondaryfirstname1)\" size=\"12\" type=\"text\" value=\"\"/>",
+    "feature": "enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured first name enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured value ssecondaryfirstname1 text ssecondaryfirstname1 15",
+    "id": "536-text-20",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"if the authorized user has a middle initial, please enter a single letter. otherwise leave this blank.\" data-theme=\"flexapp\" fa.allow=\"alpha\" id=\"ssecondarymiddleinitial1\" maxlength=\"1\" name=\"value(ssecondarymiddleinitial1)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "m i value ssecondarymiddleinitial1 ssecondarymiddleinitial1 text 1",
+    "id": "536-text-21",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's last name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-theme=\"flexapp\" data-validation-options=\"sfirstname ,slastname ,ssecondaryfirstname1 ,ssecondarymiddleinitial1 ,sauthorizeddob1 ,sauthorizedstreetaddr11 ,sauthorizedstreetaddr21 ,sauthorizedapartment1 ,sauthorizedcity1 ,sauthorizedstate11 ,sauthorizedzip1 ,sauth1addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondarylastname1\" maxlength=\"20\" name=\"value(ssecondarylastname1)\" size=\"10\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name value ssecondarylastname1 text ssecondarylastname1 20",
+    "id": "536-text-22",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input jpjs-date\" data-error-message=\"please enter a valid birthdate using the mm/dd/yyyy format. the authorized user's age must be under 125.\" data-help-message=\"enter the authorized user's birthdate using only numbers.\" data-mask=\"00/00/0000\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname1 ,ssecondarylastname1 ,sauthorizedstreetaddr11 ,sauthorizedstreetaddr21 ,sauthorizedapartment1 ,sauthorizedcity1 ,sauthorizedstate11 ,sauthorizedzip1 ,sauth1addrsameasprimary\" fa.allow=\"numeric\" id=\"sauthorizeddob1\" maxlength=\"10\" name=\"value(sauthorizeddob1)\" pattern=\"\\d*\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s birthdate using only numbers date of birth enter the authorized user s birthdate using only numbers value sauthorizeddob1 text mm dd yyyy sauthorizeddob1 10",
+    "id": "536-text-23",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-help-message=\"federal regulations require us to collect authorized user's physical address. if you only provide a p.o. box, this will delay how quickly we can review your request.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname1 ,ssecondarylastname1 ,sauthorizeddob1 ,sauthorizedstreetaddr21 ,sauthorizedapartment1 ,sauthorizedcity1 ,sauthorizedstate11 ,sauthorizedzip1\" fa.allow=\"address\" id=\"sauthorizedstreetaddr11\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr11)\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request residential address 1 federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request value sauthorizedstreetaddr11 text sauthorizedstreetaddr11 40",
+    "id": "536-text-24",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"inputtextbox requiredfields jpjs-disable-toggle\" data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname1 ,ssecondarylastname1 ,sauthorizeddob1 ,sauthorizedstreetaddr11 ,sauthorizedapartment1 ,sauthorizedcity1 ,sauthorizedstate11 ,sauthorizedzip1\" fa.allow=\"address\" id=\"sauthorizedstreetaddr21\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr21)\" size=\"16\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential address 2 value sauthorizedstreetaddr21 text sauthorizedstreetaddr21 40",
+    "id": "536-text-25",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's apartment identifier. use only letters, dashes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname1 ,ssecondarylastname1 ,sauthorizeddob1 ,sauthorizedstreetaddr11 ,sauthorizedstreetaddr21 ,sauthorizedcity1 ,sauthorizedstate11 ,sauthorizedzip1\" fa.allow=\"appt\" id=\"sauthorizedapartment1\" maxlength=\"5\" name=\"value(sauthorizedapartment1)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "unit apt value sauthorizedapartment1 sauthorizedapartment1 text 5",
+    "id": "536-text-26",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's city. use only letters, dashes, apostrophes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname1 ,ssecondarylastname1 ,sauthorizeddob1 ,sauthorizedstreetaddr11 ,sauthorizedstreetaddr21 ,sauthorizedapartment1 ,sauthorizedstate11 ,sauthorizedzip1 ,isnonresppage\" fa.allow=\"textentry\" id=\"sauthorizedcity1\" maxlength=\"32\" name=\"value(sauthorizedcity1)\" size=\"18\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city value sauthorizedcity1 sauthorizedcity1 text 32",
+    "id": "536-text-27",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input inputtextbox requiredfields\" data-error-message=\"enter your correct five-digit zip code. your zip code and state should match.\" data-help-message=\"enter the authorized user's correct five-digit zip code. authorized user's zip code and state should match.\" data-mask=\"99999\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname1 ,ssecondarylastname1 ,sauthorizeddob1 ,sauthorizedstreetaddr11 ,sauthorizedstreetaddr21 ,sauthorizedapartment1 ,sauthorizedcity1 ,sauthorizedstate11 ,prefillstate11 ,isnonresppage\" fa.allow=\"numeric\" id=\"sauthorizedzip1\" maxlength=\"5\" name=\"value(sauthorizedzip1)\" onblur=\"prefillauthorizedstate11(this);\" pattern=\"[0-9]*\" size=\"5\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s correct five digit zip code authorized user s zip code and state should match zip code enter the authorized user s correct five digit zip code authorized user s zip code and state should match value sauthorizedzip1 text sauthorizedzip1 5",
+    "id": "536-text-28",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's first name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-help-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured.\" data-theme=\"flexapp\" data-validation-options=\"ssecondarylastname2 ,ssecondarymiddleinitial2 ,sauthorizeddob2 ,sauthorizedstreetaddr12 ,sauthorizedstreetaddr22 ,sauthorizedapartment2 ,sauthorizedcity2 ,sauthorizedstate12 ,sauthorizedzip2 ,sauth2addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondaryfirstname2\" maxlength=\"15\" name=\"value(ssecondaryfirstname2)\" size=\"12\" type=\"text\" value=\"\"/>",
+    "feature": "enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured first name enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured value ssecondaryfirstname2 text ssecondaryfirstname2 15",
+    "id": "536-text-29",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"if the authorized user has a middle initial, please enter a single letter. otherwise leave this blank.\" data-theme=\"flexapp\" fa.allow=\"alpha\" id=\"ssecondarymiddleinitial2\" maxlength=\"1\" name=\"value(ssecondarymiddleinitial2)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "m i value ssecondarymiddleinitial2 ssecondarymiddleinitial2 text 1",
+    "id": "536-text-30",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's last name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-theme=\"flexapp\" data-validation-options=\"sfirstname ,slastname ,ssecondaryfirstname2 ,ssecondarymiddleinitial2 ,sauthorizeddob2 ,sauthorizedstreetaddr12 ,sauthorizedstreetaddr22 ,sauthorizedapartment2 ,sauthorizedcity2 ,sauthorizedstate12 ,sauthorizedzip2 ,sauth2addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondarylastname2\" maxlength=\"20\" name=\"value(ssecondarylastname2)\" size=\"10\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name value ssecondarylastname2 text ssecondarylastname2 20",
+    "id": "536-text-31",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input jpjs-date\" data-error-message=\"please enter a valid birthdate using the mm/dd/yyyy format. the authorized user's age must be under 125.\" data-help-message=\"enter the authorized user's birthdate using only numbers.\" data-mask=\"00/00/0000\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname2 ,ssecondarylastname2 ,sauthorizedstreetaddr12 ,sauthorizedstreetaddr22 ,sauthorizedapartment2 ,sauthorizedcity2 ,sauthorizedstate12 ,sauthorizedzip2 ,sauth2addrsameasprimary\" fa.allow=\"numeric\" id=\"sauthorizeddob2\" maxlength=\"10\" name=\"value(sauthorizeddob2)\" pattern=\"\\d*\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s birthdate using only numbers date of birth enter the authorized user s birthdate using only numbers value sauthorizeddob2 text mm dd yyyy sauthorizeddob2 10",
+    "id": "536-text-32",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-help-message=\"federal regulations require us to collect authorized user's physical address. if you only provide a p.o. box, this will delay how quickly we can review your request.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname2 ,ssecondarylastname2 ,sauthorizeddob2 ,sauthorizedstreetaddr22 ,sauthorizedapartment2 ,sauthorizedcity2 ,sauthorizedstate12 ,sauthorizedzip2\" fa.allow=\"address\" id=\"sauthorizedstreetaddr12\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr12)\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request residential address 1 federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request value sauthorizedstreetaddr12 text sauthorizedstreetaddr12 40",
+    "id": "536-text-33",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"inputtextbox requiredfields jpjs-disable-toggle\" data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname2 ,ssecondarylastname2 ,sauthorizeddob2 ,sauthorizedstreetaddr12 ,sauthorizedapartment2 ,sauthorizedcity2 ,sauthorizedstate12 ,sauthorizedzip2\" fa.allow=\"address\" id=\"sauthorizedstreetaddr22\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr22)\" size=\"16\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential address 2 value sauthorizedstreetaddr22 text sauthorizedstreetaddr22 40",
+    "id": "536-text-34",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's apartment identifier. use only letters, dashes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname2 ,ssecondarylastname2 ,sauthorizeddob2 ,sauthorizedstreetaddr12 ,sauthorizedstreetaddr22 ,sauthorizedcity2 ,sauthorizedstate12 ,sauthorizedzip2\" fa.allow=\"appt\" id=\"sauthorizedapartment2\" maxlength=\"5\" name=\"value(sauthorizedapartment2)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "unit apt value sauthorizedapartment2 sauthorizedapartment2 text 5",
+    "id": "536-text-35",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's city. use only letters, dashes, apostrophes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname2 ,ssecondarylastname2 ,sauthorizeddob2 ,sauthorizedstreetaddr12 ,sauthorizedstreetaddr22 ,sauthorizedapartment2 ,sauthorizedstate12 ,sauthorizedzip2 ,isnonresppage\" fa.allow=\"textentry\" id=\"sauthorizedcity2\" maxlength=\"32\" name=\"value(sauthorizedcity2)\" size=\"18\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city value sauthorizedcity2 sauthorizedcity2 text 32",
+    "id": "536-text-36",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input inputtextbox requiredfields\" data-error-message=\"enter your correct five-digit zip code. your zip code and state should match.\" data-help-message=\"enter the authorized user's correct five-digit zip code. authorized user's zip code and state should match.\" data-mask=\"99999\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname2 ,ssecondarylastname2 ,sauthorizeddob2 ,sauthorizedstreetaddr12 ,sauthorizedstreetaddr22 ,sauthorizedapartment2 ,sauthorizedcity2 ,sauthorizedstate12 ,prefillstate12 ,isnonresppage\" fa.allow=\"numeric\" id=\"sauthorizedzip2\" maxlength=\"5\" name=\"value(sauthorizedzip2)\" onblur=\"prefillauthorizedstate12(this);\" pattern=\"[0-9]*\" size=\"5\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s correct five digit zip code authorized user s zip code and state should match zip code enter the authorized user s correct five digit zip code authorized user s zip code and state should match value sauthorizedzip2 text sauthorizedzip2 5",
+    "id": "536-text-37",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's first name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-help-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured.\" data-theme=\"flexapp\" data-validation-options=\"ssecondarylastname3 ,ssecondarymiddleinitial3 ,sauthorizeddob3 ,sauthorizedstreetaddr13 ,sauthorizedstreetaddr23 ,sauthorizedapartment3 ,sauthorizedcity3 ,sauthorizedstate13 ,sauthorizedzip3 ,sauth3addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondaryfirstname3\" maxlength=\"15\" name=\"value(ssecondaryfirstname3)\" size=\"12\" type=\"text\" value=\"\"/>",
+    "feature": "enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured first name enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured value ssecondaryfirstname3 text ssecondaryfirstname3 15",
+    "id": "536-text-38",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"if the authorized user has a middle initial, please enter a single letter. otherwise leave this blank.\" data-theme=\"flexapp\" fa.allow=\"alpha\" id=\"ssecondarymiddleinitial3\" maxlength=\"1\" name=\"value(ssecondarymiddleinitial3)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "m i value ssecondarymiddleinitial3 ssecondarymiddleinitial3 text 1",
+    "id": "536-text-39",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's last name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-theme=\"flexapp\" data-validation-options=\"sfirstname ,slastname ,ssecondaryfirstname3 ,ssecondarymiddleinitial3 ,sauthorizeddob3 ,sauthorizedstreetaddr13 ,sauthorizedstreetaddr23 ,sauthorizedapartment3 ,sauthorizedcity3 ,sauthorizedstate13 ,sauthorizedzip3 ,sauth3addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondarylastname3\" maxlength=\"20\" name=\"value(ssecondarylastname3)\" size=\"10\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name value ssecondarylastname3 text ssecondarylastname3 20",
+    "id": "536-text-40",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input jpjs-date\" data-error-message=\"please enter a valid birthdate using the mm/dd/yyyy format. the authorized user's age must be under 125.\" data-help-message=\"enter the authorized user's birthdate using only numbers.\" data-mask=\"00/00/0000\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname3 ,ssecondarylastname3 ,sauthorizedstreetaddr13 ,sauthorizedstreetaddr23 ,sauthorizedapartment3 ,sauthorizedcity3 ,sauthorizedstate13 ,sauthorizedzip3 ,sauth3addrsameasprimary\" fa.allow=\"numeric\" id=\"sauthorizeddob3\" maxlength=\"10\" name=\"value(sauthorizeddob3)\" pattern=\"\\d*\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s birthdate using only numbers date of birth enter the authorized user s birthdate using only numbers value sauthorizeddob3 text mm dd yyyy sauthorizeddob3 10",
+    "id": "536-text-41",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-help-message=\"federal regulations require us to collect authorized user's physical address. if you only provide a p.o. box, this will delay how quickly we can review your request.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname3 ,ssecondarylastname3 ,sauthorizeddob3 ,sauthorizedstreetaddr23 ,sauthorizedapartment3 ,sauthorizedcity3 ,sauthorizedstate13 ,sauthorizedzip3\" fa.allow=\"address\" id=\"sauthorizedstreetaddr13\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr13)\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request residential address 1 federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request value sauthorizedstreetaddr13 text sauthorizedstreetaddr13 40",
+    "id": "536-text-42",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"inputtextbox requiredfields jpjs-disable-toggle\" data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname3 ,ssecondarylastname3 ,sauthorizeddob3 ,sauthorizedstreetaddr13 ,sauthorizedapartment3 ,sauthorizedcity3 ,sauthorizedstate13 ,sauthorizedzip3\" fa.allow=\"address\" id=\"sauthorizedstreetaddr23\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr23)\" size=\"16\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential address 2 value sauthorizedstreetaddr23 text sauthorizedstreetaddr23 40",
+    "id": "536-text-43",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's apartment identifier. use only letters, dashes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname3 ,ssecondarylastname3 ,sauthorizeddob3 ,sauthorizedstreetaddr13 ,sauthorizedstreetaddr23 ,sauthorizedcity3 ,sauthorizedstate13 ,sauthorizedzip3\" fa.allow=\"appt\" id=\"sauthorizedapartment3\" maxlength=\"5\" name=\"value(sauthorizedapartment3)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "unit apt value sauthorizedapartment3 sauthorizedapartment3 text 5",
+    "id": "536-text-44",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's city. use only letters, dashes, apostrophes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname3 ,ssecondarylastname3 ,sauthorizeddob3 ,sauthorizedstreetaddr13 ,sauthorizedstreetaddr23 ,sauthorizedapartment3 ,sauthorizedstate13 ,sauthorizedzip3 ,isnonresppage\" fa.allow=\"textentry\" id=\"sauthorizedcity3\" maxlength=\"32\" name=\"value(sauthorizedcity3)\" size=\"18\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city value sauthorizedcity3 sauthorizedcity3 text 32",
+    "id": "536-text-45",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input inputtextbox requiredfields\" data-error-message=\"enter your correct five-digit zip code. your zip code and state should match.\" data-help-message=\"enter the authorized user's correct five-digit zip code. authorized user's zip code and state should match.\" data-mask=\"99999\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname3 ,ssecondarylastname3 ,sauthorizeddob3 ,sauthorizedstreetaddr13 ,sauthorizedstreetaddr23 ,sauthorizedapartment3 ,sauthorizedcity3 ,sauthorizedstate13 ,prefillstate13 ,isnonresppage\" fa.allow=\"numeric\" id=\"sauthorizedzip3\" maxlength=\"5\" name=\"value(sauthorizedzip3)\" onblur=\"prefillauthorizedstate13(this);\" pattern=\"[0-9]*\" size=\"5\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s correct five digit zip code authorized user s zip code and state should match zip code enter the authorized user s correct five digit zip code authorized user s zip code and state should match value sauthorizedzip3 text sauthorizedzip3 5",
+    "id": "536-text-46",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's first name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-help-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured.\" data-theme=\"flexapp\" data-validation-options=\"ssecondarylastname4 ,ssecondarymiddleinitial4 ,sauthorizeddob4 ,sauthorizedstreetaddr14 ,sauthorizedstreetaddr24 ,sauthorizedapartment4 ,sauthorizedcity4 ,sauthorizedstate14 ,sauthorizedzip4 ,sauth4addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondaryfirstname4\" maxlength=\"15\" name=\"value(ssecondaryfirstname4)\" size=\"12\" type=\"text\" value=\"\"/>",
+    "feature": "enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured first name enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured value ssecondaryfirstname4 text ssecondaryfirstname4 15",
+    "id": "536-text-47",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"if the authorized user has a middle initial, please enter a single letter. otherwise leave this blank.\" data-theme=\"flexapp\" fa.allow=\"alpha\" id=\"ssecondarymiddleinitial4\" maxlength=\"1\" name=\"value(ssecondarymiddleinitial4)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "m i value ssecondarymiddleinitial4 ssecondarymiddleinitial4 text 1",
+    "id": "536-text-48",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's last name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-theme=\"flexapp\" data-validation-options=\"sfirstname ,slastname ,ssecondaryfirstname4 ,ssecondarymiddleinitial4 ,sauthorizeddob4 ,sauthorizedstreetaddr14 ,sauthorizedstreetaddr24 ,sauthorizedapartment4 ,sauthorizedcity4 ,sauthorizedstate14 ,sauthorizedzip4 ,sauth4addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondarylastname4\" maxlength=\"20\" name=\"value(ssecondarylastname4)\" size=\"10\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name value ssecondarylastname4 text ssecondarylastname4 20",
+    "id": "536-text-49",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input jpjs-date\" data-error-message=\"please enter a valid birthdate using the mm/dd/yyyy format. the authorized user's age must be under 125.\" data-help-message=\"enter the authorized user's birthdate using only numbers.\" data-mask=\"00/00/0000\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname4 ,ssecondarylastname4 ,sauthorizedstreetaddr14 ,sauthorizedstreetaddr24 ,sauthorizedapartment4 ,sauthorizedcity4 ,sauthorizedstate14 ,sauthorizedzip4 ,sauth4addrsameasprimary\" fa.allow=\"numeric\" id=\"sauthorizeddob4\" maxlength=\"10\" name=\"value(sauthorizeddob4)\" pattern=\"\\d*\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s birthdate using only numbers date of birth enter the authorized user s birthdate using only numbers value sauthorizeddob4 text mm dd yyyy sauthorizeddob4 10",
+    "id": "536-text-50",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-help-message=\"federal regulations require us to collect authorized user's physical address. if you only provide a p.o. box, this will delay how quickly we can review your request.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname4 ,ssecondarylastname4 ,sauthorizeddob4 ,sauthorizedstreetaddr24 ,sauthorizedapartment4 ,sauthorizedcity4 ,sauthorizedstate14 ,sauthorizedzip4\" fa.allow=\"address\" id=\"sauthorizedstreetaddr14\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr14)\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request residential address 1 federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request value sauthorizedstreetaddr14 text sauthorizedstreetaddr14 40",
+    "id": "536-text-51",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"inputtextbox requiredfields jpjs-disable-toggle\" data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname4 ,ssecondarylastname4 ,sauthorizeddob4 ,sauthorizedstreetaddr14 ,sauthorizedapartment4 ,sauthorizedcity4 ,sauthorizedstate14 ,sauthorizedzip4\" fa.allow=\"address\" id=\"sauthorizedstreetaddr24\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr24)\" size=\"16\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential address 2 value sauthorizedstreetaddr24 text sauthorizedstreetaddr24 40",
+    "id": "536-text-52",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's apartment identifier. use only letters, dashes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname4 ,ssecondarylastname4 ,sauthorizeddob4 ,sauthorizedstreetaddr14 ,sauthorizedstreetaddr24 ,sauthorizedcity4 ,sauthorizedstate14 ,sauthorizedzip4\" fa.allow=\"appt\" id=\"sauthorizedapartment4\" maxlength=\"5\" name=\"value(sauthorizedapartment4)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "unit apt value sauthorizedapartment4 sauthorizedapartment4 text 5",
+    "id": "536-text-53",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's city. use only letters, dashes, apostrophes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname4 ,ssecondarylastname4 ,sauthorizeddob4 ,sauthorizedstreetaddr14 ,sauthorizedstreetaddr24 ,sauthorizedapartment4 ,sauthorizedstate14 ,sauthorizedzip4 ,isnonresppage\" fa.allow=\"textentry\" id=\"sauthorizedcity4\" maxlength=\"32\" name=\"value(sauthorizedcity4)\" size=\"18\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city value sauthorizedcity4 sauthorizedcity4 text 32",
+    "id": "536-text-54",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input inputtextbox requiredfields\" data-error-message=\"enter your correct five-digit zip code. your zip code and state should match.\" data-help-message=\"enter the authorized user's correct five-digit zip code. authorized user's zip code and state should match.\" data-mask=\"99999\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname4 ,ssecondarylastname4 ,sauthorizeddob4 ,sauthorizedstreetaddr14 ,sauthorizedstreetaddr24 ,sauthorizedapartment4 ,sauthorizedcity4 ,sauthorizedstate14 ,prefillstate14 ,isnonresppage\" fa.allow=\"numeric\" id=\"sauthorizedzip4\" maxlength=\"5\" name=\"value(sauthorizedzip4)\" onblur=\"prefillauthorizedstate14(this);\" pattern=\"[0-9]*\" size=\"5\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s correct five digit zip code authorized user s zip code and state should match zip code enter the authorized user s correct five digit zip code authorized user s zip code and state should match value sauthorizedzip4 text sauthorizedzip4 5",
+    "id": "536-text-55",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's first name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-help-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured.\" data-theme=\"flexapp\" data-validation-options=\"ssecondarylastname5 ,ssecondarymiddleinitial5 ,sauthorizeddob5 ,sauthorizedstreetaddr15 ,sauthorizedstreetaddr25 ,sauthorizedapartment5 ,sauthorizedcity5 ,sauthorizedstate15 ,sauthorizedzip5 ,sauth5addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondaryfirstname5\" maxlength=\"15\" name=\"value(ssecondaryfirstname5)\" size=\"12\" type=\"text\" value=\"\"/>",
+    "feature": "enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured first name enter your name as it would appear on a government issued id avoid using periods and commas as they will not be captured value ssecondaryfirstname5 text ssecondaryfirstname5 15",
+    "id": "536-text-56",
+    "pattern": "first.*name",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"if the authorized user has a middle initial, please enter a single letter. otherwise leave this blank.\" data-theme=\"flexapp\" fa.allow=\"alpha\" id=\"ssecondarymiddleinitial5\" maxlength=\"1\" name=\"value(ssecondarymiddleinitial5)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "m i value ssecondarymiddleinitial5 ssecondarymiddleinitial5 text 1",
+    "id": "536-text-57",
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's last name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-theme=\"flexapp\" data-validation-options=\"sfirstname ,slastname ,ssecondaryfirstname5 ,ssecondarymiddleinitial5 ,sauthorizeddob5 ,sauthorizedstreetaddr15 ,sauthorizedstreetaddr25 ,sauthorizedapartment5 ,sauthorizedcity5 ,sauthorizedstate15 ,sauthorizedzip5 ,sauth5addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondarylastname5\" maxlength=\"20\" name=\"value(ssecondarylastname5)\" size=\"10\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "last name value ssecondarylastname5 text ssecondarylastname5 20",
+    "id": "536-text-58",
+    "pattern": "last.*name",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input jpjs-date\" data-error-message=\"please enter a valid birthdate using the mm/dd/yyyy format. the authorized user's age must be under 125.\" data-help-message=\"enter the authorized user's birthdate using only numbers.\" data-mask=\"00/00/0000\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname5 ,ssecondarylastname5 ,sauthorizedstreetaddr15 ,sauthorizedstreetaddr25 ,sauthorizedapartment5 ,sauthorizedcity5 ,sauthorizedstate15 ,sauthorizedzip5 ,sauth5addrsameasprimary\" fa.allow=\"numeric\" id=\"sauthorizeddob5\" maxlength=\"10\" name=\"value(sauthorizeddob5)\" pattern=\"\\d*\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s birthdate using only numbers date of birth enter the authorized user s birthdate using only numbers value sauthorizeddob5 text mm dd yyyy sauthorizeddob5 10",
+    "id": "536-text-59",
+    "pattern": "birth.*date",
+    "topic": "date_of_birth"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-help-message=\"federal regulations require us to collect authorized user's physical address. if you only provide a p.o. box, this will delay how quickly we can review your request.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname5 ,ssecondarylastname5 ,sauthorizeddob5 ,sauthorizedstreetaddr25 ,sauthorizedapartment5 ,sauthorizedcity5 ,sauthorizedstate15 ,sauthorizedzip5\" fa.allow=\"address\" id=\"sauthorizedstreetaddr15\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr15)\" size=\"16\" type=\"text\" value=\"\"/>",
+    "feature": "federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request residential address 1 federal regulations require us to collect authorized user s physical address if you only provide a p o box this will delay how quickly we can review your request value sauthorizedstreetaddr15 text sauthorizedstreetaddr15 40",
+    "id": "536-text-60",
+    "pattern": "address.*one",
+    "topic": "address_1"
+  },
+  {
+    "dom": "<input class=\"inputtextbox requiredfields jpjs-disable-toggle\" data-error-message=\"enter the authorized user's street address. use only letters, dashes, apostrophes, and spaces. if you provide a p.o. box, processing of this request will be delayed.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname5 ,ssecondarylastname5 ,sauthorizeddob5 ,sauthorizedstreetaddr15 ,sauthorizedapartment5 ,sauthorizedcity5 ,sauthorizedstate15 ,sauthorizedzip5\" fa.allow=\"address\" id=\"sauthorizedstreetaddr25\" maxlength=\"40\" name=\"value(sauthorizedstreetaddr25)\" size=\"16\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "residential address 2 value sauthorizedstreetaddr25 text sauthorizedstreetaddr25 40",
+    "id": "536-text-61",
+    "pattern": "address.*two",
+    "topic": "address_2"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's apartment identifier. use only letters, dashes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname5 ,ssecondarylastname5 ,sauthorizeddob5 ,sauthorizedstreetaddr15 ,sauthorizedstreetaddr25 ,sauthorizedcity5 ,sauthorizedstate15 ,sauthorizedzip5\" fa.allow=\"appt\" id=\"sauthorizedapartment5\" maxlength=\"5\" name=\"value(sauthorizedapartment5)\" size=\"2\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "unit apt value sauthorizedapartment5 sauthorizedapartment5 text 5",
+    "id": "536-text-62",
+    "pattern": "address.*apartment",
+    "topic": "address_apartment"
+  },
+  {
+    "dom": "<input data-error-message=\"enter the authorized user's city. use only letters, dashes, apostrophes, and spaces.\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname5 ,ssecondarylastname5 ,sauthorizeddob5 ,sauthorizedstreetaddr15 ,sauthorizedstreetaddr25 ,sauthorizedapartment5 ,sauthorizedstate15 ,sauthorizedzip5 ,isnonresppage\" fa.allow=\"textentry\" id=\"sauthorizedcity5\" maxlength=\"32\" name=\"value(sauthorizedcity5)\" size=\"18\" title=\"\" type=\"text\" value=\"\"/>",
+    "feature": "city value sauthorizedcity5 sauthorizedcity5 text 32",
+    "id": "536-text-63",
+    "pattern": "city",
+    "topic": "city"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input inputtextbox requiredfields\" data-error-message=\"enter your correct five-digit zip code. your zip code and state should match.\" data-help-message=\"enter the authorized user's correct five-digit zip code. authorized user's zip code and state should match.\" data-mask=\"99999\" data-theme=\"flexapp\" data-validation-options=\"ssecondaryfirstname5 ,ssecondarylastname5 ,sauthorizeddob5 ,sauthorizedstreetaddr15 ,sauthorizedstreetaddr25 ,sauthorizedapartment5 ,sauthorizedcity5 ,sauthorizedstate15 ,prefillstate15 ,isnonresppage\" fa.allow=\"numeric\" id=\"sauthorizedzip5\" maxlength=\"5\" name=\"value(sauthorizedzip5)\" onblur=\"prefillauthorizedstate15(this);\" pattern=\"[0-9]*\" size=\"5\" type=\"text\" value=\"\"/>",
+    "feature": "enter the authorized user s correct five digit zip code authorized user s zip code and state should match zip code enter the authorized user s correct five digit zip code authorized user s zip code and state should match value sauthorizedzip5 text sauthorizedzip5 5",
+    "id": "536-text-64",
+    "pattern": "zipcode",
+    "topic": "zipcode"
+  },
+  {
+    "dom": "<input data-error-message=\"enter your email address in john@domainname.com format.\" data-help-message=\"we use your email address to communicate with you about your account. we may also send you email messages about special offers and services. please provide an email address you check frequently.\" data-theme=\"flexapp\" fa.allow=\"numeric\" id=\"semailaddr2\" maxlength=\"64\" name=\"value(semailaddr2)\" size=\"25\" type=\"email\" value=\"\"/>",
+    "feature": "we use your email address to communicate with you about your account we may also send you email messages about special offers and services please provide an email address you check frequently email address we use your email address to communicate with you about your account we may also send you email messages about special offers and services please provide an email address you check frequently value semailaddr2 email semailaddr2 64",
+    "id": "536-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input\" data-error-message='enter your number in xxx xxx xxxx format. it cannot begin with \"1\" or \"0\".' data-help-message=\"when you give us your mobile phone number, we have your permission to contact you at that number about all your chase or j.p. morgan accounts. &lt;br/&gt;&lt;br/&gt; &lt;ul&gt;&lt;li&gt;your consent allows us to use text messaging, artificial or prerecorded voice messages and automatic dialing technology for informational and account service calls, but not for telemarketing or sales calls. &lt;/li&gt;&lt;li&gt;it may include contact from companies working on our behalf to service your accounts.&lt;/li&gt; &lt;li&gt;message and data rates may apply.&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;you may contact us any time to change these preferences.\" data-mask=\"000-000-0000\" data-mask-placeholder=\"x\" data-theme=\"flexapp\" fa.allow=\"numeric\" id=\"shomephone\" maxlength=\"12\" name=\"value(shomephone)\" pattern=\"\\d*\" placeholder=\"xxx-xxx-xxxx\" size=\"13\" type=\"tel\" value=\"\"/>",
+    "feature": "when you give us your mobile phone number we have your permission to contact you at that number about all your chase or j p morgan accounts your consent allows us to use text messaging artificial or prerecorded voice messages and automatic dialing technology for informational and account service calls but not for telemarketing or sales calls it may include contact from companies working on our behalf to service your accounts message and data rates may apply you may contact us any time to change these preferences primary phone number mobile preferred when you give us your mobile phone number we have your permission to contact you at that number about all your chase or j p morgan accounts your consent allows us to use text messaging artificial or prerecorded voice messages and automatic dialing technology for informational and account service calls but not for telemarketing or sales calls it may include contact from companies working on our behalf to service your accounts message and data rates may apply you may contact us any time to change these preferences value shomephone tel xxx xxx xxxx shomephone 12",
+    "id": "536-tel-0",
+    "pattern": "phone.*number",
+    "topic": "phone_number"
+  },
+  {
+    "dom": "<input class=\"chasejs-formatted-input jpjs-disable-toggle\" data-error-message='enter your number in xxx xxx xxxx format. it cannot begin with \"1\" or \"0\".' data-help-message=\"if this number is the same as the primary, you may leave it blank. when you give us your mobile phone number, we have your permission to contact you at that number about all your chase or j.p. morgan accounts. &lt;br/&gt;&lt;br/&gt; &lt;ul&gt;&lt;li&gt;your consent allows us to use text messaging, artificial or prerecorded voice messages and automatic dialing technology for informational and account service calls, but not for telemarketing or sales calls. &lt;/li&gt;&lt;li&gt;it may include contact from companies working on our behalf to service your accounts.&lt;/li&gt; &lt;li&gt;message and data rates may apply.&lt;/li&gt;&lt;/ul&gt;&lt;br/&gt;you may contact us any time to change these preferences.\" data-mask=\"000-000-0000\" data-mask-placeholder=\"x\" data-theme=\"flexapp\" fa.allow=\"numeric\" id=\"sworkphone\" maxlength=\"12\" name=\"value(sworkphone)\" pattern=\"\\d*\" placeholder=\"xxx-xxx-xxxx\" size=\"13\" type=\"tel\" value=\"\"/>",
+    "feature": "if this number is the same as the primary you may leave it blank when you give us your mobile phone number we have your permission to contact you at that number about all your chase or j p morgan accounts your consent allows us to use text messaging artificial or prerecorded voice messages and automatic dialing technology for informational and account service calls but not for telemarketing or sales calls it may include contact from companies working on our behalf to service your accounts message and data rates may apply you may contact us any time to change these preferences alternative phone number optional if this number is the same as the primary you may leave it blank when you give us your mobile phone number we have your permission to contact you at that number about all your chase or j p morgan accounts your consent allows us to use text messaging artificial or prerecorded voice messages and automatic dialing technology for informational and account service calls but not for telemarketing or sales calls it may include contact from companies working on our behalf to service your accounts message and data rates may apply you may contact us any time to change these preferences value sworkphone tel xxx xxx xxxx sworkphone 12",
+    "id": "536-tel-1",
+    "pattern": "work.*phone",
+    "topic": "work_phone_number"
+  }
+]
