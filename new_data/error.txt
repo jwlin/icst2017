@@ -1,0 +1,29 @@
+Empty topic:
+
+Tag uid: 522-text-1, topic: , id: ctl00_maincontentplaceholder_contactinformation1_middleinitial, name: ctl00$maincontentplaceholder$contactinformation1$middleinitial
+Tag uid: 535-text-23, topic: , id: sauthorizeddob1, name: value(sauthorizeddob1)
+Tag uid: 535-text-26, topic: , id: sauthorizedapartment1, name: value(sauthorizedapartment1)
+Tag uid: 549-text-7, topic: , id: address_zipcode, name: address.zipcode
+Tag uid: 549-text-31, topic: , id: employer_workphone_exchange, name: employer.workphone.exchange
+Tag uid: 549-text-40, topic: , id: financialinformation_monthlygrossincome, name: financialinformation.monthlygrossincome
+
+mismatched tags: 
+
+Too many (1660). Run validate_regex.py to check
+
+Wrong topic:
+503-email-1 (email)
+524-text-7  (phone number: first)
+524-text-8  (phone number: middle)
+524-text-9  (phone number: last)
+524-text-10  (phone number: first)
+524-text-11  (phone number: middle)
+524-text-12  (phone number: last)
+524-text-15  (Length of Time at Current address; is it age?)
+524-text-20  (date-of-birth: mm)
+524-text-21  (date-of-birth: dd)
+524-text-22  (date-of-birth: yyyy)
+524-password-0  (ssn: first)
+524-password-1  (ssn: middle)
+524-password-2  (ssn: last)
+564-text-23  (Card holder's name)

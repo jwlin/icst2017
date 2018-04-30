@@ -48,8 +48,8 @@ if __name__ == '__main__':
                     for input_tag in input_tags:
                         try:
                             feature = util.extract_features(input_tag)
-                            id_name = {k: v for k, v in input_tag.attrs.items() if k.lower() in ['id', 'name']}
-                            topic = input('Label the input field:\nDOM (id and name): {:s}\nFeature: {:s}\n>> '.format(str(id_name), feature))
+                            id_name = {k: v for k, v in input_tag.attrs.items() if k.lower() in ['id', 'name', 'maxlength']}
+                            topic = input('Label the input field:\nDOM (id, name, maxlength): {:s}\nFeature: {:s}\n>> '.format(str(id_name), feature))
                             pattern = input('Topic "{:s}" is assigned. Write the identifying string or regex pattern '
                                             'for its id or name:\n>> '.format(topic))
                             assert util.is_validated(input_tag, pattern)                            
