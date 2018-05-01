@@ -1,51 +1,51 @@
 [
   {
     "dom": "<input autocomplete=\"given-name\" class=\"input-md\" data-val-required=\"please complete first name.\" id=\"billingaddress.currentaddress.firstname\" maxlength=\" 20\" name=\"billingaddress.currentaddress.firstname\" type=\"text\"/>",
-    "feature": "enter zip code for city and state required required required first name required last name required phone required where should we email your receipt required street address required apartment suite other zip code required shipping address is same as billing text billingaddress currentaddress firstname billingaddress currentaddress firstname 20",
+    "feature": "enter zip code for city and state required required required first name required last name required phone required where should we email your receipt required street address required apartment suite other zip code required shipping address is same as billing billingaddress currentaddress firstname text billingaddress currentaddress firstname 20",
     "id": "555-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input autocomplete=\"family-name\" class=\"input-md lastname jsresetcmonedit\" data-val-required=\"please complete last name.\" id=\"billingaddress.currentaddress.lastname\" maxlength=\"20\" name=\"billingaddress.currentaddress.lastname\" type=\"text\"/>",
-    "feature": "enter zip code for city and state required required required last name required first name required phone required where should we email your receipt required street address required apartment suite other zip code required shipping address is same as billing text billingaddress currentaddress lastname billingaddress currentaddress lastname 20",
+    "feature": "enter zip code for city and state required required required last name required first name required phone required where should we email your receipt required street address required apartment suite other zip code required shipping address is same as billing billingaddress currentaddress lastname text billingaddress currentaddress lastname 20",
     "id": "555-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input autocomplete=\"address-line1\" class=\"input-md address1 jsresetcmonedit\" id=\"currentaddress.address1\" maxlength=\"30\" name=\"billingaddress.currentaddress.address1\" type=\"text\"/>",
-    "feature": "enter zip code for city and state required required required last name required first name required phone required where should we email your receipt required street address required apartment suite other zip code required shipping address is same as billing text currentaddress address1 billingaddress currentaddress address1 30",
+    "feature": "enter zip code for city and state required required required last name required first name required phone required where should we email your receipt required street address required apartment suite other zip code required shipping address is same as billing currentaddress address1 text billingaddress currentaddress address1 30",
     "id": "555-text-2",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"address-line2\" class=\"input-md address2 jsresetcmonedit\" id=\"billingaddress.currentaddress.address2\" maxlength=\"30\" name=\"billingaddress.currentaddress.address2\" type=\"text\"/>",
-    "feature": "enter zip code for city and state required required required last name required first name required phone required where should we email your receipt required apartment suite other street address required zip code required shipping address is same as billing text billingaddress currentaddress address2 billingaddress currentaddress address2 30",
+    "feature": "enter zip code for city and state required required required last name required first name required phone required where should we email your receipt required apartment suite other street address required zip code required shipping address is same as billing billingaddress currentaddress address2 text billingaddress currentaddress address2 30",
     "id": "555-text-3",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input autocomplete=\"email\" class=\"input-md jsresetcmonedit\" data-val-required=\"please enter a valid email address (i.e. name@domain.com).\" id=\"txtbillemail\" maxlength=\"66\" name=\"billingaddress.currentaddress.email\" size=\"66\" type=\"email\"/>",
-    "feature": "required required enter zip code for city and state required where should we email your receipt required phone required last name required first name required zip code required apartment suite other street address required shipping address is same as billing email txtbillemail billingaddress currentaddress email 66",
+    "feature": "required required enter zip code for city and state required where should we email your receipt required phone required last name required first name required zip code required apartment suite other street address required shipping address is same as billing txtbillemail billingaddress currentaddress email email 66",
     "id": "555-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" class=\"jszipcodelookup input-md\" data-val=\"true\" data-val-length=\"the field zip code: must be a string with a maximum length of 10.\" data-val-length-max=\"10\" data-val-required=\"please enter a valid zip code.\" id=\"zipcodenumber\" maxlength=\"5\" name=\"zipcode\" pattern=\"[0-9]*\" type=\"tel\" value=\"\"/>",
-    "feature": "required zip code required tel zipcodenumber zipcode 5",
+    "feature": "required zip code required zipcodenumber tel zipcode 5",
     "id": "555-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"input-md jsresetcmonedit\" data-val-required=\"please enter a valid phone number.\" id=\"txtbillamphone\" maxlength=\"16\" name=\"billingaddress.currentaddress.daytimephone\" size=\"12\" type=\"tel\"/>",
-    "feature": "required enter zip code for city and state required required phone required last name required first name required where should we email your receipt required zip code required apartment suite other street address required shipping address is same as billing tel txtbillamphone billingaddress currentaddress daytimephone 16",
+    "feature": "required enter zip code for city and state required required phone required last name required first name required where should we email your receipt required zip code required apartment suite other street address required shipping address is same as billing txtbillamphone billingaddress currentaddress daytimephone tel 16",
     "id": "555-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

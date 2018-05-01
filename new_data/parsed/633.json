@@ -8,91 +8,91 @@
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtfirstname\" name=\"first name\" required=\"\" type=\"text\"/>",
-    "feature": "txtfirstname first name text",
+    "feature": "text txtfirstname first name",
     "id": "633-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtlastname\" name=\"last name\" required=\"\" type=\"text\"/>",
-    "feature": "txtlastname last name text",
+    "feature": "text txtlastname last name",
     "id": "633-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtphone\" name=\"phone number\" required=\"\" type=\"text\"/>",
-    "feature": "txtphone phone number text",
+    "feature": "text txtphone phone number",
     "id": "633-text-3",
     "pattern": "phone.*number",
-    "topic": "phone_number"
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtstreet\" name=\"street\" required=\"\" type=\"text\"/>",
-    "feature": "txtstreet street text",
+    "feature": "text txtstreet street",
     "id": "633-text-4",
-    "pattern": "address.*one",
+    "pattern": "street",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtapt\" name=\"apt\" type=\"text\"/>",
-    "feature": "state txtapt apt text",
+    "feature": "state text txtapt apt",
     "id": "633-text-5",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apt",
+    "topic": "apartment"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtattention\" name=\"attention\" type=\"text\"/>",
-    "feature": "state txtattention attention text",
+    "feature": "state text txtattention attention",
     "id": "633-text-6",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "attention",
+    "topic": "state"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtcity\" name=\"city\" required=\"\" type=\"text\"/>",
-    "feature": "txtcity city text",
+    "feature": "text txtcity city",
     "id": "633-text-7",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form-control cp-text\" data-postalformat=\"#ddlcountry\" data-postalformat-msg=\"postal code format is not valid\" id=\"txtzip\" name=\"postal code\" required=\"\" type=\"text\"/>",
-    "feature": "txtzip postal code text",
+    "feature": "text txtzip postal code",
     "id": "633-text-8",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postal.*code",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtupccode\" name=\"upc code\" required=\"\" type=\"text\"/>",
-    "feature": "txtupccode upc code text",
+    "feature": "text txtupccode upc code",
     "id": "633-text-9",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtpurchaselocation\" name=\"purchase location\" required=\"\" type=\"text\"/>",
-    "feature": "txtpurchaselocation purchase location text",
+    "feature": "text txtpurchaselocation purchase location",
     "id": "633-text-10",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "purchase.*location",
+    "topic": "store_name"
   },
   {
     "dom": "<input id=\"txtemailaddress\" type=\"text\"/>",
-    "feature": "enter e mail address txtemailaddress text",
+    "feature": "enter e mail address text txtemailaddress",
     "id": "633-text-11",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control cp-text\" id=\"txtemailaddress\" name=\"email address\" required=\"\" type=\"email\"/>",
-    "feature": "txtemailaddress email address email",
+    "feature": "email txtemailaddress email address",
     "id": "633-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control cp-text\" data-matches=\"#txtemailaddress\" data-matches-msg=\"the email confirmation does not match\" data-required-msg=\"you must confirm your email address\" id=\"txtconfirmemailaddress\" name=\"confirm email\" required=\"\" type=\"email\"/>",
-    "feature": "txtconfirmemailaddress confirm email email",
+    "feature": "email txtconfirmemailaddress confirm email",
     "id": "633-email-1",
     "pattern": "email",
     "topic": "email"

@@ -1,14 +1,14 @@
 [
   {
     "dom": "<input aria-label=\"enter your search term\" autocomplete=\"off\" class=\"search_box\" data-provide=\"rac\" id=\"sli_search_1\" name=\"w\" onfocus=\"value='';$('.ui-dialog-content').dialog('close');\" size=\"10\" type=\"text\" value=\"search\"/>",
-    "feature": "text sli search 1 search w",
+    "feature": "sli search 1 text w search",
     "id": "562-text-0",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input aria-label=\"enter your search term\" autocomplete=\"off\" class=\"search_box\" data-provide=\"rac\" id=\"sli_search_2\" name=\"w\" onfocus=\"$('.ui-dialog-content').dialog('close');\" placeholder=\"search\" size=\"10\" type=\"text\" value=\"\"/>",
-    "feature": "checkout toggle navigation search text sli search 2 w",
+    "feature": "checkout toggle navigation sli search 2 text w search",
     "id": "562-text-1",
     "pattern": "search",
     "topic": "search"
@@ -17,15 +17,15 @@
     "dom": "<input id=\"quantity0\" name=\"quantity0\" size=\"3\" type=\"text\" value=\"2\"/>",
     "feature": "qty text quantity0 quantity0 2",
     "id": "562-text-2",
-    "pattern": "quantity",
-    "topic": "quantity"
+    "pattern": "quant",
+    "topic": "quant"
   },
   {
     "dom": "<input id=\"coupon_code\" name=\"coupon_code\" type=\"text\" value=\"\"/>",
     "feature": "coupon code one per order text coupon code coupon code",
     "id": "562-text-3",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "coupon",
+    "topic": "promo_code"
   },
   {
     "dom": "<input aria-label=\"enter your email address\" class=\"js-email-field\" maxlength=\"100\" name=\"email\" type=\"email\"/>",

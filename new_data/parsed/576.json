@@ -1,91 +1,91 @@
 [
   {
     "dom": "<input id=\"shipping-address-firstname\" manual_cm_sp=\"checkout-_-firstname\" maxlength=\"25\" name=\"firstname\" onblur=\"cmmanuallytriggereventtrack(this);\" type=\"text\" value=\"\"/>",
-    "feature": "first name text shipping address firstname firstname 25",
+    "feature": "first name text firstname shipping address firstname 25",
     "id": "576-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"shipping-address-lastname\" manual_cm_sp=\"checkout-_-lastname\" maxlength=\"25\" name=\"lastname\" onblur=\"cmmanuallytriggereventtrack(this);\" type=\"text\" value=\"\"/>",
     "feature": "last name text shipping address lastname lastname 25",
     "id": "576-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"shipping-address-address1\" manual_cm_sp=\"checkout-_-shippingaddress\" maxlength=\"35\" name=\"address1\" onblur=\"cmmanuallytriggereventtrack(this);\" placeholder=\"enter a location\" type=\"text\" value=\"\"/>",
-    "feature": "street address text shipping address address1 address1 enter a location 35",
+    "feature": "street address text enter a location shipping address address1 address1 35",
     "id": "576-text-2",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" id=\"shipping-address-address2\" maxlength=\"35\" name=\"address2\" type=\"text\" value=\"\"/>",
     "feature": "unit apt text shipping address address2 address2 35",
     "id": "576-text-3",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input id=\"shipping-address-city\" maxlength=\"50\" name=\"city\" type=\"text\" value=\"\"/>",
-    "feature": "city shipping address city text city 50",
+    "feature": "city text shipping address city city 50",
     "id": "576-text-4",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input id=\"shipping-address-zipcode\" maxlength=\"5\" name=\"zipcode\" type=\"text\" value=\"\"/>",
-    "feature": "zip code shipping address zipcode text zipcode 5",
+    "feature": "zip code text shipping address zipcode zipcode 5",
     "id": "576-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input id=\"apartmentnumber\" type=\"text\" value=\"\"/>",
     "feature": "text apartmentnumber",
     "id": "576-text-6",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apartment",
+    "topic": "apartment"
   },
   {
     "dom": "<input id=\"aptorstreetnumber\" type=\"text\" value=\"\"/>",
     "feature": "text aptorstreetnumber",
     "id": "576-text-7",
-    "pattern": "address.*one",
+    "pattern": "streetnumber",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" id=\"enter-promo-code\" manual_cm_sp=\"paymentinfo-_-promocode\" name=\"promocode\" onblur=\"cmmanuallytriggereventtrack(this);\" onchange=\"javascript:tealeafwcjs.processdomevent(event);\" onkeypress=\"if(event.keycode==13) javascript:checkouthelperjs.applypromotioncode('promotioncodeform','ajaxorderitemdisplayview','false','order')\" placeholder=\"promotion code - ex. abc, def, xyz\" size=\"6\" type=\"text\"/>",
-    "feature": "promo code text enter promo code promocode promotion code ex abc def xyz",
+    "feature": "promo code text promotion code ex abc def xyz enter promo code promocode",
     "id": "576-text-8",
-    "pattern": "coupon.*code",
-    "topic": "coupon_code"
+    "pattern": "promo",
+    "topic": "promo_code"
   },
   {
     "dom": "<input class=\"\" id=\"payment-enter-gift-card\" manual_cm_sp=\"paymentinfo-_-giftcardnumber\" name=\"account\" onblur=\"cmmanuallytriggereventtrack(this);\" placeholder=\"card number\" type=\"text\" value=\"\"/>",
-    "feature": "pin number text payment enter gift card account card number",
+    "feature": "pin number text payment enter gift card card number account",
     "id": "576-text-9",
     "pattern": "gift.*card",
-    "topic": "gift_card_number"
+    "topic": "gift_card"
   },
   {
     "dom": "<input class=\"\" id=\"payment-enter-gift-card-pin\" manual_cm_sp=\"paymentinfo-_-pin\" name=\"gcpin\" onblur=\"cmmanuallytriggereventtrack(this);\" placeholder=\"pin\" type=\"text\" value=\"\"/>",
-    "feature": "pin number text payment enter gift card pin gcpin pin",
+    "feature": "pin number text payment enter gift card pin pin gcpin",
     "id": "576-text-10",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "gift.*card.*pin",
+    "topic": "gift_card_pin"
   },
   {
     "dom": "<input class=\"valid\" id=\"login-email\" onblur=\"checkouthelperjs.validateuniqueemail('52311331');\" type=\"text\" value=\"a@com.com\"/>",
-    "feature": "email a com com text login email",
+    "feature": "email text login email a com com",
     "id": "576-text-11",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"cart-sign-in-emailaddress\" name=\"logonid\" type=\"email\" value=\"a@com.com\"/>",
-    "feature": "email password remember me a com com email logonid cart sign in emailaddress",
+    "feature": "email password remember me email cart sign in emailaddress logonid a com com",
     "id": "576-email-0",
     "pattern": "email",
     "topic": "email"
@@ -106,7 +106,7 @@
   },
   {
     "dom": "<input id=\"cart-sign-in-userpassword\" name=\"logonpassword\" type=\"password\"/>",
-    "feature": "password email remember me password logonpassword cart sign in userpassword",
+    "feature": "password email remember me password cart sign in userpassword logonpassword",
     "id": "576-password-2",
     "pattern": "password",
     "topic": "password"
@@ -115,7 +115,7 @@
     "dom": "<input class=\"form-control\" id=\"shipping-address-phone\" manual_cm_sp=\"checkout-_-phone\" maxlength=\"10\" name=\"phone1\" onblur=\"cmmanuallytriggereventtrack(this);\" placeholder=\"\" type=\"tel\" value=\"\"/>",
     "feature": "phone tel shipping address phone phone1 10",
     "id": "576-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

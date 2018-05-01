@@ -1,37 +1,37 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"autocomplete-product registria_field\" data-productcategory=\"en_us\" data-showall=\"true\" id=\"model\" name=\"product[model]\" type=\"text\" value=\"\"/>",
-    "feature": "model number where s my model text model product model",
+    "feature": "model number where s my model text product model model",
     "id": "611-text-0",
-    "pattern": "model.*number",
-    "topic": "model_number"
+    "pattern": "model",
+    "topic": "model"
   },
   {
     "dom": "<input class=\"registria_field \" id=\"serial\" name=\"product[serial_number]\" type=\"text\" value=\"\"/>",
-    "feature": "serial number text serial product serial number",
+    "feature": "serial number serial product serial number text",
     "id": "611-text-1",
     "pattern": "serial",
     "topic": "serial_number"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"registria_field\" id=\"purchased_at\" name=\"product[purchased_at]\" type=\"text\"/>",
-    "feature": "place of purchase text purchased at product purchased at",
+    "feature": "place of purchase text product purchased at purchased at",
     "id": "611-text-2",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "purchased_at",
+    "topic": "store_name"
   },
   {
     "dom": "<input class=\"registria_field\" id=\"username\" name=\"login[username]\" type=\"text\"/>",
     "feature": "email address text username login username",
     "id": "611-text-3",
     "pattern": "username",
-    "topic": "username"
+    "topic": "email"
   },
   {
     "dom": "<input class=\"registria_field\" id=\"username\" name=\"user[email]\" type=\"email\"/>",
     "feature": "email address email username user email",
     "id": "611-email-0",
-    "pattern": "email",
+    "pattern": "user.*email",
     "topic": "email"
   },
   {
@@ -43,9 +43,9 @@
   },
   {
     "dom": "<input class=\"registria_field mask-date\" id=\"purchase_date\" name=\"product[purchase_date]\" type=\"tel\"/>",
-    "feature": "purchase date tel purchase date product purchase date",
+    "feature": "purchase date tel product purchase date purchase date",
     "id": "611-tel-0",
-    "pattern": "date",
+    "pattern": "purchase.*date",
     "topic": "date"
   }
 ]

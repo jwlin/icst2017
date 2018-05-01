@@ -1,23 +1,23 @@
 [
   {
     "dom": "<input accesskey=\"s\" class=\"google\" id=\"searchterm\" name=\"searchterm\" size=\"30\" tabindex=\"2\" type=\"text\"/>",
-    "feature": "search searchterm searchterm text",
+    "feature": "search searchterm text searchterm",
     "id": "708-text-0",
-    "pattern": "search",
+    "pattern": "search.*term",
     "topic": "search"
   },
   {
     "dom": "<input maxlength=\"30\" name=\"fname\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "text fname 30",
     "id": "708-text-1",
-    "pattern": "first.*name",
+    "pattern": "fname",
     "topic": "first_name"
   },
   {
     "dom": "<input maxlength=\"30\" name=\"lname\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "text lname 30",
     "id": "708-text-2",
-    "pattern": "last.*name",
+    "pattern": "lname",
     "topic": "last_name"
   },
   {
@@ -36,16 +36,16 @@
   },
   {
     "dom": "<input maxlength=\"30\" name=\"pword\" onkeyup=\"checkpasswordrequirements(pword,conf_pword)\" size=\"30\" type=\"password\" value=\"\"/>",
-    "feature": "pword password 30",
+    "feature": "password pword 30",
     "id": "708-password-0",
-    "pattern": "password",
+    "pattern": "pword",
     "topic": "password"
   },
   {
     "dom": "<input maxlength=\"30\" name=\"conf_pword\" onkeyup=\"checkpasswordrequirements(pword,conf_pword)\" size=\"30\" type=\"password\" value=\"\"/>",
-    "feature": "conf pword password 30",
+    "feature": "password conf pword 30",
     "id": "708-password-1",
-    "pattern": "password",
+    "pattern": "pword",
     "topic": "password"
   }
 ]

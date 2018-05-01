@@ -1,56 +1,56 @@
 [
   {
     "dom": "<input aria-labelledby=\"searchlabel\" autocomplete=\"off\" class=\"input-text\" id=\"search\" maxlength=\"128\" name=\"q\" onkeyup=\"this.setattribute('value', this.value);\" type=\"text\" value=\"\"/>",
-    "feature": "search search q text 128",
+    "feature": "search search text q 128",
     "id": "640-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-field-hint-11 webforms-fields-hint\" id=\"field11\" name=\"field[11]\" onblur=\"if (this.value == '') {this.value = 'full name'; $(this).addclassname('webforms-fields-hint');}\" onfocus=\"if (this.value == 'full name') {this.value = ''; $(this).removeclassname('webforms-fields-hint');}\" style=\"\" type=\"text\" value=\"full name\"/>",
-    "feature": "full name field11 field 11 full name text",
+    "feature": "full name text field 11 field11 full name",
     "id": "640-text-1",
-    "pattern": "full.*name",
+    "pattern": "field1",
     "topic": "full_name"
   },
   {
     "dom": "<input class=\"input-text required-entry \" id=\"field12\" name=\"field[12]\" style=\"\" type=\"text\" value=\"\"/>",
-    "feature": "address field12 field 12 text",
+    "feature": "address text field 12 field12",
     "id": "640-text-2",
-    "pattern": "address.*one",
+    "pattern": "field12",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"input-text required-entry \" id=\"field13\" name=\"field[13]\" style=\"\" type=\"text\" value=\"\"/>",
-    "feature": "city field13 field 13 text",
+    "feature": "city text field 13 field13",
     "id": "640-text-3",
-    "pattern": "city",
+    "pattern": "field13",
     "topic": "city"
   },
   {
     "dom": "<input class=\"input-text required-entry \" id=\"field15\" name=\"field[15]\" style=\"\" type=\"text\" value=\"\"/>",
-    "feature": "zip field15 field 15 text",
+    "feature": "zip text field 15 field15",
     "id": "640-text-4",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "field15",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"input-text \" id=\"field16\" name=\"field[16]\" style=\"\" type=\"text\" value=\"\"/>",
-    "feature": "phone field16 field 16 text",
+    "feature": "phone text field 16 field16",
     "id": "640-text-5",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "field16",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-email \" id=\"field39\" name=\"field[39]\" onkeyup=\"if(this.value.search(' ')&gt;=0){this.value = this.value.replace(' ','');}\" style=\"\" type=\"text\" value=\"\"/>",
-    "feature": "email address field39 field 39 text",
+    "feature": "email address text field 39 field39",
     "id": "640-text-6",
-    "pattern": "email",
+    "pattern": "field39",
     "topic": "email"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-email\" id=\"newsletter\" name=\"email\" type=\"text\"/>",
-    "feature": "enter your email newsletter email text",
+    "feature": "enter your email text email newsletter",
     "id": "640-text-7",
     "pattern": "email",
     "topic": "email"

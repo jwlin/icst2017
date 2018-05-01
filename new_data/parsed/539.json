@@ -1,72 +1,72 @@
 [
   {
     "dom": "<input class=\"form-control input-sm\" id=\"firstname\" maxlength=\"20\" name=\"firstname\" type=\"text\" value=\"\"/>",
-    "feature": "this field is required first name firstname text firstname 20",
+    "feature": "this field is required first name firstname firstname text 20",
     "id": "539-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control input-sm\" id=\"middlename\" maxlength=\"20\" name=\"middlename\" type=\"text\" value=\"\"/>",
-    "feature": "middle name middlename text middlename 20",
+    "feature": "middle name middlename middlename text 20",
     "id": "539-text-1",
-    "pattern": "middle.*name",
+    "pattern": "middlename",
     "topic": "middle_name"
   },
   {
     "dom": "<input class=\"form-control input-sm\" id=\"lastname\" maxlength=\"40\" name=\"lastname\" type=\"text\" value=\"\"/>",
-    "feature": "this field is required last name lastname text lastname 40",
+    "feature": "this field is required last name lastname lastname text 40",
     "id": "539-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control input-sm ssn-masking\" custattrmaskedssn=\"\" custattrunmaskedssn=\"\" id=\"maskedssn\" maxlength=\"11\" name=\"maskedssn\" type=\"text\" value=\"\"/>",
-    "feature": "this field is required social security number maskedssn text maskedssn 11",
+    "feature": "this field is required social security number maskedssn maskedssn text 11",
     "id": "539-text-3",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input class=\"form-control email-value-restrict input-sm\" id=\"email\" maxlength=\"40\" name=\"email\" type=\"text\" value=\"\"/>",
-    "feature": "this field is required email address email text email 40",
+    "feature": "this field is required email address email email text 40",
     "id": "539-text-4",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"form-control email-value-restrict copy-paste-restrict input-sm\" id=\"confirmemail\" maxlength=\"40\" name=\"confirmemail\" type=\"text\" value=\"\"/>",
-    "feature": "this field is required email and confirm email address must be same confirm email address confirmemail text confirmemail 40",
+    "feature": "this field is required email and confirm email address must be same confirm email address confirmemail confirmemail text 40",
     "id": "539-text-5",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control input-sm\" id=\"phones_0__number\" maxlength=\"14\" name=\"phones[0].number\" type=\"text\" value=\"\"/>",
-    "feature": "this field is required primary phone phones 0 number text phones 0 number 14",
+    "feature": "this field is required primary phone phones 0 number phones 0 number text 14",
     "id": "539-text-6",
     "pattern": "phone.*number",
-    "topic": "phone_number"
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control phoneextention input-sm\" id=\"phones_0__extention\" maxlength=\"6\" name=\"phones[0].extention\" type=\"text\" value=\"\"/>",
-    "feature": "primary phone extension phones 0 extention text phones 0 extention 6",
+    "feature": "primary phone extension phones 0 extention phones 0 extention text 6",
     "id": "539-text-7",
-    "pattern": "phone.*ext",
+    "pattern": "phone.*extension",
     "topic": "phone_ext"
   },
   {
     "dom": "<input class=\"form-control input-sm\" id=\"phones_1__number\" maxlength=\"14\" name=\"phones[1].number\" type=\"text\" value=\"\"/>",
-    "feature": "secondary phone phones 1 number text phones 1 number 14",
+    "feature": "secondary phone phones 1 number phones 1 number text 14",
     "id": "539-text-8",
     "pattern": "phone.*number",
-    "topic": "phone_number"
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control phoneextention input-sm\" id=\"phones_1__extention\" maxlength=\"6\" name=\"phones[1].extention\" type=\"text\" value=\"\"/>",
-    "feature": "secondary phone extension phones 1 extention text phones 1 extention 6",
+    "feature": "secondary phone extension phones 1 extention phones 1 extention text 6",
     "id": "539-text-9",
-    "pattern": "phone.*ext",
+    "pattern": "phone.*extention",
     "topic": "phone_ext"
   }
 ]

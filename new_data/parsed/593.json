@@ -1,182 +1,182 @@
 [
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_firstname_1\" maxlength=\"15\" name=\"firstname\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "first name text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 firstname 1 firstname 15",
+    "feature": "first name wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 firstname 1 text firstname 15",
     "id": "593-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_lastname_1\" maxlength=\"15\" name=\"lastname\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "last name text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 lastname 1 lastname 15",
+    "feature": "last name wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 lastname 1 text lastname 15",
     "id": "593-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_email1_1\" maxlength=\"64\" name=\"email1\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "email address text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 email1 1 email1 64",
+    "feature": "email address wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 email1 1 text email1 64",
     "id": "593-text-2",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-label=\"phone number area code\" class=\"form_input split-number phone\" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_phone1_1_1\" maxlength=\"3\" name=\"phone1_1\" pattern=\"\\d*\" size=\"3\" type=\"text\" value=\"\"/>",
-    "feature": "only used if there are issues with your order phone text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 phone1 1 1 phone1 1 3",
+    "feature": "only used if there are issues with your order phone wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 phone1 1 1 text phone1 1 3",
     "id": "593-text-3",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*1",
+    "topic": "area_code"
   },
   {
     "dom": "<input aria-label=\"phone number prefix\" class=\"form_input split-number phone\" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_phone1_1_2\" maxlength=\"3\" name=\"phone1_2\" pattern=\"\\d*\" size=\"3\" type=\"text\" value=\"\"/>",
-    "feature": "only used if there are issues with your order phone text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 phone1 1 2 phone1 2 3",
+    "feature": "only used if there are issues with your order phone wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 phone1 1 2 text phone1 2 3",
     "id": "593-text-4",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*2",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input aria-label=\"phone number suffix\" class=\"form_input split-number phone\" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_phone1_1_3\" maxlength=\"4\" name=\"phone1_3\" pattern=\"\\d*\" size=\"4\" type=\"text\" value=\"\"/>",
-    "feature": "only used if there are issues with your order phone text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 phone1 1 3 phone1 3 4",
+    "feature": "only used if there are issues with your order phone wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 phone1 1 3 text phone1 3 4",
     "id": "593-text-5",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*3",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_zipcode_1\" maxlength=\"12\" name=\"zipcode\" onblur=\"updatetaxbyzipcode();return false;\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "zip code text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 zipcode 1 zipcode 12",
+    "feature": "zip code wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 zipcode 1 text zipcode 12",
     "id": "593-text-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form_input places_autocomplete\" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_address1_1\" maxlength=\"30\" name=\"address1\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "no se aceptan casillas de correo address 1 text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 address1 1 address1 30",
+    "feature": "no se aceptan casillas de correo address 1 wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 address1 1 text address1 30",
     "id": "593-text-7",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_address2_1\" maxlength=\"30\" name=\"address2\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "optional address 2 optional text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 address2 1 address2 30",
+    "feature": "optional address 2 optional wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 address2 1 text address2 30",
     "id": "593-text-8",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_shippingaddresscreateeditformdiv_1_city_1\" maxlength=\"25\" name=\"city\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "city or apo fpo text wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 city 1 city 25",
+    "feature": "city or apo fpo wc shoppingcartaddressentryform shippingaddresscreateeditformdiv 1 city 1 text city 25",
     "id": "593-text-9",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_firstname_1\" maxlength=\"15\" name=\"firstname\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "first name text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 firstname 1 firstname 15",
+    "feature": "first name wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 firstname 1 text firstname 15",
     "id": "593-text-10",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_lastname_1\" maxlength=\"15\" name=\"lastname\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "last name text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 lastname 1 lastname 15",
+    "feature": "last name wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 lastname 1 text lastname 15",
     "id": "593-text-11",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-label=\"phone number area code\" class=\"form_input split-number phone\" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_phone1_1_1\" maxlength=\"3\" name=\"phone1_1\" pattern=\"\\d*\" size=\"3\" type=\"text\" value=\"\"/>",
-    "feature": "only used if there are issues with your order phone text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 phone1 1 1 phone1 1 3",
+    "feature": "only used if there are issues with your order phone wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 phone1 1 1 text phone1 1 3",
     "id": "593-text-12",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*1",
+    "topic": "area_code"
   },
   {
     "dom": "<input aria-label=\"phone number prefix\" class=\"form_input split-number phone\" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_phone1_1_2\" maxlength=\"3\" name=\"phone1_2\" pattern=\"\\d*\" size=\"3\" type=\"text\" value=\"\"/>",
-    "feature": "only used if there are issues with your order phone text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 phone1 1 2 phone1 2 3",
+    "feature": "only used if there are issues with your order phone wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 phone1 1 2 text phone1 2 3",
     "id": "593-text-13",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*2",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input aria-label=\"phone number suffix\" class=\"form_input split-number phone\" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_phone1_1_3\" maxlength=\"4\" name=\"phone1_3\" pattern=\"\\d*\" size=\"4\" type=\"text\" value=\"\"/>",
-    "feature": "only used if there are issues with your order phone text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 phone1 1 3 phone1 3 4",
+    "feature": "only used if there are issues with your order phone wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 phone1 1 3 text phone1 3 4",
     "id": "593-text-14",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*3",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_zipcode_1\" maxlength=\"12\" name=\"zipcode\" onblur=\"updatetaxbyzipcode();return false;\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "zip code text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 zipcode 1 zipcode 12",
+    "feature": "zip code wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 zipcode 1 text zipcode 12",
     "id": "593-text-15",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form_input places_autocomplete\" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_address1_1\" maxlength=\"30\" name=\"address1\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "no se aceptan casillas de correo address 1 text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 address1 1 address1 30",
+    "feature": "no se aceptan casillas de correo address 1 wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 address1 1 text address1 30",
     "id": "593-text-16",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_address2_1\" maxlength=\"30\" name=\"address2\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "optional address 2 optional text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 address2 1 address2 30",
+    "feature": "optional address 2 optional wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 address2 1 text address2 30",
     "id": "593-text-17",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"form_input \" id=\"wc__shoppingcartaddressentryform_billingaddresscreateeditformdiv_1_city_1\" maxlength=\"25\" name=\"city\" onblur=\"\" onkeyup=\"\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "city or apo fpo text wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 city 1 city 25",
+    "feature": "city or apo fpo wc shoppingcartaddressentryform billingaddresscreateeditformdiv 1 city 1 text city 25",
     "id": "593-text-18",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-label=\"email address\" class=\"form_input\" id=\"txtemailsigninmodal\" maxlength=\"64\" name=\"logonid\" onkeypress=\"if(event.keycode==13) {if(submitajaxloginform(document.ajaxlogon)){logonsubmit();}}\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "generic error email address text txtemailsigninmodal logonid 64",
+    "feature": "generic error email address text logonid txtemailsigninmodal 64",
     "id": "593-text-19",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"wc_passwordresetform_forminput_logonid_in_resetpasswordform\" maxlength=\"64\" name=\"logonid\" size=\"25\" title=\"email address\" type=\"text\"/>",
-    "feature": "email address text wc passwordresetform forminput logonid in resetpasswordform logonid 64",
+    "feature": "email address text logonid wc passwordresetform forminput logonid in resetpasswordform 64",
     "id": "593-text-20",
-    "pattern": "email",
+    "pattern": "logonid",
     "topic": "email"
   },
   {
     "dom": "<input aria-label=\"challenge answer\" id=\"wc_passwordresetform_forminput_challengeanswer_in_resetpasswordform_1\" maxlength=\"100\" name=\"challengeanswer\" type=\"text\"/>",
-    "feature": "continue text wc passwordresetform forminput challengeanswer in resetpasswordform 1 challengeanswer 100",
+    "feature": "continue text challengeanswer wc passwordresetform forminput challengeanswer in resetpasswordform 1 100",
     "id": "593-text-21",
-    "pattern": "password.*hint",
-    "topic": "password_hint"
+    "pattern": "challengeanswer",
+    "topic": "security_question"
   },
   {
     "dom": "<input id=\"wc_userregistrationaddform_forminput_challengeanswer_1\" maxlength=\"100\" name=\"challengeanswer\" required=\"\" title=\"challenge answer\" type=\"text\"/>",
-    "feature": "answer security question repeat password password email address text wc userregistrationaddform forminput challengeanswer 1 challengeanswer 100",
+    "feature": "answer security question repeat password password email address text challengeanswer wc userregistrationaddform forminput challengeanswer 1 100",
     "id": "593-text-22",
-    "pattern": "password.*hint",
-    "topic": "password_hint"
+    "pattern": "challengeanswer",
+    "topic": "security_question"
   },
   {
     "dom": "<input aria-label=\"password\" class=\"form_input\" id=\"txtpwdsigninmodal\" maxlength=\"12\" name=\"logonpassword\" onkeypress=\"if(event.keycode==13){ if(submitajaxloginform(document.ajaxlogon)){logonsubmit();}}\" size=\"35\" type=\"password\" value=\"\"/>",
-    "feature": "password password txtpwdsigninmodal logonpassword 12",
+    "feature": "password password logonpassword txtpwdsigninmodal 12",
     "id": "593-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input id=\"mca_password\" name=\"logonpassword\" type=\"password\" value=\"\"/>",
-    "feature": "password email address repeat password security question answer password mca password logonpassword",
+    "feature": "password email address repeat password security question answer mca password password logonpassword",
     "id": "593-password-1",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input id=\"mca_password_repeat\" name=\"logonpasswordverify\" type=\"password\"/>",
-    "feature": "repeat password password email address security question answer password mca password repeat logonpasswordverify",
+    "feature": "repeat password password email address security question answer mca password repeat logonpasswordverify password",
     "id": "593-password-2",
     "pattern": "password",
     "topic": "password"

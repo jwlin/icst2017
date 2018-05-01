@@ -1,119 +1,119 @@
 [
   {
     "dom": "<input aria-autocomplete=\"both\" aria-haspopup=\"false\" autocomplete=\"off\" class=\"input-text\" data-mage-init='{\"quicksearch\":{\n                              \"formselector\":\"#search_mini_form\",\n                              \"url\":\"https://www.simplehuman.com/search/ajax/suggest/\",\n                              \"destinationselector\":\"#search_autocomplete\"}\n                         }' id=\"search\" maxlength=\"128\" name=\"q\" role=\"combobox\" type=\"text\" value=\"\"/>",
-    "feature": "search search q search text 128",
+    "feature": "search search search text q 128",
     "id": "613-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input class=\"m\" name=\"firstname\" placeholder=\"first name\" type=\"text\"/>",
-    "feature": "first name text first name firstname",
+    "feature": "first name firstname text first name",
     "id": "613-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"m\" name=\"lastname\" placeholder=\"last name\" type=\"text\"/>",
-    "feature": "last name text last name lastname",
+    "feature": "last name lastname text last name",
     "id": "613-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"l\" name=\"email\" placeholder=\"e-mail address\" type=\"text\"/>",
-    "feature": "email address text e mail address email",
+    "feature": "email address email text e mail address",
     "id": "613-text-3",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"l\" id=\"address1\" name=\"address1\" placeholder=\"street address\" type=\"text\"/>",
-    "feature": "address text street address address1 address1",
+    "feature": "address address1 text street address address1",
     "id": "613-text-4",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"l\" name=\"address2\" placeholder=\"unit #, building, apt, etc.\" type=\"text\"/>",
-    "feature": "address text unit building apt etc address2",
+    "feature": "address address2 text unit building apt etc",
     "id": "613-text-5",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"m\" id=\"locality\" maxlength=\"30\" name=\"city\" placeholder=\"city\" size=\"20\" type=\"text\"/>",
-    "feature": "city text city city locality 30",
+    "feature": "city city text city locality 30",
     "id": "613-text-6",
-    "pattern": "city",
+    "pattern": "locality",
     "topic": "city"
   },
   {
     "dom": "<input class=\"m\" id=\"postal_code\" maxlength=\"10\" name=\"zipcode\" placeholder=\"zipcode\" size=\"20\" type=\"text\"/>",
-    "feature": "zipcode text zipcode zipcode postal code 10",
+    "feature": "zipcode zipcode text zipcode postal code 10",
     "id": "613-text-7",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postal.*code",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"l\" name=\"phone\" placeholder=\"phone\" type=\"text\"/>",
-    "feature": "phone text phone phone",
+    "feature": "phone phone text phone",
     "id": "613-text-8",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"m\" id=\"retailer\" name=\"retailer\" size=\"20\" type=\"text\"/>",
-    "feature": "retailer retailer text retailer",
+    "feature": "retailer retailer retailer text",
     "id": "613-text-9",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "retailer",
+    "topic": "store_name"
   },
   {
     "dom": "<input class=\"l input-text required-entry\" id=\"purchasedate\" name=\"purchasedate\" type=\"text\"/>",
-    "feature": "purchase date purchasedate text purchasedate",
+    "feature": "purchase date purchasedate purchasedate text",
     "id": "613-text-10",
-    "pattern": "date",
+    "pattern": "purchase.*date",
     "topic": "date"
   },
   {
     "dom": "<input class=\"l\" id=\"productselector\" name=\"productselector\" type=\"text\"/>",
-    "feature": "item sku or upc of product product finder item sku or upc of product product finder productselector text productselector",
+    "feature": "item sku or upc of product product finder item sku or upc of product product finder productselector productselector text",
     "id": "613-text-11",
-    "pattern": "serial",
-    "topic": "serial_number"
+    "pattern": "product.*selector",
+    "topic": "sku"
   },
   {
     "dom": "<input class=\"l\" id=\"serialnumber\" name=\"serialnumber\" placeholder=\"l########\" type=\"text\"/>",
-    "feature": "serial number where is this serialnumber l text serialnumber",
+    "feature": "serial number where is this serialnumber serialnumber text l",
     "id": "613-text-12",
-    "pattern": "serial",
+    "pattern": "serial.*number",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"inputtextpopup\" id=\"webformsignup-name\" name=\"fullname\" placeholder=\"name\" type=\"text\"/>",
     "feature": "submit fullname text name webformsignup name",
     "id": "613-text-13",
-    "pattern": "full.*name",
+    "pattern": "fullname",
     "topic": "full_name"
   },
   {
     "dom": "<input class=\"inputtextpopup\" id=\"webformsignup-emailsignup\" name=\"emailsignup\" placeholder=\"email address\" type=\"text\"/>",
     "feature": "submit emailsignup text email address webformsignup emailsignup",
     "id": "613-text-14",
-    "pattern": "email",
+    "pattern": "email.*signup",
     "topic": "email"
   },
   {
     "dom": "<input class=\"inputtextpopup\" id=\"webformsignup-company\" name=\"companyname\" placeholder=\"company\" type=\"text\"/>",
     "feature": "submit companyname text company webformsignup company",
     "id": "613-text-15",
-    "pattern": "company",
-    "topic": "company_name"
+    "pattern": "companyname",
+    "topic": "company"
   },
   {
     "dom": "<input id=\"newsletter\" name=\"email\" placeholder=\"email address\" type=\"email\"/>",
-    "feature": "submit email email email address newsletter",
+    "feature": "submit email email newsletter email address",
     "id": "613-email-0",
     "pattern": "email",
     "topic": "email"

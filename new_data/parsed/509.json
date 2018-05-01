@@ -10,14 +10,14 @@
     "dom": "<input aria-describedby=\"validationdisplayid-4\" aria-invalid=\"false\" aria-required=\"true\" autocomplete=\"nope\" autocorrect=\"off\" class=\"form-input numeric\" id=\"dateofbirth\" name=\"dateofbirth\" type=\"tel\" value=\"\"/>",
     "feature": "date of birth dateofbirth dateofbirth tel",
     "id": "509-tel-0",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "date.*of.*birth",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-describedby=\"validationdisplayid-6\" aria-invalid=\"false\" aria-required=\"true\" autocomplete=\"nope\" autocorrect=\"off\" class=\"form-input numeric\" id=\"socialsecuritynumber\" name=\"socialsecuritynumber\" type=\"tel\" value=\"\"/>",
     "feature": "social security number socialsecuritynumber socialsecuritynumber tel",
     "id": "509-tel-1",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number",
+    "topic": "ssn"
   }
 ]

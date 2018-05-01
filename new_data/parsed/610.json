@@ -1,65 +1,65 @@
 [
   {
     "dom": "<input maxlength=\"50\" name=\"q\" onclick=\"this.value='';\" size=\"25\" type=\"text\" value=\"search nvidia\"/>",
-    "feature": "text search nvidia q 50",
+    "feature": "text q search nvidia 50",
     "id": "610-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input class=\"\" id=\"fnam\" maxlength=\"25\" name=\"fnam\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "first name text fnam fnam 25",
     "id": "610-text-1",
-    "pattern": "first.*name",
+    "pattern": "fnam",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"\" id=\"lnam\" maxlength=\"25\" name=\"lnam\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "last name text lnam lnam 25",
     "id": "610-text-2",
-    "pattern": "last.*name",
+    "pattern": "lnam",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"\" id=\"emal\" maxlength=\"55\" name=\"emal\" onblur=\"validatefield(event);\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "email address text emal emal 55",
     "id": "610-text-3",
-    "pattern": "email",
+    "pattern": "emal",
     "topic": "email"
   },
   {
     "dom": "<input class=\"\" id=\"cmal\" maxlength=\"55\" name=\"cmal\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "verify email address text cmal cmal 55",
     "id": "610-text-4",
-    "pattern": "email",
+    "pattern": "cmal",
     "topic": "email"
   },
   {
     "dom": "<input class=\"\" id=\"eml1\" maxlength=\"55\" name=\"eml1\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "alternate email 1 text eml1 eml1 55",
     "id": "610-text-5",
-    "pattern": "email",
+    "pattern": "eml1",
     "topic": "email"
   },
   {
     "dom": "<input class=\"\" id=\"eml2\" maxlength=\"55\" name=\"eml2\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "alternate email 2 text eml2 eml2 55",
     "id": "610-text-6",
-    "pattern": "email",
+    "pattern": "eml2",
     "topic": "email"
   },
   {
     "dom": "<input class=\"\" id=\"add1\" maxlength=\"50\" name=\"add1\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "street address 1 text add1 add1 50",
     "id": "610-text-7",
-    "pattern": "address.*one",
+    "pattern": "add1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"\" id=\"add2\" maxlength=\"50\" name=\"add2\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "street address 2 text add2 add2 50",
     "id": "610-text-8",
-    "pattern": "address.*two",
+    "pattern": "add2",
     "topic": "address_2"
   },
   {
@@ -80,50 +80,50 @@
     "dom": "<input class=\"\" id=\"stou\" maxlength=\"60\" name=\"stou\" size=\"50\" type=\"text\" value=\"\"/>",
     "feature": "state province other specify text stou stou 60",
     "id": "610-text-11",
-    "pattern": "state",
+    "pattern": "stou",
     "topic": "state"
   },
   {
     "dom": "<input class=\"\" id=\"zpc\" maxlength=\"5\" name=\"zpc\" size=\"20\" type=\"text\" value=\"\"/>",
     "feature": "zip code text zpc zpc 5",
     "id": "610-text-12",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zpc",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"\" id=\"zp4\" maxlength=\"4\" name=\"zp4\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "zip code text zp4 zp4 4",
     "id": "610-text-13",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zp4",
+    "topic": "zip_suffix"
   },
   {
     "dom": "<input class=\"\" id=\"czp\" maxlength=\"7\" name=\"czp\" size=\"20\" type=\"text\" value=\"\"/>",
     "feature": "postal code text czp czp 7",
     "id": "610-text-14",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "czp",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"\" id=\"ozp\" maxlength=\"15\" name=\"ozp\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "zip postal code text ozp ozp 15",
     "id": "610-text-15",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "ozp",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"\" id=\"phnm\" maxlength=\"28\" name=\"phnm\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "phone number text phnm phnm 28",
     "id": "610-text-16",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phnm",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"\" id=\"extn\" maxlength=\"10\" name=\"extn\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "phone number text extn extn 10",
     "id": "610-text-17",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "extn",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"\" id=\"popo\" maxlength=\"50\" name=\"popo\" size=\"20\" type=\"text\" value=\"\"/>",
@@ -136,35 +136,35 @@
     "dom": "<input class=\"\" id=\"pn1\" maxlength=\"3\" name=\"pn1\" size=\"3\" type=\"text\" value=\"\"/>",
     "feature": "part number text pn1 pn1 3",
     "id": "610-text-19",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "pn1",
+    "topic": "part_number"
   },
   {
     "dom": "<input class=\"\" id=\"pn2\" maxlength=\"5\" name=\"pn2\" size=\"5\" type=\"text\" value=\"\"/>",
     "feature": "part number text pn2 pn2 5",
     "id": "610-text-20",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "pn2",
+    "topic": "part_number"
   },
   {
     "dom": "<input class=\"\" id=\"pn3\" maxlength=\"4\" name=\"pn3\" size=\"4\" type=\"text\" value=\"\"/>",
     "feature": "part number text pn3 pn3 4",
     "id": "610-text-21",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "pn3",
+    "topic": "part_number"
   },
   {
     "dom": "<input class=\"\" id=\"pn4\" maxlength=\"3\" name=\"pn4\" size=\"3\" type=\"text\" value=\"\"/>",
     "feature": "part number text pn4 pn4 3",
     "id": "610-text-22",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "pn4",
+    "topic": "part_number"
   },
   {
     "dom": "<input class=\"\" id=\"srnu\" name=\"srnu\" type=\"text\" value=\"\"/>",
     "feature": "serial number text srnu srnu",
     "id": "610-text-23",
-    "pattern": "serial",
+    "pattern": "srnu",
     "topic": "serial_number"
   },
   {

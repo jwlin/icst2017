@@ -1,0 +1,58 @@
+[
+  {
+    "dom": "<input autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength\" data-ng-model=\"data.invitationnumberpage1\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"invitationnumberpage1\" maxlength=\"10\" placeholder=\"\" type=\"text\"/>",
+    "feature": "enter your invitation number optional invitationnumberpage1 text 10",
+    "id": "538-text-0",
+    "pattern": "unk",
+    "topic": "unk"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength\" data-ng-model=\"data.first\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"first\" maxlength=\"16\" placeholder=\"\" required=\"\" type=\"text\"/>",
+    "feature": "first name first text 16",
+    "id": "538-text-1",
+    "pattern": "first",
+    "topic": "first_name"
+  },
+  {
+    "dom": "<input autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength\" data-ng-model=\"data.initial\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"initial\" maxlength=\"1\" placeholder=\"\" type=\"text\"/>",
+    "feature": "middle initial optional initial text 1",
+    "id": "538-text-2",
+    "pattern": "initial",
+    "topic": "middle_initial"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength\" data-ng-model=\"data.last\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"last\" maxlength=\"20\" placeholder=\"\" required=\"\" type=\"text\"/>",
+    "feature": "last name last text 20",
+    "id": "538-text-3",
+    "pattern": "last",
+    "topic": "last_name"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-number ng-valid-email\" data-av-ng-valid=\"\" data-ng-model=\"data.emailblurred\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"emailblurred\" maxlength=\"65\" placeholder=\"\" required=\"\" type=\"email\"/>",
+    "feature": "your email address emailblurred email 65",
+    "id": "538-email-0",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-number ng-valid-email\" data-av-ng-valid=\"\" data-ng-model=\"data.reenteremailaddressblurred\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"reenteremailaddressblurred\" maxlength=\"\" placeholder=\"\" required=\"\" type=\"email\"/>",
+    "feature": "confirm email address reenteremailaddressblurred email",
+    "id": "538-email-1",
+    "pattern": "email",
+    "topic": "email"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength\" data-ng-model=\"data.dobblurred\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"dobblurred\" maxlength=\"10\" placeholder=\"\" required=\"\" type=\"tel\"/>",
+    "feature": "date of birth mm dd yyyy dobblurred tel 10",
+    "id": "538-tel-0",
+    "pattern": "dob",
+    "topic": "dob"
+  },
+  {
+    "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control wdg-input ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength\" data-ng-model=\"data.socialsecuritynumberblurred\" data-ng-model-options=\"{updateon: 'blur'}\" id=\"socialsecuritynumberblurred\" maxlength=\"11\" placeholder=\"\" required=\"\" type=\"tel\"/>",
+    "feature": "social security number socialsecuritynumberblurred tel 11",
+    "id": "538-tel-1",
+    "pattern": "socialsecuritynumber",
+    "topic": "ssn"
+  }
+]

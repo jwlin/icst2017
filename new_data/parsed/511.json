@@ -24,42 +24,42 @@
     "dom": "<input class=\"mask-date typetel darkenplaceholder\" id=\"inpdob_input\" maxlength=\"10\" name=\"inpdob_input\" placeholder=\"mm/dd/yyyy\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "date of birth inpdob input text inpdob input mm dd yyyy 10",
     "id": "511-text-3",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input class=\"mask-numeric typetel \" id=\"annualincome_input\" maxlength=\"7\" name=\"annualincome_input\" size=\"7\" tabindex=\"0\" type=\"text\" value=\"\"/>",
     "feature": "why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration annual income annualincome input text annualincome input 7",
     "id": "511-text-4",
-    "pattern": "income",
+    "pattern": "annual.*income",
     "topic": "income"
   },
   {
     "dom": "<input class=\"postalcode mask-numeric typetel\" id=\"inpaddress_uszipinstantcredit_input\" maxlength=\"5\" name=\"inpaddress_uszipinstantcredit_input\" size=\"14\" tabindex=\"0\" type=\"text\" value=\"\"/>",
     "feature": "zip code inpaddress uszipinstantcredit input text inpaddress uszipinstantcredit input 5",
     "id": "511-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"street-name address1 mask-address instantcredit\" id=\"inpaddress_streetaddress_input\" maxlength=\"30\" name=\"inpaddress_streetaddress_input\" size=\"33\" tabindex=\"0\" type=\"text\" value=\"\"/>",
     "feature": "street address inpaddress streetaddress input text inpaddress streetaddress input 30",
     "id": "511-text-6",
-    "pattern": "address.*one",
+    "pattern": "street.*address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"apt-number address2 mask-apt darkenplaceholder\" id=\"inpaddress_line2_input\" maxlength=\"30\" name=\"inpaddress_line2_input\" placeholder=\"ex: apt b, suite 202, etc.\" size=\"33\" tabindex=\"0\" type=\"text\" value=\"\"/>",
     "feature": "optional suite or apartment optional inpaddress line2 input text inpaddress line2 input ex apt b suite 202 etc 30",
     "id": "511-text-7",
-    "pattern": "address.*two",
+    "pattern": "address.*line.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"us-city locality\" id=\"inpaddress_uscity_input\" maxlength=\"20\" name=\"inpaddress_uscity_input\" size=\"28\" tabindex=\"0\" type=\"text\" value=\"\"/>",
     "feature": "city inpaddress uscity input text inpaddress uscity input 20",
     "id": "511-text-8",
-    "pattern": "city",
+    "pattern": "us.*city",
     "topic": "city"
   },
   {
@@ -80,28 +80,28 @@
     "dom": "<input class=\"typetel mask-phone\" id=\"inpmobilephone_fullphonenumber\" maxlength=\"12\" name=\"inpmobilephone_fullphonenumber\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "mobile phone inpmobilephone fullphonenumber text inpmobilephone fullphonenumber 12",
     "id": "511-text-11",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "mobile.*phone",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input class=\"typetel mask-phone\" id=\"inpaltphone_fullphonenumber\" maxlength=\"12\" name=\"inpaltphone_fullphonenumber\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "alternate phone inpaltphone fullphonenumber text inpaltphone fullphonenumber 12",
     "id": "511-text-12",
-    "pattern": "cell.*phone",
-    "topic": "cell_phone_number"
+    "pattern": "alt.*phone",
+    "topic": "phone_alt"
   },
   {
     "dom": "<input class=\"\" id=\"referralcode_input\" maxlength=\"10\" name=\"referralcode_input\" size=\"12\" tabindex=\"0\" type=\"text\" value=\"\"/>",
     "feature": "if you received a referral code with your credit card offer please enter it now your code may include up to 10 characters including letters and numbers and is not case sensitive optional if you received a referral code with your credit card offer please enter it now your code may include up to 10 characters including letters and numbers and is not case sensitive referral code optional referralcode input text referralcode input 10",
     "id": "511-text-13",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "referral.*code",
+    "topic": "referral_code"
   },
   {
     "dom": "<input class=\" noautocomplete\" id=\"inpssn_ssn\" maxlength=\"9\" name=\"inpssn_ssn\" placeholder=\"\" size=\"9\" tabindex=\"0\" type=\"password\" value=\"\"/>",
     "feature": "why do you need my social security number we use this information to verify your identity and obtain credit bureau information why do you need my social security number we use this information to verify your identity and obtain credit bureau information social security number inpssn ssn password inpssn ssn 9",
     "id": "511-password-0",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   }
 ]

@@ -1,135 +1,135 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"header-search-autocomplete\" data-client=\"en\" data-site=\"sports-optics_en_us\" id=\"query\" maxlength=\"200\" name=\"q\" placeholder=\"\" tabindex=\"1\" title=\"search\" type=\"text\" value=\"\"/>",
-    "feature": "query q text 200",
+    "feature": "text q query 200",
     "id": "632-text-0",
-    "pattern": "search",
+    "pattern": "query",
     "topic": "search"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-maxlength=\"6\" data-rule-required=\"true\" id=\"orderno1\" maxlength=\"6\" name=\"orderno1\" onkeyup=\"domino_check_order()\" tabindex=\"1000\" type=\"text\" value=\"\"/>",
-    "feature": "item no orderno1 orderno1 text 6",
+    "feature": "item no text orderno1 orderno1 6",
     "id": "632-text-1",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "orderno1",
+    "topic": "order_number"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-maxlength=\"4\" data-rule-required=\"true\" id=\"orderno2\" maxlength=\"4\" name=\"orderno2\" onkeyup=\"domino_check_order()\" tabindex=\"2000\" type=\"text\" value=\"\"/>",
-    "feature": "item no type of product new refurbished product name serial no purchase date orderno2 orderno2 text 4",
+    "feature": "item no type of product new refurbished product name serial no purchase date text orderno2 orderno2 4",
     "id": "632-text-2",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "order.*no",
+    "topic": "serial_number"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-maxlength=\"3\" data-rule-required=\"true\" id=\"orderno3\" maxlength=\"3\" name=\"orderno3\" onkeyup=\"domino_check_order()\" tabindex=\"3000\" type=\"text\" value=\"\"/>",
-    "feature": "item no type of product new refurbished product name serial no purchase date orderno3 orderno3 text 3",
+    "feature": "item no type of product new refurbished product name serial no purchase date text orderno3 orderno3 3",
     "id": "632-text-3",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "order.*no",
+    "topic": "serial_number"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" data-rule-serial=\"true\" id=\"serialno\" maxlength=\"8\" name=\"serialno\" onkeyup=\"domino_serial()\" tabindex=\"5000\" type=\"text\" value=\"\"/>",
-    "feature": "serial no serialno serialno text 8",
+    "feature": "serial no text serialno serialno 8",
     "id": "632-text-4",
-    "pattern": "serial",
+    "pattern": "serial.*no",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"has-infobox forms-datepicker\" data-date-format=\"yy-mm-dd\" data-date-language=\"en\" data-rule-required=\"true\" id=\"purchasedate\" name=\"purchasedate\" tabindex=\"6000\" type=\"text\"/>",
-    "feature": "purchase date purchasedate text purchasedate",
+    "feature": "purchase date text purchasedate purchasedate",
     "id": "632-text-5",
-    "pattern": "date",
+    "pattern": "purchase.*date",
     "topic": "date"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" id=\"dealername\" name=\"dealername\" tabindex=\"7000\" type=\"text\"/>",
-    "feature": "dealer name dealername dealername text",
+    "feature": "dealer name text dealername dealername",
     "id": "632-text-6",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "dealer.*name",
+    "topic": "store_name"
   },
   {
     "dom": "<input class=\"has-infobox\" id=\"dealerpostalcode\" name=\"dealerpostalcode\" tabindex=\"8000\" type=\"text\"/>",
-    "feature": "postal code dealerpostalcode dealerpostalcode text",
+    "feature": "postal code text dealerpostalcode dealerpostalcode",
     "id": "632-text-7",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" id=\"dealercity\" name=\"dealercity\" tabindex=\"9000\" type=\"text\"/>",
-    "feature": "city dealercity dealercity text",
+    "feature": "city text dealercity dealercity",
     "id": "632-text-8",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" id=\"firstname\" name=\"firstname\" tabindex=\"12000\" type=\"text\" value=\"\"/>",
-    "feature": "first name firstname firstname text",
+    "feature": "first name text firstname firstname",
     "id": "632-text-9",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" id=\"lastname\" name=\"lastname\" tabindex=\"13000\" type=\"text\" value=\"\"/>",
-    "feature": "last name lastname lastname text",
+    "feature": "last name text lastname lastname",
     "id": "632-text-10",
     "pattern": "last.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" id=\"street\" name=\"street\" tabindex=\"14000\" type=\"text\"/>",
-    "feature": "street no street street text",
+    "feature": "street no text street street",
     "id": "632-text-11",
-    "pattern": "address.*one",
+    "pattern": "street",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" id=\"postalcode\" name=\"postalcode\" tabindex=\"15000\" type=\"text\"/>",
-    "feature": "postal code postalcode postalcode text",
+    "feature": "postal code text postalcode postalcode",
     "id": "632-text-12",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-required=\"true\" id=\"city\" name=\"city\" tabindex=\"16000\" type=\"text\"/>",
-    "feature": "city city city text",
+    "feature": "city text city city",
     "id": "632-text-13",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-email=\"true\" data-rule-required=\"true\" id=\"email\" name=\"email\" tabindex=\"18000\" type=\"text\"/>",
-    "feature": "email email email text",
+    "feature": "email text email email",
     "id": "632-text-14",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"has-infobox\" data-rule-email=\"true\" data-rule-emailconfirm=\"true\" data-rule-required=\"true\" id=\"emailconfirmation\" name=\"emailconfirmation\" tabindex=\"19000\" type=\"text\"/>",
-    "feature": "please confirm email address emailconfirmation emailconfirmation text",
+    "feature": "please confirm email address text emailconfirmation emailconfirmation",
     "id": "632-text-15",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"title\" name=\"title\" tabindex=\"20000\" type=\"text\"/>",
-    "feature": "title title title text",
+    "feature": "title text title title",
     "id": "632-text-16",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"phone\" name=\"phone\" tabindex=\"20000\" type=\"text\"/>",
-    "feature": "phone phone phone text",
+    "feature": "phone text phone phone",
     "id": "632-text-17",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"has-infobox forms-datepicker\" data-date-format=\"yy-mm-dd\" data-date-language=\"en\" id=\"dayofbirth\" name=\"dayofbirth\" tabindex=\"21000\" type=\"text\"/>",
-    "feature": "birthday dayofbirth text dayofbirth",
+    "feature": "birthday text dayofbirth dayofbirth",
     "id": "632-text-18",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "day.*of.*birth",
+    "topic": "dob"
   }
 ]

@@ -1,77 +1,77 @@
 [
   {
     "dom": "<input id=\"uc-global-search-field\" name=\"q\" type=\"text\"/>",
-    "feature": "search uofc text q uc global search field",
+    "feature": "search uofc text uc global search field q",
     "id": "725-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_username\" name=\"ctl00$contentplaceholder1$username\" style=\"width:175px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 username ctl00 contentplaceholder1 username",
+    "feature": "ctl00 contentplaceholder1 username text ctl00 contentplaceholder1 username",
     "id": "725-text-1",
     "pattern": "username",
     "topic": "username"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_ucid\" name=\"ctl00$contentplaceholder1$ucid\" style=\"width:125px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 ucid ctl00 contentplaceholder1 ucid",
+    "feature": "ctl00 contentplaceholder1 ucid text ctl00 contentplaceholder1 ucid",
     "id": "725-text-2",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_surname\" name=\"ctl00$contentplaceholder1$surname\" style=\"width:175px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 surname ctl00 contentplaceholder1 surname",
+    "feature": "ctl00 contentplaceholder1 surname text ctl00 contentplaceholder1 surname",
     "id": "725-text-3",
-    "pattern": "last.*name",
+    "pattern": "surname",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_birthdate\" name=\"ctl00$contentplaceholder1$birthdate\" style=\"width:175px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 birthdate ctl00 contentplaceholder1 birthdate",
+    "feature": "ctl00 contentplaceholder1 birthdate text ctl00 contentplaceholder1 birthdate",
     "id": "725-text-4",
     "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "topic": "dob"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_email\" name=\"ctl00$contentplaceholder1$email\" style=\"width:175px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 email ctl00 contentplaceholder1 email",
+    "feature": "ctl00 contentplaceholder1 email text ctl00 contentplaceholder1 email",
     "id": "725-text-5",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_display\" name=\"ctl00$contentplaceholder1$display\" style=\"width:175px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 display ctl00 contentplaceholder1 display",
+    "feature": "ctl00 contentplaceholder1 display text ctl00 contentplaceholder1 display",
     "id": "725-text-6",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_answer1\" name=\"ctl00$contentplaceholder1$answer1\" style=\"width:175px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 answer1 ctl00 contentplaceholder1 answer1",
+    "feature": "ctl00 contentplaceholder1 answer1 text ctl00 contentplaceholder1 answer1",
     "id": "725-text-7",
-    "pattern": "password.*hint",
-    "topic": "password_hint"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_answer2\" name=\"ctl00$contentplaceholder1$answer2\" style=\"width:175px;\" type=\"text\"/>",
-    "feature": "text ctl00 contentplaceholder1 answer2 ctl00 contentplaceholder1 answer2",
+    "feature": "ctl00 contentplaceholder1 answer2 text ctl00 contentplaceholder1 answer2",
     "id": "725-text-8",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_password\" name=\"ctl00$contentplaceholder1$password\" style=\"width:175px;\" type=\"password\"/>",
-    "feature": "password ctl00 contentplaceholder1 password ctl00 contentplaceholder1 password",
+    "feature": "ctl00 contentplaceholder1 password password ctl00 contentplaceholder1 password",
     "id": "725-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input id=\"ctl00_contentplaceholder1_passwordconfirm\" name=\"ctl00$contentplaceholder1$passwordconfirm\" style=\"width:175px;\" type=\"password\"/>",
-    "feature": "password ctl00 contentplaceholder1 passwordconfirm ctl00 contentplaceholder1 passwordconfirm",
+    "feature": "ctl00 contentplaceholder1 passwordconfirm password ctl00 contentplaceholder1 passwordconfirm",
     "id": "725-password-1",
     "pattern": "password",
     "topic": "password"

@@ -1,86 +1,86 @@
 [
   {
     "dom": "<input class=\"addrsform_2_firstname\" data-auid=\"shippingaddress_text_firstname-2\" id=\"firstname-2\" maxlength=\"30\" name=\"addrsform[2].firstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name firstname 2 text addrsform 2 firstname 30",
+    "feature": "first name text firstname 2 addrsform 2 firstname 30",
     "id": "589-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"addrsform_2_lastname\" data-auid=\"shippingaddress_text_lastname-2\" id=\"lastname-2\" maxlength=\"30\" name=\"addrsform[2].lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name lastname 2 text addrsform 2 lastname 30",
+    "feature": "last name text lastname 2 addrsform 2 lastname 30",
     "id": "589-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"addrsform_2_shiptoname\" data-auid=\"shippingaddress_text_shiptoname-2\" id=\"shiptoname-2\" maxlength=\"30\" name=\"addrsform[2].shiptoname\" type=\"text\" value=\"\"/>",
-    "feature": "company name shiptoname 2 text addrsform 2 shiptoname 30",
+    "feature": "company name text shiptoname 2 addrsform 2 shiptoname 30",
     "id": "589-text-2",
-    "pattern": "company",
-    "topic": "company_name"
+    "pattern": "shipto.*name",
+    "topic": "full_name"
   },
   {
     "dom": "<input class=\"addrsform_2_address1\" data-auid=\"shippingaddress_text_address1-2\" id=\"address1-2\" maxlength=\"25\" name=\"addrsform[2].address1\" type=\"text\" value=\"\"/>",
-    "feature": "address address1 2 text addrsform 2 address1 25",
+    "feature": "address text address1 2 addrsform 2 address1 25",
     "id": "589-text-3",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"addrsform_2_address2\" data-auid=\"shippingaddress_text_address2-2\" id=\"address2-2\" maxlength=\"25\" name=\"addrsform[2].address2\" type=\"text\" value=\"\"/>",
-    "feature": "optional address line 2 optional address2 2 text addrsform 2 address2 25",
+    "feature": "optional address line 2 optional text address2 2 addrsform 2 address2 25",
     "id": "589-text-4",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"addrsform_2_postalcode1\" data-auid=\"shippingaddress_text_postalcode1-2\" id=\"postalcode1-2\" maxlength=\"10\" name=\"addrsform[2].postalcode1\" type=\"text\" value=\"\"/>",
-    "feature": "postal code postalcode1 2 text addrsform 2 postalcode1 10",
+    "feature": "postal code text postalcode1 2 addrsform 2 postalcode1 10",
     "id": "589-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"addrsform_2_city\" data-auid=\"shippingaddress_text_city-2\" id=\"city-2\" name=\"addrsform[2].city\" type=\"text\" value=\"\"/>",
-    "feature": "city city 2 text addrsform 2 city",
+    "feature": "city text city 2 addrsform 2 city",
     "id": "589-text-6",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"addrsform_2_email\" data-auid=\"shippingaddress_text_email-2\" id=\"email-2\" maxlength=\"40\" name=\"addrsform[2].email\" type=\"email\" value=\"\"/>",
-    "feature": "email address email 2 email addrsform 2 email 40",
+    "feature": "email address email email 2 addrsform 2 email 40",
     "id": "589-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"auto_tab addrsform_2_phonenumber1\" data-auid=\"shippingaddress_text_phonenumber1-2\" data-numeric=\"true\" id=\"phonenumber1-2\" maxlength=\"3\" name=\"addrsform[2].phonenumber1\" title=\"phone number area code\" type=\"tel\" value=\"\"/>",
-    "feature": "phone phonenumber1 2 tel addrsform 2 phonenumber1 3",
+    "feature": "phone tel phonenumber1 2 addrsform 2 phonenumber1 3",
     "id": "589-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*1",
+    "topic": "area_code"
   },
   {
     "dom": "<input class=\"auto_tab addrsform_2_phonenumber2\" data-auid=\"shippingaddress_text_phonenumber2-2\" data-numeric=\"true\" id=\"phonenumber2-2\" maxlength=\"3\" name=\"addrsform[2].phonenumber2\" title=\"phone number prefix\" type=\"tel\" value=\"\"/>",
-    "feature": "phone phonenumber2 2 tel addrsform 2 phonenumber2 3",
+    "feature": "phone tel phonenumber2 2 addrsform 2 phonenumber2 3",
     "id": "589-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*2",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input class=\"auto_tab addrsform_2_phonenumber3\" data-auid=\"shippingaddress_text_phonenumber3-2\" data-numeric=\"true\" id=\"phonenumber3-2\" maxlength=\"4\" name=\"addrsform[2].phonenumber3\" title=\"phone number suffix\" type=\"tel\" value=\"\"/>",
-    "feature": "phone phonenumber3 2 tel addrsform 2 phonenumber3 4",
+    "feature": "phone tel phonenumber3 2 addrsform 2 phonenumber3 4",
     "id": "589-tel-2",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*3",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input class=\"addrsform_2_phonenumber4\" data-auid=\"shippingaddress_text_phonenumber4-2\" data-numeric=\"true\" id=\"phonenumber4-2\" maxlength=\"4\" name=\"addrsform[2].phonenumber4\" type=\"tel\" value=\"\"/>",
-    "feature": "ext phonenumber4 2 tel addrsform 2 phonenumber4 4",
+    "feature": "ext tel phonenumber4 2 addrsform 2 phonenumber4 4",
     "id": "589-tel-3",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*4",
+    "topic": "phone_ext"
   }
 ]

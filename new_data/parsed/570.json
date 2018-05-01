@@ -1,170 +1,170 @@
 [
   {
     "dom": "<input class=\"input-text required-entry\" id=\"billing:firstname\" maxlength=\"32\" name=\"billing[firstname]\" title=\"first name\" type=\"text\" value=\"\"/>",
-    "feature": "first name billing firstname billing firstname text 32",
+    "feature": "first name text billing firstname billing firstname 32",
     "id": "570-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"billing:lastname\" maxlength=\"32\" name=\"billing[lastname]\" title=\"last name\" type=\"text\" value=\"\"/>",
-    "feature": "last name billing lastname billing lastname text 32",
+    "feature": "last name text billing lastname billing lastname 32",
     "id": "570-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"input-text \" id=\"billing:company\" maxlength=\"83\" name=\"billing[company]\" title=\"company\" type=\"text\" value=\"\"/>",
-    "feature": "company billing company billing company text 83",
+    "feature": "company text billing company billing company 83",
     "id": "570-text-2",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"billing:street1\" maxlength=\"150\" name=\"billing[street][]\" title=\"address\" type=\"text\" value=\"\"/>",
-    "feature": "address billing street billing street1 text 150",
+    "feature": "address text billing street billing street1 150",
     "id": "570-text-3",
-    "pattern": "address.*one",
+    "pattern": "street",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"input-text \" id=\"billing:street2\" maxlength=\"150\" name=\"billing[street][]\" title=\"apt, suite, etc\" type=\"text\" value=\"\"/>",
-    "feature": "apt suite etc billing street billing street2 text 150",
+    "feature": "apt suite etc text billing street billing street2 150",
     "id": "570-text-4",
-    "pattern": "address.*two",
+    "pattern": "street2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"input-text validate-zip-international required-entry\" id=\"billing:postcode\" maxlength=\"36\" name=\"billing[postcode]\" title=\"zip/postal code\" type=\"text\" value=\"\"/>",
-    "feature": "zip postal code billing postcode billing postcode text 36",
+    "feature": "zip postal code text billing postcode billing postcode 36",
     "id": "570-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"billing:city\" maxlength=\"50\" name=\"billing[city]\" title=\"city\" type=\"text\" value=\"\"/>",
-    "feature": "city billing city billing city text 50",
+    "feature": "city text billing city billing city 50",
     "id": "570-text-6",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"input-text \" id=\"billing:region\" name=\"billing[region]\" style=\"display:none;\" title=\"state/province\" type=\"text\" value=\"\"/>",
-    "feature": "state province billing region billing region text",
+    "feature": "state province text billing region billing region",
     "id": "570-text-7",
     "pattern": "region",
     "topic": "region"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"shipping:firstname\" maxlength=\"32\" name=\"shipping[firstname]\" onchange=\"shipping.setsameasbilling(false)\" title=\"first name\" type=\"text\" value=\"\"/>",
-    "feature": "first name shipping firstname shipping firstname text 32",
+    "feature": "first name text shipping firstname shipping firstname 32",
     "id": "570-text-8",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"shipping:lastname\" maxlength=\"32\" name=\"shipping[lastname]\" onchange=\"shipping.setsameasbilling(false)\" title=\"last name\" type=\"text\" value=\"\"/>",
-    "feature": "last name shipping lastname shipping lastname text 32",
+    "feature": "last name text shipping lastname shipping lastname 32",
     "id": "570-text-9",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"input-text \" id=\"shipping:company\" maxlength=\"83\" name=\"shipping[company]\" onchange=\"shipping.setsameasbilling(false);\" title=\"company\" type=\"text\" value=\"\"/>",
-    "feature": "company shipping company shipping company text 83",
+    "feature": "company text shipping company shipping company 83",
     "id": "570-text-10",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"shipping:street1\" maxlength=\"150\" name=\"shipping[street][]\" onchange=\"shipping.setsameasbilling(false);\" title=\"address\" type=\"text\" value=\"\"/>",
-    "feature": "address shipping street shipping street1 text 150",
+    "feature": "address text shipping street shipping street1 150",
     "id": "570-text-11",
-    "pattern": "address.*one",
+    "pattern": "street",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"input-text \" id=\"shipping:street2\" maxlength=\"150\" name=\"shipping[street][]\" onchange=\"shipping.setsameasbilling(false);\" title=\"apt, suite, etc\" type=\"text\" value=\"\"/>",
-    "feature": "apt suite etc shipping street shipping street2 text 150",
+    "feature": "apt suite etc text shipping street shipping street2 150",
     "id": "570-text-12",
-    "pattern": "address.*two",
+    "pattern": "street2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"input-text validate-zip-international required-entry\" id=\"shipping:postcode\" maxlength=\"36\" name=\"shipping[postcode]\" onchange=\"shipping.setsameasbilling(false);\" title=\"zip/postal code\" type=\"text\" value=\"\"/>",
-    "feature": "zip postal code shipping postcode shipping postcode text 36",
+    "feature": "zip postal code text shipping postcode shipping postcode 36",
     "id": "570-text-13",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"shipping:city\" maxlength=\"50\" name=\"shipping[city]\" onchange=\"shipping.setsameasbilling(false);\" title=\"city\" type=\"text\" value=\"\"/>",
-    "feature": "city shipping city shipping city text 50",
+    "feature": "city text shipping city shipping city 50",
     "id": "570-text-14",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"input-text \" id=\"shipping:region\" name=\"shipping[region]\" style=\"display:none;\" title=\"state/province\" type=\"text\" value=\"\"/>",
-    "feature": "state province shipping region shipping region text",
+    "feature": "state province text shipping region shipping region",
     "id": "570-text-15",
     "pattern": "region",
     "topic": "region"
   },
   {
     "dom": "<input autocapitalize=\"off\" autocorrect=\"off\" class=\"input-text required-entry validate-email\" id=\"login-email\" name=\"login[username]\" spellcheck=\"false\" type=\"email\" value=\"\"/>",
-    "feature": "email address login username email login email",
+    "feature": "email address email login email login username",
     "id": "570-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocapitalize=\"off\" autocorrect=\"off\" class=\"input-text validate-email required-entry\" id=\"billing:email\" maxlength=\"254\" name=\"billing[email]\" spellcheck=\"false\" title=\"email address\" type=\"email\" value=\"\"/>",
-    "feature": "email address billing email email billing email 254",
+    "feature": "email address email billing email billing email 254",
     "id": "570-email-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"input-text validate-password required-entry\" id=\"login-password\" name=\"login[password]\" type=\"password\"/>",
-    "feature": "password login password login password password",
+    "feature": "password password login password login password",
     "id": "570-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-password\" id=\"billing:customer_password\" name=\"billing[customer_password]\" title=\"password\" type=\"password\"/>",
-    "feature": "password billing customer password billing customer password password",
+    "feature": "password password billing customer password billing customer password",
     "id": "570-password-1",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-cpassword\" id=\"billing:confirm_password\" name=\"billing[confirm_password]\" title=\"confirm password\" type=\"password\"/>",
-    "feature": "confirm password billing confirm password billing confirm password password",
+    "feature": "confirm password password billing confirm password billing confirm password",
     "id": "570-password-2",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input class=\"input-text required-entry\" id=\"search\" maxlength=\"128\" name=\"q\" placeholder=\"search entire store here...\" type=\"search\" value=\"\"/>",
-    "feature": "search search search q search entire store here search search 128",
+    "feature": "search search search search search q search entire store here 128",
     "id": "570-search-0",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-modrfc3966\" id=\"billing:telephone\" maxlength=\"255\" name=\"billing[telephone]\" title=\"telephone\" type=\"tel\" value=\"\"/>",
-    "feature": "telephone billing telephone billing telephone tel 255",
+    "feature": "telephone tel billing telephone billing telephone 255",
     "id": "570-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-modrfc3966\" id=\"shipping:telephone\" maxlength=\"255\" name=\"shipping[telephone]\" onchange=\"shipping.setsameasbilling(false);\" title=\"telephone\" type=\"tel\" value=\"\"/>",
-    "feature": "telephone shipping telephone shipping telephone tel 255",
+    "feature": "telephone tel shipping telephone shipping telephone 255",
     "id": "570-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

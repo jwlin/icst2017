@@ -3,28 +3,28 @@
     "dom": "<input class=\"normal-input\" data-error=\"fname-error\" for=\"fname\" id=\"firstname\" maxlength=\"25\" name=\"firstname\" required=\"\" type=\"text\"/>",
     "feature": "required lorem ipsum dolor sit amet first name text firstname firstname 25",
     "id": "583-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"normal-input\" data-error=\"lname-error\" for=\"lname\" id=\"lastname\" maxlength=\"25\" name=\"lastname\" required=\"\" type=\"text\"/>",
     "feature": "required lorem ipsum dolor sit amet last name text lastname lastname 25",
     "id": "583-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"normal-input saddr\" data-error=\"address1\" for=\"saddr\" id=\"wc__addressentryform_forminput_address1_1\" maxlength=\"35\" name=\"address1\" required=\"\" type=\"text\"/>",
     "feature": "apo fpo apo fpo info icon apo fpo info icon required lorem ipsum dolor sit amet street address text wc addressentryform forminput address1 1 address1 35",
     "id": "583-text-2",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"normal-input aptaddr\" for=\"apt\" id=\"wc__addressentryform_forminput_address2_1\" maxlength=\"35\" name=\"address2\" type=\"text\"/>",
     "feature": "optional apartment suite building text wc addressentryform forminput address2 1 address2 35",
     "id": "583-text-3",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
@@ -38,8 +38,8 @@
     "dom": "<input class=\"normal-input ca-zip num-input\" data-error=\"cazip-error\" id=\"wc__addressentryform_forminput_zipcode_1\" maxlenght=\"5\" name=\"zipcode\" required=\"\" type=\"text\"/>",
     "feature": "zip code text wc addressentryform forminput zipcode 1 zipcode",
     "id": "583-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"normal-input num-char-input coupon-input score-card-input\" id=\"scorecard-reward1\" maxlength=\"12\" name=\"scorecard-reward1\" type=\"text\" value=\"\"/>",

@@ -1,79 +1,79 @@
 [
   {
     "dom": "<input class=\"form-control\" name=\"purchasedate\" placeholder=\"mm/dd/yyyy\" type=\"text\"/>",
-    "feature": "purchase date purchasedate mm dd yyyy text",
+    "feature": "purchase date text mm dd yyyy purchasedate",
     "id": "631-text-0",
-    "pattern": "date",
+    "pattern": "purchase.*date",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-control\" name=\"firstname\" type=\"text\"/>",
-    "feature": "first name firstname text",
+    "feature": "first name text firstname",
     "id": "631-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" name=\"lastname\" type=\"text\"/>",
-    "feature": "last name lastname text",
+    "feature": "last name text lastname",
     "id": "631-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" name=\"address1\" type=\"text\"/>",
-    "feature": "address 1 address1 text",
+    "feature": "address 1 text address1",
     "id": "631-text-3",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" name=\"address2\" type=\"text\"/>",
-    "feature": "address 2 address2 text",
+    "feature": "address 2 text address2",
     "id": "631-text-4",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"form-control\" name=\"city\" type=\"text\"/>",
-    "feature": "city city text",
+    "feature": "city text city",
     "id": "631-text-5",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form-control\" name=\"state\" type=\"text\"/>",
-    "feature": "state province state text",
+    "feature": "state province text state",
     "id": "631-text-6",
     "pattern": "state",
     "topic": "state"
   },
   {
     "dom": "<input class=\"form-control\" name=\"postalcode\" type=\"text\"/>",
-    "feature": "zip postal code postalcode text",
+    "feature": "zip postal code text postalcode",
     "id": "631-text-7",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-control\" name=\"email\" type=\"text\"/>",
-    "feature": "email address email text",
+    "feature": "email address text email",
     "id": "631-text-8",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" name=\"confirmemail\" type=\"text\"/>",
-    "feature": "confirm email address confirmemail text",
+    "feature": "confirm email address text confirmemail",
     "id": "631-text-9",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" name=\"phonenumber\" type=\"text\"/>",
-    "feature": "phone number phonenumber text",
+    "feature": "phone number text phonenumber",
     "id": "631-text-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phonenumber",
+    "topic": "phone"
   }
 ]

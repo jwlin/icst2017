@@ -1,42 +1,42 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"search-input\" id=\"txtkeywords\" name=\"parameters\" placeholder=\"search model or keyword\" type=\"text\" value=\"\"/>",
-    "feature": "txtkeywords parameters search model or keyword text",
+    "feature": "text search model or keyword txtkeywords parameters",
     "id": "634-text-0",
-    "pattern": "search",
+    "pattern": "keywords",
     "topic": "search"
   },
   {
     "dom": "<input class=\"form-control\" id=\"productregistration_firstname\" name=\"productregistration_firstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name productregistration firstname productregistration firstname text",
+    "feature": "first name text productregistration firstname productregistration firstname",
     "id": "634-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"productregistration_lastname\" name=\"productregistration_lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name productregistration lastname productregistration lastname text",
+    "feature": "last name text productregistration lastname productregistration lastname",
     "id": "634-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control phones\" id=\"productregistration_contactnumber\" name=\"productregistration_contactnumber\" type=\"text\" value=\"\"/>",
-    "feature": "contact phone example 555 555 5555 productregistration contactnumber productregistration contactnumber text",
+    "feature": "contact phone example 555 555 5555 text productregistration contactnumber productregistration contactnumber",
     "id": "634-text-3",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "contact.*number",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control\" id=\"productregistration_email\" name=\"productregistration_email\" type=\"text\" value=\"\"/>",
-    "feature": "email productregistration email productregistration email text",
+    "feature": "email text productregistration email productregistration email",
     "id": "634-text-4",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" maxlength=\"127\" name=\"email\" placeholder=\"your email address\" size=\"40\" type=\"email\"/>",
-    "feature": "subscribe subscribe your email address email email 127",
+    "feature": "subscribe subscribe email email your email address 127",
     "id": "634-email-0",
     "pattern": "email",
     "topic": "email"

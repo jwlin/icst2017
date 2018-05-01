@@ -1,241 +1,241 @@
 [
   {
     "dom": "<input class=\"money\" id=\"txtrequestcreditlimit\" maxlength=\"12\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "request credit limit txtrequestcreditlimit text 12",
+    "feature": "request credit limit text txtrequestcreditlimit 12",
     "id": "537-text-0",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "creditlimit",
+    "topic": "credit_limit"
   },
   {
     "dom": "<input class=\"required inccardnumber\" id=\"ecreditcardnumber\" maxlength=\"19\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "existing credit card number ecreditcardnumber text 19",
+    "feature": "existing credit card number text ecreditcardnumber 19",
     "id": "537-text-1",
-    "pattern": "creditcard.*id",
-    "topic": "credit_card_id"
+    "pattern": "credit.*card.*number",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input autocomplete=\"given-name\" class=\"firstname\" id=\"txtfname\" maxlength=\"50\" name=\"fname\" type=\"text\" value=\"\"/>",
-    "feature": "first name fname txtfname text 50",
+    "feature": "first name text txtfname fname 50",
     "id": "537-text-2",
-    "pattern": "first.*name",
+    "pattern": "fname",
     "topic": "first_name"
   },
   {
     "dom": "<input autocomplete=\"additional-name\" id=\"txtmname\" maxlength=\"50\" name=\"mname\" type=\"text\" value=\"\"/>",
-    "feature": "middle name mname txtmname text 50",
+    "feature": "middle name text txtmname mname 50",
     "id": "537-text-3",
-    "pattern": "middle.*name",
+    "pattern": "mname",
     "topic": "middle_name"
   },
   {
     "dom": "<input autocomplete=\"family-name\" id=\"txtlname\" maxlength=\"50\" name=\"lname\" type=\"text\" value=\"\"/>",
-    "feature": "last name lname txtlname text 50",
+    "feature": "last name text txtlname lname 50",
     "id": "537-text-4",
-    "pattern": "last.*name",
+    "pattern": "lname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-labelledby=\"lblssn\" id=\"txtssn3\" maxlength=\"4\" onkeydown=\"limittonumeric(event);\" pattern=\"[0-9]*\" placeholder=\"----\" type=\"text\" value=\"\"/>",
     "feature": "show ssn ssn show ssn text txtssn3 4",
     "id": "537-text-5",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn3",
+    "topic": "ssn_3"
   },
   {
     "dom": "<input aria-labelledby=\"lbldob\" id=\"txtdob1\" maxlength=\"2\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#txtdob1','#txtdob2', '2');\" pattern=\"[0-9]*\" placeholder=\"mm\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth text txtdob1 mm 2",
+    "feature": "date of birth text mm txtdob1 2",
     "id": "537-text-6",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob1",
+    "topic": "dob_month"
   },
   {
     "dom": "<input aria-labelledby=\"lbldob\" id=\"txtdob2\" maxlength=\"2\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#txtdob2','#txtdob3', '2');\" pattern=\"[0-9]*\" placeholder=\"dd\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth text txtdob2 dd 2",
+    "feature": "date of birth text dd txtdob2 2",
     "id": "537-text-7",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob2",
+    "topic": "dob_day"
   },
   {
     "dom": "<input aria-labelledby=\"lbldob\" id=\"txtdob3\" maxlength=\"4\" onkeydown=\"limittonumeric(event);\" pattern=\"[0-9]*\" placeholder=\"yyyy\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth text txtdob3 yyyy 4",
+    "feature": "date of birth text yyyy txtdob3 4",
     "id": "537-text-8",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob3",
+    "topic": "dob_year"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"txtmembernumber\" maxlength=\"50\" name=\"membernumber\" type=\"text\" value=\"\"/>",
-    "feature": "member number membernumber txtmembernumber text 50",
+    "feature": "member number text txtmembernumber membernumber 50",
     "id": "537-text-9",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"reffirstname\" type=\"text\"/>",
-    "feature": "first name reffirstname text",
+    "feature": "first name text reffirstname",
     "id": "537-text-10",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"reflastname\" type=\"text\"/>",
-    "feature": "last name reflastname text",
+    "feature": "last name text reflastname",
     "id": "537-text-11",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"refemail\" maxlength=\"50\" type=\"text\"/>",
-    "feature": "email refemail text 50",
+    "feature": "email text refemail 50",
     "id": "537-text-12",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"inphone\" id=\"refphone\" maxlength=\"14\" name=\"phone\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "phone xxx xxx xxxx phone refphone text 14",
+    "feature": "phone xxx xxx xxxx text phone refphone 14",
     "id": "537-text-13",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input id=\"refrelationship\" type=\"text\"/>",
-    "feature": "relationship refrelationship text",
+    "feature": "relationship text refrelationship",
     "id": "537-text-14",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "relationship",
+    "topic": "relationship"
   },
   {
     "dom": "<input autocomplete=\"email\" id=\"txtemail\" maxlength=\"50\" name=\"email\" type=\"text\" value=\"\"/>",
-    "feature": "email email txtemail text 50",
+    "feature": "email text email txtemail 50",
     "id": "537-text-15",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"inphone\" id=\"txthomephone\" maxlength=\"14\" name=\"phone\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
-    "feature": "home phone xxx xxx xxxx phone txthomephone text 14",
+    "feature": "home phone xxx xxx xxxx text phone txthomephone 14",
     "id": "537-text-16",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"inphone\" id=\"txtmobilephone\" maxlength=\"14\" name=\"mobile\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "cell phone xxx xxx xxxx mobile txtmobilephone text 14",
+    "feature": "cell phone xxx xxx xxxx text mobile txtmobilephone 14",
     "id": "537-text-17",
-    "pattern": "cell.*phone",
-    "topic": "cell_phone_number"
+    "pattern": "mobile.*phone",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input autocomplete=\"on\" class=\"inphone\" id=\"txtworkphone\" maxlength=\"14\" name=\"workphone\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
-    "feature": "work phone xxx xxx xxxx workphone txtworkphone text 14",
+    "feature": "work phone xxx xxx xxxx text workphone txtworkphone 14",
     "id": "537-text-18",
-    "pattern": "work.*phone",
-    "topic": "work_phone_number"
+    "pattern": "workphone",
+    "topic": "phone_work"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"numeric\" id=\"txtworkphoneext\" maxlength=\"5\" name=\"ext\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "work phone extension ext txtworkphoneext text 5",
+    "feature": "work phone extension text txtworkphoneext ext 5",
     "id": "537-text-19",
-    "pattern": "phone.*ext",
+    "pattern": "phoneext",
     "topic": "phone_ext"
   },
   {
     "dom": "<input autocomplete=\"street-address\" id=\"txtaddress\" maxlength=\"100\" name=\"address1\" onchange=\"\" type=\"text\" value=\"\"/>",
-    "feature": "address address1 txtaddress text 100",
+    "feature": "address text txtaddress address1 100",
     "id": "537-text-20",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"address-line2\" id=\"txtaddress2\" maxlength=\"100\" name=\"address2\" onchange=\"\" type=\"text\" value=\"\"/>",
-    "feature": "address line 2 address2 txtaddress2 text 100",
+    "feature": "address line 2 text txtaddress2 address2 100",
     "id": "537-text-21",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input autocomplete=\"address-level2\" id=\"txtcity\" maxlength=\"50\" name=\"city\" onchange=\"\" type=\"text\" value=\"\"/>",
-    "feature": "city city txtcity text 50",
+    "feature": "city text txtcity city 50",
     "id": "537-text-22",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input autocomplete=\"street-address\" id=\"txtpreviousaddress\" maxlength=\"100\" name=\"address1\" onchange=\"\" type=\"text\"/>",
-    "feature": "address address1 txtpreviousaddress text 100",
+    "feature": "address text txtpreviousaddress address1 100",
     "id": "537-text-23",
-    "pattern": "address.*one",
+    "pattern": "previousaddress",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"address-line2\" id=\"txtpreviousaddress2\" maxlength=\"100\" name=\"address2\" onchange=\"\" type=\"text\"/>",
-    "feature": "address line 2 address2 txtpreviousaddress2 text 100",
+    "feature": "address line 2 text txtpreviousaddress2 address2 100",
     "id": "537-text-24",
-    "pattern": "address.*two",
+    "pattern": "previousaddress2",
     "topic": "address_2"
   },
   {
     "dom": "<input autocomplete=\"address-level2\" id=\"txtpreviouscity\" maxlength=\"50\" name=\"city\" onchange=\"\" type=\"text\"/>",
-    "feature": "city city txtpreviouscity text 50",
+    "feature": "city text txtpreviouscity city 50",
     "id": "537-text-25",
-    "pattern": "city",
+    "pattern": "previouscity",
     "topic": "city"
   },
   {
     "dom": "<input autocomplete=\"street-address\" id=\"txtmailingaddress\" maxlength=\"100\" name=\"address\" onchange=\"\" type=\"text\"/>",
-    "feature": "address address txtmailingaddress text 100",
+    "feature": "address text txtmailingaddress address 100",
     "id": "537-text-26",
-    "pattern": "address.*one",
+    "pattern": "mailingaddress",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"address-line2\" id=\"txtmailingaddress2\" maxlength=\"100\" name=\"address2\" onchange=\"\" type=\"text\"/>",
-    "feature": "address line 2 address2 txtmailingaddress2 text 100",
+    "feature": "address line 2 text txtmailingaddress2 address2 100",
     "id": "537-text-27",
-    "pattern": "address.*two",
+    "pattern": "mailingaddress2",
     "topic": "address_2"
   },
   {
     "dom": "<input autocomplete=\"address-level2\" id=\"txtmailingcity\" maxlength=\"50\" name=\"city\" onchange=\"\" type=\"text\"/>",
-    "feature": "city city txtmailingcity text 50",
+    "feature": "city text txtmailingcity city 50",
     "id": "537-text-28",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"money\" id=\"txtgrossmonthlyincome\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "gross monthly income before taxes txtgrossmonthlyincome text 10",
+    "feature": "gross monthly income before taxes text txtgrossmonthlyincome 10",
     "id": "537-text-29",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "monthlyincome",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input class=\"money\" id=\"txtothermonthlyincome\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "other monthly income txtothermonthlyincome text 10",
+    "feature": "other monthly income text txtothermonthlyincome 10",
     "id": "537-text-30",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "monthlyincome",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input id=\"txtothermonthlyincomedesc\" maxlength=\"150\" type=\"text\"/>",
-    "feature": "other monthly income description txtothermonthlyincomedesc text 150",
+    "feature": "other monthly income description text txtothermonthlyincomedesc 150",
     "id": "537-text-31",
-    "pattern": "rent",
-    "topic": "rent"
+    "pattern": "incomedesc",
+    "topic": "job"
   },
   {
     "dom": "<input class=\"money\" id=\"txttotalmonthlyhousingexpense\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "monthly mortgage rent payment txttotalmonthlyhousingexpense text 10",
+    "feature": "monthly mortgage rent payment text txttotalmonthlyhousingexpense 10",
     "id": "537-text-32",
-    "pattern": "rent",
+    "pattern": "monthly.*expense",
     "topic": "rent"
   },
   {
     "dom": "<input class=\"money\" id=\"prev_txtgrossmonthlyincome\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "gross monthly income before taxes prev txtgrossmonthlyincome text 10",
+    "feature": "gross monthly income before taxes text prev txtgrossmonthlyincome 10",
     "id": "537-text-33",
-    "pattern": "rent",
-    "topic": "rent"
+    "pattern": "monthlyincome",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input id=\"txtemailmedisclosures\" type=\"text\"/>",
@@ -246,296 +246,296 @@
   },
   {
     "dom": "<input autocomplete=\"given-name\" class=\"firstname\" id=\"co_txtfname\" maxlength=\"50\" name=\"fname\" type=\"text\" value=\"\"/>",
-    "feature": "first name fname co txtfname text 50",
+    "feature": "first name text co txtfname fname 50",
     "id": "537-text-35",
-    "pattern": "first.*name",
+    "pattern": "fname",
     "topic": "first_name"
   },
   {
     "dom": "<input autocomplete=\"additional-name\" id=\"co_txtmname\" maxlength=\"50\" name=\"mname\" type=\"text\" value=\"\"/>",
-    "feature": "middle name mname co txtmname text 50",
+    "feature": "middle name text co txtmname mname 50",
     "id": "537-text-36",
-    "pattern": "middle.*name",
+    "pattern": "mname",
     "topic": "middle_name"
   },
   {
     "dom": "<input autocomplete=\"family-name\" id=\"co_txtlname\" maxlength=\"50\" name=\"lname\" type=\"text\" value=\"\"/>",
-    "feature": "last name lname co txtlname text 50",
+    "feature": "last name text co txtlname lname 50",
     "id": "537-text-37",
-    "pattern": "last.*name",
+    "pattern": "lname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-labelledby=\"co_lblssn\" id=\"co_txtssn3\" maxlength=\"4\" onkeydown=\"limittonumeric(event);\" pattern=\"[0-9]*\" placeholder=\"----\" type=\"text\" value=\"\"/>",
     "feature": "show ssn ssn show ssn text co txtssn3 4",
     "id": "537-text-38",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn3",
+    "topic": "ssn_3"
   },
   {
     "dom": "<input aria-labelledby=\"co_lbldob\" id=\"co_txtdob1\" maxlength=\"2\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#co_txtdob1','#co_txtdob2', '2');\" pattern=\"[0-9]*\" placeholder=\"mm\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth text co txtdob1 mm 2",
+    "feature": "date of birth text mm co txtdob1 2",
     "id": "537-text-39",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob1",
+    "topic": "dob_month"
   },
   {
     "dom": "<input aria-labelledby=\"co_lbldob\" id=\"co_txtdob2\" maxlength=\"2\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#co_txtdob2','#co_txtdob3', '2');\" pattern=\"[0-9]*\" placeholder=\"dd\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth text co txtdob2 dd 2",
+    "feature": "date of birth text dd co txtdob2 2",
     "id": "537-text-40",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob2",
+    "topic": "dob_day"
   },
   {
     "dom": "<input aria-labelledby=\"co_lbldob\" id=\"co_txtdob3\" maxlength=\"4\" onkeydown=\"limittonumeric(event);\" pattern=\"[0-9]*\" placeholder=\"yyyy\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth text co txtdob3 yyyy 4",
+    "feature": "date of birth text yyyy co txtdob3 4",
     "id": "537-text-41",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob3",
+    "topic": "dob_year"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"co_txtmembernumber\" maxlength=\"50\" name=\"membernumber\" type=\"text\" value=\"\"/>",
-    "feature": "member number membernumber co txtmembernumber text 50",
+    "feature": "member number text co txtmembernumber membernumber 50",
     "id": "537-text-42",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"co_reffirstname\" type=\"text\"/>",
-    "feature": "first name co reffirstname text",
+    "feature": "first name text co reffirstname",
     "id": "537-text-43",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"co_reflastname\" type=\"text\"/>",
-    "feature": "last name co reflastname text",
+    "feature": "last name text co reflastname",
     "id": "537-text-44",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"co_refemail\" maxlength=\"50\" type=\"text\"/>",
-    "feature": "email co refemail text 50",
+    "feature": "email text co refemail 50",
     "id": "537-text-45",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"inphone\" id=\"co_refphone\" maxlength=\"14\" name=\"phone\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "phone xxx xxx xxxx phone co refphone text 14",
+    "feature": "phone xxx xxx xxxx text phone co refphone 14",
     "id": "537-text-46",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input id=\"co_refrelationship\" type=\"text\"/>",
-    "feature": "relationship co refrelationship text",
+    "feature": "relationship text co refrelationship",
     "id": "537-text-47",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "relationship",
+    "topic": "relationship"
   },
   {
     "dom": "<input autocomplete=\"email\" id=\"co_txtemail\" maxlength=\"50\" name=\"email\" type=\"text\" value=\"\"/>",
-    "feature": "email email co txtemail text 50",
+    "feature": "email text email co txtemail 50",
     "id": "537-text-48",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"inphone\" id=\"co_txthomephone\" maxlength=\"14\" name=\"phone\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
-    "feature": "home phone xxx xxx xxxx phone co txthomephone text 14",
+    "feature": "home phone xxx xxx xxxx text phone co txthomephone 14",
     "id": "537-text-49",
-    "pattern": "home.*phone",
-    "topic": "home_phone_number"
+    "pattern": "homephone",
+    "topic": "phone_home"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"inphone\" id=\"co_txtmobilephone\" maxlength=\"14\" name=\"mobile\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "cell phone xxx xxx xxxx mobile co txtmobilephone text 14",
+    "feature": "cell phone xxx xxx xxxx text mobile co txtmobilephone 14",
     "id": "537-text-50",
-    "pattern": "cell.*phone",
-    "topic": "cell_phone_number"
+    "pattern": "mobilephone",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input autocomplete=\"on\" class=\"inphone\" id=\"co_txtworkphone\" maxlength=\"14\" name=\"workphone\" pattern=\"[0-9]*\" type=\"text\" value=\"\"/>",
-    "feature": "work phone xxx xxx xxxx workphone co txtworkphone text 14",
+    "feature": "work phone xxx xxx xxxx text workphone co txtworkphone 14",
     "id": "537-text-51",
-    "pattern": "work.*phone",
-    "topic": "work_phone_number"
+    "pattern": "workphone",
+    "topic": "phone_work"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"numeric\" id=\"co_txtworkphoneext\" maxlength=\"5\" name=\"ext\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "work phone extension ext co txtworkphoneext text 5",
+    "feature": "work phone extension text co txtworkphoneext ext 5",
     "id": "537-text-52",
-    "pattern": "work.*phone",
-    "topic": "work_phone_number"
+    "pattern": "phoneext",
+    "topic": "phone_ext"
   },
   {
     "dom": "<input autocomplete=\"street-address\" id=\"co_txtaddress\" maxlength=\"100\" name=\"address1\" onchange=\"\" type=\"text\" value=\"\"/>",
-    "feature": "address address1 co txtaddress text 100",
+    "feature": "address text co txtaddress address1 100",
     "id": "537-text-53",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"address-line2\" id=\"co_txtaddress2\" maxlength=\"100\" name=\"address2\" onchange=\"\" type=\"text\" value=\"\"/>",
-    "feature": "address line 2 address2 co txtaddress2 text 100",
+    "feature": "address line 2 text co txtaddress2 address2 100",
     "id": "537-text-54",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input autocomplete=\"address-level2\" id=\"co_txtcity\" maxlength=\"50\" name=\"city\" onchange=\"\" type=\"text\" value=\"\"/>",
-    "feature": "city city co txtcity text 50",
+    "feature": "city text co txtcity city 50",
     "id": "537-text-55",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input autocomplete=\"street-address\" id=\"co_txtpreviousaddress\" maxlength=\"100\" name=\"address1\" onchange=\"\" type=\"text\"/>",
-    "feature": "address address1 co txtpreviousaddress text 100",
+    "feature": "address text co txtpreviousaddress address1 100",
     "id": "537-text-56",
-    "pattern": "address.*one",
+    "pattern": "previousaddress",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"address-line2\" id=\"co_txtpreviousaddress2\" maxlength=\"100\" name=\"address2\" onchange=\"\" type=\"text\"/>",
-    "feature": "address line 2 address2 co txtpreviousaddress2 text 100",
+    "feature": "address line 2 text co txtpreviousaddress2 address2 100",
     "id": "537-text-57",
-    "pattern": "address.*two",
+    "pattern": "previousaddress2",
     "topic": "address_2"
   },
   {
     "dom": "<input autocomplete=\"address-level2\" id=\"co_txtpreviouscity\" maxlength=\"50\" name=\"city\" onchange=\"\" type=\"text\"/>",
-    "feature": "city city co txtpreviouscity text 50",
+    "feature": "city text co txtpreviouscity city 50",
     "id": "537-text-58",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input autocomplete=\"street-address\" id=\"co_txtmailingaddress\" maxlength=\"100\" name=\"address\" onchange=\"\" type=\"text\"/>",
-    "feature": "address address co txtmailingaddress text 100",
+    "feature": "address text co txtmailingaddress address 100",
     "id": "537-text-59",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"address-line2\" id=\"co_txtmailingaddress2\" maxlength=\"100\" name=\"address2\" onchange=\"\" type=\"text\"/>",
-    "feature": "address line 2 address2 co txtmailingaddress2 text 100",
+    "feature": "address line 2 text co txtmailingaddress2 address2 100",
     "id": "537-text-60",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input autocomplete=\"address-level2\" id=\"co_txtmailingcity\" maxlength=\"50\" name=\"city\" onchange=\"\" type=\"text\"/>",
-    "feature": "city city co txtmailingcity text 50",
+    "feature": "city text co txtmailingcity city 50",
     "id": "537-text-61",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"money\" id=\"co_txtgrossmonthlyincome\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "gross monthly income before taxes co txtgrossmonthlyincome text 10",
+    "feature": "gross monthly income before taxes text co txtgrossmonthlyincome 10",
     "id": "537-text-62",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "monthlyincome",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input class=\"money\" id=\"co_txtothermonthlyincome\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "other monthly income co txtothermonthlyincome text 10",
+    "feature": "other monthly income text co txtothermonthlyincome 10",
     "id": "537-text-63",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "monthlyincome",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input id=\"co_txtothermonthlyincomedesc\" maxlength=\"150\" type=\"text\"/>",
-    "feature": "other monthly income description co txtothermonthlyincomedesc text 150",
+    "feature": "other monthly income description text co txtothermonthlyincomedesc 150",
     "id": "537-text-64",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "incomedesc",
+    "topic": "job"
   },
   {
     "dom": "<input class=\"money\" id=\"co_txttotalmonthlyhousingexpense\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "monthly mortgage rent payment co txttotalmonthlyhousingexpense text 10",
+    "feature": "monthly mortgage rent payment text co txttotalmonthlyhousingexpense 10",
     "id": "537-text-65",
-    "pattern": "rent",
+    "pattern": "monthly.*expense",
     "topic": "rent"
   },
   {
     "dom": "<input class=\"money\" id=\"co_prev_txtgrossmonthlyincome\" maxlength=\"10\" pattern=\"[0-9]*\" type=\"text\"/>",
-    "feature": "gross monthly income before taxes co prev txtgrossmonthlyincome text 10",
+    "feature": "gross monthly income before taxes text co prev txtgrossmonthlyincome 10",
     "id": "537-text-66",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "monthlyincome",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input aria-labelledby=\"lblssn\" id=\"txtssn1\" maxlength=\"3\" next-input=\"#txtssn2\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#txtssn1','#txtssn2', '3');\" pattern=\"[0-9]*\" placeholder=\"---\" type=\"password\" value=\"\"/>",
     "feature": "show ssn ssn show ssn password txtssn1 3",
     "id": "537-password-0",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn1",
+    "topic": "ssn_1"
   },
   {
     "dom": "<input aria-labelledby=\"lblssn\" id=\"txtssn2\" maxlength=\"2\" next-input=\"#txtssn3\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#txtssn2','#txtssn3', '2');\" pattern=\"[0-9]*\" placeholder=\"--\" type=\"password\" value=\"\"/>",
     "feature": "show ssn ssn show ssn password txtssn2 2",
     "id": "537-password-1",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn2",
+    "topic": "ssn_2"
   },
   {
     "dom": "<input aria-labelledby=\"co_lblssn\" id=\"co_txtssn1\" maxlength=\"3\" next-input=\"#co_txtssn2\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#co_txtssn1','#co_txtssn2', '3');\" pattern=\"[0-9]*\" placeholder=\"---\" type=\"password\" value=\"\"/>",
     "feature": "show ssn ssn show ssn password co txtssn1 3",
     "id": "537-password-2",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn1",
+    "topic": "ssn_1"
   },
   {
     "dom": "<input aria-labelledby=\"co_lblssn\" id=\"co_txtssn2\" maxlength=\"2\" next-input=\"#co_txtssn3\" onkeydown=\"limittonumeric(event);\" onkeyup=\"onkeyup(event,'#co_txtssn2','#co_txtssn3', '2');\" pattern=\"[0-9]*\" placeholder=\"--\" type=\"password\" value=\"\"/>",
     "feature": "show ssn ssn show ssn password co txtssn2 2",
     "id": "537-password-3",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn2",
+    "topic": "ssn_2"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" class=\"numeric\" id=\"txtzip\" maxlength=\"5\" name=\"zip\" onchange=\"lookupzipcode(this.value,'');\" pattern=\"[0-9]*\" type=\"tel\" value=\"\"/>",
-    "feature": "zip zip txtzip tel 5",
+    "feature": "zip tel txtzip zip 5",
     "id": "537-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" class=\"numeric\" id=\"txtpreviouszip\" maxlength=\"5\" name=\"zip\" onchange=\"lookupzipcode(this.value,'previous');\" pattern=\"[0-9]*\" type=\"tel\"/>",
-    "feature": "zip zip txtpreviouszip tel 5",
+    "feature": "zip tel txtpreviouszip zip 5",
     "id": "537-tel-1",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" class=\"numeric\" id=\"txtmailingzip\" maxlength=\"5\" name=\"zip\" onchange=\"lookupzipcode(this.value,'mailing');\" pattern=\"[0-9]*\" type=\"tel\"/>",
-    "feature": "zip zip txtmailingzip tel 5",
+    "feature": "zip tel txtmailingzip zip 5",
     "id": "537-tel-2",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" class=\"numeric\" id=\"co_txtzip\" maxlength=\"5\" name=\"zip\" onchange=\"co_lookupzipcode(this.value,'');\" pattern=\"[0-9]*\" type=\"tel\" value=\"\"/>",
-    "feature": "zip zip co txtzip tel 5",
+    "feature": "zip tel co txtzip zip 5",
     "id": "537-tel-3",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" class=\"numeric\" id=\"co_txtpreviouszip\" maxlength=\"5\" name=\"zip\" onchange=\"co_lookupzipcode(this.value,'previous');\" pattern=\"[0-9]*\" type=\"tel\"/>",
-    "feature": "zip zip co txtpreviouszip tel 5",
+    "feature": "zip tel co txtpreviouszip zip 5",
     "id": "537-tel-4",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" class=\"numeric\" id=\"co_txtmailingzip\" maxlength=\"5\" name=\"zip\" onchange=\"co_lookupzipcode(this.value,'mailing');\" pattern=\"[0-9]*\" type=\"tel\"/>",
-    "feature": "zip zip co txtmailingzip tel 5",
+    "feature": "zip tel co txtmailingzip zip 5",
     "id": "537-tel-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   }
 ]

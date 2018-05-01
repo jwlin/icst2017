@@ -1,49 +1,49 @@
 [
   {
     "dom": "<input class=\"field\" data-msg-required=\"first name is required\" id=\"firstname\" name=\"firstname\" required=\"\" type=\"text\"/>",
-    "feature": "first name firstname firstname text",
+    "feature": "first name text firstname firstname",
     "id": "617-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"field\" data-msg-required=\"last name is required\" id=\"lastname\" name=\"lastname\" required=\"\" type=\"text\"/>",
-    "feature": "last name lastname lastname text",
+    "feature": "last name text lastname lastname",
     "id": "617-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"field\" data-msg-required=\"postcode required\" name=\"postalcode\" required=\"\" type=\"text\"/>",
-    "feature": "zip code postal code zip code postal code postalcode text",
+    "feature": "zip code postal code zip code postal code text postalcode",
     "id": "617-text-2",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input data-msg-required=\"please enter your zip code\" name=\"zipcode\" placeholder=\"enter your zip code\" required=\"\" title=\"enter your zip code\" type=\"text\"/>",
-    "feature": "enter your zip code zipcode text",
+    "feature": "enter your zip code text zipcode",
     "id": "617-text-3",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form__field\" data-msg-required=\"first name is required\" id=\"sc_first_name\" name=\"firstname\" placeholder=\"please enter first name\" required=\"\" type=\"text\"/>",
-    "feature": "support blackanddecker sbdinc com support blackanddecker sbdinc com yes no please enter first name firstname sc first name text",
+    "feature": "support blackanddecker sbdinc com support blackanddecker sbdinc com yes no sc first name firstname text please enter first name",
     "id": "617-text-4",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form__field\" data-msg-required=\"last name is required\" id=\"sc_last_name\" name=\"lastname\" placeholder=\"please enter last name\" required=\"\" type=\"text\"/>",
-    "feature": "support blackanddecker sbdinc com support blackanddecker sbdinc com yes no please enter last name lastname sc last name text",
+    "feature": "support blackanddecker sbdinc com support blackanddecker sbdinc com yes no sc last name lastname text please enter last name",
     "id": "617-text-5",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input name=\"email\" placeholder=\"email address\" title=\"email address\" type=\"email\"/>",
-    "feature": "email address email email",
+    "feature": "email email email address",
     "id": "617-email-0",
     "pattern": "email",
     "topic": "email"
@@ -64,7 +64,7 @@
   },
   {
     "dom": "<input aria-required=\"true\" class=\"footer__field form__field\" data-msg-email=\"email address is not in the correct format\" data-msg-required=\"email is required\" id=\"stay_connected_casl_email\" name=\"email\" placeholder=\"please enter email address...\" required=\"\" type=\"email\"/>",
-    "feature": "support blackanddecker sbdinc com support blackanddecker sbdinc com yes no please enter email address email stay connected casl email email",
+    "feature": "support blackanddecker sbdinc com support blackanddecker sbdinc com yes no stay connected casl email email email please enter email address",
     "id": "617-email-3",
     "pattern": "email",
     "topic": "email"
@@ -92,30 +92,30 @@
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"site-search\" name=\"searchtext\" placeholder=\"site search\" required=\"\" type=\"search\"/>",
-    "feature": "site search site search searchtext site search search",
+    "feature": "site search site search search site search searchtext",
     "id": "617-search-0",
-    "pattern": "search",
+    "pattern": "site.*search",
     "topic": "search"
   },
   {
     "dom": "<input id=\"modelnumber\" name=\"enter model no\" placeholder=\"e.g. bdcdmt120s\" required=\"\" type=\"search\"/>",
-    "feature": "enter modelnumber e g bdcdmt120s enter model no search",
+    "feature": "enter e g bdcdmt120s modelnumber search enter model no",
     "id": "617-search-1",
     "pattern": "model.*number",
     "topic": "model_number"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"productname\" name=\"search product name\" placeholder=\"autosense drill\" required=\"\" type=\"search\"/>",
-    "feature": "enter autosense drill search product name productname search",
+    "feature": "enter productname autosense drill search search product name",
     "id": "617-search-2",
-    "pattern": "item.*name",
-    "topic": "item_name"
+    "pattern": "product.*name",
+    "topic": "product_name"
   },
   {
     "dom": "<input class=\"field\" id=\"phonenumber\" name=\"phonenumber\" type=\"tel\"/>",
-    "feature": "phone number optional phonenumber phonenumber tel",
+    "feature": "phone number optional tel phonenumber phonenumber",
     "id": "617-tel-0",
     "pattern": "phone.*number",
-    "topic": "phone_number"
+    "topic": "phone"
   }
 ]

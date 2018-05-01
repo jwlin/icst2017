@@ -31,8 +31,8 @@
     "dom": "<input maxlength=\"25\" name=\"login_name\" size=\"45\" type=\"text\"/>",
     "feature": "text login name 25",
     "id": "702-text-4",
-    "pattern": "username",
-    "topic": "username"
+    "pattern": "login",
+    "topic": "login"
   },
   {
     "dom": "<input maxlength=\"25\" name=\"password\" size=\"45\" type=\"password\"/>",

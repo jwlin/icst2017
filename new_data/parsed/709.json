@@ -1,28 +1,28 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"formtext\" id=\"email\" name=\"data[email]\" placeholder=\"email address\" type=\"text\" validate=\"required:true,email:true,remote:'/reg/checkemail'\" value=\"\"/>",
-    "feature": "register already a member login here data email email text email address",
+    "feature": "register already a member login here text email data email email address",
     "id": "709-text-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"input_text\" id=\"code\" maxlength=\"30\" name=\"code\" placeholder=\"verification code\" style=\"float:left; margin-right:5px;\" type=\"text\" validate=\"required:true,remote:'/reg/checkcode'\" value=\"\"/>",
-    "feature": "register already a member login here code code text verification code 30",
+    "feature": "register already a member login here text code code verification code 30",
     "id": "709-text-1",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"formtext\" id=\"submitemail\" isrequired=\"true\" placeholder=\"\" type=\"text\" value=\"\"/>",
-    "feature": "submitemail text",
+    "feature": "text submitemail",
     "id": "709-text-2",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"formtext\" id=\"cu_passowrd\" name=\"data[password]\" placeholder=\"password\" type=\"password\" validate=\"required:true,minlength:6\" value=\"\"/>",
-    "feature": "register already a member login here data password cu passowrd password password",
+    "feature": "register already a member login here password cu passowrd data password password",
     "id": "709-password-0",
     "pattern": "password",
     "topic": "password"

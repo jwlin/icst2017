@@ -1,72 +1,72 @@
 [
   {
     "dom": "<input id=\"usremail\" name=\"usremail\" type=\"text\" value=\"\"/>",
-    "feature": "email address text usremail usremail",
+    "feature": "email address usremail usremail text",
     "id": "598-text-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input data-default=\"null\" id=\"shipaddfirstname\" maxlength=\"32\" name=\"shipaddfirstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name shipaddfirstname text shipaddfirstname 32",
+    "feature": "first name shipaddfirstname shipaddfirstname text 32",
     "id": "598-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input data-default=\"null\" id=\"shipaddlastname\" maxlength=\"32\" name=\"shipaddlastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name shipaddlastname text shipaddlastname 32",
+    "feature": "last name shipaddlastname shipaddlastname text 32",
     "id": "598-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input data-default=\"null\" id=\"shipaddcompanyname\" maxlength=\"32\" name=\"shipaddcompanyname\" type=\"text\" value=\"\"/>",
-    "feature": "company name optional shipaddcompanyname text shipaddcompanyname 32",
+    "feature": "company name optional shipaddcompanyname shipaddcompanyname text 32",
     "id": "598-text-3",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input data-default=\"null\" id=\"shipaddress1\" maxlength=\"52\" name=\"shipaddress1\" type=\"text\" value=\"\"/>",
-    "feature": "address 1 shipaddress1 text shipaddress1 52",
+    "feature": "address 1 shipaddress1 shipaddress1 text 52",
     "id": "598-text-4",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input data-default=\"null\" id=\"shipaddress2\" maxlength=\"52\" name=\"shipaddress2\" type=\"text\" value=\"\"/>",
-    "feature": "address 2 optional shipaddress2 text shipaddress2 52",
+    "feature": "address 2 optional shipaddress2 shipaddress2 text 52",
     "id": "598-text-5",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input data-default=\"null\" id=\"shippostalcode\" name=\"shippostalcode\" type=\"text\" value=\"\"/>",
-    "feature": "zip postal code text shippostalcode shippostalcode",
+    "feature": "zip postal code shippostalcode shippostalcode text",
     "id": "598-text-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input data-default=\"null\" id=\"shipcity\" maxlength=\"32\" name=\"shipcity\" type=\"text\" value=\"\"/>",
-    "feature": "city shipcity text shipcity 32",
+    "feature": "city shipcity shipcity text 32",
     "id": "598-text-7",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"usrpassword\" maxlength=\"25\" name=\"usrpassword\" type=\"password\" value=\"\"/>",
-    "feature": "password usrpassword password usrpassword 25",
+    "feature": "password usrpassword usrpassword password 25",
     "id": "598-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input data-mimic=\"#hidsecondnumber\" data-mimic-filter=\"onlynumbers\" id=\"shipphonenumber\" maxlength=\"14\" name=\"shipphonenumber\" placeholder=\"xxx-xxx-xxxx\" required=\"required\" type=\"tel\" value=\"\"/>",
-    "feature": "phone shipphonenumber xxx xxx xxxx tel shipphonenumber 14",
+    "feature": "phone tel shipphonenumber shipphonenumber xxx xxx xxxx 14",
     "id": "598-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

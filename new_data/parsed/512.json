@@ -38,14 +38,14 @@
     "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field street address must be a string with a maximum length of 30.\" data-val-length-max=\"30\" data-val-maxlength=\"the field street address must be a string or array type with a maximum length of '30'.\" data-val-maxlength-max=\"30\" data-val-required=\"the street address field is required.\" id=\"address1\" maxlength=\"30\" name=\"address1\" type=\"text\" value=\"\"/>",
     "feature": "required street address required address1 address1 text 30",
     "id": "512-text-5",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"input-md\" data-val=\"true\" data-val-length=\"the field apartment / suite / other must be a string with a maximum length of 30.\" data-val-length-max=\"30\" data-val-maxlength=\"the field apartment / suite / other must be a string or array type with a maximum length of '30'.\" data-val-maxlength-max=\"30\" id=\"address2\" maxlength=\"30\" name=\"address2\" type=\"text\" value=\"\"/>",
     "feature": "apartment suite other address2 address2 text 30",
     "id": "512-text-6",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
@@ -60,13 +60,13 @@
     "feature": "required zip code required zipcode zipcode text 5",
     "id": "512-text-8",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-number=\"the field annual income must be a number.\" data-val-required=\"the annual income field is required.\" id=\"annualincomeamount\" name=\"annualincomeamount\" type=\"text\" value=\"\"/>",
     "feature": "required annual income required annualincomeamount annualincomeamount text",
     "id": "512-text-9",
-    "pattern": "income",
+    "pattern": "annual.*income.*amount",
     "topic": "income"
   },
   {
@@ -109,20 +109,20 @@
     "feature": "required social security number required ssn ssn password 11",
     "id": "512-password-0",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-length=\"the field day phone must be a string with a maximum length of 17.\" data-val-length-max=\"17\" data-val-maxlength=\"the field day phone must be a string or array type with a maximum length of '17'.\" data-val-maxlength-max=\"17\" data-val-required=\"the day phone field is required.\" id=\"dayphone\" name=\"dayphone\" type=\"tel\" value=\"\"/>",
     "feature": "required day phone required dayphone dayphone tel",
     "id": "512-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-length=\"the field evening phone must be a string with a maximum length of 17.\" data-val-length-max=\"17\" data-val-maxlength=\"the field evening phone must be a string or array type with a maximum length of '17'.\" data-val-maxlength-max=\"17\" id=\"eveningphone\" name=\"eveningphone\" type=\"tel\" value=\"\"/>",
     "feature": "evening phone eveningphone eveningphone tel",
     "id": "512-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

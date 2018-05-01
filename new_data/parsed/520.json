@@ -3,35 +3,35 @@
     "dom": "<input class=\"form-input full dynamic-state__input\" data-reactid=\".0.1.1.2.1.0.$=1$applicantinfo1.0.1.0.$0.$customer.1:$cell0.0.0.1.0\" id=\"name-1\" name=\"name-1\" type=\"text\"/>",
     "feature": "first name first name name 1 name 1 text",
     "id": "520-text-0",
-    "pattern": "first.*name",
+    "pattern": "name.*1",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-input full dynamic-state__input\" data-reactid=\".0.1.1.2.1.0.$=1$applicantinfo1.0.1.0.$0.$customer.1:$cell1.0.0.1.0\" id=\"name-2\" maxlength=\"1\" name=\"name-2\" type=\"text\"/>",
     "feature": "mi mi name 2 name 2 text 1",
     "id": "520-text-1",
-    "pattern": "middle.*initial",
+    "pattern": "name.*2",
     "topic": "middle_initial"
   },
   {
     "dom": "<input class=\"form-input full dynamic-state__input\" data-reactid=\".0.1.1.2.1.0.$=1$applicantinfo1.0.1.0.$0.$customer.1:$cell2.0.0.1.0\" id=\"name-3\" name=\"name-3\" type=\"text\"/>",
     "feature": "last name last name name 3 name 3 text",
     "id": "520-text-2",
-    "pattern": "last.*name",
+    "pattern": "name.*3",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-input full dynamic-state__input\" data-reactid=\".0.1.1.2.1.0.$=1$applicantinfo1.0.1.0.$0.$address.1:$cell0.0.0.1.0\" id=\"streetline1\" name=\"streetline1\" type=\"text\"/>",
     "feature": "address 1 address 1 streetline1 streetline1 text",
     "id": "520-text-3",
-    "pattern": "address.*one",
+    "pattern": "street.*line.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-input full dynamic-state__input\" data-reactid=\".0.1.1.2.1.0.$=1$applicantinfo1.0.1.0.$0.$address.1:$cell1.0.0.1.0\" id=\"streetline2\" name=\"streetline2\" type=\"text\"/>",
     "feature": "address 2 address 2 streetline2 streetline2 text",
     "id": "520-text-4",
-    "pattern": "address.*two",
+    "pattern": "street.*line.*2",
     "topic": "address_2"
   },
   {
@@ -52,21 +52,21 @@
     "dom": "<input class=\"form-input full dynamic-state__input\" data-reactid=\".0.1.1.2.1.0.$=1$applicantinfo1.0.1.0.$0.$citystatezip.1:$cell2.0.0.1.0\" id=\"zipcode\" maxlength=\"5\" name=\"zipcode\" type=\"tel\"/>",
     "feature": "zip code zip code zipcode zipcode tel 5",
     "id": "520-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip.*code",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-input full dynamic-state__input\" data-reactid=\".0.1.1.2.1.0.$=1$applicantinfo1.0.1.0.$0.$phoneemail.1:$cell0.0.0.1.0\" id=\"phone\" name=\"phone\" type=\"tel\"/>",
     "feature": "phone number phone number phone phone tel",
     "id": "520-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-input full dynamic-state__input -js-input-1 dynamic-state__input-cursor\" data-reactid=\".0.3.0.0.1.4.0\" maxlength=\"10\" placeholder=\" \" required=\"\" type=\"tel\"/>",
     "feature": "tel 10",
     "id": "520-tel-2",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "unk",
+    "topic": "unk"
   }
 ]

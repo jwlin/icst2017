@@ -3,12 +3,12 @@
     "dom": "<input class=\"input-text email required\" id=\"dwfrm_login_username_d0ozivccxkqw\" maxlength=\"50\" name=\"dwfrm_login_username_d0ozivccxkqw\" type=\"text\" value=\"\"/>",
     "feature": "email email dwfrm login username d0ozivccxkqw text dwfrm login username d0ozivccxkqw 50",
     "id": "590-text-0",
-    "pattern": "email",
-    "topic": "email"
+    "pattern": "username",
+    "topic": "user"
   },
   {
     "dom": "<input autocorrect=\"off\" class=\"txt valid\" id=\"emailid\" maxlength=\"50\" name=\"email\" placeholder=\"yourname@email.com\" spellcheck=\"false\" type=\"email\" value=\"\"/>",
-    "feature": "enter email address emailid email yourname email com email 50",
+    "feature": "enter email address email yourname email com email emailid 50",
     "id": "590-email-0",
     "pattern": "email",
     "topic": "email"

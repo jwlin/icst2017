@@ -1,35 +1,35 @@
 [
   {
     "dom": "<input id=\"ay-login\" name=\"userid\" required=\"\" type=\"text\"/>",
-    "feature": "pin password text userid ay login",
+    "feature": "pin password userid ay login text",
     "id": "721-text-0",
-    "pattern": "username",
-    "topic": "username"
+    "pattern": "userid",
+    "topic": "userid"
   },
   {
     "dom": "<input id=\"aycreatefn\" maxlength=\"30\" name=\"aycreatefn\" required=\"\" type=\"text\"/>",
     "feature": "first or given name text aycreatefn aycreatefn 30",
     "id": "721-text-1",
-    "pattern": "first.*name",
+    "pattern": "fn",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"aycreateln\" maxlength=\"30\" name=\"aycreateln\" required=\"\" type=\"text\"/>",
     "feature": "last or family name text aycreateln aycreateln 30",
     "id": "721-text-2",
-    "pattern": "last.*name",
+    "pattern": "ln",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"emails\" id=\"aycreateemail\" maxlength=\"120\" name=\"aycreateemail\" required=\"\" size=\"35\" type=\"text\"/>",
-    "feature": "email address aycreateemail aycreateemail text 120",
+    "feature": "email address text aycreateemail aycreateemail 120",
     "id": "721-text-3",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"emails\" id=\"aycreateconfirmemail\" name=\"aycreateconfirmemail\" required=\"\" size=\"35\" type=\"text\"/>",
-    "feature": "confirm email address aycreateconfirmemail aycreateconfirmemail text",
+    "feature": "confirm email address text aycreateconfirmemail aycreateconfirmemail",
     "id": "721-text-4",
     "pattern": "email",
     "topic": "email"
@@ -38,19 +38,19 @@
     "dom": "<input id=\"aycreatedob\" name=\"aycreatedob\" required=\"\" size=\"20\" type=\"text\"/>",
     "feature": "mm dd yyyy birth date text aycreatedob aycreatedob",
     "id": "721-text-5",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input id=\"aycreatepc\" maxlength=\"10\" name=\"aycreatepc\" required=\"\" type=\"text\"/>",
     "feature": "zip postal code text aycreatepc aycreatepc 10",
     "id": "721-text-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "pc",
+    "topic": "zip"
   },
   {
     "dom": "<input id=\"ay-password\" name=\"password\" type=\"password\"/>",
-    "feature": "password pin password password ay password",
+    "feature": "password pin password ay password password",
     "id": "721-password-0",
     "pattern": "password",
     "topic": "password"

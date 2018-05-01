@@ -10,8 +10,8 @@
     "dom": "<input aria-invalid=\"false\" autocapitalize=\"on\" autocorrect=\"off\" class=\"ng-pristine ng-untouched ng-valid ng-scope ng-valid-pattern ng-valid-maxlength\" id=\"middleinitial\" maxlength=\"50\" name=\"middleinitial\" ng-model=\"vm.applicant.middleinitial\" ng-pattern=\"/^[a-za-z s'-]+$/\" tabindex=\"0\" type=\"text\" usb-capitalize-first-letter=\"\" usb-capitalize-letter-after-hyphen=\"\"/>",
     "feature": "middle name optional text middleinitial middleinitial 50",
     "id": "514-text-1",
-    "pattern": "middle.*name",
-    "topic": "middle_name"
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
   },
   {
     "dom": "<input aria-invalid=\"true\" aria-required=\"true\" autocapitalize=\"on\" autocorrect=\"off\" class=\"ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength\" id=\"lastname\" maxlength=\"60\" minlength=\"2\" name=\"lastname\" ng-model=\"vm.applicant.lastname\" ng-pattern=\"/^[a-za-z s'-]+$/\" required=\"required\" tabindex=\"0\" type=\"text\" usb-capitalize-first-letter=\"\" usb-capitalize-letter-after-hyphen=\"\"/>",
@@ -31,7 +31,7 @@
     "dom": "<input aria-invalid=\"true\" aria-required=\"true\" class=\"ng-pristine ng-untouched ng-scope ng-valid-mask ng-invalid ng-invalid-usb-valid-phone ng-valid-usb-valid-area-code ng-invalid-required ng-valid-pattern\" id=\"phonewithareacode\" name=\"phonewithareacode\" ng-model=\"vm.applicant.primaryphonenumber\" ng-model-options=\"{ allowinvalid: true }\" required=\"required\" tabindex=\"0\" type=\"tel\" ui-mask=\"(999) 999-9999\" usb-valid-area-code=\"\" usb-valid-phone=\"\"/>",
     "feature": "by entering your telephone number landline or mobile and selecting next you are giving us permission to contact you about this application primary phone number tel phonewithareacode phonewithareacode",
     "id": "514-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "area.*code",
+    "topic": "area_code"
   }
 ]

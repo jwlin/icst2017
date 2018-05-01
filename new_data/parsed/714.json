@@ -59,14 +59,14 @@
     "dom": "<input maxlength=\"50\" name=\"t3010\" size=\"20\" type=\"password\"/>",
     "feature": "password t3010 50",
     "id": "714-password-0",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "t3010",
+    "topic": "password"
   },
   {
     "dom": "<input maxlength=\"50\" name=\"t3015\" size=\"20\" type=\"password\"/>",
     "feature": "password t3015 50",
     "id": "714-password-1",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "t3015",
+    "topic": "password"
   }
 ]

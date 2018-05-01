@@ -1,58 +1,58 @@
 [
   {
     "dom": "<input autocomplete=\"on\" id=\"firstname\" maxlength=\"40\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.firstname\" pattern=\"[a-za-z][a-za-z0-9 ,.'-]{0,}\" required=\"required\" type=\"text\" value=\"\"/>",
-    "feature": "first name text firstname atg commerce order purchase shippinginfoformhandler shipcontactinfo firstname 40",
+    "feature": "first name firstname atg commerce order purchase shippinginfoformhandler shipcontactinfo firstname text 40",
     "id": "581-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"lastname\" maxlength=\"40\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.lastname\" pattern=\"[a-za-z][a-za-z0-9 ,.'-]{0,}\" required=\"required\" type=\"text\" value=\"\"/>",
-    "feature": "last name text lastname atg commerce order purchase shippinginfoformhandler shipcontactinfo lastname 40",
+    "feature": "last name lastname atg commerce order purchase shippinginfoformhandler shipcontactinfo lastname text 40",
     "id": "581-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"streetaddress\" maxlength=\"35\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.address1\" pattern=\"[0-9a-za-z ,\\.\\/\\-&amp;']{0,}\" required=\"required\" type=\"text\" value=\"\"/>",
-    "feature": "street address text streetaddress atg commerce order purchase shippinginfoformhandler shipcontactinfo address1 35",
+    "feature": "street address streetaddress atg commerce order purchase shippinginfoformhandler shipcontactinfo address1 text 35",
     "id": "581-text-2",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"aptsuite\" maxlength=\"35\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.address2\" pattern=\"[0-9a-za-z `~!@#$%^&amp;*()_+-=\\[\\]{}\\\\|;:',.&lt;&gt;/?&quot;]{0,}\" type=\"text\" value=\"\"/>",
-    "feature": "apt suite optional text aptsuite atg commerce order purchase shippinginfoformhandler shipcontactinfo address2 35",
+    "feature": "apt suite optional aptsuite atg commerce order purchase shippinginfoformhandler shipcontactinfo address2 text 35",
     "id": "581-text-3",
-    "pattern": "address.*two",
-    "topic": "address_2"
+    "pattern": "apt",
+    "topic": "apartment"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"city\" maxlength=\"60\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.city\" pattern=\"[0-9a-za-z -]{0,}\" required=\"required\" type=\"text\" value=\"\"/>",
-    "feature": "city text city atg commerce order purchase shippinginfoformhandler shipcontactinfo city 60",
+    "feature": "city city atg commerce order purchase shippinginfoformhandler shipcontactinfo city text 60",
     "id": "581-text-4",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"zipcode\" maxlength=\"10\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.postalcode\" required=\"required\" type=\"text\" value=\"\"/>",
-    "feature": "zip code text zipcode atg commerce order purchase shippinginfoformhandler shipcontactinfo postalcode 10",
+    "feature": "zip code zipcode atg commerce order purchase shippinginfoformhandler shipcontactinfo postalcode text 10",
     "id": "581-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"phonenumber\" maxlength=\"30\" minlength=\"5\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.phonenumber\" pattern=\"^((1|\\+1)?(\\s|-|.)?)?((\\(|\\s\\()?[2-9]{1}\\d{2}|[2-9]{1}\\d{2}(\\)|\\)\\s)?)(\\s|-|.)?(\\d{3}(\\s|-|.)?\\d{4})\" required=\"required\" type=\"text\" value=\"\"/>",
-    "feature": "phone number text phonenumber atg commerce order purchase shippinginfoformhandler shipcontactinfo phonenumber 30",
+    "feature": "phone number phonenumber atg commerce order purchase shippinginfoformhandler shipcontactinfo phonenumber text 30",
     "id": "581-text-6",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input autocomplete=\"on\" id=\"companyname\" maxlength=\"35\" name=\"/atg/commerce/order/purchase/shippinginfoformhandler.shipcontactinfo.companyname\" pattern=\"[0-9a-za-z `~!@#$%^&amp;*()_+-=\\[\\]{}\\\\|;:',.&lt;&gt;/?&quot;]{0,}\" type=\"text\" value=\"\"/>",
-    "feature": "company name optional text companyname atg commerce order purchase shippinginfoformhandler shipcontactinfo companyname 35",
+    "feature": "company name optional companyname atg commerce order purchase shippinginfoformhandler shipcontactinfo companyname text 35",
     "id": "581-text-7",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   }
 ]

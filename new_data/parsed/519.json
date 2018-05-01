@@ -10,8 +10,8 @@
     "dom": "<input class=\"app_field_inputtxt\" id=\"middleinitial_0010\" maxlength=\"1\" name=\"middleinitial_0010\" onkeypress=\"return isalphakey(event)\" size=\"1\" type=\"text\" value=\"\"/>",
     "feature": "m i last name text middleinitial 0010 middleinitial 0010 1",
     "id": "519-text-1",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "middle.*initial",
+    "topic": "middle_initial"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"lastname_0012\" maxlength=\"20\" name=\"lastname_0012\" onkeypress=\"return isalphaspacehyphenaposkey(event)\" size=\"20\" type=\"text\" value=\"\"/>",
@@ -24,14 +24,14 @@
     "dom": "<input class=\"app_field_inputtxt\" id=\"homeaddress_0014\" maxlength=\"35\" name=\"homeaddress_0014\" onkeypress=\"return isalphanumspacehyphenhashaposkey(event)\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "no po boxes allowed text homeaddress 0014 homeaddress 0014 35",
     "id": "519-text-3",
-    "pattern": "address.*one",
+    "pattern": "home.*address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"homeaaddress2_0015\" maxlength=\"35\" name=\"homeaaddress2_0015\" onkeypress=\"return isalphanumspacehyphenhashkey(event)\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "no po boxes allowed i authorize you to contact me at each phone number i have provided above by providing a cell phone number i agree to receive account updates and information including text messages from phillips 66 company and synchrony bank standard text and messaging rates may apply 00 alimony child support or separate maintenance income need not be included unless relied upon for credit you may include the annual net amount that you have available to spend from your assets married wi residents only if you are applying for an individual account and your spouse also is a wi resident combine your and your spouse s financial information in years complete if at current residence for less than 3 years address first name m i last name city state zip primary phone type additional phone type email address yes i want to receive emails from syncb and phillips 66 company annual net income from all sources length of time at current address previous address previous city previous state previous zip text homeaaddress2 0015 homeaaddress2 0015 35",
     "id": "519-text-4",
-    "pattern": "address.*two",
+    "pattern": "home.*address.*2",
     "topic": "address_2"
   },
   {
@@ -45,113 +45,113 @@
     "dom": "<input class=\"app_field_inputtxt\" id=\"zipcode_0018\" maxlength=\"5\" name=\"zipcode_0018\" onblur=\"zipvalidationfind();\" onkeypress=\"return isalphanumkey(event)\" size=\"5\" type=\"text\" value=\"\"/>",
     "feature": "text zipcode 0018 zipcode 0018 5",
     "id": "519-text-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip.*code",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"commonphnumbermand_0\" maxlength=\"3\" name=\"commonphnumbermand_0\" onblur=\"pphvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"3\" type=\"text\" value=\"\"/>",
     "feature": "type text commonphnumbermand 0 commonphnumbermand 0 3",
     "id": "519-text-7",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "ph.*number.*0",
+    "topic": "area_code"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"commonphnumbermand_1\" maxlength=\"3\" name=\"commonphnumbermand_1\" onblur=\"pphvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"3\" type=\"text\" value=\"\"/>",
     "feature": "type text commonphnumbermand 1 commonphnumbermand 1 3",
     "id": "519-text-8",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "ph.*number.*1",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"commonphnumbermand_2\" maxlength=\"4\" name=\"commonphnumbermand_2\" onblur=\"pphvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"4\" type=\"text\" value=\"\"/>",
     "feature": "type text commonphnumbermand 2 commonphnumbermand 2 4",
     "id": "519-text-9",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "ph.*number.*2",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"commonphnumber_0\" maxlength=\"3\" name=\"commonphnumber_0\" onblur=\"pphvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"3\" type=\"text\" value=\"\"/>",
     "feature": "type text commonphnumber 0 commonphnumber 0 3",
     "id": "519-text-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "ph.*number.*0",
+    "topic": "area_code"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"commonphnumber_1\" maxlength=\"3\" name=\"commonphnumber_1\" onblur=\"pphvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"3\" type=\"text\" value=\"\"/>",
     "feature": "type text commonphnumber 1 commonphnumber 1 3",
     "id": "519-text-11",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "ph.*number.*1",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"commonphnumber_2\" maxlength=\"4\" name=\"commonphnumber_2\" onblur=\"pphvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"4\" type=\"text\" value=\"\"/>",
     "feature": "type text commonphnumber 2 commonphnumber 2 4",
     "id": "519-text-12",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "ph.*number.*2",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"emailaddr_0569\" maxlength=\"40\" name=\"emailaddr_0569\" onchange=\"emailvalidation()\" size=\"40\" type=\"text\" value=\"\"/>",
     "feature": "text emailaddr 0569 emailaddr 0569 40",
     "id": "519-text-13",
-    "pattern": "email",
+    "pattern": "email.*addr",
     "topic": "email"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"annualincome_0076\" maxlength=\"8\" name=\"annualincome_0076\" onkeypress=\"return isnumberkey(event)\" size=\"8\" type=\"text\" value=\"\"/>",
     "feature": "00 text annualincome 0076 annualincome 0076 8",
     "id": "519-text-14",
-    "pattern": "income",
+    "pattern": "annual.*income",
     "topic": "income"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"curradd_0134\" maxlength=\"2\" name=\"curradd_0134\" onblur=\"prvaddcheck();\" onkeypress=\"return isnumberkey(event)\" size=\"2\" type=\"text\" value=\"\"/>",
     "feature": "in years text curradd 0134 curradd 0134 2",
     "id": "519-text-15",
-    "pattern": "age",
-    "topic": "age"
+    "pattern": "curr.*add",
+    "topic": "address_1"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"prevadd_0127\" maxlength=\"21\" name=\"prevadd_0127\" onkeypress=\"return isalphanumspacehyphenhashaposkey(event)\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "previous address text prevadd 0127 prevadd 0127 21",
     "id": "519-text-16",
-    "pattern": "address.*one",
+    "pattern": "prev.*add",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"prevapt_0128\" maxlength=\"21\" name=\"prevapt_0128\" onkeypress=\"return isalphanumspacehyphenhashkey(event)\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "complete if at current residence for less than 3 years previous address previous city previous state previous zip text prevapt 0128 prevapt 0128 21",
     "id": "519-text-17",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apt",
+    "topic": "apartment"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"prevcity_0129\" maxlength=\"23\" name=\"prevcity_0129\" onkeypress=\"return isalphanumspacekey(event)\" size=\"24\" type=\"text\" value=\"\"/>",
     "feature": "previous state previous zip text prevcity 0129 prevcity 0129 23",
     "id": "519-text-18",
-    "pattern": "state",
-    "topic": "state"
+    "pattern": "city",
+    "topic": "city"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"prevzip_0131\" maxlength=\"5\" name=\"prevzip_0131\" onblur=\"prevzipvalidation();\" onkeypress=\"return isalphanumkey(event)\" size=\"5\" type=\"text\" value=\"\"/>",
     "feature": "previous zip previous state text prevzip 0131 prevzip 0131 5",
     "id": "519-text-19",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"addauthfirstname_0173\" maxlength=\"11\" name=\"addauthfirstname_0173\" onkeypress=\"return isalphaspacehyphenaposkey(event)\" size=\"20\" type=\"text\" value=\"\"/>",
     "feature": "m i last name text addauthfirstname 0173 addauthfirstname 0173 11",
     "id": "519-text-20",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "first.*name",
+    "topic": "first_name"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"addauthinitial_0174\" maxlength=\"1\" name=\"addauthinitial_0174\" onkeypress=\"return isalphakey(event)\" size=\"1\" type=\"text\" value=\"\"/>",
     "feature": "m i last name text addauthinitial 0174 addauthinitial 0174 1",
     "id": "519-text-21",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "initial",
+    "topic": "middle_initial"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"addauthlastname_0176\" maxlength=\"20\" name=\"addauthlastname_0176\" onkeypress=\"return isalphaspacehyphenaposkey(event)\" size=\"20\" type=\"text\" value=\"\"/>",
@@ -164,22 +164,22 @@
     "dom": "<input class=\"app_field_inputtxt\" id=\"dateofbirth_0019_0\" maxlength=\"2\" name=\"dateofbirth_0019_0\" onblur=\"dobvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"2\" type=\"text\" value=\"\"/>",
     "feature": "text dateofbirth 0019 0 dateofbirth 0019 0 2",
     "id": "519-text-23",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "date.*of.*birth.*0",
+    "topic": "dob_month"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"dateofbirth_0019_1\" maxlength=\"2\" name=\"dateofbirth_0019_1\" onblur=\"dobvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"2\" type=\"text\" value=\"\"/>",
     "feature": "text dateofbirth 0019 1 dateofbirth 0019 1 2",
     "id": "519-text-24",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "date.*of.*birth.*1",
+    "topic": "dob_day"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"dateofbirth_0019_2\" maxlength=\"4\" name=\"dateofbirth_0019_2\" onblur=\"dobvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"4\" type=\"text\" value=\"\"/>",
     "feature": "text dateofbirth 0019 2 dateofbirth 0019 2 4",
     "id": "519-text-25",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "date.*of.*birth.*2",
+    "topic": "dob_year"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"mmn_0224\" maxlength=\"20\" name=\"mmn_0224\" onkeypress=\"return isalphanumkey(event)\" size=\"20\" type=\"text\" value=\"\"/>",
@@ -206,21 +206,21 @@
     "dom": "<input class=\"app_field_inputtxt\" id=\"ssn_0020_0\" maxlength=\"3\" name=\"ssn_0020_0\" onblur=\"ssnvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"3\" type=\"password\" value=\"\"/>",
     "feature": "password ssn 0020 0 ssn 0020 0 3",
     "id": "519-password-0",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn.*0",
+    "topic": "ssn_1"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"ssn_0020_1\" maxlength=\"2\" name=\"ssn_0020_1\" onblur=\"ssnvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"2\" type=\"password\" value=\"\"/>",
     "feature": "password ssn 0020 1 ssn 0020 1 2",
     "id": "519-password-1",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn.*1",
+    "topic": "ssn_2"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"ssn_0020_2\" maxlength=\"4\" name=\"ssn_0020_2\" onblur=\"ssnvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" onkeyup=\"autotab(this.name);\" size=\"4\" type=\"password\" value=\"\"/>",
     "feature": "password ssn 0020 2 ssn 0020 2 4",
     "id": "519-password-2",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn.*2",
+    "topic": "ssn_3"
   }
 ]

@@ -1,56 +1,56 @@
 [
   {
     "dom": "<input id=\"q-ern5y\" name=\"q\" placeholder=\"search...\" type=\"text\" value=\"\"/>",
-    "feature": "search search catalog q text search q ern5y",
+    "feature": "search search catalog text q ern5y q search",
     "id": "650-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input id=\"mq\" name=\"q\" placeholder=\"search...\" type=\"text\" value=\"\"/>",
-    "feature": "search search q text search mq",
+    "feature": "search search text mq q search",
     "id": "650-text-1",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input class=\"uikit-form-control input-text required\" id=\"dwfrm_productregistration_fname\" name=\"dwfrm_productregistration_fname\" type=\"text\" value=\"\"/>",
-    "feature": "required required first name required first name dwfrm productregistration fname text dwfrm productregistration fname",
+    "feature": "required required first name required first name text dwfrm productregistration fname dwfrm productregistration fname",
     "id": "650-text-2",
-    "pattern": "first.*name",
+    "pattern": "fname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"uikit-form-control input-text required\" id=\"dwfrm_productregistration_lname\" name=\"dwfrm_productregistration_lname\" type=\"text\" value=\"\"/>",
-    "feature": "required required last name required last name dwfrm productregistration lname text dwfrm productregistration lname",
+    "feature": "required required last name required last name text dwfrm productregistration lname dwfrm productregistration lname",
     "id": "650-text-3",
-    "pattern": "last.*name",
+    "pattern": "lname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"uikit-form-control input-text required\" id=\"dwfrm_productregistration_email\" name=\"dwfrm_productregistration_email\" type=\"text\" value=\"\"/>",
-    "feature": "required required email required email dwfrm productregistration email text dwfrm productregistration email",
+    "feature": "required required email required email text dwfrm productregistration email dwfrm productregistration email",
     "id": "650-text-4",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"uikit-form-control input-text zip required\" id=\"dwfrm_productregistration_zip\" name=\"dwfrm_productregistration_zip\" type=\"text\" value=\"\"/>",
-    "feature": "required required zip code required zip code dwfrm productregistration zip text dwfrm productregistration zip",
+    "feature": "required required zip code required zip code text dwfrm productregistration zip dwfrm productregistration zip",
     "id": "650-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"uikit-form-control input-text \" id=\"dwfrm_productregistration_serial\" name=\"dwfrm_productregistration_serial\" type=\"text\" value=\"\"/>",
-    "feature": "serial number serial number dwfrm productregistration serial text dwfrm productregistration serial",
+    "feature": "serial number serial number text dwfrm productregistration serial dwfrm productregistration serial",
     "id": "650-text-6",
     "pattern": "serial",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"input-text valid\" id=\"email-alert-address\" name=\"email\" placeholder=\"email address\" type=\"text\" value=\"\"/>",
-    "feature": "email address text email address email alert address email",
+    "feature": "email address text email alert address email email address",
     "id": "650-text-7",
     "pattern": "email",
     "topic": "email"

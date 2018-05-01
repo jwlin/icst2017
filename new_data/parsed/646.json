@@ -1,238 +1,238 @@
 [
   {
     "dom": "<input class=\"js-search-input\" maxlength=\"240\" name=\"q\" placeholder=\"search wahl products\" type=\"text\"/>",
-    "feature": "text q search wahl products 240",
+    "feature": "q text search wahl products 240",
     "id": "646-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input id=\"form1_firstname\" maxlength=\"50\" name=\"firstname\" required=\"required\" type=\"text\"/>",
-    "feature": "first name first name text firstname form1 firstname 50",
+    "feature": "first name first name form1 firstname firstname text 50",
     "id": "646-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_middleinitial\" maxlength=\"5\" name=\"middleinitial\" type=\"text\"/>",
-    "feature": "m i text middleinitial form1 middleinitial 5",
+    "feature": "m i form1 middleinitial middleinitial text 5",
     "id": "646-text-2",
     "pattern": "middle.*initial",
     "topic": "middle_initial"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_lastname\" maxlength=\"50\" name=\"lastname\" required=\"required\" type=\"text\"/>",
-    "feature": "last name text lastname form1 lastname 50",
+    "feature": "last name form1 lastname lastname text 50",
     "id": "646-text-3",
     "pattern": "last.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_title\" maxlength=\"25\" name=\"title\" type=\"text\"/>",
-    "feature": "title text title form1 title 25",
+    "feature": "title form1 title title text 25",
     "id": "646-text-4",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "title",
+    "topic": "title"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_addressone\" maxlength=\"50\" name=\"addressone\" type=\"text\"/>",
-    "feature": "address one text addressone form1 addressone 50",
+    "feature": "address one form1 addressone addressone text 50",
     "id": "646-text-5",
     "pattern": "address.*one",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_addresstwo\" maxlength=\"50\" name=\"addresstwo\" type=\"text\"/>",
-    "feature": "address two text addresstwo form1 addresstwo 50",
+    "feature": "address two form1 addresstwo addresstwo text 50",
     "id": "646-text-6",
     "pattern": "address.*two",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_city\" maxlength=\"50\" name=\"city\" type=\"text\"/>",
-    "feature": "city text city form1 city 50",
+    "feature": "city form1 city city text 50",
     "id": "646-text-7",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_zipcode\" maxlength=\"20\" name=\"zipcode\" type=\"text\"/>",
-    "feature": "zip code text zipcode form1 zipcode 20",
+    "feature": "zip code form1 zipcode zipcode text 20",
     "id": "646-text-8",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofbirth\" name=\"dateofbirth\" type=\"text\"/>",
-    "feature": "your date of birth mm dd yyyy text dateofbirth form1 dateofbirth",
+    "feature": "your date of birth mm dd yyyy form1 dateofbirth dateofbirth text",
     "id": "646-text-9",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "date.*of.*birth",
+    "topic": "dob"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_modelnumber\" maxlength=\"50\" name=\"modelnumber\" type=\"text\"/>",
-    "feature": "model number text modelnumber form1 modelnumber 50",
+    "feature": "model number form1 modelnumber modelnumber text 50",
     "id": "646-text-10",
-    "pattern": "model.*number",
+    "pattern": "modelnumber",
     "topic": "model_number"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_nameofstore\" maxlength=\"50\" name=\"nameofstore\" type=\"text\"/>",
-    "feature": "name of store where purchased text nameofstore form1 nameofstore 50",
+    "feature": "name of store where purchased form1 nameofstore nameofstore text 50",
     "id": "646-text-11",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "name.*of.*store",
+    "topic": "store_name"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-12",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-13",
-    "pattern": "date",
+    "pattern": "date.*of.*purchase",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-14",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-15",
-    "pattern": "date",
+    "pattern": "date.*of.*purchase",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-16",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-17",
-    "pattern": "date",
+    "pattern": "date.*of.*purchase",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_pricepaid\" maxlength=\"20\" name=\"pricepaid\" type=\"text\"/>",
-    "feature": "price paid excluding sales tax text pricepaid form1 pricepaid 20",
+    "feature": "price paid excluding sales tax form1 pricepaid pricepaid text 20",
     "id": "646-text-18",
-    "pattern": "price",
+    "pattern": "price.*paid",
     "topic": "price"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-19",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-20",
-    "pattern": "date",
+    "pattern": "date.*of.*purchase",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_trimmerbrand\" maxlength=\"50\" name=\"trimmerbrand\" type=\"text\"/>",
-    "feature": "if trimmer what brand are you replacing text trimmerbrand form1 trimmerbrand 50",
+    "feature": "if trimmer what brand are you replacing form1 trimmerbrand trimmerbrand text 50",
     "id": "646-text-21",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-22",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-23",
     "pattern": "date",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-24",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-25",
     "pattern": "date",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_pricepaid\" maxlength=\"20\" name=\"pricepaid\" type=\"text\"/>",
-    "feature": "price paid excluding sales tax text pricepaid form1 pricepaid 20",
+    "feature": "price paid excluding sales tax form1 pricepaid pricepaid text 20",
     "id": "646-text-26",
     "pattern": "price",
     "topic": "price"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-27",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-28",
     "pattern": "date",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_pricepaid\" maxlength=\"20\" name=\"pricepaid\" type=\"text\"/>",
-    "feature": "price paid excluding sales tax text pricepaid form1 pricepaid 20",
+    "feature": "price paid excluding sales tax form1 pricepaid pricepaid text 20",
     "id": "646-text-29",
     "pattern": "price",
     "topic": "price"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_upccode\" maxlength=\"50\" name=\"upccode\" required=\"required\" type=\"text\"/>",
-    "feature": "upc code of this product 043917 text upccode form1 upccode 50",
+    "feature": "upc code of this product 043917 form1 upccode upccode text 50",
     "id": "646-text-30",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "upc",
+    "topic": "upc"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_dateofpurchase\" min=\"2009-01-01\" name=\"dateofpurchase\" type=\"text\"/>",
-    "feature": "date of purchase yyyy mm dd text dateofpurchase form1 dateofpurchase",
+    "feature": "date of purchase yyyy mm dd form1 dateofpurchase dateofpurchase text",
     "id": "646-text-31",
     "pattern": "date",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_pricepaid\" maxlength=\"20\" name=\"pricepaid\" type=\"text\"/>",
-    "feature": "price paid excluding sales tax text pricepaid form1 pricepaid 20",
+    "feature": "price paid excluding sales tax form1 pricepaid pricepaid text 20",
     "id": "646-text-32",
     "pattern": "price",
     "topic": "price"
   },
   {
     "dom": "<input class=\"form-text\" id=\"form1_email\" name=\"email\" required=\"required\" type=\"email\"/>",
-    "feature": "email email email form1 email",
+    "feature": "email form1 email email email",
     "id": "646-email-0",
     "pattern": "email",
     "topic": "email"

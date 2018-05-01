@@ -1,63 +1,63 @@
 [
   {
     "dom": "<input aria-describedby=\"tooltip-firstname\" aria-invalid=\"false\" aria-required=\"true\" id=\"ta-registration-firstname\" maxlength=\"20\" name=\"information.firstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name information firstname text ta registration firstname 20",
+    "feature": "first name ta registration firstname information firstname text 20",
     "id": "608-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-describedby=\"tooltip-lastname\" aria-invalid=\"false\" aria-required=\"true\" id=\"ta-registration-lastname\" maxlength=\"35\" name=\"information.lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name information lastname text ta registration lastname 35",
+    "feature": "last name ta registration lastname information lastname text 35",
     "id": "608-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-describedby=\"membership-help-tooltip membership-help\" aria-invalid=\"false\" aria-required=\"true\" disabled=\"disabled\" id=\"ta-registration-member-number\" maxlength=\"7\" name=\"membershipnumber\" type=\"text\" value=\"\"/>",
-    "feature": "membership number membershipnumber text ta registration member number 7",
+    "feature": "membership number ta registration member number membershipnumber text 7",
     "id": "608-text-2",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input aria-describedby=\"membership-postal-code-tooltip\" aria-invalid=\"false\" aria-required=\"true\" class=\"focus-tooltip\" disabled=\"disabled\" id=\"ta-registration-member-zip\" name=\"postalcode\" type=\"text\" value=\"\"/>",
-    "feature": "my postal code postalcode text ta registration member zip",
+    "feature": "my postal code ta registration member zip postalcode text",
     "id": "608-text-3",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postal.*code",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"quantity-selector-hint\" id=\"quantity-selector-other\" maxlength=\"4\" placeholder=\"other quantity\" type=\"text\"/>",
-    "feature": "other quantity ok please enter quantity other quantity quantity selector other text 4",
+    "feature": "other quantity ok please enter quantity text quantity selector other other quantity 4",
     "id": "608-text-4",
     "pattern": "quantity",
-    "topic": "quantity"
+    "topic": "quant"
   },
   {
     "dom": "<input aria-describedby=\"tooltip-email\" aria-invalid=\"false\" aria-required=\"true\" class=\"donotcopy\" id=\"ta-registration-email\" maxlength=\"50\" name=\"information.email\" type=\"email\" value=\"\"/>",
-    "feature": "email address information email email ta registration email 50",
+    "feature": "email address ta registration email information email email 50",
     "id": "608-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-describedby=\"tooltip-confirmationemail\" aria-invalid=\"false\" aria-required=\"true\" class=\"donotcopy\" id=\"ta-registration-confirmationemail\" maxlength=\"50\" name=\"information.confirmationemail\" type=\"email\" value=\"\"/>",
-    "feature": "confirm email address information confirmationemail email ta registration confirmationemail 50",
+    "feature": "confirm email address ta registration confirmationemail information confirmationemail email 50",
     "id": "608-email-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-describedby=\"registration-password-tooltip\" aria-invalid=\"false\" aria-required=\"true\" class=\"focus-tooltip js-registration-password-input\" id=\"ta-registration-password\" maxlength=\"100\" name=\"password\" type=\"password\" value=\"\"/>",
-    "feature": "password must password password ta registration password 100",
+    "feature": "password must ta registration password password password 100",
     "id": "608-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input aria-describedby=\"a11y-review-password-error\" aria-invalid=\"false\" aria-required=\"true\" class=\"focus-tooltip\" id=\"ta-registration-password-confirm\" maxlength=\"100\" name=\"confirmpassword\" type=\"password\" value=\"\"/>",
-    "feature": "confirm password confirmpassword password ta registration password confirm 100",
+    "feature": "confirm password ta registration password confirm confirmpassword password 100",
     "id": "608-password-1",
     "pattern": "password",
     "topic": "password"

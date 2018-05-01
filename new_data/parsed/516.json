@@ -10,7 +10,7 @@
     "dom": "<input aria-describedby=\"middleinitialerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"middleintiatedapply\" maxlength=\"1\" name=\"applyvto.applicantvo.middleintiatedapply\" onblur=\"middleinitialcheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"middle initial\" type=\"text\" value=\"\"/>",
     "feature": "optional m i text applyvto applicantvo middleintiatedapply middleintiatedapply 1",
     "id": "516-text-1",
-    "pattern": "middle.*initial",
+    "pattern": "middle.*int",
     "topic": "middle_initial"
   },
   {
@@ -24,15 +24,15 @@
     "dom": "<input aria-describedby=\"mailingaddresserrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"mailingaddress\" maxlength=\"35\" name=\"applyvto.applicantvo.streetaddressdapply\" onblur=\"mailingaddresscheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"street address\" type=\"text\" value=\"\"/>",
     "feature": "street address text applyvto applicantvo streetaddressdapply mailingaddress 35",
     "id": "516-text-3",
-    "pattern": "address.*one",
+    "pattern": "street.*address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"aptmnumbererrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"appaptmtnumber\" maxlength=\"25\" name=\"applyvto.applicantvo.aptmtnumber\" onblur=\"apartmentnumbercheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"apartment number\" type=\"text\" value=\"\"/>",
     "feature": "optional apt text applyvto applicantvo aptmtnumber appaptmtnumber 25",
     "id": "516-text-4",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apt.*number",
+    "topic": "apartment"
   },
   {
     "dom": "<input aria-describedby=\"cityandstateerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"applyvto_applicantvo_city_id\" maxlength=\"20\" name=\"applyvto.applicantvo.cityandstatedapply\" onblur=\"cityandstatecheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"city and state\" type=\"text\" value=\"\"/>",
@@ -59,8 +59,8 @@
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"rewardsnumber\" maxlength=\"20\" name=\"applyvto.applicantvo.rewardsnumberdapply\" onblur=\"rewardsnumbercheck();\" pattern=\"[a-za-z0-9\\s]+\" style=\"border-color: rgb(204, 204, 204);\" type=\"text\" value=\"\"/>",
     "feature": "optional optional 00 optional optional optional optional associate id annual net income ssn itin date of birth confirm email address email address primary phone type zip code city state housing street address apt last name suffix first name m i text applyvto applicantvo rewardsnumberdapply rewardsnumber 20",
     "id": "516-text-8",
-    "pattern": "address.*one",
-    "topic": "address_1"
+    "pattern": "rewards.*number",
+    "topic": "rewards_number"
   },
   {
     "dom": "<input aria-describedby=\"coappfnameerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappfirstname\" maxlength=\"20\" name=\"applyvto.jointapplicantvo.firstname\" onblur=\"coappfirstnamecheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant first name\" type=\"text\" value=\"\"/>",
@@ -73,7 +73,7 @@
     "dom": "<input aria-describedby=\"coappmiddleinitialerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappmiddleinitial\" maxlength=\"1\" name=\"applyvto.jointapplicantvo.middleintiatedapply\" onblur=\"coappmiddleinitialcheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant middle initial\" type=\"text\" value=\"\"/>",
     "feature": "optional m i text applyvto jointapplicantvo middleintiatedapply coappmiddleinitial 1",
     "id": "516-text-10",
-    "pattern": "middle.*initial",
+    "pattern": "middle.*int",
     "topic": "middle_initial"
   },
   {
@@ -87,22 +87,22 @@
     "dom": "<input aria-describedby=\"coappmailingaddresserrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappmailingaddress\" maxlength=\"35\" name=\"applyvto.jointapplicantvo.streetaddressdapply\" onblur=\"coappmailingaddresscheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant street address\" type=\"text\" value=\"\"/>",
     "feature": "street address text applyvto jointapplicantvo streetaddressdapply coappmailingaddress 35",
     "id": "516-text-12",
-    "pattern": "address.*one",
+    "pattern": "street.*address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"jointapartmentnumbererrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointapartmentnumber\" maxlength=\"25\" name=\"applyvto.jointapplicantvo.aptmtnumber\" onblur=\"jointapartmentnumbercheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant apartment number\" type=\"text\" value=\"\"/>",
     "feature": "optional apt text applyvto jointapplicantvo aptmtnumber jointapartmentnumber 25",
     "id": "516-text-13",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apartment.*number",
+    "topic": "apartment"
   },
   {
     "dom": "<input aria-describedby=\"jointcitystateerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"applyvto_jointapplicantvo_city_id\" maxlength=\"20\" name=\"applyvto.jointapplicantvo.cityandstatedapply\" onblur=\"jointcityandstatecheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant city and state\" type=\"text\" value=\"\"/>",
     "feature": "city state text applyvto jointapplicantvo cityandstatedapply applyvto jointapplicantvo city id 20",
     "id": "516-text-14",
-    "pattern": "city",
-    "topic": "city"
+    "pattern": "city.*and.*state",
+    "topic": "city_and_state"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointstationid\" name=\"applyvto.jointapplicantvo.stationiddapply\" pattern=\"[0-9]*\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant \" type=\"text\" value=\"\"/>",
@@ -122,8 +122,8 @@
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointrewardsnumber\" maxlength=\"9\" name=\"applyvto.jointapplicantvo.rewardsnumberdapply\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant \" type=\"text\" value=\"\"/>",
     "feature": "optional text applyvto jointapplicantvo rewardsnumberdapply jointrewardsnumber 9",
     "id": "516-text-17",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "rewards.*number",
+    "topic": "rewards_number"
   },
   {
     "dom": "<input aria-describedby=\"emailerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"emailcheck\" maxlength=\"40\" name=\"applyvto.applicantvo.email\" onblur=\"emailchecking();\" style=\"border-color: rgb(204, 204, 204);\" title=\"email address\" type=\"email\" value=\"\"/>",
@@ -157,84 +157,84 @@
     "dom": "<input aria-describedby=\"coappssnerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control ui-mask\" id=\"jointssn\" name=\"applyvto.jointapplicantvo.socialsecuritynumberdapply\" onblur=\"coappssnvalid();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant social security number\" type=\"password\" value=\"\"/>",
     "feature": "ssn itin password applyvto jointapplicantvo socialsecuritynumberdapply jointssn",
     "id": "516-password-0",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number",
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-describedby=\"ziperrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control ui-autocomplete-input\" id=\"applyvto_applicantvo_zip_id\" max=\"999999999\" maxlength=\"9\" min=\"0\" name=\"applyvto.applicantvo.zip\" onblur=\"zipcodecheck();getstationslocations();\" style=\"border-color: rgb(204, 204, 204);\" title=\"zip code\" type=\"tel\" value=\"\"/>",
     "feature": "zip code tel applyvto applicantvo zip applyvto applicantvo zip id 9",
     "id": "516-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"primaryphoneerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text ui-mask\" id=\"appprimaryphone\" name=\"applyvto.applicantvo.primaryphonedapply\" onblur=\"primaryphonecheck();\" onclick=\"setcursorposition(this);\" onkeyup=\"validateada(this.value, '305-555-1212','y');\" style=\"border-color: rgb(204, 204, 204);\" title=\"primary phone\" type=\"tel\" value=\"\"/>",
     "feature": "primary phone tel applyvto applicantvo primaryphonedapply appprimaryphone",
     "id": "516-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "primary.*phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-describedby=\"alternatephoneerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control ui-mask\" id=\"appalterphone\" name=\"applyvto.applicantvo.alternatephonedapply\" onblur=\"alternatephonecheck();\" onclick=\"setcursorposition(this);\" style=\"border-color: rgb(204, 204, 204);\" type=\"tel\" value=\"\"/>",
     "feature": "optional tel applyvto applicantvo alternatephonedapply appalterphone",
     "id": "516-tel-2",
-    "pattern": "cell.*phone",
-    "topic": "cell_phone_number"
+    "pattern": "alternate.*phone",
+    "topic": "phone_alt"
   },
   {
     "dom": "<input aria-describedby=\"ssnerrordiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control ui-mask\" id=\"appssn\" name=\"applyvto.applicantvo.socialsecuritynumberdapply\" onblur=\"ssnvalid();\" onclick=\"setcursorposition(this);\" pattern=\"[0-9]*\" style=\"border-color: rgb(204, 204, 204);\" title=\"social security number\" type=\"tel\" value=\"\"/>",
     "feature": "ssn itin tel applyvto applicantvo socialsecuritynumberdapply appssn",
     "id": "516-tel-3",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number",
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-describedby=\"doberrordiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control ui-mask\" id=\"appdob\" name=\"applyvto.applicantvo.dob\" onblur=\"dobcheck();\" onclick=\"setcursorposition(this);\" style=\"border-color: rgb(204, 204, 204);\" title=\"date of birth\" type=\"tel\" value=\"\"/>",
     "feature": "date of birth tel applyvto applicantvo dob appdob",
     "id": "516-tel-4",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-describedby=\"amounterrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text-ani\" id=\"appnetincome\" max=\"999999\" maxlength=\"6\" name=\"applyvto.applicantvo.annualnetincomedapply\" onblur=\"amountcheck();\" onfocus=\"amtcommaremove();\" onkeyup=\"allnumeric();\" style=\"border-color: rgb(204, 204, 204);\" title=\"annual net income\" type=\"tel\" value=\"\"/>",
     "feature": "00 tel applyvto applicantvo annualnetincomedapply appnetincome 6",
     "id": "516-tel-5",
-    "pattern": "income",
+    "pattern": "annual.*net.*income",
     "topic": "income"
   },
   {
     "dom": "<input aria-describedby=\"jointziperrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control ui-autocomplete-input\" id=\"applyvto_jointapplicantvo_zip_id\" max=\"999999999\" maxlength=\"9\" min=\"0\" name=\"applyvto.jointapplicantvo.zip\" onblur=\"jointzipcodecheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant zip code\" type=\"tel\" value=\"\"/>",
     "feature": "zip code tel applyvto jointapplicantvo zip applyvto jointapplicantvo zip id 9",
     "id": "516-tel-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"coappprimaryphoneerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text-coapp ui-mask\" id=\"jointprimaryphone\" name=\"applyvto.jointapplicantvo.primaryphonedapply\" onblur=\"coappprimaryphonecheck();\" onkeyup=\"validatecoappada(this.value, '305-555-1212','y');\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant primary phone\" type=\"tel\" value=\"\"/>",
     "feature": "primary phone tel applyvto jointapplicantvo primaryphonedapply jointprimaryphone",
     "id": "516-tel-7",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "primary.*phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-describedby=\"jointalterphoneerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control ui-mask\" id=\"jointalterphone\" name=\"applyvto.jointapplicantvo.alternatephonedapply\" onblur=\"jointalternatephonecheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant \" type=\"tel\" value=\"\"/>",
     "feature": "optional tel applyvto jointapplicantvo alternatephonedapply jointalterphone",
     "id": "516-tel-8",
-    "pattern": "cell.*phone",
-    "topic": "cell_phone_number"
+    "pattern": "alternate.*phone",
+    "topic": "phone_alt"
   },
   {
     "dom": "<input aria-describedby=\"jdoberrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control ui-mask\" id=\"jointdob\" name=\"applyvto.jointapplicantvo.dob\" onblur=\"jointdobcheck();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant date of birth\" type=\"tel\" value=\"\"/>",
     "feature": "date of birth tel applyvto jointapplicantvo dob jointdob",
     "id": "516-tel-9",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-describedby=\"jamounterrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text-coapp-ani\" id=\"jointappnetincome\" max=\"9999999999\" maxlength=\"10\" min=\"0\" name=\"applyvto.jointapplicantvo.annualnetincomedapply\" onblur=\"jointamountcheck();\" onfocus=\"amtcommaremovejoint();\" style=\"border-color: rgb(204, 204, 204);\" title=\"joint applicant annual net income\" type=\"tel\" value=\"\"/>",
     "feature": "00 tel applyvto jointapplicantvo annualnetincomedapply jointappnetincome 10",
     "id": "516-tel-10",
-    "pattern": "income",
+    "pattern": "annual.*net.*income",
     "topic": "income"
   }
 ]

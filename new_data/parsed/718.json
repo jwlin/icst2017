@@ -1,14 +1,14 @@
 [
   {
     "dom": "<input class=\"w300 text\" id=\"email\" maxlength=\"255\" name=\"email\" size=\"60\" type=\"text\" value=\"\"/>",
-    "feature": "email email email text 255",
+    "feature": "email email text email 255",
     "id": "718-text-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"verification\" id=\"authkey\" maxlength=\"4\" name=\"authkey\" type=\"text\" value=\"\"/>",
-    "feature": "verification code authkey authkey text 4",
+    "feature": "verification code text authkey authkey 4",
     "id": "718-text-1",
     "pattern": "unk",
     "topic": "unk"
@@ -22,7 +22,7 @@
   },
   {
     "dom": "<input class=\"w200 text\" id=\"password_cfm\" maxlength=\"12\" name=\"password_cfm\" size=\"20\" type=\"password\"/>",
-    "feature": "confirm password password cfm password cfm password 12",
+    "feature": "confirm password password cfm password password cfm 12",
     "id": "718-password-1",
     "pattern": "password",
     "topic": "password"

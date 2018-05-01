@@ -1,58 +1,58 @@
 [
   {
     "dom": "<input class=\"form-control\" id=\"9c3cec9a-0cb5-4f45-bfe7-087095e26eeb\" name=\"main_0$mainframed_1$fields$ctl00$ctl00$9c3cec9a-0cb5-4f45-bfe7-087095e26eeb\" type=\"text\"/>",
-    "feature": "full name text main 0 mainframed 1 fields ctl00 ctl00 9c3cec9a 0cb5 4f45 bfe7 087095e26eeb 9c3cec9a 0cb5 4f45 bfe7 087095e26eeb",
+    "feature": "full name main 0 mainframed 1 fields ctl00 ctl00 9c3cec9a 0cb5 4f45 bfe7 087095e26eeb text 9c3cec9a 0cb5 4f45 bfe7 087095e26eeb",
     "id": "623-text-0",
-    "pattern": "full.*name",
+    "pattern": "main_0",
     "topic": "full_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"c65f7eb5-9b7a-49cd-b003-ee9b0912d264\" name=\"main_0$mainframed_1$fields$ctl01$ctl00$c65f7eb5-9b7a-49cd-b003-ee9b0912d264\" type=\"text\"/>",
-    "feature": "email address text main 0 mainframed 1 fields ctl01 ctl00 c65f7eb5 9b7a 49cd b003 ee9b0912d264 c65f7eb5 9b7a 49cd b003 ee9b0912d264",
+    "feature": "email address main 0 mainframed 1 fields ctl01 ctl00 c65f7eb5 9b7a 49cd b003 ee9b0912d264 text c65f7eb5 9b7a 49cd b003 ee9b0912d264",
     "id": "623-text-1",
-    "pattern": "email",
+    "pattern": "main_0",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" id=\"e177b453-2312-4be1-8991-edc53f81231f\" name=\"main_0$mainframed_1$fields$ctl02$ctl00$e177b453-2312-4be1-8991-edc53f81231f\" type=\"text\"/>",
-    "feature": "phone number text main 0 mainframed 1 fields ctl02 ctl00 e177b453 2312 4be1 8991 edc53f81231f e177b453 2312 4be1 8991 edc53f81231f",
+    "feature": "phone number main 0 mainframed 1 fields ctl02 ctl00 e177b453 2312 4be1 8991 edc53f81231f text e177b453 2312 4be1 8991 edc53f81231f",
     "id": "623-text-2",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "main_0",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control\" id=\"0a2c9647-5624-4d60-aee5-163266080d59\" name=\"main_0$mainframed_1$fields$ctl05$ctl00$0a2c9647-5624-4d60-aee5-163266080d59\" type=\"text\"/>",
-    "feature": "other text main 0 mainframed 1 fields ctl05 ctl00 0a2c9647 5624 4d60 aee5 163266080d59 0a2c9647 5624 4d60 aee5 163266080d59",
+    "feature": "other main 0 mainframed 1 fields ctl05 ctl00 0a2c9647 5624 4d60 aee5 163266080d59 text 0a2c9647 5624 4d60 aee5 163266080d59",
     "id": "623-text-3",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input class=\"form-control\" id=\"5db1c47d-133e-474c-b4ad-f6db111b92cc\" name=\"main_0$mainframed_1$fields$ctl06$ctl00$5db1c47d-133e-474c-b4ad-f6db111b92cc\" type=\"text\"/>",
-    "feature": "product serial number please enter the product serial number located on the product label text main 0 mainframed 1 fields ctl06 ctl00 5db1c47d 133e 474c b4ad f6db111b92cc 5db1c47d 133e 474c b4ad f6db111b92cc",
+    "feature": "product serial number please enter the product serial number located on the product label main 0 mainframed 1 fields ctl06 ctl00 5db1c47d 133e 474c b4ad f6db111b92cc text 5db1c47d 133e 474c b4ad f6db111b92cc",
     "id": "623-text-4",
-    "pattern": "serial",
+    "pattern": "main_0",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"form-control form-datepicker\" id=\"70aec86b-5851-427a-ae85-e9a47f23697b\" name=\"main_0$mainframed_1$fields$ctl07$ctl00$70aec86b-5851-427a-ae85-e9a47f23697b\" type=\"text\"/>",
-    "feature": "date of purchase text main 0 mainframed 1 fields ctl07 ctl00 70aec86b 5851 427a ae85 e9a47f23697b 70aec86b 5851 427a ae85 e9a47f23697b",
+    "feature": "date of purchase main 0 mainframed 1 fields ctl07 ctl00 70aec86b 5851 427a ae85 e9a47f23697b text 70aec86b 5851 427a ae85 e9a47f23697b",
     "id": "623-text-5",
-    "pattern": "date",
+    "pattern": "main_0",
     "topic": "date"
   },
   {
     "dom": "<input class=\"form-control\" id=\"e2dd9c7f-945e-461c-b134-6c03a9488710\" name=\"main_0$mainframed_1$fields$ctl08$ctl00$e2dd9c7f-945e-461c-b134-6c03a9488710\" type=\"text\"/>",
-    "feature": "place of purchase text main 0 mainframed 1 fields ctl08 ctl00 e2dd9c7f 945e 461c b134 6c03a9488710 e2dd9c7f 945e 461c b134 6c03a9488710",
+    "feature": "place of purchase main 0 mainframed 1 fields ctl08 ctl00 e2dd9c7f 945e 461c b134 6c03a9488710 text e2dd9c7f 945e 461c b134 6c03a9488710",
     "id": "623-text-6",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "main_0",
+    "topic": "store_name"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"search-query form-control\" id=\"searchquery\" maxlength=\"1024\" name=\"header_0$searchquery\" placeholder=\"search\" type=\"search\"/>",
-    "feature": "search show all search search searchquery header 0 searchquery 1024",
+    "feature": "search show all header 0 searchquery searchquery search search 1024",
     "id": "623-search-0",
-    "pattern": "search",
+    "pattern": "search.*query",
     "topic": "search"
   }
 ]

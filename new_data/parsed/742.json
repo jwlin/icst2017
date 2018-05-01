@@ -1,31 +1,31 @@
 [
   {
     "dom": "<input id=\"fname\" maxlength=\"25\" name=\"fname\" onchange=\"checkcaps(this.value)\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "first given name middle name last family name other names used fname fname text 25",
+    "feature": "first given name middle name last family name other names used text fname fname 25",
     "id": "742-text-0",
-    "pattern": "first.*name",
+    "pattern": "fname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"mname\" maxlength=\"25\" name=\"mname\" type=\"text\" value=\"\"/>",
     "feature": "middle name first given name last family name other names used text mname mname 25",
     "id": "742-text-1",
-    "pattern": "middle.*name",
+    "pattern": "m.*name",
     "topic": "middle_name"
   },
   {
     "dom": "<input id=\"lname\" maxlength=\"25\" name=\"lname\" onchange=\"checkcaps(this.value)\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "last family name middle name first given name other names used lname lname text 25",
+    "feature": "last family name middle name first given name other names used text lname lname 25",
     "id": "742-text-2",
-    "pattern": "last.*name",
+    "pattern": "l.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"oname\" maxlength=\"100\" name=\"oname\" onchange=\"checkcaps(this.value)\" type=\"text\" value=\"\"/>",
-    "feature": "other names used last family name middle name first given name oname oname text 100",
+    "feature": "other names used last family name middle name first given name text oname oname 100",
     "id": "742-text-3",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "o.*name",
+    "topic": "maiden_name"
   },
   {
     "dom": "<input id=\"nuid\" name=\"nuid\" onchange=\"checkid()\" type=\"text\" value=\"\"/>",
@@ -43,28 +43,28 @@
   },
   {
     "dom": "<input alt=\"birthdate day\" id=\"birthdd\" maxlength=\"2\" name=\"birthdd\" onchange=\"validdate(this,'day')\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "day month year birthdd birthdd text 2",
+    "feature": "day month year text birthdd birthdd 2",
     "id": "742-text-6",
-    "pattern": "birth.*day",
-    "topic": "date_of_birth_day"
+    "pattern": "birth.*dd",
+    "topic": "dob_day"
   },
   {
     "dom": "<input alt=\"birthdate year\" id=\"birthyyyy\" maxlength=\"4\" name=\"birthyy\" onchange=\"validdate(this,'birthyear')\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "year day month birthyy birthyyyy text 4",
+    "feature": "year day month text birthyy birthyyyy 4",
     "id": "742-text-7",
-    "pattern": "birth.*year",
-    "topic": "date_of_birth_year"
+    "pattern": "birth.*yy",
+    "topic": "dob_year"
   },
   {
     "dom": "<input alt=\"birth city\" id=\"birthcity\" maxlength=\"30\" name=\"birthcity\" type=\"text\" value=\"\"/>",
-    "feature": "birth city country of citizenship birth country type of visa expected birthcity birthcity text 30",
+    "feature": "birth city country of citizenship birth country type of visa expected text birthcity birthcity 30",
     "id": "742-text-8",
-    "pattern": "city",
-    "topic": "city"
+    "pattern": "birth.*city",
+    "topic": "birth_city"
   },
   {
     "dom": "<input id=\"email\" maxlength=\"50\" name=\"email\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "email address phone number email email text 50",
+    "feature": "email address phone number text email email 50",
     "id": "742-text-9",
     "pattern": "email",
     "topic": "email"
@@ -73,117 +73,117 @@
     "dom": "<input id=\"phone\" maxlength=\"13\" name=\"phone\" type=\"text\" value=\"\"/>",
     "feature": "phone number email address text phone phone 13",
     "id": "742-text-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input alt=\"street line 1\" id=\"cstreet\" maxlength=\"30\" name=\"cstreet\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "line 1 line 2 city country zip postal code if us if non us cstreet cstreet text 30",
+    "feature": "line 1 line 2 city country zip postal code if us if non us text cstreet cstreet 30",
     "id": "742-text-11",
-    "pattern": "address.*one",
+    "pattern": "street",
     "topic": "address_1"
   },
   {
     "dom": "<input alt=\"street line 2\" id=\"cstreet2\" maxlength=\"30\" name=\"cstreet2\" type=\"text\" value=\"\"/>",
-    "feature": "line 2 line 1 city country zip postal code if us if non us cstreet2 cstreet2 text 30",
+    "feature": "line 2 line 1 city country zip postal code if us if non us text cstreet2 cstreet2 30",
     "id": "742-text-12",
-    "pattern": "address.*two",
+    "pattern": "street2",
     "topic": "address_2"
   },
   {
     "dom": "<input alt=\"city\" id=\"ccity\" maxlength=\"25\" name=\"ccity\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "city line 2 line 1 country zip postal code if us if non us ccity ccity text 25",
+    "feature": "city line 2 line 1 country zip postal code if us if non us text ccity ccity 25",
     "id": "742-text-13",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input alt=\"province\" id=\"nonstate\" maxlength=\"20\" name=\"nonstate\" type=\"text\" value=\"\"/>",
-    "feature": "if non us if us nonstate nonstate text 20",
+    "feature": "if non us if us nonstate text nonstate 20",
     "id": "742-text-14",
-    "pattern": "province",
-    "topic": "province"
+    "pattern": "non.*state",
+    "topic": "state_non_us"
   },
   {
     "dom": "<input alt=\"zip code\" id=\"czip\" maxlength=\"10\" name=\"czip\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "zip postal code country city line 2 line 1 if us if non us czip czip text 10",
+    "feature": "zip postal code country city line 2 line 1 if us if non us text czip czip 10",
     "id": "742-text-15",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input alt=\"ne residency start (mm/yyyy)\" id=\"neresmm\" maxlength=\"7\" name=\"neresmm\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy mm yyyy start of ne residence mm yyyy employer location position start date mm yyyy end date mm yyyy neresmm neresmm text 7",
+    "feature": "mm yyyy mm yyyy mm yyyy start of ne residence mm yyyy employer location position start date mm yyyy end date mm yyyy text neresmm neresmm 7",
     "id": "742-text-16",
+    "pattern": "res.*mm",
+    "topic": "resident_month"
+  },
+  {
+    "dom": "<input alt=\"employer\" id=\"nebresi3\" maxlength=\"30\" name=\"employer\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy employer location position start date mm yyyy end date mm yyyy text employer nebresi3 30",
+    "id": "742-text-17",
+    "pattern": "employer",
+    "topic": "employer"
+  },
+  {
+    "dom": "<input alt=\"location\" id=\"nebresi4\" maxlength=\"30\" name=\"employloc\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy location employer position start date mm yyyy end date mm yyyy text employloc nebresi4 30",
+    "id": "742-text-18",
+    "pattern": "employ.*loc",
+    "topic": "job_city"
+  },
+  {
+    "dom": "<input alt=\"position\" id=\"nebresi5\" maxlength=\"30\" name=\"jobtitle\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy position location employer start date mm yyyy end date mm yyyy text jobtitle nebresi5 30",
+    "id": "742-text-19",
+    "pattern": "job.*title",
+    "topic": "job"
+  },
+  {
+    "dom": "<input alt=\"begin date (mm/yyyy)\" id=\"jobfrom\" maxlength=\"7\" name=\"jobfrommonth\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
+    "feature": "mm yyyy mm yyyy start date mm yyyy position location employer end date mm yyyy text jobfrommonth jobfrom 7",
+    "id": "742-text-20",
     "pattern": "unk",
     "topic": "unk"
   },
   {
-    "dom": "<input alt=\"employer\" id=\"nebresi3\" maxlength=\"30\" name=\"employer\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy employer location position start date mm yyyy end date mm yyyy nebresi3 employer text 30",
-    "id": "742-text-17",
-    "pattern": "company",
-    "topic": "company_name"
-  },
-  {
-    "dom": "<input alt=\"location\" id=\"nebresi4\" maxlength=\"30\" name=\"employloc\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy location employer position start date mm yyyy end date mm yyyy nebresi4 employloc text 30",
-    "id": "742-text-18",
-    "pattern": "city",
-    "topic": "city"
-  },
-  {
-    "dom": "<input alt=\"position\" id=\"nebresi5\" maxlength=\"30\" name=\"jobtitle\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy position location employer start date mm yyyy end date mm yyyy nebresi5 jobtitle text 30",
-    "id": "742-text-19",
-    "pattern": "job",
-    "topic": "job_title"
-  },
-  {
-    "dom": "<input alt=\"begin date (mm/yyyy)\" id=\"jobfrom\" maxlength=\"7\" name=\"jobfrommonth\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy start date mm yyyy position location employer end date mm yyyy jobfrom jobfrommonth text 7",
-    "id": "742-text-20",
-    "pattern": "month",
-    "topic": "month"
-  },
-  {
     "dom": "<input alt=\"end date (mm/yyyy)\" id=\"jobto\" maxlength=\"7\" name=\"jobtomonth\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy end date mm yyyy start date mm yyyy position location employer jobto jobtomonth text 7",
+    "feature": "mm yyyy mm yyyy end date mm yyyy start date mm yyyy position location employer text jobtomonth jobto 7",
     "id": "742-text-21",
-    "pattern": "month",
-    "topic": "month"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input id=\"collegename1\" maxlength=\"32\" name=\"collegename1\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "name of school 1 city state country from mm yyyy to mm yyyy collegename1 collegename1 text 32",
+    "feature": "name of school 1 city state country from mm yyyy to mm yyyy text collegename1 collegename1 32",
     "id": "742-text-22",
-    "pattern": "college",
+    "pattern": "college.*name",
     "topic": "college"
   },
   {
     "dom": "<input id=\"loc1\" maxlength=\"32\" name=\"loc1\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "city name of school 1 state country from mm yyyy to mm yyyy loc1 loc1 text 32",
+    "feature": "city name of school 1 state country from mm yyyy to mm yyyy text loc1 loc1 32",
     "id": "742-text-23",
-    "pattern": "city",
+    "pattern": "loc",
     "topic": "city"
   },
   {
     "dom": "<input id=\"start1\" maxlength=\"7\" name=\"start1\" onchange=\"validdate(this,'month/year')\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "from mm yyyy to mm yyyy start1 start1 text 7",
+    "feature": "from mm yyyy to mm yyyy text start1 start1 7",
     "id": "742-text-24",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"finish1\" maxlength=\"7\" name=\"finish1\" onchange=\"validdate(this,'month/year')\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "to mm yyyy from mm yyyy finish1 finish1 text 7",
+    "feature": "to mm yyyy from mm yyyy text finish1 finish1 7",
     "id": "742-text-25",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"grad1a\" maxlength=\"7\" name=\"grad1a\" onchange=\"validdate(this,'month/year')\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "date degree grad1a grad1a text 7",
+    "feature": "date degree text grad1a grad1a 7",
     "id": "742-text-26",
     "pattern": "unk",
     "topic": "unk"
@@ -204,16 +204,16 @@
   },
   {
     "dom": "<input alt=\"college name\" id=\"collegename2\" maxlength=\"32\" name=\"collegename2\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy name of school 2 city state country from mm yyyy to mm yyyy collegename2 collegename2 text 32",
+    "feature": "mm yyyy mm yyyy name of school 2 city state country from mm yyyy to mm yyyy collegename2 text collegename2 32",
     "id": "742-text-29",
-    "pattern": "college",
+    "pattern": "college.*name",
     "topic": "college"
   },
   {
     "dom": "<input alt=\"city\" id=\"loc2\" maxlength=\"32\" name=\"loc2\" type=\"text\" value=\"\"/>",
-    "feature": "mm yyyy mm yyyy city name of school 2 state country from mm yyyy to mm yyyy loc2 loc2 text 32",
+    "feature": "mm yyyy mm yyyy city name of school 2 state country from mm yyyy to mm yyyy loc2 text loc2 32",
     "id": "742-text-30",
-    "pattern": "city",
+    "pattern": "loc",
     "topic": "city"
   },
   {
@@ -248,21 +248,21 @@
     "dom": "<input id=\"grad2c\" maxlength=\"7\" name=\"grad2c\" onchange=\"validdate(this,'month/year')\" type=\"text\" value=\"\"/>",
     "feature": "date degree grad2c text grad2c 7",
     "id": "742-text-35",
-    "pattern": "unk",
+    "pattern": "",
     "topic": "unk"
   },
   {
     "dom": "<input alt=\"college name\" id=\"collegename3\" maxlength=\"32\" name=\"collegename3\" type=\"text\" value=\"\"/>",
-    "feature": "name of school 3 city state country from to collegename3 collegename3 text 32",
+    "feature": "name of school 3 city state country from to collegename3 text collegename3 32",
     "id": "742-text-36",
-    "pattern": "college",
+    "pattern": "college.*name",
     "topic": "college"
   },
   {
     "dom": "<input alt=\"city\" id=\"loc3\" maxlength=\"32\" name=\"loc3\" type=\"text\" value=\"\"/>",
-    "feature": "city name of school 3 state country from to loc3 loc3 text 32",
+    "feature": "city name of school 3 state country from to loc3 text loc3 32",
     "id": "742-text-37",
-    "pattern": "city",
+    "pattern": "loc",
     "topic": "city"
   },
   {
@@ -302,16 +302,16 @@
   },
   {
     "dom": "<input alt=\"college name\" id=\"collegename4\" maxlength=\"32\" name=\"collegename4\" type=\"text\" value=\"\"/>",
-    "feature": "name of school 4 city state country from to collegename4 collegename4 text 32",
+    "feature": "name of school 4 city state country from to collegename4 text collegename4 32",
     "id": "742-text-43",
-    "pattern": "college",
+    "pattern": "college.*name",
     "topic": "college"
   },
   {
     "dom": "<input alt=\"city\" id=\"loc4\" maxlength=\"32\" name=\"loc4\" type=\"text\" value=\"\"/>",
-    "feature": "city name of school 4 state country from to loc4 loc4 text 32",
+    "feature": "city name of school 4 state country from to loc4 text loc4 32",
     "id": "742-text-44",
-    "pattern": "city",
+    "pattern": "loc",
     "topic": "city"
   },
   {
@@ -351,16 +351,16 @@
   },
   {
     "dom": "<input alt=\"college name\" id=\"collegename5\" maxlength=\"32\" name=\"collegename5\" type=\"text\" value=\"\"/>",
-    "feature": "name of school 5 city state country from to collegename5 collegename5 text 32",
+    "feature": "name of school 5 city state country from to collegename5 text collegename5 32",
     "id": "742-text-50",
-    "pattern": "college",
+    "pattern": "college.*name",
     "topic": "college"
   },
   {
     "dom": "<input alt=\"city\" id=\"loc5\" maxlength=\"32\" name=\"loc5\" type=\"text\" value=\"\"/>",
-    "feature": "city name of school 5 state country from to loc5 loc5 text 32",
+    "feature": "city name of school 5 state country from to loc5 text loc5 32",
     "id": "742-text-51",
-    "pattern": "city",
+    "pattern": "loc",
     "topic": "city"
   },
   {
@@ -402,14 +402,14 @@
     "dom": "<input alt=\"promotion code\" id=\"promo_code\" name=\"promo_code\" type=\"text\" value=\"\"/>",
     "feature": "if you have been given a no fee authorization code enter that code here i don t have to pay the fee text promo code promo code",
     "id": "742-text-57",
-    "pattern": "coupon.*code",
-    "topic": "coupon_code"
+    "pattern": "promo.*code",
+    "topic": "promo_code"
   },
   {
     "dom": "<input accesskey=\"f\" id=\"wdn_search_query\" name=\"q\" required=\"\" type=\"search\"/>",
-    "feature": "search search q wdn search query",
+    "feature": "search wdn search query q search",
     "id": "742-search-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   }
 ]

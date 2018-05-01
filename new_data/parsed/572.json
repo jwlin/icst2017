@@ -15,10 +15,10 @@
   },
   {
     "dom": "<input aria-label=\"select depart date\" aria-required=\"true\" autocomplete=\"off\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_train_number\" data-validate-input=\"\" maxlength=\"10\" placeholder=\"mm/dd/yyyy\" type=\"text\" value=\"04/08/2018\"/>",
-    "feature": "please enter a valid date text 04 08 2018 mm dd yyyy 10",
+    "feature": "please enter a valid date 04 08 2018 text mm dd yyyy 10",
     "id": "572-text-2",
-    "pattern": "date",
-    "topic": "date"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input aria-activedescendant=\"\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-label=\"enter a valid station code or city.\" aria-owns=\"search-station-dropdown__stations_list\" autocomplete=\"off\" class=\"search-station-field__inp\" data-automation-id=\"fstation\" data-julie=\"fromfield_status\" name=\"wdf_origin\" role=\"combobox\" type=\"text\"/>",
@@ -36,21 +36,21 @@
   },
   {
     "dom": "<input aria-label=\"select depart date\" aria-required=\"true\" autocomplete=\"off\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_stations\" data-validate-input=\"\" maxlength=\"10\" placeholder=\"mm/dd/yyyy\" type=\"text\" value=\"04/08/2018\"/>",
-    "feature": "please enter a valid date text 04 08 2018 mm dd yyyy 10",
+    "feature": "please enter a valid date 04 08 2018 text mm dd yyyy 10",
     "id": "572-text-5",
-    "pattern": "date",
-    "topic": "date"
-  },
-  {
-    "dom": "<input aria-label=\"reservation number \" class=\"site-secondary__subnavbar_modify-form_field_container_inp form-input-with-label__inp\" data-automation-id=\"modifytripreservationnumberinp\" data-julie=\"mt_res_no\" id=\"mytrip_res_num\" name=\"_reference\" placeholder=\"\" type=\"text\"/>",
-    "feature": "please enter a valid reservation number text mytrip res num reference",
-    "id": "572-text-6",
     "pattern": "unk",
     "topic": "unk"
   },
   {
+    "dom": "<input aria-label=\"reservation number \" class=\"site-secondary__subnavbar_modify-form_field_container_inp form-input-with-label__inp\" data-automation-id=\"modifytripreservationnumberinp\" data-julie=\"mt_res_no\" id=\"mytrip_res_num\" name=\"_reference\" placeholder=\"\" type=\"text\"/>",
+    "feature": "please enter a valid reservation number mytrip res num text reference",
+    "id": "572-text-6",
+    "pattern": "res.*num",
+    "topic": "reservation_number"
+  },
+  {
     "dom": "<input aria-label=\"email address or phone number \" class=\"site-secondary__subnavbar_modify-form_field_container_inp form-input-with-label__inp\" data-automation-id=\"modifytriplastnameemailinp\" data-julie=\"mt_email\" id=\"mytrip_res_email\" name=\"_modifyemailaddress\" placeholder=\"\" type=\"text\"/>",
-    "feature": "please enter a valid email address or telephone number text mytrip res email modifyemailaddress",
+    "feature": "please enter a valid email address or telephone number mytrip res email text modifyemailaddress",
     "id": "572-text-7",
     "pattern": "email",
     "topic": "email"
@@ -87,8 +87,8 @@
     "dom": "<input aria-label=\"select depart date\" aria-required=\"true\" autocomplete=\"off\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_schedules\" data-validate-input=\"\" maxlength=\"10\" placeholder=\"mm/dd/yyyy\" type=\"text\"/>",
     "feature": "please enter a valid date text mm dd yyyy 10",
     "id": "572-text-12",
-    "pattern": "date",
-    "topic": "date"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input aria-activedescendant=\"\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-label=\"enter a valid station code or city.\" aria-owns=\"search-station-dropdown__stations_list\" autocomplete=\"off\" class=\"search-station-field__inp\" data-automation-id=\"stationsearchcode\" name=\"inputstationsearch\" role=\"combobox\" type=\"text\"/>",
@@ -122,8 +122,8 @@
     "dom": "<input aria-label=\"select depart date\" aria-required=\"true\" autocomplete=\"off\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_schedules\" data-validate-input=\"\" maxlength=\"10\" placeholder=\"mm/dd/yyyy\" type=\"text\"/>",
     "feature": "please enter a valid date text mm dd yyyy 10",
     "id": "572-text-17",
-    "pattern": "date",
-    "topic": "date"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input aria-label=\"please enter train/bus #\" class=\"train-status-navigation-search-form__search-types_item_field_container_inp\" data-automation-id=\"data-autmation-id\" data-julie=\"status_train_num\" data-validate-input=\"\" id=\"status_train_num\" maxlength=\"4\" name=\"wdf_trainnumber\" placeholder=\"\" type=\"text\"/>",
@@ -141,10 +141,10 @@
   },
   {
     "dom": "<input aria-label=\"select depart date\" aria-required=\"true\" autocomplete=\"off\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_train_number\" data-validate-input=\"\" maxlength=\"10\" placeholder=\"mm/dd/yyyy\" type=\"text\" value=\"04/08/2018\"/>",
-    "feature": "please enter a valid date text 04 08 2018 mm dd yyyy 10",
+    "feature": "please enter a valid date 04 08 2018 text mm dd yyyy 10",
     "id": "572-text-20",
-    "pattern": "date",
-    "topic": "date"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input aria-activedescendant=\"\" aria-autocomplete=\"list\" aria-expanded=\"false\" aria-label=\"enter a valid station code or city.\" aria-owns=\"search-station-dropdown__stations_list\" autocomplete=\"off\" class=\"search-station-field__inp\" data-automation-id=\"fstation\" data-julie=\"fromfield_status\" name=\"wdf_origin\" role=\"combobox\" type=\"text\"/>",
@@ -162,105 +162,105 @@
   },
   {
     "dom": "<input aria-label=\"select depart date\" aria-required=\"true\" autocomplete=\"off\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_stations\" data-validate-input=\"\" maxlength=\"10\" placeholder=\"mm/dd/yyyy\" type=\"text\" value=\"04/08/2018\"/>",
-    "feature": "please enter a valid date text 04 08 2018 mm dd yyyy 10",
+    "feature": "please enter a valid date 04 08 2018 text mm dd yyyy 10",
     "id": "572-text-23",
-    "pattern": "date",
-    "topic": "date"
-  },
-  {
-    "dom": "<input aria-label=\"reservation number \" class=\"site-secondary__subnavbar_modify-form_field_container_inp form-input-with-label__inp\" data-automation-id=\"modifytripreservationnumberinp\" data-julie=\"mt_res_no\" id=\"mytrip_res_num\" name=\"_reference\" placeholder=\"\" type=\"text\"/>",
-    "feature": "please enter a valid reservation number text mytrip res num reference",
-    "id": "572-text-24",
     "pattern": "unk",
     "topic": "unk"
   },
   {
+    "dom": "<input aria-label=\"reservation number \" class=\"site-secondary__subnavbar_modify-form_field_container_inp form-input-with-label__inp\" data-automation-id=\"modifytripreservationnumberinp\" data-julie=\"mt_res_no\" id=\"mytrip_res_num\" name=\"_reference\" placeholder=\"\" type=\"text\"/>",
+    "feature": "please enter a valid reservation number mytrip res num text reference",
+    "id": "572-text-24",
+    "pattern": "res.*num",
+    "topic": "reservation_number"
+  },
+  {
     "dom": "<input aria-label=\"email address or phone number \" class=\"site-secondary__subnavbar_modify-form_field_container_inp form-input-with-label__inp\" data-automation-id=\"modifytriplastnameemailinp\" data-julie=\"mt_email\" id=\"mytrip_res_email\" name=\"_modifyemailaddress\" placeholder=\"\" type=\"text\"/>",
-    "feature": "please enter a valid email address or telephone number text mytrip res email modifyemailaddress",
+    "feature": "please enter a valid email address or telephone number mytrip res email text modifyemailaddress",
     "id": "572-text-25",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"text\" id=\"login_email_address\" maxlength=\"64\" name=\"wdf_username\" type=\"text\"/>",
-    "feature": "email or guest rewards text login email address wdf username 64",
+    "feature": "email or guest rewards text wdf username login email address 64",
     "id": "572-text-26",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-activedescendant=\"\" aria-autocomplete=\"list\" aria-describedby=\"autosuggestion-labeled\" aria-expanded=\"false\" aria-label=\"select departure station\" aria-owns=\"search-station-dropdown__stations_list\" aria-required=\"true\" autocomplete=\"off\" class=\"search-station-field__inp\" data-julie=\"fromfield_booking\" id=\"departs\" maxlength=\"150\" name=\"wdf_origin\" placeholder=\"from\" role=\"combobox\" type=\"text\"/>",
-    "feature": "clear input alabama arizona arkansas armed forces ap california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming alberta british columbia manitoba new brunswick newfoundland nova scotia northwest territories nunavut ontario prince edward island quebec saskatchewan yukon united states canada view map text from departs wdf origin 150",
+    "feature": "clear input alabama arizona arkansas armed forces ap california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming alberta british columbia manitoba new brunswick newfoundland nova scotia northwest territories nunavut ontario prince edward island quebec saskatchewan yukon united states canada view map text wdf origin departs from 150",
     "id": "572-text-27",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input aria-activedescendant=\"\" aria-autocomplete=\"list\" aria-describedby=\"autosuggestion-labeled\" aria-expanded=\"false\" aria-label=\"select arrival station\" aria-owns=\"search-station-dropdown__stations_list\" aria-required=\"true\" autocomplete=\"off\" class=\"search-station-field__inp\" data-julie=\"tofield_booking\" id=\"arrives\" maxlength=\"150\" name=\"wdf_destination\" placeholder=\"to\" role=\"combobox\" type=\"text\"/>",
-    "feature": "clear input alabama arizona arkansas armed forces ap california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming alberta british columbia manitoba new brunswick newfoundland nova scotia northwest territories nunavut ontario prince edward island quebec saskatchewan yukon united states canada view map text to arrives wdf destination 150",
+    "feature": "clear input alabama arizona arkansas armed forces ap california colorado connecticut delaware district of columbia florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire new jersey new mexico new york north carolina north dakota ohio oklahoma oregon pennsylvania rhode island south carolina south dakota tennessee texas utah vermont virginia washington west virginia wisconsin wyoming alberta british columbia manitoba new brunswick newfoundland nova scotia northwest territories nunavut ontario prince edward island quebec saskatchewan yukon united states canada view map text wdf destination arrives to 150",
     "id": "572-text-28",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_booking_oneway\" id=\"wdfdate1\" maxlength=\"22\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/journeyrequirements[1]/departdate.usdate\" size=\"22\" type=\"text\" value=\"04/12/2018\"/>",
-    "feature": "select departure date format mm dd yyyy select departure date format mm dd yyyy text 04 12 2018 wdfdate1 sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate 22",
+    "feature": "select departure date format mm dd yyyy select departure date format mm dd yyyy text sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate wdfdate1 04 12 2018 22",
     "id": "572-text-29",
-    "pattern": "date",
-    "topic": "date"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"search-trip-calendar__active_inp form-input-with-label__inp\" data-julie=\"departdisplay_booking_roundtrip\" id=\"wdfdate2\" maxlength=\"22\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/journeyrequirements[1]/departdate.usdate\" size=\"22\" type=\"text\" value=\"04/12/2018\"/>",
-    "feature": "select departure date format mm dd yyyy select departure date format mm dd yyyy text 04 12 2018 wdfdate2 sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate 22",
+    "feature": "select departure date format mm dd yyyy select departure date format mm dd yyyy text sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate wdfdate2 04 12 2018 22",
     "id": "572-text-30",
-    "pattern": "date",
-    "topic": "date"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"search-trip-calendar__active_inp form-input-with-label__inp search-trip-calendar__active_inp-return\" data-julie=\"returndisplay_booking\" id=\"wdfdate3\" maxlength=\"22\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/journeyrequirements[2]/departdate.usdate\" size=\"22\" type=\"text\"/>",
-    "feature": "select arrival date format mm dd yyyy select arrival date format mm dd yyyy text wdfdate3 sessionworkflow productworkflow product rail triprequirements journeyrequirements 2 departdate usdate 22",
+    "feature": "select arrival date format mm dd yyyy select arrival date format mm dd yyyy text sessionworkflow productworkflow product rail triprequirements journeyrequirements 2 departdate usdate wdfdate3 22",
     "id": "572-text-31",
     "pattern": "date",
     "topic": "date"
   },
   {
     "dom": "<input aria-label=\"number of adults selected\" class=\"search-trip-travelers-list-item__left_counter-display\" id=\"oth_adults\" max=\"8\" min=\"0\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/alljourneyrequirements/numberoftravellers[@key='adult']\" onchange=\"javascript:discounttype('adults')\" type=\"text\" value=\"1\"/>",
-    "feature": "adults 13 64 13 64 text oth adults 1 sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key adult",
+    "feature": "adults 13 64 13 64 text sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key adult oth adults 1",
     "id": "572-text-32",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input aria-label=\"number of seniors selected\" class=\"search-trip-travelers-list-item__left_counter-display\" id=\"oth_seniors\" max=\"8\" min=\"0\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/alljourneyrequirements/numberoftravellers[@key='senior']\" onchange=\"javascript:discounttype('seniors')\" type=\"text\" value=\"0\"/>",
-    "feature": "seniors 65 65 text oth seniors 0 sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key senior",
+    "feature": "seniors 65 65 text sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key senior oth seniors 0",
     "id": "572-text-33",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input aria-label=\"number of children selected\" class=\"search-trip-travelers-list-item__left_counter-display\" id=\"oth_childs\" max=\"4\" min=\"0\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/alljourneyrequirements/numberoftravellers[@key='child']\" onchange=\"showchildpopup(this.options[this.selectedindex].value, document.getelementbyid('oth_infants').options[document.getelementbyid('oth_infants').selectedindex].value, 'oth_child_popup'),discounttype('childs')\" type=\"text\" value=\"0\"/>",
-    "feature": "children 2 12 2 12 text oth childs 0 sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key child",
+    "feature": "children 2 12 2 12 text sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key child oth childs 0",
     "id": "572-text-34",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input aria-label=\"number of infants selected\" class=\"search-trip-travelers-list-item__left_counter-display\" id=\"oth_infants\" max=\"8\" min=\"0\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/alljourneyrequirements/numberoftravellers[@key='infant']\" onchange=\"showchildpopup(this.options[this.selectedindex].value, document.getelementbyid('oth_childs').options[document.getelementbyid('oth_childs').selectedindex].value, 'oth_child_popup'),discounttype('infants')\" type=\"text\" value=\"0\"/>",
-    "feature": "infants under 2 under 2 text oth infants 0 sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key infant",
+    "feature": "infants under 2 under 2 text sessionworkflow productworkflow product rail triprequirements alljourneyrequirements numberoftravellers key infant oth infants 0",
     "id": "572-text-35",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input aria-label=\"add promo code\" class=\"search-station-field__inp\" id=\"ff_disc_promocode\" maxlength=\"6\" name=\"wdf_promocode\" placeholder=\"add promo code\" size=\"15\" type=\"text\"/>",
-    "feature": "text ff disc promocode wdf promocode add promo code 6",
+    "feature": "text wdf promocode ff disc promocode add promo code 6",
     "id": "572-text-36",
-    "pattern": "coupon.*code",
-    "topic": "coupon_code"
+    "pattern": "promo",
+    "topic": "promo_code"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"ff_membernumber\" maxlength=\"10\" name=\"/sessionworkflow/profileworkflow/schemeaccount/membershipnumber\" type=\"text\"/>",
-    "feature": "member number ff membernumber text sessionworkflow profileworkflow schemeaccount membershipnumber 10",
+    "feature": "member number text sessionworkflow profileworkflow schemeaccount membershipnumber ff membernumber 10",
     "id": "572-text-37",
     "pattern": "unk",
     "topic": "unk"
@@ -281,56 +281,56 @@
   },
   {
     "dom": "<input class=\"wdfdate\" id=\"wdfdate15\" maxlength=\"22\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/journeyrequirements[1]/departdate.usdate\" size=\"22\" type=\"text\" value=\"04/12/2018\"/>",
-    "feature": "departs text wdfdate15 04 12 2018 sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate 22",
+    "feature": "departs text sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate wdfdate15 04 12 2018 22",
     "id": "572-text-40",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "date",
+    "topic": "date"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"status_from\" maxlength=\"150\" name=\"wdf_origin\" type=\"text\"/>",
-    "feature": "find a station status from text wdf origin 150",
+    "feature": "find a station text wdf origin status from 150",
     "id": "572-text-41",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"status_to\" maxlength=\"150\" name=\"wdf_destination\" type=\"text\"/>",
-    "feature": "find a station status to text wdf destination 150",
+    "feature": "find a station text wdf destination status to 150",
     "id": "572-text-42",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input id=\"status_train_num\" maxlength=\"8\" name=\"wdf_trainnumber\" onfocus=\"if (this.value=='optional') { this.value=''; updatemaxlength(); };\" size=\"4\" type=\"text\"/>",
-    "feature": "train bus no text status train num wdf trainnumber 8",
+    "feature": "train bus no text wdf trainnumber status train num 8",
     "id": "572-text-43",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input class=\"wdfdate\" id=\"wdfdate10\" maxlength=\"22\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/journeyrequirements[1]/departdate.usdate\" size=\"22\" type=\"text\" value=\"04/12/2018\"/>",
-    "feature": "arrival date depart date text wdfdate10 04 12 2018 sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate 22",
+    "feature": "arrival date depart date text sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate wdfdate10 04 12 2018 22",
     "id": "572-text-44",
     "pattern": "date",
     "topic": "date"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"status_from1\" maxlength=\"150\" name=\"wdf_origin\" type=\"text\"/>",
-    "feature": "find a station from status from1 text wdf origin 150",
+    "feature": "find a station from text wdf origin status from1 150",
     "id": "572-text-45",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"status_to1\" maxlength=\"150\" name=\"wdf_destination\" type=\"text\"/>",
-    "feature": "find a station to status to1 text wdf destination 150",
+    "feature": "find a station to text wdf destination status to1 150",
     "id": "572-text-46",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input class=\"wdfdate\" id=\"wdfdate11\" maxlength=\"22\" name=\"/sessionworkflow/productworkflow[@product='rail']/triprequirements/journeyrequirements[1]/departdate.usdate\" size=\"22\" type=\"text\" value=\"04/12/2018\"/>",
-    "feature": "arrival date text wdfdate11 04 12 2018 sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate 22",
+    "feature": "arrival date text sessionworkflow productworkflow product rail triprequirements journeyrequirements 1 departdate usdate wdfdate11 04 12 2018 22",
     "id": "572-text-47",
     "pattern": "date",
     "topic": "date"
@@ -339,33 +339,33 @@
     "dom": "<input id=\"mytrip_res_num\" name=\"/sessionworkflow/itineraryworkflow/basket/booking/reference\" type=\"text\" value=\"\"/>",
     "feature": "reservation number text sessionworkflow itineraryworkflow basket booking reference mytrip res num",
     "id": "572-text-48",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "res.*num",
+    "topic": "reservation_number"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"mytrip_res_email\" name=\"/sessionworkflow/itineraryworkflow/basket/booking/bookingoptions/bookingfulfilment/contact/contactemailaddress/emailaddress\" type=\"text\" value=\"\"/>",
     "feature": "email address text sessionworkflow itineraryworkflow basket booking bookingoptions bookingfulfilment contact contactemailaddress emailaddress mytrip res email",
     "id": "572-text-49",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "email",
+    "topic": "email"
   },
   {
     "dom": "<input id=\"mytrip_res_zip\" name=\"/sessionworkflow/itineraryworkflow/basket/booking/bookingoptions/bookingfulfilment/contact/contacttelephone/number\" type=\"text\" value=\"\"/>",
     "feature": "telephone number text sessionworkflow itineraryworkflow basket booking bookingoptions bookingfulfilment contact contacttelephone number mytrip res zip",
     "id": "572-text-50",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"mytrip_acct_email\" maxlength=\"64\" name=\"wdf_username\" type=\"text\"/>",
-    "feature": "email address mytrip acct email text wdf username 64",
+    "feature": "email address text wdf username mytrip acct email 64",
     "id": "572-text-51",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"text\" id=\"pwdemailaddress\" maxlength=\"64\" name=\"wdf_email_address\" style=\"width:100%;\" type=\"text\"/>",
-    "feature": "email text pwdemailaddress wdf email address 64",
+    "feature": "email text wdf email address pwdemailaddress 64",
     "id": "572-text-52",
     "pattern": "email",
     "topic": "email"
@@ -400,21 +400,21 @@
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"text password\" id=\"login_password\" maxlength=\"128\" name=\"wdf_password\" type=\"password\"/>",
-    "feature": "password passwords should be at least 10 characters long and include 1 uppercase and 1 lowercase alpha character 1 number and 1 special character passwords are case sensitive passwords should be at least 10 characters long and include 1 uppercase and 1 lowercase alpha character 1 number and 1 special character passwords are case sensitive password login password wdf password 128",
+    "feature": "password passwords should be at least 10 characters long and include 1 uppercase and 1 lowercase alpha character 1 number and 1 special character passwords are case sensitive passwords should be at least 10 characters long and include 1 uppercase and 1 lowercase alpha character 1 number and 1 special character passwords are case sensitive password wdf password login password 128",
     "id": "572-password-4",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"ff_memberpassword\" maxlength=\"29\" name=\"/sessionworkflow/profileworkflow/schemeaccount/@password\" type=\"password\"/>",
-    "feature": "member password ff memberpassword password sessionworkflow profileworkflow schemeaccount password 29",
+    "feature": "member password password sessionworkflow profileworkflow schemeaccount password ff memberpassword 29",
     "id": "572-password-5",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"mytrip_acct_pwd\" maxlength=\"128\" name=\"wdf_password\" type=\"password\"/>",
-    "feature": "password mytrip acct pwd password wdf password 128",
+    "feature": "password password wdf password mytrip acct pwd 128",
     "id": "572-password-6",
     "pattern": "password",
     "topic": "password"
@@ -423,14 +423,14 @@
     "dom": "<input aria-label=\"please enter your search item\" class=\"site-search__form_inp\" data-automation-id=\"inpsitesearchsearch\" name=\"\" placeholder=\"need help? ask julie\" tabindex=\"0\" type=\"search\" value=\"\"/>",
     "feature": "search search need help ask julie",
     "id": "572-search-0",
-    "pattern": "search",
-    "topic": "search"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input aria-label=\"please enter your search item\" class=\"site-search__form_inp\" data-automation-id=\"inpsitesearchsearchmobile\" name=\"\" placeholder=\"need help? ask julie\" tabindex=\"0\" type=\"search\" value=\"\"/>",
     "feature": "search search need help ask julie",
     "id": "572-search-1",
-    "pattern": "search",
-    "topic": "search"
+    "pattern": "unk",
+    "topic": "unk"
   }
 ]

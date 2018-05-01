@@ -1,91 +1,91 @@
 [
   {
     "dom": "<input class=\"medium\" id=\"input_1_1\" name=\"input_1\" tabindex=\"1000\" type=\"text\" value=\"\"/>",
-    "feature": "model number input 1 1 input 1 text",
+    "feature": "model number input 1 input 1 1 text",
     "id": "638-text-0",
-    "pattern": "model.*number",
+    "pattern": "input.*1",
     "topic": "model_number"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_27\" name=\"input_27\" tabindex=\"1001\" type=\"text\" value=\"\"/>",
-    "feature": "name of the retailer input 1 27 input 27 text",
+    "feature": "name of the retailer input 27 input 1 27 text",
     "id": "638-text-1",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "input_1",
+    "topic": "store_name"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_2\" name=\"input_2\" tabindex=\"1002\" type=\"text\" value=\"\"/>",
-    "feature": "serial number input 1 2 input 2 text",
+    "feature": "serial number input 2 input 1 2 text",
     "id": "638-text-2",
-    "pattern": "serial",
+    "pattern": "input_2",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"datepicker medium mdy datepicker_no_icon\" id=\"input_1_3\" name=\"input_3\" tabindex=\"1005\" type=\"text\" value=\"\"/>",
-    "feature": "date purchased input 1 3 input 3 text",
+    "feature": "date purchased input 3 input 1 3 text",
     "id": "638-text-3",
-    "pattern": "date",
+    "pattern": "input_3",
     "topic": "date"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_26\" name=\"input_26\" tabindex=\"1006\" type=\"text\" value=\"\"/>",
-    "feature": "what was the purchase price input 1 26 input 26 text",
+    "feature": "what was the purchase price input 26 input 1 26 text",
     "id": "638-text-4",
-    "pattern": "price",
+    "pattern": "input_26",
     "topic": "price"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_7\" name=\"input_7\" tabindex=\"1007\" type=\"text\" value=\"\"/>",
-    "feature": "first name input 1 7 input 7 text",
+    "feature": "first name input 7 input 1 7 text",
     "id": "638-text-5",
-    "pattern": "first.*name",
+    "pattern": "input_7",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_8\" name=\"input_8\" tabindex=\"1008\" type=\"text\" value=\"\"/>",
-    "feature": "last name input 1 8 input 8 text",
+    "feature": "last name input 8 input 1 8 text",
     "id": "638-text-6",
-    "pattern": "last.*name",
+    "pattern": "input_8",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_9\" name=\"input_9\" tabindex=\"1009\" type=\"text\" value=\"\"/>",
-    "feature": "address input 1 9 input 9 text",
+    "feature": "address input 9 input 1 9 text",
     "id": "638-text-7",
-    "pattern": "address.*one",
+    "pattern": "input_9",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_10\" name=\"input_10\" tabindex=\"1010\" type=\"text\" value=\"\"/>",
-    "feature": "city input 1 10 input 10 text",
+    "feature": "city input 10 input 1 10 text",
     "id": "638-text-8",
-    "pattern": "city",
+    "pattern": "input_10",
     "topic": "city"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_22\" name=\"input_22\" tabindex=\"1013\" type=\"text\" value=\"\"/>",
-    "feature": "zip code postal code input 1 22 input 22 text",
+    "feature": "zip code postal code input 22 input 1 22 text",
     "id": "638-text-9",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "input_22",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_30\" name=\"input_30\" tabindex=\"1014\" type=\"text\" value=\"\"/>",
-    "feature": "phone input 1 30 input 30 text",
+    "feature": "phone input 30 input 1 30 text",
     "id": "638-text-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "input_30",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"medium\" id=\"input_1_14\" name=\"input_14\" tabindex=\"1015\" type=\"text\" value=\"\"/>",
-    "feature": "email input 1 14 input 14 text",
+    "feature": "email input 14 input 1 14 text",
     "id": "638-text-11",
-    "pattern": "email",
+    "pattern": "input_14",
     "topic": "email"
   },
   {
     "dom": "<input class=\"search-field form-control\" id=\"search-field\" name=\"s\" placeholder=\"what are you looking for?\" type=\"search\" value=\"\"/>",
-    "feature": "search search field s search what are you looking for",
+    "feature": "search search search field s what are you looking for",
     "id": "638-search-0",
     "pattern": "search",
     "topic": "search"

@@ -3,28 +3,28 @@
     "dom": "<input class=\"hidden\" id=\"shipto.address.zcs\" name=\"shipto.address.zcs\" type=\"text\" value=\"false\"/>",
     "feature": "required required required required required required full name required address required address 2 optional city required phone number required state required zip code required use this as my billing address text shipto address zcs shipto address zcs false",
     "id": "554-text-0",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-required=\"true\" autocapitalize=\"words\" autocorrect=\"off\" class=\"fullname\" id=\"shipto.address.fullname\" maxlength=\"25\" name=\"shipto.address.fullname\" required=\"true\" type=\"text\" value=\"\"/>",
     "feature": "required required required required required required full name required address required address 2 optional city required phone number required state required zip code required use this as my billing address text shipto address fullname shipto address fullname 25",
     "id": "554-text-1",
-    "pattern": "full.*name",
+    "pattern": "fullname",
     "topic": "full_name"
   },
   {
     "dom": "<input aria-required=\"true\" autocapitalize=\"words\" autocorrect=\"off\" id=\"shipto.address.addrline1\" maxlength=\"35\" name=\"shipto.address.addrline1\" required=\"true\" type=\"text\" value=\"\"/>",
     "feature": "required required required required required required address required full name required address 2 optional city required phone number required state required zip code required use this as my billing address text shipto address addrline1 shipto address addrline1 35",
     "id": "554-text-2",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input autocapitalize=\"words\" autocorrect=\"off\" class=\"grouped-with-above-input\" id=\"shipto.address.addrline2\" maxlength=\"35\" name=\"shipto.address.addrline2\" type=\"text\" value=\"\"/>",
     "feature": "required required required required required required address 2 optional address required full name required city required phone number required state required zip code required use this as my billing address text shipto address addrline2 shipto address addrline2 35",
     "id": "554-text-3",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
@@ -38,21 +38,21 @@
     "dom": "<input aria-required=\"true\" autocorrect=\"off\" id=\"shipto.address.zip\" maxlength=\"5\" name=\"shipto.address.zip\" pattern=\"[0-9]*\" required=\"true\" type=\"text\" value=\"\"/>",
     "feature": "required zip code required text shipto address zip shipto address zip 5",
     "id": "554-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"hidden\" id=\"shipto.zcs\" name=\"shipto.zcs\" type=\"text\" value=\"false\"/>",
     "feature": "required required required required required required city required address 2 optional address required full name required phone number required state required zip code required use this as my billing address text shipto zcs shipto zcs false",
     "id": "554-text-6",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "shipto",
+    "topic": "address_1"
   },
   {
     "dom": "<input aria-required=\"true\" autocorrect=\"off\" id=\"shipto.address.dayphone\" maxlength=\"14\" name=\"shipto.address.dayphone\" pattern=\"[- \\.()0-9]+\" required=\"true\" type=\"tel\" value=\"\"/>",
     "feature": "required required required required required required phone number required city required address 2 optional address required full name required state required zip code required use this as my billing address tel shipto address dayphone shipto address dayphone 14",
     "id": "554-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

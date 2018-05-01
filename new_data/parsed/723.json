@@ -1,14 +1,14 @@
 [
   {
     "dom": "<input class=\"text\" id=\"email\" maxlength=\"255\" name=\"email\" size=\"50\" type=\"text\" value=\"\"/>",
-    "feature": "email email email text 255",
+    "feature": "email email text email 255",
     "id": "723-text-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"text\" id=\"email_cfm\" maxlength=\"255\" name=\"email_cfm\" size=\"50\" type=\"text\"/>",
-    "feature": "email confirm email cfm email cfm text 255",
+    "feature": "email confirm email cfm text email cfm 255",
     "id": "723-text-1",
     "pattern": "email",
     "topic": "email"

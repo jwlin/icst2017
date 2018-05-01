@@ -32,7 +32,7 @@
     "feature": "zip code zipcode text zipcode 5",
     "id": "501-text-4",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"shipping locality\" id=\"cityname\" maxlength=\"20\" name=\"city\" type=\"text\" value=\"\"/>",
@@ -59,7 +59,7 @@
     "dom": "<input autocomplete=\"tel\" id=\"primaryphone\" maxlength=\"14\" name=\"primaryphone\" type=\"tel\" value=\"\"/>",
     "feature": "phone number primaryphone tel primaryphone 14",
     "id": "501-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "primary.*phone",
+    "topic": "phone"
   }
 ]

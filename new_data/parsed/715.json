@@ -1,73 +1,73 @@
 [
   {
     "dom": "<input id=\"email\" maxlength=\"100\" name=\"email\" placeholder=\"user@example.com\" type=\"text\" value=\"\"/>",
-    "feature": "your email address is your username email email text user example com 100",
+    "feature": "your email address is your username email email user example com text 100",
     "id": "715-text-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"firstname\" maxlength=\"45\" name=\"firstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name text firstname firstname 45",
+    "feature": "first name firstname firstname text 45",
     "id": "715-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"middlename\" maxlength=\"25\" name=\"middlename\" type=\"text\" value=\"\"/>",
-    "feature": "middle name text middlename middlename 25",
+    "feature": "middle name middlename middlename text 25",
     "id": "715-text-2",
-    "pattern": "middle.*name",
+    "pattern": "middlename",
     "topic": "middle_name"
   },
   {
     "dom": "<input id=\"lastname\" maxlength=\"45\" name=\"lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name text lastname lastname 45",
+    "feature": "last name lastname lastname text 45",
     "id": "715-text-3",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"englishfirstname\" maxlength=\"45\" name=\"englishfirstname\" type=\"text\" value=\"\"/>",
-    "feature": "english first name text englishfirstname englishfirstname 45",
+    "feature": "english first name englishfirstname englishfirstname text 45",
     "id": "715-text-4",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"englishmiddlename\" maxlength=\"25\" name=\"englishmiddlename\" type=\"text\" value=\"\"/>",
-    "feature": "english middle name text englishmiddlename englishmiddlename 25",
+    "feature": "english middle name englishmiddlename englishmiddlename text 25",
     "id": "715-text-5",
-    "pattern": "middle.*name",
+    "pattern": "middlename",
     "topic": "middle_name"
   },
   {
     "dom": "<input class=\"english\" id=\"englishlastname\" maxlength=\"45\" name=\"englishlastname\" type=\"text\" value=\"\"/>",
     "feature": "english last name englishlastname englishlastname text 45",
     "id": "715-text-6",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"input-small\" id=\"date-input\" maxlength=\"10\" name=\"dateofbirth\" placeholder=\"mm/dd/yyyy\" size=\"16\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth dateofbirth date input text mm dd yyyy 10",
+    "feature": "date of birth date input dateofbirth mm dd yyyy text 10",
     "id": "715-text-7",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dateofbirth",
+    "topic": "dob"
   },
   {
     "dom": "<input id=\"homenumber\" maxlength=\"16\" name=\"homenumber\" placeholder=\"5555555555\" type=\"text\" value=\"\"/>",
-    "feature": "please include area or city code and local number homenumber homenumber text 5555555555 16",
+    "feature": "please include area or city code and local number homenumber homenumber 5555555555 text 16",
     "id": "715-text-8",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "home.*number",
+    "topic": "phone_home"
   },
   {
     "dom": "<input id=\"mobilenumber\" maxlength=\"16\" name=\"mobilenumber\" placeholder=\"5555555555\" type=\"text\" value=\"\"/>",
-    "feature": "please include area or city code and local number mobilenumber mobilenumber text 5555555555 16",
+    "feature": "please include area or city code and local number mobilenumber mobilenumber 5555555555 text 16",
     "id": "715-text-9",
-    "pattern": "cell.*phone",
-    "topic": "cell_phone_number"
+    "pattern": "mobile.*number",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input id=\"password\" maxlength=\"80\" name=\"password\" placeholder=\"password\" type=\"password\" value=\"\"/>",

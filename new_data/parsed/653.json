@@ -1,35 +1,35 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"input-text\" id=\"search\" name=\"q\" placeholder=\"search\" type=\"text\"/>",
-    "feature": "search q search text search",
+    "feature": "search search text search q",
     "id": "653-text-0",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input id=\"youama-email\" name=\"youama-email\" placeholder=\"e-mail address\" type=\"text\" value=\"\"/>",
-    "feature": "e mail address text youama email e mail address youama email",
+    "feature": "e mail address text e mail address youama email youama email",
     "id": "653-text-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"youama-firstname\" name=\"youama-firstname\" placeholder=\"first name\" type=\"text\" value=\"\"/>",
-    "feature": "first name text youama firstname first name youama firstname",
+    "feature": "first name text first name youama firstname youama firstname",
     "id": "653-text-2",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"youama-lastname\" name=\"youama-lastname\" placeholder=\"last name\" type=\"text\" value=\"\"/>",
-    "feature": "last name text youama lastname last name youama lastname",
+    "feature": "last name text last name youama lastname youama lastname",
     "id": "653-text-3",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"youama-email\" name=\"youama-email\" placeholder=\"e-mail address\" type=\"text\" value=\"\"/>",
-    "feature": "e mail address text youama email e mail address youama email",
+    "feature": "e mail address text e mail address youama email youama email",
     "id": "653-text-4",
     "pattern": "email",
     "topic": "email"
@@ -38,14 +38,14 @@
     "dom": "<input class=\"required-entry input-text\" name=\"firstname\" type=\"text\" value=\"\"/>",
     "feature": "first name text firstname",
     "id": "653-text-5",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"required-entry input-text\" name=\"lastname\" type=\"text\" value=\"\"/>",
     "feature": "last name text lastname",
     "id": "653-text-6",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
@@ -59,22 +59,22 @@
     "dom": "<input class=\"input-text\" name=\"ziporpostal\" type=\"text\"/>",
     "feature": "zip postal code text ziporpostal",
     "id": "653-text-8",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"input-text validate-phone-customized\" name=\"phonenumber\" type=\"text\"/>",
     "feature": "telephone number text phonenumber",
     "id": "653-text-9",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phonenumber",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"input-text\" name=\"invoicenumber\" type=\"text\"/>",
     "feature": "invoice number text invoicenumber",
     "id": "653-text-10",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "invoice",
+    "topic": "invoice"
   },
   {
     "dom": "<input class=\"required-entry input-text validate-date validate-purchase-date\" id=\"purchasedate\" name=\"purchasedate\" type=\"text\"/>",
@@ -87,47 +87,47 @@
     "dom": "<input class=\"required-entry input-text\" name=\"productname\" type=\"text\"/>",
     "feature": "product name text productname",
     "id": "653-text-12",
-    "pattern": "model.*number",
-    "topic": "model_number"
+    "pattern": "product.*name",
+    "topic": "product_name"
   },
   {
     "dom": "<input class=\"required-entry input-text\" name=\"modelnumber\" type=\"text\"/>",
     "feature": "model number text modelnumber",
     "id": "653-text-13",
-    "pattern": "serial",
-    "topic": "serial_number"
+    "pattern": "model.*number",
+    "topic": "model_number"
   },
   {
     "dom": "<input class=\"required-entry input-text\" name=\"serialnumber\" type=\"text\"/>",
     "feature": "serial number text serialnumber",
     "id": "653-text-14",
-    "pattern": "serial",
+    "pattern": "serial.*number",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-email\" id=\"newsletter\" name=\"email\" style=\"margin:auto;\" title=\"sign up for our newsletter\" type=\"text\"/>",
-    "feature": "subscribe subscribe enter your e mail address to receive our newsletter email newsletter text",
+    "feature": "subscribe subscribe enter your e mail address to receive our newsletter text email newsletter",
     "id": "653-text-15",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"youama-password\" name=\"youama-password\" placeholder=\"password\" type=\"password\" value=\"\"/>",
-    "feature": "password password youama password password youama password",
+    "feature": "password password password youama password youama password",
     "id": "653-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input id=\"youama-password\" name=\"youama-password\" placeholder=\"password\" type=\"password\" value=\"\"/>",
-    "feature": "password password youama password password youama password",
+    "feature": "password password password youama password youama password",
     "id": "653-password-1",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input id=\"youama-passwordsecond\" name=\"youama-passwordsecond\" placeholder=\"password confirmation\" type=\"password\" value=\"\"/>",
-    "feature": "password confirmation password youama passwordsecond password confirmation youama passwordsecond",
+    "feature": "password confirmation password password confirmation youama passwordsecond youama passwordsecond",
     "id": "653-password-2",
     "pattern": "password",
     "topic": "password"

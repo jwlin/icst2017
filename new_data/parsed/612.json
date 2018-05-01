@@ -1,114 +1,114 @@
 [
   {
     "dom": "<input aria-invalid=\"false\" aria-label=\"first name\" aria-required=\"true\" id=\"input_1_1_3\" name=\"input_1.3\" tabindex=\"2\" type=\"text\" value=\"\"/>",
-    "feature": "first input 1 3 text input 1 1 3",
+    "feature": "first text input 1 3 input 1 1 3",
     "id": "612-text-0",
-    "pattern": "first.*name",
+    "pattern": "input.*1",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-label=\"last name\" aria-required=\"true\" id=\"input_1_1_6\" name=\"input_1.6\" tabindex=\"4\" type=\"text\" value=\"\"/>",
-    "feature": "last input 1 6 text input 1 1 6",
+    "feature": "last text input 1 6 input 1 1 6",
     "id": "612-text-1",
-    "pattern": "last.*name",
+    "pattern": "input.*1",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"input_1_2_1\" name=\"input_2.1\" tabindex=\"6\" type=\"text\" value=\"\"/>",
-    "feature": "street address input 2 1 text input 1 2 1",
+    "feature": "street address text input 2 1 input 1 2 1",
     "id": "612-text-2",
-    "pattern": "address.*one",
+    "pattern": "input.*2",
     "topic": "address_1"
   },
   {
     "dom": "<input id=\"input_1_2_3\" name=\"input_2.3\" tabindex=\"7\" type=\"text\" value=\"\"/>",
-    "feature": "city input 2 3 text input 1 2 3",
+    "feature": "city text input 2 3 input 1 2 3",
     "id": "612-text-3",
-    "pattern": "city",
+    "pattern": "input.*2",
     "topic": "city"
   },
   {
     "dom": "<input id=\"input_1_2_4\" name=\"input_2.4\" tabindex=\"9\" type=\"text\" value=\"\"/>",
-    "feature": "state province region input 2 4 text input 1 2 4",
+    "feature": "state province region text input 2 4 input 1 2 4",
     "id": "612-text-4",
-    "pattern": "state",
+    "pattern": "input.*2",
     "topic": "state"
   },
   {
     "dom": "<input id=\"input_1_2_5\" name=\"input_2.5\" tabindex=\"10\" type=\"text\" value=\"\"/>",
-    "feature": "zip postal code input 2 5 text input 1 2 5",
+    "feature": "zip postal code text input 2 5 input 1 2 5",
     "id": "612-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "input.*2",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"medium\" id=\"input_1_27\" name=\"input_27\" placeholder=\"jan14-12345\" tabindex=\"15\" type=\"text\" value=\"\"/>",
-    "feature": "serial number jan14 12345 input 27 text input 1 27",
+    "feature": "serial number input 27 input 1 27 text jan14 12345",
     "id": "612-text-6",
-    "pattern": "serial",
+    "pattern": "input.*27",
     "topic": "serial_number"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"medium\" id=\"input_1_12\" name=\"input_12\" tabindex=\"19\" type=\"text\" value=\"\"/>",
-    "feature": "place of purchase input 12 text input 1 12",
+    "feature": "place of purchase input 12 input 1 12 text",
     "id": "612-text-7",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "input.*12",
+    "topic": "store_name"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"medium\" id=\"input_1_13\" name=\"input_13\" step=\"any\" tabindex=\"20\" type=\"text\" value=\"\"/>",
     "feature": "purchase price input 13 input 1 13 text",
     "id": "612-text-8",
-    "pattern": "price",
+    "pattern": "input.*13",
     "topic": "price"
   },
   {
     "dom": "<input aria-invalid=\"false\" class=\"medium\" id=\"input_1_28\" name=\"input_28\" tabindex=\"34\" type=\"text\" value=\"\"/>",
-    "feature": "year of your birth input 28 text input 1 28",
+    "feature": "year of your birth input 28 input 1 28 text",
     "id": "612-text-9",
-    "pattern": "year",
-    "topic": "year"
+    "pattern": "input.*28",
+    "topic": "dob_year"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"input_1_29\" name=\"input_29\" type=\"text\" value=\"\"/>",
     "feature": "comments input 29 input 1 29 text",
     "id": "612-text-10",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "input.*29",
+    "topic": "comment"
   },
   {
     "dom": "<input class=\"widefat\" id=\"cm-ajax-email\" name=\"cm-ajax-email\" type=\"text\"/>",
     "feature": "email cm ajax email cm ajax email text",
     "id": "612-text-11",
-    "pattern": "email",
+    "pattern": "ajax.*email",
     "topic": "email"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"medium\" id=\"input_1_4\" name=\"input_4\" tabindex=\"13\" type=\"email\" value=\"\"/>",
-    "feature": "email input 4 email input 1 4",
+    "feature": "email input 4 input 1 4 email",
     "id": "612-email-0",
-    "pattern": "email",
+    "pattern": "input.*4",
     "topic": "email"
   },
   {
     "dom": "<input class=\"search-field\" id=\"woocommerce-product-search-field-0\" name=\"s\" placeholder=\"search …\" type=\"search\" value=\"\"/>",
-    "feature": "search for search s search woocommerce product search field 0",
+    "feature": "search for search woocommerce product search field 0 search s",
     "id": "612-search-0",
-    "pattern": "search",
+    "pattern": "search.*field",
     "topic": "search"
   },
   {
     "dom": "<input class=\"search-field\" id=\"woocommerce-product-search-field-1\" name=\"s\" placeholder=\"search …\" type=\"search\" value=\"\"/>",
-    "feature": "search for search s search woocommerce product search field 1",
+    "feature": "search for search woocommerce product search field 1 search s",
     "id": "612-search-1",
-    "pattern": "search",
+    "pattern": "product.*search",
     "topic": "search"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"medium\" id=\"input_1_3\" name=\"input_3\" tabindex=\"12\" type=\"tel\" value=\"\"/>",
-    "feature": "phone input 3 tel input 1 3",
+    "feature": "phone input 3 input 1 3 tel",
     "id": "612-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "input.*3",
+    "topic": "phone"
   }
 ]

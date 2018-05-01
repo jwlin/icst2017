@@ -8,168 +8,168 @@
   },
   {
     "dom": "<input class=\" \" id=\"billingfirstname\" maxlength=\"15\" name=\"billingfirstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name text billingfirstname billingfirstname 15",
+    "feature": "first name billingfirstname billingfirstname text 15",
     "id": "565-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\" \" id=\"billinglastname\" maxlength=\"15\" name=\"billinglastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name text billinglastname billinglastname 15",
+    "feature": "last name billinglastname billinglastname text 15",
     "id": "565-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\" \" id=\"billingaddress1\" maxlength=\"30\" name=\"billingaddress1\" type=\"text\" value=\"\"/>",
-    "feature": "address line 1 text billingaddress1 billingaddress1 30",
+    "feature": "address line 1 billingaddress1 billingaddress1 text 30",
     "id": "565-text-3",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"\" id=\"billingaddress2\" maxlength=\"30\" name=\"billingaddress2\" type=\"text\" value=\"\"/>",
-    "feature": "address line 2 text billingaddress2 billingaddress2 30",
+    "feature": "address line 2 billingaddress2 billingaddress2 text 30",
     "id": "565-text-4",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\" \" id=\"billingzipcode\" maxlength=\"10\" name=\"billingzipcode\" type=\"text\" value=\"\"/>",
-    "feature": "zip code text billingzipcode billingzipcode 10",
+    "feature": "zip code billingzipcode billingzipcode text 10",
     "id": "565-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"\" id=\"billingcity\" maxlength=\"30\" name=\"billingcity\" type=\"text\" value=\"\"/>",
-    "feature": "city text billingcity billingcity 30",
+    "feature": "city billingcity billingcity text 30",
     "id": "565-text-6",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"\" id=\"billingdaytimephone\" maxlength=\"17\" name=\"billingdaytimephone\" type=\"text\" value=\"\"/>",
-    "feature": "phone text billingdaytimephone billingdaytimephone 17",
+    "feature": "phone billingdaytimephone billingdaytimephone text 17",
     "id": "565-text-7",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"\" id=\"billingeveningphone\" maxlength=\"17\" name=\"billingeveningphone\" type=\"text\" value=\"\"/>",
-    "feature": "alt phone text billingeveningphone billingeveningphone 17",
+    "feature": "alt phone billingeveningphone billingeveningphone text 17",
     "id": "565-text-8",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\" \" id=\"shippingfirstname\" maxlength=\"15\" name=\"shippingfirstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name text shippingfirstname shippingfirstname 15",
+    "feature": "first name shippingfirstname shippingfirstname text 15",
     "id": "565-text-9",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\" \" id=\"shippinglastname\" maxlength=\"15\" name=\"shippinglastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name text shippinglastname shippinglastname 15",
+    "feature": "last name shippinglastname shippinglastname text 15",
     "id": "565-text-10",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\" \" id=\"lineone\" maxlength=\"30\" name=\"lineone\" type=\"text\" value=\"\"/>",
-    "feature": "address line 1 text lineone lineone 30",
+    "feature": "address line 1 lineone lineone text 30",
     "id": "565-text-11",
-    "pattern": "address.*one",
+    "pattern": "lineone",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"\" id=\"linetwo\" maxlength=\"30\" name=\"linetwo\" type=\"text\" value=\"\"/>",
-    "feature": "address line 2 text linetwo linetwo 30",
+    "feature": "address line 2 linetwo linetwo text 30",
     "id": "565-text-12",
-    "pattern": "address.*two",
+    "pattern": "linetwo",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"\" id=\"linethree\" maxlength=\"30\" name=\"linethree\" type=\"text\" value=\"\"/>",
-    "feature": "address line 3 text linethree linethree 30",
+    "feature": "address line 3 linethree linethree text 30",
     "id": "565-text-13",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "linethree",
+    "topic": "apartment"
   },
   {
     "dom": "<input class=\" \" id=\"zip\" maxlength=\"10\" name=\"zip\" type=\"text\" value=\"92606\"/>",
-    "feature": "zip code text zip 92606 zip 10",
+    "feature": "zip code zip zip 92606 text 10",
     "id": "565-text-14",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"\" id=\"city\" maxlength=\"30\" name=\"city\" type=\"text\" value=\"\"/>",
-    "feature": "city text city city 30",
+    "feature": "city city city text 30",
     "id": "565-text-15",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"cc-input \" id=\"cc_number\" maxlength=\"20\" name=\"cc_number\" type=\"text\" value=\"\"/>",
-    "feature": "security code security code 3 or 4 digit code on card card number text cc number cc number 20",
+    "feature": "security code security code 3 or 4 digit code on card card number cc number cc number text 20",
     "id": "565-text-16",
-    "pattern": "creditcard.*id",
-    "topic": "credit_card_id"
+    "pattern": "cc.*number",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input class=\"cc-input\" id=\"cvv_number_input\" maxlength=\"4\" name=\"cvv_number\" type=\"text\"/>",
-    "feature": "security code security code 3 or 4 digit code on card card number cvv number cvv number input text 4",
+    "feature": "security code security code 3 or 4 digit code on card card number cvv number text cvv number input 4",
     "id": "565-text-17",
-    "pattern": "credit.*cvv",
-    "topic": "credit_card_cvv"
+    "pattern": "cvv",
+    "topic": "cvv"
   },
   {
     "dom": "<input class=\"cc-input \" id=\"storeccnumber\" maxlength=\"20\" name=\"storeccnumber\" type=\"text\" value=\"\"/>",
-    "feature": "card number text storeccnumber storeccnumber 20",
+    "feature": "card number storeccnumber storeccnumber text 20",
     "id": "565-text-18",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "store.*number",
+    "topic": "card_number_store"
   },
   {
     "dom": "<input class=\"promo-code-input \" id=\"promocode\" name=\"promocode\" type=\"text\" value=\"\"/>",
-    "feature": "i want to use a promo code promo codes cannot be added applied when using this promotional financing text promocode promocode",
+    "feature": "i want to use a promo code promo codes cannot be added applied when using this promotional financing promocode text promocode",
     "id": "565-text-19",
-    "pattern": "coupon.*code",
-    "topic": "coupon_code"
+    "pattern": "promo",
+    "topic": "promo_code"
   },
   {
     "dom": "<input id=\"giftemailsendername\" maxlength=\"40\" name=\"giftemailsendername\" type=\"text\" value=\"\"/>",
     "feature": "sender name giftemailsendername giftemailsendername text 40",
     "id": "565-text-20",
-    "pattern": "first.*name",
-    "topic": "first_name"
+    "pattern": "sendername",
+    "topic": "full_name"
   },
   {
     "dom": "<input id=\"giftemailsenderaddress\" maxlength=\"255\" name=\"giftemailsenderaddress\" type=\"text\" value=\"\"/>",
     "feature": "sender email address giftemailsenderaddress giftemailsenderaddress text 255",
     "id": "565-text-21",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input id=\"giftemailrecipientname\" maxlength=\"40\" name=\"giftemailrecipientname\" type=\"text\" value=\"\"/>",
     "feature": "recipient name giftemailrecipientname giftemailrecipientname text 40",
     "id": "565-text-22",
-    "pattern": "first.*name",
-    "topic": "first_name"
+    "pattern": "recipientname",
+    "topic": "full_name"
   },
   {
     "dom": "<input id=\"giftemailrecipientaddress\" maxlength=\"255\" name=\"giftemailrecipientaddress\" type=\"text\" value=\"\"/>",
     "feature": "recipient email address giftemailrecipientaddress giftemailrecipientaddress text 255",
     "id": "565-text-23",
-    "pattern": "email",
-    "topic": "email"
+    "pattern": "address",
+    "topic": "address_1"
   },
   {
     "dom": "<input class=\"clubo-email-signup-lb\" id=\"clubo-silver-email\" placeholder=\"your email address*\" type=\"text\"/>",
-    "feature": "sign up your email address text clubo silver email",
+    "feature": "sign up clubo silver email text your email address",
     "id": "565-text-24",
     "pattern": "email",
     "topic": "email"

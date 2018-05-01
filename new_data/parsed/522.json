@@ -11,7 +11,7 @@
     "feature": "mi please check the middle initial and try again ctl00 maincontentplaceholder contactinformation1 middleinitial text ctl00 maincontentplaceholder contactinformation1 middleinitial 1",
     "id": "522-text-1",
     "pattern": "middle.*initial",
-    "topic": ""
+    "topic": "middle_initial"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_validatorlastnamerequired ctl00_maincontentplaceholder_contactinformation1_validatorlastnamevalid\" id=\"ctl00_maincontentplaceholder_contactinformation1_lastname\" maxlength=\"17\" name=\"ctl00$maincontentplaceholder$contactinformation1$lastname\" type=\"text\"/>",
@@ -24,14 +24,14 @@
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_validatoraddress1required ctl00_maincontentplaceholder_contactinformation1_customvalidatoraddress1\" id=\"ctl00_maincontentplaceholder_contactinformation1_address1\" maxlength=\"30\" name=\"ctl00$maincontentplaceholder$contactinformation1$address1\" type=\"text\"/>",
     "feature": "address 1 no po boxes please enter an address no po boxes ctl00 maincontentplaceholder contactinformation1 address1 text ctl00 maincontentplaceholder contactinformation1 address1 30",
     "id": "522-text-3",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_customvalidatoraddress2\" id=\"ctl00_maincontentplaceholder_contactinformation1_address2\" maxlength=\"30\" name=\"ctl00$maincontentplaceholder$contactinformation1$address2\" type=\"text\"/>",
     "feature": "address 2 optional optional ctl00 maincontentplaceholder contactinformation1 address2 text ctl00 maincontentplaceholder contactinformation1 address2 30",
     "id": "522-text-4",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
@@ -39,7 +39,7 @@
     "feature": "zip code please enter a zip code please check the zip code and try again ctl00 maincontentplaceholder contactinformation1 zipcode text ctl00 maincontentplaceholder contactinformation1 zipcode 5",
     "id": "522-text-5",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_validatorcityrequired ctl00_maincontentplaceholder_contactinformation1_validatorcityvalid\" id=\"ctl00_maincontentplaceholder_contactinformation1_city\" maxlength=\"19\" name=\"ctl00$maincontentplaceholder$contactinformation1$city\" type=\"text\"/>",
@@ -52,22 +52,22 @@
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_validatorshippingaddress1required ctl00_maincontentplaceholder_contactinformation1_expressionvalidatorshippingaddress\" id=\"ctl00_maincontentplaceholder_contactinformation1_shippingaddress1box\" maxlength=\"30\" name=\"ctl00$maincontentplaceholder$contactinformation1$shippingaddress1box\" type=\"text\"/>",
     "feature": "address 1 please enter an address please check the address and try again ctl00 maincontentplaceholder contactinformation1 shippingaddress1box text ctl00 maincontentplaceholder contactinformation1 shippingaddress1box 30",
     "id": "522-text-7",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_expressionvalidatorshippingaddress2\" id=\"ctl00_maincontentplaceholder_contactinformation1_shippingaddress2box\" maxlength=\"30\" name=\"ctl00$maincontentplaceholder$contactinformation1$shippingaddress2box\" type=\"text\"/>",
     "feature": "address 2 optional please check the address and try again optional ctl00 maincontentplaceholder contactinformation1 shippingaddress2box text ctl00 maincontentplaceholder contactinformation1 shippingaddress2box 30",
     "id": "522-text-8",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_validatorshippingzip ctl00_maincontentplaceholder_contactinformation1_validatorshippingziprequired\" id=\"ctl00_maincontentplaceholder_contactinformation1_shippingaddresszipbox\" maxlength=\"5\" name=\"ctl00$maincontentplaceholder$contactinformation1$shippingaddresszipbox\" type=\"text\"/>",
     "feature": "zip code please enter a zip code please check the zip code and try again ctl00 maincontentplaceholder contactinformation1 shippingaddresszipbox text ctl00 maincontentplaceholder contactinformation1 shippingaddresszipbox 5",
     "id": "522-text-9",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_contactinformation1_validatorshippingaddresscity ctl00_maincontentplaceholder_contactinformation1_validatorshippingaddresscityexpression\" id=\"ctl00_maincontentplaceholder_contactinformation1_shippingaddresscitybox\" maxlength=\"19\" name=\"ctl00$maincontentplaceholder$contactinformation1$shippingaddresscitybox\" type=\"text\"/>",
@@ -80,70 +80,70 @@
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_ssnvalidator ctl00_maincontentplaceholder_securefinancialinformation1_combinedssnrequired\" class=\"u66\" id=\"socialsecuritynumber1\" maxlength=\"3\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$socialsecuritynumber1\" title=\"first three digits\" type=\"text\"/>",
     "feature": "please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 socialsecuritynumber1 text socialsecuritynumber1 3",
     "id": "522-text-11",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number.*1",
+    "topic": "ssn_1"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_ssnvalidator ctl00_maincontentplaceholder_securefinancialinformation1_combinedssnrequired\" class=\"u67\" id=\"socialsecuritynumber2\" maxlength=\"2\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$socialsecuritynumber2\" title=\"second two digits\" type=\"text\"/>",
     "feature": "please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 socialsecuritynumber2 text socialsecuritynumber2 2",
     "id": "522-text-12",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number.*2",
+    "topic": "ssn_2"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_ssnvalidator ctl00_maincontentplaceholder_securefinancialinformation1_combinedssnrequired\" class=\"u68\" id=\"socialsecuritynumber3\" maxlength=\"4\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$socialsecuritynumber3\" title=\"last four digits\" type=\"text\"/>",
     "feature": "please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 socialsecuritynumber3 text socialsecuritynumber3 4",
     "id": "522-text-13",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number.*3",
+    "topic": "ssn_3"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_ssnvalidator ctl00_maincontentplaceholder_securefinancialinformation1_combinedssnrequired\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_combinedssn\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$combinedssn\" style=\"display: none\" title=\"combined ss number\" type=\"text\"/>",
     "feature": "please enter a social security number social security number ctl00 maincontentplaceholder securefinancialinformation1 combinedssn text ctl00 maincontentplaceholder securefinancialinformation1 combinedssn",
     "id": "522-text-14",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_dobvalidator ctl00_maincontentplaceholder_securefinancialinformation1_dobrequired\" class=\"u69\" id=\"dobmonth\" maxlength=\"2\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$dobmonth\" title=\"dob month\" type=\"text\"/>",
     "feature": "please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 dobmonth text dobmonth 2",
     "id": "522-text-15",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob.*month",
+    "topic": "dob_month"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_dobvalidator ctl00_maincontentplaceholder_securefinancialinformation1_dobrequired\" class=\"u70\" id=\"dobday\" maxlength=\"2\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$dobday\" title=\"dob day\" type=\"text\"/>",
     "feature": "please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 dobday text dobday 2",
     "id": "522-text-16",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob.*day",
+    "topic": "dob_day"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_dobvalidator ctl00_maincontentplaceholder_securefinancialinformation1_dobrequired\" class=\"u71\" id=\"dobyear\" maxlength=\"4\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$dobyear\" title=\"dob year\" type=\"text\"/>",
     "feature": "please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 dobyear text dobyear 4",
     "id": "522-text-17",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob.*year",
+    "topic": "dob_year"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_dobvalidator ctl00_maincontentplaceholder_securefinancialinformation1_dobrequired\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_combineddateofbirth\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$combineddateofbirth\" style=\"display: none\" type=\"text\"/>",
     "feature": "please enter your date of birth date of birth ctl00 maincontentplaceholder securefinancialinformation1 combineddateofbirth text ctl00 maincontentplaceholder securefinancialinformation1 combineddateofbirth",
     "id": "522-text-18",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "date.*of.*birth",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_employertextvalidator\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_employer\" maxlength=\"36\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$employer\" type=\"text\"/>",
     "feature": "employer optional please check the employer name and try again optional ctl00 maincontentplaceholder securefinancialinformation1 employer text ctl00 maincontentplaceholder securefinancialinformation1 employer 36",
     "id": "522-text-19",
-    "pattern": "company",
-    "topic": "company_name"
+    "pattern": "employer",
+    "topic": "employer"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_annualincomecustomvalidator ctl00_maincontentplaceholder_securefinancialinformation1_annualincomefield\" id=\"annualincome\" maxlength=\"13\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$annualincome\" type=\"text\"/>",
     "feature": "annual income please enter your annual income invalid entry please try again ctl00 maincontentplaceholder securefinancialinformation1 annualincome text annualincome 13",
     "id": "522-text-20",
-    "pattern": "income",
+    "pattern": "annual.*income",
     "topic": "income"
   },
   {
@@ -157,22 +157,22 @@
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_validateidexpiration ctl00_maincontentplaceholder_securefinancialinformation1_requiredexpirationdate\" id=\"expirationmonth\" maxlength=\"2\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$expirationmonth\" style=\"width:10%;\" type=\"text\"/>",
     "feature": "please enter your id expiration date invalid entry please try again id expiration ctl00 maincontentplaceholder securefinancialinformation1 expirationmonth text expirationmonth 2",
     "id": "522-text-22",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "expiration.*month",
+    "topic": "exp_month"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_validateidexpiration ctl00_maincontentplaceholder_securefinancialinformation1_requiredexpirationdate\" id=\"expirationyear\" maxlength=\"2\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$expirationyear\" style=\"width:10%;\" type=\"text\"/>",
     "feature": "please enter your id expiration date invalid entry please try again id expiration ctl00 maincontentplaceholder securefinancialinformation1 expirationyear text expirationyear 2",
     "id": "522-text-23",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "expiration.*year",
+    "topic": "exp_year"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_validateidexpiration ctl00_maincontentplaceholder_securefinancialinformation1_requiredexpirationdate\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_combinedidexpirationdate\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$combinedidexpirationdate\" style=\"display: none\" type=\"text\"/>",
     "feature": "please enter your id expiration date invalid entry please try again id expiration ctl00 maincontentplaceholder securefinancialinformation1 combinedidexpirationdate text ctl00 maincontentplaceholder securefinancialinformation1 combinedidexpirationdate",
     "id": "522-text-24",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "expiration.*date",
+    "topic": "exp"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_emailvalidator ctl00_maincontentplaceholder_securefinancialinformation1_emailregularexpression\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_email\" maxlength=\"47\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$email\" oncopy=\"return false\" oncut=\"return false\" onpaste=\"return false\" type=\"text\"/>",
@@ -185,35 +185,35 @@
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_confirmemailvalidator ctl00_maincontentplaceholder_securefinancialinformation1_emailcomparison\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_confirmemail\" maxlength=\"47\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$confirmemail\" oncopy=\"return false\" oncut=\"return false\" onpaste=\"return false\" type=\"text\"/>",
     "feature": "confirm email address please confirm your email address please check both email addresses and try again ctl00 maincontentplaceholder securefinancialinformation1 confirmemail text ctl00 maincontentplaceholder securefinancialinformation1 confirmemail 47",
     "id": "522-text-26",
-    "pattern": "email",
+    "pattern": "confirm.*email",
     "topic": "email"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_phonenumberrequired ctl00_maincontentplaceholder_securefinancialinformation1_phonenumbervalidation\" id=\"businessphonenumber1\" maxlength=\"3\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$businessphonenumber1\" title=\"business phone area code\" type=\"text\"/>",
     "feature": "please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 businessphonenumber1 text businessphonenumber1 3",
     "id": "522-text-27",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*number.*1",
+    "topic": "area_code"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_phonenumberrequired ctl00_maincontentplaceholder_securefinancialinformation1_phonenumbervalidation\" id=\"businessphonenumber2\" maxlength=\"3\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$businessphonenumber2\" title=\"business phone middle three digits\" type=\"text\"/>",
     "feature": "please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 businessphonenumber2 text businessphonenumber2 3",
     "id": "522-text-28",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*number.*2",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_phonenumberrequired ctl00_maincontentplaceholder_securefinancialinformation1_phonenumbervalidation\" id=\"businessphonenumber3\" maxlength=\"4\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$businessphonenumber3\" title=\"business phone last four digits\" type=\"text\"/>",
     "feature": "please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 businessphonenumber3 text businessphonenumber3 4",
     "id": "522-text-29",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*number.*3",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_phonenumberrequired ctl00_maincontentplaceholder_securefinancialinformation1_phonenumbervalidation\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_combinedbusinessphonenumber\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$combinedbusinessphonenumber\" style=\"display: none;\" type=\"text\"/>",
     "feature": "please enter your phone number phone number ctl00 maincontentplaceholder securefinancialinformation1 combinedbusinessphonenumber text ctl00 maincontentplaceholder securefinancialinformation1 combinedbusinessphonenumber",
     "id": "522-text-30",
     "pattern": "phone.*number",
-    "topic": "phone_number"
+    "topic": "phone"
   }
 ]

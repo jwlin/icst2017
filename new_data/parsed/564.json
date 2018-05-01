@@ -8,30 +8,30 @@
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control\" id=\"firstname\" maxlength=\"40\" name=\"firstname\" size=\"20\" type=\"text\" value=\"\"/>",
-    "feature": "first name text firstname firstname 40",
+    "feature": "first name firstname firstname text 40",
     "id": "564-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control\" id=\"lastname\" maxlength=\"40\" name=\"lastname\" size=\"17\" type=\"text\" value=\"\"/>",
-    "feature": "last name text lastname lastname 40",
+    "feature": "last name lastname lastname text 40",
     "id": "564-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control\" id=\"streetaddress\" maxlength=\"50\" name=\"streetaddress\" ng-blur=\"filtershippingmethods('your state selection does not match with your zip/postal code selection.');\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 1 streetaddress streetaddress text 50",
     "id": "564-text-3",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" id=\"streetaddressoptional\" maxlength=\"50\" name=\"streetaddressoptional\" ng-blur=\"filtershippingmethods('your state selection does not match with your zip/postal code selection.');\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 2 apt floor suite address line 2 apt floor suite streetaddressoptional streetaddressoptional text 50",
     "id": "564-text-4",
-    "pattern": "address.*two",
+    "pattern": "addressoptional",
     "topic": "address_2"
   },
   {
@@ -43,7 +43,7 @@
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control\" id=\"region\" maxlength=\"50\" name=\"region\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "region text region region 50",
+    "feature": "region region region text 50",
     "id": "564-text-6",
     "pattern": "region",
     "topic": "region"
@@ -52,49 +52,49 @@
     "dom": "<input aria-required=\"true\" class=\"form-control\" id=\"postalcode\" maxlength=\"10\" name=\"zippostal\" ng-blur=\"filtershippingmethods('your state selection does not match with your zip/postal code selection.');\" ng-model=\"selectedshippingzip\" onchange=\"addresschanged();\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "zip code postalcode zippostal text 10",
     "id": "564-text-7",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-control\" id=\"countrytext\" readonly=\"true\" size=\"208\" tabindex=\"-1\" type=\"text\" value=\"us-united states\"/>",
-    "feature": "country text countrytext us united states",
+    "feature": "country text us united states countrytext",
     "id": "564-text-8",
     "pattern": "country",
     "topic": "country"
   },
   {
     "dom": "<input class=\"form-control\" id=\"memberid\" maxlength=\"10\" name=\"memberid\" size=\"12\" type=\"text\" value=\"\"/>",
-    "feature": "world market explorer id text memberid memberid 10",
+    "feature": "world market explorer id memberid memberid text 10",
     "id": "564-text-9",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input class=\"form-control\" id=\"firstname\" maxlength=\"40\" name=\"firstname\" size=\"20\" type=\"text\" value=\"\"/>",
-    "feature": "first name text firstname firstname 40",
+    "feature": "first name firstname firstname text 40",
     "id": "564-text-10",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"lastname\" maxlength=\"40\" name=\"lastname\" size=\"17\" type=\"text\" value=\"\"/>",
-    "feature": "last name text lastname lastname 40",
+    "feature": "last name lastname lastname text 40",
     "id": "564-text-11",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"streetaddress\" maxlength=\"50\" name=\"streetaddress\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 1 streetaddress streetaddress text 50",
     "id": "564-text-12",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" id=\"streetaddressoptional\" maxlength=\"50\" name=\"streetaddressoptional\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 2 apt floor suite streetaddressoptional streetaddressoptional text 50",
     "id": "564-text-13",
-    "pattern": "address.*two",
+    "pattern": "addressoptional",
     "topic": "address_2"
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "dom": "<input class=\"form-control\" id=\"region\" maxlength=\"50\" name=\"region\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "region text region region 50",
+    "feature": "region region region text 50",
     "id": "564-text-15",
     "pattern": "region",
     "topic": "region"
@@ -115,12 +115,12 @@
     "dom": "<input class=\"form-control\" id=\"postalcode\" maxlength=\"10\" name=\"zippostal\" onchange=\"addresschanged();\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "zip code postalcode zippostal text 10",
     "id": "564-text-16",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-control\" id=\"countrytext\" readonly=\"true\" size=\"208\" type=\"text\" value=\"us-united states\"/>",
-    "feature": "help icon text countrytext us united states",
+    "feature": "help icon text us united states countrytext",
     "id": "564-text-17",
     "pattern": "country",
     "topic": "country"
@@ -129,84 +129,84 @@
     "dom": "<input class=\"form-control\" id=\"pickupcontactmap{{storetopickitemsfrom.id}}.firstname\" maxlength=\"40\" name=\"pickupcontactmap['{{storetopickitemsfrom.id}}'].firstname\" ng-keydown=\"unbind()\" ng-model=\"storetopickitemsfrom.pickupcontact.firstname\" size=\"20\" type=\"text\" unbindable=\"\"/>",
     "feature": "first name text pickupcontactmap storetopickitemsfrom id firstname pickupcontactmap storetopickitemsfrom id firstname 40",
     "id": "564-text-18",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"pickupcontactmap{{storetopickitemsfrom.id}}.lastname\" maxlength=\"40\" name=\"pickupcontactmap['{{storetopickitemsfrom.id}}'].lastname\" ng-keydown=\"unbind()\" ng-model=\"storetopickitemsfrom.pickupcontact.lastname\" size=\"17\" type=\"text\" unbindable=\"\"/>",
     "feature": "last name text pickupcontactmap storetopickitemsfrom id lastname pickupcontactmap storetopickitemsfrom id lastname 40",
     "id": "564-text-19",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"mobilenumber\" maxlength=\"20\" name=\"mobilenumber\" size=\"20\" type=\"text\"/>",
     "feature": "mobile phone text mobilenumber mobilenumber 20",
     "id": "564-text-20",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "mobilenumber",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input class=\"form-control\" id=\"giftcertificatenumber\" maxlength=\"50\" name=\"giftcertificatenumber\" ng-model=\"model.payment.giftcertificatenumber\" size=\"20\" type=\"text\"/>",
     "feature": "card number text giftcertificatenumber giftcertificatenumber 50",
     "id": "564-text-21",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "giftcertificate",
+    "topic": "gift_card"
   },
   {
     "dom": "<input class=\"form-control\" id=\"giftcardpin\" maxlength=\"50\" name=\"giftcardpin\" ng-model=\"model.payment.attributemap['giftcardpin']\" size=\"20\" type=\"text\"/>",
     "feature": "pin text giftcardpin giftcardpin 50",
     "id": "564-text-22",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "pin",
+    "topic": "pin"
   },
   {
     "dom": "<input class=\"form-control\" id=\"creditcardname\" maxlength=\"50\" name=\"creditcardname\" ng-model=\"model.payment.creditcardname\" type=\"text\"/>",
     "feature": "name on card text creditcardname creditcardname 50",
     "id": "564-text-23",
-    "pattern": "creditcard.*id",
-    "topic": "credit_card_id"
+    "pattern": "creditcardname",
+    "topic": "full_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"creditcardnumber\" maxlength=\"16\" name=\"creditcardnumber\" ng-model=\"model.payment.creditcardnumber\" size=\"16\" type=\"text\"/>",
     "feature": "card number text creditcardnumber creditcardnumber 16",
     "id": "564-text-24",
-    "pattern": "creditcard.*id",
-    "topic": "credit_card_id"
+    "pattern": "creditcardnumber",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"form-control\" id=\"cvv2\" maxlength=\"4\" name=\"cvv2\" ng-model=\"model.payment.cvv2\" size=\"4\" type=\"text\"/>",
     "feature": "what s this security code text cvv2 cvv2 4",
     "id": "564-text-25",
-    "pattern": "credit.*cvv",
-    "topic": "credit_card_cvv"
+    "pattern": "cvv",
+    "topic": "cvv"
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.firstname\" maxlength=\"40\" name=\"billingform.firstname\" size=\"20\" type=\"text\" value=\"\"/>",
-    "feature": "first name text billingform firstname billingform firstname 40",
+    "feature": "first name billingform firstname billingform firstname text 40",
     "id": "564-text-26",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.lastname\" maxlength=\"40\" name=\"billingform.lastname\" size=\"17\" type=\"text\" value=\"\"/>",
-    "feature": "last name text billingform lastname billingform lastname 40",
+    "feature": "last name billingform lastname billingform lastname text 40",
     "id": "564-text-27",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.streetaddress\" maxlength=\"50\" name=\"billingform.streetaddress\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 1 billingform streetaddress billingform streetaddress text 50",
     "id": "564-text-28",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.streetaddressoptional\" maxlength=\"50\" name=\"billingform.streetaddressoptional\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 2 apt floor suite billingform streetaddressoptional billingform streetaddressoptional text 50",
     "id": "564-text-29",
-    "pattern": "address.*two",
+    "pattern": "addressoptional",
     "topic": "address_2"
   },
   {
@@ -218,7 +218,7 @@
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.region\" maxlength=\"50\" name=\"billingform.region\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "region text billingform region billingform region 50",
+    "feature": "region billingform region billingform region text 50",
     "id": "564-text-31",
     "pattern": "region",
     "topic": "region"
@@ -227,12 +227,12 @@
     "dom": "<input class=\"form-control\" id=\"postalcode\" maxlength=\"10\" name=\"billingform.zippostal\" onchange=\"addresschanged();\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "zip code postalcode billingform zippostal text 10",
     "id": "564-text-32",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-control\" id=\"countrytext\" readonly=\"true\" size=\"208\" type=\"text\" value=\"us-united states\"/>",
-    "feature": "city region select state zip code address line 2 apt floor suite this is a po box address line 1 first name last name phone email for order confirmation text countrytext us united states",
+    "feature": "city region select state zip code address line 2 apt floor suite this is a po box address line 1 first name last name phone email for order confirmation text us united states countrytext",
     "id": "564-text-33",
     "pattern": "country",
     "topic": "country"
@@ -246,30 +246,30 @@
   },
   {
     "dom": "<input class=\"form-control\" id=\"firstname\" maxlength=\"40\" name=\"firstname\" size=\"20\" type=\"text\" value=\"\"/>",
-    "feature": "first name text firstname firstname 40",
+    "feature": "first name firstname firstname text 40",
     "id": "564-text-35",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"lastname\" maxlength=\"40\" name=\"lastname\" size=\"17\" type=\"text\" value=\"\"/>",
-    "feature": "last name text lastname lastname 40",
+    "feature": "last name lastname lastname text 40",
     "id": "564-text-36",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"streetaddress\" maxlength=\"50\" name=\"streetaddress\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 1 streetaddress streetaddress text 50",
     "id": "564-text-37",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" id=\"streetaddressoptional\" maxlength=\"50\" name=\"streetaddressoptional\" onchange=\"addresschanged();\" size=\"35\" type=\"text\" value=\"\"/>",
     "feature": "address line 2 apt floor suite streetaddressoptional streetaddressoptional text 50",
     "id": "564-text-38",
-    "pattern": "address.*two",
+    "pattern": "addressoptional",
     "topic": "address_2"
   },
   {
@@ -281,7 +281,7 @@
   },
   {
     "dom": "<input class=\"form-control\" id=\"region\" maxlength=\"50\" name=\"region\" size=\"35\" type=\"text\" value=\"\"/>",
-    "feature": "region text region region 50",
+    "feature": "region region region text 50",
     "id": "564-text-40",
     "pattern": "region",
     "topic": "region"
@@ -290,26 +290,26 @@
     "dom": "<input class=\"form-control\" id=\"postalcode\" maxlength=\"10\" name=\"zippostal\" onchange=\"addresschanged();\" size=\"10\" type=\"text\" value=\"\"/>",
     "feature": "zip code postalcode zippostal text 10",
     "id": "564-text-41",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-control\" id=\"countrytext\" readonly=\"true\" size=\"208\" type=\"text\" value=\"us-united states\"/>",
-    "feature": "help icon text countrytext us united states",
+    "feature": "help icon text us united states countrytext",
     "id": "564-text-42",
     "pattern": "country",
     "topic": "country"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control\" id=\"emailaddress\" maxlength=\"100\" name=\"emailaddress\" size=\"35\" type=\"email\" value=\"\"/>",
-    "feature": "email for order confirmation email emailaddress emailaddress 100",
+    "feature": "email for order confirmation emailaddress emailaddress email 100",
     "id": "564-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" id=\"emailaddress\" maxlength=\"100\" name=\"emailaddress\" size=\"35\" type=\"email\" value=\"\"/>",
-    "feature": "email for order confirmation email emailaddress emailaddress 100",
+    "feature": "email for order confirmation emailaddress emailaddress email 100",
     "id": "564-email-1",
     "pattern": "email",
     "topic": "email"
@@ -318,19 +318,19 @@
     "dom": "<input class=\"form-control\" id=\"pickupcontactmap{{storetopickitemsfrom.id}}.emailaddress\" maxlength=\"100\" name=\"pickupcontactmap['{{storetopickitemsfrom.id}}'].emailaddress\" ng-keydown=\"unbind()\" ng-model=\"storetopickitemsfrom.pickupcontact.emailaddress\" size=\"35\" type=\"email\" unbindable=\"\"/>",
     "feature": "email email pickupcontactmap storetopickitemsfrom id emailaddress pickupcontactmap storetopickitemsfrom id emailaddress 100",
     "id": "564-email-2",
-    "pattern": "email",
-    "topic": "email"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.emailaddress\" maxlength=\"100\" name=\"billingform.emailaddress\" size=\"35\" type=\"email\" value=\"\"/>",
-    "feature": "email for order confirmation email billingform emailaddress billingform emailaddress 100",
+    "feature": "email for order confirmation billingform emailaddress billingform emailaddress email 100",
     "id": "564-email-3",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" id=\"emailaddress\" maxlength=\"100\" name=\"emailaddress\" size=\"35\" type=\"email\" value=\"\"/>",
-    "feature": "email for order confirmation email emailaddress emailaddress 100",
+    "feature": "email for order confirmation emailaddress emailaddress email 100",
     "id": "564-email-4",
     "pattern": "email",
     "topic": "email"
@@ -344,37 +344,37 @@
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control\" id=\"dayphone\" maxlength=\"20\" name=\"dayphone\" size=\"12\" type=\"tel\" value=\"\"/>",
-    "feature": "phone tel dayphone dayphone 20",
+    "feature": "phone dayphone dayphone tel 20",
     "id": "564-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control\" id=\"dayphone\" maxlength=\"20\" name=\"dayphone\" size=\"12\" type=\"tel\" value=\"\"/>",
-    "feature": "phone tel dayphone dayphone 20",
+    "feature": "phone dayphone dayphone tel 20",
     "id": "564-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control\" id=\"pickupcontactmap['{{storetopickitemsfrom.id}}'].mobilephone\" maxlength=\"20\" name=\"pickupcontactmap['{{storetopickitemsfrom.id}}'].mobilephone\" ng-keydown=\"unbind()\" ng-model=\"storetopickitemsfrom.pickupcontact.mobilephone\" size=\"12\" type=\"tel\" unbindable=\"\"/>",
     "feature": "mobile phone tel pickupcontactmap storetopickitemsfrom id mobilephone pickupcontactmap storetopickitemsfrom id mobilephone 20",
     "id": "564-tel-2",
-    "pattern": "cell.*phone",
-    "topic": "cell_phone_number"
+    "pattern": "mobilephone",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.dayphone\" maxlength=\"20\" name=\"billingform.dayphone\" size=\"12\" type=\"tel\" value=\"\"/>",
-    "feature": "phone tel billingform dayphone billingform dayphone 20",
+    "feature": "phone billingform dayphone billingform dayphone tel 20",
     "id": "564-tel-3",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"form-control\" id=\"dayphone\" maxlength=\"20\" name=\"dayphone\" size=\"12\" type=\"tel\" value=\"\"/>",
-    "feature": "phone tel dayphone dayphone 20",
+    "feature": "phone dayphone dayphone tel 20",
     "id": "564-tel-4",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

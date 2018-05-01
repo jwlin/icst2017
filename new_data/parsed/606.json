@@ -1,28 +1,28 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"q flexfix5 error\" maxlength=\"50\" name=\"q\" placeholder=\"search\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "search q search text 50",
+    "feature": "search text q search 50",
     "id": "606-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input class=\"q flexfix5 error\" maxlength=\"50\" name=\"q\" placeholder=\"search\" required=\"\" type=\"text\" value=\"\"/>",
-    "feature": "search q search text 50",
+    "feature": "search text q search 50",
     "id": "606-text-1",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input class=\"q input-text valid\" data-required-text=\"please enter your email address.\" id=\"email-alert-address\" maxlength=\"75\" name=\"email\" placeholder=\"enter your email address\" required=\"\" type=\"email\"/>",
-    "feature": "email email alert address enter your email address email 75",
+    "feature": "email alert address email enter your email address email 75",
     "id": "606-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input data-required-text=\"please enter your email address.\" name=\"email\" placeholder=\"enter your email address\" required=\"\" type=\"email\"/>",
-    "feature": "email enter your email address email",
+    "feature": "email email enter your email address",
     "id": "606-email-1",
     "pattern": "email",
     "topic": "email"

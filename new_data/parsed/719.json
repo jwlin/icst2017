@@ -17,14 +17,14 @@
     "dom": "<input class=\"textbox-narrow\" data-val=\"true\" data-val-required=\"first name is required.\" id=\"firstname\" maxlength=\"50\" name=\"firstname\" type=\"text\" value=\"\"/>",
     "feature": "firstname firstname text 50",
     "id": "719-text-2",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"textbox-narrow\" data-val=\"true\" data-val-required=\"last name is required.\" id=\"lastname\" maxlength=\"50\" name=\"lastname\" type=\"text\" value=\"\"/>",
     "feature": "lastname lastname text 50",
     "id": "719-text-3",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {

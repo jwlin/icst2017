@@ -3,42 +3,42 @@
     "dom": "<input id=\"q\" name=\"q\" placeholder=\"enter keyword or item #\" type=\"text\" value=\"\"/>",
     "feature": "search search catalog text q q enter keyword or item",
     "id": "616-text-0",
-    "pattern": "search",
+    "pattern": "q",
     "topic": "search"
   },
   {
     "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_firstname\" name=\"dwfrm_registerproduct_firstname\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "first name first name text dwfrm registerproduct firstname dwfrm registerproduct firstname",
     "id": "616-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_lastname\" name=\"dwfrm_registerproduct_lastname\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "last name last name text dwfrm registerproduct lastname dwfrm registerproduct lastname",
     "id": "616-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"input-text phone\" id=\"dwfrm_registerproduct_phone\" name=\"dwfrm_registerproduct_phone\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "phone number phone number text dwfrm registerproduct phone dwfrm registerproduct phone",
     "id": "616-text-3",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_address\" name=\"dwfrm_registerproduct_address\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "street address street address text dwfrm registerproduct address dwfrm registerproduct address",
     "id": "616-text-4",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"input-text \" id=\"dwfrm_registerproduct_address2\" name=\"dwfrm_registerproduct_address2\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "address 2 address 2 text dwfrm registerproduct address2 dwfrm registerproduct address2",
     "id": "616-text-5",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
@@ -52,8 +52,8 @@
     "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_zip\" name=\"dwfrm_registerproduct_zip\" placeholder=\"\" type=\"text\" value=\"\"/>",
     "feature": "zip code zip code text dwfrm registerproduct zip dwfrm registerproduct zip",
     "id": "616-text-7",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"input-text required\" id=\"dwfrm_registerproduct_modelnumber\" name=\"dwfrm_registerproduct_modelnumber\" placeholder=\"\" type=\"text\" value=\"\"/>",

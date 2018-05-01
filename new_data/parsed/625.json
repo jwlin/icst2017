@@ -1,23 +1,23 @@
 [
   {
     "dom": "<input class=\"form-control i18n\" data-required=\"\" data-required-message=\"first name is required\" id=\"userfirstname\" maxlength=\"100\" name=\"firstname\" type=\"text\"/>",
-    "feature": "first name text userfirstname firstname 100",
+    "feature": "first name userfirstname firstname text 100",
     "id": "625-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control i18n\" data-required=\"\" data-required-message=\"last name is required\" id=\"userlastname\" maxlength=\"100\" name=\"lastname\" type=\"text\"/>",
-    "feature": "last name text userlastname lastname 100",
+    "feature": "last name userlastname lastname text 100",
     "id": "625-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"form-control search-field\" id=\"search\" name=\"term\" placeholder=\"search\" type=\"text\"/>",
-    "feature": "search text search search term",
+    "feature": "search text search term search",
     "id": "625-text-2",
-    "pattern": "search",
+    "pattern": "term",
     "topic": "search"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "dom": "<input class=\"form-control i18n\" data-invalid-email=\"your email is incorrect. please try again.\" data-required=\"\" data-required-message=\"e-mail is required\" id=\"useremail\" maxlength=\"100\" name=\"email\" type=\"email\"/>",
-    "feature": "e mail email useremail email 100",
+    "feature": "e mail useremail email email 100",
     "id": "625-email-0",
     "pattern": "email",
     "topic": "email"
@@ -45,21 +45,21 @@
     "dom": "<input autocomplete=\"new-password\" class=\"password\" name=\"register.pwd\" pattern=\"(?=.*[a-z])(?=.*[a-z])(?=.*[0-9])(?=.*[`~!@$%\\^*()_+\\-={}|:;'&lt;&gt;,./])(?=.{8,}).*\" required=\"\" type=\"password\"/>",
     "feature": "please enter your password please enter a valid password please enter a valid password password register pwd",
     "id": "625-password-0",
-    "pattern": "password",
+    "pattern": "pwd",
     "topic": "password"
   },
   {
     "dom": "<input autocomplete=\"tel\" class=\"phone\" name=\"address.phone\" pattern=\"[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}\" required=\"\" type=\"tel\"/>",
     "feature": "please enter a valid phone number please enter your phone number tel address phone",
     "id": "625-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input autocomplete=\"postal-code\" name=\"address.postcode\" pattern=\"(\\d{5}([\\-]\\d{4})?)\" required=\"\" type=\"tel\"/>",
-    "feature": "please enter a valid zip code please enter your zip code tel address postcode",
+    "feature": "please enter a valid zip code please enter your zip code address postcode tel",
     "id": "625-tel-1",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postcode",
+    "topic": "zip"
   }
 ]

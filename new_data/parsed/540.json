@@ -1,210 +1,210 @@
 [
   {
     "dom": "<input aria-label=\"first name\" class=\"form-control\" id=\"firstname\" maxlength=\"20\" name=\"firstname\" ng-blur=\"firstnamefocus = false\" ng-focus=\"firstnamefocus = true\" ng-model=\"model.firstname\" placeholder=\"first name\" required=\"\" restrict-input=\"{type: 'nameonly'}\" type=\"text\"/>",
-    "feature": "first name is required first name first name firstname text firstname 20",
+    "feature": "first name is required first name text firstname firstname first name 20",
     "id": "540-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-label=\"middle name\" class=\"form-control\" data-ng-model=\"model.middlename\" id=\"middlename\" maxlength=\"1\" name=\"middlename\" placeholder=\"initial\" restrict-input=\"{type: 'lettersonly'}\" type=\"text\"/>",
-    "feature": "middle initial optional middlename initial text middlename 1",
+    "feature": "middle initial optional text middlename middlename initial 1",
     "id": "540-text-1",
-    "pattern": "middle.*initial",
-    "topic": "middle_initial"
+    "pattern": "middlename",
+    "topic": "middle_name"
   },
   {
     "dom": "<input aria-label=\"last name\" class=\"form-control\" id=\"lastname\" maxlength=\"20\" name=\"lastname\" ng-blur=\"lastnamefocus = false\" ng-focus=\"lastnamefocus = true\" ng-model=\"model.lastname\" placeholder=\"last name\" required=\"\" restrict-input=\"{type: 'nameonly'}\" type=\"text\"/>",
-    "feature": "last name is required last name last name lastname text lastname 20",
+    "feature": "last name is required last name text lastname lastname last name 20",
     "id": "540-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-label=\"ssn\" class=\"form-control\" data-ng-model=\"model.ssn\" id=\"ssn\" name=\"ssn\" ng-blur=\"ssnfocus = false;checkitin()\" ng-focus=\"ssnfocus = true\" placeholder=\"123-45-6789\" required=\"\" type=\"text\" ui-mask=\"999-99-9999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "social security number is required invalid ssn more info social security number more info 123 45 6789 ssn ssn text",
+    "feature": "social security number is required invalid ssn more info social security number more info text ssn ssn 123 45 6789",
     "id": "540-text-3",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-label=\"confirm ssn\" class=\"form-control\" data-ng-model=\"model.confirmssn\" id=\"confirmssn\" name=\"confirmssn\" ng-blur=\"confirmssnfocus = false\" ng-focus=\"confirmssnfocus = true\" placeholder=\"123-45-6789\" required=\"\" stopccp=\"\" type=\"text\" ui-mask=\"999-99-9999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "confirm ssn must match ssn confirm ssn is required please confirm your social security number confirm social security number please confirm your social security number 123 45 6789 confirmssn text confirmssn",
+    "feature": "confirm ssn must match ssn confirm ssn is required please confirm your social security number confirm social security number please confirm your social security number text confirmssn confirmssn 123 45 6789",
     "id": "540-text-4",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-label=\"phone number\" class=\"form-control\" data-ng-model=\"model.primaryphone\" id=\"primaryphone\" name=\"primaryphone\" ng-blur=\"primaryphonefocus = false\" ng-focus=\"primaryphonefocus = true\" placeholder=\"(321) 456-7890\" required=\"\" type=\"text\" ui-mask=\"(999) 999-9999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "phone number is required more info primary phone number more info mobile phone 321 456 7890 primaryphone primaryphone text",
+    "feature": "phone number is required more info primary phone number more info mobile phone text primaryphone primaryphone 321 456 7890",
     "id": "540-text-5",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-label=\"second phone number\" class=\"form-control\" data-ng-model=\"model.secondaryphone\" id=\"secondaryphone\" name=\"secondaryphone\" placeholder=\"(321) 456-7890\" type=\"text\" ui-mask=\"(999) 999-9999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "secondary phone number optional mobile phone secondaryphone 321 456 7890 text secondaryphone",
+    "feature": "secondary phone number optional mobile phone text secondaryphone secondaryphone 321 456 7890",
     "id": "540-text-6",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "secondaryphone",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input aria-label=\"home address\" class=\"form-control\" data-ng-model=\"model.homeaddress\" id=\"homeaddress\" maxlength=\"50\" name=\"homeaddress\" ng-blur=\"homeaddressfocus = false; haspobox();\" ng-focus=\"homeaddressfocus = true\" ng-keypress=\"clearaddresses()\" placeholder=\"123 main street\" required=\"\" restrict-input=\"{type: 'alphanumberdashdot'}\" type=\"text\"/>",
-    "feature": "home address is required more info home address more info 123 main street homeaddress text homeaddress 50",
+    "feature": "home address is required more info home address more info text homeaddress homeaddress 123 main street 50",
     "id": "540-text-7",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-label=\"apartment\" class=\"form-control\" data-ng-model=\"model.homeaptsuite\" id=\"homeaptsuite\" maxlength=\"10\" name=\"homeaptsuite\" ng-blur=\"aptsuiteupdate();\" placeholder=\"apt\" type=\"text\"/>",
-    "feature": "suite apt if applicable homeaptsuite apt text homeaptsuite 10",
+    "feature": "suite apt if applicable text homeaptsuite homeaptsuite apt 10",
     "id": "540-text-8",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apt",
+    "topic": "apartment"
   },
   {
     "dom": "<input aria-label=\"home zip\" class=\"form-control\" data-ng-model=\"model.homezipcode\" id=\"homezipcode\" name=\"homezipcode\" ng-blur=\"lookupzip('home'); homezipfoucs = false\" ng-focus=\"homezipfoucs = true\" placeholder=\"12345\" required=\"\" size=\"5\" type=\"text\" ui-mask=\"99999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "zip code is required zip 12345 homezipcode text homezipcode",
+    "feature": "zip code is required zip text homezipcode homezipcode 12345",
     "id": "540-text-9",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-label=\"home city\" class=\"form-control\" data-ng-model=\"model.homecity\" id=\"homecity\" maxlength=\"20\" name=\"homecity\" ng-blur=\"homecityfocus = false\" ng-focus=\"homecityfocus = true\" placeholder=\"city\" required=\"\" restrict-input=\"{type: 'alphanumberdashdot'}\" type=\"text\"/>",
-    "feature": "city is required city city homecity text homecity 20",
+    "feature": "city is required city text homecity homecity city 20",
     "id": "540-text-10",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-label=\"home state\" class=\"form-control\" id=\"homestate\" name=\"homestate\" ng-blur=\"validatestate('home'); homestatefocus = false\" ng-focus=\"homestatefocus = true\" ng-model=\"model.homestate\" placeholder=\"state\" required=\"\" type=\"text\" ui-mask=\"aa\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "state is required state state homestate text homestate",
+    "feature": "state is required state text homestate homestate state",
     "id": "540-text-11",
     "pattern": "state",
     "topic": "state"
   },
   {
     "dom": "<input aria-label=\"po address\" class=\"form-control\" data-ng-model=\"model.poaddress\" id=\"poaddress\" maxlength=\"20\" name=\"poaddress\" ng-blur=\"poaddressfocus = false;\" ng-focus=\"poaddressfocus = true\" ng-required=\"showpobox\" placeholder=\"po box\" type=\"text\"/>",
-    "feature": "po address is required po address poaddress po box text poaddress 20",
+    "feature": "po address is required po address text poaddress poaddress po box 20",
     "id": "540-text-12",
-    "pattern": "address.*one",
-    "topic": "address_1"
+    "pattern": "poaddress",
+    "topic": "address_po"
   },
   {
     "dom": "<input aria-label=\"po zip\" class=\"form-control\" data-ng-model=\"model.pozipcode\" id=\"pozipcode\" name=\"pozipcode\" ng-blur=\"lookupzip('po'); pozipcodefocus = false\" ng-focus=\"pozipcodefocus = true\" ng-required=\"showpobox\" placeholder=\"12345\" size=\"5\" type=\"text\" ui-mask=\"99999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "po zip code is required po zip 12345 pozipcode text pozipcode",
+    "feature": "po zip code is required po zip text pozipcode pozipcode 12345",
     "id": "540-text-13",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-label=\"home city\" class=\"form-control\" data-ng-model=\"model.pocity\" id=\"pocity\" maxlength=\"20\" name=\"pocity\" ng-blur=\"pocityfocus = false\" ng-focus=\"pocityfocus = true\" ng-required=\"showpobox\" placeholder=\"city\" restrict-input=\"{type: 'alphanumberdashdot'}\" type=\"text\"/>",
-    "feature": "po city is required po city city pocity text pocity 20",
+    "feature": "po city is required po city text pocity pocity city 20",
     "id": "540-text-14",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-label=\"home state\" class=\"form-control\" id=\"postate\" name=\"postate\" ng-blur=\"validatestate('po'); pastatefocus = false\" ng-focus=\"pastatefocus = true\" ng-model=\"model.postate\" ng-required=\"showpobox\" ng-show=\"showpobox\" placeholder=\"state\" type=\"text\" ui-mask=\"aa\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "po state is required po state state postate text postate",
+    "feature": "po state is required po state text postate postate state",
     "id": "540-text-15",
     "pattern": "state",
     "topic": "state"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-model=\"model.mothersmaidenname\" id=\"mothersmaidenname\" maxlength=\"25\" name=\"mothersmaidenname\" ng-blur=\"securitywordfocus = false;\" ng-focus=\"securitywordfocus = true\" placeholder=\"security word\" required=\"\" restrict-input=\"{type: 'lettersanddigitsonly'}\" type=\"text\"/>",
-    "feature": "security word is required security word what does this mean mothersmaidenname security word text mothersmaidenname 25",
+    "feature": "security word is required security word what does this mean text mothersmaidenname mothersmaidenname security word 25",
     "id": "540-text-16",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "mothersmaidenname",
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input aria-label=\"income\" awnum=\"\" class=\"form-control\" data-ng-model=\"model.income\" id=\"income\" maxlength=\"7\" name=\"income\" ng-blur=\"incomefocus = false\" ng-focus=\"incomefocus = true\" num-fract=\"0\" num-int=\"6\" num-sep=\".\" num-thousand=\"true\" placeholder=\"35,000\" required=\"\" type=\"text\"/>",
-    "feature": "35 000 income text income 7",
+    "feature": "text income income 35 000 7",
     "id": "540-text-17",
     "pattern": "income",
     "topic": "income"
   },
   {
     "dom": "<input aria-label=\"housing payment\" awnum=\"\" class=\"form-control\" data-ng-model=\"model.monthlyhousingpayment\" id=\"monthlyhousingpayment\" maxlength=\"6\" name=\"monthlyhousingpayment\" ng-blur=\"montlyhousingpaymentfocus = false\" ng-focus=\"montlyhousingpaymentfocus = true\" num-fract=\"0\" num-int=\"4\" num-sep=\".\" num-thousand=\"true\" number=\"\" placeholder=\"500\" required=\"\" type=\"text\"/>",
-    "feature": "500 monthlyhousingpayment text monthlyhousingpayment 6",
+    "feature": "text monthlyhousingpayment monthlyhousingpayment 500 6",
     "id": "540-text-18",
-    "pattern": "rent",
+    "pattern": "monthly.*payment",
     "topic": "rent"
   },
   {
     "dom": "<input aria-label=\"credit limit\" awnum=\"\" class=\"form-control\" id=\"creditlimit\" maxlength=\"5\" name=\"creditlimit\" ng-blur=\"creditlimitfocus = false\" ng-focus=\"creditlimitfocus = true\" ng-model=\"model.creditlimit\" ng-required=\"true\" num-fract=\"0\" num-int=\"4\" num-sep=\".\" num-thousand=\"true\" placeholder=\"200\" required=\"\" type=\"text\"/>",
-    "feature": "200 creditlimit text creditlimit 5",
+    "feature": "text creditlimit creditlimit 200 5",
     "id": "540-text-19",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "creditlimit",
+    "topic": "credit_limit"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-model=\"model.debitfirstname\" id=\"debitfirstname\" maxlength=\"20\" name=\"debitfirstname\" ng-blur=\"debitfirstnamefocus = false\" ng-focus=\"debitfirstnamefocus = true\" ng-required=\"model.fundingtype == 'dbt'\" placeholder=\"cardholder first name\" restrict-input=\"{type: 'address'}\" type=\"text\"/>",
-    "feature": "first name is required first name debitfirstname cardholder first name text debitfirstname 20",
+    "feature": "first name is required first name text debitfirstname debitfirstname cardholder first name 20",
     "id": "540-text-20",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-model=\"model.debitlastname\" id=\"debitlastname\" maxlength=\"20\" name=\"debitlastname\" ng-blur=\"debitlastnamefocus = false\" ng-focus=\"debitlastnamefocus = true\" ng-required=\"model.fundingtype == 'dbt'\" placeholder=\"cardholder last name\" restrict-input=\"{type: 'address'}\" type=\"text\"/>",
-    "feature": "last name is required last name debitlastname cardholder last name text debitlastname 20",
+    "feature": "last name is required last name text debitlastname debitlastname cardholder last name 20",
     "id": "540-text-21",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input cc-eager-type=\"\" cc-format=\"\" cc-number=\"\" class=\"form-control\" data-ng-model=\"model.debitcardnumber\" id=\"debitcardnumber\" maxlength=\"19\" name=\"debitcardnumber\" ng-blur=\"debitcardnumberfocus = false;validcardtype()\" ng-focus=\"debitcardnumberfocus = true\" ng-required=\"model.fundingtype == 'dbt'\" placeholder=\"card number\" type=\"text\"/>",
-    "feature": "card number is required please review we only accept visa and mastercard this is an invalid credit card number card number card number debitcardnumber text debitcardnumber 19",
+    "feature": "card number is required please review we only accept visa and mastercard this is an invalid credit card number card number text debitcardnumber debitcardnumber card number 19",
     "id": "540-text-22",
-    "pattern": "creditcard.*id",
-    "topic": "credit_card_id"
+    "pattern": "cardnumber",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-minlength=\"3\" data-ng-model=\"model.debitcvvcode\" data-ng-pattern=\"/^[0-9]+$/\" id=\"debitcvvcode\" maxlength=\"3\" name=\"debitcvvcode\" ng-blur=\"debitcvvcodefocus = false\" ng-focus=\"debitcvvcodefocus = true\" ng-required=\"model.fundingtype == 'dbt'\" placeholder=\"cvv\" restrict-input=\"{type: 'digitsonly'}\" type=\"text\"/>",
-    "feature": "cvv is required please review cvv the cvv is the 3 digit number on the back of your card on or above your signature line cvv debitcvvcode debitcvvcode text 3",
+    "feature": "cvv is required please review cvv the cvv is the 3 digit number on the back of your card on or above your signature line text debitcvvcode debitcvvcode cvv 3",
     "id": "540-text-23",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "cvv",
+    "topic": "cvv"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-model=\"model.debitaddress\" id=\"debitaddress\" maxlength=\"50\" name=\"debitaddress\" ng-blur=\"debitaddressfocus = false\" ng-focus=\"debitaddressfocus = true\" ng-required=\"model.fundingtype == 'dbt'  &amp;&amp; model.differentbillto == true\" placeholder=\"123 main street\" restrict-input=\"{type: 'alphanumberdashdot'}\" type=\"text\"/>",
-    "feature": "billing address is required bill to address debitaddress 123 main street text debitaddress 50",
+    "feature": "billing address is required bill to address text debitaddress debitaddress 123 main street 50",
     "id": "540-text-24",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-model=\"model.debitaptsuite\" id=\"debitaptsuite\" maxlength=\"10\" name=\"debitaptsuite\" placeholder=\"suite/apt #\" restrict-input=\"{type: 'alphanumberdashdot'}\" type=\"text\"/>",
-    "feature": "bill to suite apt if applicable debitaptsuite suite apt text debitaptsuite 10",
+    "feature": "bill to suite apt if applicable text debitaptsuite debitaptsuite suite apt 10",
     "id": "540-text-25",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apt",
+    "topic": "apartment"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-model=\"model.debitzip\" id=\"debitzip\" name=\"debitzip\" ng-blur=\"debitzipfocus = false; lookupzip('billing')\" ng-focus=\"debitzipfocus = true\" ng-required=\"model.fundingtype == 'dbt'  &amp;&amp; model.differentbillto == true\" placeholder=\"12345\" type=\"text\" ui-mask=\"99999\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "zip is required bill to zip 12345 debitzip debitzip text",
+    "feature": "zip is required bill to zip text debitzip debitzip 12345",
     "id": "540-text-26",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"form-control\" data-ng-model=\"model.debitcity\" email=\"\" id=\"debitcity\" maxlength=\"20\" name=\"debitcity\" ng-blur=\"debitcityfocus = false\" ng-focus=\"debitcityfocus = true\" ng-required=\"model.fundingtype == 'dbt'  &amp;&amp; model.differentbillto == true\" placeholder=\"city\" restrict-input=\"{type: 'address'}\" type=\"text\"/>",
-    "feature": "city is required bill to city city debitcity text debitcity 20",
+    "feature": "city is required bill to city text debitcity debitcity city 20",
     "id": "540-text-27",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form-control\" id=\"debitstate\" name=\"debitstate\" ng-blur=\"validatestate('bill');debitstatefocus = false;leavetab('#panelsecuritydeposit');\" ng-focus=\"debitstatefocus = true\" ng-model=\"model.debitstate\" ng-required=\"model.fundingtype == 'dbt' &amp;&amp; model.differentbillto == true &amp;&amp; debitstatefocus == false\" placeholder=\"state\" type=\"text\" ui-mask=\"aa\" ui-mask-placeholder=\"\" ui-mask-placeholder-char=\"_\"/>",
-    "feature": "state is required bill to state state debitstate text debitstate",
+    "feature": "state is required bill to state text debitstate debitstate state",
     "id": "540-text-28",
     "pattern": "state",
     "topic": "state"
   },
   {
     "dom": "<input aria-label=\"email\" class=\"form-control\" data-ng-model=\"model.emailaddress\" email=\"\" id=\"emailaddress\" maxlength=\"60\" name=\"emailaddress\" ng-blur=\"saveemaillead(); emailfocus = false; emailresponsemsg = ''\" ng-focus=\"emailfocus = true;\" placeholder=\"email@address.com\" required=\"\" type=\"email\"/>",
-    "feature": "email required invalid email address emailresponsemsg more info email address more info email address com emailaddress email emailaddress 60",
+    "feature": "email required invalid email address emailresponsemsg more info email address more info email emailaddress emailaddress email address com 60",
     "id": "540-email-0",
     "pattern": "email",
     "topic": "email"

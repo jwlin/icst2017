@@ -1,77 +1,77 @@
 [
   {
     "dom": "<input class=\"textinput f_textinput required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name first name dwfrm singleshipping shippingaddress addressfields firstname text dwfrm singleshipping shippingaddress addressfields firstname 50",
+    "feature": "first name first name text dwfrm singleshipping shippingaddress addressfields firstname dwfrm singleshipping shippingaddress addressfields firstname 50",
     "id": "591-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"textinput f_textinput required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name last name dwfrm singleshipping shippingaddress addressfields lastname text dwfrm singleshipping shippingaddress addressfields lastname 50",
+    "feature": "last name last name text dwfrm singleshipping shippingaddress addressfields lastname dwfrm singleshipping shippingaddress addressfields lastname 50",
     "id": "591-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"textinput f_textinput required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" maxlength=\"35\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" type=\"text\" value=\"\"/>",
-    "feature": "address address dwfrm singleshipping shippingaddress addressfields address1 text dwfrm singleshipping shippingaddress addressfields address1 35",
+    "feature": "address address text dwfrm singleshipping shippingaddress addressfields address1 dwfrm singleshipping shippingaddress addressfields address1 35",
     "id": "591-text-2",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"textinput f_textinput \" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" maxlength=\"35\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" type=\"text\" value=\"\"/>",
-    "feature": "address 2 address 2 dwfrm singleshipping shippingaddress addressfields address2 text dwfrm singleshipping shippingaddress addressfields address2 35",
+    "feature": "address 2 address 2 text dwfrm singleshipping shippingaddress addressfields address2 dwfrm singleshipping shippingaddress addressfields address2 35",
     "id": "591-text-3",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"textinput f_textinput required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" maxlength=\"35\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_city\" type=\"text\" value=\"\"/>",
-    "feature": "city city dwfrm singleshipping shippingaddress addressfields city text dwfrm singleshipping shippingaddress addressfields city 35",
+    "feature": "city city text dwfrm singleshipping shippingaddress addressfields city dwfrm singleshipping shippingaddress addressfields city 35",
     "id": "591-text-4",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"textinput f_textinput postal required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_zip\" maxlength=\"10\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_zip\" type=\"text\" value=\"\"/>",
-    "feature": "zip code zip code dwfrm singleshipping shippingaddress addressfields zip text dwfrm singleshipping shippingaddress addressfields zip 10",
+    "feature": "zip code zip code text dwfrm singleshipping shippingaddress addressfields zip dwfrm singleshipping shippingaddress addressfields zip 10",
     "id": "591-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"textinput f_textinput required\" id=\"dwfrm_newsletter_checkoutsubscription_mobile\" name=\"dwfrm_newsletter_checkoutsubscription_mobile\" type=\"text\" value=\"\"/>",
-    "feature": "numbers only no dashes phone number phone number dwfrm newsletter checkoutsubscription mobile dwfrm newsletter checkoutsubscription mobile text",
+    "feature": "numbers only no dashes phone number phone number text dwfrm newsletter checkoutsubscription mobile dwfrm newsletter checkoutsubscription mobile",
     "id": "591-text-6",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "mobile",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input class=\"notifyemail textinput f_textinput\" id=\"outofstockemail\" name=\"outofstockemail\" placeholder=\"\" type=\"text\" value=\"\"/>",
-    "feature": "email address outofstockemail text outofstockemail",
+    "feature": "email address text outofstockemail outofstockemail",
     "id": "591-text-7",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"textinput f_email required\" id=\"dwfrm_login_username_d0kukprqfkqb\" maxlength=\"50\" name=\"dwfrm_login_username_d0kukprqfkqb\" placeholder=\"email address\" type=\"email\" value=\"\"/>",
-    "feature": "email address email address dwfrm login username d0kukprqfkqb email dwfrm login username d0kukprqfkqb email address 50",
+    "feature": "email address email address email dwfrm login username d0kukprqfkqb dwfrm login username d0kukprqfkqb email address 50",
     "id": "591-email-0",
-    "pattern": "email",
-    "topic": "email"
+    "pattern": "username",
+    "topic": "username"
   },
   {
     "dom": "<input class=\"textinput f_email required\" id=\"dwfrm_cart_fromemail\" name=\"dwfrm_cart_fromemail\" type=\"email\" value=\"\"/>",
-    "feature": "your email your email dwfrm cart fromemail dwfrm cart fromemail email",
+    "feature": "your email your email email dwfrm cart fromemail dwfrm cart fromemail",
     "id": "591-email-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"textinput f_email required\" id=\"dwfrm_cart_toemail\" name=\"dwfrm_cart_toemail\" type=\"email\" value=\"\"/>",
-    "feature": "your friends email your friends email dwfrm cart toemail dwfrm cart toemail email",
+    "feature": "your friends email your friends email email dwfrm cart toemail dwfrm cart toemail",
     "id": "591-email-2",
     "pattern": "email",
     "topic": "email"

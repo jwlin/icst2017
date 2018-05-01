@@ -1,51 +1,51 @@
 [
   {
     "dom": "<input class=\"bose-textfield__input \" data-initialized=\"true\" id=\"serialnumber-3bfba796-5c5d-4a18-9854-1c594d92c897\" maxlength=\"17\" name=\"serialnumber\" required=\"required\" type=\"text\"/>",
-    "feature": "serial number serial number serialnumber text serialnumber 3bfba796 5c5d 4a18 9854 1c594d92c897 17",
+    "feature": "serial number serial number serialnumber serialnumber 3bfba796 5c5d 4a18 9854 1c594d92c897 text 17",
     "id": "621-text-0",
-    "pattern": "serial",
+    "pattern": "serial.*number",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"bose-textfield__input \" data-initialized=\"true\" id=\"communication-firstname-cec5696d-78db-4412-bb34-bb61796ad1cd\" name=\"communication.firstname\" required=\"required\" type=\"text\"/>",
-    "feature": "first name first name communication firstname text communication firstname cec5696d 78db 4412 bb34 bb61796ad1cd",
+    "feature": "first name first name communication firstname communication firstname cec5696d 78db 4412 bb34 bb61796ad1cd text",
     "id": "621-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"bose-textfield__input \" data-initialized=\"true\" id=\"communication-lastname-c497a748-cdad-4b96-bcc7-de1247704d50\" name=\"communication.lastname\" required=\"required\" type=\"text\"/>",
-    "feature": "last name last name communication lastname text communication lastname c497a748 cdad 4b96 bcc7 de1247704d50",
+    "feature": "last name last name communication lastname communication lastname c497a748 cdad 4b96 bcc7 de1247704d50 text",
     "id": "621-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"bose-textfield__input \" data-initialized=\"true\" id=\"communication-email-eccff46f-7fec-47e9-af56-7507388b8007\" name=\"communication.email\" required=\"required\" type=\"text\"/>",
-    "feature": "email email communication email text communication email eccff46f 7fec 47e9 af56 7507388b8007",
+    "feature": "email email communication email communication email eccff46f 7fec 47e9 af56 7507388b8007 text",
     "id": "621-text-3",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"bose-textfield__input \" data-initialized=\"true\" id=\"communication-phone-935774db-114e-408c-b047-8f5e51e84fb3\" name=\"communication.phone\" required=\"required\" type=\"text\"/>",
-    "feature": "phone phone communication phone text communication phone 935774db 114e 408c b047 8f5e51e84fb3",
+    "feature": "phone phone communication phone communication phone 935774db 114e 408c b047 8f5e51e84fb3 text",
     "id": "621-text-4",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"bose-textfield__input js-datepicker-textfield\" data-initialized=\"true\" disabled=\"disabled\" id=\"purchasedate_display-9e19d382-421c-43fc-a48b-7a1e9f25389a\" name=\"purchasedate_display\" required=\"required\" type=\"text\"/>",
-    "feature": "purchase date purchase date purchasedate display text purchasedate display 9e19d382 421c 43fc a48b 7a1e9f25389a",
+    "feature": "purchase date purchase date purchasedate display purchasedate display 9e19d382 421c 43fc a48b 7a1e9f25389a text",
     "id": "621-text-5",
-    "pattern": "date",
+    "pattern": "purchase.*date",
     "topic": "date"
   },
   {
     "dom": "<input aria-label=\"search\" class=\"bose-singleinputform__input \" id=\"search-input-87d610b9-c3b0-4a46-8104-15df4b6b64c3\" name=\"queryfordisplay\" placeholder=\"search...\" type=\"search\"/>",
-    "feature": "search close queryfordisplay search search search input 87d610b9 c3b0 4a46 8104 15df4b6b64c3",
+    "feature": "search close search input 87d610b9 c3b0 4a46 8104 15df4b6b64c3 queryfordisplay search search",
     "id": "621-search-0",
-    "pattern": "search",
+    "pattern": "query",
     "topic": "search"
   }
 ]

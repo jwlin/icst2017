@@ -1,49 +1,49 @@
 [
   {
     "dom": "<input class=\"sb-search-input search-term required\" id=\"txtsearchtop\" name=\"ctl00$txtsearchtop\" type=\"text\"/>",
-    "feature": "txtsearchtop ctl00 txtsearchtop text",
+    "feature": "ctl00 txtsearchtop text txtsearchtop",
     "id": "643-text-0",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input class=\"required\" id=\"wd_txtfname\" name=\"ctl00$wd$txtfname\" type=\"text\"/>",
-    "feature": "first name is required wd txtfname ctl00 wd txtfname text",
+    "feature": "first name is required ctl00 wd txtfname text wd txtfname",
     "id": "643-text-1",
-    "pattern": "first.*name",
+    "pattern": "fname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"required\" id=\"wd_txtlname\" name=\"ctl00$wd$txtlname\" type=\"text\"/>",
-    "feature": "last name is required wd txtlname ctl00 wd txtlname text",
+    "feature": "last name is required ctl00 wd txtlname text wd txtlname",
     "id": "643-text-2",
-    "pattern": "last.*name",
+    "pattern": "lname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"required\" id=\"wd_txtemail\" name=\"ctl00$wd$txtemail\" type=\"text\"/>",
-    "feature": "email is required wd txtemail ctl00 wd txtemail text",
+    "feature": "email is required ctl00 wd txtemail text wd txtemail",
     "id": "643-text-3",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"required\" id=\"wd_txtphone\" name=\"ctl00$wd$txtphone\" type=\"text\"/>",
-    "feature": "country is required email is required last name is required first name is required serial number is required purchase date must be in the past required phone number country email last name first name serial number purchase date place of purchase yes please subscribe me to all emails from wd regarding my product wd txtphone ctl00 wd txtphone text",
+    "feature": "country is required email is required last name is required first name is required serial number is required purchase date must be in the past required phone number country email last name first name serial number purchase date place of purchase yes please subscribe me to all emails from wd regarding my product ctl00 wd txtphone text wd txtphone",
     "id": "643-text-4",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"required\" id=\"wd_txtsn\" name=\"ctl00$wd$txtsn\" type=\"text\"/>",
-    "feature": "serial number is required wd txtsn ctl00 wd txtsn text",
+    "feature": "serial number is required ctl00 wd txtsn text wd txtsn",
     "id": "643-text-5",
-    "pattern": "serial",
+    "pattern": "sn",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"required\" id=\"wd_txtdate\" name=\"ctl00$wd$txtdate\" type=\"text\"/>",
-    "feature": "purchase date must be in the past required wd txtdate ctl00 wd txtdate text",
+    "feature": "purchase date must be in the past required ctl00 wd txtdate text wd txtdate",
     "id": "643-text-6",
     "pattern": "date",
     "topic": "date"

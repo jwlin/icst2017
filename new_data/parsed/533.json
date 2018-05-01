@@ -1,191 +1,191 @@
 [
   {
     "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3-tomask errorfield\" id=\"apply_firstname\" maxlength=\"11\" minlength=\"1\" name=\"apply_firstname\" style=\"display: none;\" type=\"text\" value=\"\"/>",
-    "feature": "first name apply firstname text apply firstname 11",
+    "feature": "first name text apply firstname apply firstname 11",
     "id": "533-text-0",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3mask-textmask-dummytxtmask\" id=\"apply_firstname-masked\" name=\"apply_firstname-masked\" title=\"first name\" type=\"text\"/>",
-    "feature": "first name apply firstname masked apply firstname masked text",
+    "feature": "first name text apply firstname masked apply firstname masked",
     "id": "533-text-1",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control name optionaltwo envt-stop c3-tomask\" id=\"apply_middleinitial\" maxlength=\"1\" minlength=\"1\" name=\"apply_middleinitial\" type=\"text\" value=\"\"/>",
-    "feature": "middle initial optional apply middleinitial text apply middleinitial 1",
+    "feature": "middle initial optional text apply middleinitial apply middleinitial 1",
     "id": "533-text-2",
-    "pattern": "middle.*initial",
+    "pattern": "middle.*init",
     "topic": "middle_initial"
   },
   {
     "dom": "<input class=\"form-control name optionaltwo envt-stop c3mask-textmask-dummytxtmask hidden\" id=\"apply_middleinitial-masked\" name=\"apply_middleinitial-masked\" title=\"middle initial (optional)\" type=\"text\"/>",
-    "feature": "middle initial optional apply middleinitial masked apply middleinitial masked text",
+    "feature": "middle initial optional text apply middleinitial masked apply middleinitial masked",
     "id": "533-text-3",
-    "pattern": "middle.*initial",
+    "pattern": "middle.*init",
     "topic": "middle_initial"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3-tomask\" id=\"apply_lastname\" maxlength=\"18\" minlength=\"1\" name=\"apply_lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name apply lastname text apply lastname 18",
+    "feature": "last name text apply lastname apply lastname 18",
     "id": "533-text-4",
     "pattern": "last.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control name envt-stop c3mask-textmask-dummytxtmask hidden\" id=\"apply_lastname-masked\" name=\"apply_lastname-masked\" title=\"last name\" type=\"text\"/>",
-    "feature": "last name apply lastname masked apply lastname masked text",
+    "feature": "last name text apply lastname masked apply lastname masked",
     "id": "533-text-5",
     "pattern": "last.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3-tomask\" id=\"apply_email\" maxlength=\"50\" minlength=\"7\" name=\"apply_email\" type=\"text\" value=\"\"/>",
-    "feature": "email address apply email text apply email 50",
+    "feature": "email address text apply email apply email 50",
     "id": "533-text-6",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3mask-emailmask hidden\" id=\"apply_email-masked\" name=\"apply_email-masked\" title=\"email address\" type=\"text\"/>",
-    "feature": "email address apply email masked apply email masked text",
+    "feature": "email address text apply email masked apply email masked",
     "id": "533-text-7",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3-tomask\" id=\"apply_address\" maxlength=\"24\" minlength=\"1\" name=\"apply_address\" type=\"text\" value=\"\"/>",
-    "feature": "street address no p o boxes apply address text apply address 24",
+    "feature": "street address no p o boxes text apply address apply address 24",
     "id": "533-text-8",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3mask-textmask-dummytxtmask hidden\" id=\"apply_address-masked\" name=\"apply_address-masked\" title=\"street address (no p.o. boxes)\" type=\"text\"/>",
-    "feature": "street address no p o boxes apply address masked apply address masked text",
+    "feature": "street address no p o boxes text apply address masked apply address masked",
     "id": "533-text-9",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control optionaltwo envt-stop c3-tomask\" id=\"apply_apt\" maxlength=\"24\" name=\"apply_apt\" type=\"text\" value=\"\"/>",
-    "feature": "apt suite optional apply apt text apply apt 24",
+    "feature": "apt suite optional text apply apt apply apt 24",
     "id": "533-text-10",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apt",
+    "topic": "apartment"
   },
   {
     "dom": "<input class=\"form-control optionaltwo envt-stop c3mask-textmask-dummytxtmask hidden\" id=\"apply_apt-masked\" name=\"apply_apt-masked\" title=\"apt./suite (optional)\" type=\"text\"/>",
-    "feature": "apt suite optional apply apt masked apply apt masked text",
+    "feature": "apt suite optional text apply apt masked apply apt masked",
     "id": "533-text-11",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "apt",
+    "topic": "apartment"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3-tomask\" id=\"apply_city\" maxlength=\"17\" minlength=\"1\" name=\"apply_city\" type=\"text\" value=\"\"/>",
-    "feature": "city apply city text apply city 17",
+    "feature": "city text apply city apply city 17",
     "id": "533-text-12",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"form-control envt-stop c3mask-textmask-dummytxtmask hidden\" id=\"apply_city-masked\" name=\"apply_city-masked\" title=\"city\" type=\"text\"/>",
-    "feature": "city apply city masked apply city masked text",
+    "feature": "city text apply city masked apply city masked",
     "id": "533-text-13",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3-tomask\" id=\"apply_zipcode\" maxlength=\"5\" minlength=\"5\" name=\"apply_zipcode\" type=\"tel\" value=\"\"/>",
-    "feature": "zip code apply zipcode tel apply zipcode 5",
+    "feature": "zip code tel apply zipcode apply zipcode 5",
     "id": "533-tel-0",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3mask-digitmask-zip hidden\" id=\"apply_zipcode-masked\" name=\"apply_zipcode-masked\" title=\"zip code\" type=\"tel\"/>",
-    "feature": "zip code apply zipcode masked apply zipcode masked tel",
+    "feature": "zip code tel apply zipcode masked apply zipcode masked",
     "id": "533-tel-1",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3-tomask\" id=\"apply_phone\" maxlength=\"10\" minlength=\"10\" name=\"apply_phone\" placeholder=\"(_ _ _)_ _ _-_ _ _ _\" type=\"tel\" value=\"\"/>",
-    "feature": "phone number apply phone tel apply phone 10",
+    "feature": "phone number tel apply phone apply phone 10",
     "id": "533-tel-2",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric envt-stop c3mask-digitmask-phoneno hidden\" id=\"apply_phone-masked\" name=\"apply_phone-masked\" placeholder=\"(_ _ _)_ _ _-_ _ _ _\" title=\"phone number\" type=\"tel\"/>",
-    "feature": "phone number apply phone masked apply phone masked tel",
+    "feature": "phone number tel apply phone masked apply phone masked",
     "id": "533-tel-3",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3-tomask\" id=\"apply_monthlymortgage\" maxlength=\"5\" minlength=\"1\" name=\"apply_monthlymortgage\" type=\"tel\" value=\"\"/>",
-    "feature": "00 monthly mortgage rent payment apply monthlymortgage tel apply monthlymortgage 5",
+    "feature": "00 monthly mortgage rent payment tel apply monthlymortgage apply monthlymortgage 5",
     "id": "533-tel-4",
-    "pattern": "rent",
+    "pattern": "monthly.*mortgage",
     "topic": "rent"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3mask-digitmask-amount hidden\" id=\"apply_monthlymortgage-masked\" name=\"apply_monthlymortgage-masked\" title=\"monthly mortgage/rent payment\" type=\"tel\"/>",
-    "feature": "00 monthly mortgage rent payment apply monthlymortgage masked apply monthlymortgage masked tel",
+    "feature": "00 monthly mortgage rent payment tel apply monthlymortgage masked apply monthlymortgage masked",
     "id": "533-tel-5",
-    "pattern": "rent",
+    "pattern": "monthly.*mortgage",
     "topic": "rent"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3-tomask\" id=\"apply_annualincome\" maxlength=\"7\" minlength=\"1\" name=\"apply_annualincome\" type=\"tel\" value=\"\"/>",
-    "feature": "00 total annual net income apply annualincome tel apply annualincome 7",
+    "feature": "00 total annual net income tel apply annualincome apply annualincome 7",
     "id": "533-tel-6",
-    "pattern": "income",
+    "pattern": "annual.*income",
     "topic": "income"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3mask-digitmask-amount hidden\" id=\"apply_annualincome-masked\" name=\"apply_annualincome-masked\" title=\"total annual net income\" type=\"tel\"/>",
-    "feature": "00 total annual net income apply annualincome masked apply annualincome masked tel",
+    "feature": "00 total annual net income tel apply annualincome masked apply annualincome masked",
     "id": "533-tel-7",
-    "pattern": "income",
+    "pattern": "annual.*income",
     "topic": "income"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric masked-form-control delref c3-tomask\" id=\"apply_ssn\" maxlength=\"11\" minlength=\"11\" name=\"apply_ssn\" placeholder=\"_ _ _ - _ _ - _ _ _ _\" type=\"tel\" value=\"\"/>",
-    "feature": "social security number apply ssn tel apply ssn 11",
+    "feature": "social security number tel apply ssn apply ssn 11",
     "id": "533-tel-8",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric masked-form-control delref c3mask-digitmask-ssn hidden\" id=\"apply_ssn-masked\" name=\"apply_ssn-masked\" placeholder=\"_ _ _ - _ _ - _ _ _ _\" title=\"social security number\" type=\"tel\"/>",
-    "feature": "social security number apply ssn masked apply ssn masked tel",
+    "feature": "social security number tel apply ssn masked apply ssn masked",
     "id": "533-tel-9",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric delref c3_mask_false c3-tomask\" id=\"apply_dob\" maxlength=\"10\" minlength=\"10\" name=\"apply_dob\" placeholder=\"_ _/_ _/_ _ _ _\" type=\"tel\" value=\"\"/>",
-    "feature": "date of birth mm dd yyyy apply dob tel apply dob 10",
+    "feature": "date of birth mm dd yyyy tel apply dob apply dob 10",
     "id": "533-tel-10",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric delref c3_mask_false c3mask-digitmask-dob hidden\" id=\"apply_dob-masked\" name=\"apply_dob-masked\" placeholder=\"_ _/_ _/_ _ _ _\" title=\"date of birth (mm/dd/yyyy)\" type=\"tel\"/>",
-    "feature": "date of birth mm dd yyyy apply dob masked apply dob masked tel",
+    "feature": "date of birth mm dd yyyy tel apply dob masked apply dob masked",
     "id": "533-tel-11",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric \" id=\"apply_rewardsnumber\" maxlength=\"10\" minlength=\"6\" name=\"apply_rewardsnumber\" placeholder=\"\" type=\"tel\" value=\"\"/>",
-    "feature": "staples rewards number optional apply rewardsnumber tel apply rewardsnumber 10",
+    "feature": "staples rewards number optional tel apply rewardsnumber apply rewardsnumber 10",
     "id": "533-tel-12",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "rewards.*number",
+    "topic": "rewards_number"
   }
 ]

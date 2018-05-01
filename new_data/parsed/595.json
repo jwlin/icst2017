@@ -1,175 +1,175 @@
 [
   {
     "dom": "<input aria-describedby=\"readlabel\" class=\"fbconnectemail\" id=\"email\" name=\"email\" tabindex=\"3\" type=\"text\" value=\"\"/>",
-    "feature": "for existing customers email for existing customers text email email",
+    "feature": "for existing customers email for existing customers email email text",
     "id": "595-text-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-labelledby=\"lblcheckoutfirstname errorcheckoutfirstname\" aria-required=\"true\" id=\"checkoutfirstname\" maxlength=\"40\" name=\"checkoutfirstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name text checkoutfirstname checkoutfirstname 40",
+    "feature": "first name checkoutfirstname checkoutfirstname text 40",
     "id": "595-text-1",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-labelledby=\"lblcheckoutlastname errorcheckoutlastname\" aria-required=\"true\" id=\"checkoutlastname\" maxlength=\"40\" name=\"checkoutlastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name text checkoutlastname checkoutlastname 40",
+    "feature": "last name checkoutlastname checkoutlastname text 40",
     "id": "595-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-labelledby=\"lblcompany errorcompany\" aria-required=\"true\" class=\"optional\" id=\"company\" maxlength=\"40\" name=\"company\" type=\"text\" value=\"\"/>",
-    "feature": "company text company company 40",
+    "feature": "company company company text 40",
     "id": "595-text-3",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input aria-labelledby=\"lbladdress1 erroraddress1\" aria-required=\"true\" autocomplete=\"off\" class=\"\" id=\"address1\" maxlength=\"50\" name=\"address1\" type=\"text\" value=\"\"/>",
-    "feature": "address line 1 text address1 address1 50",
+    "feature": "address line 1 address1 address1 text 50",
     "id": "595-text-4",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-labelledby=\"lbladdress2 erroraddress2\" aria-required=\"false\" class=\" optional\" id=\"address2\" maxlength=\"50\" name=\"address2\" type=\"text\" value=\"\"/>",
-    "feature": "apartment suite floor optional text address2 address2 50",
+    "feature": "apartment suite floor optional address2 address2 text 50",
     "id": "595-text-5",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input aria-labelledby=\"lblzip errorzip\" aria-required=\"true\" id=\"zip\" maxlength=\"10\" name=\"zipus\" type=\"text\" value=\"\"/>",
-    "feature": "zip text zipus zip 10",
+    "feature": "zip zip zipus text 10",
     "id": "595-text-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-labelledby=\"lblcityname errorcityname\" aria-required=\"true\" id=\"cityname\" maxlength=\"25\" name=\"cityname\" type=\"text\" value=\"\"/>",
-    "feature": "city text cityname cityname 25",
+    "feature": "city cityname cityname text 25",
     "id": "595-text-7",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-labelledby=\"lblcheckoutfirstname errorcheckoutfirstname\" aria-required=\"true\" class=\"checkoutfirstname\" id=\"billingfirstname\" name=\"firstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name text firstname billingfirstname",
+    "feature": "first name billingfirstname firstname text",
     "id": "595-text-8",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-labelledby=\"lblcheckoutlastname errorcheckoutlastname\" aria-required=\"true\" id=\"billinglastname\" name=\"lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name text lastname billinglastname",
+    "feature": "last name billinglastname lastname text",
     "id": "595-text-9",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-labelledby=\"lblcompany errorcompany\" aria-required=\"false\" class=\"optional\" id=\"billingcompany\" name=\"companyname\" type=\"text\" value=\"\"/>",
-    "feature": "company text companyname billingcompany",
+    "feature": "company billingcompany companyname text",
     "id": "595-text-10",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input aria-labelledby=\"lbladdress1 erroraddress1\" aria-required=\"true\" id=\"billingaddress1\" name=\"address1\" type=\"text\" value=\"\"/>",
-    "feature": "address line 1 text address1 billingaddress1",
+    "feature": "address line 1 billingaddress1 address1 text",
     "id": "595-text-11",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-labelledby=\"lbladdress2 erroraddress2\" aria-required=\"false\" class=\"optional\" id=\"billingaddress2\" name=\"address2\" type=\"text\" value=\"\"/>",
-    "feature": "apartment suite floor optional text address2 billingaddress2",
+    "feature": "apartment suite floor optional billingaddress2 address2 text",
     "id": "595-text-12",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input aria-labelledby=\"lblzipcode errorzip\" aria-required=\"true\" id=\"billingzip\" name=\"zipus\" type=\"text\" value=\"\"/>",
-    "feature": "zip zip billingzip zipus text",
+    "feature": "zip zip text zipus billingzip",
     "id": "595-text-13",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-labelledby=\"lblcityname errorcityname\" aria-required=\"true\" id=\"billingcityname\" maxlength=\"25\" name=\"cityname\" type=\"text\" value=\"\"/>",
-    "feature": "city text cityname billingcityname 25",
+    "feature": "city billingcityname cityname text 25",
     "id": "595-text-14",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-labelledby=\"statelbl errorstatetext\" aria-required=\"true\" id=\"statetext\" maxlength=\"40\" name=\"statetext\" type=\"text\" value=\"\"/>",
-    "feature": "state state statetext statetext text 40",
+    "feature": "state state text statetext statetext 40",
     "id": "595-text-15",
     "pattern": "state",
     "topic": "state"
   },
   {
     "dom": "<input aria-labelledby=\"lblemail erroremail\" aria-required=\"true\" id=\"shippingemail\" name=\"shippingemail\" type=\"text\" value=\"\"/>",
-    "feature": "email text shippingemail shippingemail",
+    "feature": "email shippingemail shippingemail text",
     "id": "595-text-16",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-labelledby=\"lblbasephonefull errorbasephonefull\" aria-required=\"true\" class=\"phonefield required\" id=\"basephonefull\" maxlength=\"10\" name=\"basephonefull\" type=\"text\" value=\"\"/>",
-    "feature": "us phone eg 1234567890 text basephonefull basephonefull 10",
+    "feature": "us phone eg 1234567890 basephonefull basephonefull text 10",
     "id": "595-text-17",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-required=\"true\" class=\"escapehtmltag valid fl\" id=\"addcouponinput\" name=\"addcouponinput\" placeholder=\"enter the 8-digit mo code or barcode # on your coupon\" type=\"text\" value=\"\"/>",
-    "feature": "enter the 8 digit mo code or barcode on your coupon text addcouponinput addcouponinput enter the 8 digit mo code or barcode on your coupon",
+    "feature": "enter the 8 digit mo code or barcode on your coupon addcouponinput enter the 8 digit mo code or barcode on your coupon addcouponinput text",
     "id": "595-text-18",
-    "pattern": "coupon.*code",
-    "topic": "coupon_code"
+    "pattern": "coupon",
+    "topic": "promo_code"
   },
   {
     "dom": "<input aria-labelledby=\"lblgiftcardnumberpwgc errorgiftcardnumberpwgc\" aria-required=\"false\" autocomplete=\"off\" class=\"validatecard\" id=\"giftcardnumberpwgc\" maxlength=\"16\" name=\"giftcardnumber\" type=\"text\" value=\"\"/>",
-    "feature": "card number text giftcardnumber giftcardnumberpwgc 16",
+    "feature": "card number giftcardnumberpwgc giftcardnumber text 16",
     "id": "595-text-19",
-    "pattern": "gift.*card",
-    "topic": "gift_card_number"
+    "pattern": "giftcard",
+    "topic": "gift_card"
   },
   {
     "dom": "<input aria-labelledby=\"lblgiftcardpinpwgc errorgiftcardpinpwgc\" aria-required=\"false\" autocomplete=\"off\" class=\"validatecard\" id=\"giftcardpinpwgc\" maxlength=\"8\" name=\"giftcardpin\" type=\"text\" value=\"\"/>",
-    "feature": "card pin text giftcardpin giftcardpinpwgc 8",
+    "feature": "card pin giftcardpinpwgc giftcardpin text 8",
     "id": "595-text-20",
-    "pattern": "pin",
-    "topic": "pin"
+    "pattern": "giftcardpin",
+    "topic": "gift_card_pin"
   },
   {
     "dom": "<input aria-labelledby=\"lblcardnumber errorcardnumber\" aria-required=\"true\" autocomplete=\"off\" class=\"grid_4 nomar omega\" id=\"cardnumber\" maxlength=\"16\" name=\"cardnumber\" type=\"text\" value=\"\"/>",
-    "feature": "card number text cardnumber cardnumber 16",
+    "feature": "card number cardnumber cardnumber text 16",
     "id": "595-text-21",
-    "pattern": "creditcard.*id",
-    "topic": "credit_card_id"
+    "pattern": "cardnumber",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input aria-labelledby=\"lblsecuritycode errorsecuritycode\" aria-required=\"true\" autocomplete=\"off\" class=\"securitycodecvv\" id=\"securitycode\" maxlength=\"4\" name=\"securitycode\" type=\"text\" value=\"\"/>",
-    "feature": "the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card security code security code text securitycode securitycode 4",
+    "feature": "the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card the verification number is a 3 digit code on the back of your card located to the right of your signature stripe for amex users the verification number is a 4 digit code appearing above your credit card number on the front of your card security code security code securitycode securitycode text 4",
     "id": "595-text-22",
-    "pattern": "credit.*cvv",
-    "topic": "credit_card_cvv"
+    "pattern": "securitycode",
+    "topic": "cvv"
   },
   {
     "dom": "<input aria-labelledby=\"lblnamecard errornamecard\" aria-required=\"true\" class=\"grid_4 nomar omega\" id=\"namecard\" maxlength=\"61\" name=\"namecard\" type=\"text\" value=\"\"/>",
-    "feature": "name on card text namecard namecard 61",
+    "feature": "name on card namecard namecard text 61",
     "id": "595-text-23",
-    "pattern": "full.*name",
+    "pattern": "namecard",
     "topic": "full_name"
   },
   {
     "dom": "<input aria-labelledby=\"lbltxtsignupspecialemail errortxtsignupspecialemail\" aria-required=\"true\" id=\"txtsignupspecialemail\" name=\"email\" placeholder=\"enter email address\" type=\"text\"/>",
-    "feature": "email sign up for special offers txtsignupspecialemail email text enter email address",
+    "feature": "email sign up for special offers txtsignupspecialemail enter email address email text",
     "id": "595-text-24",
     "pattern": "email",
     "topic": "email"

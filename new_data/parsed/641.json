@@ -1,56 +1,56 @@
 [
   {
     "dom": "<input class=\"half\" name=\"full_name\" placeholder=\"name (first and last)\" type=\"text\"/>",
-    "feature": "opt in for shun newsletter opt in for shun school what is shun school full name text name first and last",
+    "feature": "opt in for shun newsletter opt in for shun school what is shun school text full name name first and last",
     "id": "641-text-0",
     "pattern": "full.*name",
     "topic": "full_name"
   },
   {
     "dom": "<input class=\"half left\" name=\"address\" placeholder=\"address\" type=\"text\"/>",
-    "feature": "opt in for shun newsletter opt in for shun school what is shun school address text address",
+    "feature": "opt in for shun newsletter opt in for shun school what is shun school text address address",
     "id": "641-text-1",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"half left\" name=\"model_number\" placeholder=\"model number\" type=\"text\"/>",
-    "feature": "opt in for shun newsletter opt in for shun school what is shun school model number text model number",
+    "feature": "opt in for shun newsletter opt in for shun school what is shun school text model number model number",
     "id": "641-text-2",
     "pattern": "model.*number",
     "topic": "model_number"
   },
   {
     "dom": "<input class=\"half\" name=\"ayu_serial_number\" placeholder=\"serial number\" type=\"text\"/>",
-    "feature": "opt in for shun newsletter opt in for shun school what is shun school ayu serial number text serial number",
+    "feature": "opt in for shun newsletter opt in for shun school what is shun school text ayu serial number serial number",
     "id": "641-text-3",
-    "pattern": "serial",
+    "pattern": "serial.*number",
     "topic": "serial_number"
   },
   {
     "dom": "<input class=\"half\" name=\"purchase_location\" placeholder=\"purchase location\" type=\"text\"/>",
-    "feature": "opt in for shun newsletter opt in for shun school what is shun school purchase location text purchase location",
+    "feature": "opt in for shun newsletter opt in for shun school what is shun school text purchase location purchase location",
     "id": "641-text-4",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "purchase.*location",
+    "topic": "store_name"
   },
   {
     "dom": "<input class=\"half left\" name=\"purchase_date\" placeholder=\"purchase date\" type=\"text\"/>",
-    "feature": "opt in for shun newsletter opt in for shun school what is shun school purchase date text purchase date",
+    "feature": "opt in for shun newsletter opt in for shun school what is shun school text purchase date purchase date",
     "id": "641-text-5",
-    "pattern": "date",
+    "pattern": "purchase.*date",
     "topic": "date"
   },
   {
     "dom": "<input id=\"nlsuf-first\" name=\"first_name\" type=\"text\"/>",
-    "feature": "what is shun school first name last name email kershaw zt shun kai housewares shun school what is shun school nlsuf first first name text",
+    "feature": "what is shun school first name last name email kershaw zt shun kai housewares shun school what is shun school text first name nlsuf first",
     "id": "641-text-6",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"nlsuf-last\" name=\"last_name\" type=\"text\"/>",
-    "feature": "what is shun school last name first name email kershaw zt shun kai housewares shun school what is shun school nlsuf last last name text",
+    "feature": "what is shun school last name first name email kershaw zt shun kai housewares shun school what is shun school text last name nlsuf last",
     "id": "641-text-7",
     "pattern": "last.*name",
     "topic": "last_name"
@@ -64,16 +64,16 @@
   },
   {
     "dom": "<input id=\"nlsuf-email\" name=\"email\" required=\"required\" type=\"email\"/>",
-    "feature": "what is shun school email last name first name kershaw zt shun kai housewares shun school what is shun school nlsuf email email email",
+    "feature": "what is shun school email last name first name kershaw zt shun kai housewares shun school what is shun school email email nlsuf email",
     "id": "641-email-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"half hideonsuccess\" name=\"phone\" placeholder=\"phone\" type=\"tel\"/>",
-    "feature": "opt in for shun newsletter opt in for shun school what is shun school phone tel phone",
+    "feature": "opt in for shun newsletter opt in for shun school what is shun school tel phone phone",
     "id": "641-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

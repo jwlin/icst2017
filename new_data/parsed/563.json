@@ -3,21 +3,21 @@
     "dom": "<input aria-label=\"first name\" data-ui=\"firstname\" maxlength=\"27\" name=\"firstname\" pattern=\"^([a-za-z0-9\\-\\s'](?!\\band\\b))*$\" ref=\"input\" required=\"required\" type=\"text\"/>",
     "feature": "this field is required text firstname 27",
     "id": "563-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-label=\"last name\" data-ui=\"lastname\" maxlength=\"28\" name=\"lastname\" pattern=\"^([a-za-z0-9\\-\\s'](?!\\band\\b))*$\" ref=\"input\" required=\"required\" type=\"text\"/>",
     "feature": "this field is required text lastname 28",
     "id": "563-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-label=\"street address\" data-ui=\"addressone\" maxlength=\"30\" name=\"addressone\" pattern=\"[a-za-z0-9\\-\\s'\\/@#+&amp;%.]+\" ref=\"input\" required=\"required\" type=\"text\"/>",
     "feature": "this field is required text addressone 30",
     "id": "563-text-2",
-    "pattern": "address.*one",
+    "pattern": "address",
     "topic": "address_1"
   },
   {
@@ -31,7 +31,7 @@
     "dom": "<input aria-label=\"postal code\" data-ui=\"postalcode\" maxlength=\"10\" name=\"postalcode\" pattern=\"[0-9\\-\\s]+\" ref=\"input\" required=\"required\" type=\"text\"/>",
     "feature": "this field is required text postalcode 10",
     "id": "563-text-4",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   }
 ]

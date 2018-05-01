@@ -1,7 +1,7 @@
 [
   {
     "dom": "<input class=\"searchinput\" name=\"search\" type=\"text\"/>",
-    "feature": "text search",
+    "feature": "search text",
     "id": "549-text-0",
     "pattern": "search",
     "topic": "search"
@@ -10,36 +10,36 @@
     "dom": "<input class=\"textbox_first\" data-val=\"true\" data-val-isrequired=\"first name is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field first * must be a string with a maximum length of 40.\" data-val-length-max=\"40\" data-val-regex=\"please use values [a-z, 0-9, ., -] in first name\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,40}\" id=\"name_first\" maxlength=\"40\" name=\"name.first\" type=\"text\" value=\"\"/>",
     "feature": "name first mi last name first name first text 40",
     "id": "549-text-1",
-    "pattern": "first.*name",
+    "pattern": "name.*first",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"textbox_middle\" data-val=\"true\" data-val-length=\"the field mi must be a string with a maximum length of 1.\" data-val-length-max=\"1\" data-val-regex=\"please use alpha values in middle name\" data-val-regex-pattern=\"^[a-za-z\\s]+$\" id=\"name_middle\" maxlength=\"1\" name=\"name.middle\" type=\"text\" value=\"\"/>",
-    "feature": "name first mi last name middle text name middle 1",
+    "feature": "name first mi last name middle name middle text 1",
     "id": "549-text-2",
-    "pattern": "middle.*name",
+    "pattern": "name.*middle",
     "topic": "middle_name"
   },
   {
     "dom": "<input class=\"textbox_last\" data-val=\"true\" data-val-isrequired=\"last name is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field last * must be a string with a maximum length of 25.\" data-val-length-max=\"25\" data-val-regex=\"please use values [a-z, 0-9, ., -] in last name\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,25}\" id=\"name_last\" maxlength=\"25\" name=\"name.last\" type=\"text\" value=\"\"/>",
     "feature": "name first mi last name last name last text 25",
     "id": "549-text-3",
-    "pattern": "last.*name",
+    "pattern": "name.*last",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"textbox-large\" data-val=\"true\" data-val-isrequired=\"address is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field address line 1 * must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"please use values [a-z, 0-9, ., -] for the address\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,]{1,50}\" id=\"address_line1\" maxlength=\"50\" name=\"address.line1\" type=\"text\" value=\"\"/>",
     "feature": "address line 1 address line 2 city state zip address line1 address line1 text 50",
     "id": "549-text-4",
-    "pattern": "city",
-    "topic": "city"
+    "pattern": "address.*1",
+    "topic": "address_1"
   },
   {
     "dom": "<input class=\"textbox-large\" data-val=\"true\" data-val-length=\"the field address line 2 must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"please use values [a-z, 0-9, ., -] for the address line 2\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,]{1,100}\" id=\"address_line2\" maxlength=\"50\" name=\"address.line2\" type=\"text\" value=\"\"/>",
-    "feature": "address line 2 address line 1 city state zip address line2 text address line2 50",
+    "feature": "address line 2 address line 1 city state zip address line2 address line2 text 50",
     "id": "549-text-5",
-    "pattern": "address.*one",
-    "topic": "address_1"
+    "pattern": "address.*2",
+    "topic": "address_2"
   },
   {
     "dom": "<input class=\"textbox-city\" data-val=\"true\" data-val-isrequired=\"city is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field city * must be a string with a maximum length of 40.\" data-val-length-max=\"40\" data-val-regex=\"please enter a valid city\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,40}\" id=\"address_city\" maxlength=\"40\" name=\"address.city\" type=\"text\" value=\"\"/>",
@@ -52,47 +52,47 @@
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"zip code is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field zip * must be a string with a maximum length of 5.\" data-val-length-max=\"5\" data-val-regex=\"please enter a valid zip code\" data-val-regex-pattern=\"\\d{5}\" id=\"address_zipcode\" maxlength=\"5\" name=\"address.zipcode\" type=\"text\" value=\"\"/>",
     "feature": "zip state address zipcode address zipcode text 5",
     "id": "549-text-7",
-    "pattern": "",
-    "topic": ""
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-length=\"the field plus4 must be a string with a maximum length of 4.\" data-val-length-max=\"4\" data-val-regex=\"please use 4 values 0-9 only in your zip+4\" data-val-regex-pattern=\"\\d{4}\" id=\"address_zip4\" maxlength=\"4\" name=\"address.zip4\" type=\"text\" value=\"\"/>",
-    "feature": "zip state address zip4 text address zip4 4",
+    "feature": "zip state address zip4 address zip4 text 4",
     "id": "549-text-8",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip4",
+    "topic": "zip_suffix"
   },
   {
     "dom": "<input class=\"textbox-areanumber\" data-val=\"true\" data-val-isrequired=\"please enter the area code\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field areacode must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid area code\" data-val-regex-pattern=\"\\d{3}\" id=\"homephone_areacode\" maxlength=\"3\" name=\"homephone.areacode\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "homephone areacode homephone areacode text 3",
     "id": "549-text-9",
-    "pattern": "area.*code",
+    "pattern": "areacode",
     "topic": "area_code"
   },
   {
     "dom": "<input class=\"textbox-areanumber\" data-val=\"true\" data-val-isrequired=\"please enter the middle 3 digits\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field exchange must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid middle 3 digits\" data-val-regex-pattern=\"\\d{3}\" id=\"homephone_exchange\" maxlength=\"3\" name=\"homephone.exchange\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "homephone exchange homephone exchange text 3",
     "id": "549-text-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone.*exchange",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"please enter the last 4 digits\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field extension must be a string with a maximum length of 4.\" data-val-length-max=\"4\" data-val-regex=\"please enter a valid last 4 digits\" data-val-regex-pattern=\"\\d{4}\" id=\"homephone_extension\" maxlength=\"4\" name=\"homephone.extension\" type=\"text\" value=\"\"/>",
     "feature": "homephone extension homephone extension text 4",
     "id": "549-text-11",
-    "pattern": "phone.*ext",
+    "pattern": "phone.*extension",
     "topic": "phone_ext"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"please enter a valid email address\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"\" data-val-length=\"the field email address * must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"please enter a valid email address\" data-val-regex-pattern=\"^([0-9a-za-z]+[-._+])*[0-9a-za-z]+@([-0-9a-za-z]+[.])+[a-za-z]{2,6}\\s*\" id=\"emailaddress_address\" maxlength=\"50\" name=\"emailaddress.address\" type=\"text\" value=\"\"/>",
-    "feature": "confirm email address text emailaddress address emailaddress address 50",
+    "feature": "confirm email address emailaddress address emailaddress address text 50",
     "id": "549-text-12",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input data-val=\"true\" data-val-equalto=\"the email addresses do not match.\" data-val-equalto-other=\"*.address\" data-val-isrequired=\"please enter a valid email address\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"\" data-val-length=\"the field confirm email address * must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"please enter a valid email address\" data-val-regex-pattern=\"^([0-9a-za-z]+[-._+])*[0-9a-za-z]+@([-0-9a-za-z]+[.])+[a-za-z]{2,6}\\s*\" id=\"emailaddress_confirmaddress\" maxlength=\"50\" name=\"emailaddress.confirmaddress\" type=\"text\" value=\"\"/>",
-    "feature": "confirm email address text emailaddress confirmaddress emailaddress confirmaddress 50",
+    "feature": "confirm email address emailaddress confirmaddress emailaddress confirmaddress text 50",
     "id": "549-text-13",
     "pattern": "email",
     "topic": "email"
@@ -101,28 +101,28 @@
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"years is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-number=\"the field years * must be a number.\" data-val-range=\"please enter numeric characters between 0 and 110 for years\" data-val-range-max=\"110\" data-val-range-min=\"0\" data-val-regex=\"the field years * must match the regular expression '^[0-9]+$'.\" data-val-regex-pattern=\"^[0-9]+$\" id=\"timeataddress_years\" maxlength=\"3\" name=\"timeataddress.years\" type=\"text\" value=\"\"/>",
     "feature": "select select select select 00 00 00 important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with address line 1 address line 2 city state zip date of birth social security number mother s maiden name applicant employment information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant financial information total annual income other income housing information do you rent or own your primary residence rent own other if other please describe monthly housing payment name of the nearest relative not living with you first middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no timeataddress years timeataddress years text 3",
     "id": "549-text-14",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "time.*address",
+    "topic": "resident_years"
   },
   {
     "dom": "<input class=\"textbox-small multiple-textbox-indent\" data-val=\"true\" data-val-number=\"the field months must be a number.\" data-val-range=\"please enter numeric characters between 0 and 11 for months\" data-val-range-max=\"11\" data-val-range-min=\"0\" data-val-regex=\"the field months must match the regular expression '^[0-9]+$'.\" data-val-regex-pattern=\"^[0-9]+$\" id=\"timeataddress_months\" maxlength=\"2\" name=\"timeataddress.months\" type=\"text\" value=\"\"/>",
     "feature": "select select select select 00 00 00 important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with address line 1 address line 2 city state zip date of birth social security number mother s maiden name applicant employment information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant financial information total annual income other income housing information do you rent or own your primary residence rent own other if other please describe monthly housing payment name of the nearest relative not living with you first middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no timeataddress months timeataddress months text 2",
     "id": "549-text-15",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "time.*address.*months",
+    "topic": "resident_month"
   },
   {
     "dom": "<input class=\"textbox-large\" data-val=\"true\" data-val-isrequired=\"address is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field address line 1 * must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"please use values [a-z, 0-9, ., -] for the address\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,]{1,50}\" id=\"previousaddress_line1\" maxlength=\"50\" name=\"previousaddress.line1\" type=\"text\" value=\"\"/>",
     "feature": "address line 1 address line 2 city state zip previousaddress line1 previousaddress line1 text 50",
     "id": "549-text-16",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"textbox-large\" data-val=\"true\" data-val-length=\"the field address line 2 must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"please use values [a-z, 0-9, ., -] for the address line 2\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,]{1,100}\" id=\"previousaddress_line2\" maxlength=\"50\" name=\"previousaddress.line2\" type=\"text\" value=\"\"/>",
-    "feature": "address line 2 address line 1 city state zip previousaddress line2 text previousaddress line2 50",
+    "feature": "address line 2 address line 1 city state zip previousaddress line2 previousaddress line2 text 50",
     "id": "549-text-17",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
@@ -136,203 +136,203 @@
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"zip code is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field zip * must be a string with a maximum length of 5.\" data-val-length-max=\"5\" data-val-regex=\"please enter a valid zip code\" data-val-regex-pattern=\"\\d{5}\" id=\"previousaddress_zipcode\" maxlength=\"5\" name=\"previousaddress.zipcode\" type=\"text\" value=\"\"/>",
     "feature": "zip state previousaddress zipcode previousaddress zipcode text 5",
     "id": "549-text-19",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-length=\"the field plus4 must be a string with a maximum length of 4.\" data-val-length-max=\"4\" data-val-regex=\"please use 4 values 0-9 only in your zip+4\" data-val-regex-pattern=\"\\d{4}\" id=\"previousaddress_zip4\" maxlength=\"4\" name=\"previousaddress.zip4\" type=\"text\" value=\"\"/>",
-    "feature": "zip state previousaddress zip4 text previousaddress zip4 4",
+    "feature": "zip state previousaddress zip4 previousaddress zip4 text 4",
     "id": "549-text-20",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip4",
+    "topic": "zip_suffix"
   },
   {
     "dom": "<input aria-disabled=\"false\" aria-expanded=\"false\" aria-owns=\"dob_dateview\" aria-readonly=\"false\" class=\"k-input\" data-role=\"datepicker\" data-val=\"true\" data-val-date=\"the field date of birth * must be a date.\" data-val-isrequired=\"date of birth is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" id=\"dob\" name=\"dob\" role=\"combobox\" style=\"width: 100%;\" type=\"text\"/>",
-    "feature": "select select dob text dob",
+    "feature": "select select dob dob text",
     "id": "549-text-21",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input class=\"textbox-areanumber multiple-textbox-indent\" data-val=\"true\" data-val-isrequired=\"social security area number is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field social security number * must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid area number for social security\" data-val-regex-pattern=\"\\d{3}\" id=\"ssn_areanumber\" maxlength=\"3\" name=\"ssn.areanumber\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "select select select select social security number ssn areanumber ssn areanumber text 3",
     "id": "549-text-22",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn.*area",
+    "topic": "ssn_1"
   },
   {
     "dom": "<input class=\"textbox-groupnumber \" data-val=\"true\" data-val-isrequired=\"social security group number is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field groupnumber must be a string with a maximum length of 2.\" data-val-length-max=\"2\" data-val-regex=\"please enter a valid group number for social security\" data-val-regex-pattern=\"\\d{2}\" id=\"ssn_groupnumber\" maxlength=\"2\" name=\"ssn.groupnumber\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "select select select select social security number ssn groupnumber ssn groupnumber text 2",
     "id": "549-text-23",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn.*group",
+    "topic": "ssn_2"
   },
   {
     "dom": "<input class=\"textbox-small \" data-val=\"true\" data-val-isrequired=\"social security serial number is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field serialnumber must be a string with a maximum length of 4.\" data-val-length-max=\"4\" data-val-regex=\"please enter a valid serial number for social security\" data-val-regex-pattern=\"\\d{4}\" id=\"ssn_serialnumber\" maxlength=\"4\" name=\"ssn.serialnumber\" type=\"text\" value=\"\"/>",
     "feature": "select select select select social security number ssn serialnumber ssn serialnumber text 4",
     "id": "549-text-24",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "ssn.*serial",
+    "topic": "ssn_3"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"mother's maiden name is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field mother's maiden name * must be a string with a maximum length of 25.\" data-val-length-max=\"25\" data-val-regex=\"please use values [a-z, 0-9, ., -] in mother's maiden name\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,25}\" id=\"mothersmaidenname\" maxlength=\"25\" name=\"mothersmaidenname\" type=\"text\" value=\"\"/>",
-    "feature": "select select select select 00 00 00 important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with applicant employment information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant financial information total annual income other income housing information do you rent or own your primary residence rent own other if other please describe monthly housing payment name of the nearest relative not living with you first middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no text mothersmaidenname mothersmaidenname 25",
+    "feature": "select select select select 00 00 00 important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with applicant employment information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant financial information total annual income other income housing information do you rent or own your primary residence rent own other if other please describe monthly housing payment name of the nearest relative not living with you first middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no mothersmaidenname mothersmaidenname text 25",
     "id": "549-text-25",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "mothersmaidenname",
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"occupation is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field occupation/position * must be a string with a maximum length of 25.\" data-val-length-max=\"25\" data-val-regex=\"use values [a-z, 0-9, :,’.–] only in occupation\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,\\:]{1,25}\" id=\"employer_occupation\" maxlength=\"25\" name=\"employer.occupation\" type=\"text\" value=\"\"/>",
-    "feature": "occupation position employer years months time with employer work phone text employer occupation employer occupation 25",
+    "feature": "occupation position employer years months time with employer work phone employer occupation employer occupation text 25",
     "id": "549-text-26",
-    "pattern": "job",
-    "topic": "job_title"
+    "pattern": "occupation",
+    "topic": "job"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"employer is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field employer * must be a string with a maximum length of 40.\" data-val-length-max=\"40\" data-val-regex=\"use values [a-z, 0-9, :,’.–] only in employer\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,\\#\\`]{1,40}\" id=\"employer_name\" maxlength=\"40\" name=\"employer.name\" type=\"text\" value=\"\"/>",
-    "feature": "employer occupation position years months time with employer work phone text employer name employer name 40",
+    "feature": "employer occupation position years months time with employer work phone employer name employer name text 40",
     "id": "549-text-27",
-    "pattern": "company",
-    "topic": "company_name"
+    "pattern": "employer",
+    "topic": "employer"
   },
   {
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"years is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-number=\"the field years * must be a number.\" data-val-range=\"please enter numeric characters between 0 and 110 for years\" data-val-range-max=\"110\" data-val-range-min=\"0\" data-val-regex=\"the field years * must match the regular expression '^[0-9]+$'.\" data-val-regex-pattern=\"^[0-9]+$\" id=\"employer_timeonjob_years\" maxlength=\"3\" name=\"employer.timeonjob.years\" type=\"text\" value=\"\"/>",
     "feature": "work phone employer timeonjob years employer timeonjob years text 3",
     "id": "549-text-28",
-    "pattern": "year",
-    "topic": "year"
+    "pattern": "time.*job",
+    "topic": "time_at_job"
   },
   {
     "dom": "<input class=\"textbox-small multiple-textbox-indent\" data-val=\"true\" data-val-number=\"the field months must be a number.\" data-val-range=\"please enter numeric characters between 0 and 11 for months\" data-val-range-max=\"11\" data-val-range-min=\"0\" data-val-regex=\"the field months must match the regular expression '^[0-9]+$'.\" data-val-regex-pattern=\"^[0-9]+$\" id=\"employer_timeonjob_months\" maxlength=\"2\" name=\"employer.timeonjob.months\" type=\"text\" value=\"\"/>",
     "feature": "work phone employer timeonjob months employer timeonjob months text 2",
     "id": "549-text-29",
-    "pattern": "month",
-    "topic": "middle_initial"
+    "pattern": "time.*job",
+    "topic": "time_at_job"
   },
   {
     "dom": "<input class=\"textbox-areanumber\" data-val=\"true\" data-val-isrequired=\"please enter the area code\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field areacode must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid area code\" data-val-regex-pattern=\"\\d{3}\" id=\"employer_workphone_areacode\" maxlength=\"3\" name=\"employer.workphone.areacode\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "work phone employer workphone areacode employer workphone areacode text 3",
     "id": "549-text-30",
-    "pattern": "area.*code",
+    "pattern": "areacode",
     "topic": "area_code"
   },
   {
     "dom": "<input class=\"textbox-areanumber\" data-val=\"true\" data-val-isrequired=\"please enter the middle 3 digits\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field exchange must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid middle 3 digits\" data-val-regex-pattern=\"\\d{3}\" id=\"employer_workphone_exchange\" maxlength=\"3\" name=\"employer.workphone.exchange\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "work phone employer workphone exchange employer workphone exchange text 3",
     "id": "549-text-31",
-    "pattern": "",
-    "topic": ""
+    "pattern": "phone.*exchange",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"please enter the last 4 digits\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field extension must be a string with a maximum length of 4.\" data-val-length-max=\"4\" data-val-regex=\"please enter a valid last 4 digits\" data-val-regex-pattern=\"\\d{4}\" id=\"employer_workphone_extension\" maxlength=\"4\" name=\"employer.workphone.extension\" type=\"text\" value=\"\"/>",
     "feature": "work phone employer workphone extension employer workphone extension text 4",
     "id": "549-text-32",
-    "pattern": "phone.*ext",
-    "topic": "phone_ext"
+    "pattern": "phone.*extension",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"occupation is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field occupation/position * must be a string with a maximum length of 25.\" data-val-length-max=\"25\" data-val-regex=\"use values [a-z, 0-9, :,’.–] only in occupation\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,\\:]{1,25}\" id=\"previousemployer_occupation\" maxlength=\"25\" name=\"previousemployer.occupation\" type=\"text\" value=\"\"/>",
-    "feature": "occupation position employer years months time with employer work phone text previousemployer occupation previousemployer occupation 25",
+    "feature": "occupation position employer years months time with employer work phone previousemployer occupation previousemployer occupation text 25",
     "id": "549-text-33",
-    "pattern": "job",
-    "topic": "job_title"
+    "pattern": "occupation",
+    "topic": "job"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"employer is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field employer * must be a string with a maximum length of 40.\" data-val-length-max=\"40\" data-val-regex=\"use values [a-z, 0-9, :,’.–] only in employer\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,\\#\\`]{1,40}\" id=\"previousemployer_name\" maxlength=\"40\" name=\"previousemployer.name\" type=\"text\" value=\"\"/>",
-    "feature": "employer occupation position years months time with employer work phone text previousemployer name previousemployer name 40",
+    "feature": "employer occupation position years months time with employer work phone previousemployer name previousemployer name text 40",
     "id": "549-text-34",
-    "pattern": "company",
-    "topic": "company_name"
+    "pattern": "employer",
+    "topic": "employer"
   },
   {
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"years is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-number=\"the field years * must be a number.\" data-val-range=\"please enter numeric characters between 0 and 110 for years\" data-val-range-max=\"110\" data-val-range-min=\"0\" data-val-regex=\"the field years * must match the regular expression '^[0-9]+$'.\" data-val-regex-pattern=\"^[0-9]+$\" id=\"previousemployer_timeonjob_years\" maxlength=\"3\" name=\"previousemployer.timeonjob.years\" type=\"text\" value=\"\"/>",
     "feature": "work phone previousemployer timeonjob years previousemployer timeonjob years text 3",
     "id": "549-text-35",
-    "pattern": "year",
-    "topic": "year"
+    "pattern": "time.*job",
+    "topic": "time_at_job"
   },
   {
     "dom": "<input class=\"textbox-small multiple-textbox-indent\" data-val=\"true\" data-val-number=\"the field months must be a number.\" data-val-range=\"please enter numeric characters between 0 and 11 for months\" data-val-range-max=\"11\" data-val-range-min=\"0\" data-val-regex=\"the field months must match the regular expression '^[0-9]+$'.\" data-val-regex-pattern=\"^[0-9]+$\" id=\"previousemployer_timeonjob_months\" maxlength=\"2\" name=\"previousemployer.timeonjob.months\" type=\"text\" value=\"\"/>",
     "feature": "work phone previousemployer timeonjob months previousemployer timeonjob months text 2",
     "id": "549-text-36",
-    "pattern": "month",
-    "topic": "month"
+    "pattern": "time.*job",
+    "topic": "time_at_job"
   },
   {
     "dom": "<input class=\"textbox-areanumber\" data-val=\"true\" data-val-isrequired=\"please enter the area code\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field areacode must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid area code\" data-val-regex-pattern=\"\\d{3}\" id=\"previousemployer_workphone_areacode\" maxlength=\"3\" name=\"previousemployer.workphone.areacode\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "work phone previousemployer workphone areacode previousemployer workphone areacode text 3",
     "id": "549-text-37",
-    "pattern": "work.*phone",
-    "topic": "work_phone_number"
+    "pattern": "areacode",
+    "topic": "area_code"
   },
   {
     "dom": "<input class=\"textbox-areanumber\" data-val=\"true\" data-val-isrequired=\"please enter the middle 3 digits\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field exchange must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid middle 3 digits\" data-val-regex-pattern=\"\\d{3}\" id=\"previousemployer_workphone_exchange\" maxlength=\"3\" name=\"previousemployer.workphone.exchange\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "work phone previousemployer workphone exchange previousemployer workphone exchange text 3",
     "id": "549-text-38",
-    "pattern": "work.*phone",
-    "topic": "work_phone_number"
+    "pattern": "phone.*extension",
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input class=\"textbox-small\" data-val=\"true\" data-val-isrequired=\"please enter the last 4 digits\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field extension must be a string with a maximum length of 4.\" data-val-length-max=\"4\" data-val-regex=\"please enter a valid last 4 digits\" data-val-regex-pattern=\"\\d{4}\" id=\"previousemployer_workphone_extension\" maxlength=\"4\" name=\"previousemployer.workphone.extension\" type=\"text\" value=\"\"/>",
     "feature": "work phone previousemployer workphone extension previousemployer workphone extension text 4",
     "id": "549-text-39",
-    "pattern": "work.*phone",
-    "topic": "work_phone_number"
+    "pattern": "phone.*extension",
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input class=\"textbox-currency\" data-val=\"true\" data-val-isrequired=\"annual income is required\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-number=\"the field total annual income * must be a number.\" data-val-range=\"annual income must be between 0 and 999,999,999\" data-val-range-max=\"999999999\" data-val-range-min=\"0\" data-val-regex=\"please use numeric values only for annual income\" data-val-regex-pattern=\"^[0-9]+$\" id=\"financialinformation_monthlygrossincome\" maxlength=\"11\" name=\"financialinformation.monthlygrossincome\" type=\"text\" value=\"\"/>",
     "feature": "00 00 other income financialinformation monthlygrossincome financialinformation monthlygrossincome text 11",
     "id": "549-text-40",
-    "pattern": "",
-    "topic": ""
+    "pattern": "monthly.*income",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input class=\"textbox-currency\" data-val=\"true\" data-val-number=\"the field other income must be a number.\" data-val-range=\"other income must be between 0 and 999,999,999\" data-val-range-max=\"999999999\" data-val-range-min=\"0\" data-val-regex=\"please use numeric values only for other income\" data-val-regex-pattern=\"^[0-9]+$\" id=\"financialinformation_monthlyotherincome\" maxlength=\"11\" name=\"financialinformation.monthlyotherincome\" type=\"text\" value=\"\"/>",
     "feature": "00 00 other income financialinformation monthlyotherincome financialinformation monthlyotherincome text 11",
     "id": "549-text-41",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "monthly.*income",
+    "topic": "income_monthly"
   },
   {
     "dom": "<input data-val=\"true\" data-val-length=\"the field if other, please describe must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"please use values [a-z, 0-9, ., -] in 'if other, please describe'\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,50}\" id=\"housingstatusother\" maxlength=\"50\" name=\"housingstatusotherdescription\" type=\"text\" value=\"\"/>",
-    "feature": "00 00 select select select select 00 important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with monthly housing payment name of the nearest relative not living with you first middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no housingstatusotherdescription text housingstatusother 50",
+    "feature": "00 00 select select select select 00 important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with monthly housing payment name of the nearest relative not living with you first middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no housingstatusother housingstatusotherdescription text 50",
     "id": "549-text-42",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "housingstatus",
+    "topic": "housing_status"
   },
   {
     "dom": "<input class=\"textbox-currency\" data-val=\"true\" data-val-isrequired=\"monthly housing payment is required\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-number=\"the field monthly housing payment * must be a number.\" id=\"financialinformation_monthlyhousingpayment\" maxlength=\"11\" name=\"financialinformation.monthlyhousingpayment\" type=\"text\" value=\"\"/>",
     "feature": "00 financialinformation monthlyhousingpayment financialinformation monthlyhousingpayment text 11",
     "id": "549-text-43",
-    "pattern": "rent",
+    "pattern": "monthly.*payment",
     "topic": "rent"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"first name is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"\" data-val-length=\"the field first * must be a string with a maximum length of 40.\" data-val-length-max=\"40\" data-val-regex=\"please use values [a-z, 0-9, ., -] in first name\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,40}\" id=\"nearestrelative_name_first\" maxlength=\"40\" name=\"nearestrelative.name.first\" type=\"text\" value=\"\"/>",
-    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no text nearestrelative name first nearestrelative name first 40",
+    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with middle last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no nearestrelative name first nearestrelative name first text 40",
     "id": "549-text-44",
-    "pattern": "first.*name",
+    "pattern": "name.*first",
     "topic": "first_name"
   },
   {
     "dom": "<input data-val=\"true\" data-val-length=\"the field middle * must be a string with a maximum length of 20.\" data-val-length-max=\"20\" data-val-regex=\"please use values [a-z, 0-9, ., -] in middle name\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,20}\" id=\"nearestrelative_name_middle\" maxlength=\"20\" name=\"nearestrelative.name.middle\" type=\"text\" value=\"\"/>",
-    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application middle first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no nearestrelative name middle text nearestrelative name middle 20",
+    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application middle first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with last their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no nearestrelative name middle nearestrelative name middle text 20",
     "id": "549-text-45",
-    "pattern": "middle.*name",
+    "pattern": "name.*middle",
     "topic": "middle_name"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"last name is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"\" data-val-length=\"the field last * must be a string with a maximum length of 25.\" data-val-length-max=\"25\" data-val-regex=\"please use values [a-z, 0-9, ., -] in last name\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-]{1,25}\" id=\"nearestrelative_name_last\" maxlength=\"25\" name=\"nearestrelative.name.last\" type=\"text\" value=\"\"/>",
-    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application last middle first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no text nearestrelative name last nearestrelative name last 25",
+    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application last middle first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with their relationship to you additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no nearestrelative name last nearestrelative name last text 25",
     "id": "549-text-46",
-    "pattern": "last.*name",
+    "pattern": "name.*last",
     "topic": "last_name"
   },
   {
     "dom": "<input data-val=\"true\" data-val-isrequired=\"relationship of nearest relative is a required field\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"\" data-val-length=\"the field their relationship to you? * must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-regex=\"use values [a-z, 0-9, :,’.–] only in relationship of nearest relative\" data-val-regex-pattern=\"[a-za-z0-9\\s\\.\\-\\,\\#\\`]{1,50}\" id=\"nearestrelative_relationship\" maxlength=\"50\" name=\"nearestrelative.relationship\" type=\"text\" value=\"\"/>",
-    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application their relationship to you last middle first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no text nearestrelative relationship nearestrelative relationship 50",
+    "feature": "00 00 00 select select select select important information our bank complies with the usa patriot act this law mandates that we verify certain information about you while processing your account application their relationship to you last middle first name of the nearest relative not living with you monthly housing payment if other please describe rent own other do you rent or own your primary residence housing information total annual income other income applicant financial information occupation position employer years months time with employer work phone occupation position employer years months time with employer work phone applicant employment information mother s maiden name social security number date of birth address line 1 address line 2 city state zip time at address years months confirm email address email address home phone address line 1 address line 2 city state zip first mi last name applicant general information required fields are marked with additional questions have you declared bankruptcy in the last 10 years yes no are you a permanent u s resident yes no nearestrelative relationship nearestrelative relationship text 50",
     "id": "549-text-47",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "relationship",
+    "topic": "relationship"
   }
 ]

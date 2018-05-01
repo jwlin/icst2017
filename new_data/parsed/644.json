@@ -1,107 +1,107 @@
 [
   {
     "dom": "<input id=\"textinitials\" name=\"initials\" type=\"text\" value=\"\"/>",
-    "feature": "initials text initials textinitials",
+    "feature": "initials textinitials text initials",
     "id": "644-text-0",
     "pattern": "initials",
     "topic": "initials"
   },
   {
     "dom": "<input id=\"textsurname\" name=\"surname\" type=\"text\" value=\"\"/>",
-    "feature": "surname text surname textsurname",
+    "feature": "surname textsurname text surname",
     "id": "644-text-1",
-    "pattern": "last.*name",
+    "pattern": "surname",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"textaddressline1\" name=\"addressline1\" type=\"text\" value=\"\"/>",
-    "feature": "address line 1 text addressline1 textaddressline1",
+    "feature": "address line 1 textaddressline1 text addressline1",
     "id": "644-text-2",
-    "pattern": "address.*one",
+    "pattern": "address.*line.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input id=\"textaddressline2\" name=\"addressline2\" type=\"text\" value=\"\"/>",
-    "feature": "address line 2 text addressline2 textaddressline2",
+    "feature": "address line 2 textaddressline2 text addressline2",
     "id": "644-text-3",
-    "pattern": "address.*two",
+    "pattern": "address.*line.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input id=\"textaddressline3\" name=\"addressline3\" type=\"text\" value=\"\"/>",
-    "feature": "address line 3 text addressline3 textaddressline3",
+    "feature": "address line 3 textaddressline3 text addressline3",
     "id": "644-text-4",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "address.*line.*3",
+    "topic": "apartment"
   },
   {
     "dom": "<input id=\"textaddressline4\" name=\"addressline4\" type=\"text\" value=\"\"/>",
-    "feature": "address line 4 text addressline4 textaddressline4",
+    "feature": "address line 4 textaddressline4 text addressline4",
     "id": "644-text-5",
-    "pattern": "address.*one",
-    "topic": "address_1"
+    "pattern": "address.*line.*4",
+    "topic": "city"
   },
   {
     "dom": "<input id=\"textpostcode\" name=\"postcode\" type=\"text\" value=\"\"/>",
-    "feature": "postcode text postcode textpostcode",
+    "feature": "postcode textpostcode text postcode",
     "id": "644-text-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "post.*code",
+    "topic": "zip"
   },
   {
     "dom": "<input autocomplete=\"false\" data-target=\"\" id=\"text-modelnumber\" name=\"modelnumber\" type=\"text\" value=\"\"/>",
     "feature": "x text modelnumber text modelnumber",
     "id": "644-text-7",
-    "pattern": "model.*number",
+    "pattern": "modelnumber",
     "topic": "model_number"
   },
   {
     "dom": "<input id=\"telpurchaseprice\" name=\"purchaseprice\" type=\"text\" value=\"\"/>",
-    "feature": "purchase price text purchaseprice telpurchaseprice",
+    "feature": "purchase price text telpurchaseprice purchaseprice",
     "id": "644-text-8",
-    "pattern": "price",
+    "pattern": "purchase.*price",
     "topic": "price"
   },
   {
     "dom": "<input id=\"emailemailaddress\" name=\"emailaddress\" type=\"email\" value=\"\"/>",
-    "feature": "email address email emailaddress emailemailaddress",
+    "feature": "email address emailemailaddress email emailaddress",
     "id": "644-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"emailconfirmemailaddress\" name=\"confirmemailaddress\" type=\"email\" value=\"\"/>",
-    "feature": "confirm email address email confirmemailaddress emailconfirmemailaddress",
+    "feature": "confirm email address emailconfirmemailaddress email confirmemailaddress",
     "id": "644-email-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"telhomephone\" name=\"homephone\" type=\"tel\" value=\"\"/>",
-    "feature": "home phone tel homephone telhomephone",
+    "feature": "home phone telhomephone tel homephone",
     "id": "644-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "home.*phone",
+    "topic": "phone_home"
   },
   {
     "dom": "<input id=\"telmobilephone\" name=\"mobilephone\" type=\"tel\" value=\"\"/>",
-    "feature": "mobile phone tel mobilephone telmobilephone",
+    "feature": "mobile phone telmobilephone tel mobilephone",
     "id": "644-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "mobile.*phone",
+    "topic": "phone_cell"
   },
   {
     "dom": "<input id=\"telserialnumber\" name=\"serialnumber\" type=\"tel\" value=\"\"/>",
-    "feature": "uid or serial number tel serialnumber telserialnumber",
+    "feature": "uid or serial number tel telserialnumber serialnumber",
     "id": "644-tel-2",
-    "pattern": "serial",
+    "pattern": "serial.*number",
     "topic": "serial_number"
   },
   {
     "dom": "<input id=\"telsecurityanswer\" name=\"securityanswer\" placeholder=\"please enter the number six hundred and thirty-six in numeric form\" type=\"tel\" value=\"\"/>",
-    "feature": "six hundred and thirty six x x by ticking the relevant boxes below please enter the number six hundred and thirty six in numeric form in to the box below this helps to prevent spam messages date of purchase purchase price uid or serial number model number confirm email address email address mobile phone home phone postcode address line 4 address line 3 address line 2 address line 1 surname initials title tel securityanswer telsecurityanswer please enter the number six hundred and thirty six in numeric form",
+    "feature": "six hundred and thirty six x x by ticking the relevant boxes below please enter the number six hundred and thirty six in numeric form in to the box below this helps to prevent spam messages date of purchase purchase price uid or serial number model number confirm email address email address mobile phone home phone postcode address line 4 address line 3 address line 2 address line 1 surname initials title tel telsecurityanswer please enter the number six hundred and thirty six in numeric form securityanswer",
     "id": "644-tel-3",
-    "pattern": "password.*hint",
+    "pattern": "security.*answer",
     "topic": "password_hint"
   }
 ]

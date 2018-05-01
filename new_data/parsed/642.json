@@ -1,30 +1,30 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"autocomplete-product registria_field\" data-beginswith=\"true\" data-model-string=\"{sku} ({name})\" id=\"model\" name=\"product[model]\" type=\"text\" value=\"\"/>",
-    "feature": "model number text model product model",
+    "feature": "model number text product model model",
     "id": "642-text-0",
-    "pattern": "model.*number",
-    "topic": "model_number"
+    "pattern": "model",
+    "topic": "model"
   },
   {
     "dom": "<input class=\"full-name\" id=\"full_name\" required=\"\" type=\"text\"/>",
-    "feature": "full name full name text",
+    "feature": "full name text full name",
     "id": "642-text-1",
     "pattern": "full.*name",
     "topic": "full_name"
   },
   {
     "dom": "<input class=\"registria_field \" id=\"address1\" name=\"user[address_attributes][address1]\" placeholder=\"enter a location\" type=\"text\"/>",
-    "feature": "street address address1 user address attributes address1 text enter a location",
+    "feature": "street address address1 enter a location user address attributes address1 text",
     "id": "642-text-2",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"registria_field \" id=\"address2\" name=\"user[address_attributes][address2]\" type=\"text\"/>",
     "feature": "unit number address2 user address attributes address2 text",
     "id": "642-text-3",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
@@ -43,10 +43,10 @@
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"registria_field\" id=\"purchased_at\" name=\"product[purchased_at]\" type=\"text\"/>",
-    "feature": "purchased from purchased at product purchased at text",
+    "feature": "purchased from text product purchased at purchased at",
     "id": "642-text-6",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "purchased.*at",
+    "topic": "store_name"
   },
   {
     "dom": "<input class=\"registria_field \" id=\"email\" name=\"user[email]\" type=\"email\" value=\"\"/>",
@@ -59,21 +59,21 @@
     "dom": "<input class=\"registria_field mask-phone\" id=\"phone\" name=\"user[phone]\" type=\"tel\" value=\"\"/>",
     "feature": "phone number phone user phone tel",
     "id": "642-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"registria_field reverse-zip\" id=\"zip\" name=\"user[address_attributes][zip]\" type=\"tel\"/>",
     "feature": "zip code zip user address attributes zip tel",
     "id": "642-tel-1",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"registria_field mask-date\" id=\"purchase_date\" name=\"product[purchase_date]\" type=\"tel\"/>",
-    "feature": "purchase date purchase date product purchase date tel",
+    "feature": "purchase date tel product purchase date purchase date",
     "id": "642-tel-2",
-    "pattern": "date",
+    "pattern": "purchase.*date",
     "topic": "date"
   }
 ]

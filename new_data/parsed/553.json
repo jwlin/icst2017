@@ -1,38 +1,38 @@
 [
   {
     "dom": "<input id=\"firstnameid\" maxlength=\"20\" name=\"firstname\" type=\"text\" value=\"\"/>",
-    "feature": "first name name first mi last text firstnameid firstname 20",
+    "feature": "first name name first mi last text firstname firstnameid 20",
     "id": "553-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"miid\" maxlength=\"1\" name=\"mi\" type=\"text\" value=\"\"/>",
-    "feature": "middle initial text miid mi 1",
+    "feature": "middle initial text mi miid 1",
     "id": "553-text-1",
-    "pattern": "middle.*initial",
+    "pattern": "mi",
     "topic": "middle_initial"
   },
   {
     "dom": "<input id=\"lastnameid\" maxlength=\"20\" name=\"lastname\" type=\"text\" value=\"\"/>",
-    "feature": "last name text lastnameid lastname 20",
+    "feature": "last name text lastname lastnameid 20",
     "id": "553-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"date\" id=\"dobid\" maxlength=\"12\" name=\"dob\" pattern=\"[0-9]*\" tabindex=\"11\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth text dobid dob 12",
+    "feature": "date of birth text dob dobid 12",
     "id": "553-text-3",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input class=\"ssn\" id=\"ssn\" maxlength=\"12\" name=\"ssn\" pattern=\"[0-9]*\" tabindex=\"12\" type=\"text\" value=\"\"/>",
     "feature": "social security number text ssn ssn 12",
     "id": "553-text-4",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   },
   {
     "dom": "<input class=\"email\" id=\"email\" maxlength=\"50\" name=\"email\" tabindex=\"15\" type=\"text\" value=\"\"/>",
@@ -45,15 +45,15 @@
     "dom": "<input class=\"phone\" id=\"homephone\" maxlength=\"12\" name=\"homephone\" pattern=\"[0-9]*\" tabindex=\"16\" type=\"text\" value=\"\"/>",
     "feature": "contact phone text homephone homephone 12",
     "id": "553-text-6",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input id=\"address.zipcode1\" maxlength=\"5\" name=\"address.zipcode1\" onkeyup=\"numberonly(this, event)\" size=\"7\" tabindex=\"20\" type=\"text\" value=\"\"/>",
     "feature": "residential zip code text address zipcode1 address zipcode1 5",
     "id": "553-text-7",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input id=\"agent\" maxlength=\"20\" name=\"agent\" tabindex=\"22\" type=\"text\" value=\"\"/>",

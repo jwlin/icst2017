@@ -1,21 +1,21 @@
 [
   {
     "dom": "<input class=\"form-control\" id=\"firstname\" maxlength=\"50\" name=\"firstname\" size=\"50\" type=\"text\"/>",
-    "feature": "first name firstname firstname text 50",
+    "feature": "first name firstname text firstname 50",
     "id": "750-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"lastname\" maxlength=\"50\" name=\"lastname\" size=\"50\" type=\"text\"/>",
-    "feature": "last name lastname lastname text 50",
+    "feature": "last name lastname text lastname 50",
     "id": "750-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" id=\"email\" maxlength=\"70\" name=\"email\" onblur=\"checkusername(this.value);\" type=\"text\"/>",
-    "feature": "email email email text 70",
+    "feature": "email email text email 70",
     "id": "750-text-2",
     "pattern": "email",
     "topic": "email"
@@ -29,14 +29,14 @@
   },
   {
     "dom": "<input class=\"form-control\" id=\"password1\" maxlength=\"50\" minlength=\"6\" name=\"password1\" type=\"password\"/>",
-    "feature": "create password password1 password1 password 50",
+    "feature": "create password password1 password password1 50",
     "id": "750-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input class=\"form-control\" id=\"password2\" maxlength=\"50\" minlength=\"6\" name=\"password2\" type=\"password\"/>",
-    "feature": "confirm password password2 password2 password 50",
+    "feature": "confirm password password2 password password2 50",
     "id": "750-password-1",
     "pattern": "password",
     "topic": "password"

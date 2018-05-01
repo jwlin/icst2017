@@ -1,23 +1,23 @@
 [
   {
     "dom": "<input class=\"input160w\" id=\"whfmfillin\" name=\"whfmfillin\" placeholder=\"click to select\" style=\"display:none\" type=\"text\" value=\"\"/>",
-    "feature": "select your product click to select text whfmfillin whfmfillin",
+    "feature": "select your product text whfmfillin whfmfillin click to select",
     "id": "628-text-0",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "whfm",
+    "topic": "model"
   },
   {
     "dom": "<input class=\"input160w\" id=\"sersfillin\" name=\"sersfillin\" placeholder=\"click to select\" style=\"display:none\" type=\"text\" value=\"\"/>",
-    "feature": "select your model series click to select text sersfillin sersfillin",
+    "feature": "select your model series text sersfillin sersfillin click to select",
     "id": "628-text-1",
-    "pattern": "model.*number",
-    "topic": "model_number"
+    "pattern": "sers",
+    "topic": "serial_number"
   },
   {
     "dom": "<input id=\"modo\" maxlength=\"20\" name=\"modo\" placeholder=\"click to select\" style=\"display:none; width:160px\" type=\"text\" value=\"\"/>",
-    "feature": "select or enter your model number click to select text modo modo 20",
+    "feature": "select or enter your model number text modo modo click to select 20",
     "id": "628-text-2",
-    "pattern": "model.*number",
+    "pattern": "modo",
     "topic": "model_number"
   },
   {
@@ -31,42 +31,42 @@
     "dom": "<input class=\"input160w\" id=\"prdt\" maxlength=\"10\" name=\"prdt\" style=\"vertical-align:top; padding:0 0 2px 0; height:auto;\" type=\"text\" value=\"\"/>",
     "feature": "select date of purchase text prdt prdt 10",
     "id": "628-text-4",
-    "pattern": "date",
+    "pattern": "prdt",
     "topic": "date"
   },
   {
     "dom": "<input id=\"fnam\" maxlength=\"32\" name=\"fnam\" type=\"text\" value=\"\"/>",
     "feature": "first name text fnam fnam 32",
     "id": "628-text-5",
-    "pattern": "first.*name",
+    "pattern": "fnam",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"lnam\" maxlength=\"32\" name=\"lnam\" type=\"text\" value=\"\"/>",
     "feature": "last name text lnam lnam 32",
     "id": "628-text-6",
-    "pattern": "last.*name",
+    "pattern": "lnam",
     "topic": "last_name"
   },
   {
     "dom": "<input id=\"emal\" maxlength=\"55\" name=\"emal\" type=\"text\" value=\"\"/>",
     "feature": "e mail text emal emal 55",
     "id": "628-text-7",
-    "pattern": "email",
+    "pattern": "emal",
     "topic": "email"
   },
   {
     "dom": "<input id=\"add1\" maxlength=\"32\" name=\"add1\" type=\"text\" value=\"\"/>",
     "feature": "address 1 text add1 add1 32",
     "id": "628-text-8",
-    "pattern": "address.*one",
+    "pattern": "add1",
     "topic": "address_1"
   },
   {
     "dom": "<input id=\"add2\" maxlength=\"32\" name=\"add2\" type=\"text\" value=\"\"/>",
     "feature": "address 2 text add2 add2 32",
     "id": "628-text-9",
-    "pattern": "address.*two",
+    "pattern": "add2",
     "topic": "address_2"
   },
   {
@@ -80,28 +80,28 @@
     "dom": "<input id=\"stou\" maxlength=\"30\" name=\"stou\" type=\"text\" value=\"\"/>",
     "feature": "state province state province or county state province state province or county text stou stou 30",
     "id": "628-text-11",
-    "pattern": "state",
+    "pattern": "stou",
     "topic": "state"
   },
   {
     "dom": "<input id=\"zipc\" maxlength=\"10\" name=\"zipc\" style=\"display:none;\" type=\"text\" value=\"\"/>",
     "feature": "zip code postal code postal code zip code postal code postal code text zipc zipc 10",
     "id": "628-text-12",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zipc",
+    "topic": "zip"
   },
   {
     "dom": "<input id=\"czip\" maxlength=\"7\" name=\"czip\" onkeyup=\"dynamic_hyphen();\" style=\"display:none;\" type=\"text\" value=\"\"/>",
     "feature": "zip code postal code postal code zip code postal code postal code text czip czip 7",
     "id": "628-text-13",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input id=\"ozip\" maxlength=\"10\" name=\"ozip\" type=\"text\" value=\"\"/>",
     "feature": "zip code postal code postal code zip code postal code postal code text ozip ozip 10",
     "id": "628-text-14",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   }
 ]

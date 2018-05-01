@@ -1,24 +1,24 @@
 [
   {
     "dom": "<input autocomplete=\"off\" class=\"form-control form-control-searchterm\" id=\"header-search-desktop-skip\" name=\"searchterm\" placeholder=\"search\" title=\"search\" type=\"text\"/>",
-    "feature": "fossil search fossil search search text header search desktop skip searchterm",
+    "feature": "fossil search fossil search header search desktop skip searchterm text search",
     "id": "629-text-0",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"form-control form-control-searchterm\" id=\"header-search-mobile-skip\" name=\"searchterm\" placeholder=\"search\" title=\"search\" type=\"text\"/>",
-    "feature": "search search search text header search mobile skip searchterm",
+    "feature": "search search header search mobile skip searchterm text search",
     "id": "629-text-1",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input class=\"form-control\" data-parsley-badwords=\"\" data-parsley-maxlength=\"20\" id=\"sku\" name=\"sku\" placeholder=\"es3433\" required=\"\" type=\"text\"/>",
-    "feature": "item number item number es3433 text sku sku",
+    "feature": "item number item number text sku sku es3433",
     "id": "629-text-2",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "sku",
+    "topic": "sku"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"form-control\" id=\"id-nav-util-login-email\" name=\"signinemail\" required=\"\" type=\"email\"/>",
@@ -36,7 +36,7 @@
   },
   {
     "dom": "<input class=\"form-control\" data-parsley-customemail=\"\" id=\"id-footer-email-input\" maxlength=\"255\" name=\"email1\" placeholder=\"enter email address\" required=\"\" type=\"email\"/>",
-    "feature": "stay connected email id footer email input enter email address email1 255",
+    "feature": "stay connected email email1 id footer email input enter email address 255",
     "id": "629-email-2",
     "pattern": "email",
     "topic": "email"

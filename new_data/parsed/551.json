@@ -1,100 +1,100 @@
 [
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.firstname\" floating-label=\"floating-label\" id=\"consumer.applicant.first-name\" maxlength=\"16\" name=\"consumer.applicant.firstname\" ng-model=\"ngmodel.firstname\" placeholder=\"first name\" tabindex=\"1101\" type=\"text\" validate-data=\"sharedapplicationmodule.authorizeduser.validatefirstname(value, notation, error)\"/>",
-    "feature": "first name text consumer applicant first name first name consumer applicant firstname 16",
+    "feature": "first name consumer applicant first name consumer applicant firstname text first name 16",
     "id": "551-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.middleinitial\" floating-label=\"floating-label\" id=\"consumer.applicant.middle-initial\" maxlength=\"1\" name=\"consumer.applicant.middleinitial\" ng-model=\"ngmodel.middleinitial\" placeholder=\"mi\" restrict-input=\"validationchecks.lettersonlypattern\" tabindex=\"1102\" type=\"text\" validate-data=\"sharedapplicationmodule.authorizeduser.validatemiddleinitial(value, notation, error)\"/>",
-    "feature": "mi text consumer applicant middle initial mi consumer applicant middleinitial 1",
+    "feature": "mi consumer applicant middle initial consumer applicant middleinitial text mi 1",
     "id": "551-text-1",
-    "pattern": "middle.*initial",
+    "pattern": "middleinitial",
     "topic": "middle_initial"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-isolate-scope empty ng-valid-maxlength blurred-once ng-invalid ng-invalid-form-error ng-touched\" error-message-model=\"errormessages.lastname\" floating-label=\"floating-label\" id=\"consumer.applicant.last-name\" maxlength=\"20\" name=\"consumer.applicant.lastname\" ng-model=\"ngmodel.lastname\" placeholder=\"last name\" style=\"\" tabindex=\"1103\" type=\"text\" validate-data=\"sharedapplicationmodule.authorizeduser.validatelastname(value, notation, error)\"/>",
-    "feature": "last name text consumer applicant last name last name consumer applicant lastname 20",
+    "feature": "last name consumer applicant last name consumer applicant lastname text last name 20",
     "id": "551-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.address1\" extra-validation-data=\"addresstype\" floating-label=\"floating-label\" id=\"consumer.applicant.address.street1\" maxlength=\"25\" name=\"consumer.applicant.address.street1\" ng-model=\"ngmodel.address.street1\" placeholder=\"address line 1 (no p.o. boxes)\" tabindex=\"1305\" type=\"text\" validate-data=\"sharedapplicationmodule.address.validatestreetone(value, notation, error, addresstype)\"/>",
-    "feature": "address line 1 no p o boxes text consumer applicant address street1 address line 1 no p o boxes consumer applicant address street1 25",
+    "feature": "address line 1 no p o boxes consumer applicant address street1 consumer applicant address street1 text address line 1 no p o boxes 25",
     "id": "551-text-3",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.address2\" extra-validation-data=\"addresstype\" floating-label=\"floating-label\" id=\"consumer.applicant.address.street2\" maxlength=\"20\" name=\"consumer.applicant.address.street2\" ng-model=\"ngmodel.address.street2\" placeholder=\"address line 2 (no p.o. boxes)\" tabindex=\"1306\" type=\"text\" validate-data=\"sharedapplicationmodule.address.validatestreettwo(value, notation, error, addresstype)\"/>",
-    "feature": "address line 2 no p o boxes text consumer applicant address street2 address line 2 no p o boxes consumer applicant address street2 20",
+    "feature": "address line 2 no p o boxes consumer applicant address street2 consumer applicant address street2 text address line 2 no p o boxes 20",
     "id": "551-text-4",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control input-city ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.city\" floating-label=\"floating-label\" id=\"consumer.applicant.address.city\" maxlength=\"18\" name=\"consumer.applicant.address.city\" ng-model=\"address.city\" placeholder=\"city\" tabindex=\"1308\" type=\"text\" validate-data=\"sharedapplicationmodule.address.validatecity(value, notation, error)\"/>",
-    "feature": "city text consumer applicant address city city consumer applicant address city 18",
+    "feature": "city consumer applicant address city consumer applicant address city text city 18",
     "id": "551-text-5",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.mothermaidenname\" floating-label=\"floating-label\" id=\"consumer.applicant.mothers-maiden-name\" maxlength=\"8\" name=\"consumer.applicant.mothersmaidenname\" ng-model=\"ngmodel.mothersmaidenname\" placeholder=\"mother's maiden name (8 letters max)\" tabindex=\"1517\" type=\"text\" validate-data=\"consumerapplicationmodule.primaryconsumer.validatemothersmaidenname(value, notation, error)\"/>",
-    "feature": "mother s maiden name 8 letters max text consumer applicant mothers maiden name mother s maiden name 8 letters max consumer applicant mothersmaidenname 8",
+    "feature": "mother s maiden name 8 letters max consumer applicant mothers maiden name consumer applicant mothersmaidenname text mother s maiden name 8 letters max 8",
     "id": "551-text-6",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "mothers.*maiden.*name",
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength ng-valid-email\" error-message-model=\"errormessages.emailaddress\" floating-label=\"floating-label\" id=\"consumer.applicant.emailaddress\" maxlength=\"35\" name=\"consumer.applicant.emailaddress\" ng-model=\"ngmodel.emailaddress\" placeholder=\"email address\" tabindex=\"1414\" type=\"email\" validate-data=\"sharedapplicationmodule.primaryuser.validateemailaddress(value, notation, error)\"/>",
-    "feature": "email address email consumer applicant emailaddress email address consumer applicant emailaddress 35",
+    "feature": "email address consumer applicant emailaddress consumer applicant emailaddress email email address 35",
     "id": "551-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control input-zip ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.zipcode\" extra-validation-data=\"zipstateextravalidationparams\" floating-label=\"floating-label\" id=\"consumer.applicant.address.zipcode\" maxlength=\"5\" name=\"consumer.applicant.address.zipcode\" ng-blur=\"setcitystate()\" ng-model=\"address.zipcode\" placeholder=\"zip code\" restrict-input=\"validationchecks.digitsonlypattern\" tabindex=\"1307\" type=\"tel\" validate-data=\"sharedapplicationmodule.address.validatezipcode(value, notation, error, zipstateextravalidationparams)\"/>",
-    "feature": "zip code tel consumer applicant address zipcode zip code consumer applicant address zipcode 5",
+    "feature": "zip code consumer applicant address zipcode consumer applicant address zipcode tel zip code 5",
     "id": "551-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.primaryphone\" floating-label=\"floating-label\" id=\"consumer.applicant.primaryphone\" input-masking=\"phone\" maxlength=\"14\" name=\"consumer.applicant.primaryphone\" ng-model=\"ngmodel.primaryphone\" onkeydown=\"backspacerdown(this, event, 'phone')\" onkeyup=\"backspacerup(this, event, 'phone')\" placeholder=\"primary phone number\" tabindex=\"1412\" type=\"tel\" validate-data=\"sharedapplicationmodule.authorizeduser.validateprimaryphonenumber(value, notation, error)\"/>",
-    "feature": "primary phone number tel consumer applicant primaryphone primary phone number consumer applicant primaryphone 14",
+    "feature": "primary phone number consumer applicant primaryphone consumer applicant primaryphone tel primary phone number 14",
     "id": "551-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.secondaryphone\" floating-label=\"floating-label\" id=\"consumer.applicant.secondaryphone\" input-masking=\"phone\" maxlength=\"14\" name=\"consumer.applicant.secondaryphone\" ng-change=\"ngmodel.clearindicator(ngmodel)\" ng-model=\"ngmodel.secondaryphone\" onkeydown=\"backspacerdown(this, event, 'phone')\" onkeyup=\"backspacerup(this, event, 'phone')\" placeholder=\"alternate phone number (optional)\" tabindex=\"1413\" type=\"tel\" validate-data=\"sharedapplicationmodule.authorizeduser.validatesecondaryphonenumber(value, notation, error, ngmodel.secondaryphoneindicator, true)\"/>",
-    "feature": "alternate phone number optional tel consumer applicant secondaryphone alternate phone number optional consumer applicant secondaryphone 14",
+    "feature": "alternate phone number optional consumer applicant secondaryphone consumer applicant secondaryphone tel alternate phone number optional 14",
     "id": "551-tel-2",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "secondaryphone",
+    "topic": "phone_alt"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control date ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.dob\" extra-validation-data=\"iscoapplicant\" floating-label=\"floating-label\" id=\"consumer.applicant.dateofbirth\" input-masking=\"date\" maxlength=\"10\" name=\"consumer.applicant.dateofbirth\" ng-model=\"ngmodel.dateofbirth\" onkeydown=\"backspacerdown(this, event, 'dob')\" onkeyup=\"backspacerup(this, event, 'dob')\" placeholder=\"mm/dd/yyyy\" tabindex=\"1515\" type=\"tel\" validate-data=\"sharedapplicationmodule.authorizeduser.validatebirthdate(value, notation, error, iscoapplicant)\"/>",
-    "feature": "date of birth tel consumer applicant dateofbirth mm dd yyyy consumer applicant dateofbirth 10",
+    "feature": "date of birth consumer applicant dateofbirth consumer applicant dateofbirth tel mm dd yyyy 10",
     "id": "551-tel-3",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dateofbirth",
+    "topic": "dob"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.ssn\" floating-label=\"floating-label\" id=\"consumer.applicant.socialsecuritynumber\" input-masking=\"social\" maxlength=\"11\" name=\"consumer.applicant.socialsecuritynumber\" ng-model=\"ngmodel.socialsecuritynumber\" onkeydown=\"backspacerdown(this, event,'ssn')\" onkeyup=\"backspacerup(this, event, 'ssn')\" placeholder=\"social security number\" tabindex=\"1516\" type=\"tel\" validate-data=\"sharedapplicationmodule.authorizeduser.validatesocialsecuritynumber(value, notation, error)\"/>",
-    "feature": "social security number tel consumer applicant socialsecuritynumber social security number consumer applicant socialsecuritynumber 11",
+    "feature": "social security number consumer applicant socialsecuritynumber consumer applicant socialsecuritynumber tel social security number 11",
     "id": "551-tel-4",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "socialsecuritynumber",
+    "topic": "ssn"
   },
   {
     "dom": "<input application-validate=\"\" class=\"form-control ng-pristine ng-untouched ng-valid ng-isolate-scope empty ng-valid-maxlength\" error-message-model=\"errormessages.housingpayment\" floating-label=\"floating-label\" id=\"consumer.applicant.monthlyhousingpayment\" input-masking=\"money\" maxlength=\"8\" name=\"consumer.applicant.monthlyhousingpayment\" ng-model=\"ngmodel.monthlyhousingpayment\" onkeydown=\"backspacerdown(this, event, 'amt')\" onkeyup=\"backspacerup(this, event, 'amt')\" placeholder=\"monthly housing payment\" tabindex=\"1619\" type=\"tel\" validate-data=\"sharedapplicationmodule.authorizeduser.validatemonthlyhousingpayment(value, notation, error)\"/>",
-    "feature": "monthly housing payment tel consumer applicant monthlyhousingpayment monthly housing payment consumer applicant monthlyhousingpayment 8",
+    "feature": "monthly housing payment consumer applicant monthlyhousingpayment consumer applicant monthlyhousingpayment tel monthly housing payment 8",
     "id": "551-tel-5",
-    "pattern": "rent",
+    "pattern": "monthly.*payment",
     "topic": "rent"
   }
 ]

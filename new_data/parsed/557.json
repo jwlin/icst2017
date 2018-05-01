@@ -3,70 +3,70 @@
     "dom": "<input id=\"address_firstname\" maxlength=\"15\" name=\"address.firstname\" type=\"text\" value=\"\"/>",
     "feature": "first name address firstname address firstname text 15",
     "id": "557-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"address_lastname\" maxlength=\"15\" name=\"address.lastname\" type=\"text\" value=\"\"/>",
     "feature": "last name address lastname address lastname text 15",
     "id": "557-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"\" id=\"address_addressline1\" maxlength=\"60\" name=\"address.addressline1\" type=\"text\" value=\"\"/>",
-    "feature": "address text address addressline1 address addressline1 60",
+    "feature": "address address addressline1 address addressline1 text 60",
     "id": "557-text-2",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"\" id=\"address_addressline2\" maxlength=\"60\" name=\"address.addressline2\" type=\"text\" value=\"\"/>",
-    "feature": "apt suite text address addressline2 address addressline2 60",
+    "feature": "apt suite address addressline2 address addressline2 text 60",
     "id": "557-text-3",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"\" id=\"address_city\" maxlength=\"50\" name=\"address.city\" type=\"text\" value=\"\"/>",
-    "feature": "city text address city address city 50",
+    "feature": "city address city address city text 50",
     "id": "557-text-4",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"zip\" id=\"address_postalcode\" maxlength=\"10\" name=\"address.postalcode\" type=\"text\" value=\"\"/>",
-    "feature": "zip code text address postalcode address postalcode 10",
+    "feature": "zip code address postalcode address postalcode text 10",
     "id": "557-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"newsletter_signup newsletter_signup_zipcode\" maxlength=\"5\" name=\"newsletter_signup_zipcode\" pattern=\"\\d*\" placeholder=\"zip code\" type=\"text\" value=\"\"/>",
-    "feature": "get started zip code text zip code newsletter signup zipcode 5",
+    "feature": "get started zip code newsletter signup zipcode text zip code 5",
     "id": "557-text-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"newsletter_signup\" maxlength=\"50\" name=\"newsletter_signup_email\" placeholder=\"email address\" type=\"email\" value=\"\"/>",
-    "feature": "get started zip code email email address newsletter signup email 50",
+    "feature": "get started zip code newsletter signup email email email address 50",
     "id": "557-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"numbers tooltip phone\" id=\"address_phonenumber\" maxlength=\"15\" name=\"address.phonenumber\" title=\"phone number | we ask this as a security precaution. if you ever have to contact us over the phone, we'll ask you to verify the information you've given us.\" type=\"tel\" value=\"\"/>",
-    "feature": "phone number tel address phonenumber address phonenumber 15",
+    "feature": "phone number address phonenumber address phonenumber tel 15",
     "id": "557-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"numbers tooltip phone extn\" id=\"address_phoneextension\" maxlength=\"10\" name=\"address.phoneextension\" title=\"phone number | we ask this as a security precaution. if you ever have to contact us over the phone, we'll ask you to verify the information you've given us.\" type=\"tel\" value=\"\"/>",
-    "feature": "phone extension tel address phoneextension address phoneextension 10",
+    "feature": "phone extension address phoneextension address phoneextension tel 10",
     "id": "557-tel-1",
-    "pattern": "phone.*ext",
+    "pattern": "phoneextension",
     "topic": "phone_ext"
   }
 ]

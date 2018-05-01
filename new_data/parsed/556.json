@@ -8,10 +8,10 @@
   },
   {
     "dom": "<input aria-label=\"apply\" aria-required=\"false\" class=\"c-form__text c-cart-add-promo__input js-cart-add-promo__input ng-pristine ng-untouched ng-valid ng-valid-pattern\" data-qa-add-promo-input=\"\" id=\"promo-code\" name=\"promocode\" ng-focus=\"clearerrors()\" ng-model=\"promo.code\" ng-pattern=\"/^[a-z0-9_@!]*$/i\" type=\"text\" urbn-uppercase-model=\"\"/>",
-    "feature": "text promo code promocode",
+    "feature": "promo code promocode text",
     "id": "556-text-1",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "promo",
+    "topic": "promo_code"
   },
   {
     "dom": "<input class=\"c-form__email js-cart-contact-info__email-input ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-email\" data-qa-contact-email=\"\" id=\"email\" name=\"email\" ng-blur=\"actions.checkforprofile()\" ng-disabled=\"!data.anonymous() &amp;&amp; data.contactinfo.email\" ng-focus=\"actions.hideexistingaccountmsg()\" ng-model=\"data.contactinfo.email\" ng-readonly=\"!data.anonymous() &amp;&amp; data.contactinfo.email\" ng-required=\"true\" required=\"required\" type=\"email\"/>",
@@ -22,9 +22,9 @@
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"c-form__tel ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength\" data-qa-address-form-phone-number=\"\" id=\"phone-shipping\" maxlength=\"30\" minlength=\"\" name=\"phonenumber\" ng-change=\"resetformfielderror('phonenumber')\" ng-model=\"address.phonenumber\" ng-pattern=\"^[\\d \\(\\-\\.)]*$\" ng-required=\"isfieldrequired('phonenumber')\" placeholder=\"do not enter a country code\" required=\"required\" type=\"tel\" urbn-numeric-model=\"\"/>",
-    "feature": "daytime phone tel phone shipping do not enter a country code phonenumber 30",
+    "feature": "daytime phone phone shipping phonenumber tel do not enter a country code 30",
     "id": "556-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

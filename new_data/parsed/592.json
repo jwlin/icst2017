@@ -1,94 +1,94 @@
 [
   {
     "dom": "<input aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocomplete=\"off\" class=\"input-text form-control\" id=\"search\" maxlength=\"128\" name=\"q\" placeholder=\"search entire store here...\" role=\"combobox\" type=\"text\" value=\"\"/>",
-    "feature": "search q text search entire store here 128",
+    "feature": "search text q search entire store here 128",
     "id": "592-text-0",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" autocomplete=\"off\" class=\"input-text form-control\" id=\"search\" maxlength=\"128\" name=\"q\" placeholder=\"search entire store here...\" role=\"combobox\" type=\"text\" value=\"\"/>",
-    "feature": "search q text search entire store here 128",
+    "feature": "search text q search entire store here 128",
     "id": "592-text-1",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input aria-describedby=\"notice-wy2q0ut\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"wy2q0ut\" name=\"firstname\" placeholder=\"\" type=\"text\"/>",
-    "feature": "first name first name text wy2q0ut firstname",
+    "feature": "first name first name text firstname wy2q0ut",
     "id": "592-text-2",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-describedby=\"notice-uw589uc\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"uw589uc\" name=\"lastname\" placeholder=\"\" type=\"text\"/>",
-    "feature": "last name last name text uw589uc lastname",
+    "feature": "last name last name text lastname uw589uc",
     "id": "592-text-3",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-describedby=\"notice-gxbm4dn\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"gxbm4dn\" name=\"company\" placeholder=\"\" type=\"text\"/>",
-    "feature": "company company text gxbm4dn company",
+    "feature": "company company text company gxbm4dn",
     "id": "592-text-4",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input aria-describedby=\"notice-ldq5urm\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"ldq5urm\" name=\"street[0]\" placeholder=\"\" type=\"text\"/>",
-    "feature": "street address text ldq5urm street 0",
+    "feature": "street address text street 0 ldq5urm",
     "id": "592-text-5",
-    "pattern": "address.*one",
+    "pattern": "street.*0",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"notice-b07hp2b\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"b07hp2b\" name=\"street[1]\" placeholder=\"\" type=\"text\"/>",
-    "feature": "street address text b07hp2b street 1",
+    "feature": "street address text street 1 b07hp2b",
     "id": "592-text-6",
-    "pattern": "address.*one",
-    "topic": "address_1"
+    "pattern": "street.*1",
+    "topic": "address_2"
   },
   {
     "dom": "<input aria-describedby=\"notice-pl5pacn\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"pl5pacn\" name=\"city\" placeholder=\"\" type=\"text\"/>",
-    "feature": "city city text pl5pacn city",
+    "feature": "city city text city pl5pacn",
     "id": "592-text-7",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-describedby=\"notice-pm78s1c\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"pm78s1c\" name=\"region\" placeholder=\"\" type=\"text\"/>",
-    "feature": "state province state province text pm78s1c region",
+    "feature": "state province state province text region pm78s1c",
     "id": "592-text-8",
-    "pattern": "province",
-    "topic": "province"
+    "pattern": "region",
+    "topic": "region"
   },
   {
     "dom": "<input aria-describedby=\"notice-vmt2kj3\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"vmt2kj3\" name=\"postcode\" placeholder=\"\" type=\"text\"/>",
-    "feature": "zip postal code zip postal code text vmt2kj3 postcode",
+    "feature": "zip postal code zip postal code text postcode vmt2kj3",
     "id": "592-text-9",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postcode",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"notice-plqjo1t\" class=\"input-text\" data-bind=\"\n    value: value,\n    valueupdate: 'keyup',\n    hasfocus: focused,\n    attr: {\n        name: inputname,\n        placeholder: placeholder,\n        'aria-describedby': noticeid,\n        id: uid,\n        disabled: disabled\n    }\" id=\"plqjo1t\" name=\"telephone\" placeholder=\"\" type=\"text\"/>",
-    "feature": "phone number phone number text plqjo1t telephone",
+    "feature": "phone number phone number text telephone plqjo1t",
     "id": "592-text-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"input-text\" data-bind=\"value: couponcode, attr:{placeholder: $t('enter discount code')} \" data-validate=\"{'required-entry':true}\" id=\"discount-code\" name=\"discount_code\" placeholder=\"enter discount code\" type=\"text\"/>",
-    "feature": "enter discount code enter discount code text discount code enter discount code discount code",
+    "feature": "enter discount code enter discount code text discount code discount code enter discount code",
     "id": "592-text-11",
-    "pattern": "coupon.*code",
-    "topic": "coupon_code"
+    "pattern": "discount.*code",
+    "topic": "promo_code"
   },
   {
     "dom": "<input class=\"input-text\" data-bind=\"value: giftcartcode, attr:{placeholder: $t('enter the gift card code')} \" data-validate=\"{'required-entry':true}\" id=\"giftcard-code\" name=\"giftcard_code\" placeholder=\"enter the gift card code\" type=\"text\"/>",
-    "feature": "enter the gift card code enter the gift card code text giftcard code enter the gift card code giftcard code",
+    "feature": "enter the gift card code enter the gift card code text giftcard code giftcard code enter the gift card code",
     "id": "592-text-12",
-    "pattern": "gift.*card",
-    "topic": "gift_card_number"
+    "pattern": "giftcard",
+    "topic": "gift_card"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"input-text\" data-bind=\"attr: {autocomplete: autocomplete}\" data-validate=\"{required:true, 'validate-email':true}\" id=\"login-email\" name=\"username\" type=\"email\"/>",
@@ -99,14 +99,14 @@
   },
   {
     "dom": "<input class=\"input-text\" data-bind=\"\n                            textinput: email,\n                            hasfocus: emailfocused\" data-validate=\"{required:true, 'validate-email':true}\" id=\"customer-email\" name=\"username\" type=\"email\"/>",
-    "feature": "you can create an account after checkout you can create an account after checkout email customer email username",
+    "feature": "you can create an account after checkout you can create an account after checkout email username customer email",
     "id": "592-email-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"input-text\" data-bind=\"attr: {autocomplete: autocomplete}\" data-validate=\"{required:true, 'validate-email':true}\" id=\"email\" name=\"username\" type=\"email\"/>",
-    "feature": "email address email address email email username",
+    "feature": "email address email address username email email",
     "id": "592-email-2",
     "pattern": "email",
     "topic": "email"
@@ -120,14 +120,14 @@
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"input-text\" data-validate=\"{required:true}\" id=\"customer-password\" name=\"password\" placeholder=\"optional\" type=\"password\"/>",
-    "feature": "you already have an account with us sign in or continue as guest password customer password optional password",
+    "feature": "you already have an account with us sign in or continue as guest optional password password customer password",
     "id": "592-password-1",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"input-text\" data-bind=\"attr: {autocomplete: autocomplete}\" data-validate=\"{required:true}\" id=\"pass\" name=\"password\" type=\"password\"/>",
-    "feature": "password password password pass password",
+    "feature": "password password password password pass",
     "id": "592-password-2",
     "pattern": "password",
     "topic": "password"

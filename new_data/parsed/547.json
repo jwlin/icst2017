@@ -3,21 +3,21 @@
     "dom": "<input aria-label=\"first name\" autocomplete=\"on\" class=\"form-control inputfield--capitalize\" id=\"firstname\" name=\"firstname\" type=\"text\" value=\"\"/>",
     "feature": "first name text firstname firstname",
     "id": "547-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-label=\"last name\" autocomplete=\"on\" class=\"form-control inputfield--capitalize\" id=\"lastname\" name=\"lastname\" type=\"text\" value=\"\"/>",
     "feature": "last name text lastname lastname",
     "id": "547-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-label=\"home address\" autocomplete=\"on\" class=\"form-control inputfield--capitalize\" id=\"address1\" name=\"address1\" type=\"text\" value=\"\"/>",
     "feature": "home address text address1 address1",
     "id": "547-text-2",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
@@ -31,8 +31,8 @@
     "dom": "<input aria-label=\"email address\" autocomplete=\"on\" class=\"form-control\" id=\"login\" name=\"login\" type=\"email\" value=\"\"/>",
     "feature": "email address email login login",
     "id": "547-email-0",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "login",
+    "topic": "email"
   },
   {
     "dom": "<input aria-label=\"create password\" autocomplete=\"on\" class=\"form-control\" id=\"password\" name=\"password\" type=\"password\" value=\"\"/>",
@@ -52,22 +52,22 @@
     "dom": "<input aria-label=\"zip code\" autocomplete=\"on\" class=\"form-control inputfield--capitalize\" id=\"postalcode\" name=\"postalcode\" type=\"tel\" value=\"\"/>",
     "feature": "zip code tel postalcode postalcode",
     "id": "547-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "postalcode",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-label=\"phone number\" autocomplete=\"on\" class=\"form-control\" id=\"phonenumber\" name=\"phonenumber\" type=\"tel\" value=\"\"/>",
     "feature": "phone number tel phonenumber phonenumber",
     "id": "547-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-label=\"date of birth\" autocomplete=\"on\" class=\"form-control\" id=\"dateofbirth\" name=\"dateofbirth\" type=\"tel\" value=\"\"/>",
     "feature": "date of birth tel dateofbirth dateofbirth",
     "id": "547-tel-2",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dateofbirth",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-label=\"annual income\" autocomplete=\"on\" class=\"form-control\" id=\"applicantincomeamt\" maxlength=\"13\" name=\"applicantincomeamt\" type=\"tel\" value=\"\"/>",
@@ -81,6 +81,6 @@
     "feature": "social security number tel applicantssn applicantssn",
     "id": "547-tel-4",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   }
 ]

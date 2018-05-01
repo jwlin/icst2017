@@ -3,14 +3,14 @@
     "dom": "<input id=\"firstname\" name=\"firstname\" style=\"width:250px;\" type=\"text\"/>",
     "feature": "required firstname text firstname",
     "id": "747-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"lastname\" name=\"lastname\" style=\"width:250px;\" type=\"text\"/>",
     "feature": "required lastname text lastname",
     "id": "747-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
@@ -31,22 +31,22 @@
     "dom": "<input id=\"dob\" name=\"dob\" style=\"width:100px;\" type=\"text\"/>",
     "feature": "month january february march april may june july august september october november december day dob text dob",
     "id": "747-text-4",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input id=\"zip\" name=\"zip\" style=\"width:100px;\" type=\"text\"/>",
     "feature": "required zip text zip",
     "id": "747-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input id=\"login\" name=\"login\" style=\"width:250px;\" type=\"text\"/>",
     "feature": "required login text login",
     "id": "747-text-6",
-    "pattern": "username",
-    "topic": "username"
+    "pattern": "login",
+    "topic": "login"
   },
   {
     "dom": "<input id=\"password\" name=\"password\" style=\"width:250px;\" type=\"text\"/>",

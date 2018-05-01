@@ -1,240 +1,240 @@
 [
   {
     "dom": "<input aria-describedby=\"fnameerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"firstname\" maxlength=\"20\" name=\"applyvto.applicantvo.firstname\" onblur=\"firstnamecheck();\" title=\"first name\" type=\"text\" value=\"\"/>",
-    "feature": "first name firstname applyvto applicantvo firstname text 20",
+    "feature": "first name text applyvto applicantvo firstname firstname 20",
     "id": "529-text-0",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-describedby=\"middleinitialerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"middleintiatedapply\" maxlength=\"1\" name=\"applyvto.applicantvo.middleintiatedapply\" onblur=\"middleinitialcheck();\" title=\"middle initial\" type=\"text\" value=\"\"/>",
-    "feature": "optional m i middleintiatedapply applyvto applicantvo middleintiatedapply text 1",
+    "feature": "optional m i text applyvto applicantvo middleintiatedapply middleintiatedapply 1",
     "id": "529-text-1",
-    "pattern": "middle.*initial",
+    "pattern": "middle.*int",
     "topic": "middle_initial"
   },
   {
     "dom": "<input aria-describedby=\"lnameerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"lastname\" maxlength=\"25\" name=\"applyvto.applicantvo.lastname\" onblur=\"lastnamecheck();\" title=\"last name\" type=\"text\" value=\"\"/>",
-    "feature": "last name lastname applyvto applicantvo lastname text 25",
+    "feature": "last name text applyvto applicantvo lastname lastname 25",
     "id": "529-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-describedby=\"mailingaddresserrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"mailingaddress\" maxlength=\"35\" name=\"applyvto.applicantvo.streetaddressdapply\" onblur=\"mailingaddresscheck();\" title=\"street address\" type=\"text\" value=\"\"/>",
-    "feature": "street address mailingaddress applyvto applicantvo streetaddressdapply text 35",
+    "feature": "street address text applyvto applicantvo streetaddressdapply mailingaddress 35",
     "id": "529-text-3",
-    "pattern": "address.*one",
+    "pattern": "street.*address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"aptmnumbererrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"appaptmtnumber\" maxlength=\"25\" name=\"applyvto.applicantvo.aptmtnumber\" onblur=\"apartmentnumbercheck();\" title=\"apartment number\" type=\"text\" value=\"\"/>",
-    "feature": "optional apt appaptmtnumber applyvto applicantvo aptmtnumber text 25",
+    "feature": "optional apt text applyvto applicantvo aptmtnumber appaptmtnumber 25",
     "id": "529-text-4",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "aptmt.*number",
+    "topic": "apartment"
   },
   {
     "dom": "<input aria-describedby=\"cityandstateerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"applyvto_applicantvo_city_id\" maxlength=\"20\" name=\"applyvto.applicantvo.cityandstatedapply\" onblur=\"cityandstatecheck();\" title=\"city and state\" type=\"text\" value=\"\"/>",
-    "feature": "city state applyvto applicantvo city id applyvto applicantvo cityandstatedapply text 20",
+    "feature": "city state text applyvto applicantvo cityandstatedapply applyvto applicantvo city id 20",
     "id": "529-text-5",
-    "pattern": "city",
-    "topic": "city"
+    "pattern": "city.*and.*state",
+    "topic": "city_and_state"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" data-target=\"#stationids\" data-toggle=\"modal\" id=\"stationid\" maxlength=\"17\" name=\"applyvto.applicantvo.stationiddapply\" onblur=\"stationidcheck();\" pattern=\"[a-za-z0-9\\s]+\" type=\"text\" value=\"\"/>",
-    "feature": "optional stationid applyvto applicantvo stationiddapply text 17",
+    "feature": "optional text applyvto applicantvo stationiddapply stationid 17",
     "id": "529-text-6",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"associateid\" maxlength=\"10\" name=\"applyvto.applicantvo.associateiddapply\" onblur=\"associateidcheck();\" pattern=\"[a-za-z0-9\\s]+\" type=\"text\" value=\"\"/>",
-    "feature": "optional associateid applyvto applicantvo associateiddapply text 10",
+    "feature": "optional text applyvto applicantvo associateiddapply associateid 10",
     "id": "529-text-7",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"rewardsnumber\" maxlength=\"20\" name=\"applyvto.applicantvo.rewardsnumberdapply\" onblur=\"rewardsnumbercheck();\" pattern=\"[a-za-z0-9\\s]+\" type=\"text\" value=\"\"/>",
-    "feature": "optional optional 00 optional optional optional optional annual net income ssn itin date of birth confirm email address email address alternate phone type primary phone type zip code city state housing street address apt last name suffix first name m i rewardsnumber applyvto applicantvo rewardsnumberdapply text 20",
+    "feature": "optional optional 00 optional optional optional optional annual net income ssn itin date of birth confirm email address email address alternate phone type primary phone type zip code city state housing street address apt last name suffix first name m i text applyvto applicantvo rewardsnumberdapply rewardsnumber 20",
     "id": "529-text-8",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "rewards.*number",
+    "topic": "rewards_number"
   },
   {
     "dom": "<input aria-describedby=\"coappfnameerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappfirstname\" maxlength=\"20\" name=\"applyvto.jointapplicantvo.firstname\" onblur=\"coappfirstnamecheck();\" title=\"joint applicant first name\" type=\"text\" value=\"\"/>",
-    "feature": "first name coappfirstname applyvto jointapplicantvo firstname text 20",
+    "feature": "first name text applyvto jointapplicantvo firstname coappfirstname 20",
     "id": "529-text-9",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-describedby=\"coappmiddleinitialerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappmiddleinitial\" maxlength=\"1\" name=\"applyvto.jointapplicantvo.middleintiatedapply\" onblur=\"coappmiddleinitialcheck();\" title=\"joint applicant middle initial\" type=\"text\" value=\"\"/>",
-    "feature": "optional m i coappmiddleinitial applyvto jointapplicantvo middleintiatedapply text 1",
+    "feature": "optional m i text applyvto jointapplicantvo middleintiatedapply coappmiddleinitial 1",
     "id": "529-text-10",
-    "pattern": "middle.*initial",
+    "pattern": "middle.*int",
     "topic": "middle_initial"
   },
   {
     "dom": "<input aria-describedby=\"coapplnameerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coapplastname\" maxlength=\"25\" name=\"applyvto.jointapplicantvo.lastname\" onblur=\"coapplastnamecheck();\" title=\"joint applicant last name\" type=\"text\" value=\"\"/>",
-    "feature": "last name coapplastname applyvto jointapplicantvo lastname text 25",
+    "feature": "last name text applyvto jointapplicantvo lastname coapplastname 25",
     "id": "529-text-11",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-describedby=\"coappmailingaddresserrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappmailingaddress\" maxlength=\"35\" name=\"applyvto.jointapplicantvo.streetaddressdapply\" onblur=\"coappmailingaddresscheck();\" title=\"joint applicant street address\" type=\"text\" value=\"\"/>",
-    "feature": "street address coappmailingaddress applyvto jointapplicantvo streetaddressdapply text 35",
+    "feature": "street address text applyvto jointapplicantvo streetaddressdapply coappmailingaddress 35",
     "id": "529-text-12",
-    "pattern": "address.*one",
+    "pattern": "street.*address",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"jointapartmentnumbererrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointapartmentnumber\" maxlength=\"25\" name=\"applyvto.jointapplicantvo.aptmtnumber\" onblur=\"jointapartmentnumbercheck();\" title=\"joint applicant apartment number\" type=\"text\" value=\"\"/>",
-    "feature": "optional apt jointapartmentnumber applyvto jointapplicantvo aptmtnumber text 25",
+    "feature": "optional apt text applyvto jointapplicantvo aptmtnumber jointapartmentnumber 25",
     "id": "529-text-13",
-    "pattern": "address.*apartment",
-    "topic": "address_apartment"
+    "pattern": "aptmt.*number",
+    "topic": "apartment"
   },
   {
     "dom": "<input aria-describedby=\"jointcitystateerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"applyvto_jointapplicantvo_city_id\" maxlength=\"20\" name=\"applyvto.jointapplicantvo.cityandstatedapply\" onblur=\"jointcityandstatecheck();\" title=\"joint applicant city and state\" type=\"text\" value=\"\"/>",
-    "feature": "city state applyvto jointapplicantvo city id applyvto jointapplicantvo cityandstatedapply text 20",
+    "feature": "city state text applyvto jointapplicantvo cityandstatedapply applyvto jointapplicantvo city id 20",
     "id": "529-text-14",
-    "pattern": "city",
-    "topic": "city"
+    "pattern": "city.*and.*state",
+    "topic": "city_and_state"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointstationid\" name=\"applyvto.jointapplicantvo.stationiddapply\" pattern=\"[0-9]*\" title=\"joint applicant \" type=\"text\" value=\"\"/>",
-    "feature": "optional jointstationid text applyvto jointapplicantvo stationiddapply",
+    "feature": "optional text applyvto jointapplicantvo stationiddapply jointstationid",
     "id": "529-text-15",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointassociateid\" name=\"applyvto.jointapplicantvo.associateiddapply\" title=\"joint applicant \" type=\"text\" value=\"\"/>",
-    "feature": "optional jointassociateid text applyvto jointapplicantvo associateiddapply",
+    "feature": "optional text applyvto jointapplicantvo associateiddapply jointassociateid",
     "id": "529-text-16",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointrewardsnumber\" maxlength=\"9\" name=\"applyvto.jointapplicantvo.rewardsnumberdapply\" title=\"joint applicant \" type=\"text\" value=\"\"/>",
-    "feature": "optional jointrewardsnumber applyvto jointapplicantvo rewardsnumberdapply text 9",
+    "feature": "optional text applyvto jointapplicantvo rewardsnumberdapply jointrewardsnumber 9",
     "id": "529-text-17",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "rewards.*number",
+    "topic": "rewards_number"
   },
   {
     "dom": "<input aria-describedby=\"emailerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"emailcheck\" maxlength=\"40\" name=\"applyvto.applicantvo.email\" onblur=\"emailchecking();\" title=\"email address\" type=\"email\" value=\"\"/>",
-    "feature": "email address emailcheck applyvto applicantvo email email 40",
+    "feature": "email address email applyvto applicantvo email emailcheck 40",
     "id": "529-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-describedby=\"confirmemailerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"confirmemailcheck\" maxlength=\"40\" name=\"applyvto.applicantvo.confirmemail\" onblur=\"confirmemailchecking();\" oncopy=\"return false;\" oncut=\"return false;\" onpaste=\"return false;\" title=\"confirm email address\" type=\"email\" value=\"\"/>",
-    "feature": "confirm email address email confirmemailcheck applyvto applicantvo confirmemail 40",
+    "feature": "confirm email address email applyvto applicantvo confirmemail confirmemailcheck 40",
     "id": "529-email-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-describedby=\"coappemailerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappemail\" maxlength=\"40\" name=\"applyvto.jointapplicantvo.email\" onblur=\"coappemailchecking();\" title=\"joint applicant email address\" type=\"email\" value=\"\"/>",
-    "feature": "email address coappemail applyvto jointapplicantvo email email 40",
+    "feature": "email address email applyvto jointapplicantvo email coappemail 40",
     "id": "529-email-2",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-describedby=\"coappconfirmemailerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"coappconfirmemail\" maxlength=\"40\" name=\"applyvto.jointapplicantvo.confirmemail\" onblur=\"coappconfirmemailchecking();\" oncopy=\"return false;\" oncut=\"return false;\" onpaste=\"return false;\" title=\"joint applicant confirm email address\" type=\"email\" value=\"\"/>",
-    "feature": "confirm email address email coappconfirmemail applyvto jointapplicantvo confirmemail 40",
+    "feature": "confirm email address email applyvto jointapplicantvo confirmemail coappconfirmemail 40",
     "id": "529-email-3",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-describedby=\"ziperrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"applyvto_applicantvo_zip_id\" max=\"999999999\" maxlength=\"9\" min=\"0\" name=\"applyvto.applicantvo.zip\" onblur=\"zipcodecheck();getstationslocations();\" title=\"zip code\" type=\"tel\" value=\"\"/>",
-    "feature": "zip code applyvto applicantvo zip id tel applyvto applicantvo zip 9",
+    "feature": "zip code tel applyvto applicantvo zip applyvto applicantvo zip id 9",
     "id": "529-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"primaryphoneerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text\" id=\"appprimaryphone\" name=\"applyvto.applicantvo.primaryphonedapply\" onblur=\"primaryphonecheck();\" onclick=\"setcursorposition(this);\" onkeyup=\"validateada(this.value, '305-555-1212','y');\" title=\"primary phone\" type=\"tel\" value=\"\"/>",
-    "feature": "primary phone applyvto applicantvo primaryphonedapply appprimaryphone tel",
+    "feature": "primary phone tel applyvto applicantvo primaryphonedapply appprimaryphone",
     "id": "529-tel-1",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "primaryphone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-describedby=\"alternatephoneerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"appalterphone\" name=\"applyvto.applicantvo.alternatephonedapply\" onblur=\"alternatephonecheck();\" onclick=\"setcursorposition(this);\" title=\"alternate phone\" type=\"tel\" value=\"\"/>",
-    "feature": "optional alternate phone appalterphone tel applyvto applicantvo alternatephonedapply",
+    "feature": "optional alternate phone tel applyvto applicantvo alternatephonedapply appalterphone",
     "id": "529-tel-2",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "alter.*phone",
+    "topic": "phone_alt"
   },
   {
     "dom": "<input aria-describedby=\"ssnerrordiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"appssn\" name=\"applyvto.applicantvo.socialsecuritynumberdapply\" onblur=\"ssnvalid();\" onclick=\"setcursorposition(this);\" pattern=\"[0-9]*\" title=\"social security number\" type=\"tel\" value=\"\"/>",
-    "feature": "ssn itin applyvto applicantvo socialsecuritynumberdapply appssn tel",
+    "feature": "ssn itin tel applyvto applicantvo socialsecuritynumberdapply appssn",
     "id": "529-tel-3",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number",
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-describedby=\"doberrordiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"appdob\" name=\"applyvto.applicantvo.dob\" onblur=\"dobcheck();\" onclick=\"setcursorposition(this);\" title=\"date of birth\" type=\"tel\" value=\"\"/>",
-    "feature": "date of birth appdob tel applyvto applicantvo dob",
+    "feature": "date of birth tel applyvto applicantvo dob appdob",
     "id": "529-tel-4",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-describedby=\"amounterrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text-ani\" id=\"appnetincome\" max=\"999999\" maxlength=\"6\" name=\"applyvto.applicantvo.annualnetincomedapply\" onblur=\"amountcheck();\" onfocus=\"amtcommaremove();\" onkeyup=\"allnumeric();\" title=\"annual net income\" type=\"tel\" value=\"\"/>",
-    "feature": "00 tel appnetincome applyvto applicantvo annualnetincomedapply 6",
+    "feature": "00 tel applyvto applicantvo annualnetincomedapply appnetincome 6",
     "id": "529-tel-5",
-    "pattern": "income",
+    "pattern": "annual.*income",
     "topic": "income"
   },
   {
     "dom": "<input aria-describedby=\"jointziperrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"applyvto_jointapplicantvo_zip_id\" max=\"999999999\" maxlength=\"9\" min=\"0\" name=\"applyvto.jointapplicantvo.zip\" onblur=\"jointzipcodecheck();\" title=\"joint applicant zip code\" type=\"tel\" value=\"\"/>",
-    "feature": "zip code applyvto jointapplicantvo zip id tel applyvto jointapplicantvo zip 9",
+    "feature": "zip code tel applyvto jointapplicantvo zip applyvto jointapplicantvo zip id 9",
     "id": "529-tel-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"coappprimaryphoneerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text-coapp\" id=\"jointprimaryphone\" name=\"applyvto.jointapplicantvo.primaryphonedapply\" onblur=\"coappprimaryphonecheck();\" onkeyup=\"validatecoappada(this.value, '305-555-1212','y');\" title=\"joint applicant primary phone\" type=\"tel\" value=\"\"/>",
-    "feature": "primary phone jointprimaryphone tel applyvto jointapplicantvo primaryphonedapply",
+    "feature": "primary phone tel applyvto jointapplicantvo primaryphonedapply jointprimaryphone",
     "id": "529-tel-7",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "primary.*phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-describedby=\"jointalterphoneerrdiv\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointalterphone\" name=\"applyvto.jointapplicantvo.alternatephonedapply\" onblur=\"jointalternatephonecheck();\" title=\"joint applicant alternate phone\" type=\"tel\" value=\"\"/>",
-    "feature": "optional alternate phone jointalterphone tel applyvto jointapplicantvo alternatephonedapply",
+    "feature": "optional alternate phone tel applyvto jointapplicantvo alternatephonedapply jointalterphone",
     "id": "529-tel-8",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "alternate.*phone",
+    "topic": "phone_alt"
   },
   {
     "dom": "<input aria-describedby=\"coappssnerrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointssn\" name=\"applyvto.jointapplicantvo.socialsecuritynumberdapply\" onblur=\"coappssnvalid();\" title=\"joint applicant social security number\" type=\"tel\" value=\"\"/>",
-    "feature": "ssn itin jointssn tel applyvto jointapplicantvo socialsecuritynumberdapply",
+    "feature": "ssn itin tel applyvto jointapplicantvo socialsecuritynumberdapply jointssn",
     "id": "529-tel-9",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number",
+    "topic": "ssn"
   },
   {
     "dom": "<input aria-describedby=\"jdoberrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"jointdob\" name=\"applyvto.jointapplicantvo.dob\" onblur=\"jointdobcheck();\" title=\"joint applicant date of birth\" type=\"tel\" value=\"\"/>",
-    "feature": "date of birth jointdob tel applyvto jointapplicantvo dob",
+    "feature": "date of birth tel applyvto jointapplicantvo dob jointdob",
     "id": "529-tel-10",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dob",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-describedby=\"jamounterrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control on-focus-text-coapp-ani\" id=\"jointappnetincome\" max=\"9999999999\" maxlength=\"10\" min=\"0\" name=\"applyvto.jointapplicantvo.annualnetincomedapply\" onblur=\"jointamountcheck();\" onfocus=\"amtcommaremovejoint();\" title=\"joint applicant annual net income\" type=\"tel\" value=\"\"/>",
-    "feature": "00 jointappnetincome tel applyvto jointapplicantvo annualnetincomedapply 10",
+    "feature": "00 tel applyvto jointapplicantvo annualnetincomedapply jointappnetincome 10",
     "id": "529-tel-11",
-    "pattern": "income",
+    "pattern": "net.*income",
     "topic": "income"
   }
 ]

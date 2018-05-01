@@ -3,14 +3,14 @@
     "dom": "<input autocomplete=\"off\" data-validate=\"{ required: true, help: 'first name is required.' }\" id=\"first\" maxlength=\"64\" name=\"first\" size=\"32\" type=\"text\" value=\"\"/>",
     "feature": "first name first first text 64",
     "id": "745-text-0",
-    "pattern": "first.*name",
+    "pattern": "first",
     "topic": "first_name"
   },
   {
     "dom": "<input autocomplete=\"off\" data-validate=\"{ required: true, help: 'last name is required.' }\" id=\"last\" maxlength=\"64\" name=\"last\" size=\"32\" type=\"text\" value=\"\"/>",
     "feature": "last name last last text 64",
     "id": "745-text-1",
-    "pattern": "last.*name",
+    "pattern": "last",
     "topic": "last_name"
   },
   {

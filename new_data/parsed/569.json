@@ -1,44 +1,44 @@
 [
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"field__input\" data-discount-field=\"true\" id=\"checkout_reduction_code\" name=\"checkout[reduction_code]\" placeholder=\"gift card or discount code\" size=\"30\" type=\"text\"/>",
-    "feature": "apply text checkout reduction code gift card or discount code checkout reduction code",
+    "feature": "apply gift card or discount code text checkout reduction code checkout reduction code",
     "id": "569-text-0",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "checkout.*code",
+    "topic": "promo_code"
   },
   {
     "dom": "<input aria-hidden=\"true\" aria-label=\"no-label\" aria-required=\"true\" autocomplete=\"shipping given-name\" class=\"visually-hidden\" data-autocomplete-field=\"first_name\" data-honeypot=\"true\" name=\"checkout[shipping_address][first_name]\" size=\"30\" tabindex=\"-1\" type=\"text\"/>",
     "feature": "first name last name company optional address apt suite etc optional city country state zip code phone text checkout shipping address first name",
     "id": "569-text-1",
-    "pattern": "first.*name",
+    "pattern": "first_name",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-hidden=\"true\" aria-label=\"no-label\" aria-required=\"true\" autocomplete=\"shipping family-name\" class=\"visually-hidden\" data-autocomplete-field=\"last_name\" data-honeypot=\"true\" name=\"checkout[shipping_address][last_name]\" size=\"30\" tabindex=\"-1\" type=\"text\"/>",
     "feature": "first name last name company optional address apt suite etc optional city country state zip code phone text checkout shipping address last name",
     "id": "569-text-2",
-    "pattern": "last.*name",
+    "pattern": "last_name",
     "topic": "last_name"
   },
   {
     "dom": "<input aria-hidden=\"true\" aria-label=\"no-label\" autocomplete=\"shipping organization\" class=\"visually-hidden\" data-autocomplete-field=\"company\" data-honeypot=\"true\" name=\"checkout[shipping_address][company]\" size=\"30\" tabindex=\"-1\" type=\"text\"/>",
-    "feature": "first name last name company optional address apt suite etc optional city country state zip code phone checkout shipping address company text",
+    "feature": "first name last name company optional address apt suite etc optional city country state zip code phone text checkout shipping address company",
     "id": "569-text-3",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input aria-hidden=\"true\" aria-label=\"no-label\" aria-required=\"true\" autocomplete=\"shipping address-line1\" class=\"visually-hidden\" data-autocomplete-field=\"address1\" data-honeypot=\"true\" name=\"checkout[shipping_address][address1]\" size=\"30\" tabindex=\"-1\" type=\"text\"/>",
     "feature": "first name last name company optional address apt suite etc optional city country state zip code phone text checkout shipping address address1",
     "id": "569-text-4",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-hidden=\"true\" aria-label=\"no-label\" autocomplete=\"shipping address-line2\" class=\"visually-hidden\" data-autocomplete-field=\"address2\" data-honeypot=\"true\" name=\"checkout[shipping_address][address2]\" size=\"30\" tabindex=\"-1\" type=\"text\"/>",
-    "feature": "first name last name company optional address apt suite etc optional city country state zip code phone checkout shipping address address2 text",
+    "feature": "first name last name company optional address apt suite etc optional city country state zip code phone text checkout shipping address address2",
     "id": "569-text-5",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
@@ -66,84 +66,84 @@
     "dom": "<input aria-hidden=\"true\" aria-label=\"no-label\" aria-required=\"true\" autocomplete=\"shipping postal-code\" class=\"visually-hidden\" data-autocomplete-field=\"zip\" data-honeypot=\"true\" name=\"checkout[shipping_address][zip]\" size=\"30\" tabindex=\"-1\" type=\"text\"/>",
     "feature": "first name last name company optional address apt suite etc optional city country state zip code phone text checkout shipping address zip",
     "id": "569-text-9",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-hidden=\"true\" aria-label=\"no-label\" aria-required=\"true\" autocomplete=\"shipping tel\" class=\"visually-hidden\" data-autocomplete-field=\"phone\" data-honeypot=\"true\" name=\"checkout[shipping_address][phone]\" size=\"30\" tabindex=\"-1\" type=\"text\"/>",
     "feature": "first name last name company optional address apt suite etc optional city country state zip code phone text checkout shipping address phone",
     "id": "569-text-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"shipping given-name\" class=\"field__input\" data-backup=\"first_name\" id=\"checkout_shipping_address_first_name\" name=\"checkout[shipping_address][first_name]\" placeholder=\"first name\" size=\"30\" type=\"text\"/>",
-    "feature": "first name text checkout shipping address first name first name checkout shipping address first name",
+    "feature": "first name first name text checkout shipping address first name checkout shipping address first name",
     "id": "569-text-11",
-    "pattern": "first.*name",
+    "pattern": "first_name",
     "topic": "first_name"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"shipping family-name\" class=\"field__input\" data-backup=\"last_name\" id=\"checkout_shipping_address_last_name\" name=\"checkout[shipping_address][last_name]\" placeholder=\"last name\" size=\"30\" type=\"text\"/>",
-    "feature": "last name text checkout shipping address last name last name checkout shipping address last name",
+    "feature": "last name last name text checkout shipping address last name checkout shipping address last name",
     "id": "569-text-12",
-    "pattern": "last.*name",
+    "pattern": "last_name",
     "topic": "last_name"
   },
   {
     "dom": "<input autocomplete=\"shipping organization\" class=\"field__input\" data-backup=\"company\" id=\"checkout_shipping_address_company\" name=\"checkout[shipping_address][company]\" placeholder=\"company (optional)\" size=\"30\" type=\"text\"/>",
-    "feature": "company optional checkout shipping address company text company optional checkout shipping address company",
+    "feature": "company optional company optional text checkout shipping address company checkout shipping address company",
     "id": "569-text-13",
     "pattern": "company",
-    "topic": "company_name"
+    "topic": "company"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"shipping address-line1\" autocorrect=\"off\" class=\"field__input\" data-backup=\"address1\" data-google-autocomplete=\"true\" data-google-autocomplete-title=\"suggestions\" id=\"checkout_shipping_address_address1\" name=\"checkout[shipping_address][address1]\" placeholder=\"address\" size=\"30\" type=\"text\"/>",
-    "feature": "address checkout shipping address address1 address checkout shipping address address1 text",
+    "feature": "address address text checkout shipping address address1 checkout shipping address address1",
     "id": "569-text-14",
-    "pattern": "address.*one",
+    "pattern": "address1",
     "topic": "address_1"
   },
   {
     "dom": "<input autocomplete=\"shipping address-line2\" autocorrect=\"off\" class=\"field__input\" data-backup=\"address2\" id=\"checkout_shipping_address_address2\" name=\"checkout[shipping_address][address2]\" placeholder=\"apt, suite, etc. (optional)\" size=\"30\" type=\"text\"/>",
-    "feature": "apt suite etc optional checkout shipping address address2 text apt suite etc optional checkout shipping address address2",
+    "feature": "apt suite etc optional apt suite etc optional text checkout shipping address address2 checkout shipping address address2",
     "id": "569-text-15",
-    "pattern": "address.*two",
+    "pattern": "address2",
     "topic": "address_2"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"shipping address-level2\" autocorrect=\"off\" class=\"field__input\" data-backup=\"city\" id=\"checkout_shipping_address_city\" name=\"checkout[shipping_address][city]\" placeholder=\"city\" size=\"30\" type=\"text\"/>",
-    "feature": "city text checkout shipping address city city checkout shipping address city",
+    "feature": "city city text checkout shipping address city checkout shipping address city",
     "id": "569-text-16",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"shipping address-level1\" class=\"field__input\" data-backup=\"province\" id=\"checkout_shipping_address_province\" name=\"checkout[shipping_address][province]\" placeholder=\"california\" type=\"text\" value=\"california\"/>",
-    "feature": "state california text checkout shipping address province california checkout shipping address province",
+    "feature": "state california california text checkout shipping address province checkout shipping address province",
     "id": "569-text-17",
     "pattern": "province",
     "topic": "province"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"shipping postal-code\" class=\"field__input field__input--zip\" data-backup=\"zip\" data-google-autocomplete=\"true\" data-google-autocomplete-title=\"suggestions\" id=\"checkout_shipping_address_zip\" name=\"checkout[shipping_address][zip]\" placeholder=\"90210\" size=\"30\" type=\"text\"/>",
-    "feature": "zip code text checkout shipping address zip checkout shipping address zip 90210",
+    "feature": "zip code 90210 text checkout shipping address zip checkout shipping address zip",
     "id": "569-text-18",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-required=\"true\" autocapitalize=\"off\" autocomplete=\"shipping email\" class=\"field__input\" data-autofocus=\"true\" data-backup=\"customer_email\" id=\"checkout_email\" name=\"checkout[email]\" placeholder=\"email\" size=\"30\" spellcheck=\"false\" type=\"email\"/>",
-    "feature": "email email checkout email checkout email email",
+    "feature": "email email email checkout email checkout email",
     "id": "569-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"shipping tel\" class=\"field__input field__input--numeric\" data-backup=\"phone\" data-phone-formatter=\"true\" data-phone-formatter-country-select=\"[name='checkout[shipping_address][country]']\" id=\"checkout_shipping_address_phone\" name=\"checkout[shipping_address][phone]\" placeholder=\"phone\" size=\"30\" type=\"tel\"/>",
-    "feature": "phone tel checkout shipping address phone phone checkout shipping address phone",
+    "feature": "phone phone tel checkout shipping address phone checkout shipping address phone",
     "id": "569-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

@@ -1,170 +1,170 @@
 [
   {
     "dom": "<input class=\"full-width\" data-check=\"residentialaddress\" data-lookup=\"zip trigger\" data-prefill=\"homeaddress1\" data-required=\"true\" data-validation=\"hasdata freeform no-vulgar\" data-zip=\"address\" id=\"address1\" maxlength=\"30\" name=\"homeaddress1\" placeholder=\"street address - example: 123 main st.\" tabindex=\"5\" type=\"text\" value=\"\"/>",
-    "feature": "your address street address example 123 main st address1 text homeaddress1 30",
+    "feature": "your address text homeaddress1 address1 street address example 123 main st 30",
     "id": "525-text-0",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"full-width\" data-prefill=\"homeaddress2\" data-required=\"false\" data-validation=\"hasdata freeform no-vulgar\" maxlength=\"30\" name=\"homeaddress2\" placeholder=\"apt/suite/floor - example: 15b (optional)\" tabindex=\"6\" type=\"text\" value=\"\"/>",
-    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy your address e mail address primary phone homeaddress2 apt suite floor example 15b optional text 30",
+    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy your address e mail address primary phone text homeaddress2 apt suite floor example 15b optional 30",
     "id": "525-text-1",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input data-lookup=\"zip city\" data-prefill=\"city\" data-required=\"true\" data-validation=\"alphaname hasdata no-vulgar\" maxlength=\"20\" name=\"city\" placeholder=\"city\" tabindex=\"7\" type=\"text\" value=\"\"/>",
-    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy your address e mail address primary phone city city text 20",
+    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy your address e mail address primary phone text city city 20",
     "id": "525-text-2",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"col-1\" data-lookup=\"zip trigger\" data-prefill=\"zipcode\" data-required=\"true\" data-validation=\"numeric zipco number=5\" data-zip=\"zip\" maxlength=\"5\" name=\"zipcode\" onclick=\"s.linktrackvars=s.linktrackvars+',prop1';s.prop1='/app/personalinfo:zipcode'; s.tl(this,'o','dynamic app form analytcis');\" placeholder=\"zip code\" tabindex=\"9\" type=\"text\" value=\"\"/>",
-    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy your address e mail address primary phone zip code text zipcode 5",
+    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy your address e mail address primary phone text zipcode zip code 5",
     "id": "525-text-3",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"email mailspace\" data-prefill=\"email\" data-required=\"true\" data-validation=\"hasdata email\" maxlength=\"48\" name=\"email\" placeholder=\"email@domain.com\" tabindex=\"10\" type=\"text\" value=\"\"/>",
-    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time e mail address email email domain com text 48",
+    "feature": "the email address will be used to communicate with you about your accounts you may also receive emails about special offers from discover you may opt out from receiving email offers at any time e mail address text email email domain com 48",
     "id": "525-text-4",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input data-required=\"true\" data-validation=\"hasdata numeric month validdate\" maxlength=\"2\" name=\"dobmonth\" placeholder=\"mm\" tabindex=\"14\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth dobmonth mm text 2",
+    "feature": "date of birth text dobmonth mm 2",
     "id": "525-text-5",
-    "pattern": "month",
-    "topic": "month"
+    "pattern": "dob.*month",
+    "topic": "dob_month"
   },
   {
     "dom": "<input data-required=\"true\" data-validation=\"hasdata numeric day validdate\" maxlength=\"2\" name=\"dobday\" placeholder=\"dd\" tabindex=\"15\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth dobday dd text 2",
+    "feature": "date of birth text dobday dd 2",
     "id": "525-text-6",
-    "pattern": "day",
-    "topic": "day"
+    "pattern": "dob.*day",
+    "topic": "dob_day"
   },
   {
     "dom": "<input class=\"dob-long\" data-required=\"true\" data-validation=\"hasdata numeric year number=4 validdate\" maxlength=\"4\" name=\"dobyear\" placeholder=\"yyyy\" tabindex=\"16\" type=\"text\" value=\"\"/>",
-    "feature": "date of birth dobyear yyyy text 4",
+    "feature": "date of birth text dobyear yyyy 4",
     "id": "525-text-7",
-    "pattern": "year",
-    "topic": "year"
+    "pattern": "dob.*year",
+    "topic": "dob_year"
   },
   {
     "dom": "<input data-format-pattern=\"###-##-####\" data-required=\"true\" data-validation=\"hasdata fullsocial social\" maxlength=\"11\" name=\"socialsecurity\" placeholder=\"xxx-xx-xxxx\" tabindex=\"17\" type=\"text\" value=\"\"/>",
-    "feature": "social security number socialsecurity xxx xx xxxx text 11",
+    "feature": "social security number text socialsecurity xxx xx xxxx 11",
     "id": "525-text-8",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security",
+    "topic": "ssn"
   },
   {
     "dom": "<input class=\"col-1 income incomenocheck\" data-check=\"income\" data-prefill=\"income\" data-required=\"true\" data-validation=\"hasdata income\" id=\"income\" maxlength=\"9\" name=\"income\" placeholder=\"amount\" tabindex=\"19\" type=\"text\" value=\"\"/>",
-    "feature": "00 total annual gross income amount income text income 9",
+    "feature": "00 total annual gross income text income amount income 9",
     "id": "525-text-9",
     "pattern": "income",
     "topic": "income"
   },
   {
     "dom": "<input class=\"col-1 housingcost\" data-prefill=\"housingcost\" data-required=\"true\" data-validation=\"hasdata income housing\" maxlength=\"5\" name=\"housingcost\" placeholder=\"amount\" tabindex=\"21\" type=\"text\" value=\"\"/>",
-    "feature": "00 monthly housing rent payment housingcost amount text 5",
+    "feature": "00 monthly housing rent payment text housingcost amount 5",
     "id": "525-text-10",
-    "pattern": "rent",
+    "pattern": "housing.*cost",
     "topic": "rent"
   },
   {
     "dom": "<input class=\"col-16 totalassets\" data-check=\"totalassets\" data-required=\"true\" data-validation=\"hasdata income housing\" id=\"income\" maxlength=\"11\" name=\"totalassets\" placeholder=\"amount\" tabindex=\"22\" type=\"text\" value=\"\"/>",
-    "feature": "00 total available assets income totalassets amount text 11",
+    "feature": "00 total available assets text totalassets amount income 11",
     "id": "525-text-11",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "total.*assets",
+    "topic": "total_assets"
   },
   {
     "dom": "<input class=\"col-4\" data-required=\"true\" data-validation=\"hasdata alphaname no-vulgar\" id=\"firstauthuser\" maxlength=\"15\" name=\"firstauthuser\" placeholder=\"first name\" tabindex=\"\" type=\"text\" value=\"\"/>",
-    "feature": "save firstauthuser firstauthuser first name text 15",
+    "feature": "save text firstauthuser firstauthuser first name 15",
     "id": "525-text-12",
-    "pattern": "username",
-    "topic": "username"
+    "pattern": "first.*user",
+    "topic": "first_name"
   },
   {
     "dom": "<input class=\"col-4\" data-required=\"\" data-validation=\"hasdata alphaname\" id=\"middleauthuser\" maxlength=\"15\" name=\"middleauthuser\" placeholder=\"middle name (optional)\" tabindex=\"\" type=\"text\" value=\"\"/>",
-    "feature": "save middleauthuser middleauthuser middle name optional text 15",
+    "feature": "save text middleauthuser middleauthuser middle name optional 15",
     "id": "525-text-13",
-    "pattern": "middle.*name",
+    "pattern": "middle.*user",
     "topic": "middle_name"
   },
   {
     "dom": "<input class=\"col-4\" data-required=\"true\" data-validation=\"hasdata alphaname no-vulgar\" id=\"lastauthuser\" maxlength=\"25\" name=\"lastauthuser\" placeholder=\"last name\" tabindex=\"\" type=\"text\" value=\"\"/>",
-    "feature": "save lastauthuser lastauthuser last name text 25",
+    "feature": "save text lastauthuser lastauthuser last name 25",
     "id": "525-text-14",
-    "pattern": "last.*name",
+    "pattern": "last.*user",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"col-4\" data-populate=\"first_name\" data-required=\"true\" data-validation=\"hasdata alphaname no-vulgar\" maxlength=\"15\" name=\"moretimefirstname\" placeholder=\"first name\" tabindex=\"70\" type=\"text\"/>",
-    "feature": "note save my application moretimefirstname first name text 15",
+    "feature": "note save my application text moretimefirstname first name 15",
     "id": "525-text-15",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"col-4\" data-populate=\"email\" data-required=\"true\" data-validation=\"hasdata email\" maxlength=\"48\" name=\"moretimeemail\" placeholder=\"email@domain.com\" tabindex=\"72\" type=\"text\"/>",
-    "feature": "note save my application moretimeemail email domain com text 48",
+    "feature": "note save my application text moretimeemail email domain com 48",
     "id": "525-text-16",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"col-4\" data-populate=\"last_name\" data-required=\"true\" data-validation=\"hasdata alphaname no-vulgar\" maxlength=\"25\" name=\"moretimelastname\" placeholder=\"last name\" tabindex=\"71\" type=\"text\"/>",
-    "feature": "note save my application moretimelastname last name text 25",
+    "feature": "note save my application text moretimelastname last name 25",
     "id": "525-text-17",
     "pattern": "last.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"col-1\" data-populate=\"zip\" data-required=\"true\" data-validation=\"numeric zipco number=5\" maxlength=\"5\" name=\"moretimezipcode\" placeholder=\"zip code\" tabindex=\"73\" type=\"text\"/>",
-    "feature": "note save my application moretimezipcode zip code text 5",
+    "feature": "note save my application text moretimezipcode zip code 5",
     "id": "525-text-18",
     "pattern": "zipcode",
-    "topic": "zipcode"
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"full-width\" data-lookup=\"zip trigger\" data-required=\"true\" data-validation=\"hasdata freeform no-po-box no-vulgar\" data-zip=\"address\" maxlength=\"30\" name=\"address1poconfirm\" placeholder=\"street address\" tabindex=\"30\" type=\"text\"/>",
-    "feature": "residential address text street address address1poconfirm 30",
+    "feature": "residential address text address1poconfirm street address 30",
     "id": "525-text-19",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"full-width\" data-required=\"false\" data-validation=\"hasdata freeform no-vulgar\" maxlength=\"30\" name=\"address2poconfirm\" placeholder=\"apt/suite/floor (optional)\" tabindex=\"31\" type=\"text\"/>",
-    "feature": "save and continue residential address text apt suite floor optional address2poconfirm 30",
+    "feature": "save and continue residential address text address2poconfirm apt suite floor optional 30",
     "id": "525-text-20",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"col-1\" data-lookup=\"zip trigger\" data-required=\"true\" data-validation=\"numeric zipco number=5\" data-zip=\"zip\" maxlength=\"5\" name=\"zippoconfirm\" placeholder=\"zip code\" tabindex=\"32\" type=\"text\"/>",
-    "feature": "save and continue residential address zippoconfirm zip code text 5",
+    "feature": "save and continue residential address text zippoconfirm zip code 5",
     "id": "525-text-21",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input data-lookup=\"zip city\" data-required=\"true\" data-validation=\"alphaname hasdata no-vulgar\" maxlength=\"20\" name=\"citypoconfirm\" placeholder=\"city\" tabindex=\"33\" type=\"text\"/>",
-    "feature": "save and continue residential address citypoconfirm city text 20",
+    "feature": "save and continue residential address text citypoconfirm city 20",
     "id": "525-text-22",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input data-format-pattern=\"###-###-####\" data-prefill=\"homephone\" data-required=\"true\" data-validation=\"hasdata phone\" maxlength=\"12\" name=\"homephone\" onclick=\"s.linktrackvars=s.linktrackvars+',prop1';s.prop1='/app/personalinfo:homephone'; s.tl(this,'o','dynamic app analytcis');\" placeholder=\"xxx-xxx-xxxx\" tabindex=\"11\" type=\"tel\" value=\"\"/>",
-    "feature": "you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy primary phone homephone tel xxx xxx xxxx 12",
+    "feature": "you agree discover bank its affiliates and agents discover may call you including texts about any current or future accounts or applications with respect to all products you have with discover at any phone number you provide in addition you agree discover may contact you using an automatic dialer or pre recorded voice message message and data rates may apply click here for text terms and conditions and our privacy policy primary phone tel homephone xxx xxx xxxx 12",
     "id": "525-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "home.*phone",
+    "topic": "phone_home"
   }
 ]

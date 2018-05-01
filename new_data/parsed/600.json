@@ -3,28 +3,28 @@
     "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_firstname\" style=\"background-color: transparent;\" type=\"text\" value=\"\"/>",
     "feature": "first name first name dwfrm singleshipping shippingaddress addressfields firstname text dwfrm singleshipping shippingaddress addressfields firstname 50",
     "id": "600-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_lastname\" style=\"background-color: transparent;\" type=\"text\" value=\"\"/>",
     "feature": "last name last name dwfrm singleshipping shippingaddress addressfields lastname text dwfrm singleshipping shippingaddress addressfields lastname 50",
     "id": "600-text-1",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address1\" style=\"background-color: transparent;\" type=\"text\" value=\"\"/>",
     "feature": "address 1 address 1 dwfrm singleshipping shippingaddress addressfields address1 text dwfrm singleshipping shippingaddress addressfields address1 50",
     "id": "600-text-2",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"input-text\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" maxlength=\"50\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_address2\" style=\"background-color: transparent;\" type=\"text\" value=\"\"/>",
     "feature": "address 2 address 2 dwfrm singleshipping shippingaddress addressfields address2 text dwfrm singleshipping shippingaddress addressfields address2 50",
     "id": "600-text-3",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
@@ -38,14 +38,14 @@
     "dom": "<input class=\"input-text required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_zip\" maxlength=\"10\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_zip\" style=\"background-color: transparent;\" type=\"text\" value=\"\"/>",
     "feature": "zip postal code zip postal code dwfrm singleshipping shippingaddress addressfields zip text dwfrm singleshipping shippingaddress addressfields zip 10",
     "id": "600-text-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"input-tel phone required\" id=\"dwfrm_singleshipping_shippingaddress_addressfields_phone\" maxlength=\"20\" name=\"dwfrm_singleshipping_shippingaddress_addressfields_phone\" style=\"background-color: transparent;\" type=\"tel\" value=\"\"/>",
     "feature": "example 333 333 3333 phone phone dwfrm singleshipping shippingaddress addressfields phone tel dwfrm singleshipping shippingaddress addressfields phone 20",
     "id": "600-tel-0",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   }
 ]

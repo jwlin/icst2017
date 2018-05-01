@@ -1,35 +1,35 @@
 [
   {
     "dom": "<input maxlength=\"128\" name=\"txtr1\" onchange=\"nchanges++;\" size=\"27\" type=\"text\" value=\"\"/>",
-    "feature": "city of birth txtr1 text 128",
+    "feature": "city of birth text txtr1 128",
     "id": "710-text-0",
-    "pattern": "city",
-    "topic": "city"
+    "pattern": "txtr1",
+    "topic": "birth_city"
   },
   {
     "dom": "<input maxlength=\"64\" name=\"txtemailsentto\" onblur=\"trimtext(cform2.txtemailsentto);\" onchange=\"nchanges++;\" size=\"27\" type=\"text\" value=\"\"/>",
-    "feature": "e mails sent to txtemailsentto text 64",
+    "feature": "e mails sent to text txtemailsentto 64",
     "id": "710-text-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input maxlength=\"64\" name=\"txtusername\" onblur=\"trimtext(cform.txtusername)\" size=\"27\" type=\"text\" value=\"\"/>",
-    "feature": "e mail address txtusername text 64",
+    "feature": "e mail address text txtusername 64",
     "id": "710-text-2",
-    "pattern": "email",
+    "pattern": "username",
     "topic": "email"
   },
   {
     "dom": "<input maxlength=\"32\" name=\"txtpassword\" onchange=\"nchanges++;\" size=\"27\" type=\"password\" value=\"\"/>",
-    "feature": "password txtpassword password 32",
+    "feature": "password password txtpassword 32",
     "id": "710-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input maxlength=\"32\" name=\"txtpasswordagain\" onchange=\"nchanges++;\" size=\"27\" type=\"password\" value=\"\"/>",
-    "feature": "verify password txtpasswordagain password 32",
+    "feature": "verify password password txtpasswordagain 32",
     "id": "710-password-1",
     "pattern": "password",
     "topic": "password"

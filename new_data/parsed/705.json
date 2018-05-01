@@ -1,35 +1,35 @@
 [
   {
     "dom": "<input class=\"form-control\" data-val=\"true\" data-val-length=\"the field user name must be a string with a maximum length of 35.\" data-val-length-max=\"35\" data-val-required=\"the user name field is required.\" id=\"username\" name=\"username\" placeholder=\"user name\" type=\"text\" value=\"\"/>",
-    "feature": "user name username username text user name",
+    "feature": "user name username username user name text",
     "id": "705-text-0",
     "pattern": "username",
     "topic": "username"
   },
   {
     "dom": "<input class=\"form-control\" data-val=\"true\" data-val-email=\"the email field is not a valid e-mail address.\" data-val-length=\"the field email must be a string with a maximum length of 50.\" data-val-length-max=\"50\" data-val-required=\"the email field is required.\" id=\"email\" name=\"email\" placeholder=\"email\" type=\"text\" value=\"\"/>",
-    "feature": "email email email text email",
+    "feature": "email email email email text",
     "id": "705-text-1",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" data-val=\"true\" data-val-length=\"the field first / given name must be a string with a maximum length of 30.\" data-val-length-max=\"30\" data-val-required=\"the first / given name field is required.\" id=\"firstname\" name=\"firstname\" placeholder=\"first name\" type=\"text\" value=\"\"/>",
-    "feature": "first given name firstname firstname text first name",
+    "feature": "first given name firstname firstname first name text",
     "id": "705-text-2",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" data-val=\"true\" data-val-length=\"the field middle name must be a string with a maximum length of 30.\" data-val-length-max=\"30\" id=\"middlename\" name=\"middlename\" placeholder=\"middle name\" type=\"text\" value=\"\"/>",
-    "feature": "middle name middlename middlename text middle name",
+    "feature": "middle name middlename middlename middle name text",
     "id": "705-text-3",
     "pattern": "middle.*name",
     "topic": "middle_name"
   },
   {
     "dom": "<input class=\"form-control\" data-val=\"true\" data-val-length=\"the field last / family name must be a string with a maximum length of 30.\" data-val-length-max=\"30\" data-val-required=\"the last / family name field is required.\" id=\"lastname\" name=\"lastname\" placeholder=\"last name\" type=\"text\" value=\"\"/>",
-    "feature": "last family name lastname lastname text last name",
+    "feature": "last family name lastname lastname last name text",
     "id": "705-text-4",
     "pattern": "last.*name",
     "topic": "last_name"
@@ -43,7 +43,7 @@
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"form-control\" data-val=\"true\" data-val-equalto=\"the password and confirmation password do not match.\" data-val-equalto-other=\"*.password\" id=\"confirmpassword\" name=\"confirmpassword\" placeholder=\"confirm password\" type=\"password\"/>",
-    "feature": "password confirmpassword password confirmpassword confirm password",
+    "feature": "password confirmpassword confirmpassword confirm password password",
     "id": "705-password-1",
     "pattern": "password",
     "topic": "password"

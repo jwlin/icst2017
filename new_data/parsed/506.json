@@ -24,29 +24,29 @@
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_address_street1\" maxlength=\"30\" minlength=\"1\" name=\"personalinfo.address.street1\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "home permanent address text personalinfo address street1 personalinfo address street1 30",
     "id": "506-text-3",
-    "pattern": "address.*one",
+    "pattern": "address.*street.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input aria-describedby=\"\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_address_street2\" maxlength=\"30\" minlength=\"1\" name=\"personalinfo.address.street2\" size=\"30\" type=\"text\" value=\"\"/>",
     "feature": "text personalinfo address street2 personalinfo address street2 30",
     "id": "506-text-4",
-    "pattern": "address.*two",
+    "pattern": "address.*street.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_address_city\" maxlength=\"20\" minlength=\"1\" name=\"personalinfo.address.city\" size=\"20\" type=\"text\" value=\"\"/>",
     "feature": "city text personalinfo address city personalinfo address city 20",
     "id": "506-text-5",
-    "pattern": "city",
+    "pattern": "address.*city",
     "topic": "city"
   },
   {
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_securityword_securityword\" maxlength=\"16\" minlength=\"1\" name=\"personalinfo.securityword.securityword\" size=\"16\" type=\"text\" value=\"\"/>",
     "feature": "mother s maiden name text personalinfo securityword securityword personalinfo securityword securityword 16",
     "id": "506-text-6",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "security.*word",
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input accesskey=\"u\" aria-label=\"username\" autocomplete=\"off\" id=\"j_username\" maxlength=\"14\" name=\"j_username\" onclick=\"focusneeded=false;\" onkeypress=\"focusneeded=false;\" size=\"14\" title=\"enter username\" type=\"text\"/>",
@@ -59,7 +59,7 @@
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_emailaddress_emailaddress\" maxlength=\"120\" minlength=\"7\" name=\"personalinfo.emailaddress.emailaddress\" size=\"35\" type=\"email\" value=\"\"/>",
     "feature": "email address email personalinfo emailaddress emailaddress personalinfo emailaddress emailaddress 120",
     "id": "506-email-0",
-    "pattern": "email",
+    "pattern": "email.*address",
     "topic": "email"
   },
   {
@@ -73,28 +73,28 @@
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_address_zip\" maxlength=\"5\" minlength=\"5\" name=\"personalinfo.address.zip\" size=\"5\" type=\"tel\" value=\"\"/>",
     "feature": "zip code tel personalinfo address zip personalinfo address zip 5",
     "id": "506-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "address.*zip",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_birthdate_dateofbirth\" minlength=\"8\" name=\"personalinfo.birthdate.dateofbirth\" size=\"10\" type=\"tel\" value=\"\"/>",
     "feature": "date of birth tel personalinfo birthdate dateofbirth personalinfo birthdate dateofbirth",
     "id": "506-tel-1",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "date.*of.*birth",
+    "topic": "dob"
   },
   {
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_phone_phonenumber\" minlength=\"10\" name=\"personalinfo.phone.phonenumber\" size=\"13\" type=\"tel\" value=\"\"/>",
     "feature": "home phone number tel personalinfo phone phonenumber personalinfo phone phonenumber",
     "id": "506-tel-2",
     "pattern": "phone.*number",
-    "topic": "phone_number"
+    "topic": "phone"
   },
   {
     "dom": "<input aria-describedby=\"\" aria-required=\"true\" class=\"input-text-input-dgv4dc1pbnb1da\" id=\"personalinfo_socialsecuritynumber_socialsecuritynumber\" minlength=\"9\" name=\"personalinfo.socialsecuritynumber.socialsecuritynumber\" size=\"11\" type=\"tel\" value=\"\"/>",
     "feature": "social security number tel personalinfo socialsecuritynumber socialsecuritynumber personalinfo socialsecuritynumber socialsecuritynumber",
     "id": "506-tel-3",
-    "pattern": "ssn",
-    "topic": "social_security_number"
+    "pattern": "social.*security.*number",
+    "topic": "ssn"
   }
 ]

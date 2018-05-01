@@ -1,7 +1,7 @@
 [
   {
     "dom": "<input class=\"forms-text sessioncamexclude js-forms-text js-email-notify -tv-ignore:e651\" data-parsley-is-email=\"true\" data-parsley-is-email-message=\"please enter a valid email address.\" data-parsley-required-message=\"please enter your email address.\" id=\"email-sticky\" name=\"email\" required=\"\" type=\"text\"/>",
-    "feature": "email address email email sticky text",
+    "feature": "email address email sticky email text",
     "id": "604-text-0",
     "pattern": "email",
     "topic": "email"
@@ -36,7 +36,7 @@
   },
   {
     "dom": "<input class=\"forms-text js-forms-text js-forms-field find-login__forms-text sessioncamexclude\" data-parsley-is-email=\"true\" data-parsley-is-email-message=\"please enter a valid email address.\" data-parsley-required-message=\"please enter your email address.\" id=\"login-email\" name=\"email\" required=\"\" type=\"email\"/>",
-    "feature": "email address email login email email",
+    "feature": "email address login email email email",
     "id": "604-email-0",
     "pattern": "email",
     "topic": "email"
@@ -50,16 +50,16 @@
   },
   {
     "dom": "<input class=\"forms-text js-forms-text js-user-password password-strength-indicator__input-password sessioncamexclude\" data-parsley-minlength=\"6\" data-parsley-minlength-message=\"your password must be at least six characters long and contain a number or special character.\" data-parsley-required-message=\"please enter a password.\" id=\"newpassword\" minlength=\"6\" name=\"password\" required=\"\" type=\"password\"/>",
-    "feature": "new password password newpassword password",
+    "feature": "new password newpassword password password",
     "id": "604-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input class=\"forms-text js-forms-text js-check-password password-strength-indicator__input-password sessioncamexclude\" data-parsley-equalto=\"#newpassword\" data-parsley-equalto-message=\"your passwords don't seem to match. please try again.\" data-parsley-minlength=\"6\" data-parsley-minlength-message=\"your password must be at least six characters long and contain a number or special character.\" data-parsley-required-message=\"please enter a password.\" id=\"newpasswordconfirm\" minlength=\"6\" name=\"checkpassword\" required=\"\" type=\"password\"/>",
-    "feature": "confirm password checkpassword newpasswordconfirm password",
+    "feature": "confirm password newpasswordconfirm checkpassword password",
     "id": "604-password-1",
-    "pattern": "password",
+    "pattern": "password.*confirm",
     "topic": "password"
   },
   {
@@ -71,16 +71,16 @@
   },
   {
     "dom": "<input class=\"hidden-sm-down search-nav__input js-search-nav-input\" disabled=\"\" id=\"search-nav-input-small\" placeholder=\"search\" type=\"search\" value=\"search\"/>",
-    "feature": "www dyson com open dyson search box search nav input small search search search",
+    "feature": "www dyson com open dyson search box search search search nav input small search",
     "id": "604-search-0",
     "pattern": "search",
     "topic": "search"
   },
   {
     "dom": "<input autocomplete=\"off\" autofocus=\"\" class=\"search-nav__overlay-input js-search-input\" id=\"search-nav-input\" name=\"searchtext\" placeholder=\"www.dyson.com\" required=\"\" type=\"search\"/>",
-    "feature": "search www dyson com searchtext search nav input www dyson com search",
+    "feature": "search www dyson com search nav input search www dyson com searchtext",
     "id": "604-search-1",
-    "pattern": "search",
+    "pattern": "search.*text",
     "topic": "search"
   },
   {

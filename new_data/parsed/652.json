@@ -1,28 +1,28 @@
 [
   {
     "dom": "<input class=\"form-control input-sm \" id=\"first-name\" name=\"first_name\" placeholder=\"first name\" required=\"\" tabindex=\"1\" type=\"text\"/>",
-    "feature": "country first name first name text first name",
+    "feature": "country first name text first name first name",
     "id": "652-text-0",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control input-sm \" id=\"last-name\" name=\"last_name\" placeholder=\"last name\" required=\"\" tabindex=\"2\" type=\"text\"/>",
-    "feature": "country last name last name text last name",
+    "feature": "country last name text last name last name",
     "id": "652-text-1",
     "pattern": "last.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control input-sm \" id=\"email\" name=\"email\" placeholder=\"email address\" required=\"\" tabindex=\"3\" type=\"text\"/>",
-    "feature": "country email email text email address",
+    "feature": "country email text email email address",
     "id": "652-text-2",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"form-control input-sm \" id=\"confirm-email\" name=\"confirm_email\" placeholder=\"confirm email address\" required=\"\" tabindex=\"4\" type=\"text\"/>",
-    "feature": "country confirm email confirm email text confirm email address",
+    "feature": "country confirm email text confirm email confirm email address",
     "id": "652-text-3",
     "pattern": "email",
     "topic": "email"

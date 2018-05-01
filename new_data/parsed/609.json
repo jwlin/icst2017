@@ -1,23 +1,23 @@
 [
   {
     "dom": "<input aria-label=\"email address\" autocapitalize=\"off\" autocorrect=\"off\" class=\"grid__item one-whole\" name=\"contact[email]\" placeholder=\"email address\" type=\"email\" value=\"\"/>",
-    "feature": "email address contact email email",
+    "feature": "email email address contact email",
     "id": "609-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input id=\"easylockdown-password\" onkeypress=\"if( event.keycode == 13 &amp;&amp; typeof easylockdown == 'object' &amp;&amp; typeof easylockdown.checkunlockpassword == 'function' ) { event.preventdefault(); easylockdown.checkunlockpassword(this); }\" placeholder=\"\" style=\"width:100%;\" type=\"password\"/>",
-    "feature": "easylockdown password password",
+    "feature": "password easylockdown password",
     "id": "609-password-0",
     "pattern": "password",
     "topic": "password"
   },
   {
     "dom": "<input aria-label=\"what're you looking for?\" autocomplete=\"off\" class=\"input-group-field\" id=\"searchbarinput\" name=\"q\" placeholder=\"what're you looking for?\" type=\"search\" value=\"\"/>",
-    "feature": "what re you looking for searchbarinput q search",
+    "feature": "search searchbarinput q what re you looking for",
     "id": "609-search-0",
-    "pattern": "search",
+    "pattern": "search.*bar.*input",
     "topic": "search"
   }
 ]

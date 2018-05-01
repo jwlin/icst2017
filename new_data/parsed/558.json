@@ -1,30 +1,30 @@
 [
   {
     "dom": "<input class=\"cartqty product-quantity\" id=\"ci3172012267\" name=\"ci3172012267\" onchange=\"removenonnumeric(this)\" onkeydown=\"return qtynumberconstraintvalidator(event,this);\" type=\"text\" value=\"1\"/>",
-    "feature": "3711074 3711074 text ci3172012267 1 ci3172012267",
+    "feature": "3711074 3711074 ci3172012267 ci3172012267 text 1",
     "id": "558-text-0",
     "pattern": "unk",
     "topic": "unk"
   },
   {
     "dom": "<input class=\"text labeled required paymentaddpromocodeform_coupon\" id=\"couponcode\" maxlength=\"30\" name=\"/atg/commerce/promotion/couponformhandler.couponclaimcode\" title=\"promo/coupon number\" type=\"text\" value=\"\"/>",
-    "feature": "apply text couponcode atg commerce promotion couponformhandler couponclaimcode 30",
+    "feature": "apply couponcode atg commerce promotion couponformhandler couponclaimcode text 30",
     "id": "558-text-1",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "coupon",
+    "topic": "promo_code"
   },
   {
     "dom": "<input class=\"text watermark\" id=\"signup_email\" name=\"email\" placeholder=\"email address here\" required=\"\" title=\"enter your email address.\" type=\"text\"/>",
-    "feature": "text signup email email address here email",
+    "feature": "signup email email email address here text",
     "id": "558-text-2",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"text watermark\" id=\"signup_zip\" name=\"zip\" placeholder=\"zip code\" required=\"\" title=\"enter your zip code.\" type=\"text\"/>",
-    "feature": "text signup zip zip code zip",
+    "feature": "signup zip zip zip code text",
     "id": "558-text-3",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   }
 ]

@@ -3,14 +3,14 @@
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control\" name=\"your-name\" size=\"40\" type=\"text\" value=\"\"/>",
     "feature": "your name text your name",
     "id": "503-text-0",
-    "pattern": "first.*name",
-    "topic": "first_name"
+    "pattern": "name",
+    "topic": "full_name"
   },
   {
     "dom": "<input aria-invalid=\"false\" class=\"wpcf7-form-control wpcf7-text form-control\" name=\"street-address\" size=\"40\" type=\"text\" value=\"\"/>",
     "feature": "street address text street address",
     "id": "503-text-1",
-    "pattern": "address.*one",
+    "pattern": "street.*address",
     "topic": "address_1"
   },
   {
@@ -31,22 +31,22 @@
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control\" name=\"zip-code\" size=\"40\" type=\"text\" value=\"\"/>",
     "feature": "zip code text zip code",
     "id": "503-text-4",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip.*code",
+    "topic": "zip"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control\" id=\"phonenumber\" name=\"phonenumber\" size=\"40\" type=\"text\" value=\"\"/>",
     "feature": "phone number text phonenumber phonenumber",
     "id": "503-text-5",
     "pattern": "phone.*number",
-    "topic": "phone_number"
+    "topic": "phone"
   },
   {
     "dom": "<input aria-invalid=\"false\" class=\"wpcf7-form-control wpcf7-text form-control\" name=\"fax\" size=\"40\" type=\"text\" value=\"\"/>",
     "feature": "fax text fax",
     "id": "503-text-6",
-    "pattern": "fax.*number",
-    "topic": "fax_number"
+    "pattern": "fax",
+    "topic": "fax"
   },
   {
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control\" name=\"modelnumber\" size=\"40\" type=\"text\" value=\"\"/>",
@@ -73,8 +73,8 @@
     "dom": "<input aria-invalid=\"false\" aria-required=\"true\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control\" name=\"nameofretailstore\" size=\"40\" type=\"text\" value=\"\"/>",
     "feature": "name of retail store text nameofretailstore",
     "id": "503-text-10",
-    "pattern": "store",
-    "topic": "store"
+    "pattern": "name.*store",
+    "topic": "store_name"
   },
   {
     "dom": "<input autocomplete=\"off\" name=\"_mc4wp_honeypot\" tabindex=\"-1\" type=\"text\" value=\"\"/>",
@@ -94,14 +94,14 @@
     "dom": "<input name=\"email\" placeholder=\"email\" required=\"\" type=\"email\"/>",
     "feature": "leave this field empty if you re human email email email",
     "id": "503-email-1",
-    "pattern": "middle.*initial",
-    "topic": "middle_initial"
+    "pattern": "email",
+    "topic": "email"
   },
   {
     "dom": "<input class=\"blog-search input-search\" name=\"s\" placeholder=\"search \" title=\"search for:\" type=\"search\" value=\"\"/>",
     "feature": "search for search search s",
     "id": "503-search-0",
-    "pattern": "search",
+    "pattern": "s",
     "topic": "search"
   }
 ]

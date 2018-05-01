@@ -1,247 +1,247 @@
 [
   {
     "dom": "<input class=\"form-control\" data-validate=\"required alphaname\" id=\"firstnamefield\" maxlength=\"32\" name=\"application.primaryapplicant.name.firstname\" placeholder=\"first name\" required=\"true\" size=\"20\" tabindex=\"1\" type=\"text\"/>",
-    "feature": "required first name required firstnamefield text application primaryapplicant name firstname first name 32",
+    "feature": "required first name required firstnamefield first name application primaryapplicant name firstname text 32",
     "id": "534-text-0",
     "pattern": "first.*name",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control\" data-validate=\"alpha\" id=\"middleinitialfield\" maxlength=\"2\" name=\"application.primaryapplicant.name.middleinitial\" placeholder=\"mi (opt.)\" size=\"2\" tabindex=\"2\" type=\"text\"/>",
-    "feature": "middle initial middleinitialfield text application primaryapplicant name middleinitial mi opt 2",
+    "feature": "middle initial middleinitialfield mi opt application primaryapplicant name middleinitial text 2",
     "id": "534-text-1",
     "pattern": "middle.*initial",
     "topic": "middle_initial"
   },
   {
     "dom": "<input class=\"form-control\" data-validate=\"required alphaname\" id=\"lastnamefield\" maxlength=\"32\" name=\"application.primaryapplicant.name.lastname\" placeholder=\"last name\" size=\"20\" tabindex=\"3\" type=\"text\"/>",
-    "feature": "required last name required lastnamefield text application primaryapplicant name lastname last name 32",
+    "feature": "required last name required lastnamefield last name application primaryapplicant name lastname text 32",
     "id": "534-text-2",
     "pattern": "last.*name",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" data-bind-addr1=\"address\" data-bind-status=\"false\" data-validate=\"required alphanumaddress\" id=\"addressline1field\" maxlength=\"32\" name=\"application.primaryapplicant.residence.address.addressline1\" placeholder=\"permanent address\" size=\"32\" tabindex=\"5\" type=\"text\"/>",
-    "feature": "required permanent address required addressline1field text application primaryapplicant residence address addressline1 permanent address 32",
+    "feature": "required permanent address required addressline1field permanent address application primaryapplicant residence address addressline1 text 32",
     "id": "534-text-3",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" data-bind-addr2=\"address\" data-bind-status=\"false\" data-validate=\"alphanumaddress\" id=\"addressline2field\" maxlength=\"32\" name=\"application.primaryapplicant.residence.address.addressline2\" placeholder=\"apt., suite, bldg. (opt.)\" size=\"6\" tabindex=\"6\" type=\"text\"/>",
-    "feature": "apt suite bldg addressline2field text application primaryapplicant residence address addressline2 apt suite bldg opt 32",
+    "feature": "apt suite bldg addressline2field apt suite bldg opt application primaryapplicant residence address addressline2 text 32",
     "id": "534-text-4",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"form-control\" data-bind-city=\"address\" data-bind-status=\"false\" data-validate=\"required alphacity\" id=\"cityfield\" maxlength=\"32\" name=\"application.primaryapplicant.residence.address.city\" placeholder=\"city\" size=\"32\" tabindex=\"7\" type=\"text\"/>",
-    "feature": "required city town required cityfield text application primaryapplicant residence address city city 32",
+    "feature": "required city town required cityfield city application primaryapplicant residence address city text 32",
     "id": "534-text-5",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form-control\" data-validate=\"required alphanumaddress nopobox\" id=\"altaddressline1field\" maxlength=\"32\" name=\"application.shipping.residence.address.addressline1\" placeholder=\"alternate address 1\" size=\"32\" tabindex=\"1030\" type=\"text\"/>",
-    "feature": "required alternate address 1 required altaddressline1field text application shipping residence address addressline1 alternate address 1 32",
+    "feature": "required alternate address 1 required altaddressline1field alternate address 1 application shipping residence address addressline1 text 32",
     "id": "534-text-6",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" data-validate=\"alphanumaddress\" id=\"altaddressline2field\" maxlength=\"32\" name=\"application.shipping.residence.address.addressline2\" placeholder=\"alternate address 2 (opt.)\" size=\"6\" tabindex=\"1031\" type=\"text\"/>",
-    "feature": "alternate address 2 altaddressline2field text application shipping residence address addressline2 alternate address 2 opt 32",
+    "feature": "alternate address 2 altaddressline2field alternate address 2 opt application shipping residence address addressline2 text 32",
     "id": "534-text-7",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"form-control\" data-validate=\"required alphacity\" id=\"altcityfield\" maxlength=\"32\" name=\"application.shipping.residence.address.city\" placeholder=\"city\" size=\"32\" tabindex=\"1032\" type=\"text\"/>",
-    "feature": "required city required altcityfield text application shipping residence address city city 32",
+    "feature": "required city required altcityfield city application shipping residence address city text 32",
     "id": "534-text-8",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form-control\" data-bind-addr1=\"address\" data-bind-status=\"false\" data-validate=\"required alphanumaddress\" id=\"studentaddressline1field\" maxlength=\"32\" name=\"application.primaryapplicant.student.addressatschool.address.addressline1\" placeholder=\"school address\" size=\"20\" style=\"color: rgb(153, 153, 153);\" tabindex=\"1100\" type=\"text\"/>",
-    "feature": "required school address required school address application primaryapplicant student addressatschool address addressline1 studentaddressline1field text 32",
+    "feature": "required school address required studentaddressline1field school address application primaryapplicant student addressatschool address addressline1 text 32",
     "id": "534-text-9",
-    "pattern": "address.*one",
+    "pattern": "address.*1",
     "topic": "address_1"
   },
   {
     "dom": "<input class=\"form-control\" data-bind-addr2=\"address\" data-bind-status=\"false\" data-validate=\"alphanumaddress\" id=\"studentaddressline2field\" maxlength=\"32\" name=\"application.primaryapplicant.student.addressatschool.address.addressline2\" placeholder=\"apt. number (opt.)\" size=\"10\" style=\"color: rgb(153, 153, 153);\" tabindex=\"1101\" type=\"text\"/>",
-    "feature": "apt number apt number opt application primaryapplicant student addressatschool address addressline2 studentaddressline2field text 32",
+    "feature": "apt number studentaddressline2field apt number opt application primaryapplicant student addressatschool address addressline2 text 32",
     "id": "534-text-10",
-    "pattern": "address.*two",
+    "pattern": "address.*2",
     "topic": "address_2"
   },
   {
     "dom": "<input class=\"form-control\" data-bind-city=\"address\" data-bind-status=\"false\" data-validate=\"required alphacity\" id=\"addressatschoolcityfield\" maxlength=\"32\" name=\"application.primaryapplicant.student.addressatschool.address.city\" placeholder=\"city\" size=\"32\" style=\"color: rgb(153, 153, 153);\" tabindex=\"1102\" type=\"text\"/>",
-    "feature": "required city required city application primaryapplicant student addressatschool address city addressatschoolcityfield text 32",
+    "feature": "required city required addressatschoolcityfield city application primaryapplicant student addressatschool address city text 32",
     "id": "534-text-11",
     "pattern": "city",
     "topic": "city"
   },
   {
     "dom": "<input class=\"form-control optional\" data-validate=\"alphaname\" id=\"otherfirstnamefield\" maxlength=\"32\" name=\"application.primaryapplicant.student.othercontact.name.firstname\" placeholder=\"first name (opt.)\" size=\"20\" tabindex=\"1117\" type=\"text\"/>",
-    "feature": "first name otherfirstnamefield text application primaryapplicant student othercontact name firstname first name opt 32",
+    "feature": "first name otherfirstnamefield first name opt application primaryapplicant student othercontact name firstname text 32",
     "id": "534-text-12",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input class=\"form-control optional\" data-validate=\"alphaname\" id=\"otherlastnamefield\" maxlength=\"32\" name=\"application.primaryapplicant.student.othercontact.name.lastname\" placeholder=\"last name (opt.)\" size=\"20\" tabindex=\"1118\" type=\"text\"/>",
-    "feature": "last name otherlastnamefield text application primaryapplicant student othercontact name lastname last name opt 32",
+    "feature": "last name otherlastnamefield last name opt application primaryapplicant student othercontact name lastname text 32",
     "id": "534-text-13",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
     "dom": "<input class=\"form-control\" data-validate=\"required alphaname\" id=\"securityquestionfield\" maxlength=\"15\" name=\"application.primaryapplicant.securityquestion\" placeholder=\"mother's maiden name\" size=\"15\" tabindex=\"28\" type=\"text\"/>",
-    "feature": "required mother s maiden name required securityquestionfield text application primaryapplicant securityquestion mother s maiden name 15",
+    "feature": "required mother s maiden name required securityquestionfield mother s maiden name application primaryapplicant securityquestion text 15",
     "id": "534-text-14",
-    "pattern": "last.*name",
-    "topic": "last_name"
+    "pattern": "securityquestion",
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input class=\"form-control btinput\" data-validate=\"numeric\" id=\"balancetransfer0_bank\" maxlength=\"20\" name=\"application.product[0].balancetransfer[0].bank.accountnumber\" placeholder=\"major credit card number\" size=\"36\" tabindex=\"500\" type=\"text\"/>",
-    "feature": "major credit card number balancetransfer0 bank text application product 0 balancetransfer 0 bank accountnumber major credit card number 20",
+    "feature": "major credit card number balancetransfer0 bank major credit card number application product 0 balancetransfer 0 bank accountnumber text 20",
     "id": "534-text-15",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "accountnumber",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input class=\"form-control dtm-req-amt\" data-validate=\"numericdollar\" id=\"balancetransfer0_amount\" maxlength=\"8\" name=\"application.product[0].balancetransfer[0].requestedamount\" placeholder=\"requested amount\" size=\"18\" tabindex=\"501\" type=\"text\"/>",
-    "feature": "requested amount balancetransfer0 amount text application product 0 balancetransfer 0 requestedamount requested amount 8",
+    "feature": "requested amount balancetransfer0 amount requested amount application product 0 balancetransfer 0 requestedamount text 8",
     "id": "534-text-16",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "requestedamount",
+    "topic": "transfer_amount"
   },
   {
     "dom": "<input class=\"form-control btinput\" data-validate=\"numeric\" id=\"balancetransfer1_bank\" maxlength=\"20\" name=\"application.product[0].balancetransfer[1].bank.accountnumber\" placeholder=\"major credit card number\" size=\"36\" tabindex=\"502\" type=\"text\"/>",
-    "feature": "major credit card number balancetransfer1 bank text application product 0 balancetransfer 1 bank accountnumber major credit card number 20",
+    "feature": "major credit card number balancetransfer1 bank major credit card number application product 0 balancetransfer 1 bank accountnumber text 20",
     "id": "534-text-17",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "accountnumber",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input class=\"form-control dtm-req-amt\" data-validate=\"numericdollar\" id=\"balancetransfer1_amount\" maxlength=\"8\" name=\"application.product[0].balancetransfer[1].requestedamount\" placeholder=\"requested amount\" size=\"18\" tabindex=\"503\" type=\"text\"/>",
-    "feature": "requested amount balancetransfer1 amount text application product 0 balancetransfer 1 requestedamount requested amount 8",
+    "feature": "requested amount balancetransfer1 amount requested amount application product 0 balancetransfer 1 requestedamount text 8",
     "id": "534-text-18",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "requestedamount",
+    "topic": "transfer_amount"
   },
   {
     "dom": "<input class=\"form-control btinput\" data-validate=\"numeric\" id=\"balancetransfer2_bank\" maxlength=\"20\" name=\"application.product[0].balancetransfer[2].bank.accountnumber\" placeholder=\"major credit card number\" size=\"36\" tabindex=\"504\" type=\"text\"/>",
-    "feature": "major credit card number balancetransfer2 bank text application product 0 balancetransfer 2 bank accountnumber major credit card number 20",
+    "feature": "major credit card number balancetransfer2 bank major credit card number application product 0 balancetransfer 2 bank accountnumber text 20",
     "id": "534-text-19",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "accountnumber",
+    "topic": "credit_card_number"
   },
   {
     "dom": "<input class=\"form-control dtm-req-amt\" data-validate=\"numericdollar\" id=\"balancetransfer2_amount\" maxlength=\"8\" name=\"application.product[0].balancetransfer[2].requestedamount\" placeholder=\"requested amount\" size=\"18\" tabindex=\"505\" type=\"text\"/>",
-    "feature": "requested amount balancetransfer2 amount text application product 0 balancetransfer 2 requestedamount requested amount 8",
+    "feature": "requested amount balancetransfer2 amount requested amount application product 0 balancetransfer 2 requestedamount text 8",
     "id": "534-text-20",
-    "pattern": "income",
-    "topic": "income"
+    "pattern": "requestedamount",
+    "topic": "transfer_amount"
   },
   {
     "dom": "<input class=\"nokey form-control\" data-validate=\"required email\" id=\"emailaddressfield\" maxlength=\"40\" name=\"application.primaryapplicant.emailaddress\" placeholder=\"email address\" size=\"32\" tabindex=\"23\" type=\"email\"/>",
-    "feature": "required email address required emailaddressfield email application primaryapplicant emailaddress email address 40",
+    "feature": "required email address required emailaddressfield email address application primaryapplicant emailaddress email 40",
     "id": "534-email-0",
     "pattern": "email",
     "topic": "email"
   },
   {
     "dom": "<input class=\"nokey form-control \" data-bind-status=\"false\" data-bind-zip=\"address\" data-validate=\"required numeric minlength_5\" id=\"zipcode1field\" maxlength=\"5\" name=\"zipcode1\" placeholder=\"zip code\" size=\"5\" tabindex=\"9\" type=\"tel\"/>",
-    "feature": "required zip code required zipcode1field tel zipcode1 zip code 5",
+    "feature": "required zip code required zipcode1field zip code zipcode1 tel 5",
     "id": "534-tel-0",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"small-placeholder nokey form-control \" data-bind-status=\"false\" data-bind-zip4=\"address\" data-validate=\"numeric minlength_4\" id=\"zipcode2field\" maxlength=\"4\" name=\"zipcode2\" pattern=\"[0-9]*\" placeholder=\"zip + 4 (opt.)\" size=\"4\" tabindex=\"10\" type=\"tel\"/>",
-    "feature": "zip 4 zip 4 opt zipcode2field zipcode2 tel 4",
+    "feature": "zip 4 zip 4 opt tel zipcode2field zipcode2 4",
     "id": "534-tel-1",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip.*2",
+    "topic": "zip_suffix"
   },
   {
     "dom": "<input class=\"form-control \" data-validate=\"timepermyears required\" id=\"yearsatresidencefield\" maxlength=\"2\" name=\"yearsatresidence\" placeholder=\"years\" size=\"2\" tabindex=\"11\" type=\"tel\"/>",
-    "feature": "required years required yearsatresidencefield tel yearsatresidence years 2",
+    "feature": "required years required yearsatresidencefield years yearsatresidence tel 2",
     "id": "534-tel-2",
-    "pattern": "age",
-    "topic": "age"
+    "pattern": "yearsatresidence",
+    "topic": "resident_years"
   },
   {
     "dom": "<input class=\"nokey form-control nokey\" data-validate=\"required numeric minlength_5\" id=\"altzipcode1field\" maxlength=\"5\" name=\"altzipcode1\" placeholder=\"zip code\" size=\"5\" tabindex=\"1034\" type=\"tel\"/>",
-    "feature": "required zip code required altzipcode1field tel altzipcode1 zip code 5",
+    "feature": "required zip code required altzipcode1field zip code altzipcode1 tel 5",
     "id": "534-tel-3",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"nokey small-placeholder form-control nokey\" data-validate=\"numeric minlength_4\" id=\"altzipcode2field\" maxlength=\"4\" name=\"altzipcode2\" placeholder=\"zip + 4 (opt.)\" size=\"4\" tabindex=\"1035\" type=\"tel\"/>",
-    "feature": "zip 4 altzipcode2field tel altzipcode2 zip 4 opt 4",
+    "feature": "zip 4 altzipcode2field zip 4 opt altzipcode2 tel 4",
     "id": "534-tel-4",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip.*2",
+    "topic": "zip_suffix"
   },
   {
     "dom": "<input class=\"nokey form-control\" data-bind-status=\"false\" data-bind-zip=\"address\" data-validate=\"required numeric minlength_5\" id=\"addressatschoolzipcode1field\" maxlength=\"5\" name=\"studentzipcode1\" placeholder=\"zip code\" size=\"5\" style=\"color: rgb(153, 153, 153);\" tabindex=\"1104\" type=\"tel\"/>",
-    "feature": "required zip code required zip code studentzipcode1 addressatschoolzipcode1field tel 5",
+    "feature": "required zip code required addressatschoolzipcode1field zip code studentzipcode1 tel 5",
     "id": "534-tel-5",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip",
+    "topic": "zip"
   },
   {
     "dom": "<input class=\"small-placeholder nokey form-control\" data-bind-status=\"false\" data-bind-zip4=\"address\" data-validate=\"numeric minlength_4\" id=\"addressatschoolzipcode2field\" maxlength=\"4\" name=\"studentzipcode2\" placeholder=\"zip + 4 (opt.)\" size=\"4\" style=\"color: rgb(153, 153, 153);\" tabindex=\"1105\" type=\"tel\"/>",
-    "feature": "zip 4 zip 4 opt studentzipcode2 addressatschoolzipcode2field tel 4",
+    "feature": "zip 4 addressatschoolzipcode2field zip 4 opt studentzipcode2 tel 4",
     "id": "534-tel-6",
-    "pattern": "zipcode",
-    "topic": "zipcode"
+    "pattern": "zip.*2",
+    "topic": "zip_suffix"
   },
   {
     "dom": "<input class=\"form-control\" data-validate=\"required\" id=\"grosshouseholdincomefield\" maxlength=\"9\" name=\"application.primaryapplicant.grosshouseholdincome\" placeholder=\"total annual income\" size=\"9\" tabindex=\"17\" type=\"tel\" value=\"\"/>",
-    "feature": "required total annual income required grosshouseholdincomefield tel application primaryapplicant grosshouseholdincome total annual income 9",
+    "feature": "required total annual income required grosshouseholdincomefield total annual income application primaryapplicant grosshouseholdincome tel 9",
     "id": "534-tel-7",
     "pattern": "income",
     "topic": "income"
   },
   {
     "dom": "<input class=\"nokey form-control \" data-validate=\"required numerichyphen minlength_10\" id=\"primaryphone\" maxlength=\"12\" name=\"primaryphone\" pattern=\"[0-9]*\" placeholder=\"primary phone\" size=\"12\" tabindex=\"21\" type=\"tel\" value=\"\"/>",
-    "feature": "xxx xxx xxxx please enter only numbers required primary phone xxx xxx xxxx please enter only numbers required primaryphone tel primaryphone primary phone 12",
+    "feature": "xxx xxx xxxx please enter only numbers required primary phone xxx xxx xxxx please enter only numbers required primaryphone primary phone primaryphone tel 12",
     "id": "534-tel-8",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "phone",
+    "topic": "phone"
   },
   {
     "dom": "<input class=\"nokey form-control \" data-validate=\"numerichyphen minlength_10\" id=\"workphone\" maxlength=\"12\" name=\"workphone\" pattern=\"[0-9]*\" placeholder=\"work phone (opt.)\" size=\"12\" tabindex=\"22\" type=\"tel\" value=\"\"/>",
-    "feature": "xxx xxx xxxx please enter only numbers work phone xxx xxx xxxx please enter only numbers workphone tel workphone work phone opt 12",
+    "feature": "xxx xxx xxxx please enter only numbers work phone xxx xxx xxxx please enter only numbers workphone work phone opt workphone tel 12",
     "id": "534-tel-9",
-    "pattern": "work.*phone",
-    "topic": "work_phone_number"
+    "pattern": "workphone",
+    "topic": "phone_work"
   },
   {
     "dom": "<input class=\"nokey form-control \" data-validate=\"numerichyphen\" id=\"otherphone\" maxlength=\"12\" name=\"otherphone\" pattern=\"[0-9]*\" placeholder=\"phone number (opt.)\" size=\"12\" type=\"tel\" value=\"\"/>",
-    "feature": "xxx xxx xxxx please enter only numbers phone number xxx xxx xxxx please enter only numbers otherphone tel otherphone phone number opt 12",
+    "feature": "xxx xxx xxxx please enter only numbers phone number xxx xxx xxxx please enter only numbers otherphone phone number opt otherphone tel 12",
     "id": "534-tel-10",
-    "pattern": "phone.*number",
-    "topic": "phone_number"
+    "pattern": "otherphone",
+    "topic": "phone_alt"
   },
   {
     "dom": "<input class=\"nokey form-control \" data-validate=\"required numerichyphen minlength_8\" id=\"dateofbirthfield\" maxlength=\"10\" name=\"dateofbirth\" placeholder=\"date of birth\" size=\"10\" tabindex=\"26\" type=\"tel\"/>",
-    "feature": "mm dd yyyy please enter only numbers required date of birth mm dd yyyy please enter only numbers required dateofbirthfield tel dateofbirth date of birth 10",
+    "feature": "mm dd yyyy please enter only numbers required date of birth mm dd yyyy please enter only numbers required dateofbirthfield date of birth dateofbirth tel 10",
     "id": "534-tel-11",
-    "pattern": "birth.*date",
-    "topic": "date_of_birth"
+    "pattern": "dateofbirth",
+    "topic": "dob"
   },
   {
     "dom": "<input class=\"nokey form-control nokey \" data-validate=\"required numerichyphen minlength_9\" id=\"ssn\" maxlength=\"11\" name=\"ssn\" pattern=\"[0-9]*\" placeholder=\"social security number\" size=\"11\" tabindex=\"27\" type=\"tel\"/>",
-    "feature": "xxx xx xxxx please enter only numbers required social security number xxx xx xxxx please enter only numbers required ssn tel ssn social security number 11",
+    "feature": "xxx xx xxxx please enter only numbers required social security number xxx xx xxxx please enter only numbers required ssn social security number ssn tel 11",
     "id": "534-tel-12",
     "pattern": "ssn",
-    "topic": "social_security_number"
+    "topic": "ssn"
   }
 ]

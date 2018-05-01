@@ -3,21 +3,21 @@
     "dom": "<input id=\"firstname\" name=\"firstname\" style=\"width:250px;\" type=\"text\"/>",
     "feature": "required firstname text firstname",
     "id": "732-text-0",
-    "pattern": "first.*name",
+    "pattern": "firstname",
     "topic": "first_name"
   },
   {
     "dom": "<input id=\"middlename\" name=\"middlename\" style=\"width:250px;\" type=\"text\"/>",
     "feature": "middle name middlename text middlename",
     "id": "732-text-1",
-    "pattern": "middle.*name",
+    "pattern": "middlename",
     "topic": "middle_name"
   },
   {
     "dom": "<input id=\"lastname\" name=\"lastname\" style=\"width:250px;\" type=\"text\"/>",
     "feature": "required lastname text lastname",
     "id": "732-text-2",
-    "pattern": "last.*name",
+    "pattern": "lastname",
     "topic": "last_name"
   },
   {
@@ -38,8 +38,8 @@
     "dom": "<input id=\"login\" name=\"login\" style=\"width:250px;\" type=\"text\"/>",
     "feature": "required login text login",
     "id": "732-text-5",
-    "pattern": "username",
-    "topic": "username"
+    "pattern": "login",
+    "topic": "login"
   },
   {
     "dom": "<input id=\"password\" name=\"password\" style=\"width:250px;\" type=\"text\"/>",

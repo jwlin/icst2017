@@ -1,16 +1,16 @@
 [
   {
     "dom": "<input autocomplete=\"off\" id=\"searchinput\" name=\"text\" placeholder=\"what are you looking for?\" type=\"text\"/>",
-    "feature": "what are you looking for searchinput text what are you looking for text",
+    "feature": "what are you looking for text searchinput text what are you looking for",
     "id": "607-text-0",
-    "pattern": "search",
+    "pattern": "search.*input",
     "topic": "search"
   },
   {
     "dom": "<input class=\"text\" id=\"serialnumber\" name=\"serialnumber\" type=\"text\" value=\"\"/>",
     "feature": "please enter the serial number exactly as it is shown on your brewer including any special characters serial number please enter the serial number exactly as it is shown on your brewer including any special characters serialnumber serialnumber text",
     "id": "607-text-1",
-    "pattern": "serial",
+    "pattern": "serial.*number",
     "topic": "serial_number"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "dom": "<input autocomplete=\"nope\" class=\"personalinfotextinputfield\" id=\"register.email\" name=\"email\" type=\"email\" value=\"\"/>",
-    "feature": "email address email register email email",
+    "feature": "email address register email email email",
     "id": "607-email-0",
     "pattern": "email",
     "topic": "email"
@@ -45,28 +45,28 @@
     "dom": "<input autocomplete=\"nope\" id=\"email-existing\" name=\"j_username\" type=\"email\" value=\"\"/>",
     "feature": "email address email existing j username email",
     "id": "607-email-1",
-    "pattern": "email",
+    "pattern": "email.*existing",
     "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"nope\" class=\"password personalinfotextinputfield\" id=\"password\" name=\"pwd\" type=\"password\" value=\"\"/>",
-    "feature": "show password pwd password password",
+    "feature": "show password password pwd password",
     "id": "607-password-0",
-    "pattern": "password",
+    "pattern": "pwd",
     "topic": "password"
   },
   {
     "dom": "<input autocomplete=\"nope\" class=\"confirmpassword personalinfotextinputfield hidden\" id=\"register.checkpwd\" name=\"checkpwd\" type=\"password\" value=\"\"/>",
-    "feature": "show register checkpwd checkpwd register checkpwd password",
+    "feature": "show register checkpwd register checkpwd checkpwd password",
     "id": "607-password-1",
-    "pattern": "password",
+    "pattern": "pwd",
     "topic": "password"
   },
   {
     "dom": "<input autocomplete=\"nope\" class=\"password\" id=\"pass-new\" name=\"j_password\" type=\"password\" value=\"\"/>",
-    "feature": "show password j password pass new password",
+    "feature": "show password pass new j password password",
     "id": "607-password-2",
-    "pattern": "password",
+    "pattern": "pass",
     "topic": "password"
   }
 ]
