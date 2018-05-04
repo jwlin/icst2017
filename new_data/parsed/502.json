@@ -52,8 +52,8 @@
     "dom": "<input data-ng-value=\"dfsmodel.subtotalstring\" disabled=\"\" type=\"text\"/>",
     "feature": "text",
     "id": "502-text-7",
-    "pattern": "text",
-    "topic": "text"
+    "pattern": "unk",
+    "topic": "unk"
   },
   {
     "dom": "<input data-finance-slider=\"true\" data-slider-handle=\"custom\" data-slider-id=\"shopcalculatorslider\" data-slider-max=\"29.99\" data-slider-min=\"19.99\" data-slider-step=\"1.00\" data-slider-value=\"24.99\" data-value=\"24.99\" id=\"shopcalculator\" style=\"display: none;\" type=\"text\" value=\"24.99\"/>",

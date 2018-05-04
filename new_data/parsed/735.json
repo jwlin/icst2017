@@ -25,7 +25,7 @@
     "feature": "previous name previousname previousname text",
     "id": "735-text-3",
     "pattern": "previous.*name",
-    "topic": "maiden_name"
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input id=\"dateofbirth\" name=\"dateofbirth\" type=\"text\" value=\"\"/>",

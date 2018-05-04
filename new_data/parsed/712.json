@@ -46,7 +46,7 @@
     "feature": "required login text login",
     "id": "712-text-6",
     "pattern": "login",
-    "topic": "login"
+    "topic": "username"
   },
   {
     "dom": "<input id=\"password\" name=\"password\" style=\"width:250px;\" type=\"text\"/>",

@@ -144,14 +144,14 @@
     "feature": "00 total annual income tel apply annualincome apply annualincome 7",
     "id": "530-tel-6",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control numeric numericdecimal income envt-stop c3mask-digitmask-amount hidden\" id=\"apply_annualincome-masked\" name=\"apply_annualincome-masked\" title=\"total annual income\" type=\"tel\"/>",
     "feature": "00 total annual income tel apply annualincome masked apply annualincome masked",
     "id": "530-tel-7",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-required=\"true\" autocomplete=\"off\" class=\"form-control paste numeric masked-form-control delref c3-tomask\" id=\"apply_ssn\" maxlength=\"11\" minlength=\"11\" name=\"apply_ssn\" placeholder=\"_ _ _ - _ _ - _ _ _ _\" type=\"tel\" value=\"\"/>",

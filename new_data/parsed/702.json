@@ -32,7 +32,7 @@
     "feature": "text login name 25",
     "id": "702-text-4",
     "pattern": "login",
-    "topic": "login"
+    "topic": "username"
   },
   {
     "dom": "<input maxlength=\"25\" name=\"password\" size=\"45\" type=\"password\"/>",

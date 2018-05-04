@@ -14,7 +14,7 @@ if __name__ == '__main__':
                 data = json.load(f)
                 for d in data:
                     input_tag = BeautifulSoup(d['dom'], 'html5lib').find('input')
-                    if not is_validated(input_tag, d['pattern']):
+                    if not is_validated(input_tag, d['pattern']) and d['topic'] != 'unk':
                         tag_id = input_tag['id'] if 'id' in input_tag.attrs else None
                         tag_name = input_tag['name'] if 'name' in input_tag.attrs else None
                         print('Tag uid: {}, id: {}, name: {}'.format(d['id'], tag_id, tag_name))

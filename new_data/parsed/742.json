@@ -25,7 +25,7 @@
     "feature": "other names used last family name middle name first given name text oname oname 100",
     "id": "742-text-3",
     "pattern": "o.*name",
-    "topic": "maiden_name"
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input id=\"nuid\" name=\"nuid\" onchange=\"checkid()\" type=\"text\" value=\"\"/>",
@@ -130,7 +130,7 @@
     "feature": "mm yyyy mm yyyy location employer position start date mm yyyy end date mm yyyy text employloc nebresi4 30",
     "id": "742-text-18",
     "pattern": "employ.*loc",
-    "topic": "job_city"
+    "topic": "city"
   },
   {
     "dom": "<input alt=\"position\" id=\"nebresi5\" maxlength=\"30\" name=\"jobtitle\" type=\"text\" value=\"\"/>",

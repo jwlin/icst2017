@@ -81,7 +81,7 @@
     "feature": "00 text value sannualincome sannualincome 9",
     "id": "535-text-11",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input autocomplete=\"off\" class=\"jpui-dollars jpjs-currency\" data-error-message=\"enter your monthly payment. use only numbers.\" data-maxlength=\"4\" data-theme=\"flexapp\" data-validation-options=\"shousingtype\" fa.allow=\"numeric\" id=\"smonthlymortgage\" maxlength=\"4\" name=\"value(smonthlymortgage)\" pattern=\"\\d*\" size=\"6\" title=\"\" type=\"text\" value=\"\"/>",

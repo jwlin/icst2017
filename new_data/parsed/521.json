@@ -32,7 +32,7 @@
     "feature": "why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration why do you need my income in order to comply with federal law and to determine factors such as your credit limit we consider your ability to meet the payment obligations associated with this account your income information is part of that consideration annual income annualincome input text annualincome input 7",
     "id": "521-text-4",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"postalcode mask-numeric typetel\" id=\"inpaddress_uszipinstantcredit_input\" maxlength=\"5\" name=\"inpaddress_uszipinstantcredit_input\" size=\"14\" tabindex=\"0\" type=\"text\" value=\"\"/>",

@@ -109,14 +109,14 @@
     "feature": "home phone home phone tel homephone phone1 homephone1 3",
     "id": "546-tel-2",
     "pattern": "homephone",
-    "topic": "phone_home"
+    "topic": "phone_prefix"
   },
   {
     "dom": "<input id=\"homephone2\" maxlength=\"4\" name=\"homephone.phone2\" size=\"4\" type=\"tel\" value=\"\"/>",
     "feature": "home phone home phone tel homephone phone2 homephone2 4",
     "id": "546-tel-3",
     "pattern": "phone2",
-    "topic": "phone_alt"
+    "topic": "phone_suffix"
   },
   {
     "dom": "<input id=\"mobilephoneareacode\" maxlength=\"3\" name=\"mobilephone.areacode\" onkeyup=\"autotab(this,3,event);\" size=\"3\" type=\"tel\" value=\"\"/>",

@@ -193,7 +193,7 @@
     "feature": "00 tel annualincome annualincome 7",
     "id": "527-tel-12",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"form-control text-right\" id=\"monthlypayment\" maxlength=\"5\" name=\"monthlypayment\" type=\"tel\"/>",

@@ -10,8 +10,8 @@
     "dom": "<input name=\"un\" placeholder=\"email\" type=\"text\"/>",
     "feature": "text un email",
     "id": "580-text-1",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "un",
+    "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"billing given-name\" id=\"form_bill_name_first\" name=\"bill_name_first\" type=\"text\" value=\"\"/>",
@@ -150,8 +150,8 @@
     "dom": "<input class=\"input-white input-full\" name=\"un\" placeholder=\"email\" type=\"email\" value=\"\"/>",
     "feature": "un email email",
     "id": "580-email-0",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "un",
+    "topic": "email"
   },
   {
     "dom": "<input autocomplete=\"billing email\" id=\"form_billing_email\" name=\"billing_email\" type=\"email\" value=\"\"/>",

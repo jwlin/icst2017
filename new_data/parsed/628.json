@@ -4,7 +4,7 @@
     "feature": "select your product text whfmfillin whfmfillin click to select",
     "id": "628-text-0",
     "pattern": "whfm",
-    "topic": "model"
+    "topic": "model_number"
   },
   {
     "dom": "<input class=\"input160w\" id=\"sersfillin\" name=\"sersfillin\" placeholder=\"click to select\" style=\"display:none\" type=\"text\" value=\"\"/>",

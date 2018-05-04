@@ -116,14 +116,14 @@
     "feature": "email or rewards text userid account userid 80",
     "id": "582-text-16",
     "pattern": "userid",
-    "topic": "user"
+    "topic": "username"
   },
   {
     "dom": "<input autocomplete=\"off\" id=\"my-account-userid\" maxlength=\"80\" name=\"userid\" type=\"text\"/>",
     "feature": "email or rewards text userid my account userid 80",
     "id": "582-text-17",
     "pattern": "userid",
-    "topic": "user"
+    "topic": "username"
   },
   {
     "dom": "<input class=\"t-color-black \" id=\"first-name\" maxlength=\"20\" name=\"firstname1\" type=\"text\" value=\"\"/>",

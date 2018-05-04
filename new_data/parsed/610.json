@@ -137,28 +137,28 @@
     "feature": "part number text pn1 pn1 3",
     "id": "610-text-19",
     "pattern": "pn1",
-    "topic": "part_number"
+    "topic": "model_number_1"
   },
   {
     "dom": "<input class=\"\" id=\"pn2\" maxlength=\"5\" name=\"pn2\" size=\"5\" type=\"text\" value=\"\"/>",
     "feature": "part number text pn2 pn2 5",
     "id": "610-text-20",
     "pattern": "pn2",
-    "topic": "part_number"
+    "topic": "model_number_2"
   },
   {
     "dom": "<input class=\"\" id=\"pn3\" maxlength=\"4\" name=\"pn3\" size=\"4\" type=\"text\" value=\"\"/>",
     "feature": "part number text pn3 pn3 4",
     "id": "610-text-21",
     "pattern": "pn3",
-    "topic": "part_number"
+    "topic": "model_number_3"
   },
   {
     "dom": "<input class=\"\" id=\"pn4\" maxlength=\"3\" name=\"pn4\" size=\"3\" type=\"text\" value=\"\"/>",
     "feature": "part number text pn4 pn4 3",
     "id": "610-text-22",
     "pattern": "pn4",
-    "topic": "part_number"
+    "topic": "model_number_4"
   },
   {
     "dom": "<input class=\"\" id=\"srnu\" name=\"srnu\" type=\"text\" value=\"\"/>",

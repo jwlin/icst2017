@@ -46,7 +46,7 @@
     "feature": "text login 14",
     "id": "734-text-6",
     "pattern": "login",
-    "topic": "login"
+    "topic": "username"
   },
   {
     "dom": "<input class=\"form-control\" maxlength=\"14\" name=\"password\" size=\"14\" type=\"password\"/>",

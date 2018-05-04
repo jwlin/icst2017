@@ -144,7 +144,7 @@
     "feature": "annual income please enter your annual income invalid entry please try again ctl00 maincontentplaceholder securefinancialinformation1 annualincome text annualincome 13",
     "id": "522-text-20",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-describedby=\"ctl00_maincontentplaceholder_securefinancialinformation1_validatoridnumberrequired ctl00_maincontentplaceholder_securefinancialinformation1_validatoridnumber\" id=\"ctl00_maincontentplaceholder_securefinancialinformation1_idnumber\" maxlength=\"15\" name=\"ctl00$maincontentplaceholder$securefinancialinformation1$idnumber\" type=\"text\"/>",

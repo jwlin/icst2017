@@ -123,7 +123,7 @@
     "feature": "occupation employment status source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions length of relationship no yes primaryapplicantannualincome primaryapplicant annualincome annual income text 12",
     "id": "543-text-17",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"form-control \" id=\"primaryapplicantotherprimaryannualincomesourcedescription\" maxlength=\"20\" name=\"primaryapplicant.otherprimaryannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
@@ -137,7 +137,7 @@
     "feature": "source of additional annual income primaryapplicantadditionalannualincome primaryapplicant additionalannualincome additional annual income text 12",
     "id": "543-text-19",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"form-control otherincomerequired\" id=\"primaryapplicantotheradditionalannualincomesourcedescription\" maxlength=\"20\" name=\"primaryapplicant.otheradditionalannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" requiredentry=\"requiredentry\" type=\"text\" validationtext=\"primary applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
@@ -277,7 +277,7 @@
     "feature": "occupation employment status no yes state no yes state no yes country of permanent residence country of citizenship country of citizenship no yes suffix source of annual income no yes source of additional annual income expected monthly cash transactions expected monthly international transactions jointapplicantannualincome jointapplicant annualincome annual income text 12",
     "id": "543-text-39",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"form-control jointapplicantrequired\" id=\"jointapplicantotherprimaryannualincomesourcedescription\" maxlength=\"20\" name=\"jointapplicant.otherprimaryannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" type=\"text\" validationtext=\"joint applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",
@@ -291,7 +291,7 @@
     "feature": "source of additional annual income jointapplicantadditionalannualincome jointapplicant additionalannualincome additional annual income text 12",
     "id": "543-text-41",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"form-control jointotherincomerequired\" id=\"jointapplicantotheradditionalannualincomesourcedescription\" maxlength=\"20\" name=\"jointapplicant.otheradditionalannualincomesourcedescription\" placeholder=\"other description*\" regexpattern=\"^[\\-a-za-z0-9 ]{1,20}$\" type=\"text\" validationtext=\"joint applicant other description can only contain letters, numbers, hyphens and spaces.\" value=\"\"/>",

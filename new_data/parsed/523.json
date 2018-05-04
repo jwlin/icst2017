@@ -193,7 +193,7 @@
     "feature": "00 tel applyvto applicantvo annualnetincomedapply appnetincome 6",
     "id": "523-tel-5",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-describedby=\"jointziperrdiv\" aria-required=\"true\" autocomplete=\"off\" class=\"commoninputtext form-control\" id=\"applyvto_jointapplicantvo_zip_id\" max=\"999999999\" maxlength=\"9\" min=\"0\" name=\"applyvto.jointapplicantvo.zip\" onblur=\"jointzipcodecheck();\" title=\"joint applicant zip code\" type=\"tel\" value=\"\"/>",
@@ -235,6 +235,6 @@
     "feature": "00 tel applyvto jointapplicantvo annualnetincomedapply jointappnetincome 10",
     "id": "523-tel-11",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   }
 ]

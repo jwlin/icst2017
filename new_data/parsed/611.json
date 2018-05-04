@@ -4,7 +4,7 @@
     "feature": "model number where s my model text product model model",
     "id": "611-text-0",
     "pattern": "model",
-    "topic": "model"
+    "topic": "model_number"
   },
   {
     "dom": "<input class=\"registria_field \" id=\"serial\" name=\"product[serial_number]\" type=\"text\" value=\"\"/>",

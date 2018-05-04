@@ -102,14 +102,14 @@
     "feature": "00 text annualincome 0076 annualincome 0076 8",
     "id": "524-text-14",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"curradd_0134\" maxlength=\"2\" name=\"curradd_0134\" onkeypress=\"return isnumberkey(event)\" size=\"2\" type=\"text\" value=\"\"/>",
     "feature": "in years text curradd 0134 curradd 0134 2",
     "id": "524-text-15",
     "pattern": "add",
-    "topic": "address_1"
+    "topic": "resident_years"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"prevadd_0127\" maxlength=\"21\" name=\"prevadd_0127\" onkeypress=\"return isalphanumspacehyphenhashaposkey(event)\" size=\"30\" type=\"text\" value=\"\"/>",
@@ -164,8 +164,8 @@
     "dom": "<input class=\"app_field_inputtxt\" id=\"mmn_0224\" maxlength=\"20\" name=\"mmn_0224\" onkeypress=\"return isalphanumkey(event)\" size=\"20\" type=\"text\" value=\"\"/>",
     "feature": "text mmn 0224 mmn 0224 20",
     "id": "524-text-23",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "mmn",
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"ssn_0020_0\" maxlength=\"3\" name=\"ssn_0020_0\" onblur=\"ssnvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" size=\"3\" type=\"password\" value=\"\"/>",
@@ -179,13 +179,13 @@
     "feature": "password ssn 0020 1 ssn 0020 1 2",
     "id": "524-password-1",
     "pattern": "ssn.*1",
-    "topic": "ssn_1"
+    "topic": "ssn_2"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"ssn_0020_2\" maxlength=\"4\" name=\"ssn_0020_2\" onblur=\"ssnvalidation(this.name)\" onkeypress=\"return isnumberkey(event)\" size=\"4\" type=\"password\" value=\"\"/>",
     "feature": "password ssn 0020 2 ssn 0020 2 4",
     "id": "524-password-2",
     "pattern": "ssn.*2",
-    "topic": "ssn_2"
+    "topic": "ssn_3"
   }
 ]

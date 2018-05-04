@@ -116,7 +116,7 @@
     "feature": "include all income available to you income includes wages retirement income investments rental properties etc include all income available to you if under age 21 include only your own income income includes wages retirement income investments rental properties etc alimony child support or separate maintenance income need not be revealed if you do not wish to have it considered as a basis for repaying this obligation total annual income housing status monthly housing payment check if you are considered a regulation o insider of a bank employer name years at employer employment status security deposit account secured product only security deposit amount overdraft protection enrollment union bank dda account totalannincome text 8",
     "id": "544-text-16",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-autocomplete=\"both\" aria-disabled=\"false\" aria-multiline=\"false\" aria-readonly=\"false\" aria-required=\"false\" class=\"jqx-widget-content jqx-input jqx-widget jqx-rc-all\" id=\"overdraftacct\" maxlength=\"10\" placeholder=\"\" role=\"textbox\" tabindex=\"-1\" type=\"text\"/>",

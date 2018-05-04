@@ -67,7 +67,7 @@
     "feature": "text mothers maiden name mothers maiden name",
     "id": "504-text-9",
     "pattern": "maiden.*name",
-    "topic": "maiden_name"
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input id=\"auth_first_name_1\" name=\"auth_first_name_1\" type=\"text\" value=\"\"/>",
@@ -165,7 +165,7 @@
     "feature": "tel annual income annual income",
     "id": "504-tel-6",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input id=\"mrtg_rent_amt\" name=\"mrtg_rent_amt\" type=\"tel\" value=\"\"/>",

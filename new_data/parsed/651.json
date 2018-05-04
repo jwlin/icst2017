@@ -87,8 +87,8 @@
     "dom": "<input class=\"form-input input-text required-entry validate-captcha input-box captcha\" id=\"captcha_vcaptcha\" name=\"captcha[vcaptcha]\" placeholder=\"please type the letters below\" type=\"text\"/>",
     "feature": "please type the letters below captcha vcaptcha text please type the letters below captcha vcaptcha",
     "id": "651-text-12",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "captcha",
+    "topic": "captcha"
   },
   {
     "dom": "<input class=\"input-text required-entry validate-email bottom-form-input\" id=\"newsletter\" name=\"email\" type=\"text\"/>",

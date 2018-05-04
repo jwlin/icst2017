@@ -207,7 +207,7 @@
     "feature": "required total annual income required grosshouseholdincomefield total annual income application primaryapplicant grosshouseholdincome tel 9",
     "id": "534-tel-7",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"nokey form-control \" data-validate=\"required numerichyphen minlength_10\" id=\"primaryphone\" maxlength=\"12\" name=\"primaryphone\" pattern=\"[0-9]*\" placeholder=\"primary phone\" size=\"12\" tabindex=\"21\" type=\"tel\" value=\"\"/>",

@@ -67,7 +67,7 @@
     "feature": "required annual income required annualincomeamount annualincomeamount text",
     "id": "512-text-9",
     "pattern": "annual.*income.*amount",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"input-md text-box single-line\" data-val=\"true\" data-val-length=\"the field email address must be a string with a maximum length of 66.\" data-val-length-max=\"66\" id=\"email\" name=\"email\" type=\"text\" value=\"\"/>",

@@ -102,7 +102,7 @@
     "feature": "00 text annualincome 0076 annualincome 0076 8",
     "id": "519-text-14",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"app_field_inputtxt\" id=\"curradd_0134\" maxlength=\"2\" name=\"curradd_0134\" onblur=\"prvaddcheck();\" onkeypress=\"return isnumberkey(event)\" size=\"2\" type=\"text\" value=\"\"/>",
@@ -185,8 +185,8 @@
     "dom": "<input class=\"app_field_inputtxt\" id=\"mmn_0224\" maxlength=\"20\" name=\"mmn_0224\" onkeypress=\"return isalphanumkey(event)\" size=\"20\" type=\"text\" value=\"\"/>",
     "feature": "text mmn 0224 mmn 0224 20",
     "id": "519-text-26",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "mmn",
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input class=\"app_field_stationtxt\" id=\"imgid_0462\" maxlength=\"10\" name=\"imgid_0462\" onkeypress=\"return isalphanumkey(event)\" size=\"20\" type=\"text\" value=\"\"/>",

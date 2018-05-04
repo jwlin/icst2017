@@ -158,7 +158,7 @@
     "feature": "pin text giftcardpin giftcardpin 50",
     "id": "564-text-22",
     "pattern": "pin",
-    "topic": "pin"
+    "topic": "gift_card_pin"
   },
   {
     "dom": "<input class=\"form-control\" id=\"creditcardname\" maxlength=\"50\" name=\"creditcardname\" ng-model=\"model.payment.creditcardname\" type=\"text\"/>",
@@ -318,8 +318,8 @@
     "dom": "<input class=\"form-control\" id=\"pickupcontactmap{{storetopickitemsfrom.id}}.emailaddress\" maxlength=\"100\" name=\"pickupcontactmap['{{storetopickitemsfrom.id}}'].emailaddress\" ng-keydown=\"unbind()\" ng-model=\"storetopickitemsfrom.pickupcontact.emailaddress\" size=\"35\" type=\"email\" unbindable=\"\"/>",
     "feature": "email email pickupcontactmap storetopickitemsfrom id emailaddress pickupcontactmap storetopickitemsfrom id emailaddress 100",
     "id": "564-email-2",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "email",
+    "topic": "email"
   },
   {
     "dom": "<input class=\"form-control\" id=\"billingform.emailaddress\" maxlength=\"100\" name=\"billingform.emailaddress\" size=\"35\" type=\"email\" value=\"\"/>",

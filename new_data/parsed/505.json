@@ -102,7 +102,7 @@
     "feature": "00 text value sannualincome sannualincome 9",
     "id": "505-text-14",
     "pattern": "annual.*income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input data-error-message=\"enter your employer's name. use only letters, dashes, apostrophes and spaces.\" data-theme=\"flexapp\" data-validation-options=\"sposition\" fa.allow=\"nospecial\" id=\"semployeropt\" maxlength=\"20\" name=\"value(semployeropt)\" size=\"20\" title=\"\" type=\"text\" value=\"\"/>",
@@ -137,7 +137,7 @@
     "feature": "we request your mother s maiden name to help verify your identity whenever you call us about your account mother s maiden name we request your mother s maiden name to help verify your identity whenever you call us about your account text value smaidenname smaidenname 10",
     "id": "505-text-19",
     "pattern": "maiden.*name",
-    "topic": "maiden_name"
+    "topic": "mothers_maiden"
   },
   {
     "dom": "<input class=\"inputtextbox\" data-error-message=\"please enter the authorized user's first name, making sure it includes at least one letter, no numbers and no inappropriate language. your entry cannot be the same as the applicant name. you may include spaces, dashes and apostrophes, if necessary.\" data-help-message=\"enter your name as it would appear on a government issued id. avoid using periods and commas as they will not be captured.\" data-theme=\"flexapp\" data-validation-options=\"ssecondarylastname1 ,ssecondarymiddleinitial1 ,sauthorizeddob1 ,sauthorizedstreetaddr11 ,sauthorizedstreetaddr21 ,sauthorizedapartment1 ,sauthorizedcity1 ,sauthorizedstate11 ,sauthorizedzip1 ,sauth1addrsameasprimary\" fa.allow=\"textentry\" id=\"ssecondaryfirstname1\" maxlength=\"15\" name=\"value(ssecondaryfirstname1)\" size=\"12\" type=\"text\" value=\"\"/>",

@@ -74,7 +74,7 @@
     "feature": "invoice number text invoicenumber",
     "id": "653-text-10",
     "pattern": "invoice",
-    "topic": "invoice"
+    "topic": "receipt_number"
   },
   {
     "dom": "<input class=\"required-entry input-text validate-date validate-purchase-date\" id=\"purchasedate\" name=\"purchasedate\" type=\"text\"/>",

@@ -123,7 +123,7 @@
     "feature": "text income income 35 000 7",
     "id": "540-text-17",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-label=\"housing payment\" awnum=\"\" class=\"form-control\" data-ng-model=\"model.monthlyhousingpayment\" id=\"monthlyhousingpayment\" maxlength=\"6\" name=\"monthlyhousingpayment\" ng-blur=\"montlyhousingpaymentfocus = false\" ng-focus=\"montlyhousingpaymentfocus = true\" num-fract=\"0\" num-int=\"4\" num-sep=\".\" num-thousand=\"true\" number=\"\" placeholder=\"500\" required=\"\" type=\"text\"/>",

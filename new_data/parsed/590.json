@@ -4,7 +4,7 @@
     "feature": "email email dwfrm login username d0ozivccxkqw text dwfrm login username d0ozivccxkqw 50",
     "id": "590-text-0",
     "pattern": "username",
-    "topic": "user"
+    "topic": "username"
   },
   {
     "dom": "<input autocorrect=\"off\" class=\"txt valid\" id=\"emailid\" maxlength=\"50\" name=\"email\" placeholder=\"yourname@email.com\" spellcheck=\"false\" type=\"email\" value=\"\"/>",

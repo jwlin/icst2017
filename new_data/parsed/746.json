@@ -4,7 +4,7 @@
     "feature": "pin password userid ay login text",
     "id": "746-text-0",
     "pattern": "login",
-    "topic": "login"
+    "topic": "username"
   },
   {
     "dom": "<input id=\"aycreatefn\" maxlength=\"30\" name=\"aycreatefn\" required=\"\" type=\"text\"/>",

@@ -74,7 +74,7 @@
     "feature": "annual income tel applicantincomeamt applicantincomeamt 13",
     "id": "547-tel-3",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-label=\"social security number\" autocomplete=\"on\" class=\"form-control\" id=\"applicantssn\" name=\"applicantssn\" type=\"tel\" value=\"\"/>",

@@ -53,7 +53,7 @@
     "feature": "income incomeamount text",
     "id": "552-text-7",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-labelledby=\"monthlyexpenseslabel\" class=\"ember-view ember-text-field\" id=\"monthlyexpenses\" required=\"\" type=\"text\"/>",

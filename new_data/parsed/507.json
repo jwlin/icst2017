@@ -206,8 +206,8 @@
     "dom": "<input aria-describedby=\"zz_name_tb_icai_tan_v_1-hint, zz_name_tb_icai_tan_v_1-errtxt\" class=\"tl-private text-box--currency z-textbox abpa-textbox text-box--with-symbol\" data-field-type=\"currency\" data-formatter=\"currency\" id=\"zz_name_tb_icai_tan_v_1\" maxlength=\"9\" name=\"zz_name_tb_icai_tan\" placeholder=\"\" type=\"tel\" value=\"\"/>",
     "feature": "total annual income tel zz name tb icai tan v 1 zz name tb icai tan 9",
     "id": "507-tel-7",
-    "pattern": "unk",
-    "topic": "unk"
+    "pattern": "zz_name_tb_icai_tan",
+    "topic": "income_annual"
   },
   {
     "dom": "<input aria-describedby=\"zz_name_tb_icai_mhp_v_1-hint, zz_name_tb_icai_mhp_v_1-errtxt\" class=\"tl-private text-box--currency z-textbox abpa-textbox text-box--with-symbol\" data-field-type=\"currency\" data-formatter=\"currency\" id=\"zz_name_tb_icai_mhp_v_1\" maxlength=\"8\" name=\"zz_name_tb_icai_mhp\" placeholder=\"\" type=\"tel\" value=\"\"/>",

@@ -269,7 +269,7 @@
     "dom": "<input class=\"textbox-areanumber\" data-val=\"true\" data-val-isrequired=\"please enter the middle 3 digits\" data-val-isrequired-desiredval=\"true\" data-val-isrequired-propval=\"false\" data-val-length=\"the field exchange must be a string with a maximum length of 3.\" data-val-length-max=\"3\" data-val-regex=\"please enter a valid middle 3 digits\" data-val-regex-pattern=\"\\d{3}\" id=\"previousemployer_workphone_exchange\" maxlength=\"3\" name=\"previousemployer.workphone.exchange\" onkeyup=\"autotab(this);\" type=\"text\" value=\"\"/>",
     "feature": "work phone previousemployer workphone exchange previousemployer workphone exchange text 3",
     "id": "549-text-38",
-    "pattern": "phone.*extension",
+    "pattern": "phone.*exchange",
     "topic": "phone_prefix"
   },
   {

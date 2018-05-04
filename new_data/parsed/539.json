@@ -52,7 +52,7 @@
     "dom": "<input class=\"form-control phoneextention input-sm\" id=\"phones_0__extention\" maxlength=\"6\" name=\"phones[0].extention\" type=\"text\" value=\"\"/>",
     "feature": "primary phone extension phones 0 extention phones 0 extention text 6",
     "id": "539-text-7",
-    "pattern": "phone.*extension",
+    "pattern": "phone.*extention",
     "topic": "phone_ext"
   },
   {

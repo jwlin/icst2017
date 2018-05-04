@@ -67,7 +67,7 @@
     "feature": "00 total annual gross income text income amount income 9",
     "id": "525-text-9",
     "pattern": "income",
-    "topic": "income"
+    "topic": "income_annual"
   },
   {
     "dom": "<input class=\"col-1 housingcost\" data-prefill=\"housingcost\" data-required=\"true\" data-validation=\"hasdata income housing\" maxlength=\"5\" name=\"housingcost\" placeholder=\"amount\" tabindex=\"21\" type=\"text\" value=\"\"/>",

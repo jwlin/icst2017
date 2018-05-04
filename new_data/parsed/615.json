@@ -4,7 +4,7 @@
     "feature": "model number unable to find model number enter manually and check here unable to find model number enter manually and check here text product model model",
     "id": "615-text-0",
     "pattern": "model",
-    "topic": "model"
+    "topic": "model_number"
   },
   {
     "dom": "<input class=\"registria_field \" id=\"serial\" name=\"product[serial_number]\" type=\"text\" value=\"\"/>",
