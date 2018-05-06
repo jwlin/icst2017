@@ -2,7 +2,8 @@ import unittest
 import os
 from bs4 import BeautifulSoup
 
-from util import is_validated
+from util import is_validated, load_labeled_data
+import dirs
 
 
 class TestUtil(unittest.TestCase):
@@ -34,6 +35,12 @@ class TestUtil(unittest.TestCase):
         soup = BeautifulSoup(dom, 'html5lib')
         soup = soup.find('input', attrs={'type': 'text'})
         self.assertTrue(is_validated(soup, 'first'))
+
+    def test_load_labeled_data(self):
+        if __name__ == '__main__':
+            data = load_labeled_data(dirs.parsed_dir)
+            print(len(data))
+            print(data[:3])
 
 
 if __name__ == '__main__':

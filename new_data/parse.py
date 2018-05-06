@@ -11,18 +11,17 @@ from bs4 import BeautifulSoup
 
 # local import
 import util
+import dirs
 
 util.setup_logger()
 logger = util.get_logger()
 #util.add_file_logger('log.txt')
 
-form_dir = 'forms'
-parsed_dir = 'parsed'
-
-topics = set()
-
+form_dir = dirs.form_dir
+parsed_dir = dirs.parsed_dir
 
 if __name__ == '__main__':
+    topics = set()
     # https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
     # added 'search', 'tel'
     input_types = ['text', 'email', 'password', 'search', 'tel']

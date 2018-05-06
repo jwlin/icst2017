@@ -3,8 +3,9 @@ import json
 from bs4 import BeautifulSoup
 from util import is_validated
 
+import dirs
 
-parsed_dir = 'parsed'
+parsed_dir = dirs.parsed_dir
 
 if __name__ == '__main__':
     count = 0

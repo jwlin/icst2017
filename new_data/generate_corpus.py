@@ -7,13 +7,14 @@ from bs4 import BeautifulSoup
 
 # local import
 import util
+import dirs
 
 util.setup_logger()
 logger = util.get_logger()
 util.add_file_logger('log.txt')
 
-form_dir = 'forms'
-corpus_dir = 'corpus'
+form_dir = dirs.form_dir
+corpus_dir = dirs.corpus_dir
 
 
 if __name__ == '__main__':

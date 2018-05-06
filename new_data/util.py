@@ -1,6 +1,8 @@
 import re
 import sys
 import logging
+import os
+import json
 
 
 # Usage of logger:
@@ -94,3 +96,13 @@ def is_validated(soup_element, pattern):
                 is_matched = True
                 break
     return is_matched
+
+
+def load_labeled_data(label_dir):
+    data = []
+    for json_file in os.listdir(label_dir):
+        if os.path.isfile(os.path.join(label_dir, json_file)) and json_file.endswith('.json'):
+            with open(os.path.join(label_dir, json_file), 'r', encoding='utf-8') as df:
+                for item in json.load(df):
+                    data.append(item)
+    return data
