@@ -15,7 +15,7 @@ import core
 parsed_dir = dirs.parsed_dir
 repeated_times = 100
 ratio_for_training = 0.3
-log_name = 't{:.1f}-r{:d}-{:s}'.format(ratio_for_training, repeated_times, 'lsi-50-custom-stop-no-vote-lemma')
+log_name = 't{:.1f}-r{:d}-{:s}'.format(ratio_for_training, repeated_times, 'lsi-50-custom-stop-no-vote-stem')
 
 util.setup_logger()
 logger = util.get_logger()

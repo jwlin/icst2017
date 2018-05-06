@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import random
 import spacy
 from spacy.lang.en.stop_words import STOP_WORDS
+import nltk
 from gensim import corpora, models, similarities
 from collections import defaultdict
 
@@ -13,6 +14,7 @@ from collections import defaultdict
 from util import is_validated
 
 nlp = spacy.load('en_core_web_sm')
+stemmer = nltk.stem.SnowballStemmer('english')
 
 def train_by_pattern(x_train):
     pattern_to_topic = {}
@@ -75,7 +77,8 @@ def train_by_sim(x_train):
     # build dictionary
     corpus = []
     for d in x_train:
-        corpus.append([w.lemma_ for w in nlp(d['feature'])])  # lemmatize
+        #corpus.append([w.lemma_ for w in nlp(d['feature'])])  # lemmatize
+        corpus.append([stemmer.stem(w) for w in d['feature'].split()])  # stemming
         #corpus.append(d['feature'].split())
     # print(corpus)
     dictionary = corpora.Dictionary(corpus)
@@ -89,7 +92,8 @@ def train_by_sim(x_train):
     # build, transfrom, and index corpus
     corpus_bow = []
     for d in x_train:
-        corpus_bow.append(dictionary.doc2bow([w.lemma_ for w in nlp(d['feature'])]))  # lemmatize
+        #corpus_bow.append(dictionary.doc2bow([w.lemma_ for w in nlp(d['feature'])]))  # lemmatize
+        corpus_bow.append(dictionary.doc2bow([stemmer.stem(w) for w in d['feature'].split()]))  # stemming
         #corpus_bow.append(dictionary.doc2bow(d['feature'].split()))
     #print(corpus_bow)
     tfidf = models.TfidfModel(corpus_bow)
@@ -107,7 +111,8 @@ def train_by_sim(x_train):
 def pred_by_sim(x_test, dictionary, tfidf, lsi, index, idx_to_topic):
     y_pred = []
     for d in x_test:
-        vec = [w.lemma_ for w in nlp(d['feature'])]  # lemmatize
+        #vec = [w.lemma_ for w in nlp(d['feature'])]  # lemmatize
+        vec = [stemmer.stem(w) for w in d['feature'].split()]  # stemming
         #vec = d['feature'].split()
         vec_bow = dictionary.doc2bow(vec)
         vec_tfidf = tfidf[vec_bow]
