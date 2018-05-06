@@ -1,2 +1,7 @@
 beautifulsoup4
 html5lib
+numpy
+scipy
+scikit-learn
+gensim
+spacy
