@@ -2,6 +2,7 @@
 Controller to train and test data
 """
 
+import sys
 import os
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -12,15 +13,19 @@ import util
 import dirs
 import core
 
+
+if len(sys.argv) < 4:
+    print('Missing arguments. e.g., python train_and_test.py 100 0.3 lsi-50-custom-stop-no-vote')
+
 parsed_dir = dirs.parsed_dir
-repeated_times = 100
-ratio_for_training = 0.3
-log_name = 't{:.1f}-r{:d}-{:s}'.format(ratio_for_training, repeated_times, 'lsi-50-custom-stop-no-vote-stem')
+ratio_for_training = float(sys.argv[1])
+repeated_times = int(sys.argv[2])
+trial_name = sys.argv[3]
+log_name = 't{:.1f}-r{:d}-{:s}'.format(ratio_for_training, repeated_times, trial_name)
 
 util.setup_logger()
 logger = util.get_logger()
 util.add_file_logger(os.path.join('log', log_name))
-
 
 if __name__ == '__main__':
     data = util.load_labeled_data(parsed_dir)
@@ -37,9 +42,9 @@ if __name__ == '__main__':
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=(1-ratio_for_training))
 
         # pattern-based method
-        #pattern_to_topic = core.train_by_pattern(X_train)
-        #y_pred_pattern = core.pred_by_pattern(X_test, pattern_to_topic)
-        #res_pattern.append(accuracy_score(y_test, y_pred_pattern))
+        pattern_to_topic = core.train_by_pattern(X_train)
+        y_pred_pattern = core.pred_by_pattern(X_test, pattern_to_topic)
+        res_pattern.append(accuracy_score(y_test, y_pred_pattern))
 
         # similarity-based method
         dictionary, tfidf, lsi, index, idx_to_topic = core.train_by_sim(X_train)
@@ -47,7 +52,6 @@ if __name__ == '__main__':
         res_sim.append(accuracy_score(y_test, y_pred_sim))
 
         # combine
-        '''
         y_pred_combine_n = core.pred_by_pattern_sim(X_test, pattern_to_topic, y_pred_sim, 'no-match')
         res_combine_n.append(accuracy_score(y_test, y_pred_combine_n))
 
@@ -56,9 +60,7 @@ if __name__ == '__main__':
 
         y_pred_combine_b = core.pred_by_pattern_sim(X_test, pattern_to_topic, y_pred_sim, 'both')
         res_combine_b.append(accuracy_score(y_test, y_pred_combine_b))
-        '''
-        y_pred_pattern = y_pred_combine_n = y_pred_combine_m = y_pred_combine_b = y_test
-
+        
         logger.info(
             'iteration {:d}: pattern: {:.4f}, sim: {:.4f}, combine_n: {:.4f}, combine_m: {:.4f}, combine_b: {:.4f}'.format(
                 i, accuracy_score(y_test, y_pred_pattern), accuracy_score(y_test, y_pred_sim),
