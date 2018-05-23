@@ -12,6 +12,7 @@ from sklearn.metrics import accuracy_score
 import util
 import dirs
 import core
+import rnn
 
 
 if len(sys.argv) < 4:
@@ -35,12 +36,15 @@ if __name__ == '__main__':
 
     res_pattern = []
     res_sim = []
-    res_combine_n = []
-    res_combine_m = []
-    res_combine_b = []
+    res_nb = []
+    res_svm = []
+    res_logit = []
+    res_rf = []
+    res_rnn = []
     for i in range(repeated_times):
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=(1-ratio_for_training))
 
+        '''
         # pattern-based method
         pattern_to_topic = core.train_by_pattern(X_train)
         y_pred_pattern = core.pred_by_pattern(X_test, pattern_to_topic)
@@ -50,7 +54,9 @@ if __name__ == '__main__':
         dictionary, tfidf, lsi, index, idx_to_topic = core.train_by_sim(X_train)
         y_pred_sim = core.pred_by_sim(X_test, dictionary, tfidf, lsi, index, idx_to_topic)
         res_sim.append(accuracy_score(y_test, y_pred_sim))
+        '''
 
+        '''
         # combine
         y_pred_combine_n = core.pred_by_pattern_sim(X_test, pattern_to_topic, y_pred_sim, 'no-match')
         res_combine_n.append(accuracy_score(y_test, y_pred_combine_n))
@@ -60,18 +66,49 @@ if __name__ == '__main__':
 
         y_pred_combine_b = core.pred_by_pattern_sim(X_test, pattern_to_topic, y_pred_sim, 'both')
         res_combine_b.append(accuracy_score(y_test, y_pred_combine_b))
-        
+        '''
+
+        '''
+        # ml-based
+        classifier = core.train_by_ml(X_train, model='nb')
+        y_pred_nb = core.pred_by_ml(classifier, X_test)
+        res_nb.append(accuracy_score(y_test, y_pred_nb))
+
+        classifier = core.train_by_ml(X_train, model='svm')
+        y_pred_svm = core.pred_by_ml(classifier, X_test)
+        res_svm.append(accuracy_score(y_test, y_pred_svm))
+
+        classifier = core.train_by_ml(X_train, model='logit')
+        y_pred_logit = core.pred_by_ml(classifier, X_test)
+        res_logit.append(accuracy_score(y_test, y_pred_logit))
+
+        classifier = core.train_by_ml(X_train, model='rf')
+        y_pred_rf = core.pred_by_ml(classifier, X_test)
+        res_rf.append(accuracy_score(y_test, y_pred_rf))
+        '''
+
+        model, token_vocab, le = rnn.train(X_train, y_train)
+        y_pred_rnn = rnn.pred(model, token_vocab, le, X_test)
+        res_rnn.append(accuracy_score(y_test, y_pred_rnn))
+
         logger.info(
-            'iteration {:d}: pattern: {:.4f}, sim: {:.4f}, combine_n: {:.4f}, combine_m: {:.4f}, combine_b: {:.4f}'.format(
+            'iteration {:d}: rnn: {:.4f}'.format(
+                i, accuracy_score(y_test, y_pred_rnn))
+        )
+
+        '''
+        logger.info(
+            'iteration {:d}: pattern: {:.4f}, sim: {:.4f}, nb: {:.4f}, svm: {:.4f}, logit: {:.4f}, rf: {:.4f}'.format(
                 i, accuracy_score(y_test, y_pred_pattern), accuracy_score(y_test, y_pred_sim),
-                accuracy_score(y_test, y_pred_combine_n), accuracy_score(y_test, y_pred_combine_m),
-                accuracy_score(y_test, y_pred_combine_b)
-        ))
+                accuracy_score(y_test, y_pred_nb), accuracy_score(y_test, y_pred_svm),
+                accuracy_score(y_test, y_pred_logit), accuracy_score(y_test, y_pred_rf))
+        )
+        '''
 
-        # ml-based method
-        # train model on training data
-        # test model on test data
-
-    logger.info('accuracy: pattern: {:.4f}, sim: {:.4f}, combine_n: {:.4f}, combine_m: {:.4f}, combine_b: {:.4f}'.format(
-        np.mean(res_pattern), np.mean(res_sim), np.mean(res_combine_n), np.mean(res_combine_m), np.mean(res_combine_b)
-    ))
+    logger.info(
+        'accuracy: rnn: {:.4f}'.format(
+            np.mean(res_rnn))
+    )
+    #logger.info('accuracy: pattern: {:.4f}, sim: {:.4f}, nb: {:.4f}, svm: {:.4f}, logit: {:.4f}, rf: {:.4f}'.format(
+    #    np.mean(res_pattern), np.mean(res_sim), np.mean(res_nb), np.mean(res_svm), np.mean(res_logit), np.mean(res_rf)
+    #))
